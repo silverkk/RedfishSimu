@@ -1,0 +1,12 @@
+{
+  "Name":"Log Entry 103",
+  "Id":"103",
+  "Message":"LED_PSU_STATUS: Platform sensor, GREEN was asserted",
+  "EntryType":"SEL",
+  "Description":"Log Entry 103",
+  "@odata.type":"#LogEntry.1.0.0",
+  "Created":"2019-12-19 01:59:48 ",
+  "@odata.context":"/redfish/v1/$metadata#Chassis/Members/$entity/LogServices/Members/$entity/Entries/Members/$entity",
+  "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/103",
+  "Severity":"Informational"
+}

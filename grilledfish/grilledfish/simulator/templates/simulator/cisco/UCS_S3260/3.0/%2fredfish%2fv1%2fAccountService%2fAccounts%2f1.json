@@ -1,0 +1,15 @@
+{
+  "Name":"User Account",
+  "Id":"1",
+  "UserName":"admin",
+  "@odata.context":"/redfish/v1/$metadata#AccountService/Accounts/Members/$entity",
+  "Description":"User Account",
+  "@odata.type":"#ManagerAccount.1.0.0",
+  "RoleId":"admin",
+  "Links":{
+    "Role":["/redfish/v1/AccountService/Roles/admin"]
+  },
+  "Enabled":true,
+  "@odata.id":"/redfish/v1/AccountService/Accounts/1",
+  "Locked":false
+}

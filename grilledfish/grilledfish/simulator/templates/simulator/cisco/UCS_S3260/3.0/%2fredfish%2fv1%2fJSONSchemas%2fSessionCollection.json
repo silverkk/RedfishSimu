@@ -1,0 +1,15 @@
+{
+  "Name":"Session Collection Schema File",
+  "Id":"SessionCollection",
+  "@odata.context":"/redfish/v1/$metadata#JSONSchemas/Members/$entity",
+  "Languages":["en"],
+  "Description":"Session Collection Schema File Location",
+  "@odata.type":"#JSONSchemas.1.0.0.JsonSchemaFileCollection",
+  "Schema":"SessionCollection",
+  "@odata.id":"/redfish/v1/JSONSchemas/SessionCollection",
+  "Location":[{
+      "PublicationUri":"http://redfish.dmtf.org/schemas/v1/SessionCollection.json",
+      "Language":"en",
+      "Uri":"/redfish/v1/SessionCollection.json"
+    }]
+}

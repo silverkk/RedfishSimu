@@ -1,0 +1,27 @@
+{
+  "Name":"CPU2",
+  "Id":"2",
+  "TotalThreads":"20",
+  "ProcessorArchitecture":"x86",
+  "ProcessorId":{
+    "VendorId":"Intel(R) Corporation",
+    "EffectiveModel":"62",
+    "Step":"4",
+    "EffectiveFamily":"6"
+  },
+  "@odata.id":"/redfish/v1/Systems/FCH20167MYU/Processors/CPU2",
+  "MaxSpeedMHz":"4000",
+  "Socket":"CPU2",
+  "TotalCores":"10",
+  "ProcessorType":"CPU",
+  "@odata.context":"/redfish/v1/$metadata#Systems/Members/$entity/Processors/Members/$entity",
+  "InstructionSet":"x86-64",
+  "Model":"Intel(R) Xeon(R) CPU E5-2660 v2 @ 2.20GHz",
+  "@odata.type":"#Cisco_ComputerProcessor",
+  "Manufacturer":"Intel(R) Corporation",
+  "Description":"Intel(R) Xeon(R) E5-2660 v2 @ 2.20GHz",
+  "Status":{
+    "State":"Enabled",
+    "Health":"OK"
+  }
+}

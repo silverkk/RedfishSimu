@@ -1,0 +1,13 @@
+{
+  "Name":"Log Entry 1326",
+  "Id":"1326",
+  "Message":"SSD2_PRS: Drive Slot sensor, Device Inserted / Device Present was asserted",
+  "EntryType":"SEL",
+  "Description":"Log Entry 1326",
+  "@odata.type":"#LogEntry.1.0.0",
+  "EntryCode":"Device Inserted / Device Present",
+  "Created":"2021-11-11 10:09:00 ",
+  "@odata.context":"/redfish/v1/$metadata#Managers/Members/$entity/LogServices/Members/$entity/Entries/Members/$entity",
+  "@odata.id":"/redfish/v1/Managers/BMC1/LogServices/SEL/Entries/1326",
+  "Severity":"Normal"
+}

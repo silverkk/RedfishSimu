@@ -1,0 +1,12 @@
+{
+  "Name":"Log Entry 46",
+  "Id":"46",
+  "Message":" pam_ldap_manager(redfish:account): Start -------->\n",
+  "EntryType":"CIMC",
+  "Description":"Log Entry 46",
+  "@odata.type":"#LogEntry.1.0.0",
+  "Created":"2021 Nov 15 07:03:26",
+  "@odata.context":"/redfish/v1/$metadata#Chassis/Members/$entity/LogServices/Members/$entity/Entries/Members/$entity",
+  "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/CIMC/Entries/46",
+  "Severity":"Informational"
+}

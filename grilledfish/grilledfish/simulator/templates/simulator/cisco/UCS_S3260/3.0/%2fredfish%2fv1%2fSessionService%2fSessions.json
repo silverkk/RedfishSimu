@@ -1,0 +1,11 @@
+{
+  "Name":"Session Collection",
+  "Description":"Collection of Sessions",
+  "@odata.type":"#SessionCollection.1.0.0.SessionCollection",
+  "Members@odata.count":1,
+  "Members":[{
+      "@odata.id":"/redfish/v1/SessionService/Sessions/3"
+    }],
+  "@odata.id":"/redfish/v1/SessionService/Sessions",
+  "@odata.context":"/redfish/v1/$metadata#SessionService/Sessions"
+}

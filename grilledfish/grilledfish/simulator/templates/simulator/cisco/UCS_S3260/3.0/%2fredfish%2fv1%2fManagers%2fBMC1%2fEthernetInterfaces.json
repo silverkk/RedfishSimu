@@ -1,0 +1,11 @@
+{
+  "Name":"Ethernet Intefaces Collection",
+  "Description":"Collection of EthernetInterfaces for this Manager",
+  "@odata.type":"#EthernetInterface.1.0.0.EthernetInterface",
+  "Members@odata.count":1,
+  "Members":[{
+      "@odata.id":"/redfish/v1/Managers/BMC1/EthernetInterfaces/NICs"
+    }],
+  "@odata.id":"/redfish/v1/Managers/BMC1/EthernetInterfaces",
+  "@odata.context":"/redfish/v1/$metadata#Managers/Members/$entity/EthernetInterfaces"
+}

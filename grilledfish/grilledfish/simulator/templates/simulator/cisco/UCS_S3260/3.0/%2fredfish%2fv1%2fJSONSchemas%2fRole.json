@@ -1,0 +1,15 @@
+{
+  "Name":"Role Schema File",
+  "Id":"Role",
+  "@odata.context":"/redfish/v1/$metadata#JSONSchemas/Members/$entity",
+  "Languages":["en"],
+  "Description":"Role Schema File Location",
+  "@odata.type":"#JSONSchemas.1.0.0.JsonSchemaFileCollection",
+  "Schema":"Role",
+  "@odata.id":"/redfish/v1/JSONSchemas/Role",
+  "Location":[{
+      "PublicationUri":"http://redfish.dmtf.org/schemas/v1/Role.json",
+      "Language":"en",
+      "Uri":"/redfish/v1/Role.json"
+    }]
+}

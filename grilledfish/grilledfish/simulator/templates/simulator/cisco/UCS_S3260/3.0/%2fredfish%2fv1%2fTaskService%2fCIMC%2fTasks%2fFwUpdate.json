@@ -1,0 +1,14 @@
+{
+  "Name":"Task FwUpdate",
+  "TaskState":"Completed",
+  "Id":"FwUpdate",
+  "TaskStatus":"OK",
+  "@odata.context":"/redfish/v1/$metadata#TaskService/Members/$entity/Tasks/Members/$entity",
+  "Description":"Cisco IMC backup firmware version",
+  "@odata.type":"#Task.1.0.0",
+  "@odata.id":"/redfish/v1/TaskService/CIMC/Tasks/FwUpdate",
+  "Oem":{
+    "UpdateStatus":"Success (100%)",
+    "FWVersion":"3.0(1c)"
+  }
+}

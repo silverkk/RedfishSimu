@@ -1,0 +1,15 @@
+{
+  "Name":"EventService Schema File",
+  "Id":"EventService",
+  "@odata.context":"/redfish/v1/$metadata#JSONSchemas/Members/$entity",
+  "Languages":["en"],
+  "Description":"EventService Schema File Location",
+  "@odata.type":"#JSONSchemas.1.0.0.JsonSchemaFileCollection",
+  "Schema":"EventService",
+  "@odata.id":"/redfish/v1/JSONSchemas/EventService",
+  "Location":[{
+      "PublicationUri":"http://redfish.dmtf.org/schemas/v1/EventService.json",
+      "Language":"en",
+      "Uri":"/redfish/v1/EventService.json"
+    }]
+}

@@ -1,0 +1,13 @@
+{
+  "Name":"Log Entry 100",
+  "Id":"100",
+  "Message":"PS4_FRU PSU4_AC_OK: Power Supply sensor for PS4_FRU, State Asserted",
+  "EntryType":"SEL",
+  "Description":"Log Entry 100",
+  "@odata.type":"#LogEntry.1.0.0",
+  "EntryCode":"State Asserted",
+  "Created":"2019-12-19 01:59:48 ",
+  "@odata.context":"/redfish/v1/$metadata#Managers/Members/$entity/LogServices/Members/$entity/Entries/Members/$entity",
+  "@odata.id":"/redfish/v1/Managers/CIMC/LogServices/SEL/Entries/100",
+  "Severity":"Normal"
+}

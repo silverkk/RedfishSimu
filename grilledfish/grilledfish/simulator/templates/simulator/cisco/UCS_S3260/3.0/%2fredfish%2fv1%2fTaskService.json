@@ -1,0 +1,13 @@
+{
+  "Name":"Task Service Collection",
+  "Description":"Collection of Components where task service is supported",
+  "@odata.type":"#TaskService.1.0.0",
+  "Members@odata.count":2,
+  "Members":[{
+      "@odata.id":"/redfish/v1/TaskService/CIMC"
+    },{
+      "@odata.id":"/redfish/v1/TaskService/BMC1"
+    }],
+  "@odata.id":"/redfish/v1/TaskService",
+  "@odata.context":"/redfish/v1/$metadata#TaskService"
+}

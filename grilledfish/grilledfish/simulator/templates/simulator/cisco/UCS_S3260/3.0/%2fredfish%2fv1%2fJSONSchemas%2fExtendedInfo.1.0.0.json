@@ -1,0 +1,15 @@
+{
+  "Name":"ExtendedInfo.1.0.0 Schema File",
+  "Id":"ExtendedInfo.1.0.0",
+  "@odata.context":"/redfish/v1/$metadata#JSONSchemas/Members/$entity",
+  "Languages":["en"],
+  "Description":"ExtendedInfo.1.0.0 Schema File Location",
+  "@odata.type":"#JSONSchemas.1.0.0.JsonSchemaFileCollection",
+  "Schema":"ExtendedInfo.1.0.0",
+  "@odata.id":"/redfish/v1/JSONSchemas/ExtendedInfo.1.0.0",
+  "Location":[{
+      "PublicationUri":"http://redfish.dmtf.org/schemas/v1/ExtendedInfo.1.0.0.json",
+      "Language":"en",
+      "Uri":"/redfish/v1/ExtendedInfo.1.0.0.json"
+    }]
+}

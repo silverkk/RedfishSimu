@@ -806,6 +806,18 @@
                 "Temperature": "Warning",
                 "Volume": "Warning"
               }
+        },
+        {
+            "startIp" : "192.168.1.32",
+            "endIp" : "192.168.1.32",
+            "ipmiNodeType": "CISCO_UCS_S3260",
+            "ipmiSetting": "Setting_0",
+            "vendor": "cisco",
+            "fwVersion": "3.0",
+            "model": "UCS_S3260",
+            "flatMode": true,
+            "health" : {
+            }
         }
     ]
 }

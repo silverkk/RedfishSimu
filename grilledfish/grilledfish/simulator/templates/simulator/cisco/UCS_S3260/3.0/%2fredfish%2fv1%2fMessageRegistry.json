@@ -1,0 +1,414 @@
+{
+  "Name":"Message Registry",
+  "Language":"en",
+  "Id":"Message Registry",
+  "@odata.context":"/redfish/v1/$metadata#MessageRegistry",
+  "Description":"This registry defines the Fault messages for Redfish",
+  "@odata.type":"#MessageRegistry.1.0.0.MessageRegistry",
+  "@odata.id":"/redfish/v1/MessageRegistry",
+  "RegistryPrefix":"",
+  "RegistryVersion":"1.0.0",
+  "Messages":{
+    "F0920":{
+      "NumberOfArgs":0,
+      "Description":"Voltage to the motherboard is upper critical",
+      "Oem":{
+        "MessageId":18
+      },
+      "Resolution":"Check power supply",
+      "Message":"",
+      "Severity":"major"
+    },
+    "F0882":{
+      "NumberOfArgs":0,
+      "Description":"Power Supply Current is upper critical/ upper non recoverable",
+      "Oem":{
+        "MessageId":24
+      },
+      "Resolution":"Reseat or replace Power Supply",
+      "Message":"",
+      "Severity":"major/critical"
+    },
+    "F0392":{
+      "NumberOfArgs":0,
+      "Description":"Power Supply  IO power is upper non critical",
+      "Oem":{
+        "MessageId":28
+      },
+      "Resolution":"Reseat or replace Power Supply",
+      "Message":"",
+      "Severity":"minor"
+    },
+    "F0460":{
+      "NumberOfArgs":0,
+      "Description":"log capacity is low",
+      "Oem":{
+        "MessageId":34
+      },
+      "Resolution":"",
+      "Message":"",
+      "Severity":"info"
+    },
+    "F0383":{
+      "NumberOfArgs":0,
+      "Description":"Power Supply temperature is upper critical",
+      "Oem":{
+        "MessageId":13
+      },
+      "Resolution":"Check power supply status",
+      "Message":"",
+      "Severity":"major"
+    },
+    "F0185":{
+      "NumberOfArgs":0,
+      "Description":"DIMM is inoperable",
+      "Oem":{
+        "MessageId":33
+      },
+      "Resolution":"Check or replace DIMM",
+      "Message":"",
+      "Severity":"major"
+    },
+    "F0424":{
+      "NumberOfArgs":0,
+      "Description":"Battery voltage level is lower critical",
+      "Oem":{
+        "MessageId":20
+      },
+      "Resolution":"Replace Battery",
+      "Message":"",
+      "Severity":"major"
+    },
+    "F0921":{
+      "NumberOfArgs":0,
+      "Description":"Voltage to the motherboard is lower critical",
+      "Oem":{
+        "MessageId":16
+      },
+      "Resolution":"Check power supply",
+      "Message":"",
+      "Severity":"major"
+    },
+    "F0409":{
+      "NumberOfArgs":0,
+      "Description":"Temperature sensor has crossed upper critical threshold",
+      "Oem":{
+        "MessageId":5
+      },
+      "Resolution":"Check device Cooling",
+      "Message":"",
+      "Severity":"major"
+    },
+    "F0729":{
+      "NumberOfArgs":0,
+      "Description":"Adaptor Unit Temperature is upper non critical",
+      "Oem":{
+        "MessageId":1
+      },
+      "Resolution":"Check Cooling",
+      "Message":"",
+      "Severity":"minor"
+    },
+    "F0393":{
+      "NumberOfArgs":0,
+      "Description":"Power Supply  IO power is upper critical",
+      "Oem":{
+        "MessageId":29
+      },
+      "Resolution":"Reseat or replace Power Supply",
+      "Message":"",
+      "Severity":"major"
+    },
+    "F0396":{
+      "NumberOfArgs":0,
+      "Description":"Fan speed for fan-x is lower critical",
+      "Oem":{
+        "MessageId":26
+      },
+      "Resolution":"Check the air intake to the server",
+      "Message":"",
+      "Severity":"major"
+    },
+    "F0461":{
+      "NumberOfArgs":0,
+      "Description":"log capacity is very low",
+      "Oem":{
+        "MessageId":35
+      },
+      "Resolution":"",
+      "Message":"",
+      "Severity":"info"
+    },
+    "F0425":{
+      "NumberOfArgs":0,
+      "Description":"Battery voltage level is lower non recoverable",
+      "Oem":{
+        "MessageId":21
+      },
+      "Resolution":"Replace Battery",
+      "Message":"",
+      "Severity":"critical"
+    },
+    "F0174":{
+      "NumberOfArgs":0,
+      "Description":"Processor/Memory sensor has asserted a Thermal Problem",
+      "Oem":{
+        "MessageId":32
+      },
+      "Resolution":"Check Cooling",
+      "Message":"",
+      "Severity":"major/critical"
+    },
+    "F0187":{
+      "NumberOfArgs":0,
+      "Description":"Memory Unit temperature is upper critical",
+      "Oem":{
+        "MessageId":8
+      },
+      "Resolution":"Check device Cooling",
+      "Message":"",
+      "Severity":"major"
+    },
+    "F0391":{
+      "NumberOfArgs":0,
+      "Description":"Power Supply Voltage is upper non recoverable",
+      "Oem":{
+        "MessageId":40
+      },
+      "Resolution":"Reseat or replace Power Supply",
+      "Message":"",
+      "Severity":"critical"
+    },
+    "F0395":{
+      "NumberOfArgs":0,
+      "Description":"Fan speed for fan-x is lower non critical",
+      "Oem":{
+        "MessageId":25
+      },
+      "Resolution":"Check the air intake to the server",
+      "Message":"",
+      "Severity":"minor"
+    },
+    "F0179":{
+      "NumberOfArgs":0,
+      "Description":"Processor or Memory channel voltage is lower critical/ upper critical",
+      "Oem":{
+        "MessageId":22
+      },
+      "Resolution":"check power supply",
+      "Message":"",
+      "Severity":"major"
+    },
+    "F0389":{
+      "NumberOfArgs":0,
+      "Description":"Power Supply Voltage is upper critical",
+      "Oem":{
+        "MessageId":39
+      },
+      "Resolution":"Reseat or replace Power Supply",
+      "Message":"",
+      "Severity":"major"
+    },
+    "F0731":{
+      "NumberOfArgs":0,
+      "Description":"Adaptor Unit Temperature is upper non recoverable",
+      "Oem":{
+        "MessageId":3
+      },
+      "Resolution":"Check Cooling",
+      "Message":"",
+      "Severity":"critical"
+    },
+    "F0868":{
+      "NumberOfArgs":0,
+      "Description":"The server failed to power ON",
+      "Oem":{
+        "MessageId":37
+      },
+      "Resolution":"Check Power Supply",
+      "Message":"",
+      "Severity":"critical"
+    },
+    "F0397":{
+      "NumberOfArgs":0,
+      "Description":"Fan speed for fan-x is lower non recoverable",
+      "Oem":{
+        "MessageId":27
+      },
+      "Resolution":"Check the air intake to the server",
+      "Message":"",
+      "Severity":"critical"
+    },
+    "F0177":{
+      "NumberOfArgs":0,
+      "Description":"Processor Thermal threshold has crossed upper non recoverable threshold",
+      "Oem":{
+        "MessageId":11
+      },
+      "Resolution":"Check Cooling",
+      "Message":"",
+      "Severity":"critical"
+    },
+    "F0180":{
+      "NumberOfArgs":0,
+      "Description":"Processor or Memory channel voltage is lower non recoverable/ upper non recoverable",
+      "Oem":{
+        "MessageId":23
+      },
+      "Resolution":"check power supply",
+      "Message":"",
+      "Severity":"critical"
+    },
+    "F1040":{
+      "NumberOfArgs":0,
+      "Description":"Motherboard Power usage is upper critical/ upper non recoverable",
+      "Oem":{
+        "MessageId":31
+      },
+      "Resolution":"Check hardware",
+      "Message":"",
+      "Severity":"major/critical"
+    },
+    "F0411":{
+      "NumberOfArgs":0,
+      "Description":"Temperature sensor has crossed upper non recoverable threshold",
+      "Oem":{
+        "MessageId":6
+      },
+      "Resolution":"Check device Cooling",
+      "Message":"",
+      "Severity":"critical"
+    },
+    "F0381":{
+      "NumberOfArgs":0,
+      "Description":"Power Supply temperature is upper non critical",
+      "Oem":{
+        "MessageId":12
+      },
+      "Resolution":"Check power supply status",
+      "Message":"",
+      "Severity":"minor"
+    },
+    "F0176":{
+      "NumberOfArgs":0,
+      "Description":"Processor Thermal threshold has crossed upper critical threshold",
+      "Oem":{
+        "MessageId":10
+      },
+      "Resolution":"Check Cooling",
+      "Message":"",
+      "Severity":"major"
+    },
+    "F0394":{
+      "NumberOfArgs":0,
+      "Description":"Power Supply  IO power is upper non recoverable",
+      "Oem":{
+        "MessageId":30
+      },
+      "Resolution":"Reseat or replace Power Supply",
+      "Message":"",
+      "Severity":"critical"
+    },
+    "F0186":{
+      "NumberOfArgs":0,
+      "Description":"Memory Unit temperature is upper non critical",
+      "Oem":{
+        "MessageId":7
+      },
+      "Resolution":"Check device Cooling",
+      "Message":"",
+      "Severity":"info"
+    },
+    "F0410":{
+      "NumberOfArgs":0,
+      "Description":"Temperature sensor has crossed upper non-critical threshold",
+      "Oem":{
+        "MessageId":4
+      },
+      "Resolution":"Check device Cooling",
+      "Message":"",
+      "Severity":"minor"
+    },
+    "F0385":{
+      "NumberOfArgs":0,
+      "Description":"Power Supply temperature is upper non recoverable",
+      "Oem":{
+        "MessageId":14
+      },
+      "Resolution":"Check power supply status",
+      "Message":"",
+      "Severity":"critical"
+    },
+    "F0869":{
+      "NumberOfArgs":0,
+      "Description":"Motherboard chipset temperature is upper critical/ upper non recoverable/inoperable due to high temperature",
+      "Oem":{
+        "MessageId":15
+      },
+      "Resolution":"Check device cooling",
+      "Message":"",
+      "Severity":"major/critical"
+    },
+    "F0919":{
+      "NumberOfArgs":0,
+      "Description":"Voltage to the motherboard is lower non recoverable",
+      "Oem":{
+        "MessageId":17
+      },
+      "Resolution":"Check power supply",
+      "Message":"",
+      "Severity":"critical"
+    },
+    "F0434":{
+      "NumberOfArgs":0,
+      "Description":"Fan is missing",
+      "Oem":{
+        "MessageId":38
+      },
+      "Resolution":"reseat or replace fan",
+      "Message":"",
+      "Severity":"warning"
+    },
+    "F0730":{
+      "NumberOfArgs":0,
+      "Description":"Adaptor Unit Temperature is upper critical",
+      "Oem":{
+        "MessageId":2
+      },
+      "Resolution":"Check Cooling",
+      "Message":"",
+      "Severity":"major"
+    },
+    "F0918":{
+      "NumberOfArgs":0,
+      "Description":"Voltage to the motherboard is upper non recoverable",
+      "Oem":{
+        "MessageId":19
+      },
+      "Resolution":"Check power supply",
+      "Message":"",
+      "Severity":"critical"
+    },
+    "F0462":{
+      "NumberOfArgs":0,
+      "Description":"log capacity is full",
+      "Oem":{
+        "MessageId":36
+      },
+      "Resolution":"Check or replace DIMM",
+      "Message":"",
+      "Severity":"info"
+    },
+    "F0188":{
+      "NumberOfArgs":0,
+      "Description":"Memory Unit temperature is upper non recoverable",
+      "Oem":{
+        "MessageId":9
+      },
+      "Resolution":"Check device Cooling",
+      "Message":"",
+      "Severity":"critical"
+    }
+  },
+  "OwningEntity":"Cisco Systems Inc."
+}

@@ -1,0 +1,15 @@
+{
+  "Name":"VLanNetworkInterface Collection Schema File",
+  "Id":"VLanNetworkInterfaceCollection",
+  "@odata.context":"/redfish/v1/$metadata#JSONSchemas/Members/$entity",
+  "Languages":["en"],
+  "Description":"VLanNetworkInterface Collection Schema File Location",
+  "@odata.type":"#JSONSchemas.1.0.0.JsonSchemaFileCollection",
+  "Schema":"VLanNetworkInterfaceCollection",
+  "@odata.id":"/redfish/v1/JSONSchemas/VLanNetworkInterfaceCollection",
+  "Location":[{
+      "PublicationUri":"http://redfish.dmtf.org/schemas/v1/VLanNetworkInterfaceCollection.json",
+      "Language":"en",
+      "Uri":"/redfish/v1/VLanNetworkInterfaceCollection.json"
+    }]
+}

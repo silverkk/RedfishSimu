@@ -1,0 +1,30 @@
+{
+  "Name":"Manager Network Protocol",
+  "FQDN":"UCS-C3260-FCH20177003-1",
+  "Id":"ManagerNetworkProtocol",
+  "IPMI":{
+    "ProtocolEnabled":true,
+    "Port":623
+  },
+  "@odata.context":"/redfish/v1/$metadata#Managers/Members/$entity/ManagerNetworkProtocol",
+  "HTTPS":{
+    "ProtocolEnabled":true,
+    "Port":443
+  },
+  "HostName":"UCS-C3260-FCH20177003-1",
+  "SSH":{
+    "ProtocolEnabled":true,
+    "Port":22
+  },
+  "HTTP":{
+    "ProtocolEnabled":true,
+    "Port":443
+  },
+  "@odata.type":"#ManagerNetworkProtocol.1.0.0",
+  "SNMP":{
+    "ProtocolEnabled":false,
+    "Port":161
+  },
+  "@odata.id":"/redfish/v1/Managers/CIMC/ManagerNetworkProtocol",
+  "Description":"Manager Network Service"
+}

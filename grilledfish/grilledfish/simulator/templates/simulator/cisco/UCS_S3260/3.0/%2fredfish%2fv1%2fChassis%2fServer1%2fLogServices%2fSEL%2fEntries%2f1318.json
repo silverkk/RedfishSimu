@@ -1,0 +1,13 @@
+{
+  "Name":"Log Entry 1318",
+  "Id":"1318",
+  "Message":"BIOS_POST_CMPLT: Presence sensor, Device Removed / Device Absent was asserted",
+  "EntryType":"SEL",
+  "Description":"Log Entry 1318",
+  "@odata.type":"#LogEntry.1.0.0",
+  "EntryCode":"Device Removed / Device Absent",
+  "Created":"2021-11-11 01:01:10 ",
+  "@odata.context":"/redfish/v1/$metadata#Chassis/Members/$entity/LogServices/Members/$entity/Entries/Members/$entity",
+  "@odata.id":"/redfish/v1/Chassis/Server1/LogServices/SEL/Entries/1318",
+  "Severity":"Normal"
+}

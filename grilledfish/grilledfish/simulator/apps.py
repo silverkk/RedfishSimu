@@ -24,6 +24,7 @@ class MachineType(enum.Enum):
     nettrix = 15
     unity = 16
     Contoso = 17
+    cisco = 18
 
 class MachineComponent(enum.Enum):
     system = 'system'

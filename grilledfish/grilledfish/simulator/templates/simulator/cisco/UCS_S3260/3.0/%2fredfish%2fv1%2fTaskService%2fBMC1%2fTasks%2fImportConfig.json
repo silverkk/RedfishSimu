@@ -1,0 +1,13 @@
+{
+  "Name":"Task ImportConfig",
+  "TaskState":"Completed",
+  "Id":"ImportConfig",
+  "TaskStatus":"OK",
+  "@odata.context":"/redfish/v1/$metadata#TaskService/Members/$entity/Tasks/Members/$entity",
+  "Description":"Import Configuration",
+  "@odata.type":"#Task.1.0.0",
+  "@odata.id":"/redfish/v1/TaskService/BMC1/Tasks/ImportConfig",
+  "Oem":{
+    "ImportStatus":"Completed Successfully"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "Name":"BMC",
+  "Manufacturer":"Cisco Systems Inc.",
+  "IndicatorLED":"Off",
+  "SerialNumber":"FCH20167MYU",
+  "@odata.type":"#Chassis.1.0.0.Chassis",
+  "Links":{
+    "ManagedBy":["/redfish/v1/Managers/BMC1"],
+    "PoweredBy":["/redfish/v1/Chassis/CMC/Power"],
+    "ComputerSystems":["/redfish/v1/Systems/FCH20167MYU"],
+    "CooledBy":["/redfish/v1/Chassis/CMC/Thermal"]
+  },
+  "Power":{
+    "@odata.id":"/redfish/v1/Chassis/Server1/Power"
+  },
+  "@odata.id":"/redfish/v1/Chassis/Server1",
+  "Status":{
+    "State":"Enabled",
+    "Health":"OK"
+  },
+  "@odata.context":"/redfish/v1/$metadata#Chassis/Members/$entity",
+  "Description":"It represents the properties for physical components for any system.  This one object is intended to represent racks, rackmount servers, blades, standalone, modular systems, enclosures, and all other containers.  The non-cpu/device centric parts of the schema are all accessed either directly or indirectly through this resource",
+  "Model":"UCS S3260M3",
+  "Thermal":{
+    "@odata.id":"/redfish/v1/Chassis/Server1/Thermal"
+  },
+  "ChassisType":"Enclosure",
+  "Id":"Server1",
+  "Actions":{
+    "#Chassis.Reset":{
+      "ResetType@Redfish.AllowableValues":["On","ForceOff"],
+      "target":"/redfish/v1/Chassis/Server1/Actions/Chassis.Reset"
+    }
+  },
+  "LogServices":{
+    "@odata.id":"/redfish/v1/Chassis/Server1/LogServices"
+  }
+}

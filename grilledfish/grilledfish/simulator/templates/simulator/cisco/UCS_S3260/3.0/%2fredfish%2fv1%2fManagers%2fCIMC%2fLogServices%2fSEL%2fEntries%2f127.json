@@ -1,0 +1,13 @@
+{
+  "Name":"Log Entry 127",
+  "Id":"127",
+  "Message":"PS4_FRU PSU4_PRES: Presence sensor for PS4_FRU, Device Inserted / Device Present was asserted",
+  "EntryType":"SEL",
+  "Description":"Log Entry 127",
+  "@odata.type":"#LogEntry.1.0.0",
+  "EntryCode":"Device Inserted / Device Present",
+  "Created":"2021-11-11 02:41:41 ",
+  "@odata.context":"/redfish/v1/$metadata#Managers/Members/$entity/LogServices/Members/$entity/Entries/Members/$entity",
+  "@odata.id":"/redfish/v1/Managers/CIMC/LogServices/SEL/Entries/127",
+  "Severity":"Normal"
+}

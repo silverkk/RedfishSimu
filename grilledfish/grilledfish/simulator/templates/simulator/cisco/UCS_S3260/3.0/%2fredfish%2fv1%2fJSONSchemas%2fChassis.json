@@ -1,0 +1,15 @@
+{
+  "Name":"Chassis Schema File",
+  "Id":"Chassis",
+  "@odata.context":"/redfish/v1/$metadata#JSONSchemas/Members/$entity",
+  "Languages":["en"],
+  "Description":"Chassis Schema File Location",
+  "@odata.type":"#JSONSchemas.1.0.0.JsonSchemaFileCollection",
+  "Schema":"Chassis",
+  "@odata.id":"/redfish/v1/JSONSchemas/Chassis",
+  "Location":[{
+      "PublicationUri":"http://redfish.dmtf.org/schemas/v1/Chassis.json",
+      "Language":"en",
+      "Uri":"/redfish/v1/Chassis.json"
+    }]
+}

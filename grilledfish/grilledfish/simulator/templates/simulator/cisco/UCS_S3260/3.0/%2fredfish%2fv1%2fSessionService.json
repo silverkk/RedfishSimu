@@ -1,0 +1,18 @@
+{
+  "Name":"Session Service",
+  "Status":{
+    "State":"Enabled",
+    "HealthRollup":"Ok",
+    "Health":"Ok"
+  },
+  "Id":"SessionService",
+  "ServiceEnabled":true,
+  "@odata.context":"/redfish/v1/$metadata#SessionService",
+  "Description":"Session Service",
+  "SessionTimeout":1800,
+  "Sessions":{
+    "@odata.id":"/redfish/v1/SessionService/Sessions"
+  },
+  "@odata.id":"/redfish/v1/SessionService",
+  "@odata.type":"#SessionService.1.0.0"
+}
