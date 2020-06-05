@@ -1,0 +1,159 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#ComputerSystem.ComputerSystem",
+    "@odata.id": "/redfish/v1/Systems/System.Embedded.1",
+    "@odata.type": "#ComputerSystem.v1_4_0.ComputerSystem",
+    "Actions": {
+        "#ComputerSystem.Reset": {
+            "ResetType@Redfish.AllowableValues": [
+                "On",
+                "ForceOff",
+                "GracefulRestart",
+                "GracefulShutdown",
+                "PushPowerButton",
+                "Nmi"
+            ],
+            "target": "/redfish/v1/Systems/System.Embedded.1/Actions/ComputerSystem.Reset"
+        }
+    },
+    "AssetTag": "Rack2-1",
+    "Bios": {
+        "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Bios"
+    },
+    "BiosVersion": "1.1.2",
+    "Boot": {
+        "BootSourceOverrideEnabled": "Once",
+        "BootSourceOverrideMode": "UEFI",
+        "BootSourceOverrideTarget": "None",
+        "BootSourceOverrideTarget@Redfish.AllowableValues": [
+            "None",
+            "Pxe",
+            "Floppy",
+            "Cd",
+            "Hdd",
+            "BiosSetup",
+            "Utilities",
+            "UefiTarget",
+            "SDCard",
+            "UefiHttp"
+        ],
+        "UefiTargetBootSourceOverride": ""
+    },
+    "Description": "Computer System which represents a machine (physical or virtual) and the local resources such as memory, cpu and other devices that can be accessed from that machine.",
+    "EthernetInterfaces": {
+        "@odata.id": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces"
+    },
+    "HostName": "MINWINPC",
+    "HostingRoles": [],
+    "HostingRoles@odata.count": 0,
+    "Id": "System.Embedded.1",
+    "IndicatorLED": "Off",
+    "Links": {
+        "Chassis": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+            }
+        ],
+        "Chassis@odata.count": 1,
+        "CooledBy": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Fans/0x17.Fan.Embedded.1"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Fans/0x17.Fan.Embedded.2"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Fans/0x17.Fan.Embedded.3"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Fans/0x17.Fan.Embedded.4"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Fans/0x17.Fan.Embedded.5"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Fans/0x17.Fan.Embedded.6"
+            }
+        ],
+        "CooledBy@odata.count": 6,
+        "ManagedBy": [
+            {
+                "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1"
+            }
+        ],
+        "ManagedBy@odata.count": 1,
+        "Oem": {
+            "DELL": {
+                "@odata.type": "#DellComputerSystem.v1_0_0.DellComputerSystem",
+                "BootOrder": {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/BootSources"
+                }
+            }
+        },
+        "PoweredBy": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Power/PowerSupplies/PSU.Slot.1"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Power/PowerSupplies/PSU.Slot.2"
+            }
+        ],
+        "PoweredBy@odata.count": 2
+    },
+    "Manufacturer": "Dell Inc.",
+    "Memory": {
+        "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Memory"
+    },
+    "MemorySummary": {
+        "MemoryMirroring": "System",
+        "Status": {
+            "Health": "OK",
+            "HealthRollup": "OK",
+            "State": "Enabled"
+        },
+        "TotalSystemMemoryGiB": 14.901168
+    },
+    "Model": "PowerEdge R940xa",
+    "Name": "System",
+    "NetworkInterfaces": {
+        "@odata.id": "/redfish/v1/Systems/System.Embedded.1/NetworkInterfaces"
+    },
+    "PartNumber": "08XR9MX20",
+    "PowerState": "On",
+    "ProcessorSummary": {
+        "Count": 4,
+        "Model": "Intel(R) Xeon(R) Gold 5118 CPU @ 2.30GHz",
+        "Status": {
+            "Health": "OK",
+            "HealthRollup": "OK",
+            "State": "Enabled"
+        }
+    },
+    "Processors": {
+        "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors"
+    },
+    "SKU": "{{ machineInfo.mac }}",
+    "SecureBoot": {
+        "@odata.id": "/redfish/v1/Systems/System.Embedded.1/SecureBoot"
+    },
+    "SerialNumber": "CNIVC007AH0048",
+    "SimpleStorage": {
+        "@odata.id": "/redfish/v1/Systems/System.Embedded.1/SimpleStorage/Controllers"
+    },
+    "Status": {
+        "Health": "{{machineInfo.healthInfo.system}}",
+        "HealthRollup": "Critical",
+        "State": "Enabled"
+    },
+    "Storage": {
+        "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Storage"
+    },
+    "SystemType": "Physical",
+    "TrustedModules": [
+        {
+            "Status": {
+                "State": "Disabled"
+            }
+        }
+    ],
+    "UUID": "4c4c4544-0034-3010-8052-b9c04f303031"
+}

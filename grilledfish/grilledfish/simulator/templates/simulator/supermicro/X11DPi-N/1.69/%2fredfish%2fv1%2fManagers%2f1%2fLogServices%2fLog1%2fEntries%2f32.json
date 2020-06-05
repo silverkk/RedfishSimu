@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#LogEntry.LogEntry","@odata.type":"#LogEntry.v1_0_0.LogEntry","@odata.id":"/redfish/v1/Managers/1/LogServices/Log1/Entries/32","Id":"32","Name":"Maintenance Event Log Entry 32","Severity":"OK","Created":"2018-09-27T06:10:25+00:00","Interface":"Web","User":"ADMIN(ADMIN)","Source":"10.2.2.148","Description":"Web login was successful."}

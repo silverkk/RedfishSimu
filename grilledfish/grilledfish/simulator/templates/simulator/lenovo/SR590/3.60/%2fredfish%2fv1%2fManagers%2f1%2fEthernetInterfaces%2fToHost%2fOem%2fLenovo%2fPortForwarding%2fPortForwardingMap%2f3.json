@@ -1,0 +1,1 @@
+{"Id":"3","ExternalPort":0,"@odata.type":"#LenovoPortForwardingMap.v1_0_0.LenovoPortForwardingMap","@odata.id":"/redfish/v1/Managers/1/EthernetInterfaces/ToHost/Oem/Lenovo/PortForwarding/PortForwardingMap/3","Type":"EthtoUSB","@odata.etag":"\"c4ec7d9d309ce9676fb4af7b57a2e3d2\"","Name":"Port Forwarding Map","USBPort":0}

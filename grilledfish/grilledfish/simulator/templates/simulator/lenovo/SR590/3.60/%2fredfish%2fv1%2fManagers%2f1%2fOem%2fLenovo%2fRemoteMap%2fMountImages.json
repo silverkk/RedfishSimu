@@ -1,0 +1,1 @@
+{"Members":[],"@odata.type":"#LenovoRemoteMapMediaCollection.LenovoRemoteMapMediaCollection","@odata.id":"/redfish/v1/Managers/1/Oem/Lenovo/RemoteMap/MountImages","Name":"LenovoRemoteMapMediaCollection","@odata.etag":"\"51e4e57a3b49426abe6247f53db35264\"","Members@odata.count":0,"Description":"A collection of RemoteMapMedia resource instances."}

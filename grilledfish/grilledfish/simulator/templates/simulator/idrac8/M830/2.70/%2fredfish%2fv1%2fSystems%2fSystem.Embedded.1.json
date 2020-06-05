@@ -1,0 +1,226 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#ComputerSystem.ComputerSystem",
+    "@odata.id": "/redfish/v1/Systems/System.Embedded.1",
+    "@odata.type": "#ComputerSystem.v1_5_0.ComputerSystem",
+    "Actions": {
+        "#ComputerSystem.Reset": {
+            "ResetType@Redfish.AllowableValues": [
+                "On",
+                "ForceOff",
+                "ForceRestart",
+                "GracefulShutdown",
+                "PushPowerButton",
+                "Nmi"
+            ],
+            "target": "/redfish/v1/Systems/System.Embedded.1/Actions/ComputerSystem.Reset"
+        }
+    },
+    "AssetTag": "MM883300",
+    "Bios": {
+        "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Bios"
+    },
+    "BiosVersion": "2.7.1",
+    "Boot": {
+        "BootOptions": {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/BootOptions"
+        },
+        "BootOrder": [
+            "Unknown.Unknown.1-1",
+            "Unknown.Unknown.2-1"
+        ],
+        "BootOrder@odata.count": 2,
+        "BootSourceOverrideEnabled": "Once",
+        "BootSourceOverrideMode": "Legacy",
+        "BootSourceOverrideTarget": "None",
+        "BootSourceOverrideTarget@Redfish.AllowableValues": [
+            "None",
+            "Pxe",
+            "Cd",
+            "Floppy",
+            "Hdd",
+            "BiosSetup",
+            "Utilities",
+            "UefiTarget",
+            "SDCard",
+            "UefiHttp"
+        ],
+        "UefiTargetBootSourceOverride": ""
+    },
+    "Description": "Computer System which represents a machine (physical or virtual) and the local resources such as memory, cpu and other devices that can be accessed from that machine.",
+    "EthernetInterfaces": {
+        "@odata.id": "/redfish/v1/Systems/System.Embedded.1/EthernetInterfaces"
+    },
+    "HostName": "MINWINPC",
+    "HostWatchdogTimer": {
+        "FunctionEnabled": false,
+        "Status": {
+            "State": "Disabled"
+        },
+        "TimeoutAction": "None"
+    },
+    "Id": "System.Embedded.1",
+    "IndicatorLED": "Off",
+    "Links": {
+        "Chassis": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+            }
+        ],
+        "Chassis@odata.count": 1,
+        "CooledBy": [],
+        "CooledBy@odata.count": 0,
+        "ManagedBy": [
+            {
+                "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1"
+            }
+        ],
+        "ManagedBy@odata.count": 1,
+        "Oem": {
+            "DELL": {
+                "@odata.type": "#DellComputerSystem.v1_0_0.DellComputerSystem",
+                "BootOrder": {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/BootSources"
+                }
+            }
+        },
+        "PoweredBy": [],
+        "PoweredBy@odata.count": 0
+    },
+    "Manufacturer": "Dell Inc.",
+    "Memory": {
+        "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Memory"
+    },
+    "MemorySummary": {
+        "Status": {
+            "Health": "OK",
+            "HealthRollup": "OK",
+            "State": "Enabled"
+        },
+        "TotalSystemMemoryGiB": 3.7252920
+    },
+    "Model": "PowerEdge M830",
+    "Name": "System",
+    "NetworkInterfaces": {
+        "@odata.id": "/redfish/v1/Systems/System.Embedded.1/NetworkInterfaces"
+    },
+    "PCIeDevices": [
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeDevice/9-0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeDevice/0-0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeDevice/0-29"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeDevice/0-31"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeDevice/0-23"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeDevice/1-0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeDevice/0-26"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeDevice/0-3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeDevice/0-28"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeDevice/128-2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeDevice/128-3"
+        }
+    ],
+    "PCIeDevices@odata.count": 11,
+    "PCIeFunctions": [
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeFunction/9-0-0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeFunction/0-0-0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeFunction/0-29-0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeFunction/0-31-0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeFunction/0-23-4"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeFunction/1-0-0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeFunction/1-0-1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeFunction/0-26-0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeFunction/0-31-2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeFunction/0-3-0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeFunction/0-3-2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeFunction/0-28-7"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeFunction/0-28-0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeFunction/128-2-0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeFunction/128-3-0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/PCIeFunction/128-3-2"
+        }
+    ],
+    "PCIeFunctions@odata.count": 16,
+    "PartNumber": "0W4W8NX02",
+    "PowerState": "On",
+    "ProcessorSummary": {
+        "Count": 2,
+        "LogicalProcessorCount": 40,
+        "Model": "Genuine Intel(R) CPU @ 2.10GHz",
+        "Status": {
+            "Health": "OK",
+            "HealthRollup": "OK",
+            "State": "Enabled"
+        }
+    },
+    "Processors": {
+        "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors"
+    },
+    "SKU": "{{ machineInfo.mac }}",
+    "SecureBoot": {
+        "@odata.id": "/redfish/v1/Systems/System.Embedded.1/SecureBoot"
+    },
+    "SerialNumber": "CN7016348B003J",
+    "SimpleStorage": {
+        "@odata.id": "/redfish/v1/Systems/System.Embedded.1/SimpleStorage/Controllers"
+    },
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.system }}",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    },
+    "Storage": {
+        "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Storage"
+    },
+    "SystemType": "Physical",
+    "UUID": "4c4c4544-0050-5410-8043-cdc04f343031"
+}

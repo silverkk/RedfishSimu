@@ -1,0 +1,28 @@
+{
+    "@odata.type": "#Triggers.v1_1_0.Triggers",
+    "Id": "NVMeCriticalTrigger",
+    "Name":"Trigger on NVMe  critical errors",
+    "Description": "Trigger when an OEM event is raised",
+    "MetricType": "Discrete",
+    "TriggerActions": [
+        "RedfishMetricReport"
+    ],
+    "DiscreteTriggerCondition": "Specified",
+    "DiscreteTriggers": [
+        {
+            "Value": "iDRAC.1.6.PDR117",
+            "Name": "The PCIe solid state device has turned off because the critical temperature threshold is exceeded.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        }
+    ],
+    "Links": {
+    	"MetricReportDefinitions": [
+    	{
+           "@odata.id": "/redfish/v1/TelemetryService/MetricReportDefinitions/NVMeSMARTData"
+    	}
+    	]
+    },
+    "@odata.context": "/redfish/v1/$metadata#Triggers.Triggers",
+    "@odata.id": "/redfish/v1/TelemetryService/Triggers/NVMeCriticalTrigger"
+}

@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#Managers/Members/1/FederationPeers/Members/$entity","@odata.id":"/redfish/v1/Managers/1/FederationPeers/DEFAULT/","@odata.type":"#HpiLOFederationPeers.1.0.0.HpiLOFederationPeers","Id":"DEFAULT","Name":"DEFAULT","Type":"HpiLOFederationPeers.1.0.0","links":{"self":{"href":"/redfish/v1/Managers/1/FederationPeers/DEFAULT/"}}}

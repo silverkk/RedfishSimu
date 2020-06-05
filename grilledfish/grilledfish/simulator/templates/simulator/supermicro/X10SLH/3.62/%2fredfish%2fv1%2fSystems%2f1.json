@@ -1,0 +1,102 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#ComputerSystem.ComputerSystem",
+    "@odata.type": "#ComputerSystem.v1_3_0.ComputerSystem",
+    "@odata.id": "/redfish/v1/Systems/1",
+    "Id": "1",
+    "Name": "System",
+    "Description": "Description of server",
+    "Status": {
+        "State": "Enabled",
+        "Health": "{{ machineInfo.healthInfo.system }}"
+    },
+    "SerialNumber": "9000121847",
+    "PartNumber": " ",
+    "SystemType": "Physical",
+    "BiosVersion": "3.0",
+    "Manufacturer": "Supermicro",
+    "Model": "X10SLH-F/X10SLM+-F",
+    "SKU": "To be filled by O.E.M.",
+    "UUID": "00000000-0000-0000-0000-002590D4DEB2",
+    "ProcessorSummary": {
+        "Count": 2,
+        "Model": "",
+        "Status": {
+            "State": "Enabled",
+            "Health": "OK"
+        }
+    },
+    "MemorySummary": {
+        "TotalSystemMemoryGiB": 4,
+        "Status": {
+            "State": "Enabled",
+            "Health": "OK"
+        }
+    },
+    "IndicatorLED": "Off",
+    "PowerState": "On",
+    "Boot": {
+        "BootSourceOverrideEnabled": "Disabled",
+        "BootSourceOverrideTarget": "None",
+        "BootSourceOverrideTarget@Redfish.AllowableValues": [
+            "None",
+            "Pxe",
+            "Hdd",
+            "Diags",
+            "Cd",
+            "BiosSetup",
+            "FloppyRemovableMedia",
+            "UsbKey",
+            "UsbHdd",
+            "UsbFloppy",
+            "UsbCd",
+            "UefiUsbKey",
+            "UefiCd",
+            "UefiHdd",
+            "UefiUsbHdd",
+            "UefiUsbCd"
+        ]
+    },
+    "Processors": {
+        "@odata.id": "/redfish/v1/Systems/1/Processors"
+    },
+    "EthernetInterfaces": {
+        "@odata.id": "/redfish/v1/Systems/1/EthernetInterfaces"
+    },
+    "SimpleStorage": {
+        "@odata.id": "/redfish/v1/Systems/1/SimpleStorage"
+    },
+    "Storage": {
+        "@odata.id": "/redfish/v1/Systems/1/Storage"
+    },
+    "LogServices": {
+        "@odata.id": "/redfish/v1/Systems/1/LogServices"
+    },
+    "Bios": {},
+    "Links": {
+        "Chassis": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/1"
+            }
+        ],
+        "ManagedBy": [
+            {
+                "@odata.id": "/redfish/v1/Managers/1"
+            }
+        ],
+        "Oem": {}
+    },
+    "Actions": {
+        "#ComputerSystem.Reset": {
+            "target": "/redfish/v1/Systems/1/Actions/ComputerSystem.Reset",
+            "ResetType@Redfish.AllowableValues": [
+                "On",
+                "ForceOff",
+                "GracefulShutdown",
+                "GracefulRestart",
+                "ForceRestart",
+                "Nmi",
+                "ForceOn"
+            ]
+        }
+    }
+}

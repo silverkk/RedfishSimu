@@ -1,0 +1,1 @@
+{"@odata.context":"\/redfish\/v1\/$metadata#ActionInfo.ActionInfo","@odata.id":"\/redfish\/v1\/Chassis\/1\/Power\/ResetHistoryDataActionInfo","@odata.type":"#ActionInfo.v1_0_0.ActionInfo","Parameters":[{"Name":"IndicatorLED","Required":true,"DataType":"String","AllowableValues":["Lit","Off","Blinking"]},{"Name":"Duration","Required":false,"DataType":"Number"}],"Oem":{}}

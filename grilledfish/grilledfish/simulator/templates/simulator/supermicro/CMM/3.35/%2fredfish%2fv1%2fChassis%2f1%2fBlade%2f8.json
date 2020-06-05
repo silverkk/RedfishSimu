@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#BladeNumber.BladeNumber","@odata.type":"#BladeNumber.BladeNumber","@odata.id":"/redfish/v1/Chassis/1/Blade/8","Id":"8","Name":"Blade A8","Location":"Blade A8","State":"Present","BoardModel":"B11SRE-CPU-TF","Members":[{"@odata.id":"/redfish/v1/Chassis/1/Blade/8/Node"}]}

@@ -1,0 +1,28 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Processor.Processor",
+    "@odata.type": "#Processor.v1_0_0.Processor",
+    "@odata.id": "/redfish/v1/Systems/1/Processors/1",
+    "Id": "1",
+    "Name": "Processor1",
+    "Description": "Processor",
+    "Socket": "CPU1",
+    "Manufacturer": "Intel(R) Corporation",
+    "Model": "Intel(R) Xeon(R) Gold 5120T CPU @ 2.20GHz",
+    "MaxSpeedMHz": 4000,
+    "TotalCores": 14,
+    "TotalThreads": 28,
+    "ProcessorType": "CPU",
+    "ProcessorArchitecture": "x86",
+    "InstructionSet": "x86-64",
+    "ProcessorId": {
+        "VendorId": "GenuineIntel",
+        "IdentificationRegisters": "0xBFEBFBFF00050654",
+        "EffectiveFamily": "0x6",
+        "EffectiveModel": "0x55",
+        "Step": "0x4"
+    },
+    "Status": {
+        "State": "Enabled",
+        "Health": "{{ machineInfo.healthInfo.Processor }}"
+    }
+}

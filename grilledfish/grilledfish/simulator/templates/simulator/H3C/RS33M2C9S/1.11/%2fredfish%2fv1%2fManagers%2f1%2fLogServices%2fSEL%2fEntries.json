@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#LogEntryCollection.LogEntryCollection","@odata.etag":"W/\"1578648455\"","@odata.id":"/redfish/v1/Managers/1/LogServices/SEL/Entries","@odata.type":"#LogEntryCollection.LogEntryCollection","Description":"Collection of entries for this log service","Members":[],"Members@odata.count":0,"Name":"Log Service Entries Collection"}

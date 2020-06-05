@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#VirtualMedia.VirtualMedia(NotConnected,Connected,Name,Id)","@odata.etag":"W/\"1578648229\"","@odata.id":"/redfish/v1/Managers/1/VirtualMedia/CD","@odata.type":"#VirtualMedia.v1_0_3.VirtualMedia","Connected":[],"Id":"CD","Name":"VirtualMedia","NotConnected":[]}

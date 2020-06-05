@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#Role.Role(*)","@odata.etag":"W/\"1587030924\"","@odata.id":"/redfish/v1/AccountService/Roles/User","@odata.type":"#Role.v1_2_1.Role","AssignedPrivileges":["Login","ConfigureSelf"],"Description":"ReadOnlyUser User Role","Id":"User","IsPredefined":true,"Name":"User Role","OemPrivileges":["OemKvm","OemVemdia","OemWeb","OemIPMI"]}

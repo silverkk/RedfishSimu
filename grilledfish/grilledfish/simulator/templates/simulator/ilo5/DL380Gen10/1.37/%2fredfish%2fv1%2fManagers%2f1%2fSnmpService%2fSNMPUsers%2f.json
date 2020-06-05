@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#HpeSNMPUsersCollection.HpeSNMPUsersCollection","@odata.etag":"W/\"A3A6BF43\"","@odata.id":"/redfish/v1/Managers/1/SnmpService/SNMPUsers/","@odata.type":"#HpeSNMPUsersCollection.HpeSNMPUsersCollection","Description":"SNMPv3 Users Collection view","Name":"SNMPv3 User Collection","Members@odata.count":0}

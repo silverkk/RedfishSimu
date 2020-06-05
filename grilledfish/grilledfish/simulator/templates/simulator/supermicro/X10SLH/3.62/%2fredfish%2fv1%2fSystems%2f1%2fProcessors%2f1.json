@@ -1,0 +1,28 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Processor.Processor",
+    "@odata.type": "#Processor.v1_0_0.Processor",
+    "@odata.id": "/redfish/v1/Systems/1/Processors/1",
+    "Id": "1",
+    "Name": "Processor",
+    "Description": "Processor",
+    "Socket": "CPU",
+    "Manufacturer": "Intel",
+    "Model": "Intel(R) Celeron(R) CPU G1820T @ 2.40GHz",
+    "MaxSpeedMHz": 3800,
+    "TotalCores": 2,
+    "TotalThreads": 2,
+    "ProcessorType": "CPU",
+    "ProcessorArchitecture": "x86",
+    "InstructionSet": "x86-64",
+    "ProcessorId": {
+        "VendorId": "GenuineIntel",
+        "IdentificationRegisters": "0xBFEBFBFF000306C3",
+        "EffectiveFamily": "0x6",
+        "EffectiveModel": "0x3C",
+        "Step": "0x3"
+    },
+    "Status": {
+        "State": "Enabled",
+        "Health": "{{ machineInfo.healthInfo.Processor }}"
+    }
+}

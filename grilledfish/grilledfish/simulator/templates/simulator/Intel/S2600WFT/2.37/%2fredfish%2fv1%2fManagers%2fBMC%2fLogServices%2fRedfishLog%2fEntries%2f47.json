@@ -1,0 +1,1 @@
+{"@odata.id":"/redfish/v1/Managers/BMC/LogServices/RedfishLog/Entries/47","Id":"47","Name":"Redfish Log Entry 47","EntryType":"Oem","Created":"2020-04-25T11:05:31+00:00","Message":"Priority:6 login failed: dcmscan","@odata.type":"#LogEntry.v1_4_2.LogEntry","@odata.context":"/redfish/v1/$metadata#LogEntry.LogEntry"}

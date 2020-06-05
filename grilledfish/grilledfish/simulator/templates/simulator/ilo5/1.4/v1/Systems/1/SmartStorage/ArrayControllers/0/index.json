@@ -1,0 +1,64 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeSmartStorageArrayController.HpeSmartStorageArrayController",
+    "@odata.etag": "W/\"695099F7\"",
+    "@odata.id": "/redfish/v1/Systems/1/SmartStorage/ArrayControllers/0",
+    "@odata.type": "#HpeSmartStorageArrayController.v2_2_0.HpeSmartStorageArrayController",
+    "Id": "0",
+    "AdapterType": "SmartArray",
+    "BackupPowerSourceStatus": "Present",
+    "CacheMemorySizeMiB": 2048,
+    "CacheModuleSerialNumber": "               ",
+    "CacheModuleStatus": {
+        "Health": "OK"
+    },
+    "ControllerBoard": {
+        "Status": {
+            "Health": "OK"
+        }
+    },
+    "ControllerPartNumber": "836260-001",
+    "CurrentOperatingMode": "Mixed",
+    "Description": "HPE Smart Storage Array Controller View",
+    "DriveWriteCache": "Disabled",
+    "EncryptionCryptoOfficerPasswordSet": false,
+    "EncryptionCspTestPassed": true,
+    "EncryptionEnabled": false,
+    "EncryptionFwLocked": false,
+    "EncryptionHasLockedVolumesMissingBootPassword": false,
+    "EncryptionMixedVolumesEnabled": false,
+    "EncryptionSelfTestPassed": true,
+    "EncryptionStandaloneModeEnabled": false,
+    "ExternalPortCount": 0,
+    "FirmwareVersion": {
+        "Current": {
+            "VersionString": "1.04"
+        }
+    },
+    "HardwareRevision": "B",
+    "InternalPortCount": 2,
+    "Links": {
+        "LogicalDrives": {
+            "@odata.id": "/redfish/v1/Systems/1/SmartStorage/ArrayControllers/0/LogicalDrives"
+        },
+        "StorageEnclosures": {
+            "@odata.id": "/redfish/v1/Systems/1/SmartStorage/ArrayControllers/0/StorageEnclosures"
+        },
+        "PhysicalDrives": {
+            "@odata.id": "/redfish/v1/Systems/1/SmartStorage/ArrayControllers/0/DiskDrives"
+        },
+        "UnconfiguredDrives": {
+            "@odata.id": "/redfish/v1/Systems/1/SmartStorage/ArrayControllers/0/UnconfiguredDrives"
+        }
+    },
+    "Location": "Slot 0",
+    "LocationFormat": "PCISlot",
+    "Model": "HPE Smart Array P408i-a SR Gen10",
+    "Name": "HpeSmartStorageArrayController",
+    "ReadCachePercent": 10,
+    "SerialNumber": "PEYHC0ARH88049 ",
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.raid }}",
+        "State": "Enabled"
+    },
+    "WriteCacheWithoutBackupPowerEnabled": false
+}

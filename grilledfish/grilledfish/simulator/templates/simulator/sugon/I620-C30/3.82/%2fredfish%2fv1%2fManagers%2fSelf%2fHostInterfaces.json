@@ -1,0 +1,1 @@
+{ "error": { "code": "Base.1.0.0.UrlError", "message": "instance is not Self", "@Message.ExtendedInfo": [ { "@odata.type": "#Message.v1_0_5.Message", "Message": "instance is not Self", "MessageId": "Base.1.0.0.UrlError", "Resolution": "please check your url instance", "Severity": "Critical", "MessageArgs": [ ], "RelatedProperties": [ ] } ] } }

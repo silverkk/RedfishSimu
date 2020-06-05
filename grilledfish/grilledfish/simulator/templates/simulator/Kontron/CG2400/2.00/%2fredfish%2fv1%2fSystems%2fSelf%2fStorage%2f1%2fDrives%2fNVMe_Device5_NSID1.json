@@ -1,0 +1,40 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Drive.Drive",
+    "@odata.etag": "\"1579113260\"",
+    "@odata.id": "/redfish/v1/Systems/Self/Storage/1/Drives/NVMe_Device5_NSID1",
+    "@odata.type": "#Drive.v1_6_0.Drive",
+    "BlockSizeBytes": 512,
+    "CapableSpeedGbs": 8,
+    "CapacityBytes": 512110190592,
+    "EncryptionAbility": "SelfEncryptingDrive",
+    "EncryptionStatus": "Unlocked",
+    "FailurePredicted": false,
+    "HotspareType": "Chassis",
+    "Id": "NVMe_Device5_NSID1",
+    "IndicatorLED": "Blinking",
+    "Links": {
+        "Chassis": {
+            "@odata.id": "/redfish/v1/Chassis/Self"
+        },
+        "Endpoints@odata.count": 0,
+        "Volumes": [{
+            "@odata.id": "/redfish/v1/Systems/Self/Storage/1/Volumes/VOL0"
+        }],
+        "Volumes@odata.count": 1
+    },
+    "Manufacturer": "N/A",
+    "MediaType": "SSD",
+    "Model": "INTEL SSDPEKKA512G8",
+    "Name": "NVMe_Device5_NSID1",
+    "NegotiatedSpeedGbs": 8,
+    "PredictedMediaLifeLeftPercent": 100,
+    "Protocol": "NVMe",
+    "Revision": "NVMe Spec v1.3",
+    "RotationSpeedRPM": 0,
+    "SerialNumber": "BTHH91840U9M512D",
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.storage }}",
+        "State": "Enabled"
+    },
+    "StatusIndicator": "OK"
+}

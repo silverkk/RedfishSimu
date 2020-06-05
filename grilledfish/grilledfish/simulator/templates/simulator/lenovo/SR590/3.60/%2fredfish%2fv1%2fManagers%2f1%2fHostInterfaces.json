@@ -1,0 +1,1 @@
+{"Members":[{"@odata.id":"/redfish/v1/Managers/1/HostInterfaces/1"}],"@odata.type":"#HostInterfaceCollection.HostInterfaceCollection","@odata.id":"/redfish/v1/Managers/1/HostInterfaces","Name":"HostInterfaceCollection","@odata.etag":"\"2dd4cf7b2c26235b0ef0aceff15cdb5f\"","Members@odata.count":1,"Description":"A collection of HostInterface resource instances."}

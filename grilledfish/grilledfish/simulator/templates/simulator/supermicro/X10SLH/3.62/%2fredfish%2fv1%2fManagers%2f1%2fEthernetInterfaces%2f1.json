@@ -1,0 +1,56 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#EthernetInterface.EthernetInterface",
+    "@odata.type": "#EthernetInterface.v1_0_0.EthernetInterface",
+    "@odata.id": "/redfish/v1/Managers/1/EthernetInterfaces/1",
+    "Id": "1",
+    "Name": "EthernetInterface",
+    "Description": "Management Network Interface",
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK"
+    },
+    "InterfaceEnabled": true,
+    "MACAddress": "{{ machineInfo.mac }}",
+    "SpeedMbps": 1000,
+    "AutoNeg": true,
+    "FullDuplex": true,
+    "MTUSize": 1500,
+    "HostName": "ipmi-ast2400.example.com",
+    "VLAN": {
+        "VLANEnable": false,
+        "VLANId": 0
+    },
+    "IPv4Addresses": [
+        {
+            "Address": "10.1.102.120",
+            "SubnetMask": "255.255.255.0",
+            "AddressOrigin": "Static",
+            "Gateway": "10.1.102.1"
+        }
+    ],
+    "IPv6AddressPolicyTable": [
+        {
+            "Prefix": "::1/128",
+            "Precedence": 50,
+            "Label": 0
+        }
+    ],
+    "IPv6Addresses": [
+        {
+            "Address": "fe80::225:90ff:fed4:dd70",
+            "PrefixLength": 64,
+            "AddressOrigin": "SLAAC",
+            "AddressState": "Preferred"
+        }
+    ],
+    "IPv6StaticAddresses": [
+        {
+            "Address": "fe80::225:90ff:fed4:dd70",
+            "PrefixLength": 64
+        }
+    ],
+    "IPv6DefaultGateway": "fe80::225:90ff:fed4:dd70",
+    "NameServers": [
+        "62.68.194.42"
+    ]
+}

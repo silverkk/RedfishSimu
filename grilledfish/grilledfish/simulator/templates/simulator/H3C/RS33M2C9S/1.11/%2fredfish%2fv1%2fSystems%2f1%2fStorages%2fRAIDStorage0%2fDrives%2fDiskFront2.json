@@ -1,0 +1,31 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Drive.Drive(*)",
+    "@odata.etag": "W/\"1578648477\"",
+    "@odata.id": "/redfish/v1/Systems/1/Storages/RAIDStorage0/Drives/DiskFront2",
+    "@odata.type": "#Drive.v1_1_1.Drive",
+    "CapacityBytes": 250052995973.12,
+    "Id": "DiskFront2",
+    "Manufacturer": "ATA",
+    "MediaType": "HDD",
+    "Model": "ST250DM000-1BD14",
+    "Name": "DiskFront2",
+    "NegotiatedSpeedGbs": 6,
+    "Oem": {
+        "Public": {
+            "ConnectionID": 0,
+            "DriveNumberInBios": 2,
+            "DriveNumberInOS": 2,
+            "FirmwareStatus": "Ready",
+            "Panel": "Front 2",
+            "TemperatureCelsius": "28"
+        }
+    },
+    "PredictedMediaLifeLeftPercent": "null",
+    "Protocol": "SATA",
+    "Revision": "KC45",
+    "SerialNumber": "Z3TA1N8A",
+    "Status": {
+        "Health": "Unavailable",
+        "State": "Enabled"
+    }
+}

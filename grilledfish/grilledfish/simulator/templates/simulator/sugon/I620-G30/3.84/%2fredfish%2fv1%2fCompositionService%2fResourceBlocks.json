@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#ResourceBlockCollection.ResourceBlockCollection","@odata.etag":"W/\"1588927647\"","@odata.id":"/redfish/v1/CompositionService/ResourceBlocks","@odata.type":"#ResourceBlockCollection.ResourceBlockCollection","Description":"Collection of ResourceBlocks","Members":[],"Members@odata.count":0,"Name":"ResourceBlock Collection"}

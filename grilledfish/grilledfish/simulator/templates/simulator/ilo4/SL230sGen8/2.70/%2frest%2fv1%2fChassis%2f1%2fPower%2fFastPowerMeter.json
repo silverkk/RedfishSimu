@@ -1,0 +1,1 @@
+{"Messages":[{"MessageID":"iLO.0.10.NoSamples"}],"Type":"ExtendedError.1.0.0","error":{"@Message.ExtendedInfo":[{"MessageID":"iLO.0.10.NoSamples"}],"code":"iLO.0.10.ExtendedInfo","message":"See @Message.ExtendedInfo for more information."}}

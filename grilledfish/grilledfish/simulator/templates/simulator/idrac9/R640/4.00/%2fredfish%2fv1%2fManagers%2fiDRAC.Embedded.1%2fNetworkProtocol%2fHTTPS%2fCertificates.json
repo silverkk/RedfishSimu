@@ -1,0 +1,1 @@
+{"Description":"A Collection of Certificate resource instances.","Members@odata.count":0,"Members":[],"Name":"Certificate Collection","@odata.type":"#CertificateCollection.CertificateCollection","@odata.context":"/redfish/v1/$metadata#CertificateCollection.CertificateCollection","@odata.id":"/redfish/v1/Managers/iDRAC.Embedded.1/NetworkProtocol/HTTPS/Certificates"}

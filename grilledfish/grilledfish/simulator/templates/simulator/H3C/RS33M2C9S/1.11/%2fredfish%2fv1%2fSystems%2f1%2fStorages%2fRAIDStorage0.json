@@ -1,0 +1,51 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Storage.Storage(Drives,Drives@odata.count,StorageControllers,Name,StorageControllers@odata.count,Volumes,Id)",
+    "@odata.etag": "W/\"1578648455\"",
+    "@odata.id": "/redfish/v1/Systems/1/Storages/RAIDStorage0",
+    "@odata.type": "#Storage.v1_1_1.Storage",
+    "Drives": [
+        {
+            "@odata.id": "/redfish/v1/Systems/1/Storages/RAIDStorage0/Drives/DiskFront2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/1/Storages/RAIDStorage0/Drives/DiskFront3"
+        }
+    ],
+    "Drives@odata.count": 2,
+    "Id": "RAIDStorage0",
+    "Name": "RAIDStorage0",
+    "StorageControllers": [
+        {
+            "@odata.id": "/redfish/v1/Systems/1/Storages/RAIDStorage0#/StorageControllers/0",
+            "AssetTag": "HBA-H460-M1",
+            "FirmwareVersion": "1.98.0",
+            "Links": {
+                "@odata.count": 0
+            },
+            "Manufacturer": "H3C",
+            "MemberId": "0",
+            "Name": "HBA-H460-M1",
+            "Oem": {
+                "Public": {
+                    "BBUstate": "null",
+                    "JBODState": "null",
+                    "MemorySize": "null",
+                    "SupportedRAIDLevels": [
+                        "RAID0",
+                        "RAID1",
+                        "RAID10"
+                    ]
+                }
+            },
+            "SerialNumber": "02A3H0X1990B002X",
+            "Status": {
+                "Health": "{{ machineInfo.healthInfo.raid }}",
+                "State": "Enabled"
+            }
+        }
+    ],
+    "StorageControllers@odata.count": 1,
+    "Volumes": {
+        "@odata.id": "/redfish/v1/Systems/1/Storages/RAIDStorage0/Volumes"
+    }
+}

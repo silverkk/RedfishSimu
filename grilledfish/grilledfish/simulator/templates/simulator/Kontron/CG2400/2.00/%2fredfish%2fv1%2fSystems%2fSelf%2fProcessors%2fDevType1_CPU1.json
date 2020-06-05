@@ -1,0 +1,35 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Processor.Processor",
+    "@odata.etag": "\"1579711404\"",
+    "@odata.id": "/redfish/v1/Systems/Self/Processors/DevType1_CPU1",
+    "@odata.type": "#Processor.v1_5_0.Processor",
+    "AccelerationFunctions": {
+        "@odata.id": "/redfish/v1/Systems/Self/Processors/DevType1_CPU1/AccelerationFunctions"
+    },
+    "Id": "DevType1_CPU1",
+    "Links": {
+        "Chassis": {
+            "@odata.id": "/redfish/v1/Chassis/Self"
+        }
+    },
+    "Manufacturer": "Intel(R) Corporation",
+    "MaxSpeedMHz": 4000,
+    "Model": "Intel(R) Xeon(R) Gold 5218T CPU @ 2.10GHz, 4000 Mhz, 16 Core(s), 32 Logical Processor(s)",
+    "Name": "DevType1_CPU1",
+    "ProcessorArchitecture": "x86",
+    "ProcessorId": {
+        "EffectiveFamily": "Intel(R) Xeon(R) Gold 5218T CPU @ 2.10GHz"
+    },
+    "ProcessorType": "CPU",
+    "Socket": "CPU1",
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.Processor }}",
+        "State": "Enabled"
+    },
+    "SubProcessors": {
+        "@odata.id": "/redfish/v1/Systems/Self/Processors/DevType1_CPU1/SubProcessors"
+    },
+    "TotalCores": 16,
+    "TotalEnabledCores": 16,
+    "TotalThreads": 32
+}

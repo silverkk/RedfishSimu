@@ -1,0 +1,1 @@
+{ "@odata.context": "/redfish/v1/$metadata#UpdateService/FirmwareInventory/members/$entity", "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/BIOS", "@odata.type": "#SoftwareInventory.v1_0_0.SoftwareInventory", "Id": "BIOS", "Name": "BIOS", "Status": { "Status": "Enabled", "Health": "OK" }, "Version": "0AAAT224", "Updateable": true, "SoftwareId": "BIOS" }

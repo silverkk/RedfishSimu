@@ -1,0 +1,28 @@
+{
+    "@odata.type": "#Triggers.v1_1_0.Triggers",
+    "Id": "MEMWarnTrigger",
+    "Name":"Trigger on memory warnings",
+    "Description": "Trigger when an OEM event is raised",
+    "MetricType": "Discrete",
+    "TriggerActions": [
+        "RedfishMetricReport"
+    ],
+    "DiscreteTriggerCondition": "Specified",
+    "DiscreteTriggers": [
+        {
+            "Value": "iDRAC.1.6.MEM0701",
+            "Name": "Correctable memory error rate exceeded for .",
+            "Severity": "Warning",
+            "DwellTime": "PT0.001S"
+        }
+    ],
+    "Links": {
+    	"MetricReportDefinitions": [
+    	{
+           "@odata.id": "/redfish/v1/TelemetryService/MetricReportDefinitions/MemorySensor"
+    	}
+    	]
+    },
+    "@odata.context": "/redfish/v1/$metadata#Triggers.Triggers",
+    "@odata.id": "/redfish/v1/TelemetryService/Triggers/MEMWarnTrigger"
+}

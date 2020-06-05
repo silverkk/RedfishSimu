@@ -1,0 +1,1 @@
+{"Members":[],"@odata.type":"#LenovoAlertRecipientCollection.LenovoAlertRecipientCollection","@odata.id":"/redfish/v1/Managers/1/Oem/Lenovo/Recipients","Name":"LenovoAlertRecipientCollection","@odata.etag":"\"ca52bd928ddb473b76e9389aa1802f6d\"","Members@odata.count":0,"Description":"A collection of AlertRecipient resource instances."}

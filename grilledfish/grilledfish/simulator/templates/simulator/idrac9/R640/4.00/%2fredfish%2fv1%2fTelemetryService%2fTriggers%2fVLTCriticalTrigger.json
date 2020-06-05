@@ -1,0 +1,154 @@
+{
+    "@odata.type": "#Triggers.v1_1_0.Triggers",
+    "Id": "VLTCriticalTrigger",
+    "Name":"Trigger on system components voltage critical errors",
+    "Description": "Trigger when an OEM event is raised",
+    "MetricType": "Discrete",
+    "TriggerActions": [
+        "RedfishMetricReport"
+    ],
+    "DiscreteTriggerCondition": "Specified",
+    "DiscreteTriggers": [
+        {
+            "Value": "iDRAC.1.6.VLT0210",
+            "Name": "The memory module   voltage is outside of range.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.VLT0231",
+            "Name": "The mezzanine card   voltage is less than the lower critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.VLT0104",
+            "Name": "Processor module  voltage is outside of range.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.VLT0204",
+            "Name": "The system board  voltage is outside of range.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.VLT0209",
+            "Name": "The memory module voltage is greater than the upper critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.VLT0207",
+            "Name": "The memory module   voltage is less than the lower critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.VLT0219",
+            "Name": "The  voltage is less than the lower critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.VLT0203",
+            "Name": "The system board  voltage is greater than the upper critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.VLT0303",
+            "Name": "CPU   voltage is greater than the upper critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.VLT0234",
+            "Name": "The mezzanine card   voltage is outside of range.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.VLT0227",
+            "Name": "The memory module  voltage is greater than the upper critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.VLT0216",
+            "Name": "The disk drive bay  voltage is outside of range.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.VLT0201",
+            "Name": "The system board  voltage is less than the lower critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.VLT0233",
+            "Name": "The mezzanine card voltage is greater than the upper critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.VLT0225",
+            "Name": "The memory module  voltage is less than the lower critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.VLT0301",
+            "Name": "CPU   voltage is less than the lower critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.VLT0304",
+            "Name": "CPU   voltage is outside of range.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.VLT0222",
+            "Name": "The  voltage is outside of range.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.VLT0215",
+            "Name": "The disk drive bay voltage is greater than the upper critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.VLT0213",
+            "Name": "The disk drive bay  voltage is less than the lower critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.VLT0228",
+            "Name": "The memory module  voltage is outside of range.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.VLT0221",
+            "Name": "The  voltage is greater than the upper critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        }
+    ],
+    "Links": {
+    	"MetricReportDefinitions": [
+    	{
+           "@odata.id": "/redfish/v1/TelemetryService/MetricReportDefinitions/PSUMetrics"
+    	}
+    	]
+    },
+    "@odata.context": "/redfish/v1/$metadata#Triggers.Triggers",
+    "@odata.id": "/redfish/v1/TelemetryService/Triggers/VLTCriticalTrigger"
+}

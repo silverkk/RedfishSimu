@@ -1,0 +1,1 @@
+{"SupportsHotPlug":true,"@odata.id":"/redfish/v1/Chassis/1/Oem/Lenovo/Slots/3","Name":"LenovoSlot","ConnectorLayout":"Other","Number":"NVMe 0","@odata.type":"#LenovoSlot.v1_0_0.LenovoSlot","Id":"3","@odata.etag":"\"ae96bd02394efe25573ba4d748aea93a\"","MaxDataWidth":"4x or x4","Description":"This resource is used to represent slot information for a Redfish implementation."}

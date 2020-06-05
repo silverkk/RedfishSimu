@@ -1,0 +1,105 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Manager.Manager(*)",
+    "@odata.etag": "W/\"1587030897\"",
+    "@odata.id": "/redfish/v1/Managers/1",
+    "@odata.type": "#Manager.v1_4_0.Manager",
+    "Actions": {
+        "#Manager.Reset": {
+            "ResetType@Redfish.AllowableValues": [
+                "ForceRestart"
+            ],
+            "target": "/redfish/v1/Managers/1/Actions/Manager.Reset"
+        },
+        "#Manager.RollBack": {
+            "RollBackType@Redfish.AllowableValues": [
+                " "
+            ],
+            "target": "/redfish/v1/Managers/1/Actions/Manager.RollBack"
+        }
+    },
+    "CommandShell": {
+        "ConnectTypesSupported": [
+            "SSH"
+        ],
+        "MaxConcurrentSessions": 3,
+        "ServiceEnabled": true
+    },
+    "DateTime": "2020-04-16T17:54:57+08:00",
+    "DateTimeLocalOffset": "UTC+08:00",
+    "Description": "BMC",
+    "EthernetInterfaces": {
+        "@odata.id": "/redfish/v1/Managers/1/EthernetInterfaces"
+    },
+    "FirmwareVersion": "1.30.18 HDM V100R001B03D018",
+    "GraphicalConsole": {
+        "ConnectTypesSupported": [
+            "KVMIP"
+        ],
+        "MaxConcurrentSessions": 4,
+        "ServiceEnabled": true
+    },
+    "Id": "1",
+    "KvmService": {
+        "@odata.id": "/redfish/v1/Managers/1/KvmService"
+    },
+    "Links": {
+        "ManagerForChassis": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/1"
+            }
+        ],
+        "ManagerForServers": [
+            {
+                "@odata.id": "/redfish/v1/Systems/1"
+            }
+        ]
+    },
+    "LogServices": {
+        "@odata.id": "/redfish/v1/Managers/1/LogServices"
+    },
+    "ManagerType": "BMC",
+    "Model": "49162990",
+    "Name": "Manager",
+    "NetworkProtocol": {
+        "@odata.id": "/redfish/v1/Managers/1/NetworkProtocol"
+    },
+    "NtpService": {
+        "@odata.id": "/redfish/v1/Managers/1/NtpService"
+    },
+    "Oem": {
+        "Pubilc": {
+            "LanguageSet": "EN, CN"
+        }
+    },
+    "SerialConsole": {
+        "ConnectTypesSupported": [
+            "SSH"
+        ],
+        "MaxConcurrentSessions": 3,
+        "ServiceEnabled": true
+    },
+    "SerialInterfaces": {
+        "@odata.id": "/redfish/v1/Managers/1/SerialInterfaces"
+    },
+    "ServiceEntryPointUUID": "559c6b13-80e4-0496-e611-b7cf58a00c09",
+    "SmtpService": {
+        "@odata.id": "/redfish/v1/Managers/1/SmtpService"
+    },
+    "SnmpService": {
+        "@odata.id": "/redfish/v1/Managers/1/SnmpService"
+    },
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.Manager }}",
+        "State": "Enabled"
+    },
+    "SyslogService": {
+        "@odata.id": "/redfish/v1/Managers/1/SyslogService"
+    },
+    "UUID": "559c6b13-80e4-0496-e611-b7cf58a00c09",
+    "VirtualMedia": {
+        "@odata.id": "/redfish/v1/Managers/1/VirtualMedia"
+    },
+    "VncService": {
+        "@odata.id": "/redfish/v1/Managers/1/VncService"
+    }
+}

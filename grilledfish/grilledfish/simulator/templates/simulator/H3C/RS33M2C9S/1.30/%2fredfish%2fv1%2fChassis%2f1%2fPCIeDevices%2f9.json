@@ -1,0 +1,31 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#PCIeDevice.PCIeDevice",
+    "@odata.etag": "W/\"1587030959\"",
+    "@odata.id": "/redfish/v1/Chassis/1/PCIeDevices/9",
+    "@odata.type": "#PCIeDevice.v1_2_0.PCIeDevice",
+    "Description": "NIC-GE-4P-360T-L3",
+    "FirmwareVersion": "NULL",
+    "Id": "PCIeCard9",
+    "Links": {
+        "Chassis": {
+            "@odata.id": "/redfish/v1/Chassis/1"
+        },
+        "PCIeFunctions": {
+            "@odata.id": "/redfish/v1/Chassis/1/PCIeDevices/9/Functions/1"
+        }
+    },
+    "Manufacturer": "H3C",
+    "Model": "NIC-GE-4P-360T-L3",
+    "Name": "PCIeCard9",
+    "Oem": {
+        "Public": {
+            "DeviceLocator": "PCIe Card9",
+            "Position": 9
+        }
+    },
+    "SerialNumber": "02A3GKX1990B068W",
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.PcieDevice }}",
+        "State": "Enabled"
+    }
+}

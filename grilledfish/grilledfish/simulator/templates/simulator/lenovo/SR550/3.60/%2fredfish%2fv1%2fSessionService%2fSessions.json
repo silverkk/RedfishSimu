@@ -1,0 +1,1 @@
+{"@odata.id":"\/redfish\/v1\/SessionService\/Sessions","Name":"SessionCollection","@odata.context":"\/redfish\/v1\/$metadata#SessionCollection.SessionCollection","Members":[],"@odata.type":"#SessionCollection.SessionCollection","@odata.etag":"\"bcd702225eebbdab93c37e0c1abce3d5\"","Members@odata.count":0,"Description":"A collection of Session resource instances."}

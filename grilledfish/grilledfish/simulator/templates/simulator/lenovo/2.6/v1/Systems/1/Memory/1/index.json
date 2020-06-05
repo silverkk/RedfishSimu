@@ -1,0 +1,62 @@
+{
+    "SerialNumber": "14B73B7B",
+    "VolatileRegionSizeLimitMiB": null,
+    "MemoryDeviceType": "DDR4",
+    "Id": "1",
+    "Links": {
+        "Chassis": {
+            "@odata.id": "/redfish/v1/Chassis/1"
+        }
+    },
+    "MemoryMedia": [
+        "DRAM"
+    ],
+    "PartNumber": "9ASF1G72PZ-2G6B1",
+    "MemoryLocation": {
+        "Channel": 2,
+        "MemoryController": 0,
+        "Slot": 1,
+        "Socket": 1
+    },
+    "MemoryType": "DRAM",
+    "DeviceLocator": "DIMM 1",
+    "Name": "DIMM 1",
+    "Oem": {
+        "Lenovo": {
+            "@odata.type": "#LenovoMemory.v1_0_0.LenovoMemory",
+            "PN": ""
+        }
+    },
+    "@odata.type": "#Memory.v1_6_0.Memory",
+    "RankCount": 0,
+    "BaseModuleType": "RDIMM",
+    "OperatingSpeedMhz": 2666,
+    "VendorID": "Micron Technology",
+    "Regions": [],
+    "SecurityCapabilities": {},
+    "@odata.id": "/redfish/v1/Systems/1/Memory/1",
+    "@odata.context": "/redfish/v1/$metadata#Memory.Memory",
+    "CapacityMiB": 8192,
+    "Description": "This resource is used to represent a memory for a Redfish implementation.",
+    "SubsystemDeviceID": "0x0000",
+    "OperatingMemoryModes": [
+        "Volatile"
+    ],
+    "Status": {
+        "State": "Enabled",
+        "Health": "{{ machineInfo.healthInfo.memory }}"
+    },
+    "DataWidthBits": 64,
+    "DeviceID": "DIMM_1",
+    "SubsystemVendorID": "0x0000",
+    "@odata.etag": "\"1a322c2050419085ce19b63926439a56\"",
+    "Manufacturer": "Micron Technology",
+    "BusWidthBits": 72,
+    "PersistentRegionSizeLimitMiB": 1663838001,
+    "AllowedSpeedsMHz": [
+        2666
+    ],
+    "FunctionClasses": [
+        "Volatile"
+    ]
+}

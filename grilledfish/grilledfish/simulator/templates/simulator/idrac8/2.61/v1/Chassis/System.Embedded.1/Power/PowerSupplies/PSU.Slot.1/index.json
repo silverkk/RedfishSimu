@@ -1,0 +1,51 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Power.Power",
+    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Power/PowerSupplies/PSU.Slot.1",
+    "@odata.type": "#Power.v1_0_2.PowerSupply",
+    "FirmwareVersion": "00.24.6D",
+    "LastPowerOutputWatts": null,
+    "LineInputVoltage": null,
+    "LineInputVoltageType": "Unknown",
+    "MemberId": "PSU.Slot.1",
+    "Model": "PWR SPLY,750W,RDNT,DELTA      ",
+    "Name": "PS1 Status",
+    "PartNumber": "0G6W6KA00",
+    "PowerCapacityWatts": 750,
+    "PowerSupplyType": "AC",
+    "Redundancy": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Power/Redundancy/iDRAC.Embedded.1%23SystemBoardPSRedundancy",
+            "MaxNumSupported": 4,
+            "MemberId": "iDRAC.Embedded.1#SystemBoardPSRedundancy",
+            "MinNumNeeded": 2,
+            "Mode": "N+m",
+            "Name": "System Board PS Redundancy",
+            "RedundancySet": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Power/PowerSupplies/PSU.Slot.1"
+                },
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Power/PowerSupplies/PSU.Slot.2"
+                }
+            ],
+            "RedundancySet@odata.count": 2,
+            "Status": {
+                "Health": "Critical",
+                "State": "Enabled"
+            }
+        }
+    ],
+    "Redundancy@odata.count": 1,
+    "RelatedItem": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+        }
+    ],
+    "RelatedItem@odata.count": 1,
+    "SerialNumber": "CN1797249I0DRK",
+    "SparePartNumber": "0G6W6KA00",
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.Power }}",
+        "State": null
+    }
+}

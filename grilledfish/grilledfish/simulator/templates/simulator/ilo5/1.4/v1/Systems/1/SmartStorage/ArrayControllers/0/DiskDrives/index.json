@@ -1,0 +1,20 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeSmartStorageDiskDriveCollection.HpeSmartStorageDiskDriveCollection",
+    "@odata.etag": "W/\"E589C4BF\"",
+    "@odata.id": "/redfish/v1/Systems/1/SmartStorage/ArrayControllers/0/DiskDrives",
+    "@odata.type": "#HpeSmartStorageDiskDriveCollection.HpeSmartStorageDiskDriveCollection",
+    "Description": "HPE Smart Storage Disk Drives View",
+    "Name": "HpeSmartStorageDiskDrives",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/1/SmartStorage/ArrayControllers/0/DiskDrives/0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/1/SmartStorage/ArrayControllers/0/DiskDrives/1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/1/SmartStorage/ArrayControllers/0/DiskDrives/2"
+        }
+    ],
+    "Members@odata.count": 3
+}

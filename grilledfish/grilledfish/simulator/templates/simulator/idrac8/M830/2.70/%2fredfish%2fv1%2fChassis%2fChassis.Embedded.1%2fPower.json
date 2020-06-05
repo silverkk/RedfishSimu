@@ -1,0 +1,16 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Power.Power",
+    "@odata.id": "/redfish/v1/Chassis/Chassis.Embedded.1/Power",
+    "@odata.type": "#Power.v1_5_0.Power",
+    "Description": "Power",
+    "Id": "Power",
+    "Name": "Power",
+    "PowerControl": [],
+    "PowerControl@odata.count": 0,
+    "PowerSupplies": [],
+    "PowerSupplies@odata.count": 0,
+    "Redundancy": [],
+    "Redundancy@odata.count": 0,
+    "Voltages": [],
+    "Voltages@odata.count": 0
+}

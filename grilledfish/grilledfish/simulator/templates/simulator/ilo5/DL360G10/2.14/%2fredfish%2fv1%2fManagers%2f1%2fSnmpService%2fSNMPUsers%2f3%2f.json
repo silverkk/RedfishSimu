@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#HpeSNMPUser.HpeSNMPUser","@odata.etag":"W/\"41411F86\"","@odata.id":"/redfish/v1/Managers/1/SnmpService/SNMPUsers/3/","@odata.type":"#HpeSNMPUser.v2_1_0.HpeSNMPUser","Id":"3","AuthProtocol":"SHA","PrivacyProtocol":"AES","SecurityName":"oneview_30543644416b42646135546e","UserEngineID":null}

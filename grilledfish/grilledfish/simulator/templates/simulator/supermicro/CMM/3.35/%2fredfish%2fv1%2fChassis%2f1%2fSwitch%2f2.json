@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#SwitchStatus.SwitchStatus","@odata.type":"#SwitchStatus.SwitchStatus","@odata.id":"/redfish/v1/Chassis/1/Switch/2","Id":"2","Name":"Switch A2","Location":"Switch A2","State":"Absent"}

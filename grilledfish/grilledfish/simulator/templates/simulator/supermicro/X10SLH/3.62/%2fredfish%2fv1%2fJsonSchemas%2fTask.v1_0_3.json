@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#JsonSchemaFile.JsonSchemaFile","@odata.type":"#JsonSchemaFile.v1_0_0.JsonSchemaFile","@odata.id":"/redfish/v1/JsonSchemas/Task.v1_0_3","Id":"Task.v1_0_3","Name":"Task Schema File","Description":"Task Schema File Location","Languages":["en"],"Schema":"Task.v1_0_3","Location":[{"Language":"en","Uri":"/schemas/v1/Task.v1_0_3.json"}],"Oem":{}}

@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#ComputerSystemCollection.ComputerSystemCollection","@odata.etag":"W/\"1587030972\"","@odata.id":"/redfish/v1/Systems/1/kvm","@odata.type":"#ComputerSystemCollection.ComputerSystemCollection","H5_KVM_Authority":{"@odata.id":"/redfish/v1/Systems/1/kvm/K2EOXBAoZEO94Ke2"}}

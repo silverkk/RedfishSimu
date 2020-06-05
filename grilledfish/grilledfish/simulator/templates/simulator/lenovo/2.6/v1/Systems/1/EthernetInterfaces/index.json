@@ -1,0 +1,20 @@
+{
+    "@odata.id": "/redfish/v1/Systems/1/EthernetInterfaces",
+    "Members@odata.count": 3,
+    "@odata.context": "/redfish/v1/$metadata#EthernetInterfaceCollection.EthernetInterfaceCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/1/EthernetInterfaces/ToManager"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/1/EthernetInterfaces/NIC1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/1/EthernetInterfaces/NIC2"
+        }
+    ],
+    "@odata.type": "#EthernetInterfaceCollection.EthernetInterfaceCollection",
+    "@odata.etag": "\"6de4781eba4f77e9fc10de72ed1a3f5c\"",
+    "Name": "EthernetInterfaceCollection",
+    "Description": "A collection of EthernetInterface resource instances."
+}

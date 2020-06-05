@@ -1,0 +1,28 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Processor.Processor",
+    "@odata.type": "#Processor.v1_0_0.Processor",
+    "@odata.id": "/redfish/v1/Systems/1/Processors/1",
+    "Id": "1",
+    "Name": "Processor",
+    "Description": "Processor",
+    "Socket": "CPU",
+    "Manufacturer": "Intel(R) Corporation",
+    "Model": "Intel(R) Xeon(R) CPU E3-1230 v6 @ 3.50GHz",
+    "MaxSpeedMHz": 3900,
+    "TotalCores": 4,
+    "TotalThreads": 8,
+    "ProcessorType": "CPU",
+    "ProcessorArchitecture": "x86",
+    "InstructionSet": "x86-64",
+    "ProcessorId": {
+        "VendorId": "GenuineIntel",
+        "IdentificationRegisters": "0xBFEBFBFF000906E9",
+        "EffectiveFamily": "0x6",
+        "EffectiveModel": "0x9E",
+        "Step": "0x9"
+    },
+    "Status": {
+        "State": "Enabled",
+        "Health": "{{ machineInfo.healthInfo.Processor }}"
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "@odata.type": "#Triggers.v1_1_0.Triggers",
+    "Id": "TMPCpuWarnTrigger",
+    "Name":"Trigger on CPU temperature warnings",
+    "Description": "Trigger when an OEM event is raised",
+    "MetricType": "Discrete",
+    "TriggerActions": [
+        "RedfishMetricReport"
+    ],
+    "DiscreteTriggerCondition": "Specified",
+    "DiscreteTriggers": [
+        {
+            "Value": "iDRAC.1.6.TMP0202",
+            "Name": "CPU  temperature is greater than the upper warning threshold.",
+            "Severity": "Warning",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP0200",
+            "Name": "CPU  temperature is less than the lower warning threshold.",
+            "Severity": "Warning",
+            "DwellTime": "PT0.001S"
+        }
+    ],
+    "Links": {
+    	"MetricReportDefinitions": [
+    	{
+           "@odata.id": "/redfish/v1/TelemetryService/MetricReportDefinitions/CUPS"
+    	},
+    	{
+           "@odata.id": "/redfish/v1/TelemetryService/MetricReportDefinitions/CPUSensor"
+    	}
+    	]
+    },
+    "@odata.context": "/redfish/v1/$metadata#Triggers.Triggers",
+    "@odata.id": "/redfish/v1/TelemetryService/Triggers/TMPCpuWarnTrigger"
+}

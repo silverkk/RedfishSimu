@@ -1,0 +1,608 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Thermal.Thermal",
+    "@odata.etag": "\"1579711404\"",
+    "@odata.id": "/redfish/v1/Chassis/Self/Thermal",
+    "@odata.type": "#Thermal.v1_5_2.Thermal",
+    "Description": "Thermal sensor readings",
+    "Fans": [{
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Fans/71_0",
+        "MaxReadingRange": 12750,
+        "MemberId": "71_0",
+        "MinReadingRange": 0,
+        "Name": "Fan3 Speed",
+        "PhysicalContext": "Fan",
+        "Reading": 1400,
+        "ReadingUnits": "RPM",
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 71,
+        "Status": {
+            "Health": "{{ machineInfo.healthInfo.Fan }}",
+            "State": "Enabled"
+        }
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Fans/72_0",
+        "MaxReadingRange": 12750,
+        "MemberId": "72_0",
+        "MinReadingRange": 0,
+        "Name": "Fan4 Speed",
+        "PhysicalContext": "Fan",
+        "Reading": 1400,
+        "ReadingUnits": "RPM",
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 72,
+        "Status": {
+            "Health": "{{ machineInfo.healthInfo.Fan }}",
+            "State": "Enabled"
+        }
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Fans/69_0",
+        "MaxReadingRange": 12750,
+        "MemberId": "69_0",
+        "MinReadingRange": 0,
+        "Name": "Fan1 Speed",
+        "PhysicalContext": "Fan",
+        "Reading": 1450,
+        "ReadingUnits": "RPM",
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 69,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        }
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Fans/70_0",
+        "MaxReadingRange": 12750,
+        "MemberId": "70_0",
+        "MinReadingRange": 0,
+        "Name": "Fan2 Speed",
+        "PhysicalContext": "Fan",
+        "Reading": 1400,
+        "ReadingUnits": "RPM",
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 70,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        }
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Fans/73_0",
+        "MaxReadingRange": 12750,
+        "MemberId": "73_0",
+        "MinReadingRange": 0,
+        "Name": "Fan5 Speed",
+        "PhysicalContext": "Fan",
+        "Reading": 1450,
+        "ReadingUnits": "RPM",
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 73,
+        "Status": {
+            "Health": "{{ machineInfo.healthInfo.Fan }}",
+            "State": "Enabled"
+        }
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Fans/80_0",
+        "MaxReadingRange": 12750,
+        "MemberId": "80_0",
+        "MinReadingRange": 0,
+        "Name": "Fan6 Speed",
+        "PhysicalContext": "Fan",
+        "Reading": 1400,
+        "ReadingUnits": "RPM",
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 80,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        }
+    }],
+    "Id": "Thermal",
+    "Name": "Thermal",
+    "Temperatures": [{
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/533_0",
+        "MemberId": "TemperatureSensor533",
+        "Name": "P2 DIMMD1 Temp",
+        "PhysicalContext": "Intake",
+        "ReadingCelsius": 37,
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 533,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        },
+        "UpperThresholdCritical": 53,
+        "UpperThresholdFatal": 69,
+        "UpperThresholdNonCritical": 37
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/409_0",
+        "LowerThresholdCritical": -1,
+        "LowerThresholdNonCritical": 0,
+        "MemberId": "TemperatureSensor409",
+        "Name": "P1 Temp",
+        "PhysicalContext": "Intake",
+        "ReadingCelsius": 47,
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 409,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        },
+        "UpperThresholdCritical": 84,
+        "UpperThresholdFatal": 100,
+        "UpperThresholdNonCritical": 64
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/517_0",
+        "MemberId": "TemperatureSensor517",
+        "Name": "P1 DIMMD2 Temp",
+        "PhysicalContext": "Intake",
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 517,
+        "Status": {
+            "State": "Absent"
+        },
+        "UpperThresholdCritical": 53,
+        "UpperThresholdFatal": 69,
+        "UpperThresholdNonCritical": 37
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/535_0",
+        "MemberId": "TemperatureSensor535",
+        "Name": "P2 DIMME1 Temp",
+        "PhysicalContext": "Intake",
+        "ReadingCelsius": 35,
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 535,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        },
+        "UpperThresholdCritical": 53,
+        "UpperThresholdFatal": 69,
+        "UpperThresholdNonCritical": 37
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/516_0",
+        "MemberId": "TemperatureSensor516",
+        "Name": "P1 DIMMD1 Temp",
+        "PhysicalContext": "Intake",
+        "ReadingCelsius": 32,
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 516,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        },
+        "UpperThresholdCritical": 53,
+        "UpperThresholdFatal": 69,
+        "UpperThresholdNonCritical": 37
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/518_0",
+        "MemberId": "TemperatureSensor518",
+        "Name": "P1 DIMME1 Temp",
+        "PhysicalContext": "Intake",
+        "ReadingCelsius": 32,
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 518,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        },
+        "UpperThresholdCritical": 53,
+        "UpperThresholdFatal": 69,
+        "UpperThresholdNonCritical": 37
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/514_0",
+        "MemberId": "TemperatureSensor514",
+        "Name": "P1 DIMMB1 Temp",
+        "PhysicalContext": "Intake",
+        "ReadingCelsius": 32,
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 514,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        },
+        "UpperThresholdCritical": 53,
+        "UpperThresholdFatal": 69,
+        "UpperThresholdNonCritical": 37
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/48_0",
+        "MemberId": "TemperatureSensor48",
+        "Name": "PCH Temp",
+        "PhysicalContext": "Intake",
+        "ReadingCelsius": 44,
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 48,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        },
+        "UpperThresholdCritical": 85,
+        "UpperThresholdNonCritical": 65
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/392_0",
+        "LowerThresholdCritical": -1,
+        "LowerThresholdNonCritical": 0,
+        "MemberId": "TemperatureSensor392",
+        "Name": "X557 LAN2 Temp",
+        "PhysicalContext": "Intake",
+        "ReadingCelsius": 50,
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 392,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        },
+        "UpperThresholdCritical": 89,
+        "UpperThresholdFatal": 104,
+        "UpperThresholdNonCritical": 69
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/515_0",
+        "MemberId": "TemperatureSensor515",
+        "Name": "P1 DIMMC1 Temp",
+        "PhysicalContext": "Intake",
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 515,
+        "Status": {
+            "State": "Absent"
+        },
+        "UpperThresholdCritical": 53,
+        "UpperThresholdFatal": 69,
+        "UpperThresholdNonCritical": 37
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/387_0",
+        "LowerThresholdCritical": -20,
+        "LowerThresholdFatal": -30,
+        "LowerThresholdNonCritical": -10,
+        "MemberId": "TemperatureSensor387",
+        "Name": "PCIe A Temp",
+        "PhysicalContext": "Intake",
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 387,
+        "Status": {
+            "State": "Absent"
+        },
+        "UpperThresholdCritical": 20,
+        "UpperThresholdFatal": 30,
+        "UpperThresholdNonCritical": 10
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/519_0",
+        "MemberId": "TemperatureSensor519",
+        "Name": "P1 DIMMF1 Temp",
+        "PhysicalContext": "Intake",
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 519,
+        "Status": {
+            "State": "Absent"
+        },
+        "UpperThresholdCritical": 53,
+        "UpperThresholdFatal": 69,
+        "UpperThresholdNonCritical": 37
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/531_0",
+        "MemberId": "TemperatureSensor531",
+        "Name": "P2 DIMMB1 Temp",
+        "PhysicalContext": "Intake",
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 531,
+        "Status": {
+            "State": "Absent"
+        },
+        "UpperThresholdCritical": 53,
+        "UpperThresholdFatal": 69,
+        "UpperThresholdNonCritical": 37
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/532_0",
+        "MemberId": "TemperatureSensor532",
+        "Name": "P2 DIMMC1 Temp",
+        "PhysicalContext": "Intake",
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 532,
+        "Status": {
+            "State": "Absent"
+        },
+        "UpperThresholdCritical": 53,
+        "UpperThresholdFatal": 69,
+        "UpperThresholdNonCritical": 37
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/389_0",
+        "LowerThresholdCritical": -20,
+        "LowerThresholdFatal": -30,
+        "LowerThresholdNonCritical": -10,
+        "MemberId": "TemperatureSensor389",
+        "Name": "PCIe B Temp",
+        "PhysicalContext": "Intake",
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 389,
+        "Status": {
+            "State": "Absent"
+        },
+        "UpperThresholdCritical": 20,
+        "UpperThresholdFatal": 30,
+        "UpperThresholdNonCritical": 10
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/513_0",
+        "MemberId": "TemperatureSensor513",
+        "Name": "P1 DIMMA2 Temp",
+        "PhysicalContext": "Intake",
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 513,
+        "Status": {
+            "State": "Absent"
+        },
+        "UpperThresholdCritical": 53,
+        "UpperThresholdFatal": 69,
+        "UpperThresholdNonCritical": 37
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/390_0",
+        "LowerThresholdCritical": -1,
+        "LowerThresholdNonCritical": 0,
+        "MemberId": "TemperatureSensor390",
+        "Name": "BMC Temp",
+        "PhysicalContext": "Intake",
+        "ReadingCelsius": 38,
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 390,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        },
+        "UpperThresholdCritical": 99,
+        "UpperThresholdFatal": 106,
+        "UpperThresholdNonCritical": 85
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/386_0",
+        "LowerThresholdCritical": -1,
+        "LowerThresholdNonCritical": 0,
+        "MemberId": "TemperatureSensor386",
+        "Name": "Battery Temp",
+        "PhysicalContext": "Intake",
+        "ReadingCelsius": 33,
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 386,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        },
+        "UpperThresholdCritical": 69,
+        "UpperThresholdNonCritical": 59
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/36_0",
+        "LowerThresholdCritical": -1,
+        "LowerThresholdNonCritical": 0,
+        "MemberId": "TemperatureSensor36",
+        "Name": "PS1 Temp",
+        "PhysicalContext": "Intake",
+        "ReadingCelsius": 32,
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 36,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        },
+        "UpperThresholdCritical": 65,
+        "UpperThresholdNonCritical": 60
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/37_0",
+        "LowerThresholdCritical": -1,
+        "LowerThresholdNonCritical": 0,
+        "MemberId": "TemperatureSensor37",
+        "Name": "PS2 Temp",
+        "PhysicalContext": "Intake",
+        "ReadingCelsius": 33,
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 37,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        },
+        "UpperThresholdCritical": 65,
+        "UpperThresholdNonCritical": 60
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/384_0",
+        "LowerThresholdCritical": -1,
+        "LowerThresholdNonCritical": 0,
+        "MemberId": "TemperatureSensor384",
+        "Name": "M.2 Temp",
+        "PhysicalContext": "Intake",
+        "ReadingCelsius": 29,
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 384,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        },
+        "UpperThresholdCritical": 69,
+        "UpperThresholdNonCritical": 59
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/537_0",
+        "MemberId": "TemperatureSensor537",
+        "Name": "P1 DTS Thrm Mrgn",
+        "PhysicalContext": "Intake",
+        "ReadingCelsius": -44,
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 537,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        }
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/50_0",
+        "LowerThresholdCritical": 131,
+        "LowerThresholdFatal": 0,
+        "LowerThresholdNonCritical": 136,
+        "MemberId": "TemperatureSensor50",
+        "Name": "P1 TJMAX",
+        "PhysicalContext": "Intake",
+        "ReadingCelsius": 102,
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 50,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        },
+        "UpperThresholdCritical": 175,
+        "UpperThresholdFatal": 255,
+        "UpperThresholdNonCritical": 170
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/534_0",
+        "MemberId": "TemperatureSensor534",
+        "Name": "P2 DIMMD2 Temp",
+        "PhysicalContext": "Intake",
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 534,
+        "Status": {
+            "State": "Absent"
+        },
+        "UpperThresholdCritical": 53,
+        "UpperThresholdFatal": 69,
+        "UpperThresholdNonCritical": 37
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/536_0",
+        "MemberId": "TemperatureSensor536",
+        "Name": "P2 DIMMF1 Temp",
+        "PhysicalContext": "Intake",
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 536,
+        "Status": {
+            "State": "Absent"
+        },
+        "UpperThresholdCritical": 53,
+        "UpperThresholdFatal": 69,
+        "UpperThresholdNonCritical": 37
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/544_0",
+        "MemberId": "TemperatureSensor544",
+        "Name": "P2 DTS Thrm Mrgn",
+        "PhysicalContext": "Intake",
+        "ReadingCelsius": -37,
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 544,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        }
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/530_0",
+        "MemberId": "TemperatureSensor530",
+        "Name": "P2 DIMMA2 Temp",
+        "PhysicalContext": "Intake",
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 530,
+        "Status": {
+            "State": "Absent"
+        },
+        "UpperThresholdCritical": 53,
+        "UpperThresholdFatal": 69,
+        "UpperThresholdNonCritical": 37
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/21_0",
+        "LowerThresholdCritical": 131,
+        "LowerThresholdFatal": 0,
+        "LowerThresholdNonCritical": 136,
+        "MemberId": "TemperatureSensor21",
+        "Name": "P2 TJMAX",
+        "PhysicalContext": "Intake",
+        "ReadingCelsius": 102,
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 21,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        },
+        "UpperThresholdCritical": 175,
+        "UpperThresholdFatal": 255,
+        "UpperThresholdNonCritical": 170
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/529_0",
+        "MemberId": "TemperatureSensor529",
+        "Name": "P2 DIMMA1 Temp",
+        "PhysicalContext": "Intake",
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 529,
+        "Status": {
+            "State": "Absent"
+        },
+        "UpperThresholdCritical": 53,
+        "UpperThresholdFatal": 69,
+        "UpperThresholdNonCritical": 37
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/385_0",
+        "LowerThresholdCritical": -1,
+        "LowerThresholdNonCritical": 0,
+        "MemberId": "TemperatureSensor385",
+        "Name": "CPU Zone Temp",
+        "PhysicalContext": "Intake",
+        "ReadingCelsius": 37,
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 385,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        },
+        "UpperThresholdCritical": 74,
+        "UpperThresholdNonCritical": 64
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/51_0",
+        "LowerThresholdCritical": -1,
+        "LowerThresholdNonCritical": 0,
+        "MemberId": "TemperatureSensor51",
+        "Name": "Front Panel Temp",
+        "PhysicalContext": "Intake",
+        "ReadingCelsius": 26,
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 51,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        },
+        "UpperThresholdCritical": 55,
+        "UpperThresholdNonCritical": 50
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/391_0",
+        "LowerThresholdCritical": -1,
+        "LowerThresholdNonCritical": 0,
+        "MemberId": "TemperatureSensor391",
+        "Name": "X557 LAN1 Temp",
+        "PhysicalContext": "Intake",
+        "ReadingCelsius": 51,
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 391,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        },
+        "UpperThresholdCritical": 89,
+        "UpperThresholdFatal": 104,
+        "UpperThresholdNonCritical": 69
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/528_0",
+        "LowerThresholdCritical": -1,
+        "LowerThresholdNonCritical": 0,
+        "MemberId": "TemperatureSensor528",
+        "Name": "P2 Temp",
+        "PhysicalContext": "Intake",
+        "ReadingCelsius": 54,
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 528,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        },
+        "UpperThresholdCritical": 84,
+        "UpperThresholdFatal": 100,
+        "UpperThresholdNonCritical": 64
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/Thermal#/Temperatures/512_0",
+        "MemberId": "TemperatureSensor512",
+        "Name": "P1 DIMMA1 Temp",
+        "PhysicalContext": "Intake",
+        "ReadingCelsius": 32,
+        "RelatedItem@odata.count": 0,
+        "SensorNumber": 512,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        },
+        "UpperThresholdCritical": 53,
+        "UpperThresholdFatal": 69,
+        "UpperThresholdNonCritical": 37
+    }]
+}

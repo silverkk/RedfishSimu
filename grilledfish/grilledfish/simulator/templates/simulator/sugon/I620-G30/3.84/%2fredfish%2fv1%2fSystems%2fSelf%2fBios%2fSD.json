@@ -1,0 +1,1 @@
+{ "Attributes": null, "AttributeRegistry": "BiosAttributeRegistry0JGST.2.22.0", "SettingTime": null, "@odata.context": "\/redfish\/v1\/$metadata#Bios.Bios", "@odata.id": "\/redfish\/v1\/Systems\/Self\/Bios\/SD", "@odata.type": "#Bios.v1_0_3.Bios", "Name": "Bios SD", "Description": "Future BIOS Settings", "Id": "SD" }

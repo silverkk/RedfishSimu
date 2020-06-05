@@ -1,0 +1,31 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Drive.Drive(*)",
+    "@odata.etag": "W/\"1578648481\"",
+    "@odata.id": "/redfish/v1/Systems/1/Storages/RAIDStorage0/Drives/DiskFront3",
+    "@odata.type": "#Drive.v1_1_1.Drive",
+    "CapacityBytes": 250052995973.12,
+    "Id": "DiskFront3",
+    "Manufacturer": "ATA",
+    "MediaType": "HDD",
+    "Model": "ST3250312AS",
+    "Name": "DiskFront3",
+    "NegotiatedSpeedGbs": 6,
+    "Oem": {
+        "Public": {
+            "ConnectionID": 0,
+            "DriveNumberInBios": 3,
+            "DriveNumberInOS": 3,
+            "FirmwareStatus": "Ready",
+            "Panel": "Front 3",
+            "TemperatureCelsius": "29"
+        }
+    },
+    "PredictedMediaLifeLeftPercent": "null",
+    "Protocol": "SATA",
+    "Revision": "JC4B",
+    "SerialNumber": "6VMWLZ95",
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.storage }}",
+        "State": "Enabled"
+    }
+}

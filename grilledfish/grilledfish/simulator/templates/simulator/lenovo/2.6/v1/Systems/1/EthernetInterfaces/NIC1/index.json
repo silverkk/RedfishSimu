@@ -1,0 +1,23 @@
+{
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK"
+    },
+    "MACAddress": "08:94:EF:3C:7E:60",
+    "@odata.id": "/redfish/v1/Systems/1/EthernetInterfaces/NIC1",
+    "InterfaceEnabled": true,
+    "Links": {
+        "Chassis": {
+            "@odata.id": "/redfish/v1/Chassis/1"
+        }
+    },
+    "Name": "External Ethernet Interface",
+    "@odata.context": "/redfish/v1/$metadata#EthernetInterface.EthernetInterface",
+    "SpeedMbps": null,
+    "@odata.type": "#EthernetInterface.v1_4_1.EthernetInterface",
+    "Id": "NIC1",
+    "LinkStatus": "LinkDown",
+    "@odata.etag": "\"36efdbe3f77154fcd02bad8e97a62be2\"",
+    "PermanentMACAddress": "08:94:EF:3C:7E:60",
+    "Description": "External Network Interface"
+}

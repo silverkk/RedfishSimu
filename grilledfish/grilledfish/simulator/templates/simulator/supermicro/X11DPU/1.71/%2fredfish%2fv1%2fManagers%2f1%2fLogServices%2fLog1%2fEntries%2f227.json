@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#LogEntry.LogEntry","@odata.type":"#LogEntry.v1_0_0.LogEntry","@odata.id":"/redfish/v1/Managers/1/LogServices/Log1/Entries/227","Id":"227","Name":"Maintenance Event Log Entry 227","Severity":"OK","Created":"2020-05-19T14:11:28+00:00","Interface":"KCS","User":"ADMIN","Source":"Localhost","Description":"BMC was reset successfully."}

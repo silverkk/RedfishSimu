@@ -1,0 +1,54 @@
+{
+    "SerialNumber": null,
+    "VolatileRegionSizeLimitMiB": null,
+    "MemoryDeviceType": null,
+    "Id": "8",
+    "Links": {
+        "Chassis": {
+            "@odata.id": "/redfish/v1/Chassis/1"
+        }
+    },
+    "MemoryMedia": [],
+    "PartNumber": null,
+    "MemoryLocation": {
+        "Channel": 1,
+        "MemoryController": 0,
+        "Slot": 8,
+        "Socket": 2
+    },
+    "MemoryType": null,
+    "DeviceLocator": null,
+    "Name": "DIMM 8",
+    "Oem": {
+        "Lenovo": {
+            "@odata.type": "#LenovoMemory.v1_0_0.LenovoMemory",
+            "PN": null
+        }
+    },
+    "@odata.type": "#Memory.v1_6_0.Memory",
+    "RankCount": null,
+    "BaseModuleType": null,
+    "OperatingSpeedMhz": null,
+    "VendorID": null,
+    "Regions": [],
+    "BusWidthBits": null,
+    "@odata.id": "/redfish/v1/Systems/1/Memory/8",
+    "@odata.context": "/redfish/v1/$metadata#Memory.Memory",
+    "CapacityMiB": null,
+    "Description": "This resource is used to represent a memory for a Redfish implementation.",
+    "SubsystemDeviceID": null,
+    "OperatingMemoryModes": [],
+    "Status": {
+        "State": "Absent",
+        "Health": null
+    },
+    "AllowedSpeedsMHz": [],
+    "SecurityCapabilities": {},
+    "SubsystemVendorID": null,
+    "@odata.etag": "\"71fe71b1e8d031d7205a2e868e97d8ca\"",
+    "Manufacturer": null,
+    "DeviceID": null,
+    "PersistentRegionSizeLimitMiB": 0,
+    "DataWidthBits": null,
+    "FunctionClasses": []
+}

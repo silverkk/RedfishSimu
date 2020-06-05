@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#LogEntryCollection.LogEntryCollection","@odata.id":"/redfish/v1/Managers/BMC/LogServices/RedfishLog/Entries","@odata.type":"#LogEntryCollection.LogEntryCollection","Name":"Redfish Log Entry Collection","Description":"Collection of Logs for this System","Members@odata.count":0,"Members":[]}

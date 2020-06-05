@@ -1,0 +1,17 @@
+{
+    "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/ob-4/NetworkPorts",
+    "Name": "NetworkPortCollection",
+    "@odata.context": "/redfish/v1/$metadata#NetworkPortCollection.NetworkPortCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/ob-4/NetworkPorts/3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/ob-4/NetworkPorts/4"
+        }
+    ],
+    "@odata.type": "#NetworkPortCollection.NetworkPortCollection",
+    "@odata.etag": "\"323a14cc520c5e24569b782d7593ae63\"",
+    "Members@odata.count": 2,
+    "Description": "A collection of NetworkPort resource instances."
+}

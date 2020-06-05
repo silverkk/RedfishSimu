@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#MetricDefinitionCollection.MetricDefinitionCollection","@odata.etag":"W/"1585690509"","@odata.id":"/redfish/v1/TelemetryService/MetricDefinitions","@odata.type":"#MetricDefinitionCollection.MetricDefinitionCollection","Members":[],"Members@odata.count":0,"Name":"MetricDefinitions"}

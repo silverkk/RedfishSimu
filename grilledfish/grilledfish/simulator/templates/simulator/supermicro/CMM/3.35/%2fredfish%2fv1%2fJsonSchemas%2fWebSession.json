@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#JsonSchemaFile.JsonSchemaFile","@odata.type":"#JsonSchemaFile.JsonSchemaFile","@odata.id":"/redfish/v1/JsonSchemas/WebSession","Id":"WebSession","Name":"WebSession Schema File","Description":"WebSession Schema File Location","Languages":["en"],"Schema":"WebSession","Location":[{"Language":"en","Uri":"/schemas/WebSession.json"}],"Oem":{}}

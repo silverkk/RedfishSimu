@@ -1,0 +1,120 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeBaseNetworkAdapter.HpeBaseNetworkAdapter",
+    "@odata.etag": "W/\"26802C77\"",
+    "@odata.id": "/redfish/v1/Systems/1/BaseNetworkAdapters/1",
+    "@odata.type": "#HpeBaseNetworkAdapter.v2_0_0.HpeBaseNetworkAdapter",
+    "Id": "1",
+    "FcPorts": [],
+    "Firmware": {
+        "Current": {
+            "VersionString": "20.6.61"
+        }
+    },
+    "Name": "HPE Ethernet 1Gb 4-port 331i Adapter - NIC",
+    "PhysicalPorts": [
+        {
+            "FullDuplex": true,
+            "IPv4Addresses": [
+                {
+                    "Address": "10.239.172.36"
+                }
+            ],
+            "IPv6Addresses": [
+                {
+                    "Address": "fe80::7448:e93a:c63d:c0e3%12"
+                }
+            ],
+            "LinkStatus": "LinkUp",
+            "MacAddress": "f4:03:43:43:42:64",
+            "Name": "Embedded LOM 1 Port 1",
+            "Oem": {
+                "Hpe": {
+                    "@odata.context": "/redfish/v1/$metadata#HpeBaseNetworkAdapterExt.HpeBaseNetworkAdapterExt",
+                    "@odata.type": "#HpeBaseNetworkAdapterExt.v2_0_0.HpeBaseNetworkAdapterExt",
+                    "BadReceives": 0,
+                    "BadTransmits": 0,
+                    "GoodReceives": 7143650,
+                    "GoodTransmits": 391084
+                }
+            },
+            "SpeedMbps": 100,
+            "Status": {
+                "Health": "OK"
+            }
+        },
+        {
+            "FullDuplex": true,
+            "IPv4Addresses": [],
+            "IPv6Addresses": [
+                {
+                    "Address": "N/A"
+                }
+            ],
+            "LinkStatus": null,
+            "MacAddress": "f4:03:43:43:42:65",
+            "Name": "Embedded LOM 1 Port 2",
+            "Oem": {
+                "Hpe": {
+                    "@odata.context": "/redfish/v1/$metadata#HpeBaseNetworkAdapterExt.HpeBaseNetworkAdapterExt",
+                    "@odata.type": "#HpeBaseNetworkAdapterExt.v2_0_0.HpeBaseNetworkAdapterExt",
+                    "BadReceives": 0,
+                    "BadTransmits": 0,
+                    "GoodReceives": 0,
+                    "GoodTransmits": 0
+                }
+            },
+            "SpeedMbps": 0
+        },
+        {
+            "FullDuplex": true,
+            "IPv4Addresses": [],
+            "IPv6Addresses": [
+                {
+                    "Address": "N/A"
+                }
+            ],
+            "LinkStatus": null,
+            "MacAddress": "f4:03:43:43:42:66",
+            "Name": "Embedded LOM 1 Port 3",
+            "Oem": {
+                "Hpe": {
+                    "@odata.context": "/redfish/v1/$metadata#HpeBaseNetworkAdapterExt.HpeBaseNetworkAdapterExt",
+                    "@odata.type": "#HpeBaseNetworkAdapterExt.v2_0_0.HpeBaseNetworkAdapterExt",
+                    "BadReceives": 0,
+                    "BadTransmits": 0,
+                    "GoodReceives": 0,
+                    "GoodTransmits": 0
+                }
+            },
+            "SpeedMbps": 0
+        },
+        {
+            "FullDuplex": true,
+            "IPv4Addresses": [],
+            "IPv6Addresses": [
+                {
+                    "Address": "N/A"
+                }
+            ],
+            "LinkStatus": null,
+            "MacAddress": "f4:03:43:43:42:67",
+            "Name": "Embedded LOM 1 Port 4",
+            "Oem": {
+                "Hpe": {
+                    "@odata.context": "/redfish/v1/$metadata#HpeBaseNetworkAdapterExt.HpeBaseNetworkAdapterExt",
+                    "@odata.type": "#HpeBaseNetworkAdapterExt.v2_0_0.HpeBaseNetworkAdapterExt",
+                    "BadReceives": 0,
+                    "BadTransmits": 0,
+                    "GoodReceives": 0,
+                    "GoodTransmits": 0
+                }
+            },
+            "SpeedMbps": 0
+        }
+    ],
+    "Status": {
+        "State": "Enabled"
+    },
+    "StructuredName": "NIC.LOM.1.1",
+    "UEFIDevicePath": "PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)"
+}

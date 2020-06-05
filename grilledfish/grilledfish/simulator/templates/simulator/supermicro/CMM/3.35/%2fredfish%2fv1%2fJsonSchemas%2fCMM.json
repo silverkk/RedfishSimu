@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#JsonSchemaFile.JsonSchemaFile","@odata.type":"#JsonSchemaFile.JsonSchemaFile","@odata.id":"/redfish/v1/JsonSchemas/CMM","Id":"CMM","Name":"CMM Schema File","Description":"CMM Schema File Location","Languages":["en"],"Schema":"CMM","Location":[{"Language":"en","Uri":"/schemas/CMM.json"}],"Oem":{}}

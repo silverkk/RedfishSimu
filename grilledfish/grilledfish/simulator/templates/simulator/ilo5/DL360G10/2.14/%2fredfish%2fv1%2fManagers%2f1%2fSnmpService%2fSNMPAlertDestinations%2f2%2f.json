@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#HpeSNMPAlertDestination.HpeSNMPAlertDestination","@odata.etag":"W/\"9B9A7000\"","@odata.id":"/redfish/v1/Managers/1/SnmpService/SNMPAlertDestinations/2/","@odata.type":"#HpeSNMPAlertDestination.v2_0_0.HpeSNMPAlertDestination","Id":"2","AlertDestination":"10.239.43.139","SNMPAlertProtocol":"SNMPv1Trap","TrapCommunity":"public"}

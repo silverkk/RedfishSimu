@@ -1,0 +1,49 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#SoftwareInventoryCollection.SoftwareInventoryCollection",
+    "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory",
+    "@odata.type": "#SoftwareInventoryCollection.SoftwareInventoryCollection",
+    "Description": "Collection of Firmware Inventory",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Current-159-2.7.1"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Installed-0-4.3.0-0002"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Installed-101434-2.20"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Installed-101734-0"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Installed-159-2.7.1"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Installed-18981-17.08.10"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Installed-25227-2.70.70.70"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Installed-25806-0"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Installed-27484-7.10.17"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Installed-28125-0.3.1"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Installed-28897-2.70.70.70"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Previous-159-2.6.0"
+        },
+        {
+            "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Previous-25227-2.50.50.50"
+        }
+    ],
+    "Members@odata.count": 13,
+    "Name": "Firmware Inventory Collection"
+}

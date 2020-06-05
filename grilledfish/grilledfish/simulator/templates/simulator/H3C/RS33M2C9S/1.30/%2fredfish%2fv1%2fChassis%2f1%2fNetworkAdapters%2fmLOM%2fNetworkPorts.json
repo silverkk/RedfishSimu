@@ -1,0 +1,22 @@
+{
+    "@odata.context": "/redfish/v1/$metadata",
+    "@odata.etag": "W/\"1587031048\"",
+    "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/mLOM/NetworkPorts",
+    "@odata.type": "#NetworkPortCollection.NetworkPortCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/mLOM/NetworkPorts/1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/mLOM/NetworkPorts/2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/mLOM/NetworkPorts/3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/mLOM/NetworkPorts/4"
+        }
+    ],
+    "Members@odata.count": 4,
+    "Name": "Network Port Collection"
+}

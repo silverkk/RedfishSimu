@@ -1,0 +1,72 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Power.Power",
+    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Power/PowerSupplies/PSU.Slot.2",
+    "@odata.type": "#Power.v1_5_0.PowerSupply",
+    "Assembly": {
+        "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Assembly"
+    },
+    "EfficiencyPercent": 0.9300000071525574,
+    "FirmwareVersion": "00.1D.7D",
+    "HotPluggable": true,
+    "InputRanges": [
+        {
+            "InputType": "AC",
+            "MaximumFrequencyHz": 63,
+            "MaximumVoltage": 264,
+            "MinimumFrequencyHz": 47,
+            "MinimumVoltage": 90,
+            "OutputWattage": 1100
+        }
+    ],
+    "InputRanges@odata.count": 1,
+    "LastPowerOutputWatts": null,
+    "LineInputVoltage": 220,
+    "LineInputVoltageType": "AC240V",
+    "Manufacturer": "Dell",
+    "MemberId": "PSU.Slot.2",
+    "Model": "PWR SPLY,1100W,RDNT,DELTA     ",
+    "Name": "PS2 Status",
+    "Oem": {
+        "Dell": {
+            "DellPowerSupply": {
+                "@odata.context": "/redfish/v1/$metadata#DellPowerSupply.DellPowerSupply",
+                "@odata.id": "/redfish/v1/Dell/Chassis/System.Embedded.1/Power/PowerSupplies/DellPowerSupply/PSU.Slot.2",
+                "@odata.type": "#DellPowerSupply.v1_0_0.DellPowerSupply",
+                "IsSwitchingSupply": true,
+                "Links": {
+                    "DellPSNumericSensorCollection": [
+                        {
+                            "@odata.id": "/redfish/v1/Dell/Systems/System.Embedded.1/DellPSNumericSensor/iDRAC.Embedded.1%23PS2Current2"
+                        }
+                    ]
+                }
+            },
+            "DellPowerSupplyView": {
+                "@odata.context": "/redfish/v1/$metadata#DellPowerSupplyView.DellPowerSupplyView",
+                "@odata.id": "/redfish/v1/Dell/Chassis/System.Embedded.1/Power/PowerSupplies/DellPowerSupplyView/PSU.Slot.2",
+                "@odata.type": "#DellPowerSupplyView.v1_0_0.DellPowerSupplyView",
+                "DetailedState": "Presence Detected",
+                "Range1MaxInputPowerWatts": 1260
+            }
+        }
+    },
+    "PartNumber": "0Y26KXA02",
+    "PowerCapacityWatts": 1100,
+    "PowerInputWatts": 1260,
+    "PowerOutputWatts": 127.25,
+    "PowerSupplyType": "AC",
+    "Redundancy": [],
+    "Redundancy@odata.count": 0,
+    "RelatedItem": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+        }
+    ],
+    "RelatedItem@odata.count": 1,
+    "SerialNumber": "CNDED0078G24EW",
+    "SparePartNumber": "0Y26KXA02",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    }
+}

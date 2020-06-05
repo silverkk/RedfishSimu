@@ -1,0 +1,1 @@
+{"@odata.context":"\/redfish\/v1\/$metadata#ActionInfo.ActionInfo","@odata.id":"\/redfish\/v1\/AccountService\/DeleteRootCertificateActionInfo","@odata.type":"#ActionInfo.v1_0_0.ActionInfo","Parameters":[{"Name":"CertId","Required":true,"DataType":"number","Minimum":1,"Maximum":16}],"Oem":{}}

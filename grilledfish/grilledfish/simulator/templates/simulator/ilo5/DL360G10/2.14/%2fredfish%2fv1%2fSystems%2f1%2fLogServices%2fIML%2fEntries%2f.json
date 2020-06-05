@@ -1,0 +1,44 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntryCollection.LogEntryCollection",
+    "@odata.etag": "W/\"0423F9A0\"",
+    "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/",
+    "@odata.type": "#LogEntryCollection.LogEntryCollection",
+    "Description": "Integrated Management Logs view",
+    "Name": "Integrated Management Logs",
+    "Members": [
+        {% for selItem in machineInfo.sel.logList %}
+            {
+                "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
+                "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/1/",
+                "@odata.type": "#LogEntry.v1_1_0.LogEntry",
+                "Id": "{{ selItem.id }}",
+                "Created": "{{ selItem.datetime }}",
+                "EntryType": "Oem",
+                "Message": "{{ selItem.message }}",
+                "Name": "Integrated Management Log",
+                "Oem": {
+                    "Hpe": {
+                        "@odata.context": "/redfish/v1/$metadata#HpeLogEntry.HpeLogEntry",
+                        "@odata.type": "#HpeLogEntry.v2_2_0.HpeLogEntry",
+                        "Categories": [
+                            "Administration"
+                        ],
+                        "Class": 10,
+                        "ClassDescription": "UEFI",
+                        "Code": 625,
+                        "Count": 1,
+                        "EventNumber": 433,
+                        "Severity": "Informational",
+                        "Updated": "2019-10-15T12:06:04Z"
+                    }
+                },
+                "OemRecordFormat": "Hpe-IML",
+                "Severity": "OK"
+            }
+            {% if not forloop.last %}
+            ,
+            {% endif %}
+        {% endfor %}                
+    ],
+    "Members@odata.count": {{ machineInfo.sel.logItemCount }}
+}

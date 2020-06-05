@@ -1,0 +1,1711 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Power.Power",
+    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Power",
+    "@odata.type": "#Power.v1_5_0.Power",
+    "Description": "Power",
+    "Id": "Power",
+    "Name": "Power",
+    "PowerControl": [
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Power/PowerControl",
+            "@odata.type": "#Power.v1_4_0.PowerControl",
+            "MemberId": "PowerControl",
+            "Name": "System Power Control",
+            "PowerAllocatedWatts": 2340,
+            "PowerAvailableWatts": 0,
+            "PowerCapacityWatts": 2340,
+            "PowerConsumedWatts": 253,
+            "PowerLimit": {
+                "CorrectionInMs": 0,
+                "LimitException": "HardPowerOff",
+                "LimitInWatts": 879
+            },
+            "PowerMetrics": {
+                "AverageConsumedWatts": 252,
+                "IntervalInMin": 1,
+                "MaxConsumedWatts": 254,
+                "MinConsumedWatts": 252
+            },
+            "PowerRequestedWatts": 876,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+                },
+                {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1"
+                }
+            ],
+            "RelatedItem@odata.count": 2
+        }
+    ],
+    "PowerControl@odata.count": 1,
+    "PowerSupplies": [
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Power/PowerSupplies/PSU.Slot.1",
+            "@odata.type": "#Power.v1_5_0.PowerSupply",
+            "Assembly": {
+                "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Assembly"
+            },
+            "EfficiencyPercent": 0.9300000071525574,
+            "FirmwareVersion": "00.1D.7D",
+            "HotPluggable": true,
+            "InputRanges": [
+                {
+                    "InputType": "AC",
+                    "MaximumFrequencyHz": 63,
+                    "MaximumVoltage": 264,
+                    "MinimumFrequencyHz": 47,
+                    "MinimumVoltage": 90,
+                    "OutputWattage": 1100
+                }
+            ],
+            "InputRanges@odata.count": 1,
+            "LastPowerOutputWatts": null,
+            "LineInputVoltage": 218,
+            "LineInputVoltageType": "AC240V",
+            "Manufacturer": "Dell",
+            "MemberId": "PSU.Slot.1",
+            "Model": "PWR SPLY,1100W,RDNT,DELTA     ",
+            "Name": "PS1 Status",
+            "Oem": {
+                "Dell": {
+                    "DellPowerSupply": {
+                        "@odata.context": "/redfish/v1/$metadata#DellPowerSupply.DellPowerSupply",
+                        "@odata.id": "/redfish/v1/Dell/Chassis/System.Embedded.1/Power/PowerSupplies/DellPowerSupply/PSU.Slot.1",
+                        "@odata.type": "#DellPowerSupply.v1_0_0.DellPowerSupply",
+                        "IsSwitchingSupply": true,
+                        "Links": {
+                            "DellPSNumericSensorCollection": [
+                                {
+                                    "@odata.id": "/redfish/v1/Dell/Systems/System.Embedded.1/DellPSNumericSensor/iDRAC.Embedded.1%23PS1Current1"
+                                }
+                            ]
+                        }
+                    },
+                    "DellPowerSupplyView": {
+                        "@odata.context": "/redfish/v1/$metadata#DellPowerSupplyView.DellPowerSupplyView",
+                        "@odata.id": "/redfish/v1/Dell/Chassis/System.Embedded.1/Power/PowerSupplies/DellPowerSupplyView/PSU.Slot.1",
+                        "@odata.type": "#DellPowerSupplyView.v1_0_0.DellPowerSupplyView",
+                        "DetailedState": "Presence Detected",
+                        "Range1MaxInputPowerWatts": 1260
+                    }
+                }
+            },
+            "PartNumber": "0Y26KXA02",
+            "PowerCapacityWatts": 1100,
+            "PowerInputWatts": 1260,
+            "PowerOutputWatts": 98,
+            "PowerSupplyType": "AC",
+            "Redundancy": [],
+            "Redundancy@odata.count": 0,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SerialNumber": "CNDED0078G248Y",
+            "SparePartNumber": "0Y26KXA02",
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            }
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Power/PowerSupplies/PSU.Slot.2",
+            "@odata.type": "#Power.v1_5_0.PowerSupply",
+            "Assembly": {
+                "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Assembly"
+            },
+            "EfficiencyPercent": 0.9300000071525574,
+            "FirmwareVersion": "00.1D.7D",
+            "HotPluggable": true,
+            "InputRanges": [
+                {
+                    "InputType": "AC",
+                    "MaximumFrequencyHz": 63,
+                    "MaximumVoltage": 264,
+                    "MinimumFrequencyHz": 47,
+                    "MinimumVoltage": 90,
+                    "OutputWattage": 1100
+                }
+            ],
+            "InputRanges@odata.count": 1,
+            "LastPowerOutputWatts": null,
+            "LineInputVoltage": 218,
+            "LineInputVoltageType": "AC240V",
+            "Manufacturer": "Dell",
+            "MemberId": "PSU.Slot.2",
+            "Model": "PWR SPLY,1100W,RDNT,DELTA     ",
+            "Name": "PS2 Status",
+            "Oem": {
+                "Dell": {
+                    "DellPowerSupply": {
+                        "@odata.context": "/redfish/v1/$metadata#DellPowerSupply.DellPowerSupply",
+                        "@odata.id": "/redfish/v1/Dell/Chassis/System.Embedded.1/Power/PowerSupplies/DellPowerSupply/PSU.Slot.2",
+                        "@odata.type": "#DellPowerSupply.v1_0_0.DellPowerSupply",
+                        "IsSwitchingSupply": true,
+                        "Links": {
+                            "DellPSNumericSensorCollection": [
+                                {
+                                    "@odata.id": "/redfish/v1/Dell/Systems/System.Embedded.1/DellPSNumericSensor/iDRAC.Embedded.1%23PS2Current2"
+                                }
+                            ]
+                        }
+                    },
+                    "DellPowerSupplyView": {
+                        "@odata.context": "/redfish/v1/$metadata#DellPowerSupplyView.DellPowerSupplyView",
+                        "@odata.id": "/redfish/v1/Dell/Chassis/System.Embedded.1/Power/PowerSupplies/DellPowerSupplyView/PSU.Slot.2",
+                        "@odata.type": "#DellPowerSupplyView.v1_0_0.DellPowerSupplyView",
+                        "DetailedState": "Presence Detected",
+                        "Range1MaxInputPowerWatts": 1260
+                    }
+                }
+            },
+            "PartNumber": "0Y26KXA02",
+            "PowerCapacityWatts": 1100,
+            "PowerInputWatts": 1260,
+            "PowerOutputWatts": 126.625,
+            "PowerSupplyType": "AC",
+            "Redundancy": [],
+            "Redundancy@odata.count": 0,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SerialNumber": "CNDED0078G24EW",
+            "SparePartNumber": "0Y26KXA02",
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            }
+        }
+    ],
+    "PowerSupplies@odata.count": 2,
+    "Redundancy": [],
+    "Redundancy@odata.count": 0,
+    "Voltages": [
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23SystemBoardDIMMPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#SystemBoardDIMMPG",
+            "MinReadingRange": 51,
+            "Name": "System Board DIMM PG",
+            "PhysicalContext": "SystemBoard",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 7,
+            "Status": {
+                "Health": "{{machineInfo.healthInfo.Voltage}}",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23SystemBoardNDCPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#SystemBoardNDCPG",
+            "MinReadingRange": 0,
+            "Name": "System Board NDC PG",
+            "PhysicalContext": "SystemBoard",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 8,
+            "Status": {
+                "Health": "{{ machineInfo.healthInfo.Voltage }}",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23SystemBoardPS1PGFAIL",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#SystemBoardPS1PGFAIL",
+            "MinReadingRange": 0,
+            "Name": "System Board PS1 PG FAIL",
+            "PhysicalContext": "SystemBoard",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 9,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23SystemBoardPS2PGFAIL",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 102,
+            "MemberId": "iDRAC.Embedded.1#SystemBoardPS2PGFAIL",
+            "MinReadingRange": 10,
+            "Name": "System Board PS2 PG FAIL",
+            "PhysicalContext": "SystemBoard",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 10,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23SystemBoardBP0PG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#SystemBoardBP0PG",
+            "MinReadingRange": 0,
+            "Name": "System Board BP0 PG",
+            "PhysicalContext": "SystemBoard",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 11,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23SystemBoardBP1PG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#SystemBoardBP1PG",
+            "MinReadingRange": 0,
+            "Name": "System Board BP1 PG",
+            "PhysicalContext": "SystemBoard",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 12,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23SystemBoard2.5VSWPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 49,
+            "MemberId": "iDRAC.Embedded.1#SystemBoard2.5VSWPG",
+            "MinReadingRange": 46,
+            "Name": "System Board 2.5V SW PG",
+            "PhysicalContext": "SystemBoard",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 15,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23SystemBoardPVNNSWPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 197,
+            "MemberId": "iDRAC.Embedded.1#SystemBoardPVNNSWPG",
+            "MinReadingRange": 139,
+            "Name": "System Board PVNN SW PG",
+            "PhysicalContext": "SystemBoard",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 17,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23SystemBoard1.8VSWPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#SystemBoard1.8VSWPG",
+            "MinReadingRange": 51,
+            "Name": "System Board 1.8V SW PG",
+            "PhysicalContext": "SystemBoard",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 14,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23SystemBoardVSB11SWPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 197,
+            "MemberId": "iDRAC.Embedded.1#SystemBoardVSB11SWPG",
+            "MinReadingRange": 139,
+            "Name": "System Board VSB11 SW PG",
+            "PhysicalContext": "SystemBoard",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 18,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23SystemBoard5VSWPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#SystemBoard5VSWPG",
+            "MinReadingRange": 49,
+            "Name": "System Board 5V SW PG",
+            "PhysicalContext": "SystemBoard",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 16,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23SystemBoardVSBMSWPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 197,
+            "MemberId": "iDRAC.Embedded.1#SystemBoardVSBMSWPG",
+            "MinReadingRange": 0,
+            "Name": "System Board VSBM SW PG",
+            "PhysicalContext": "SystemBoard",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 19,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23SystemBoard3.3VBPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 197,
+            "MemberId": "iDRAC.Embedded.1#SystemBoard3.3VBPG",
+            "MinReadingRange": 0,
+            "Name": "System Board 3.3V B PG",
+            "PhysicalContext": "SystemBoard",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 21,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU1MEM012VDDQPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 197,
+            "MemberId": "iDRAC.Embedded.1#CPU1MEM012VDDQPG",
+            "MinReadingRange": 0,
+            "Name": "CPU1 MEM012 VDDQ PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors/CPU.Socket.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 36,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU1MEM012VPPPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#CPU1MEM012VPPPG",
+            "MinReadingRange": 0,
+            "Name": "CPU1 MEM012 VPP PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors/CPU.Socket.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 37,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU1MEM012VTTPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 197,
+            "MemberId": "iDRAC.Embedded.1#CPU1MEM012VTTPG",
+            "MinReadingRange": 139,
+            "Name": "CPU1 MEM012 VTT PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors/CPU.Socket.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 38,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU1MEM345VDDQPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 95,
+            "MemberId": "iDRAC.Embedded.1#CPU1MEM345VDDQPG",
+            "MinReadingRange": 116,
+            "Name": "CPU1 MEM345 VDDQ PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors/CPU.Socket.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 39,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU1MEM345VPPPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 77,
+            "MemberId": "iDRAC.Embedded.1#CPU1MEM345VPPPG",
+            "MinReadingRange": 73,
+            "Name": "CPU1 MEM345 VPP PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors/CPU.Socket.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 40,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU1MEM345VTTPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#CPU1MEM345VTTPG",
+            "MinReadingRange": 0,
+            "Name": "CPU1 MEM345 VTT PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors/CPU.Socket.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 41,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU1VCCIOPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 197,
+            "MemberId": "iDRAC.Embedded.1#CPU1VCCIOPG",
+            "MinReadingRange": 139,
+            "Name": "CPU1 VCCIO PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors/CPU.Socket.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 42,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU1VCOREPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#CPU1VCOREPG",
+            "MinReadingRange": 0,
+            "Name": "CPU1 VCORE PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors/CPU.Socket.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 43,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU1FIVRPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#CPU1FIVRPG",
+            "MinReadingRange": 0,
+            "Name": "CPU1 FIVR PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors/CPU.Socket.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 44,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU2MEM012VDDQPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 95,
+            "MemberId": "iDRAC.Embedded.1#CPU2MEM012VDDQPG",
+            "MinReadingRange": 116,
+            "Name": "CPU2 MEM012 VDDQ PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors/CPU.Socket.2"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 46,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU2MEM012VPPPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#CPU2MEM012VPPPG",
+            "MinReadingRange": 0,
+            "Name": "CPU2 MEM012 VPP PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors/CPU.Socket.2"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 47,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU2MEM012VTTPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#CPU2MEM012VTTPG",
+            "MinReadingRange": 0,
+            "Name": "CPU2 MEM012 VTT PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors/CPU.Socket.2"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 48,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU2MEM345VPPPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#CPU2MEM345VPPPG",
+            "MinReadingRange": 49,
+            "Name": "CPU2 MEM345 VPP PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors/CPU.Socket.2"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 50,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU2FIVRPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 50,
+            "MemberId": "iDRAC.Embedded.1#CPU2FIVRPG",
+            "MinReadingRange": 46,
+            "Name": "CPU2 FIVR PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors/CPU.Socket.2"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 54,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU2VCCIOPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 50,
+            "MemberId": "iDRAC.Embedded.1#CPU2VCCIOPG",
+            "MinReadingRange": 46,
+            "Name": "CPU2 VCCIO PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors/CPU.Socket.2"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 52,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU2MEM345VDDQPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 197,
+            "MemberId": "iDRAC.Embedded.1#CPU2MEM345VDDQPG",
+            "MinReadingRange": 139,
+            "Name": "CPU2 MEM345 VDDQ PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors/CPU.Socket.2"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 49,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23PS1Voltage",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#PS1Voltage",
+            "MinReadingRange": 0,
+            "Name": "PS1 Voltage 1",
+            "PhysicalContext": "PowerSupply",
+            "ReadingVolts": 218,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Power/PowerSupplies/PSU.Slot.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 109,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23PS2Voltage",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#PS2Voltage",
+            "MinReadingRange": 0,
+            "Name": "PS2 Voltage 2",
+            "PhysicalContext": "PowerSupply",
+            "ReadingVolts": 218,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Power/PowerSupplies/PSU.Slot.2"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 110,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU2MEM345VTTPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 50,
+            "MemberId": "iDRAC.Embedded.1#CPU2MEM345VTTPG",
+            "MinReadingRange": 46,
+            "Name": "CPU2 MEM345 VTT PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors/CPU.Socket.2"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 51,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU1VSAPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#CPU1VSAPG",
+            "MinReadingRange": 0,
+            "Name": "CPU1 VSA PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors/CPU.Socket.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 45,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU2VSAPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#CPU2VSAPG",
+            "MinReadingRange": 0,
+            "Name": "CPU2 VSA PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors/CPU.Socket.2"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 55,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU3MEM01VDDQPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#CPU3MEM01VDDQPG",
+            "MinReadingRange": 0,
+            "Name": "CPU3 MEM01 VDDQ PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [],
+            "RelatedItem@odata.count": 0,
+            "SensorNumber": 22,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU3MEM01VPPPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#CPU3MEM01VPPPG",
+            "MinReadingRange": 51,
+            "Name": "CPU3 MEM01 VPP PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [],
+            "RelatedItem@odata.count": 0,
+            "SensorNumber": 23,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23SystemBoard3.3VAPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#SystemBoard3.3VAPG",
+            "MinReadingRange": 0,
+            "Name": "System Board 3.3V A PG",
+            "PhysicalContext": "SystemBoard",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 20,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU4MEM01VDDQPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 77,
+            "MemberId": "iDRAC.Embedded.1#CPU4MEM01VDDQPG",
+            "MinReadingRange": 73,
+            "Name": "CPU4 MEM01 VDDQ PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [],
+            "RelatedItem@odata.count": 0,
+            "SensorNumber": 32,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU4MEM01VPPPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#CPU4MEM01VPPPG",
+            "MinReadingRange": 52,
+            "Name": "CPU4 MEM01 VPP PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [],
+            "RelatedItem@odata.count": 0,
+            "SensorNumber": 33,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU4MEM01VTTPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#CPU4MEM01VTTPG",
+            "MinReadingRange": 0,
+            "Name": "CPU4 MEM01 VTT PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [],
+            "RelatedItem@odata.count": 0,
+            "SensorNumber": 34,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU3MEM23VDDQPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#CPU3MEM23VDDQPG",
+            "MinReadingRange": 0,
+            "Name": "CPU3 MEM23 VDDQ PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [],
+            "RelatedItem@odata.count": 0,
+            "SensorNumber": 25,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU4MEM23VDDQPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#CPU4MEM23VDDQPG",
+            "MinReadingRange": 51,
+            "Name": "CPU4 MEM23 VDDQ PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [],
+            "RelatedItem@odata.count": 0,
+            "SensorNumber": 35,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU3MEM01VTTPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 197,
+            "MemberId": "iDRAC.Embedded.1#CPU3MEM01VTTPG",
+            "MinReadingRange": 0,
+            "Name": "CPU3 MEM01 VTT PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [],
+            "RelatedItem@odata.count": 0,
+            "SensorNumber": 24,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU3MEM23VPPPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#CPU3MEM23VPPPG",
+            "MinReadingRange": 106,
+            "Name": "CPU3 MEM23 VPP PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [],
+            "RelatedItem@odata.count": 0,
+            "SensorNumber": 26,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU4MEM23VPPPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#CPU4MEM23VPPPG",
+            "MinReadingRange": 0,
+            "Name": "CPU4 MEM23 VPP PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [],
+            "RelatedItem@odata.count": 0,
+            "SensorNumber": 68,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU3MEM23VTTPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 95,
+            "MemberId": "iDRAC.Embedded.1#CPU3MEM23VTTPG",
+            "MinReadingRange": 116,
+            "Name": "CPU3 MEM23 VTT PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [],
+            "RelatedItem@odata.count": 0,
+            "SensorNumber": 27,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU4MEM23VTTPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#CPU4MEM23VTTPG",
+            "MinReadingRange": 49,
+            "Name": "CPU4 MEM23 VTT PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [],
+            "RelatedItem@odata.count": 0,
+            "SensorNumber": 69,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU3VCOREPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 197,
+            "MemberId": "iDRAC.Embedded.1#CPU3VCOREPG",
+            "MinReadingRange": 139,
+            "Name": "CPU3 VCORE PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [],
+            "RelatedItem@odata.count": 0,
+            "SensorNumber": 28,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU3VCCIOPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#CPU3VCCIOPG",
+            "MinReadingRange": 0,
+            "Name": "CPU3 VCCIO PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [],
+            "RelatedItem@odata.count": 0,
+            "SensorNumber": 29,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU4VCCIOPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#CPU4VCCIOPG",
+            "MinReadingRange": 0,
+            "Name": "CPU4 VCCIO PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [],
+            "RelatedItem@odata.count": 0,
+            "SensorNumber": 31,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU4VCOREPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#CPU4VCOREPG",
+            "MinReadingRange": 0,
+            "Name": "CPU4 VCORE PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [],
+            "RelatedItem@odata.count": 0,
+            "SensorNumber": 70,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23SystemBoardPS3PGFAIL",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#SystemBoardPS3PGFAIL",
+            "MinReadingRange": 0,
+            "Name": "System Board PS3 PG FAIL",
+            "PhysicalContext": "SystemBoard",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 184,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU4FIVRPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 84,
+            "MemberId": "iDRAC.Embedded.1#CPU4FIVRPG",
+            "MinReadingRange": 45,
+            "Name": "CPU4 FIVR PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [],
+            "RelatedItem@odata.count": 0,
+            "SensorNumber": 71,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU3FIVRPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 95,
+            "MemberId": "iDRAC.Embedded.1#CPU3FIVRPG",
+            "MinReadingRange": 116,
+            "Name": "CPU3 FIVR PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [],
+            "RelatedItem@odata.count": 0,
+            "SensorNumber": 30,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU4VSAPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#CPU4VSAPG",
+            "MinReadingRange": 0,
+            "Name": "CPU4 VSA PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [],
+            "RelatedItem@odata.count": 0,
+            "SensorNumber": 91,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23SystemBoardPS4PGFAIL",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#SystemBoardPS4PGFAIL",
+            "MinReadingRange": 0,
+            "Name": "System Board PS4 PG FAIL",
+            "PhysicalContext": "SystemBoard",
+            "ReadingVolts": 1,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 185,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.context": "/redfish/v1/$metadata#Power.Power",
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Voltages/iDRAC.Embedded.1%23CPU3VSAPG",
+            "@odata.type": "#Power.v1_3_0.Voltage",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRange": 0,
+            "MemberId": "iDRAC.Embedded.1#CPU3VSAPG",
+            "MinReadingRange": 0,
+            "Name": "CPU3 VSA PG",
+            "PhysicalContext": "CPU",
+            "ReadingVolts": 1,
+            "RelatedItem": [],
+            "RelatedItem@odata.count": 0,
+            "SensorNumber": 88,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        }
+    ],
+    "Voltages@odata.count": 57
+}

@@ -1,0 +1,45 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Systems/Members/1/SmartStorage/ArrayControllers/Members/0/DiskDrives/Members/$entity",
+    "@odata.id": "/redfish/v1/Systems/1/SmartStorage/ArrayControllers/0/DiskDrives/0/",
+    "@odata.type": "#HpSmartStorageDiskDrive.1.3.0.HpSmartStorageDiskDrive",
+    "BlockSizeBytes": 512,
+    "CapacityGB": 300,
+    "CapacityLogicalBlocks": 585937500,
+    "CapacityMiB": 286102,
+    "CarrierApplicationVersion": "11",
+    "CarrierAuthenticationStatus": "OK",
+    "CurrentTemperatureCelsius": 38,
+    "Description": "HP Smart Storage Disk Drive View",
+    "DiskDriveStatusReasons": [
+        "None"
+    ],
+    "EncryptedDrive": false,
+    "FirmwareVersion": {
+        "Current": {
+            "VersionString": "HPDC"
+        }
+    },
+    "Id": "0",
+    "InterfaceSpeedMbps": 6000,
+    "InterfaceType": "SAS",
+    "Location": "1I:1:1",
+    "LocationFormat": "ControllerPort:Box:Bay",
+    "MaximumTemperatureCelsius": 51,
+    "MediaType": "HDD",
+    "Model": "EG0300FBVFL",
+    "Name": "HpSmartStorageDiskDrive",
+    "PowerOnHours": null,
+    "RotationalSpeedRpm": 10000,
+    "SSDEnduranceUtilizationPercentage": null,
+    "SerialNumber": "KFHDLDXF",
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.storage }}",
+        "State": "Enabled"
+    },
+    "Type": "HpSmartStorageDiskDrive.1.3.0",
+    "links": {
+        "self": {
+            "href": "/redfish/v1/Systems/1/SmartStorage/ArrayControllers/0/DiskDrives/0/"
+        }
+    }
+}

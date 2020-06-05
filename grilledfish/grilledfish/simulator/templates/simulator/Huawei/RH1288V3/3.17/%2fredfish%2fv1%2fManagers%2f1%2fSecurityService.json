@@ -1,0 +1,1 @@
+{"@odata.context":"\/redfish\/v1\/$metadata#Managers\/Members\/1\/SecurityService\/$entity","@odata.id":"\/redfish\/v1\/Managers\/1\/SecurityService","@odata.type":"#SecurityService.v1_0_0.SecurityService","Id":"SecurityService","Name":"Security Service","Links":{"HttpsCert":{"@odata.id":"\/redfish\/v1\/Managers\/1\/SecurityService\/HttpsCert"}}}

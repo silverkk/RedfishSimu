@@ -1,0 +1,315 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#ComputerSystem.ComputerSystem",
+    "@odata.etag": "\"1579113221\"",
+    "@odata.id": "/redfish/v1/Systems/Self",
+    "@odata.type": "#ComputerSystem.v1_7_0.ComputerSystem",
+    "Actions": {
+        "#ComputerSystem.Reset": {
+            "@Redfish.ActionInfo": "/redfish/v1/Systems/Self/ResetActionInfo",
+            "@Redfish.OperationApplyTimeSupport": {
+                "@odata.type": "#Settings.v1_2_1.Settings.OperationApplyTimeSupport",
+                "MaintenanceWindowDurationInSeconds": 600,
+                "MaintenanceWindowResource": {
+                    "@odata.id": "/redfish/v1/Systems/Self"
+                },
+                "SupportedValues": ["Immediate", "AtMaintenanceWindowStart"]
+            },
+            "target": "/redfish/v1/Systems/Self/Actions/ComputerSystem.Reset"
+        }
+    },
+    "AssetTag": "Free form asset tag",
+    "Bios": {
+        "@odata.id": "/redfish/v1/Systems/Self/Bios"
+    },
+    "BiosVersion": "Core: 5.14; KMB-IXS100: 1.10.094073C9",
+    "Boot": {
+        "BootOptions": {
+            "@odata.id": "/redfish/v1/Systems/Self/BootOptions"
+        },
+        "BootOrder": ["Boot0005", "Boot0006", "Boot0007", "Boot0008", "Boot0004"],
+        "BootOrderPropertySelection": "BootOrder",
+        "BootSourceOverrideEnabled": "Disabled",
+        "BootSourceOverrideEnabled@Redfish.AllowableValues": ["Disabled", "Once", "Continuous"],
+        "BootSourceOverrideMode": "Legacy",
+        "BootSourceOverrideMode@Redfish.AllowableValues": ["Legacy", "UEFI"],
+        "BootSourceOverrideTarget": "None",
+        "BootSourceOverrideTarget@Redfish.AllowableValues": ["None", "Pxe", "Floppy", "Cd", "Usb", "Hdd", "BiosSetup", "Utilities", "Diags", "UefiShell", "UefiTarget", "SDCard", "UefiHttp", "RemoteDrive", "UefiBootNext"]
+    },
+    "Description": "System Self",
+    "EthernetInterfaces": {
+        "@odata.id": "/redfish/v1/Systems/Self/EthernetInterfaces"
+    },
+    "Id": "Self",
+    "IndicatorLED": "Off",
+    "IndicatorLED@Redfish.AllowableValues": ["Lit", "Blinking", "Off"],
+    "Links": {
+        "Chassis": [{
+            "@odata.id": "/redfish/v1/Chassis/Self"
+        }],
+        "Chassis@odata.count": 1,
+        "ManagedBy": [{
+            "@odata.id": "/redfish/v1/Managers/Self"
+        }],
+        "ManagedBy@odata.count": 1
+    },
+    "LogServices": {
+        "@odata.id": "/redfish/v1/Systems/Self/LogServices"
+    },
+    "Manufacturer": "Kontron Canada Inc.",
+    "Memory": {
+        "@odata.id": "/redfish/v1/Systems/Self/Memory"
+    },
+    "MemoryDomains": {
+        "@odata.id": "/redfish/v1/Systems/Self/MemoryDomains"
+    },
+    "MemorySummary": {
+        "Status": {
+            "Health": "OK",
+            "HealthRollup": "Critical",
+            "State": "Enabled"
+        }
+    },
+    "Model": " ",
+    "Name": "System",
+    "NetworkInterfaces": {
+        "@odata.id": "/redfish/v1/Systems/Self/NetworkInterfaces"
+    },
+    "Oem": {
+        "Ami": {
+            "Bios": {
+                "Inventory": {
+                    "Crc": {
+                        "@odata.id": "/redfish/v1/Systems/Self/Oem/Ami/Inventory/Crc",
+                        "GroupCrcList": [{
+                            "CPU": 3227793940
+                        }, {
+                            "PCIE": 699176460
+                        }, {
+                            "DIMM": 1945949757
+                        }]
+                    }
+                },
+                "RedfishVersion": "1.7.0",
+                "RtpVersion": "1.7.0"
+            }
+        }
+    },
+    "PCIeDevices": [{
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_D7_12"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_D7_10"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_D7_17"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_80_08"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_14"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_5D_12"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_03_00"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_00"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_08"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_D7_0E"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_18_00"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_5D_16"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_17_02"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_D7_0F"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_19_03"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_5D_0F"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_02_00"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_5D_0E"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_D7_15"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_1F"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_16"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_5D_10"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_11"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_D7_16"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_1C"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_5D_17"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_17"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_5D_15"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_04_00"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_1A_00"
+    }],
+    "PCIeDevices@odata.count": 30,
+    "PCIeFunctions": [{
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_5D_12/PCIeFunctions/DevType3_M3K0_DevIndex29"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_00/PCIeFunctions/DevType3_SLT6_DevIndexA"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_16/PCIeFunctions/DevType3_HEC2_DevIndex14"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_D7_17/PCIeFunctions/DevType3_DMMY_DevIndex3C"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_5D_16/PCIeFunctions/DevType3_DMMY_DevIndex2F"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_5D_15/PCIeFunctions/DevType3_DMMY_DevIndex2D"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_5D_12/PCIeFunctions/DevType3_DMMY_DevIndex2C"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_5D_12/PCIeFunctions/DevType3_DMMY_DevIndex2A"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_19_03/PCIeFunctions/DevType3_VSP3_DevIndex23"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_D7_16/PCIeFunctions/DevType3_DMMY_DevIndex3B"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_D7_12/PCIeFunctions/DevType3_DMMY_DevIndex37"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_D7_12/PCIeFunctions/DevType3_DMMY_DevIndex36"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_14/PCIeFunctions/DevType3_TERM_DevIndex12"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_00/PCIeFunctions/DevType3_DMI0_DevIndexE"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_00/PCIeFunctions/DevType3_SLT17_DevIndex3"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_16/PCIeFunctions/DevType3_HEC1_DevIndex13"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_5D_0F/PCIeFunctions/DevType3_KTI1_DevIndex27"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_80_08/PCIeFunctions/DevType3_DMMY_DevIndex31"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_5D_17/PCIeFunctions/DevType3_DMMY_DevIndex30"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_00/PCIeFunctions/DevType3_SLT16_DevIndex2"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_00/PCIeFunctions/DevType3_SLT2_DevIndex0"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_1C/PCIeFunctions/DevType3_RP03_DevIndex18"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_D7_0F/PCIeFunctions/DevType3_KTI4_DevIndex33"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_00/PCIeFunctions/DevType3_SLT33_DevIndex7"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_1F/PCIeFunctions/DevType3_SPIC_DevIndex20"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_1F/PCIeFunctions/DevType3_PMC1_DevIndex1E"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_18_00/PCIeFunctions/DevType3_EPCU_DevIndex22"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_04_00/PCIeFunctions/DevType3__DevIndex1C"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_14/PCIeFunctions/DevType3_XHCI_DevIndex11"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_00/PCIeFunctions/DevType3_SLT4_DevIndex5"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_00/PCIeFunctions/DevType3_SLT3_DevIndex4"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_D7_12/PCIeFunctions/DevType3_DMMY_DevIndex38"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_00/PCIeFunctions/DevType3_SLT3D_DevIndexB"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_1F/PCIeFunctions/DevType3_LPC0_DevIndex1D"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_5D_10/PCIeFunctions/DevType3_KTI2_DevIndex28"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_00/PCIeFunctions/DevType3_SLT3F_DevIndexD"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_00/PCIeFunctions/DevType3_SLT5_DevIndex6"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_5D_0E/PCIeFunctions/DevType3_KTI0_DevIndex26"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_02_00/PCIeFunctions/DevType3_VB00_DevIndex19"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_D7_10/PCIeFunctions/DevType3_KTI5_DevIndex34"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_D7_0E/PCIeFunctions/DevType3_KTI3_DevIndex32"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_16/PCIeFunctions/DevType3_HEC3_DevIndex15"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_1C/PCIeFunctions/DevType3_RP01_DevIndex17"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_00/PCIeFunctions/DevType3_SLT35_DevIndex9"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_03_00/PCIeFunctions/DevType3__DevIndex1A"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_5D_12/PCIeFunctions/DevType3_DMMY_DevIndex2B"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_1A_00/PCIeFunctions/DevType3_FPK0_DevIndex24"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_D7_16/PCIeFunctions/DevType3_DMMY_DevIndex3A"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_D7_15/PCIeFunctions/DevType3_DMMY_DevIndex39"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_D7_12/PCIeFunctions/DevType3_M3K1_DevIndex35"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_08/PCIeFunctions/DevType3_DMMY_DevIndexF"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_1C/PCIeFunctions/DevType3_RP05_DevIndex1B"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_1A_00/PCIeFunctions/DevType3_FPK1_DevIndex25"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_17/PCIeFunctions/DevType3_SAT1_DevIndex16"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_1F/PCIeFunctions/DevType3_SMBS_DevIndex1F"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_00/PCIeFunctions/DevType3_SLT3E_DevIndexC"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_5D_16/PCIeFunctions/DevType3_DMMY_DevIndex2E"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_00/PCIeFunctions/DevType3_SLT15_DevIndex1"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_17_02/PCIeFunctions/DevType3_BR1C_DevIndex21"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_11/PCIeFunctions/DevType3_MRO0_DevIndex10"
+    }, {
+        "@odata.id": "/redfish/v1/Chassis/Self/PCIeDevices/00_00_00/PCIeFunctions/DevType3_SLT34_DevIndex8"
+    }],
+    "PCIeFunctions@odata.count": 61,
+    "PartNumber": " ",
+    "PowerState": "On",
+    "ProcessorSummary": {
+        "Count": 2,
+        "Model": "Intel(R) Xeon(R) Gold 5218T CPU @ 2.10GHz, 4000 Mhz, 16 Core(s), 32 Logical Processor(s)",
+        "Status": {
+            "Health": "OK",
+            "HealthRollup": "Critical",
+            "State": "Enabled"
+        }
+    },
+    "Processors": {
+        "@odata.id": "/redfish/v1/Systems/Self/Processors"
+    },
+    "SKU": "CG2400-00",
+    "SecureBoot": {
+        "@odata.id": "/redfish/v1/Systems/Self/SecureBoot"
+    },
+    "SerialNumber": "CG24924018",
+    "SimpleStorage": {
+        "@odata.id": "/redfish/v1/Systems/Self/SimpleStorage"
+    },
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.system }}",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    },
+    "Storage": {
+        "@odata.id": "/redfish/v1/Systems/Self/Storage"
+    },
+    "SystemType": "Physical",
+    "UUID": "6B7BD980-BFDE-1000-CA03-00A0A5DA9E2C"
+}

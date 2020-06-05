@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#MetricReportDefinitionCollection.MetricReportDefinitionCollection","@odata.etag":"\"1579711404\"","@odata.id":"/redfish/v1/TelemetryService/MetricReportDefinitions","@odata.type":"#MetricReportDefinitionCollection.MetricReportDefinitionCollection","Members":[],"Members@odata.count":0,"Name":"MetricReportDefinitions"}

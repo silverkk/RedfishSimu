@@ -1,0 +1,19 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#NetworkPort.NetworkPort",
+    "@odata.etag": "W/\"1587031043\"",
+    "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/mLOM/NetworkPorts/2",
+    "@odata.type": "#NetworkPort.v1_1_0.NetworkPort",
+    "AssociatedNetworkAddresses": [
+        "80:E4:55:9C:6B:16"
+    ],
+    "Id": "2",
+    "LinkStatus": "N/A",
+    "Name": "2",
+    "Oem": {
+        "Public": {
+            "BDF": "0000:3D:00.1",
+            "PortType": "ElectricalPort"
+        }
+    },
+    "PhysicalPortNumber": "2"
+}

@@ -1,0 +1,1 @@
+{"@odata.context":"\/redfish\/v1\/$metadata#Systems\/Members\/1\/LogServices\/$entity","@odata.id":"\/redfish\/v1\/Systems\/1\/LogServices","@odata.type":"#LogServiceCollection.LogServiceCollection","Name":"LogService Collection","Members@odata.count":1,"Members":[{"@odata.id":"\/redfish\/v1\/Systems\/1\/LogServices\/Log1"}]}

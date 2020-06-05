@@ -1,0 +1,38 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#EventService.EventService",
+    "@odata.etag": "W/\"1587030864\"",
+    "@odata.id": "/redfish/v1/EventService",
+    "@odata.type": "#EventService.v1_1_0.EventService",
+    "Actions": {
+        "#EventService.SubmitTestEvent": {
+            "@Redfish.ActionInfo": "/redfish/v1/EventService/SubmitTestEventActionInfo",
+            "target": "/redfish/v1/EventService/Actions/EventService.SubmitTestEvent"
+        },
+        "Oem": {
+            "#EventService.SubmitDelayedTestEvent": {
+                "@Redfish.ActionInfo": "/redfish/v1/EventService/SubmitDelayedTestEventActionInfo",
+                "target": "/redfish/v1/EventService/Actions/EventService.SubmitDelayedTestEvent"
+            }
+        }
+    },
+    "DeliveryRetryAttempts": 3,
+    "DeliveryRetryIntervalSeconds": 60,
+    "Description": "Event Service",
+    "EventTypesForSubscription": [
+        "StatusChange",
+        "ResourceUpdated",
+        "ResourceAdded",
+        "ResourceRemoved",
+        "Alert"
+    ],
+    "Id": "EventService",
+    "Name": "Event Service",
+    "ServiceEnabled": true,
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.EventService }}",
+        "State": "Enabled"
+    },
+    "Subscriptions": {
+        "@odata.id": "/redfish/v1/EventService/Subscriptions"
+    }
+}

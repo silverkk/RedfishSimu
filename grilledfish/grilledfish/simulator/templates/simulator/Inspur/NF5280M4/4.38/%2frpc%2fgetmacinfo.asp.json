@@ -1,0 +1,8 @@
+//Dynamic Data Begin
+WEBVAR_JSONVAR_GETMACINFO = 
+{ 
+WEBVAR_STRUCTNAME_GETMACINFO : 
+[ 
+{ 'Index' : 0,'nicType' : 0,'MACADDRESS' : '6c:92:bf:0c:02:94','IPADDRESS' : '0.0.0.0' },  { 'Index' : 1,'nicType' : 0,'MACADDRESS' : '6c:92:bf:0c:02:95','IPADDRESS' : '0.0.0.0' },  {} ],  
+HAPI_STATUS:0 }; 
+//Dynamic data end

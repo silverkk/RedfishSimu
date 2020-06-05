@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#CertificateCollection.CertificateCollection","@odata.id":"/redfish/v1/EventService/Certificates","@odata.type":"#CertificateCollection.CertificateCollection","Name":"CertificateCollection","Members@odata.count":0,"Members":[]}

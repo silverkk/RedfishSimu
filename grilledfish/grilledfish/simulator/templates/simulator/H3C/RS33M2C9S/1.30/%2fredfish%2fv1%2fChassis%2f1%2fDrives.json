@@ -1,0 +1,16 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#DriveCollection.DriveCollection(*)",
+    "@odata.etag": "W/\"1587030927\"",
+    "@odata.id": "/redfish/v1/Chassis/1/Drives",
+    "@odata.type": "#Drive.v1_4_0.Drive",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Drives/DiskFront2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Drives/DiskFront3"
+        }
+    ],
+    "Members@odata.count": 2,
+    "Name": "Drive Collection"
+}

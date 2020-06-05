@@ -1,0 +1,97 @@
+{
+    "@odata.type": "#Triggers.v1_1_0.Triggers",
+    "Id": "TMPWarnTrigger",
+    "Name":"Trigger on system ambient and inlet temperature warnings",
+    "Description": "Trigger when an OEM event is raised",
+    "MetricType": "Discrete",
+    "TriggerActions": [
+        "RedfishMetricReport"
+    ],
+    "DiscreteTriggerCondition": "Specified",
+    "DiscreteTriggers": [
+        {
+            "Value": "iDRAC.1.6.TMP1000",
+            "Name": "tempsensor name exceeded the maximum warning threshold.",
+            "Severity": "Warning",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP0100",
+            "Name": "The system board  temperature is less than the lower warning threshold.",
+            "Severity": "Warning",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP0130",
+            "Name": "The control panel temperature is less than the lower warning threshold.",
+            "Severity": "Warning",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP0126",
+            "Name": "Disk drive bay temperature is greater than the upper warning threshold.",
+            "Severity": "Warning",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMPS0100",
+            "Name": "Inlet temperature is above warning level for extended duration.",
+            "Severity": "Warning",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP0118",
+            "Name": "The system inlet temperature is less than the lower warning threshold.",
+            "Severity": "Warning",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP1001",
+            "Name": "tempsensor name has crossed the minimum warning threshold.",
+            "Severity": "Warning",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP0114",
+            "Name": "The  temperature is greater than the upper warning threshold.",
+            "Severity": "Warning",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP0112",
+            "Name": "The  temperature is less than the lower warning threshold.",
+            "Severity": "Warning",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMPS0101",
+            "Name": "Inlet temperature is above critical level for extended duration.",
+            "Severity": "Warning",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP0120",
+            "Name": "The system inlet temperature is greater than the upper warning threshold.",
+            "Severity": "Warning",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP0102",
+            "Name": "The system board  temperature is greater than the upper warning threshold.",
+            "Severity": "Warning",
+            "DwellTime": "PT0.001S"
+        }
+    ],
+    "Links": {
+    	"MetricReportDefinitions": [
+    	{
+           "@odata.id": "/redfish/v1/TelemetryService/MetricReportDefinitions/ThermalSensor"
+    	},
+    	{
+           "@odata.id": "/redfish/v1/TelemetryService/MetricReportDefinitions/ThermalMetrics"
+    	}
+    	]
+    },
+    "@odata.context": "/redfish/v1/$metadata#Triggers.Triggers",
+    "@odata.id": "/redfish/v1/TelemetryService/Triggers/TMPWarnTrigger"
+}

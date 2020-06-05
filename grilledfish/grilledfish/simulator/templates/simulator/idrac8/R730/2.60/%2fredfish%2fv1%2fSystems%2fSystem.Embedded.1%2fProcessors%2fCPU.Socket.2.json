@@ -1,0 +1,29 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Processor.Processor",
+    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors/CPU.Socket.2",
+    "@odata.type": "#Processor.v1_0_2.Processor",
+    "Description": "Represents the properties of a Processor attached to this System",
+    "Id": "CPU.Socket.2",
+    "InstructionSet": "x86-64",
+    "Manufacturer": "Intel",
+    "MaxSpeedMHz": 4000,
+    "Model": "Intel(R) Xeon(R) CPU E5-2609 v3 @ 1.90GHz",
+    "Name": "CPU 2",
+    "ProcessorArchitecture": "x86",
+    "ProcessorId": {
+        "EffectiveFamily": "6",
+        "EffectiveModel": "63",
+        "IdentificationRegisters": "0x000306F2",
+        "MicrocodeInfo": null,
+        "Step": "2",
+        "VendorId": "GenuineIntel"
+    },
+    "ProcessorType": "CPU",
+    "Socket": "CPU.Socket.2",
+    "Status": {
+        "Health": null,
+        "State": null
+    },
+    "TotalCores": 6,
+    "TotalThreads": 6
+}

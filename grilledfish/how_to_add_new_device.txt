@@ -1,0 +1,5 @@
+Thanks for Teacher Qian's advice, that we should prepare this file after wasting hours when add a new device type:
+1.	edit grilledfish/simulator/apps.py, Add the new device type in class MachineType, case sensitive
+2.	put the device response dump under folder grilledfish/simulator/templates/simulator, 
+    the folder must be organized in form [platform]/[model]/[version] as configured exactly, case sensitive
+3.	add an new config section in grilledfish.json.

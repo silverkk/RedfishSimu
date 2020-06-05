@@ -1,0 +1,46 @@
+{
+    "@odata.type": "#Triggers.v1_1_0.Triggers",
+    "Id": "MEMCriticalTrigger",
+    "Name":"Trigger on memory critical errors",
+    "Description": "Trigger when an OEM event is raised",
+    "MetricType": "Discrete",
+    "TriggerActions": [
+        "RedfishMetricReport"
+    ],
+    "DiscreteTriggerCondition": "Specified",
+    "DiscreteTriggers": [
+        {
+            "Value": "iDRAC.1.6.MEM0003",
+            "Name": "Stuck bit memory error detected on a memory device at location .",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.MEM0010",
+            "Name": "Memory device at location  is over heating.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.MEM0702",
+            "Name": "Correctable memory error rate exceeded for .",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.MEM0002",
+            "Name": "Parity memory errors detected on a memory device at location .",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        }
+    ],
+    "Links": {
+    	"MetricReportDefinitions": [
+    	{
+           "@odata.id": "/redfish/v1/TelemetryService/MetricReportDefinitions/MemorySensor"
+    	}
+    	]
+    },
+    "@odata.context": "/redfish/v1/$metadata#Triggers.Triggers",
+    "@odata.id": "/redfish/v1/TelemetryService/Triggers/MEMCriticalTrigger"
+}

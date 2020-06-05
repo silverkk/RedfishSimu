@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#LogEntry.LogEntry","@odata.type":"#LogEntry.v1_0_0.LogEntry","@odata.id":"/redfish/v1/Managers/1/LogServices/Log1/Entries/5","Id":"5","Name":"Maintenance Event Log Entry 5","Severity":"OK","Created":"2019-08-30T08:59:11+00:00","Interface":"Web","User":"ADMIN(ADMIN)","Source":"172.18.18.1","Description":"BIOS was updated successfully."}

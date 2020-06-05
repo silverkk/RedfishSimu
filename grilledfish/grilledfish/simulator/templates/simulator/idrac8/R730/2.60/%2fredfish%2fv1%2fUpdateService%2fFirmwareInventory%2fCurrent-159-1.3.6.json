@@ -1,0 +1,14 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#SoftwareInventory.SoftwareInventory",
+    "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/Current-159-1.3.6",
+    "@odata.type": "#SoftwareInventory.v1_0_0.SoftwareInventory",
+    "Description": "Represents Firmware Inventory",
+    "Id": "Current-159-1.3.6",
+    "Name": "BIOS",
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.Firmware }}",
+        "State": "Enabled"
+    },
+    "Updateable": true,
+    "Version": "1.3.6"
+}

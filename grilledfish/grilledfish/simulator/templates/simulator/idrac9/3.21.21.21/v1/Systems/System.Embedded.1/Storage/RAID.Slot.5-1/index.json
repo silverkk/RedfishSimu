@@ -1,0 +1,61 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Storage.Storage",
+    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Storage/RAID.Slot.5-1",
+    "@odata.type": "#Storage.v1_3_0.Storage",
+    "Description": "PERC H330 Adapter",
+    "Drives": [
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Storage/Drives/Disk.Bay.0.Enclosure.Internal.0-0.RAID.Slot.5-1"
+        }
+    ],
+    "Drives@odata.count": 1,
+    "Id": "RAID.Slot.5-1",
+    "Links": {
+        "Enclosures": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/Enclosure.Internal.0-0.RAID.Slot.5-1"
+            }
+        ],
+        "Enclosures@odata.count": 1
+    },
+    "Name": "PERC H330 Adapter",
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.raid }}",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    },
+    "StorageControllers": [
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/StorageControllers/RAID.Slot.5-1",
+            "FirmwareVersion": "25.5.2.0001",
+            "Identifiers": [
+                {
+                    "DurableName": "5588A5A0E5020B00",
+                    "DurableNameFormat": "NAA"
+                }
+            ],
+            "Links": {},
+            "Manufacturer": "DELL",
+            "MemberId": "RAID.Slot.5-1",
+            "Model": "PERC H330 Adapter",
+            "Name": "PERC H330 Adapter",
+            "SpeedGbps": 12,
+            "Status": {
+                "Health": "OK",
+                "HealthRollup": "OK",
+                "State": "Enabled"
+            },
+            "SupportedControllerProtocols": [
+                "PCIe"
+            ],
+            "SupportedDeviceProtocols": [
+                "SAS",
+                "SATA"
+            ]
+        }
+    ],
+    "StorageControllers@odata.count": 1,
+    "Volumes": {
+        "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Storage/RAID.Slot.5-1/Volumes"
+    }
+}

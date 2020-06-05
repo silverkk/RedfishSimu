@@ -1,0 +1,1 @@
+{"@odata.type":"#ProcessorMetrics.v1_0_2.ProcessorMetrics","TemperatureCelsius":0,"@odata.id":"/redfish/v1/Systems/1/Processors/2/ProcessorMetrics","Id":"ProcessorMetrics","@odata.etag":"\"cebb17f6ea5e49cd1e01868df180f6df\"","Name":"Processor Metrics","Description":"This resource is used to represent a processor metrics for a Redfish implementation."}

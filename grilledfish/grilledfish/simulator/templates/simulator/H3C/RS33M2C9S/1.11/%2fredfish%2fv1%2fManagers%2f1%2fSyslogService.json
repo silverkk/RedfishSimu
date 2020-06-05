@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#SyslogService.SyslogService(*)","@odata.etag":"W/\"1578648105\"","@odata.id":"/redfish/v1/Managers/1/SyslogService","Id":"SyslogService","Name":"Syslog Service","ServiceEnabled":true,"SyslogServers":{"Address":"","Enabled":"false","LogType":["Audit Log","Firmware Update Log","Configuration Log","Hardware Update Log"]}}

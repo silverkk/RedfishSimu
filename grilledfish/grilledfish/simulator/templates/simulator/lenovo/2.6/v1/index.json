@@ -1,0 +1,59 @@
+{
+    "Tasks": {
+        "@odata.id": "/redfish/v1/TaskService"
+    },
+    "Chassis": {
+        "@odata.id": "/redfish/v1/Chassis"
+    },
+    "@odata.id": "/redfish/v1/",
+    "ProtocolFeaturesSupported": {
+        "ExcerptQuery": false,
+        "ExpandQuery": {
+            "Levels": true,
+            "NoLinks": true,
+            "Links": true,
+            "ExpandAll": true,
+            "MaxLevels": 2
+        },
+        "FilterQuery": true,
+        "OnlyMemberQuery": true,
+        "SelectQuery": true
+    },
+    "Links": {
+        "Sessions": {
+            "@odata.id": "/redfish/v1/SessionService/Sessions"
+        }
+    },
+    "Managers": {
+        "@odata.id": "/redfish/v1/Managers"
+    },
+    "EventService": {
+        "@odata.id": "/redfish/v1/EventService"
+    },
+    "JsonSchemas": {
+        "@odata.id": "/redfish/v1/JsonSchemas"
+    },
+    "Systems": {
+        "@odata.id": "/redfish/v1/Systems"
+    },
+    "UpdateService": {
+        "@odata.id": "/redfish/v1/UpdateService"
+    },
+    "Registries": {
+        "@odata.id": "/redfish/v1/Registries"
+    },
+    "UUID": "CD823046-DDBE-11E6-A705-FF12091D4155",
+    "Name": "Root Service",
+    "RedfishVersion": "1.6.0",
+    "@odata.context": "/redfish/v1/$metadata#ServiceRoot.ServiceRoot",
+    "@odata.type": "#ServiceRoot.v1_4_0.ServiceRoot",
+    "SessionService": {
+        "@odata.id": "/redfish/v1/SessionService"
+    },
+    "Id": "RootService",
+    "@odata.etag": "\"04bcf64720ca0dd50c747d1b5b209354\"",
+    "AccountService": {
+        "@odata.id": "/redfish/v1/AccountService"
+    },
+    "Description": "This resource is used to represent a service root for a Redfish implementation."
+}

@@ -1,0 +1,58 @@
+{
+    "@odata.type": "#Triggers.v1_1_0.Triggers",
+    "Id": "FANCriticalTrigger",
+    "Name":"Trigger on Fan critical errors",
+    "Description": "Trigger when an OEM event is raised",
+    "MetricType": "Discrete",
+    "TriggerActions": [
+        "RedfishMetricReport"
+    ],
+    "DiscreteTriggerCondition": "Specified",
+    "DiscreteTriggers": [
+        {
+            "Value": "iDRAC.1.6.FAN0013",
+            "Name": "Fan RPM is less than the lower critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.FAN0016",
+            "Name": "Fan RPM is outside of normal operating range.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.FAN0001",
+            "Name": "Fan  RPM is less than the lower critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.FAN0003",
+            "Name": "Fan  RPM is greater than the upper critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.FAN0004",
+            "Name": "Fan  RPM is outside of range.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.FAN0015",
+            "Name": "Fan RPM is greater than the upper critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        }
+    ],
+    "Links": {
+    	"MetricReportDefinitions": [
+    	{
+           "@odata.id": "/redfish/v1/TelemetryService/MetricReportDefinitions/FanSensor"
+    	}
+    	]
+    },
+    "@odata.context": "/redfish/v1/$metadata#Triggers.Triggers",
+    "@odata.id": "/redfish/v1/TelemetryService/Triggers/FANCriticalTrigger"
+}

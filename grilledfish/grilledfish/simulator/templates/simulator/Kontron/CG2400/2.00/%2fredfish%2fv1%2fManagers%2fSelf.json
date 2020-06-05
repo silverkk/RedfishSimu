@@ -1,0 +1,96 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Manager.Manager",
+    "@odata.etag": "\"1579711404\"",
+    "@odata.id": "/redfish/v1/Managers/Self",
+    "@odata.type": "#Manager.v1_5_2.Manager",
+    "Actions": {
+        "#Manager.Reset": {
+            "@Redfish.ActionInfo": "/redfish/v1/Managers/Self/ResetActionInfo",
+            "@Redfish.OperationApplyTimeSupport": {
+                "@odata.type": "#Settings.v1_2_1.Settings.OperationApplyTimeSupport",
+                "MaintenanceWindowDurationInSeconds": 600,
+                "MaintenanceWindowResource": {
+                    "@odata.id": "/redfish/v1/Managers/Self"
+                },
+                "SupportedValues": ["Immediate", "AtMaintenanceWindowStart"]
+            },
+            "target": "/redfish/v1/Managers/Self/Actions/Manager.Reset"
+        },
+        "Oem": {
+            "#RedfishDBReset": {
+                "@Redfish.ActionInfo": "/redfish/v1/Managers/Self/RedfishDBResetActionInfo",
+                "target": "/redfish/v1/Managers/Self/Actions/RedfishDBReset"
+            },
+            "Ami": {
+                "#VirtualMedia.ConfigureCDInstance": {
+                    "@Redfish.ActionInfo": "/redfish/v1/Managers/Self/Oem/Ami/VirtualMedia.ConfigureCDInstanceActionInfo",
+                    "CDInstances": 1,
+                    "target": "/redfish/v1/Managers/Self/Actions/Oem/Ami/VirtualMedia.ConfigureCDInstance"
+                },
+                "#VirtualMedia.EnableRMedia": {
+                    "@Redfish.ActionInfo": "/redfish/v1/Managers/Self/Oem/Ami/VirtualMedia.EnableRMediaActionInfo",
+                    "Status": "Disabled",
+                    "target": "/redfish/v1/Managers/Self/Actions/Oem/Ami/VirtualMedia.EnableRMedia"
+                }
+            }
+        }
+    },
+    "CommandShell": {
+        "ConnectTypesSupported": ["IPMI", "SSH"],
+        "MaxConcurrentSessions": 36,
+        "ServiceEnabled": true
+    },
+    "DateTime": "2020-01-22T19:57:39-05:00",
+    "DateTimeLocalOffset": "-05:00",
+    "Description": "BMC",
+    "EthernetInterfaces": {
+        "@odata.id": "/redfish/v1/Managers/Self/EthernetInterfaces"
+    },
+    "FirmwareVersion": "2.00.-428589047",
+    "GraphicalConsole": {
+        "ConnectTypesSupported": ["KVMIP"],
+        "MaxConcurrentSessions": 4,
+        "ServiceEnabled": true
+    },
+    "HostInterfaces": {
+        "@odata.id": "/redfish/v1/Managers/Self/HostInterfaces"
+    },
+    "Id": "Self",
+    "Links": {
+        "ManagerInChassis": {
+            "@odata.id": "/redfish/v1/Chassis/Self"
+        }
+    },
+    "LogServices": {
+        "@odata.id": "/redfish/v1/Managers/Self/LogServices"
+    },
+    "ManagerType": "BMC",
+    "Model": "10019152580",
+    "Name": "Manager",
+    "NetworkProtocol": {
+        "@odata.id": "/redfish/v1/Managers/Self/NetworkProtocol"
+    },
+    "PowerState": "On",
+    "Redundancy@odata.count": 0,
+    "RemoteAccountService": {
+        "@odata.id": "/redfish/v1/AccountService"
+    },
+    "RemoteRedfishServiceUri": "/redfish/v1/",
+    "SerialConsole": {
+        "ConnectTypesSupported": ["IPMI", "SSH"],
+        "MaxConcurrentSessions": 1,
+        "ServiceEnabled": true
+    },
+    "SerialInterfaces": {
+        "@odata.id": "/redfish/v1/Managers/Self/SerialInterfaces"
+    },
+    "ServiceEntryPointUUID": "00a0a5da-9e2c-c403-0010-debf008a696b",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "UUID": "00a0a5da-9e2c-c403-0010-debf008a696b",
+    "VirtualMedia": {
+        "@odata.id": "/redfish/v1/Managers/Self/VirtualMedia"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "error": {
+        "@Message.ExtendedInfo": [
+            {
+                "MessageArgs": [],
+                "Resolution": "Correct the URI and resubmit the request.",
+                "MessageId": "ExtendedError.1.1.RequestUriNotFound",
+                "Severity": "Critical",
+                "Message": "The request specified a URI of a resource that does not exist.",
+                "@odata.type": "#Message.v1_0_6.Message"
+            }
+        ],
+        "code": "Base.1.4.GeneralError",
+        "message": "A general error has occurred. See ExtendedInfo for more information."
+    }
+}

@@ -1,0 +1,135 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#ComputerSystem.ComputerSystem(*)",
+    "@odata.etag": "W/\"1587030912\"",
+    "@odata.id": "/redfish/v1/Systems/1",
+    "@odata.type": "#ComputerSystem.v1_5_0.ComputerSystem",
+    "Actions": {
+        "#ComputerSystem.Reset": {
+            "ResetType@Redfish.AllowableValues": [
+                "On",
+                "ForceOff",
+                "ForceRestart",
+                "GracefulShutdown"
+            ],
+            "target": "/redfish/v1/Systems/1/Actions/ComputerSystem.Reset"
+        }
+    },
+    "AssetTag": "",
+    "Bios": {
+        "@odata.id": "/redfish/v1/Systems/1/Bios"
+    },
+    "BiosVersion": "2.00.32P03 V100R001B02D032SP03",
+    "Boot": {
+        "BootSourceOverrideEnabled": "Once",
+        "BootSourceOverrideEnabled@Redfish.AllowableValues": [
+            "Once",
+            "Continuous"
+        ],
+        "BootSourceOverrideMode": "None",
+        "BootSourceOverrideMode@Redfish.AllowableValues": [
+            "None",
+            "Legacy",
+            "UEFI"
+        ],
+        "BootSourceOverrideTarget": "None",
+        "BootSourceOverrideTarget@Redfish.AllowableValues": [
+            "None",
+            "Pxe",
+            "Hdd",
+            "Cd",
+            "BiosSetup"
+        ]
+    },
+    "Description": "System 1",
+    "Healthstate": {
+        "OverallHealth": "Critical",
+        "board": "OK",
+        "current": "OK",
+        "disk": "Critical",
+        "fans": "OK",
+        "memory": "OK",
+        "pcie": "OK",
+        "power": "OK",
+        "processor": "OK",
+        "raid": "OK",
+        "temperature": "OK",
+        "volatge": "OK"
+    },
+    "HostName": "HDM210235A1Q70000000001",
+    "Id": "1",
+    "IndicatorLED": "Off",
+    "Links": {
+        "Chassis": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/1"
+            }
+        ],
+        "ManagedBy": [
+            {
+                "@odata.id": "/redfish/v1/Managers/1"
+            }
+        ]
+    },
+    "LogServices": {
+        "@odata.id": "/redfish/v1/Systems/1/LogServices"
+    },
+    "MaintenanceSerialNumber": "210231A1110000000001",
+    "Manufacturer": "H3C",
+    "Memory": {
+        "@odata.id": "/redfish/v1/Systems/1/Memory"
+    },
+    "MemorySummary": {
+        "TotalSystemMemoryGiB": 352
+    },
+    "Model": "RS33M2C9S",
+    "Name": "Computer System",
+    "NetworkInterfaces": {
+        "@odata.id": "/redfish/v1/Systems/1/NetworkInterfaces"
+    },
+    "Oem": {
+        "Public": {
+            "PowerOnStrategy": "RestorePreviousState"
+        }
+    },
+    "PCIeDevices": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/PCIeDevices/9"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/PCIeDevices/10"
+        }
+    ],
+    "PCIeFunctions": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/PCIeDevices/9/Functions/1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/PCIeDevices/10/Functions/1"
+        }
+    ],
+    "PartNumber": "",
+    "PowerState": "On",
+    "ProcessorSummary": {
+        "Count": 2
+    },
+    "Processors": {
+        "@odata.id": "/redfish/v1/Systems/1/Processors"
+    },
+    "SecureBoot": {
+        "@odata.id": "/redfish/v1/Systems/1/SecureBoot"
+    },
+    "SerialNumber": "210235A1Q70000000001",
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.system }}",
+        "State": "Enabled"
+    },
+    "Storage": {
+        "@odata.id": "/redfish/v1/Systems/1/Storages"
+    },
+    "SystemType": "Physical",
+    "UUID": "559c6b13-80e4-0496-e611-b7cf58a00c09",
+    "Uptime_hours": "3407",
+    "kvm": {
+        "@odata.id": "/redfish/v1/Systems/1/kvm"
+    }
+}

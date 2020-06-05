@@ -1,0 +1,64 @@
+{
+    "@odata.type": "#Triggers.v1_1_0.Triggers",
+    "Id": "CPUCriticalTrigger",
+    "Name":"Trigger on CPU critical errors",
+    "Description": "Trigger when an OEM event is raised",
+    "MetricType": "Discrete",
+    "TriggerActions": [
+        "RedfishMetricReport"
+    ],
+    "DiscreteTriggerCondition": "Specified",
+    "DiscreteTriggers": [
+        {
+            "Value": "iDRAC.1.6.CPU0004",
+            "Name": "CPU  failed to initialize.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.CPU0700",
+            "Name": "CPU  initialization error detected.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.CPU0702",
+            "Name": "CPU bus parity error detected.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.CPU0006",
+            "Name": "Unrecoverable CPU complex error detected on CPU .",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.CPU0703",
+            "Name": "CPU bus initialization error detected.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.CPU0701",
+            "Name": "CPU  protocol error detected.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.CPU0003",
+            "Name": "CPU  is stuck in POST.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        }
+    ],
+    "Links": {
+    	"MetricReportDefinitions": [
+    	{
+           "@odata.id": "/redfish/v1/TelemetryService/MetricReportDefinitions/CPUSensor"
+    	}
+    	]
+    },
+    "@odata.context": "/redfish/v1/$metadata#Triggers.Triggers",
+    "@odata.id": "/redfish/v1/TelemetryService/Triggers/CPUCriticalTrigger"
+}

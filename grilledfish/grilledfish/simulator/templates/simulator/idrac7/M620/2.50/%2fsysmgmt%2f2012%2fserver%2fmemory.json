@@ -1,0 +1,235 @@
+{
+    "DIMM": {
+        "iDRAC.Embedded.1#DIMMSLOTA1": {
+            "device_description": "DIMM A1",
+            "name": "DIMM SLOT A1",
+            "rank": 1,
+            "size": 8192,
+            "speed": 1600,
+            "state": 2,
+            "status": 2,
+            "type": 24
+        },
+        "iDRAC.Embedded.1#DIMMSLOTA10": {
+            "name": "DIMM SLOT A10",
+            "rank": 0,
+            "size": 0,
+            "speed": 0,
+            "state": 3,
+            "status": 1,
+            "type": 2
+        },
+        "iDRAC.Embedded.1#DIMMSLOTA11": {
+            "name": "DIMM SLOT A11",
+            "rank": 0,
+            "size": 0,
+            "speed": 0,
+            "state": 3,
+            "status": 1,
+            "type": 2
+        },
+        "iDRAC.Embedded.1#DIMMSLOTA12": {
+            "name": "DIMM SLOT A12",
+            "rank": 0,
+            "size": 0,
+            "speed": 0,
+            "state": 3,
+            "status": 1,
+            "type": 2
+        },
+        "iDRAC.Embedded.1#DIMMSLOTA2": {
+            "device_description": "DIMM A2",
+            "name": "DIMM SLOT A2",
+            "rank": 1,
+            "size": 8192,
+            "speed": 1600,
+            "state": 2,
+            "status": 2,
+            "type": 24
+        },
+        "iDRAC.Embedded.1#DIMMSLOTA3": {
+            "device_description": "DIMM A3",
+            "name": "DIMM SLOT A3",
+            "rank": 1,
+            "size": 8192,
+            "speed": 1600,
+            "state": 2,
+            "status": 2,
+            "type": 24
+        },
+        "iDRAC.Embedded.1#DIMMSLOTA4": {
+            "device_description": "DIMM A4",
+            "name": "DIMM SLOT A4",
+            "rank": 1,
+            "size": 8192,
+            "speed": 1600,
+            "state": 2,
+            "status": 2,
+            "type": 24
+        },
+        "iDRAC.Embedded.1#DIMMSLOTA5": {
+            "device_description": "DIMM A5",
+            "name": "DIMM SLOT A5",
+            "rank": 1,
+            "size": 8192,
+            "speed": 1600,
+            "state": 2,
+            "status": 2,
+            "type": 24
+        },
+        "iDRAC.Embedded.1#DIMMSLOTA6": {
+            "device_description": "DIMM A6",
+            "name": "DIMM SLOT A6",
+            "rank": 1,
+            "size": 8192,
+            "speed": 1600,
+            "state": 2,
+            "status": 2,
+            "type": 24
+        },
+        "iDRAC.Embedded.1#DIMMSLOTA7": {
+            "device_description": "DIMM A7",
+            "name": "DIMM SLOT A7",
+            "rank": 1,
+            "size": 8192,
+            "speed": 1600,
+            "state": 2,
+            "status": 2,
+            "type": 24
+        },
+        "iDRAC.Embedded.1#DIMMSLOTA8": {
+            "device_description": "DIMM A8",
+            "name": "DIMM SLOT A8",
+            "rank": 1,
+            "size": 8192,
+            "speed": 1600,
+            "state": 2,
+            "status": 2,
+            "type": 24
+        },
+        "iDRAC.Embedded.1#DIMMSLOTA9": {
+            "name": "DIMM SLOT A9",
+            "rank": 0,
+            "size": 0,
+            "speed": 0,
+            "state": 3,
+            "status": 1,
+            "type": 2
+        },
+        "iDRAC.Embedded.1#DIMMSLOTB1": {
+            "name": "DIMM SLOT B1",
+            "rank": 0,
+            "size": 0,
+            "speed": 0,
+            "state": 3,
+            "status": 1,
+            "type": 2
+        },
+        "iDRAC.Embedded.1#DIMMSLOTB10": {
+            "name": "DIMM SLOT B10",
+            "rank": 0,
+            "size": 0,
+            "speed": 0,
+            "state": 3,
+            "status": 1,
+            "type": 2
+        },
+        "iDRAC.Embedded.1#DIMMSLOTB11": {
+            "name": "DIMM SLOT B11",
+            "rank": 0,
+            "size": 0,
+            "speed": 0,
+            "state": 3,
+            "status": 1,
+            "type": 2
+        },
+        "iDRAC.Embedded.1#DIMMSLOTB12": {
+            "name": "DIMM SLOT B12",
+            "rank": 0,
+            "size": 0,
+            "speed": 0,
+            "state": 3,
+            "status": 1,
+            "type": 2
+        },
+        "iDRAC.Embedded.1#DIMMSLOTB2": {
+            "name": "DIMM SLOT B2",
+            "rank": 0,
+            "size": 0,
+            "speed": 0,
+            "state": 3,
+            "status": 1,
+            "type": 2
+        },
+        "iDRAC.Embedded.1#DIMMSLOTB3": {
+            "name": "DIMM SLOT B3",
+            "rank": 0,
+            "size": 0,
+            "speed": 0,
+            "state": 3,
+            "status": 1,
+            "type": 2
+        },
+        "iDRAC.Embedded.1#DIMMSLOTB4": {
+            "name": "DIMM SLOT B4",
+            "rank": 0,
+            "size": 0,
+            "speed": 0,
+            "state": 3,
+            "status": 1,
+            "type": 2
+        },
+        "iDRAC.Embedded.1#DIMMSLOTB5": {
+            "name": "DIMM SLOT B5",
+            "rank": 0,
+            "size": 0,
+            "speed": 0,
+            "state": 3,
+            "status": 1,
+            "type": 2
+        },
+        "iDRAC.Embedded.1#DIMMSLOTB6": {
+            "name": "DIMM SLOT B6",
+            "rank": 0,
+            "size": 0,
+            "speed": 0,
+            "state": 3,
+            "status": 1,
+            "type": 2
+        },
+        "iDRAC.Embedded.1#DIMMSLOTB7": {
+            "name": "DIMM SLOT B7",
+            "rank": 0,
+            "size": 0,
+            "speed": 0,
+            "state": 3,
+            "status": 1,
+            "type": 2
+        },
+        "iDRAC.Embedded.1#DIMMSLOTB8": {
+            "name": "DIMM SLOT B8",
+            "rank": 0,
+            "size": 0,
+            "speed": 0,
+            "state": 3,
+            "status": 1,
+            "type": 2
+        },
+        "iDRAC.Embedded.1#DIMMSLOTB9": {
+            "name": "DIMM SLOT B9",
+            "rank": 0,
+            "size": 0,
+            "speed": 0,
+            "state": 3,
+            "status": 1,
+            "type": 2
+        }
+    },
+    "Memory": {
+        "capacity": 65536,
+        "err_correction": 6,
+        "max_capacity": 1572864,
+        "slots_available": 24,
+        "slots_used": 8
+    }
+}

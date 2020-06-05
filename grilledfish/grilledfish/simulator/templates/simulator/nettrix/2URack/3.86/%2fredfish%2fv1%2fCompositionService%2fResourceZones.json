@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#ZoneCollection.ZoneCollection","@odata.etag":"W/"1585690509"","@odata.id":"/redfish/v1/CompositionService/ResourceZones","@odata.type":"#ZoneCollection.ZoneCollection","Description":"Collection of Zones","Members":[],"Members@odata.count":0,"Name":"Zone Collection"}

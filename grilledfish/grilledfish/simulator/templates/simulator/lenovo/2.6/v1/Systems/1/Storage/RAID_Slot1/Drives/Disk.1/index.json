@@ -1,0 +1,55 @@
+{
+    "SerialNumber": "3SE1CSWD",
+    "@odata.id": "/redfish/v1/Systems/1/Storage/RAID_Slot1/Drives/Disk.1",
+    "Links": {
+        "Volumes": [
+            {
+                "@odata.id": "/redfish/v1/Systems/1/Storage/RAID_Slot1/Volumes/3"
+            }
+        ],
+        "Chassis": {
+            "@odata.id": "/redfish/v1/Chassis/1"
+        }
+    },
+    "@odata.context": "/redfish/v1/$metadata#Drive.Drive",
+    "HotspareType": "None",
+    "CapableSpeedGbs": 6,
+    "PredictedMediaLifeLeftPercent": null,
+    "Status": {
+        "State": "Enabled",
+        "Health": "{{ machineInfo.healthInfo.storage }}"
+    },
+    "PartNumber": "eserved",
+    "EncryptionStatus": "Unencrypted",
+    "MediaType": "HDD",
+    "Description": "This resource is used to represent a drive for a Redfish implementation.",
+    "Id": "Disk.1",
+    "RotationSpeedRPM": 10000,
+    "Identifiers": [
+        {
+            "DurableName": "",
+            "DurableNameFormat": "UUID"
+        }
+    ],
+    "CapacityBytes": 300000000000,
+    "FailurePredicted": false,
+    "Protocol": "SAS",
+    "Name": "300GB 10K 6Gbps SAS 2.5 HDD",
+    "Revision": "HPDD",
+    "EncryptionAbility": "None",
+    "Oem": {
+        "Lenovo": {
+            "DriveStatus": "Online",
+            "@odata.type": "#LenovoDrive.v1_0_0.LenovoDrive"
+        }
+    },
+    "@odata.type": "#Drive.v1_5_0.Drive",
+    "PhysicalLocation": {
+        "InfoFormat": "Slot Number",
+        "Info": "Slot 1"
+    },
+    "Manufacturer": "HP",
+    "@odata.etag": "\"515e099194acaee63c55e6dfe8874f81\"",
+    "Model": "EG0300FAWHV",
+    "BlockSizeBytes": 512
+}

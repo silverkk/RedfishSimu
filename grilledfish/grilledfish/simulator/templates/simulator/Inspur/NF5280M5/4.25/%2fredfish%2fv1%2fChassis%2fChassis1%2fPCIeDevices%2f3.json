@@ -1,0 +1,1 @@
+{ "@odata.context": "\/redfish\/v1\/$metadata#Chassis\/Members\/1\/PCIeDevices\/Members\/$entity", "@odata.id": "\/redfish\/v1\/Chassis\/Chassis1\/PCIeDevices\/3", "@odata.type": "#PCIeDevice.v1_0_1.PCIeDevice", "Id": "4", "Links": { "Chassis": [ { "@odata.id": "\/redfish\/v1\/Chassis\/Chassis1" } ] }, "Manufacturer": "VendorID:1cb0", "Model": "DeviceID:05a5" }

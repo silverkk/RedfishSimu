@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration>
+<!-- Windows Server2003 have some limitation on the IP count(about 2K) on 1 network adapter  -->
+<General>
+	<ServerMode>MultiMode</ServerMode>
+</General>
+
+<SingleMode>
+    <NodeType>huawei</NodeType>
+    <NodeSetting>Setting_6</NodeSetting>
+</SingleMode>
+
+<MultiMode>
+    <NodeNumber>2</NodeNumber>
+    <StartIP>192.168.1.4</StartIP>
+    <Range>
+       <NodeType>hpilo</NodeType>
+       <StartIP>192.168.1.4</StartIP>
+       <EndIP>192.168.1.4</EndIP>
+       <Setting>Setting_2</Setting>
+    </Range>
+    <Range>
+       <NodeType>hpilo</NodeType>
+       <StartIP>192.168.1.5</StartIP>
+       <EndIP>192.168.1.5</EndIP>
+       <Setting>Setting_21</Setting>
+    </Range>
+
+</MultiMode>
+
+<Setting_0 nodeType="ibm">
+<!-- this is for ibm setting -->
+	<user>dcm</user>
+	<password>user@123</password>
+	<SlotNum>15</SlotNum>
+	<EmptySlotNum></EmptySlotNum>
+</Setting_0>
+	
+<Setting_1 nodeType="hp">
+<!-- this is for hp setting -->	
+	<user>test</user>
+	<password>hp</password>
+	<SlotNum>17</SlotNum>
+	<EmptySlotNum>17</EmptySlotNum>
+</Setting_1>
+
+<Setting_2 nodeType="hpilo">
+<!-- this is for hpilo setting -->
+	<user>dcm</user>
+	<password>user@123</password>
+	<version>4</version>
+</Setting_2>
+<Setting_21 nodeType="hpilo">
+<!-- this is for hpilo setting -->
+        <user>dcm</user>
+        <password>user@123</password>
+        <version>5</version>
+</Setting_21>
+
+<Setting_3 nodeType="hpapm">
+<!-- this is for HP APM setting -->
+	<user>dcm</user>
+	<password>user@123</password>
+	<!--Chassis and Blade Location configuration: HP APM port number (1 ~ 10): Chassis number (1 ~ 10): Blade number (1 ~ 8)-->	
+	<OccupiedSlotList>1,1,2;1,2,8;1,3,1;2,3,2;3,4,1;4,2,5;5,2,1;6,2,3;7,2,3;8,2,1</OccupiedSlotList>
+</Setting_3>
+
+<Setting_4 nodeType="suncmm">
+<!-- this is for Sun ILOM CMM setting -->
+	<user>dcm</user>
+	<password>user@123</password>
+</Setting_4>
+
+<Setting_5 nodeType="ibmcmm">
+<!-- this is for IBM CMM setting -->
+	<user>dcm</user>
+	<password>user@123</password>
+	<SlotNum>15</SlotNum>
+	<EmptySlotNum></EmptySlotNum>
+</Setting_5>
+
+
+<Setting_6 nodeType="huawei">
+<!-- this is for Huawei E9000 setting -->
+	<user>dcm</user>
+	<password>user@123</password>
+	<!-- blade occupied slot info -->
+	<OccupiedSlots>2,10,18,26;5,21;4;8;9</OccupiedSlots>
+</Setting_6>
+
+<Setting_7 nodeType="dellcmc">
+<!-- this is for DELL CMC setting -->
+	<user>dcm</user>
+	<password>user@123</password>
+</Setting_7>
+
+<Setting_8 nodeType="hitachichassis">
+<!-- this is for Hitachi Chassis setting -->
+	<user>dcm</user>
+	<password>user@123</password>
+</Setting_8>
+
+<Setting_9 nodeType="hpmsa">
+<!-- this is for hpmsa setting -->
+	<user>test</user>
+	<password>user@123</password>
+</Setting_9>
+
+<Setting_10 nodeType="linux">
+<!-- this is for inband linux setting -->
+	<user>root</user>
+	<password>user@123</password>
+	<sleepWhenIOStat>false</sleepWhenIOStat>
+	<DiskNum>2</DiskNum>
+	<!-- Disk_SerialNumber_A>192-168-1-171-SDA</Disk_SerialNumber_A -->
+	<!-- Disk_SerialNumber_B>192-168-1-171-SDB</Disk_SerialNumber_B -->
+	<DeviceModel_A>INTEL SSDSC2KG038T8</DeviceModel_A>
+	<!-- <DeviceModel_B>Samsung SSD 850 PRO 256GB</DeviceModel_B>  -->
+	<DeviceModel_B>INTEL SSDSC2KB019T7</DeviceModel_B>
+	
+	<Disk_SectorSize_A>512 bytes logical/physical</Disk_SectorSize_A>
+	<Disk_SectorSize_B>1024 bytes logical, 4096 bytes physical</Disk_SectorSize_B>
+	<Disk_Power_On_Hours_A>10000</Disk_Power_On_Hours_A>
+	<Disk_Power_On_Hours_B>17890</Disk_Power_On_Hours_B>
+	<!--5ears=43800Hours-->
+	<!-- initial LBAs Written(mandatory) and increase rate(optional) -->
+	<Disk_Total_LBAs_Written_A>130000000</Disk_Total_LBAs_Written_A>
+	<Disk_Total_LBAs_Written_B>40000000</Disk_Total_LBAs_Written_B>
+	<Disk_Healthy_A>false</Disk_Healthy_A><!--true: disk is good, false: disk is bad -->
+	<Disk_Healthy_B>true</Disk_Healthy_B><!--true: disk is good, false: disk is bad -->
+</Setting_10>
+
+<!--Platform List-->
+<!-- ibm -->
+<!-- hp -->
+<!-- hpilo -->
+<!-- hpapm -->
+<!-- suncmm -->
+<!-- ibmcmm -->
+<!-- huawei -->
+<!-- dellcmc -->
+<!-- hitachichassis -->
+<!-- linux -->
+</Configuration>

@@ -1,0 +1,89 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#EthernetInterface.EthernetInterface",
+    "@odata.etag": "W/\"1587030986\"",
+    "@odata.id": "/redfish/v1/Managers/1/EthernetInterfaces/eth0",
+    "@odata.type": "#EthernetInterface.v1_4_0.EthernetInterface",
+    "AutoNeg": true,
+    "Description": "Ethernet Interface eth0",
+    "FQDN": "HDM210235A1Q70000000001.sh.intel.com",
+    "FullDuplex": true,
+    "HostName": "HDM210235A1Q70000000001",
+    "IPv4Addresses": [
+        {
+            "Address": "10.239.95.60",
+            "AddressOrigin": "DHCP",
+            "Gateway": "10.239.95.1",
+            "SubnetMask": "255.255.255.128"
+        }
+    ],
+    "IPv6Addresses": [
+        {
+            "Address": "fe80::82e4:55ff:fe9c:6b14",
+            "AddressOrigin": "LinkLocal",
+            "PrefixLength": 64
+        }
+    ],
+    "IPv6DefaultGateway": "::",
+    "IPv6StaticAddresses": [],
+    "Id": "eth0",
+    "InterfaceEnabled": true,
+    "Links": {
+        "Oem": {
+            "Public": {
+                "EthernetInterface": {
+                    "@odata.id": "/redfish/v1/Systems/1/EthernetInterfaces"
+                }
+            }
+        }
+    },
+    "MACAddress": "80:E4:55:9C:6B:14",
+    "MTUSize": 1500,
+    "MaxIPv6StaticAddresses": 16,
+    "Name": "eth0",
+    "NameServers": [
+        "10.248.2.5",
+        "10.239.27.228",
+        "172.17.6.9"
+    ],
+    "Oem": {
+        "Public": {
+            "AdaptiveFlag": false,
+            "ManagementNetworkPort@Redfish.AllowableValues": [
+                {
+                    "LinkStatus": "Disconnected",
+                    "Type": "Dedicated"
+                },
+                {
+                    "LinkStatus": "Connected",
+                    "PortNumber": 0,
+                    "Type": "Shared"
+                },
+                {
+                    "LinkStatus": "Disconnected",
+                    "PortNumber": 1,
+                    "Type": "Shared"
+                },
+                {
+                    "LinkStatus": "Disconnected",
+                    "PortNumber": 2,
+                    "Type": "Shared"
+                },
+                {
+                    "LinkStatus": "Disconnected",
+                    "PortNumber": 3,
+                    "Type": "Shared"
+                }
+            ]
+        }
+    },
+    "PermanentMACAddress": "80:E4:55:9C:6B:14",
+    "SpeedMbps": 1000,
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.MgtPort }}",
+        "State": "Enabled"
+    },
+    "VLAN": {
+        "VLANEnable": false,
+        "VLANId": 0
+    }
+}

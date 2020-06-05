@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#ChassisDrivesCollection.ChassisDrivesCollection","@odata.etag":"W/\"1578648025\"","@odata.id":"/redfish/v1/Chassis/1/Drives","Members":[{"@odata.id":"/redfish/v1/Chassis/1/Drives/DiskFront2"},{"@odata.id":"/redfish/v1/Chassis/1/Drives/DiskFront3"}],"Members@odata.count":2,"Name":"Drives Collection"}

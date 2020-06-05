@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#LogEntry.LogEntry","@odata.type":"#LogEntry.v1_0_0.LogEntry","@odata.id":"/redfish/v1/Managers/1/LogServices/Log1/Entries/160","Id":"160","Name":"Maintenance Event Log Entry 160","Severity":"OK","Created":"2020-05-16T06:57:39+00:00","Interface":"CLP","User":"root","Source":"10.239.172.84","Description":"Smash login was successful."}

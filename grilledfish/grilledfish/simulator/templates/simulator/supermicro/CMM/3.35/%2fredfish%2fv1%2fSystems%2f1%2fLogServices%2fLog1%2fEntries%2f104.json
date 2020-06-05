@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#LogEntry.LogEntry","@odata.type":"#LogEntry.LogEntry","@odata.id":"/redfish/v1/Systems/1/LogServices/Log1/Entries/104","Id":"104","Name":"Maintenance Log Entry 104","EntryType":"Event","Created":"2020/03/16,22:45:59","Message":"Login web","Oem":{"Severity":"Info","Interface":"WEB","User":"dcmtest","IPAddress":"10.239.157.119"}}

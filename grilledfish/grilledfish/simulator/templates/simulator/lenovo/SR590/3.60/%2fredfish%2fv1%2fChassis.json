@@ -1,0 +1,1 @@
+{"Members":[{"@odata.id":"/redfish/v1/Chassis/1"}],"@odata.type":"#ChassisCollection.ChassisCollection","@odata.id":"/redfish/v1/Chassis","Name":"ChassisCollection","@odata.etag":"\"61d4e1670896c89451e46702f219e221\"","Members@odata.count":1,"Description":"A collection of Chassis resource instances."}

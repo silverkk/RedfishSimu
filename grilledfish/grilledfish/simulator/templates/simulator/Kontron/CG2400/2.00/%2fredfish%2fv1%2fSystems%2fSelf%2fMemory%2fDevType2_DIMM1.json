@@ -1,0 +1,47 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Memory.Memory",
+    "@odata.etag": "\"1579113258\"",
+    "@odata.id": "/redfish/v1/Systems/Self/Memory/DevType2_DIMM1",
+    "@odata.type": "#Memory.v1_7_1.Memory",
+    "Actions": {
+        "Oem": {
+            "#AmiBios.ChangeState": {
+                "State@Redfish.AllowableValues": ["Enabled", "Disabled"],
+                "target": "/redfish/v1/Systems/Self/Memory/DevType2_DIMM1/Actions/AmiBios.ChangeState"
+            }
+        }
+    },
+    "AllowedSpeedsMHz": [0],
+    "BaseModuleType": "RDIMM",
+    "BusWidthBits": 0,
+    "CapacityMiB": 0,
+    "DataWidthBits": 0,
+    "DeviceLocator": "CPU1_DIMM_A2",
+    "Id": "DevType2_DIMM1",
+    "Links": {
+        "Chassis": {
+            "@odata.id": "/redfish/v1/Chassis/Self"
+        }
+    },
+    "Manufacturer": "NO DIMM",
+    "MemoryDeviceType": "DDR4",
+    "MemoryLocation": {
+        "Channel": 0,
+        "MemoryController": 0,
+        "Slot": 1,
+        "Socket": 0
+    },
+    "Name": "DevType2_DIMM1",
+    "OperatingSpeedMhz": 0,
+    "PartNumber": "NO DIMM",
+    "RankCount": 0,
+    "SecurityCapabilities": {
+        "ConfigurationLockCapable": false,
+        "DataLockCapable": false,
+        "PassphraseCapable": false
+    },
+    "SerialNumber": "NO DIMM",
+    "Status": {
+        "State": "Absent"
+    }
+}

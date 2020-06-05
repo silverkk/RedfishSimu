@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#JsonSchemaFile.JsonSchemaFile","@odata.type":"#JsonSchemaFile.JsonSchemaFile","@odata.id":"/redfish/v1/JsonSchemas/OemFan","Id":"OemFan","Name":"OemFan Schema File","Description":"OemFan Schema File Location","Languages":["en"],"Schema":"OemFan","Location":[{"Language":"en","Uri":"/schemas/OemFan.json"}],"Oem":{}}

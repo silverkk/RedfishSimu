@@ -1,0 +1,1 @@
+{"@odata.context":"\/redfish\/v1\/$metadata#Systems\/Members\/1\/InfiniBandInterfaces\/$entity","@odata.id":"\/redfish\/v1\/Systems\/1\/InfiniBandInterfaces","@odata.type":"#HwInfiniBandInterfaceCollection.HwInfiniBandInterfaceCollection","Name":"InfiniBand Interface Collection","Members@odata.count":0,"Members":[]}

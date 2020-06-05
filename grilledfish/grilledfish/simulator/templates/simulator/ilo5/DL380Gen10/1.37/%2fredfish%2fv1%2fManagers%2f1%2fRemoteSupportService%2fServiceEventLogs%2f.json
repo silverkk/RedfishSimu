@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#LogEntryCollection.LogEntryCollection","@odata.etag":"W/\"A3A6BF43\"","@odata.id":"/redfish/v1/Managers/1/RemoteSupportService/ServiceEventLogs/","@odata.type":"#LogEntryCollection.LogEntryCollection","Description":"Service Event Logs View","Name":"Service Event Logs","Members@odata.count":0}

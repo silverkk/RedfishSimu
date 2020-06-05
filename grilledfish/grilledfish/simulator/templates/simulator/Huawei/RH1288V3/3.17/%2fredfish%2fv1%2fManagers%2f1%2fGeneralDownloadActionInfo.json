@@ -1,0 +1,1 @@
+{"@odata.context":"\/redfish\/v1\/$metadata#ActionInfo.ActionInfo","@odata.id":"\/redfish\/v1\/Managers\/1\/GeneralDownloadActionInfo","@odata.type":"#ActionInfo.v1_0_0.ActionInfo","Parameters":[{"Name":"TransferProtocol","Required":true,"DataType":"String","AllowableValues":["HTTPS"]},{"Name":"Path","Required":true,"DataType":"String"}],"Oem":{}}

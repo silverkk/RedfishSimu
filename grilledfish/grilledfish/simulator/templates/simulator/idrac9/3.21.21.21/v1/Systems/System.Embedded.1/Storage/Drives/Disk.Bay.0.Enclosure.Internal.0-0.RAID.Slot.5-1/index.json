@@ -1,0 +1,53 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Drive.Drive",
+    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Storage/Drives/Disk.Bay.0.Enclosure.Internal.0-0.RAID.Slot.5-1",
+    "@odata.type": "#Drive.v1_2_0.Drive",
+    "Actions": {
+        "#Drive.SecureErase": {
+            "target": "/redfish/v1/Systems/System.Embedded.1/Storage/Drives/Disk.Bay.0.Enclosure.Internal.0-0.RAID.Slot.5-1/Actions/Drive.SecureErase"
+        }
+    },
+    "BlockSizeBytes": 512,
+    "CapableSpeedGbs": 12,
+    "CapacityBytes": 300000000000,
+    "Description": "Physical Disk 0:0:0",
+    "EncryptionAbility": "None",
+    "EncryptionStatus": "Unencrypted",
+    "FailurePredicted": false,
+    "HotspareType": "None",
+    "Id": "Disk.Bay.0.Enclosure.Internal.0-0.RAID.Slot.5-1",
+    "Identifiers": [
+        {
+            "DurableName": "50000398082AD166",
+            "DurableNameFormat": "NAA"
+        }
+    ],
+    "Links": {
+        "Chassis": {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure.Internal.0-0.RAID.Slot.5-1"
+        },
+        "Volumes": [
+            {
+                "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Storage/Volumes/Disk.Bay.0.Enclosure.Internal.0-0.RAID.Slot.5-1"
+            }
+        ],
+        "Volumes@odata.count": 1
+    },
+    "Location": [],
+    "Manufacturer": "TOSHIBA",
+    "MediaType": "HDD",
+    "Model": "AL14SEB030NY",
+    "Name": "Physical Disk 0:0:0",
+    "NegotiatedSpeedGbs": 12,
+    "PartNumber": "PH0FF02RTB20077JM1S6A00",
+    "PredictedMediaLifeLeftPercent": null,
+    "Protocol": "SAS",
+    "Revision": "EA02",
+    "RotationSpeedRPM": 10000,
+    "SerialNumber": "77J0A01MFL6E",
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.storage }}",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    }
+}

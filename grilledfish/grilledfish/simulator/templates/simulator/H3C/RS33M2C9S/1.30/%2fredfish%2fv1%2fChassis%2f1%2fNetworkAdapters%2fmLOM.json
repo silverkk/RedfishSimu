@@ -1,0 +1,64 @@
+{
+    "@odata.context": "/redfish/v1/$metadata",
+    "@odata.etag": "W/\"1587030984\"",
+    "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/mLOM",
+    "@odata.type": "#NetworkAdapter.v1_1_0.NetworkAdapter",
+    "Controllers": [
+        {
+            "ControllerCapabilities": {
+                "NetworkPortCount": 4
+            },
+            "FirmwarePackageVersion": "1.1767.0",
+            "Link": {
+                "NetworkPorts": [
+                    {
+                        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/mLOM/NetworkPorts/1"
+                    },
+                    {
+                        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/mLOM/NetworkPorts/2"
+                    },
+                    {
+                        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/mLOM/NetworkPorts/3"
+                    },
+                    {
+                        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/mLOM/NetworkPorts/4"
+                    }
+                ],
+                "NetworkPorts@odata.count": 4,
+                "PCIeDevices": [
+                    {
+                        "@odata.id": "/redfish/v1/Chassis/1/PCIeDevices/9"
+                    }
+                ],
+                "PCIeDevices@odata.count": 1
+            }
+        }
+    ],
+    "Id": "mLOM",
+    "Manufacturer": "H3C",
+    "Model": "NIC-GE-4P-360T-L3",
+    "Name": "mLOM",
+    "NetworkPorts": {
+        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/mLOM/NetworkPorts"
+    },
+    "Oem": {
+        "Public": {
+            "CapableSpeedGbs": "1",
+            "CardManufacturer": "H3C",
+            "CardModel": "4*GE",
+            "FirmwareVersion": "1.1767.0",
+            "NIC_id": 1,
+            "NetworkTechnology": [
+                "Ethernet"
+            ],
+            "Position": "mLOM",
+            "RootBDF": "0000:3A:00.0",
+            "SerialNumber": "02A3GKX1990B068W",
+            "TemperatureCelsius": 30
+        }
+    },
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.NIC }}",
+        "State": "Enabled"
+    }
+}

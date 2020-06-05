@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#JsonSchemaFile.JsonSchemaFile","@odata.type":"#JsonSchemaFile.JsonSchemaFile","@odata.id":"/redfish/v1/JsonSchemas/NodeNumber","Id":"NodeNumber","Name":"NodeNumber Schema File","Description":"NodeNumber Schema File Location","Languages":["en"],"Schema":"NodeNumber","Location":[{"Language":"en","Uri":"/schemas/NodeNumber.json"}],"Oem":{}}

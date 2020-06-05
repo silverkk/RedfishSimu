@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#MemoryMetrics.MemoryMetrics","@odata.id":"/redfish/v1/Systems/............/Memory/Memory12/MemoryMetrics","@odata.type":"#MemoryMetrics.v1_1_3.MemoryMetrics","Id":"MemoryMetrics","Name":"MemoryMetrics of Memory12","Description":"System Memory Metrics","HealthData":{"AlarmTrips":{"Temperature":false}}}

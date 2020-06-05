@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration>
+<!-- Windows Server2003 have some limitation on the IP count(about 2K) on 1 network adapter  -->
+<General>
+	<ServerMode>MultiMode</ServerMode>
+	<RMI>true</RMI>
+	<RMIPort>2008</RMIPort>
+</General>
+
+<SingleMode>
+    <NodeType>IDRAC_14G_MONOLITHIC</NodeType>
+    <NodeSetting>Setting_0</NodeSetting>
+</SingleMode>
+
+<MultiMode>
+    <IpNumber>9</IpNumber>
+    <StartIP>192.168.1.1</StartIP>
+    <!-- PortRange>1000-1010</PortRange -->
+    <Range>
+       <NodeType>IDRAC_13G_MONOLITHIC</NodeType>
+       <StartIP>192.168.1.1</StartIP>
+       <EndIP>192.168.1.1</EndIP>
+       <Setting>Setting_10</Setting>
+    </Range>
+    <Range>
+       <NodeType>IDRAC_13G_MONOLITHIC</NodeType>
+       <StartIP>192.168.1.2</StartIP>
+       <EndIP>192.168.1.2</EndIP>
+       <Setting>Setting_11</Setting>
+    </Range>
+    <Range>
+       <NodeType>IDRAC_14G_MONOLITHIC</NodeType>
+       <StartIP>192.168.1.3</StartIP>
+       <EndIP>192.168.1.3</EndIP>
+       <Setting>Setting_12</Setting>
+    </Range>
+    <Range>
+       <NodeType>DCMI_1_0</NodeType>
+       <StartIP>192.168.1.4</StartIP>
+       <EndIP>192.168.1.4</EndIP>
+       <Setting>Setting_0</Setting>
+    </Range>
+    <Range>
+       <NodeType>DCMI_1_0</NodeType>
+       <StartIP>192.168.1.5</StartIP>
+       <EndIP>192.168.1.5</EndIP>
+       <Setting>Setting_13</Setting>
+    </Range>
+    <Range>
+       <NodeType>LENOVO_NM50</NodeType>
+       <StartIP>192.168.1.6</StartIP>
+       <EndIP>192.168.1.6</EndIP>
+       <Setting>Setting_0</Setting>
+    </Range>
+    <Range>
+       <NodeType>NM_4_0</NodeType>
+       <StartIP>192.168.1.7</StartIP>
+       <EndIP>192.168.1.7</EndIP>
+       <Setting>Setting_0</Setting>
+    </Range>
+    <Range>
+       <NodeType>CISCO_SWITCH</NodeType>
+       <StartIP>192.168.1.8</StartIP>
+       <EndIP>192.168.1.8</EndIP>
+       <Setting>Setting_2</Setting>
+    </Range>
+    <Range>
+       <NodeType>CISCO_NEXUS_SWITCH</NodeType>
+       <StartIP>192.168.1.9</StartIP>
+       <EndIP>192.168.1.9</EndIP>
+       <Setting>Setting_2</Setting>
+    </Range>
+</MultiMode>
+
+<Setting_10 nodeType="IDRAC_14G_MONOLITHIC,IDRAC_14G_BLADE,IPMI_2_0,IDRAC_13G_BLADE,IBM_IMM,FUJITSU_PRIMEQUEST,IDRAC_12G_MONOLITHIC,NM_2_0,IDRAC_13G_POWEREDGE_C,NM_4_0,IPMI_2_0,LENOVO_NM40,NM_1_5,DCMI_1_0,NM_3_0,DELL_POWEREDGE_C5220,LENOVO_NM30,LENOVO_NM20,DELL_POWEREDGE_DCS7200i,SUPERMICRO_TWIN, QUANTA_NM20,IDRAC_11G_MONOLITHIC,IDRAC_13G_MONOLITHIC,IDRAC_12G_BLADE_STOMP,QUANTA_NM30,SUPERMICRO_TWIN_NM30,SYSTEM_X_GRANTLEY LENOVO_NM50">
+<!-- this is for DCMI 1.0 setting -->
+        <IpmiCipherSuite>0</IpmiCipherSuite>
+        <IpmiUsername>dcm</IpmiUsername>
+        <IpmiPassword>user@123</IpmiPassword>
+        <IpmiBmcKey></IpmiBmcKey>
+
+        <AdapterMessageDelayTime>0</AdapterMessageDelayTime>
+        <AdapterMessageLossRate>0</AdapterMessageLossRate>
+        <IpmiWrongPacketRate>0</IpmiWrongPacketRate>
+        <PolicySleepingPeriod>2000</PolicySleepingPeriod>
+        <BehaviorCollectionTime>1000</BehaviorCollectionTime>
+        <SELSize>256</SELSize>
+        <Workload>80</Workload>
+        <CoreNum>8</CoreNum>
+        <SlotNumber>1</SlotNumber>
+        <MIC>true</MIC>
+        <CupsData>0</CupsData>
+        <!-- Periodically no response (only work for IPMI node), unit: minute, 0 means alwasy has response -->
+        <NoResponseTime>0</NoResponseTime>
+
+        <!-- the whole system power data, missing or -1 means random power value -->
+        <PowerData>-1</PowerData>
+
+        <!-- the inlet temperature data, missing or -1 means random temperature value -->
+        <InletTemperature>25</InletTemperature>
+
+        <!-- The device has the power monitoring capability or not. It only works for iDRAC 6 -->
+        <PowerMonitoring>true</PowerMonitoring>
+
+        <!--
+                RollingTimePeriods: TimeUnit:Time, and should strictly flow the format below.
+                TimeUnit: 0-seconds, 1-minutes, 2-hours, 3-days
+                Time: 0-63, and 0:0 is needed.
+        -->
+        <RollingTimePeriods>0:15,1:1,1:3,1:15,2:15</RollingTimePeriods>
+        <License>true</License>
+        <DeviceSize>4</DeviceSize>
+        <FwMajorVersion>2</FwMajorVersion>
+        <FwMinorVersion>60</FwMinorVersion>
+</Setting_10>
+<Setting_11 nodeType="IDRAC_14G_MONOLITHIC,IDRAC_14G_BLADE,IPMI_2_0,IDRAC_13G_BLADE,IBM_IMM,FUJITSU_PRIMEQUEST,IDRAC_12G_MONOLITHIC,NM_2_0,IDRAC_13G_POWEREDGE_C,NM_4_0,IPMI_2_0,LENOVO_NM40,NM_1_5,DCMI_1_0,NM_3_0,DELL_POWEREDGE_C5220,LENOVO_NM30,LENOVO_NM20,DELL_POWEREDGE_DCS7200i,SUPERMICRO_TWIN, QUANTA_NM20,IDRAC_11G_MONOLITHIC,IDRAC_13G_MONOLITHIC,IDRAC_12G_BLADE_STOMP,QUANTA_NM30,SUPERMICRO_TWIN_NM30,SYSTEM_X_GRANTLEY LENOVO_NM50">
+<!-- this is for DCMI 1.0 setting -->
+        <IpmiCipherSuite>0</IpmiCipherSuite>
+        <IpmiUsername>dcm</IpmiUsername>
+        <IpmiPassword>user@123</IpmiPassword>
+        <IpmiBmcKey></IpmiBmcKey>
+
+        <AdapterMessageDelayTime>0</AdapterMessageDelayTime>
+        <AdapterMessageLossRate>0</AdapterMessageLossRate>
+        <IpmiWrongPacketRate>0</IpmiWrongPacketRate>
+        <PolicySleepingPeriod>2000</PolicySleepingPeriod>
+        <BehaviorCollectionTime>1000</BehaviorCollectionTime>
+        <SELSize>256</SELSize>
+        <Workload>80</Workload>
+        <CoreNum>8</CoreNum>
+        <SlotNumber>1</SlotNumber>
+        <MIC>true</MIC>
+        <CupsData>0</CupsData>
+        <!-- Periodically no response (only work for IPMI node), unit: minute, 0 means alwasy has response -->
+        <NoResponseTime>0</NoResponseTime>
+
+        <!-- the whole system power data, missing or -1 means random power value -->
+        <PowerData>-1</PowerData>
+
+        <!-- the inlet temperature data, missing or -1 means random temperature value -->
+        <InletTemperature>25</InletTemperature>
+
+        <!-- The device has the power monitoring capability or not. It only works for iDRAC 6 -->
+        <PowerMonitoring>true</PowerMonitoring>
+
+        <!--
+                RollingTimePeriods: TimeUnit:Time, and should strictly flow the format below.
+                TimeUnit: 0-seconds, 1-minutes, 2-hours, 3-days
+                Time: 0-63, and 0:0 is needed.
+        -->
+        <RollingTimePeriods>0:15,1:1,1:3,1:15,2:15</RollingTimePeriods>
+        <License>true</License>
+        <DeviceSize>4</DeviceSize>
+        <FwMajorVersion>2</FwMajorVersion>
+        <FwMinorVersion>61</FwMinorVersion>
+</Setting_11>
+<Setting_12 nodeType="IDRAC_14G_MONOLITHIC,IDRAC_14G_BLADE,IPMI_2_0,IDRAC_13G_BLADE,IBM_IMM,FUJITSU_PRIMEQUEST,IDRAC_12G_MONOLITHIC,NM_2_0,IDRAC_13G_POWEREDGE_C,NM_4_0,IPMI_2_0,LENOVO_NM40,NM_1_5,DCMI_1_0,NM_3_0,DELL_POWEREDGE_C5220,LENOVO_NM30,LENOVO_NM20,DELL_POWEREDGE_DCS7200i,SUPERMICRO_TWIN, QUANTA_NM20,IDRAC_11G_MONOLITHIC,IDRAC_13G_MONOLITHIC,IDRAC_12G_BLADE_STOMP,QUANTA_NM30,SUPERMICRO_TWIN_NM30,SYSTEM_X_GRANTLEY LENOVO_NM50">
+<!-- this is for DCMI 1.0 setting -->
+        <IpmiCipherSuite>0</IpmiCipherSuite>
+        <IpmiUsername>dcm</IpmiUsername>
+        <IpmiPassword>user@123</IpmiPassword>
+        <IpmiBmcKey></IpmiBmcKey>
+
+        <AdapterMessageDelayTime>0</AdapterMessageDelayTime>
+        <AdapterMessageLossRate>0</AdapterMessageLossRate>
+        <IpmiWrongPacketRate>0</IpmiWrongPacketRate>
+        <PolicySleepingPeriod>2000</PolicySleepingPeriod>
+        <BehaviorCollectionTime>1000</BehaviorCollectionTime>
+        <SELSize>256</SELSize>
+        <Workload>80</Workload>
+        <CoreNum>8</CoreNum>
+        <SlotNumber>1</SlotNumber>
+        <MIC>true</MIC>
+        <CupsData>0</CupsData>
+        <!-- Periodically no response (only work for IPMI node), unit: minute, 0 means alwasy has response -->
+        <NoResponseTime>0</NoResponseTime>
+
+        <!-- the whole system power data, missing or -1 means random power value -->
+        <PowerData>-1</PowerData>
+
+        <!-- the inlet temperature data, missing or -1 means random temperature value -->
+        <InletTemperature>25</InletTemperature>
+
+        <!-- The device has the power monitoring capability or not. It only works for iDRAC 6 -->
+        <PowerMonitoring>true</PowerMonitoring>
+
+        <!--
+                RollingTimePeriods: TimeUnit:Time, and should strictly flow the format below.
+                TimeUnit: 0-seconds, 1-minutes, 2-hours, 3-days
+                Time: 0-63, and 0:0 is needed.
+        -->
+        <RollingTimePeriods>0:15,1:1,1:3,1:15,2:15</RollingTimePeriods>
+        <License>true</License>
+        <DeviceSize>4</DeviceSize>
+        <FwMajorVersion>3</FwMajorVersion>
+        <FwMinorVersion>40</FwMinorVersion>
+</Setting_12>
+
+<Setting_13 nodeType="IDRAC_14G_MONOLITHIC,IDRAC_14G_BLADE,IPMI_2_0,IDRAC_13G_BLADE,IBM_IMM,FUJITSU_PRIMEQUEST,IDRAC_12G_MONOLITHIC,NM_2_0,IDRAC_13G_POWEREDGE_C,NM_4_0,IPMI_2_0,LENOVO_NM40,NM_1_5,DCMI_1_0,NM_3_0,DELL_POWEREDGE_C5220,LENOVO_NM30,LENOVO_NM20,DELL_POWEREDGE_DCS7200i,SUPERMICRO_TWIN, QUANTA_NM20,IDRAC_11G_MONOLITHIC,IDRAC_13G_MONOLITHIC,IDRAC_12G_BLADE_STOMP,QUANTA_NM30,SUPERMICRO_TWIN_NM30,SYSTEM_X_GRANTLEY LENOVO_NM50">
+<!-- this is for DCMI 1.0 setting -->	
+	<IpmiCipherSuite>0</IpmiCipherSuite>
+	<IpmiUsername>dcm</IpmiUsername>
+	<IpmiPassword>user@123</IpmiPassword>
+	<IpmiBmcKey></IpmiBmcKey>
+	
+	<AdapterMessageDelayTime>0</AdapterMessageDelayTime>
+	<AdapterMessageLossRate>0</AdapterMessageLossRate>
+	<IpmiWrongPacketRate>0</IpmiWrongPacketRate>
+	<PolicySleepingPeriod>2000</PolicySleepingPeriod>
+	<BehaviorCollectionTime>1000</BehaviorCollectionTime>	
+	<SELSize>256</SELSize>
+	<Workload>80</Workload>
+	<CoreNum>8</CoreNum>
+	<SlotNumber>1</SlotNumber>
+	<MIC>true</MIC>
+	<CupsData>0</CupsData>
+	<!-- Periodically no response (only work for IPMI node), unit: minute, 0 means alwasy has response -->
+	<NoResponseTime>0</NoResponseTime>
+	
+	<!-- the whole system power data, missing or -1 means random power value -->
+	<PowerData>-1</PowerData>
+	
+	<!-- the inlet temperature data, missing or -1 means random temperature value -->
+	<InletTemperature>25</InletTemperature>
+	
+	<!-- The device has the power monitoring capability or not. It only works for iDRAC 6 -->
+	<PowerMonitoring>true</PowerMonitoring>
+	
+	<!--
+		RollingTimePeriods: TimeUnit:Time, and should strictly flow the format below.
+		TimeUnit: 0-seconds, 1-minutes, 2-hours, 3-days
+		Time: 0-63, and 0:0 is needed.
+	-->	
+	<RollingTimePeriods>0:15,1:1,1:3,1:15,2:15</RollingTimePeriods>
+	<License>true</License>
+	<DeviceSize>4</DeviceSize>
+	<!--
+		DIMM Health Status Configuration 
+	 -->
+	<HealthStatus>true</HealthStatus>
+	<CPUIds>0,1</CPUIds>
+	<DIMMIds>0,1,2,3</DIMMIds>
+	<ErrorType>0</ErrorType>
+	<FwMajorVersion>7</FwMajorVersion>
+        <FwMinorVersion>74</FwMinorVersion>
+	<FruManufacturer>HPE</FruManufacturer>	
+</Setting_13>
+<Setting_0 nodeType="IDRAC_14G_MONOLITHIC,IDRAC_14G_BLADE,IPMI_2_0,IDRAC_13G_BLADE,IBM_IMM,FUJITSU_PRIMEQUEST,IDRAC_12G_MONOLITHIC,NM_2_0,IDRAC_13G_POWEREDGE_C,NM_4_0,IPMI_2_0,LENOVO_NM40,NM_1_5,DCMI_1_0,NM_3_0,DELL_POWEREDGE_C5220,LENOVO_NM30,LENOVO_NM20,DELL_POWEREDGE_DCS7200i,SUPERMICRO_TWIN, QUANTA_NM20,IDRAC_11G_MONOLITHIC,IDRAC_13G_MONOLITHIC,IDRAC_12G_BLADE_STOMP,QUANTA_NM30,SUPERMICRO_TWIN_NM30,SYSTEM_X_GRANTLEY LENOVO_NM50">
+<!-- this is for DCMI 1.0 setting -->	
+	<IpmiCipherSuite>0</IpmiCipherSuite>
+	<IpmiUsername>dcm</IpmiUsername>
+	<IpmiPassword>user@123</IpmiPassword>
+	<IpmiBmcKey></IpmiBmcKey>
+	
+	<AdapterMessageDelayTime>0</AdapterMessageDelayTime>
+	<AdapterMessageLossRate>0</AdapterMessageLossRate>
+	<IpmiWrongPacketRate>0</IpmiWrongPacketRate>
+	<PolicySleepingPeriod>2000</PolicySleepingPeriod>
+	<BehaviorCollectionTime>1000</BehaviorCollectionTime>	
+	<SELSize>256</SELSize>
+	<Workload>80</Workload>
+	<CoreNum>8</CoreNum>
+	<SlotNumber>1</SlotNumber>
+	<MIC>true</MIC>
+	<CupsData>0</CupsData>
+	<!-- Periodically no response (only work for IPMI node), unit: minute, 0 means alwasy has response -->
+	<NoResponseTime>0</NoResponseTime>
+	
+	<!-- the whole system power data, missing or -1 means random power value -->
+	<PowerData>-1</PowerData>
+	
+	<!-- the inlet temperature data, missing or -1 means random temperature value -->
+	<InletTemperature>25</InletTemperature>
+	
+	<!-- The device has the power monitoring capability or not. It only works for iDRAC 6 -->
+	<PowerMonitoring>true</PowerMonitoring>
+	
+	<!--
+		RollingTimePeriods: TimeUnit:Time, and should strictly flow the format below.
+		TimeUnit: 0-seconds, 1-minutes, 2-hours, 3-days
+		Time: 0-63, and 0:0 is needed.
+	-->	
+	<RollingTimePeriods>0:15,1:1,1:3,1:15,2:15</RollingTimePeriods>
+	<License>true</License>
+	<DeviceSize>4</DeviceSize>
+	<!--
+		DIMM Health Status Configuration 
+	 -->
+	<HealthStatus>true</HealthStatus>
+	<CPUIds>0,1</CPUIds>
+	<DIMMIds>0,1,2,3</DIMMIds>
+	<ErrorType>0</ErrorType>
+	<FwMajorVersion>7</FwMajorVersion>
+        <FwMinorVersion>74</FwMinorVersion>	
+</Setting_0>
+	
+<Setting_1 nodeType="NM_2_0, HP_SL_6000, HP_SL_6500,IDRAC_12G_MONOLITHIC">
+<!-- this is also for NM2.0 setting-->    
+	<IpmiCipherSuite>0</IpmiCipherSuite>
+	<IpmiUsername></IpmiUsername>
+	<IpmiPassword></IpmiPassword>
+	<IpmiBmcKey></IpmiBmcKey>
+	
+	<AdapterMessageDelayTime>0</AdapterMessageDelayTime>
+	<AdapterMessageLossRate>0</AdapterMessageLossRate>
+	<IpmiWrongPacketRate>0</IpmiWrongPacketRate>
+	<PolicySleepingPeriod>2000</PolicySleepingPeriod>
+	<BehaviorCollectionTime>1000</BehaviorCollectionTime>
+	<SELSize>100</SELSize>
+	<DeviceSize>4</DeviceSize>
+	<Workload>80</Workload>
+	<BasePower>0</BasePower>
+	<CoreNum>8</CoreNum>
+	<License>false</License>
+</Setting_1>
+
+<Setting_2 nodeType="LENOVO_PDU,TRIPPLITE_PDU,CISCO_NEXUS_SWITCH,IBM_PDU,BAYTECH_PDU,EMC_ISILON_STORAGE,APC_METERED_PDU_1_0,SERVERTECH_SMART_PDU_1_0,AVOCENT_PM3000_PDU_1_0,APC_SMART_UPS_1_0,EATON_POWERWARE_UPS_1_0,CISCO_SWITCH,Raritan_PDU_PX2,FUJITSU_SWITCH,FUJITSU_CHASSIS,CHATSWORTH_PDU,GEIST_HOFFMAN_PDU">
+<!--this is for PDU setting-->
+	<!-- Community String for Version 1 -->
+	<Community>public</Community> 
+	
+	 <!-- Security Name,  Authentication Passphrase, and Privacy Passphrase for Version 3 -->
+	<SecurityName>dcm</SecurityName>                  
+	<AuthenticationAug>dcmdcmdcm/MD5</AuthenticationAug>
+	<PrivacyAug>dcmdcmdcm/DES</PrivacyAug>
+	
+	<!-- Load -->
+	<Load>11</Load>                           
+	<LowLoad>10</LowLoad>
+	<NearOverload>14</NearOverload>
+	<Overload>16</Overload>
+	
+	<!-- Behavior -->
+	<Phase>1</Phase>	
+	<MinLoad>5</MinLoad>
+	<MaxLoad>20</MaxLoad>
+	<Automated>true</Automated>
+	<OutletNumber>24</OutletNumber>	
+	<Voltage>220</Voltage>
+	
+	<!-- Generate for ChatsWorth PDU, 1 means G1 PDU, 2 means G2 daisy chain PDU-->
+	<Gen>2</Gen>
+	<!-- Model name for ChatsWorth PDU-->
+	<Model>46C0:1BE0739A:1000</Model>
+	
+	<Port>161</Port>
+	<MACAppendix>00:01</MACAppendix>
+	
+	<!-- Daisy Chain mode for Raritan PX2 PDU, 0: standalone, 1: master, 2: slave-->
+	<DaisyChainMode>1</DaisyChainMode>
+	
+	<!-- Cascaded device connected for Raritan PX2 PDU to indicate if another PX2 is connected,  1: true, 2: false -->				
+	<CascadedDeviceConnected>1</CascadedDeviceConnected>
+	
+	<!-- Trap destination address for Raritan PX2 PDU -->
+	<TrapDestinationAddress>10.239.9.13</TrapDestinationAddress>
+	
+	<!-- Chain mode for ServerTech PDU -->
+	<ChainConnected>true</ChainConnected>
+	
+</Setting_2>
+
+<Setting_3 nodeType="IDRAC_12G_MONOLITHIC">
+<!-- this is also for iDRAC 12G Monolithic setting-->    
+	<IpmiCipherSuite>0</IpmiCipherSuite>
+	<IpmiUsername></IpmiUsername>
+	<IpmiPassword></IpmiPassword>
+	<IpmiBmcKey></IpmiBmcKey>
+	
+	<AdapterMessageDelayTime>0</AdapterMessageDelayTime>
+	<AdapterMessageLossRate>0</AdapterMessageLossRate>
+	<IpmiWrongPacketRate>0</IpmiWrongPacketRate>
+	<PolicySleepingPeriod>2000</PolicySleepingPeriod>
+	<BehaviorCollectionTime>1000</BehaviorCollectionTime>
+	<SELSize>100</SELSize>
+	<Workload>80</Workload>
+	<CoreNum>8</CoreNum>
+	<DeviceSize>2</DeviceSize>
+</Setting_3>
+
+<Setting_4 nodeType="DELL_LINE_INTERACTIVE_UPS_1_0,EMERSON_LIEBERT_GXT2_UPS_1_0">
+<!--this is for PDU setting-->
+	<!-- Community String for Version 1 -->
+	<Community>dcm</Community> 	
+	
+	<!-- Load -->
+	<Load>110</Load>                           
+	<LowLoad>100</LowLoad>
+	<NearOverload>145</NearOverload>
+	<Overload>155</Overload>
+	
+	<!-- Behavior -->
+	<Phase>1</Phase>	
+	<MinLoad>90</MinLoad>
+	<MaxLoad>165</MaxLoad>
+	<Automated>true</Automated>
+</Setting_4>
+
+<Setting_5 nodeType="DELL_PDU_1_0,Raritan_PDU_PX">
+<!--this is for DELL PDU setting-->
+	<!-- Community String for Version 1 -->
+	<Community>public</Community> 
+	
+	 <!-- Security Name,  Authentication Passphrase, and Privacy Passphrase for Version 3 -->
+	<SecurityName>dcm</SecurityName>                  
+	<AuthenticationAug>dcmdcmdcm/MD5</AuthenticationAug>
+	<PrivacyAug>dcmdcmdcm/DES</PrivacyAug>
+	
+	<!-- Load -->
+	<Load>2</Load>                           
+	<LowLoad>1</LowLoad>
+	<NearOverload>3</NearOverload>
+	<Overload>4</Overload>
+	
+	<!-- Behavior -->
+	<Phase>1</Phase>
+	<Voltage>220</Voltage>
+	<OutletNumber>24</OutletNumber>	
+	<MinLoad>1</MinLoad>
+	<MaxLoad>5</MaxLoad>
+	<Automated>true</Automated>
+</Setting_5>
+
+<Setting_6 nodeType="PTAS_1_0">
+<!-- this is for Ptas1.0 setting-->    
+	<IpmiCipherSuite>0</IpmiCipherSuite>
+	<IpmiUsername></IpmiUsername>
+	<IpmiPassword></IpmiPassword>
+	<IpmiBmcKey></IpmiBmcKey>
+	
+	<AdapterMessageDelayTime>0</AdapterMessageDelayTime>
+	<AdapterMessageLossRate>0</AdapterMessageLossRate>
+	<IpmiWrongPacketRate>0</IpmiWrongPacketRate>
+	<PolicySleepingPeriod>2000</PolicySleepingPeriod>
+	<BehaviorCollectionTime>1000</BehaviorCollectionTime>
+	<SELSize>100</SELSize>
+	<Workload>80</Workload>
+	<BasePower>0</BasePower>
+	<CoreNum>8</CoreNum>
+</Setting_6>
+
+<!--Platform List-->
+<!-- IPMI_2_0 -->
+<!-- NM_1_5 -->
+<!-- NM_2_0 -->
+<!-- NM_3_0 -->
+<!-- NM_4_0 -->
+<!-- DCMI_1_0 -->
+<!-- APC_METERED_PDU_1_0 -->
+<!-- SERVERTECH_SMART_PDU_1_0 -->
+<!-- AVOCENT_PM3000_PDU_1_0 -->
+<!-- DELL_PDU_1_0 -->
+<!-- IDRAC_11G_MONOLITHIC -->
+<!-- IDRAC_11G_BLADE -->
+<!-- IDRAC_12G_MONOLITHIC -->
+<!-- IDRAC_12G_BLADE -->
+<!-- DELL_LINE_INTERACTIVE_UPS_1_0 -->
+<!-- EATON_POWERWARE_UPS_1_0 -->
+<!-- APC_SMART_UPS_1_0 -->
+<!-- EMERSON_LIEBERT_GXT2_UPS_1_0 -->
+<!-- HP_SL_6000 -->
+<!-- HP_SL_6500 -->
+<!-- PTAS_1_0 -->
+<!-- CISCO_SWITCH -->
+<!-- CISCO_NEXUS_SWITCH -->
+<!-- Raritan_PDU_PX -->
+<!-- Raritan_PDU_PX2 -->
+<!-- DELL_POWEREDGE_C6220 -->
+<!-- DELL_POWEREDGE_C6100 -->
+<!-- DELL_POWEREDGE_C5220 -->
+<!-- DELL_POWEREDGE_DCS7200i -->
+<!-- FUJITSU_SWITCH -->
+<!-- FUJITSU_CHASSIS -->
+<!-- LENOVO_NM40 -->
+<!-- LENOVO_NM30 -->
+<!-- LENOVO_NM20 -->
+<!-- SUPERMICRO_TWIN -->
+<!-- SUPERMICRO_TWIN_NM30 -->
+<!-- SUPERMICRO_TWIN_NM40 -->
+<!-- QUANTA_NM20 -->
+<!-- QUANTA_NM30 -->
+<!-- IDRAC_13G_MONOLITHIC -->
+<!-- IDRAC_13G_BLADE -->
+<!-- IDRAC_13G_POWEREDGE_C -->
+<!-- IDRAC_12G_BLADE_STOMP -->
+<!-- IDRAC_14G_MONOLITHIC -->
+<!-- IDRAC_14G_BLADE -->
+<!-- IDRAC_14G_POWEREDGE_C -->
+<!-- SUPERMICRO_TWIN_NM30 -->
+<!-- SYSTEM_X_GRANTLEY -->
+<!-- CHATSWORTH_PDU -->
+<!-- EMC_ISILON_STORAGE -->
+<!-- FUJITSU_PRIMEQUEST -->
+<!-- IBM_IMM -->
+<!-- BAYTECH_PDU -->
+<!-- IBM_PDU -->
+<!-- TRIPPLITE_PDU -->
+<!-- LENOVO_PDU -->
+
+</Configuration>

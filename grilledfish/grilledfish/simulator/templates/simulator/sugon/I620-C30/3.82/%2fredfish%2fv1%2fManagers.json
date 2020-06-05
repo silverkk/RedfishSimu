@@ -1,0 +1,1 @@
+{ "@odata.context": "\/redfish\/v1\/$metadata#Managers", "@odata.id": "\/redfish\/v1\/Managers", "@odata.type": "#ManagerCollection.ManagerCollection", "Name": "Computer Manager Collection", "Members@odata.count": 1, "Members": [ { "@odata.id": "\/redfish\/v1\/Managers\/Self" } ] }

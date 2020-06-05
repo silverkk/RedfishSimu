@@ -1,0 +1,1 @@
+{ "@odata.context": "/redfish/v1/$metadata#Chassis/Members/Self/NetworkAdapters/$entity", "@odata.id": "/redfish/v1/Chassis/Self/NetworkAdapters", "@odata.type": "#NetworkAdapterCollection.NetworkAdapterCollection", "Name": "NetworkAdapter Collection", "Members@odata.count": 1, "Members": [ { "@odata.id": "/redfish/v1/Chassis/Self/NetworkAdapters/NIC_Onboard" } ] }

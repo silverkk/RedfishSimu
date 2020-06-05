@@ -1,0 +1,42 @@
+{
+    "@odata.context": "/redfish/v1/$metadata",
+    "@odata.etag": "W/\"1578648025\"",
+    "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/mLOM",
+    "@odata.type": "#NetworkAdapter.v1_0_0.NetworkAdapter",
+    "Manufacturer": "Intel",
+    "Model": "NIC-GE-4P-360T-L3",
+    "Name": "mLOM",
+    "Oem": {
+        "Public": {
+            "CapableSpeedGbs": "1",
+            "FirmwareVersion": "1.1767.0",
+            "NIC_id": "1",
+            "NegotiatedSpeedGTs": "2.5",
+            "PortInfo": [
+                {
+                    "MACAddress": "80:E4:55:9C:6B:15",
+                    "PortNumber": "Port 1"
+                },
+                {
+                    "MACAddress": "80:E4:55:9C:6B:16",
+                    "PortNumber": "Port 2"
+                },
+                {
+                    "MACAddress": "80:E4:55:9C:6B:17",
+                    "PortNumber": "Port 3"
+                },
+                {
+                    "MACAddress": "80:E4:55:9C:6B:18",
+                    "PortNumber": "Port 4"
+                }
+            ],
+            "Position": "mLOM",
+            "SerialNumber": "02A3GKX1990B068W",
+            "Status": {
+                "Health": "{{ machineInfo.healthInfo.NIC }}",
+                "State": "Enabled"
+            },
+            "TemperatureCelsius": "35"
+        }
+    }
+}

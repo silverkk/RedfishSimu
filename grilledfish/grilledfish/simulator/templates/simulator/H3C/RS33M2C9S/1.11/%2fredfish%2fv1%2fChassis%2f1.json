@@ -1,0 +1,54 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Chassis.Chassis(SerialNumber,IndicatorLED@Redfish.AllowableValues,IndicatorLED,PowerState,ChassisType,PartNumber,Description,Thermal,Status,Links,Name,Drives,Power,SKU,NetworkAdapters,LogServices,Manufacturer,AssetTag,Model,Id)",
+    "@odata.etag": "W/\"1578647960\"",
+    "@odata.id": "/redfish/v1/Chassis/1",
+    "@odata.type": "#Chassis.v1_4_0.Chassis",
+    "AssetTag": "",
+    "ChassisType": "Rack Mount Chassis",
+    "Description": "",
+    "Drives": {
+        "@odata.id": "/redfish/v1/Chassis/1/Drives"
+    },
+    "Id": "1",
+    "IndicatorLED": "Off",
+    "IndicatorLED@Redfish.AllowableValues": [
+        "Lit",
+        "Blinking",
+        "Off"
+    ],
+    "Links": {
+        "ComputerSystems": [
+            {
+                "@odata.id": "/redfish/v1/Systems/1"
+            }
+        ],
+        "ManagedBy": [
+            {
+                "@odata.id": "/redfish/v1/Managers/1"
+            }
+        ]
+    },
+    "LogServices": {
+        "@odata.id": "/redfish/v1/Chassis/1/LogServices"
+    },
+    "Manufacturer": "H3C",
+    "Model": "RS33M2C9S",
+    "Name": "HDM210235A1Q70000000001",
+    "NetworkAdapters": {
+        "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters"
+    },
+    "PartNumber": "",
+    "Power": {
+        "@odata.id": "/redfish/v1/Chassis/1/Power"
+    },
+    "PowerState": "On",
+    "SKU": "",
+    "SerialNumber": "210235A1Q70000000001",
+    "Status": {
+        "Health": "Warning",
+        "State": "Enabled"
+    },
+    "Thermal": {
+        "@odata.id": "/redfish/v1/Chassis/1/Thermal"
+    }
+}

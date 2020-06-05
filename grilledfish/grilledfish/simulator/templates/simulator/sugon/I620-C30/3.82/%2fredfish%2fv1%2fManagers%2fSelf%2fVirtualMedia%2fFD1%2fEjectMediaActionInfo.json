@@ -1,0 +1,1 @@
+{ "@odata.context": "\/redfish\/v1\/$metadata#ActionInfo.ActionInfo", "@odata.id": "\/v1\/Managers\/Self\/VirtualMedia\/FD1\/EjectMediaActionInfo", "@odata.type": "#ActionInfo.v1_1_0.ActionInfo", "Name": "Eject Media Action Info", "Description": "FD1 Eject Media Action Info", "Id": "EjectMediaActionInfo", "Parameters": [ ] }

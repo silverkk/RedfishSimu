@@ -1,0 +1,15 @@
+{
+    "CSRFToken": "z3JcVEHV",
+    "HTTPSEnabled": 1,
+    "HaHaID": "ey",
+    "ResidueDay": 255,
+    "default_passwd": 0,
+    "error_code": 200,
+    "extendedpriv": 256,
+    "ok": 0,
+    "privilege": 4,
+    "racsession_id": 924,
+    "remote_addr": "10.239.172.129",
+    "server_addr": "10.239.43.54",
+    "server_name": "10.239.43.54"
+}

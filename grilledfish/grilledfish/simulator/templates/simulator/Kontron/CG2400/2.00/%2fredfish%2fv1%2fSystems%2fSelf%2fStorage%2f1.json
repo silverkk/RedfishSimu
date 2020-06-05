@@ -1,0 +1,103 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Storage.Storage",
+    "@odata.etag": "\"1579113261\"",
+    "@odata.id": "/redfish/v1/Systems/Self/Storage/1",
+    "@odata.type": "#Storage.v1_7_0.Storage",
+    "Drives": [{
+        "@odata.id": "/redfish/v1/Systems/Self/Storage/1/Drives/USB_Device1_Port9"
+    }, {
+        "@odata.id": "/redfish/v1/Systems/Self/Storage/1/Drives/USB_Device0_Port4"
+    }, {
+        "@odata.id": "/redfish/v1/Systems/Self/Storage/1/Drives/USB_Device2_Port9"
+    }, {
+        "@odata.id": "/redfish/v1/Systems/Self/Storage/1/Drives/USB_Device3_Port4"
+    }, {
+        "@odata.id": "/redfish/v1/Systems/Self/Storage/1/Drives/NVMe_Device5_NSID1"
+    }, {
+        "@odata.id": "/redfish/v1/Systems/Self/Storage/1/Drives/SATA_Device4_Port0"
+    }],
+    "Drives@odata.count": 6,
+    "Id": "1",
+    "Links": {
+        "Enclosures@odata.count": 0
+    },
+    "Name": "Local Storage Controller",
+    "Redundancy@odata.count": 0,
+    "StorageControllers": [{
+        "@odata.id": "/redfish/v1/Systems/Self/Storage/1",
+        "AssetTag": "(USB_Controller_0)",
+        "FirmwareVersion": "1.0",
+        "Links": {
+            "Endpoints@odata.count": 0,
+            "StorageServices@odata.count": 0
+        },
+        "MemberId": "USB_Controller0",
+        "Name": "USB_Controller0",
+        "PCIeInterface": {
+            "LanesInUse": 0,
+            "MaxPCIeType": "Gen1",
+            "PCIeType": "Gen1"
+        },
+        "SpeedGbps": 3,
+        "Status": {
+            "Health": "{{ machineInfo.healthInfo.raid }}",
+            "State": "Enabled"
+        },
+        "SupportedControllerProtocols": ["PCIe", "USB"],
+        "SupportedDeviceProtocols": ["USB"]
+    }, {
+        "@odata.id": "/redfish/v1/Systems/Self/Storage/1",
+        "AssetTag": "(SATA_Controller_1)",
+        "FirmwareVersion": "Not Available",
+        "Links": {
+            "Endpoints@odata.count": 0,
+            "StorageServices@odata.count": 0
+        },
+        "MemberId": "SATA_Controller_1",
+        "Model": "Not Available",
+        "Name": "SATA_Controller_1",
+        "PCIeInterface": {
+            "LanesInUse": 0,
+            "MaxPCIeType": "Gen1",
+            "PCIeType": "Gen1"
+        },
+        "SerialNumber": "Not Available",
+        "SpeedGbps": 6,
+        "Status": {
+            "Health": "{{ machineInfo.healthInfo.raid }}",
+            "State": "Enabled"
+        },
+        "SupportedControllerProtocols": ["PCIe", "SATA", "AHCI"],
+        "SupportedDeviceProtocols": ["SATA", "AHCI"]
+    }, {
+        "@odata.id": "/redfish/v1/Systems/Self/Storage/1",
+        "AssetTag": "(NVMe_Controller_2)",
+        "FirmwareVersion": "006D",
+        "Links": {
+            "Endpoints@odata.count": 0,
+            "StorageServices@odata.count": 0
+        },
+        "MemberId": "NVMe_Controller_2",
+        "Model": "INTEL SSDPEKKA512G8",
+        "Name": "NVMe_Controller_2",
+        "PCIeInterface": {
+            "LanesInUse": 0,
+            "MaxPCIeType": "Gen1",
+            "PCIeType": "Gen1"
+        },
+        "SerialNumber": "BTHH91840U9M512D",
+        "SpeedGbps": 8,
+        "Status": {
+            "Health": "OK",
+            "State": "Enabled"
+        },
+        "SupportedControllerProtocols": ["PCIe", "NVMe"],
+        "SupportedDeviceProtocols": ["NVMe"]
+    }],
+    "StorageControllers@odata.count": 3,
+    "SupportedControllerProtocols@Redfish.AllowableValues": ["PCIe", "AHCI", "UHCI", "SAS", "SATA", "USB", "NVMe", "FC", "iSCSI", "FCoE", "FCP", "FICON", "NVMeOverFabrics", "SMB", "NFSv3", "NFSv4", "HTTP", "HTTPS", "FTP", "SFTP"],
+    "SupportedDeviceProtocols@Redfish.AllowableValues": ["PCIe", "AHCI", "UHCI", "SAS", "SATA", "USB", "NVMe", "FC", "iSCSI", "FCoE", "FCP", "FICON", "NVMeOverFabrics", "SMB", "NFSv3", "NFSv4", "HTTP", "HTTPS", "FTP", "SFTP"],
+    "Volumes": {
+        "@odata.id": "/redfish/v1/Systems/Self/Storage/1/Volumes"
+    }
+}

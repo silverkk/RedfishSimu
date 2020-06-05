@@ -1,0 +1,1 @@
+{ "@odata.type": "#Memory.v1_1_0.Memory", "Name": "CPU0_CH4_DIMM0", "Id": "DIMM8", "RankCount": 2, "CapacityMiB": 32768, "MemoryType": "DRAM", "MemoryDeviceType": "DDR4", "MemoryMedia": [ "DRAM" ], "Status": { "State": "ENABLE", "Health": "OK" }, "@odata.context": "\/redfish\/v1\/$metadata#Memory.Memory", "@odata.id": "\/redfish\/v1\/Systems\/System1\/Memory\/DIMM8" }

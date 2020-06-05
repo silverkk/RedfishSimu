@@ -1,0 +1,121 @@
+{
+    "@odata.type": "#Triggers.v1_1_0.Triggers",
+    "Id": "TMPCriticalTrigger",
+    "Name":"Trigger on system ambient and inlet temperature critical errors",
+    "Description": "Trigger when an OEM event is raised",
+    "MetricType": "Discrete",
+    "TriggerActions": [
+        "RedfishMetricReport"
+    ],
+    "DiscreteTriggerCondition": "Specified",
+    "DiscreteTriggers": [
+        {
+            "Value": "iDRAC.1.6.TMP0119",
+            "Name": "The system inlet temperature is less than the lower critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP0131",
+            "Name": "The control panel temperature is less than the lower critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP0133",
+            "Name": "The control panel temperature is greater than the upper critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP1002",
+            "Name": "Temperature sensor has exceeded the maximum failure threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP7",
+            "Name": "Temperature sensor has failed.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP0107",
+            "Name": "The memory module  temperature is less than the lower critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP0121",
+            "Name": "The system inlet temperature is greater than the upper critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP0113",
+            "Name": "The  temperature is less than the lower critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP0110",
+            "Name": "The memory module  temperature is outside of range.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP0116",
+            "Name": "The  temperature is outside of range.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP0134",
+            "Name": "The control panel temperature is outside of range.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP0122",
+            "Name": "The system inlet temperature is outside of range.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP1003",
+            "Name": "Temperature sensor has crossed the minimum failure threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP0115",
+            "Name": "The  temperature is greater than the upper critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP0104",
+            "Name": "The system board  temperature is outside of range.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.TMP0103",
+            "Name": "The system board  temperature is greater than the upper critical threshold.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        }
+    ],
+    "Links": {
+    	"MetricReportDefinitions": [
+    	{
+           "@odata.id": "/redfish/v1/TelemetryService/MetricReportDefinitions/ThermalSensor"
+    	},
+    	{
+           "@odata.id": "/redfish/v1/TelemetryService/MetricReportDefinitions/ThermalMetrics"
+    	}
+    	]
+    },
+    "@odata.context": "/redfish/v1/$metadata#Triggers.Triggers",
+    "@odata.id": "/redfish/v1/TelemetryService/Triggers/TMPCriticalTrigger"
+}

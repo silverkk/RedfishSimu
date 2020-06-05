@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#MetricReport.MetricReport","@odata.id":"/redfish/v1/TelemetryService/MetricReports/PowerMetric","@odata.type":"#MetricReport.v1_1_1.MetricReport","Id":"PowerMetric","Name":"PowerMetric","MetricReportDefinition":{"@odata.id":"/redfish/v1/TelemetryService/MetricReportDefinitions/PowerMetric"},"ReportSequence":"3","MetricValues":[]}

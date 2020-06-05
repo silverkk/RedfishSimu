@@ -1,0 +1,32 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Processor.Processor(*)",
+    "@odata.etag": "W/\"1578648449\"",
+    "@odata.id": "/redfish/v1/Systems/1/Processors/1",
+    "@odata.type": "#Processor.v1_0_3.Processor",
+    "Id": "1",
+    "InstructionSet": "x86-64",
+    "Manufacturer": "Intel(R) Corporation",
+    "MaxSpeedMHz": 2500,
+    "Model": "Intel(R) Xeon(R) Gold 5215M CPU @ 2.50GHz",
+    "Name": "CPU1",
+    "Oem": {
+        "Public": {
+            "L1CacheKiB": 640,
+            "L2CacheKiB": 10240,
+            "L3CacheKiB": 14080
+        }
+    },
+    "PPIN": "e97ec2812f9d99d8",
+    "ProcessorArchitecture": "x86",
+    "ProcessorId": {
+        "IdentificationRegisters": "56-06-05-00-FF-FB-EB-BF"
+    },
+    "ProcessorType": "CPU",
+    "Socket": "1",
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.Processor }}",
+        "State": "Enabled"
+    },
+    "TotalCores": 10,
+    "TotalThreads": 20
+}

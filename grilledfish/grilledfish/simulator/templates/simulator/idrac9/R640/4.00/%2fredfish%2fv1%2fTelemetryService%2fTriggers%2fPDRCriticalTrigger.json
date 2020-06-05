@@ -1,0 +1,76 @@
+{
+    "@odata.type": "#Triggers.v1_1_0.Triggers",
+    "Id": "PDRCriticalTrigger",
+    "Name":"Trigger on physical disk  critical errors",
+    "Description": "Trigger when an OEM event is raised",
+    "MetricType": "Discrete",
+    "TriggerActions": [
+        "RedfishMetricReport"
+    ],
+    "DiscreteTriggerCondition": "Specified",
+    "DiscreteTriggers": [
+        {
+            "Value": "iDRAC.1.6.PDR64",
+            "Name": "An unrecoverable disk media error occurred on physical disk.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.PDR44",
+            "Name": "The clear operation on physical disk failed.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.PDR63",
+            "Name": "A bad disk block on  cannot be reassigned during a write operation.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.PDR62",
+            "Name": "The rebuild failed due to errors on the target physical disk.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.PDR46",
+            "Name": "Patrol Read found an uncorrectable media error on physical disk.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.PDR61",
+            "Name": "The rebuild failed due to errors on the source physical disk.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.PDR57",
+            "Name": "Bad block table is full. Unable to log block .",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.PDR47",
+            "Name": "A block on physical disk was punctured by the controller.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        },
+        {
+            "Value": "iDRAC.1.6.PDR73",
+            "Name": "The physical disk participating in the copyback operation failed.",
+            "Severity": "Critical",
+            "DwellTime": "PT0.001S"
+        }
+    ],
+    "Links": {
+    	"MetricReportDefinitions": [
+    	{
+           "@odata.id": "/redfish/v1/TelemetryService/MetricReportDefinitions/StorageDiskSMARTData"
+    	}
+    	]
+    },
+    "@odata.context": "/redfish/v1/$metadata#Triggers.Triggers",
+    "@odata.id": "/redfish/v1/TelemetryService/Triggers/PDRCriticalTrigger"
+}

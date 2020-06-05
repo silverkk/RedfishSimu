@@ -1,0 +1,30 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Storage.Storage",
+    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/StorageControllers/RAID.Slot.4-1",
+    "@odata.type": "#Storage.v1_3_0.StorageController",
+    "FirmwareVersion": "25.5.2.0001",
+    "Identifiers": [
+        {
+            "DurableName": "5588A5A0E5019A00",
+            "DurableNameFormat": "NAA"
+        }
+    ],
+    "Links": {},
+    "Manufacturer": "DELL",
+    "MemberId": "RAID.Slot.4-1",
+    "Model": "PERC H330 Adapter",
+    "Name": "PERC H330 Adapter",
+    "SpeedGbps": 12,
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    },
+    "SupportedControllerProtocols": [
+        "PCIe"
+    ],
+    "SupportedDeviceProtocols": [
+        "SAS",
+        "SATA"
+    ]
+}

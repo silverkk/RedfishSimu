@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#SMTP.SMTP","@odata.type":"#SMTP.v1_0_0.SMTP","@odata.id":"/redfish/v1/Managers/1/SMTP","Id":"SMTP","Name":"SMTP","SmtpSSLEnabled":true,"SmtpServer":"216.68.85.113","SmtpPortNumber":25,"SmtpUserName":"","SmtpPassword":"null","SmtpSenderAddress":"wfischer@thomas-krenn.com"}

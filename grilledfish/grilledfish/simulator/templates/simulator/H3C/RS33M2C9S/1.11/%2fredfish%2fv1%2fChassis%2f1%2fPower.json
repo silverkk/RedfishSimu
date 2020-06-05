@@ -1,0 +1,616 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Power.Power(PowerControl,Voltages,Id,Name,PowerSupplies)",
+    "@odata.etag": "W/\"1578648045\"",
+    "@odata.id": "/redfish/v1/Chassis/1/Power",
+    "@odata.type": "#Power.v1_2_1.Power",
+    "Id": "Power",
+    "Name": "Power",
+    "PowerControl": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Power#/PowerControl/1",
+            "Name": "System Power Control 1",
+            "PowerConsumedWatts ": 114,
+            "PowerLimit": {
+                "CorrectionInMs": 30000,
+                "LimitException": "",
+                "LimitInWatts": 850
+            },
+            "PowerMetrics": {
+                "MaxConsumedWatts": 850,
+                "MinConsumedWatts": 150
+            },
+            "PowerRequestedWatts": 850,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            }
+        }
+    ],
+    "PowerSupplies": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Power#/PowerSupplies/1",
+            "FirmwareVersion": "N/A",
+            "LineInputVoltageType": "ACMidLine",
+            "Manufacturer": "N/A",
+            "Model": "DPS-850AB-11 A",
+            "Name": "PSU2",
+            "Oem": {
+                "Public": {
+                    "ActiveStandby": "Active",
+                    "PowerCurrentWatts": "N/A",
+                    "PowerID": "2"
+                }
+            },
+            "PowerCapacityWatts": 850,
+            "PowerSupplyType": "AC",
+            "SerialNumber": "210213A05NN16B000488",
+            "Status": {
+                "Health": "{{ machineInfo.healthInfo.Power }}",
+                "State": "Enabled"
+            }
+        }
+    ],
+    "Voltages": [
+        {
+            "LowerThresholdCritical": 1.33,
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "CPU1_Vcore",
+            "ReadingVolts": 1.8,
+            "SensorNumber": 51,
+            "Status": {
+                "Health": "{{ machineInfo.healthInfo.Voltage }}",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 1.88,
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": "null",
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "CPU1_DDR_VPP2_PG",
+            "ReadingVolts": 32769,
+            "SensorNumber": 75,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": "null",
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": "null",
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "CPU2_VDDQ1_PG",
+            "ReadingVolts": 32769,
+            "SensorNumber": 80,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": "null",
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": "null",
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "CPU2_DDR_VPP1_PG",
+            "ReadingVolts": 32769,
+            "SensorNumber": 78,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": "null",
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": "null",
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "CPU1_DDR_VPP1_PG",
+            "ReadingVolts": 32769,
+            "SensorNumber": 74,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": "null",
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": 1.08,
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "CPU2_DDR_VDDQ2",
+            "ReadingVolts": 1.21,
+            "SensorNumber": 56,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 1.32,
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": "null",
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "CPU1_VDDQ1_PG",
+            "ReadingVolts": 32769,
+            "SensorNumber": 76,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": "null",
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": "null",
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "HDD_BP1_12V",
+            "ReadingVolts": 0,
+            "SensorNumber": 132,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": "null",
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": 1.08,
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "CPU1_DDR_VDDQ1",
+            "ReadingVolts": 1.22,
+            "SensorNumber": 52,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 1.32,
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": "null",
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "CPU1_VDDQ2_PG",
+            "ReadingVolts": 32769,
+            "SensorNumber": 77,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": "null",
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": "null",
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "CPU2_DDR_VPP2_PG",
+            "ReadingVolts": 32769,
+            "SensorNumber": 79,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": "null",
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": 1.08,
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "CPU1_DDR_VDDQ2",
+            "ReadingVolts": 1.22,
+            "SensorNumber": 53,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 1.32,
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": "null",
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "PSU1_VOUT",
+            "ReadingVolts": 12,
+            "SensorNumber": 57,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": "null",
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": "null",
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "BP_2_PG",
+            "ReadingVolts": 32769,
+            "SensorNumber": 137,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": "null",
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": 1.08,
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "CPU2_DDR_VDDQ1",
+            "ReadingVolts": 1.22,
+            "SensorNumber": 55,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 1.32,
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": "null",
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "CPU2_VDDQ2_PG",
+            "ReadingVolts": 32769,
+            "SensorNumber": 81,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": "null",
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": 2,
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "SYS_3V_BAT",
+            "ReadingVolts": 3.36,
+            "SensorNumber": 235,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 3.68,
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": "null",
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "BP_3_PG",
+            "ReadingVolts": 32769,
+            "SensorNumber": 144,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": "null",
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": "null",
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "BP_1_PG",
+            "ReadingVolts": 32769,
+            "SensorNumber": 136,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": "null",
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": 1.33,
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "CPU2_Vcore",
+            "ReadingVolts": 1.79,
+            "SensorNumber": 54,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 1.88,
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": 2.34,
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "CPU2_DDR_VPP2",
+            "ReadingVolts": 2.58,
+            "SensorNumber": 131,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 2.76,
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": 2.34,
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "CPU1_DDR_VPP2",
+            "ReadingVolts": 2.58,
+            "SensorNumber": 129,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 2.76,
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": "null",
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "PSU2_VIN",
+            "ReadingVolts": 0,
+            "SensorNumber": 69,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": "null",
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": 2.34,
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "CPU2_DDR_VPP1",
+            "ReadingVolts": 2.58,
+            "SensorNumber": 130,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 2.76,
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": 10.8,
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "SYS_12V",
+            "ReadingVolts": 12,
+            "SensorNumber": 63,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 13.2,
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": 2.96,
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "SYS_3V3",
+            "ReadingVolts": 3.28,
+            "SensorNumber": 65,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 3.6,
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": 4.48,
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "SYS_5V",
+            "ReadingVolts": 5.12,
+            "SensorNumber": 64,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 5.52,
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": "null",
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "PSU1_VIN",
+            "ReadingVolts": 219.6,
+            "SensorNumber": 66,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": "null",
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": 2.34,
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "CPU1_DDR_VPP1",
+            "ReadingVolts": 2.58,
+            "SensorNumber": 128,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 2.76,
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": "null",
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "SYS_5V_STBY_PG",
+            "ReadingVolts": 32769,
+            "SensorNumber": 145,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": "null",
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": "null",
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "HDD_BP2_12V",
+            "ReadingVolts": 0,
+            "SensorNumber": 133,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": "null",
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": "null",
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "HDD_BP3_12V",
+            "ReadingVolts": 0,
+            "SensorNumber": 134,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": "null",
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        },
+        {
+            "LowerThresholdCritical": "null",
+            "LowerThresholdFatal": "null",
+            "LowerThresholdNonCritical": "null",
+            "MaxReadingRange": 200,
+            "MinReadingRange": 0,
+            "Name": "PSU2_VOUT",
+            "ReadingVolts": 0,
+            "SensorNumber": 60,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": "null",
+            "UpperThresholdFatal": "null",
+            "UpperThresholdNonCritical": "null"
+        }
+    ]
+}

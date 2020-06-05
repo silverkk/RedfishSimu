@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#LogEntry.LogEntry","@odata.type":"#LogEntry.v1_0_0.LogEntry","@odata.id":"/redfish/v1/Managers/1/LogServices/Log1/Entries/71","Id":"71","Name":"Maintenance Event Log Entry 71","Severity":"Warning","Created":"2019-01-10T10:05:32+00:00","Interface":"Web","User":"root","Source":"10.2.2.149","Description":"The user attempted to access BMC"}

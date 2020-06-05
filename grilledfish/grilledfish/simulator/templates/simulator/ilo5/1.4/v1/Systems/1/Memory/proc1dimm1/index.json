@@ -1,0 +1,45 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Memory.Memory",
+    "@odata.etag": "W/\"2B4ABA21\"",
+    "@odata.id": "/redfish/v1/Systems/1/Memory/proc1dimm1",
+    "@odata.type": "#Memory.v1_7_0.Memory",
+    "Id": "proc1dimm1",
+    "BusWidthBits": 72,
+    "CacheSizeMiB": 1422140436,
+    "CapacityMiB": 0,
+    "DataWidthBits": 64,
+    "DeviceLocator": "PROC 1 DIMM 1",
+    "ErrorCorrection": "MultiBitECC",
+    "LogicalSizeMiB": 0,
+    "MemoryDeviceType": "DDR4",
+    "MemoryLocation": {
+        "Channel": 6,
+        "MemoryController": 2,
+        "Slot": 1,
+        "Socket": 1
+    },
+    "MemoryMedia": [
+        "DRAM"
+    ],
+    "MemoryType": "DRAM",
+    "Name": "proc1dimm1",
+    "NonVolatileSizeMiB": -186338075,
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeMemoryExt.HpeMemoryExt",
+            "@odata.type": "#HpeMemoryExt.v2_2_0.HpeMemoryExt",
+            "DIMMStatus": "NotPresent",
+            "MinimumVoltageVoltsX10": 0
+        }
+    },
+    "PersistentRegionSizeLimitMiB": -186338075,
+    "RankCount": null,
+    "SecurityCapabilities": {},
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.memory }}",
+        "State": "Absent"
+    },
+    "VendorID": "0",
+    "VolatileRegionSizeLimitMiB": 302335220,
+    "VolatileSizeMiB": 302335220
+}

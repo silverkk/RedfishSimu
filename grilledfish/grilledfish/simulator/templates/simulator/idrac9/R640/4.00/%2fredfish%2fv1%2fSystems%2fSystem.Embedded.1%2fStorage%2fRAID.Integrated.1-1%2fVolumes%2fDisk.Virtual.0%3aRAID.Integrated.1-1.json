@@ -1,0 +1,103 @@
+{
+    "@Redfish.Settings": {
+        "@odata.context": "/redfish/v1/$metadata#Settings.Settings",
+        "@odata.type": "#Settings.v1_2_1.Settings",
+        "SettingsObject": {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Storage/RAID.Integrated.1-1/Volumes/Disk.Virtual.0:RAID.Integrated.1-1/Settings"
+        },
+        "SupportedApplyTimes": [
+            "Immediate",
+            "OnReset",
+            "AtMaintenanceWindowStart",
+            "InMaintenanceWindowOnReset"
+        ]
+    },
+    "@odata.context": "/redfish/v1/$metadata#Volume.Volume",
+    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Storage/RAID.Integrated.1-1/Volumes/Disk.Virtual.0:RAID.Integrated.1-1",
+    "@odata.type": "#Volume.v1_0_3.Volume",
+    "Actions": {
+        "#Volume.CheckConsistency": {
+            "@Redfish.OperationApplyTimeSupport": {
+                "@odata.type": "#Settings.v1_2_1.OperationApplyTimeSupport",
+                "SupportedValues": [
+                    "Immediate",
+                    "OnReset"
+                ]
+            },
+            "target": "/redfish/v1/Systems/System.Embedded.1/Storage/RAID.Integrated.1-1/Volumes/Disk.Virtual.0:RAID.Integrated.1-1/Actions/Volume.CheckConsistency"
+        },
+        "#Volume.Initialize": {
+            "@Redfish.OperationApplyTimeSupport": {
+                "@odata.type": "#Settings.v1_2_1.OperationApplyTimeSupport",
+                "SupportedValues": [
+                    "Immediate",
+                    "OnReset"
+                ]
+            },
+            "InitializeType@Redfish.AllowableValues": [
+                "Fast",
+                "Slow"
+            ],
+            "target": "/redfish/v1/Systems/System.Embedded.1/Storage/RAID.Integrated.1-1/Volumes/Disk.Virtual.0:RAID.Integrated.1-1/Actions/Volume.Initialize"
+        }
+    },
+    "BlockSizeBytes": 512,
+    "CapacityBytes": 1599070011392,
+    "Description": "VD1",
+    "Encrypted": false,
+    "EncryptionTypes": [
+        "NativeDriveEncryption"
+    ],
+    "Id": "Disk.Virtual.0:RAID.Integrated.1-1",
+    "Identifiers": [],
+    "Links": {
+        "Drives": [
+            {
+                "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Storage/RAID.Integrated.1-1/Drives/Disk.Bay.0:Enclosure.Internal.0-1:RAID.Integrated.1-1"
+            },
+            {
+                "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Storage/RAID.Integrated.1-1/Drives/Disk.Bay.1:Enclosure.Internal.0-1:RAID.Integrated.1-1"
+            }
+        ],
+        "Drives@odata.count": 2
+    },
+    "Name": "VD1",
+    "Oem": {
+        "Dell": {
+            "DellVirtualDisk": {
+                "@odata.context": "/redfish/v1/$metadata#DellVirtualDisk.DellVirtualDisk",
+                "@odata.id": "/redfish/v1/Dell/Systems/System.Embedded.1/Storage/Volumes/DellVirtualDisk/Disk.Virtual.0:RAID.Integrated.1-1",
+                "@odata.type": "#DellVirtualDisk.v1_1_0.DellVirtualDisk",
+                "BusProtocol": "SAS",
+                "Cachecade": "NonCachecadeVD",
+                "DiskCachePolicy": "Default",
+                "LastSystemInventoryTime": "2020-05-06T06:09:06+00:00",
+                "LastUpdateTime": "2020-05-06T06:09:06+00:00",
+                "LockStatus": "Unlocked",
+                "MediaType": "SolidStateDrive",
+                "ObjectStatus": "Current",
+                "OperationName": "None",
+                "OperationPercentComplete": 0,
+                "PrimaryStatus": "OK",
+                "RaidStatus": "Online",
+                "ReadCachePolicy": "ReadAhead",
+                "RemainingRedundancy": 0,
+                "SpanDepth": 1,
+                "SpanLength": 2,
+                "StartingLBAinBlocks": 0,
+                "StripeSize": "256KB",
+                "T10PIStatus": "Disabled",
+                "VirtualDiskTargetID": 0,
+                "WriteCachePolicy": "WriteBack"
+            }
+        }
+    },
+    "Operations": [],
+    "OptimumIOSizeBytes": 262144,
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    },
+    "VolumeType": "NonRedundant"
+}

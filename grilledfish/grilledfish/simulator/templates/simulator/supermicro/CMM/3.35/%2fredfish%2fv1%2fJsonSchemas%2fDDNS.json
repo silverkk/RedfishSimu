@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#JsonSchemaFile.JsonSchemaFile","@odata.type":"#JsonSchemaFile.JsonSchemaFile","@odata.id":"/redfish/v1/JsonSchemas/DDNS","Id":"DDNS","Name":"DDNS Schema File","Description":"DDNS Schema File Location","Languages":["en"],"Schema":"DDNS","Location":[{"Language":"en","Uri":"/schemas/DDNS.json"}],"Oem":{}}

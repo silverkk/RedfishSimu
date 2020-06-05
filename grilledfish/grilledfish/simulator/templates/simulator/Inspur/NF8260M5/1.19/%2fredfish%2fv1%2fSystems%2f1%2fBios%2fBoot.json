@@ -1,0 +1,1 @@
+{ "@odata.context": "\/redfish\/v1\/$metadata#Bios.Bios", "Id": "boot options", "Name": "BIOS Current Boot Options", "@odata.id": "\/redfish\/v1\/Systems\/1\/Bios\/Boot\/", "Attributes": { "enable": 0, "Timeliness": 0, "Boot_Option": 0 } }

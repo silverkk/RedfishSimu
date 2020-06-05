@@ -1,0 +1,1 @@
+{"@odata.context":"\/redfish\/v1\/$metadata#Systems\/Members\/1\/EthernetInterfaces\/Members\/mainboardNIC1Port2\/VLANs\/$entity","@odata.id":"\/redfish\/v1\/Systems\/1\/EthernetInterfaces\/mainboardNIC1Port2\/VLANs","@odata.type":"#VLanNetworkInterfaceCollection.VLanNetworkInterfaceCollection","Name":"VLAN Network Interface Collection","Members@odata.count":0,"Members":[]}

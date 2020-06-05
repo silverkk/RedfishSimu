@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#VolumeCollection.VolumeCollection","@odata.type":"#VolumeCollection.VolumeCollection","@odata.id":"/redfish/v1/Systems/1/Storage/HA-RAID/Volumes","Name":"Storage Volume Collection","Members":[{"@odata.id":"/redfish/v1/Systems/1/Storage/HA-RAID/Volumes/Controller.0.Volume.0"}],"Members@odata.count":1}

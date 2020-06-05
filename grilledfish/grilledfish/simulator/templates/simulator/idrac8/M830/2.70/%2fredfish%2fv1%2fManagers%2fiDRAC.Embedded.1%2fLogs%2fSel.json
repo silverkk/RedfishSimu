@@ -1,0 +1,816 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntryCollection.LogEntryCollection",
+    "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel",
+    "@odata.type": "#LogEntryCollection.LogEntryCollection",
+    "Description": "System Event Logs for this manager",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/31",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2019-09-25T18:41:46-05:00",
+            "Description": " Log Entry 31",
+            "EntryCode": [
+                {
+                    "Member": null
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "31",
+            "Links": {},
+            "Message": "OEM software event.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "2800",
+            "Name": " Log Entry 31",
+            "SensorNumber": 3,
+            "SensorType": [
+                {
+                    "Member": null
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/30",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2019-09-25T18:41:46-05:00",
+            "Description": " Log Entry 30",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "30",
+            "Links": {},
+            "Message": "An OS graceful shut-down occurred.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "3ffff",
+            "Name": " Log Entry 30",
+            "SensorNumber": 0,
+            "SensorType": [
+                {
+                    "Member": "OS Stop/Shutdown"
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/29",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2019-09-25T17:33:12-05:00",
+            "Description": " Log Entry 29",
+            "EntryCode": [
+                {
+                    "Member": "Deassert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "29",
+            "Links": {},
+            "Message": "OEM software event.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "8b5d0",
+            "Name": " Log Entry 29",
+            "SensorNumber": 210,
+            "SensorType": [
+                {
+                    "Member": null
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/28",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2019-09-25T17:33:12-05:00",
+            "Description": " Log Entry 28",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "28",
+            "Links": {},
+            "Message": "C: boot completed.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "1ffff",
+            "Name": " Log Entry 28",
+            "SensorNumber": 0,
+            "SensorType": [
+                {
+                    "Member": "BaseOSBoot/InstallationStatus"
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/27",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-12-29T09:03:20-06:00",
+            "Description": " Log Entry 27",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "27",
+            "Links": {},
+            "Message": "System BIOS has halted.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "fd0ff",
+            "Name": " Log Entry 27",
+            "SensorNumber": 30,
+            "SensorType": [
+                {
+                    "Member": "System Firmware Progress"
+                }
+            ],
+            "Severity": "Critical"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/26",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-12-08T12:19:12-06:00",
+            "Description": " Log Entry 26",
+            "EntryCode": [
+                {
+                    "Member": null
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "26",
+            "Links": {},
+            "Message": "OEM software event.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "2800",
+            "Name": " Log Entry 26",
+            "SensorNumber": 3,
+            "SensorType": [
+                {
+                    "Member": null
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/25",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-12-08T12:19:12-06:00",
+            "Description": " Log Entry 25",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "25",
+            "Links": {},
+            "Message": "An OS graceful shut-down occurred.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "3ffff",
+            "Name": " Log Entry 25",
+            "SensorNumber": 0,
+            "SensorType": [
+                {
+                    "Member": "OS Stop/Shutdown"
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/24",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-12-08T12:13:25-06:00",
+            "Description": " Log Entry 24",
+            "EntryCode": [
+                {
+                    "Member": "Deassert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "24",
+            "Links": {},
+            "Message": "OEM software event.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "2a5a0",
+            "Name": " Log Entry 24",
+            "SensorNumber": 239,
+            "SensorType": [
+                {
+                    "Member": null
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/23",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-12-08T12:13:25-06:00",
+            "Description": " Log Entry 23",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "23",
+            "Links": {},
+            "Message": "C: boot completed.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "1ffff",
+            "Name": " Log Entry 23",
+            "SensorNumber": 0,
+            "SensorType": [
+                {
+                    "Member": "BaseOSBoot/InstallationStatus"
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/22",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-11-28T14:36:48-06:00",
+            "Description": " Log Entry 22",
+            "EntryCode": [
+                {
+                    "Member": null
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "22",
+            "Links": {},
+            "Message": "OEM software event.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "2800",
+            "Name": " Log Entry 22",
+            "SensorNumber": 3,
+            "SensorType": [
+                {
+                    "Member": null
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/21",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-11-28T14:36:48-06:00",
+            "Description": " Log Entry 21",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "21",
+            "Links": {},
+            "Message": "An OS graceful shut-down occurred.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "3ffff",
+            "Name": " Log Entry 21",
+            "SensorNumber": 0,
+            "SensorType": [
+                {
+                    "Member": "OS Stop/Shutdown"
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/20",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-11-28T13:16:26-06:00",
+            "Description": " Log Entry 20",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "20",
+            "Links": {},
+            "Message": "OEM software event.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "1d5a0",
+            "Name": " Log Entry 20",
+            "SensorNumber": 181,
+            "SensorType": [
+                {
+                    "Member": null
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/19",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-11-28T13:16:26-06:00",
+            "Description": " Log Entry 19",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "19",
+            "Links": {},
+            "Message": "C: boot completed.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "1ffff",
+            "Name": " Log Entry 19",
+            "SensorNumber": 0,
+            "SensorType": [
+                {
+                    "Member": "BaseOSBoot/InstallationStatus"
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/18",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-11-28T12:03:52-06:00",
+            "Description": " Log Entry 18",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "18",
+            "Links": {},
+            "Message": "OEM software event.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "1d5a0",
+            "Name": " Log Entry 18",
+            "SensorNumber": 179,
+            "SensorType": [
+                {
+                    "Member": null
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/17",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-11-28T12:03:52-06:00",
+            "Description": " Log Entry 17",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "17",
+            "Links": {},
+            "Message": "C: boot completed.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "1ffff",
+            "Name": " Log Entry 17",
+            "SensorNumber": 0,
+            "SensorType": [
+                {
+                    "Member": "BaseOSBoot/InstallationStatus"
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/16",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-11-24T09:31:05-06:00",
+            "Description": " Log Entry 16",
+            "EntryCode": [
+                {
+                    "Member": "Deassert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "16",
+            "Links": {},
+            "Message": "OEM software event.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "175a0",
+            "Name": " Log Entry 16",
+            "SensorNumber": 228,
+            "SensorType": [
+                {
+                    "Member": null
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/15",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-11-24T09:31:05-06:00",
+            "Description": " Log Entry 15",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "15",
+            "Links": {},
+            "Message": "C: boot completed.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "1ffff",
+            "Name": " Log Entry 15",
+            "SensorNumber": 0,
+            "SensorType": [
+                {
+                    "Member": "BaseOSBoot/InstallationStatus"
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/14",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-10-19T09:17:27-05:00",
+            "Description": " Log Entry 14",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "14",
+            "Links": {},
+            "Message": "An OEM diagnostic event occurred.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "12b3",
+            "Name": " Log Entry 14",
+            "SensorNumber": 26,
+            "SensorType": [
+                {
+                    "Member": null
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/13",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-10-19T09:17:27-05:00",
+            "Description": " Log Entry 13",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "13",
+            "Links": {},
+            "Message": "An OEM diagnostic event occurred.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "12ab8",
+            "Name": " Log Entry 13",
+            "SensorNumber": 26,
+            "SensorType": [
+                {
+                    "Member": null
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/12",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-10-19T09:17:27-05:00",
+            "Description": " Log Entry 12",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "12",
+            "Links": {},
+            "Message": "An OEM diagnostic event occurred.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "129bb",
+            "Name": " Log Entry 12",
+            "SensorNumber": 26,
+            "SensorType": [
+                {
+                    "Member": null
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/11",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-10-19T09:17:27-05:00",
+            "Description": " Log Entry 11",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "11",
+            "Links": {},
+            "Message": "An OEM diagnostic event occurred.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "128a5",
+            "Name": " Log Entry 11",
+            "SensorNumber": 26,
+            "SensorType": [
+                {
+                    "Member": null
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/10",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-10-19T09:17:27-05:00",
+            "Description": " Log Entry 10",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "10",
+            "Links": {},
+            "Message": "An OEM diagnostic event occurred.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "12783",
+            "Name": " Log Entry 10",
+            "SensorNumber": 26,
+            "SensorType": [
+                {
+                    "Member": null
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/9",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-10-19T09:17:27-05:00",
+            "Description": " Log Entry 9",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "9",
+            "Links": {},
+            "Message": "An OEM diagnostic event occurred.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "1268",
+            "Name": " Log Entry 9",
+            "SensorNumber": 26,
+            "SensorType": [
+                {
+                    "Member": null
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/8",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-10-19T09:17:27-05:00",
+            "Description": " Log Entry 8",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "8",
+            "Links": {},
+            "Message": "An OEM diagnostic event occurred.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "12380",
+            "Name": " Log Entry 8",
+            "SensorNumber": 26,
+            "SensorType": [
+                {
+                    "Member": null
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/7",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-10-19T09:17:27-05:00",
+            "Description": " Log Entry 7",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "7",
+            "Links": {},
+            "Message": "An OEM diagnostic event occurred.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "12210",
+            "Name": " Log Entry 7",
+            "SensorNumber": 26,
+            "SensorType": [
+                {
+                    "Member": null
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/6",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-10-19T09:17:27-05:00",
+            "Description": " Log Entry 6",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "6",
+            "Links": {},
+            "Message": "An OEM diagnostic event occurred.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "120f",
+            "Name": " Log Entry 6",
+            "SensorNumber": 26,
+            "SensorType": [
+                {
+                    "Member": null
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/5",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-10-19T09:17:27-05:00",
+            "Description": " Log Entry 5",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "5",
+            "Links": {},
+            "Message": "An OEM diagnostic event occurred.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "11f4",
+            "Name": " Log Entry 5",
+            "SensorNumber": 26,
+            "SensorType": [
+                {
+                    "Member": null
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/4",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-10-19T09:17:27-05:00",
+            "Description": " Log Entry 4",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "4",
+            "Links": {},
+            "Message": "An OEM diagnostic event occurred.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "11c1",
+            "Name": " Log Entry 4",
+            "SensorNumber": 26,
+            "SensorType": [
+                {
+                    "Member": null
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/3",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-10-19T09:17:27-05:00",
+            "Description": " Log Entry 3",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "3",
+            "Links": {},
+            "Message": "An OEM diagnostic event occurred.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "1540",
+            "Name": " Log Entry 3",
+            "SensorNumber": 26,
+            "SensorType": [
+                {
+                    "Member": null
+                }
+            ],
+            "Severity": "OK"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/2",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-10-19T09:17:26-05:00",
+            "Description": " Log Entry 2",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "2",
+            "Links": {},
+            "Message": "A fatal error was detected on a component at bus 131 device 0 function 0.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "ac083",
+            "Name": " Log Entry 2",
+            "SensorNumber": 56,
+            "SensorType": [
+                {
+                    "Member": "Critical Interrupt"
+                }
+            ],
+            "Severity": "Critical"
+        },
+        {
+            "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel/1",
+            "@odata.type": "#LogEntry.v1_3_0.LogEntry",
+            "Created": "2017-01-19T18:57:52-06:00",
+            "Description": " Log Entry 1",
+            "EntryCode": [
+                {
+                    "Member": "Assert"
+                }
+            ],
+            "EntryType": "SEL",
+            "Id": "1",
+            "Links": {},
+            "Message": "Log cleared.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "2ffff",
+            "Name": " Log Entry 1",
+            "SensorNumber": 114,
+            "SensorType": [
+                {
+                    "Member": "Event Logging Disabled"
+                }
+            ],
+            "Severity": "OK"
+        }
+    ],
+    "Members@odata.count": 31,
+    "Name": "Log Entry Collection"
+}

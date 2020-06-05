@@ -1,0 +1,44 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeSmartStorageDiskDrive.HpeSmartStorageDiskDrive",
+    "@odata.etag": "W/\"5ED49A5F\"",
+    "@odata.id": "/redfish/v1/Systems/1/SmartStorage/ArrayControllers/0/DiskDrives/1",
+    "@odata.type": "#HpeSmartStorageDiskDrive.v2_0_1.HpeSmartStorageDiskDrive",
+    "Id": "1",
+    "BlockSizeBytes": 512,
+    "CapacityGB": 300,
+    "CapacityLogicalBlocks": 585937500,
+    "CapacityMiB": 286102,
+    "CarrierApplicationVersion": "11",
+    "CarrierAuthenticationStatus": "OK",
+    "CurrentTemperatureCelsius": 32,
+    "Description": "HPE Smart Storage Disk Drive View",
+    "DiskDriveStatusReasons": [
+        "None"
+    ],
+    "DiskDriveUse": "Data",
+    "EncryptedDrive": false,
+    "FirmwareVersion": {
+        "Current": {
+            "VersionString": "HPD3"
+        }
+    },
+    "InterfaceSpeedMbps": 12000,
+    "InterfaceType": "SAS",
+    "LegacyBootPriority": "None",
+    "Location": "1I:1:2",
+    "LocationFormat": "ControllerPort:Box:Bay",
+    "MaximumTemperatureCelsius": 39,
+    "MediaType": "HDD",
+    "Model": "EG000300JWEBF",
+    "Name": "HpeSmartStorageDiskDrive",
+    "PowerOnHours": null,
+    "RotationalSpeedRpm": 10500,
+    "SSDEnduranceUtilizationPercentage": null,
+    "SerialNumber": "W0K1288M",
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.storage }}",
+        "State": "Enabled"
+    },
+    "UncorrectedReadErrors": 0,
+    "UncorrectedWriteErrors": 0
+}

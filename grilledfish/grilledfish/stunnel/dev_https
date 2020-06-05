@@ -1,0 +1,18 @@
+pid=
+debug = 7
+cert = stunnel/stunnel.pem
+sslVersion = all
+;options = -NO_SSLv3
+;sslVersion = SSLv3
+foreground = yes
+output = stunnel.log
+
+; fixing "fingerprint does not match" error
+fips=no
+
+[https]
+accept=443
+connect=8000
+TIMEOUTclose=1
+cert = stunnel/stunnel.pem
+client=No

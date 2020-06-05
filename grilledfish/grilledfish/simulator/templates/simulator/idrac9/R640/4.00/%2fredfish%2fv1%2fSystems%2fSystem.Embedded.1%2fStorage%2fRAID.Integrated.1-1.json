@@ -1,0 +1,123 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Storage.Storage",
+    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Storage/RAID.Integrated.1-1",
+    "@odata.type": "#Storage.v1_5_0.Storage",
+    "Description": "PERC H740P Mini ",
+    "Drives": [
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Storage/RAID.Integrated.1-1/Drives/Disk.Bay.0:Enclosure.Internal.0-1:RAID.Integrated.1-1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Storage/RAID.Integrated.1-1/Drives/Disk.Bay.1:Enclosure.Internal.0-1:RAID.Integrated.1-1"
+        }
+    ],
+    "Drives@odata.count": 2,
+    "Id": "RAID.Integrated.1-1",
+    "Links": {
+        "Enclosures": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/Enclosure.Internal.0-1:RAID.Integrated.1-1"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+            }
+        ],
+        "Enclosures@odata.count": 2
+    },
+    "Name": "PERC H740P Mini ",
+    "Oem": {
+        "Dell": {
+            "DellController": {
+                "@odata.context": "/redfish/v1/$metadata#DellController.DellController",
+                "@odata.id": "/redfish/v1/Dell/Systems/System.Embedded.1/Storage/DellController/RAID.Integrated.1-1",
+                "@odata.type": "#DellController.v1_1_0.DellController",
+                "AlarmState": "AlarmNotPresent",
+                "BootVirtualDiskFQDD": "Disk.Virtual.0:RAID.Integrated.1-1",
+                "CacheSizeInMB": 8192,
+                "CachecadeCapability": "NotSupported",
+                "ConnectorCount": 2,
+                "ControllerFirmwareVersion": "50.5.0-2819",
+                "Device": "0",
+                "DeviceCardDataBusWidth": "Unknown",
+                "DeviceCardSlotLength": "Unknown",
+                "DeviceCardSlotType": "Unknown",
+                "DriverVersion": "7.708.07.00",
+                "EncryptionCapability": "LocalKeyManagementCapable",
+                "EncryptionMode": "None",
+                "KeyID": null,
+                "LastSystemInventoryTime": "2020-05-06T06:10:14+00:00",
+                "LastUpdateTime": "2020-05-06T06:10:14+00:00",
+                "MaxAvailablePCILinkSpeed": null,
+                "MaxPossiblePCILinkSpeed": null,
+                "PCISlot": null,
+                "PatrolReadState": "Stopped",
+                "PersistentHotspare": "Disabled",
+                "RealtimeCapability": "Capable",
+                "RollupStatus": "OK",
+                "SASAddress": "54CD98F05DC5A500",
+                "SecurityStatus": "EncryptionCapable",
+                "SharedSlotAssignmentAllowed": "NotApplicable",
+                "SlicedVDCapability": "Supported",
+                "SupportControllerBootMode": "Supported",
+                "SupportEnhancedAutoForeignImport": "Supported",
+                "SupportRAID10UnevenSpans": "Supported",
+                "T10PICapability": "NotSupported"
+            },
+            "DellControllerBattery": {
+                "@odata.context": "/redfish/v1/$metadata#DellControllerBattery.DellControllerBattery",
+                "@odata.id": "/redfish/v1/Dell/Chassis/System.Embedded.1/DellControllerBattery/Battery.Integrated.1:RAID.Integrated.1-1",
+                "@odata.type": "#DellControllerBattery.v1_0_0.DellControllerBattery",
+                "FQDD": "Battery.Integrated.1:RAID.Integrated.1-1",
+                "Name": "Battery on Integrated RAID Controller 1",
+                "PrimaryStatus": "OK",
+                "RAIDState": "Ready"
+            }
+        }
+    },
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.raid }}",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    },
+    "StorageControllers": [
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/StorageControllers/RAID.Integrated.1-1",
+            "@odata.type": "#Storage.v1_5_0.StorageController",
+            "Assembly": {
+                "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Assembly"
+            },
+            "CacheSummary": {
+                "TotalCacheSizeMiB": 8192
+            },
+            "FirmwareVersion": "50.5.0-2819",
+            "Identifiers": [
+                {
+                    "DurableName": "54cd98f05dc5a500",
+                    "DurableNameFormat": "NAA"
+                }
+            ],
+            "Links": {},
+            "Manufacturer": "DELL",
+            "MemberId": "RAID.Integrated.1-1",
+            "Model": "PERC H740P Mini ",
+            "Name": "PERC H740P Mini ",
+            "SpeedGbps": 12,
+            "Status": {
+                "Health": "OK",
+                "HealthRollup": "OK",
+                "State": "Enabled"
+            },
+            "SupportedControllerProtocols": [
+                "PCIe"
+            ],
+            "SupportedDeviceProtocols": [
+                "SAS",
+                "SATA"
+            ]
+        }
+    ],
+    "StorageControllers@odata.count": 1,
+    "Volumes": {
+        "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Storage/RAID.Integrated.1-1/Volumes"
+    }
+}

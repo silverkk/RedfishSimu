@@ -1,0 +1,49 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Storage.Storage",
+    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Storage/AHCI.Embedded.2-1",
+    "@odata.type": "#Storage.v1_3_0.Storage",
+    "Description": "Lewisburg SATA Controller [AHCI mode]",
+    "Drives": [],
+    "Drives@odata.count": 0,
+    "Id": "AHCI.Embedded.2-1",
+    "Links": {
+        "Enclosures": [],
+        "Enclosures@odata.count": 0
+    },
+    "Name": "Lewisburg SATA Controller [AHCI mode]",
+    "Status": {
+        "Health": null,
+        "HealthRollup": null,
+        "State": "Enabled"
+    },
+    "StorageControllers": [
+        {
+            "@odata.id": "/redfish/v1/Systems/System.Embedded.1/StorageControllers/AHCI.Embedded.2-1",
+            "FirmwareVersion": "",
+            "Identifiers": [
+                {
+                    "DurableName": null,
+                    "DurableNameFormat": null
+                }
+            ],
+            "Links": {},
+            "Manufacturer": "DELL",
+            "MemberId": "AHCI.Embedded.2-1",
+            "Model": "Lewisburg SATA Controller [AHCI mode]",
+            "Name": "Lewisburg SATA Controller [AHCI mode]",
+            "Status": {
+                "Health": null,
+                "HealthRollup": null,
+                "State": "Enabled"
+            },
+            "SupportedControllerProtocols": [
+                "PCIe"
+            ],
+            "SupportedDeviceProtocols": []
+        }
+    ],
+    "StorageControllers@odata.count": 1,
+    "Volumes": {
+        "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Storage/AHCI.Embedded.2-1/Volumes"
+    }
+}

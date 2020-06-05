@@ -1,0 +1,1 @@
+{ "@odata.type": "#Memory.v1_1_0.Memory", "Name": "CPU0_CH1_DIMM0", "Id": "DIMM2", "RankCount": 0, "CapacityMiB": 0, "MemoryType": "Not-support", "MemoryDeviceType": "Not-support", "MemoryMedia": [ "DRAM" ], "Status": { "State": "ENABLE", "Health": "OK" }, "@odata.context": "\/redfish\/v1\/$metadata#Memory.Memory", "@odata.id": "\/redfish\/v1\/Systems\/System1\/Memory\/DIMM2" }

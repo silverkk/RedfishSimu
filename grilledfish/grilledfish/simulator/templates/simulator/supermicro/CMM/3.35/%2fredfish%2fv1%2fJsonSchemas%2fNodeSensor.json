@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#JsonSchemaFile.JsonSchemaFile","@odata.type":"#JsonSchemaFile.JsonSchemaFile","@odata.id":"/redfish/v1/JsonSchemas/NodeSensor","Id":"NodeSensor","Name":"NodeSensor Schema File","Description":"NodeSensor Schema File Location","Languages":["en"],"Schema":"NodeSensor","Location":[{"Language":"en","Uri":"/schemas/NodeSensor.json"}],"Oem":{}}

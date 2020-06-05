@@ -1,0 +1,48 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Memory.Memory",
+    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Memory/iDRAC.Embedded.1%23DIMMSLOTA1",
+    "@odata.type": "#Memory.v1_4_0.Memory",
+    "AllowedSpeedsMHz": [
+        1866
+    ],
+    "AllowedSpeedsMHz@odata.count": 1,
+    "Assembly": {
+        "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Assembly"
+    },
+    "BaseModuleType": null,
+    "BusWidthBits": 72,
+    "CapacityMiB": 3906,
+    "DataWidthBits": 64,
+    "Description": "DIMM A1",
+    "DeviceLocator": "DIMM A1",
+    "ErrorCorrection": "MultiBitECC",
+    "Id": "iDRAC.Embedded.1#DIMMSLOTA1",
+    "Links": {
+        "Chassis": {
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+        }
+    },
+    "Manufacturer": "Micron Technology",
+    "MaxTDPMilliWatts": [],
+    "MaxTDPMilliWatts@odata.count": 0,
+    "MemoryDeviceType": "DDR4",
+    "MemoryMedia": [],
+    "MemoryMedia@odata.count": 0,
+    "MemoryType": null,
+    "Metrics": {
+        "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Memory/iDRAC.Embedded.1%23DIMMSLOTA1/Metrics"
+    },
+    "Name": "DIMM A1",
+    "OperatingMemoryModes": [],
+    "OperatingMemoryModes@odata.count": 0,
+    "OperatingSpeedMhz": 1866,
+    "PartNumber": "9ASF51272PZ-2G1A1",
+    "RankCount": 1,
+    "Regions": [],
+    "Regions@odata.count": 0,
+    "SerialNumber": "B100D6B0",
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.memory }}",
+        "State": "Enabled"
+    }
+}

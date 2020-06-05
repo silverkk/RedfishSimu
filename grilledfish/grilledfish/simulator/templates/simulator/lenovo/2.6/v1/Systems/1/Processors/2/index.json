@@ -1,0 +1,43 @@
+{
+    "ProcessorArchitecture": null,
+    "Links": {
+        "Chassis": {
+            "@odata.id": "/redfish/v1/Chassis/1"
+        }
+    },
+    "TotalThreads": 0,
+    "InstructionSet": null,
+    "Description": "This resource is used to represent a processor for a Redfish implementation.",
+    "@odata.context": "/redfish/v1/$metadata#Processor.Processor",
+    "Model": null,
+    "Id": "2",
+    "Status": {
+        "State": "Absent"
+    },
+    "ProcessorType": null,
+    "Name": "Processor 2",
+    "ProcessorId": {
+        "Step": null,
+        "VendorId": null,
+        "EffectiveModel": null,
+        "EffectiveFamily": null,
+        "IdentificationRegisters": null,
+        "MicrocodeInfo": null
+    },
+    "MaxSpeedMHz": 0,
+    "Oem": {
+        "Lenovo": {
+            "ProcessorFamily": null,
+            "CacheInfo": [],
+            "NumberOfEnabledCores": 0,
+            "ExternalBusClockSpeedMHz": 0,
+            "CurrentClockSpeedMHz": 0
+        }
+    },
+    "@odata.type": "#Processor.v1_3_1.Processor",
+    "@odata.id": "/redfish/v1/Systems/1/Processors/2",
+    "Manufacturer": null,
+    "@odata.etag": "\"a0d917faae933586933b529230133b37\"",
+    "TotalCores": 0,
+    "Socket": null
+}

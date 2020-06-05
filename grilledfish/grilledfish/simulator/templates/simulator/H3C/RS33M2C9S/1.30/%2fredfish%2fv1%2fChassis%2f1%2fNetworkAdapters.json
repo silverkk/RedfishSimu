@@ -1,0 +1,14 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#NetworkAdapterCollection.NetworkAdapterCollection",
+    "@odata.etag": "W/\"1587030930\"",
+    "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters",
+    "@odata.type": "#NetworkAdapterCollection.NetworkAdapterCollection",
+    "Description": "Collection of ethernet interfaces for this system",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/mLOM"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "NetworkAdapter Collection"
+}

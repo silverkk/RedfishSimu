@@ -1,0 +1,134 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Thermal.Thermal",
+    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Thermal",
+    "@odata.type": "#Thermal.v1_0_2.Thermal",
+    "Description": "Represents the properties for Temperature and Cooling",
+    "Fans": [],
+    "Fans@odata.count": 0,
+    "Id": "Thermal",
+    "Name": "Thermal",
+    "Redundancy": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Thermal/Redundancy/iDRAC.Embedded.1%23SystemBoardFanRedundancy",
+            "MaxNumSupported": null,
+            "MemberId": "iDRAC.Embedded.1#SystemBoardFanRedundancy",
+            "MinNumNeeded": null,
+            "Mode": "Failover",
+            "Name": "System Board Fan Redundancy",
+            "RedundancySet": [],
+            "RedundancySet@odata.count": 0,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            }
+        }
+    ],
+    "Redundancy@odata.count": 1,
+    "Temperatures": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Temperatures/iDRAC.Embedded.1%23SystemBoardInletTemp",
+            "LowerThresholdCritical": -7,
+            "LowerThresholdFatal": -7,
+            "LowerThresholdNonCritical": 3,
+            "MaxReadingRangeTemp": 19,
+            "MemberId": "iDRAC.Embedded.1#SystemBoardInletTemp",
+            "MinReadingRangeTemp": 13,
+            "Name": "System Board Inlet Temp",
+            "PhysicalContext": "Intake",
+            "ReadingCelsius": 26,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 4,
+            "Status": {
+                "Health": "{{ machineInfo.healthInfo.Temperature }}",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 47,
+            "UpperThresholdFatal": 47,
+            "UpperThresholdNonCritical": 42
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Temperatures/iDRAC.Embedded.1%23SystemBoardExhaustTemp",
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "MaxReadingRangeTemp": 19,
+            "MemberId": "iDRAC.Embedded.1#SystemBoardExhaustTemp",
+            "MinReadingRangeTemp": 13,
+            "Name": "System Board Exhaust Temp",
+            "PhysicalContext": "Exhaust",
+            "ReadingCelsius": 29,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 1,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 75,
+            "UpperThresholdFatal": 75,
+            "UpperThresholdNonCritical": 70
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Temperatures/iDRAC.Embedded.1%23CPU1Temp",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRangeTemp": null,
+            "MemberId": "iDRAC.Embedded.1#CPU1Temp",
+            "MinReadingRangeTemp": null,
+            "Name": "CPU1 Temp",
+            "PhysicalContext": "CPU",
+            "ReadingCelsius": null,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors/CPU.Socket.1"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 14,
+            "Status": {
+                "Health": null,
+                "State": null
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Temperatures/iDRAC.Embedded.1%23CPU2Temp",
+            "LowerThresholdCritical": null,
+            "LowerThresholdFatal": null,
+            "LowerThresholdNonCritical": null,
+            "MaxReadingRangeTemp": null,
+            "MemberId": "iDRAC.Embedded.1#CPU2Temp",
+            "MinReadingRangeTemp": null,
+            "Name": "CPU2 Temp",
+            "PhysicalContext": "CPU",
+            "ReadingCelsius": null,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Processors/CPU.Socket.2"
+                }
+            ],
+            "RelatedItem@odata.count": 1,
+            "SensorNumber": 15,
+            "Status": {
+                "Health": null,
+                "State": null
+            },
+            "UpperThresholdCritical": null,
+            "UpperThresholdFatal": null,
+            "UpperThresholdNonCritical": null
+        }
+    ],
+    "Temperatures@odata.count": 4
+}

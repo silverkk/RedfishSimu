@@ -1,0 +1,74 @@
+{
+    "Drives": [
+        {
+            "@odata.id": "/redfish/v1/Systems/1/Storage/RAID_Slot1/Drives/Disk.0"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/1/Storage/RAID_Slot1/Drives/Disk.1"
+        }
+    ],
+    "StorageControllers": [
+        {
+            "SerialNumber": "",
+            "FirmwareVersion": "",
+            "@odata.id": "/redfish/v1/Systems/1/Storage/RAID_Slot1#/StorageControllers/0",
+            "Status": {
+                "State": "Enabled",
+                "Health": "{{ machineInfo.healthInfo.raid }}"
+            },
+            "CacheSummary": {
+                "Status": {
+                    "State": "Enabled",
+                    "Health": "{{ machineInfo.healthInfo.raid }}"
+                },
+                "TotalCacheSizeMiB": 2048
+            },
+            "Name": "",
+            "MemberId": "0",
+            "Location": {
+                "InfoFormat": "Slot X",
+                "Info": "Slot 1"
+            },
+            "Identifiers": [
+                {
+                    "DurableNameFormat": "UUID",
+                    "DurableName": ""
+                }
+            ],
+            "Oem": {
+                "Lenovo": {
+                    "SupportedRaidLevels": "0/1/5/6/10/50/60",
+                    "Mode": "RAID/JBOD"
+                }
+            },
+            "SpeedGbps": 12,
+            "PartNumber": "",
+            "Model": "",
+            "Manufacturer": ""
+        }
+    ],
+    "@odata.id": "/redfish/v1/Systems/1/Storage/RAID_Slot1",
+    "Volumes": {
+        "@odata.id": "/redfish/v1/Systems/1/Storage/RAID_Slot1/Volumes"
+    },
+    "Links": {
+        "Enclosures": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/1"
+            }
+        ]
+    },
+    "Name": "RAID Storage",
+    "StorageControllers@odata.count": 1,
+    "Drives@odata.count": 2,
+    "@odata.type": "#Storage.v1_5_0.Storage",
+    "@odata.context": "/redfish/v1/$metadata#Storage.Storage",
+    "Id": "RAID_Slot1",
+    "@odata.etag": "\"0db24365e1834fbc18c17196f0ab7207\"",
+    "Status": {
+        "State": "Enabled",
+        "Health": "{{ machineInfo.healthInfo.raid }}",
+        "HealthRollup": "OK"
+    },
+    "Description": "This resource is used to represent a storage for a Redfish implementation."
+}

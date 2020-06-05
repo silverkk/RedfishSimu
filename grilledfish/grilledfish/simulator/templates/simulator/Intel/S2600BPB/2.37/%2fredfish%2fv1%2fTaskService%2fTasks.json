@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#TaskCollection.TaskCollection","@odata.id":"/redfish/v1/TaskService/Tasks","@odata.type":"#TaskCollection.TaskCollection","Name":"Tasks Collection","Description":"A Collection of Task resource instances","Members@odata.count":0,"Members":[]}

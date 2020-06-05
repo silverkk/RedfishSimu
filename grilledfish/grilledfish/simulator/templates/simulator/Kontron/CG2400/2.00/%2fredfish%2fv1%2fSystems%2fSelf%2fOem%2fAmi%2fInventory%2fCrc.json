@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata","@odata.etag":"\"1579711404\"","@odata.id":"/redfish/v1/Systems/Self/Oem/Ami/Inventory/Crc","GroupCrcList":[{"CPU":3227793940},{"PCIE":699176460},{"DIMM":1945949757}]}

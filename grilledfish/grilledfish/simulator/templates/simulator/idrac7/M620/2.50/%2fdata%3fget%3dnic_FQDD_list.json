@@ -1,0 +1,19 @@
+<root>
+  <NICs>
+    <Count>1</Count>
+    <NIC>
+      <Name>NIC.Integrated.1</Name>
+      <ProductName>BRCM 10GbE 2P 57810s bNDC</ProductName>
+      <FQDD>
+        <Name>NIC.Integrated.1-1-1</Name>
+        <PartitionCapable>0</PartitionCapable>
+      </FQDD>
+      <FQDD>
+        <Name>NIC.Integrated.1-2-1</Name>
+        <PartitionCapable>0</PartitionCapable>
+      </FQDD>
+    </NIC>
+  </NICs>
+  <vamenable>0</vamenable>
+  <status>ok</status>
+</root>

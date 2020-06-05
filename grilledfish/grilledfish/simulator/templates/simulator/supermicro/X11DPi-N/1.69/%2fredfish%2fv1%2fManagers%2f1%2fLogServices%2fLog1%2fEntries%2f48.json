@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#LogEntry.LogEntry","@odata.type":"#LogEntry.v1_0_0.LogEntry","@odata.id":"/redfish/v1/Managers/1/LogServices/Log1/Entries/48","Id":"48","Name":"Maintenance Event Log Entry 48","Severity":"OK","Created":"2018-11-14T12:33:36+00:00","Interface":"Web","User":"ADMIN(ADMIN)","Source":"192.168.125.20","Description":"Web logout was successful."}

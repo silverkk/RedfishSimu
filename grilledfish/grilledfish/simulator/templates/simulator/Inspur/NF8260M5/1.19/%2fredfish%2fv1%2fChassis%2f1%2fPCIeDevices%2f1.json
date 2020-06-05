@@ -1,0 +1,1 @@
+{ "@odata.context": "\/redfish\/v1\/$metadata#Chassis\/Members\/1\/PCIeDevices\/Members\/$entity", "@odata.id": "\/redfish\/v1\/Chassis\/1\/PCIeDevices\/1", "@odata.type": "#PCIeDevice.v1_0_1.PCIeDevice", "Id": "2", "Links": { "Chassis": [ { "@odata.id": "\/redfish\/v1\/Chassis\/1" } ] }, "Manufacturer": "Intel Corporation", "Model": "Ethernet Connection X722 for 1GbE" }

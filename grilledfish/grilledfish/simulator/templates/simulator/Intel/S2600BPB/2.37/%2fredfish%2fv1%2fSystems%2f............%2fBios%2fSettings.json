@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#Settings.Settings","@odata.id":"/redfish/v1/Systems/............/Bios/Settings","@odata.type":"#Settings.v1_2_1.Settings","Id":"Settings","Name":"BIOS Configuration Settings","Time":"Tue May  5 06:32:24 2020","SettingsObject":{"@odata.id":"/redfish/v1/Systems/............/Bios/Settings"}}

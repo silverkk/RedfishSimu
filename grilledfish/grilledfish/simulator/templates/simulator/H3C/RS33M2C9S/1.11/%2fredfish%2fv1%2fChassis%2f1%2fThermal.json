@@ -1,0 +1,959 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Thermal.Thermal(Oem,Fans,Temperatures,Name,Id)",
+    "@odata.etag": "W/\"1578648045\"",
+    "@odata.id": "/redfish/v1/Chassis/1/Thermal",
+    "@odata.type": "#Thermal.v1_2_0.Thermal",
+    "Fans": [
+        {
+            "FanName": "FAN4_Speed",
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "MaxReadingRange": 16500,
+            "MemberId": "115",
+            "MinReadingRange": 0,
+            "Reading": 3500,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 0,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 0
+        },
+        {
+            "FanName": "FAN4_Status",
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "MemberId": "99",
+            "Reading": 32769,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 0,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 0
+        },
+        {
+            "FanName": "FAN6_Speed",
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "MaxReadingRange": 16500,
+            "MemberId": "117",
+            "MinReadingRange": 0,
+            "Reading": 3400,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 0,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 0
+        },
+        {
+            "FanName": "FAN3_Status",
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "MemberId": "98",
+            "Reading": 32769,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 0,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 0
+        },
+        {
+            "FanName": "FAN1_Speed",
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "MaxReadingRange": 16500,
+            "MemberId": "112",
+            "MinReadingRange": 0,
+            "Reading": 3400,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 0,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 0
+        },
+        {
+            "FanName": "FAN1_Status",
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "MemberId": "96",
+            "Reading": 32769,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 0,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 0
+        },
+        {
+            "FanName": "FAN5_Speed",
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "MaxReadingRange": 16500,
+            "MemberId": "116",
+            "MinReadingRange": 0,
+            "Reading": 3400,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 0,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 0
+        },
+        {
+            "FanName": "FAN3_Speed",
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "MaxReadingRange": 16500,
+            "MemberId": "114",
+            "MinReadingRange": 0,
+            "Reading": 3400,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 0,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 0
+        },
+        {
+            "FanName": "FAN2_Status",
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "MemberId": "97",
+            "Reading": 32769,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 0,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 0
+        },
+        {
+            "FanName": "FAN6_Status",
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "MemberId": "101",
+            "Reading": 32769,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 0,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 0
+        },
+        {
+            "FanName": "FAN2_Speed",
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "MaxReadingRange": 16500,
+            "MemberId": "113",
+            "MinReadingRange": 0,
+            "Reading": 3400,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 0,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 0
+        },
+        {
+            "FanName": "FAN5_Status",
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "MemberId": "100",
+            "Reading": 32769,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 0,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 0
+        }
+    ],
+    "Id": "Thermal",
+    "Name": "Thermal",
+    "Oem": {
+        "Public": {
+            "AdjustFanSpeedMode": 1,
+            "Fans": [
+                {
+                    "FanBom": "3203A01V",
+                    "FanDutycycle": "19",
+                    "FanNum": "3",
+                    "FanPostion": "0",
+                    "FanRedundantStatus": "0",
+                    "FanRotorType": "0",
+                    "FanSpeed": "3300",
+                    "FanStatus": "1"
+                },
+                {
+                    "FanBom": "3203A01V",
+                    "FanDutycycle": "19",
+                    "FanNum": "6",
+                    "FanPostion": "0",
+                    "FanRedundantStatus": "0",
+                    "FanRotorType": "0",
+                    "FanSpeed": "3400",
+                    "FanStatus": "1"
+                },
+                {
+                    "FanBom": "3203A01V",
+                    "FanDutycycle": "19",
+                    "FanNum": "4",
+                    "FanPostion": "0",
+                    "FanRedundantStatus": "0",
+                    "FanRotorType": "0",
+                    "FanSpeed": "3400",
+                    "FanStatus": "1"
+                },
+                {
+                    "FanBom": "3203A01V",
+                    "FanDutycycle": "19",
+                    "FanNum": "5",
+                    "FanPostion": "0",
+                    "FanRedundantStatus": "0",
+                    "FanRotorType": "0",
+                    "FanSpeed": "3400",
+                    "FanStatus": "1"
+                },
+                {
+                    "FanBom": "3203A01V",
+                    "FanDutycycle": "19",
+                    "FanNum": "1",
+                    "FanPostion": "0",
+                    "FanRedundantStatus": "0",
+                    "FanRotorType": "0",
+                    "FanSpeed": "3300",
+                    "FanStatus": "1"
+                },
+                {
+                    "FanBom": "3203A01V",
+                    "FanDutycycle": "19",
+                    "FanNum": "2",
+                    "FanPostion": "0",
+                    "FanRedundantStatus": "0",
+                    "FanRotorType": "0",
+                    "FanSpeed": "3400",
+                    "FanStatus": "1"
+                }
+            ]
+        }
+    },
+    "Temperatures": [
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "19-P/S 2 Zone",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 33,
+            "SensorNumber": 19,
+            "Status": {
+                "Health": "{{ machineInfo.healthInfo.Temperature }}",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 95
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "32-PCI 8",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 0,
+            "SensorNumber": 32,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 90
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "01-Inlet Temp",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 24,
+            "SensorNumber": 1,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 52,
+            "UpperThresholdFatal": 54,
+            "UpperThresholdNonCritical": 50
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "12-Rear HD Max",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 0,
+            "SensorNumber": 12,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": 0,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "17-P/S 2",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 0,
+            "SensorNumber": 17,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": 62,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "40-PCI 8 Zone",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 0,
+            "SensorNumber": 40,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 95
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "05-CPU 2 DTS",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": -56,
+            "SensorNumber": 5,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 0,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": -1
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "36-PCI 4 Zone",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 0,
+            "SensorNumber": 36,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 95
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "38-PCI 6 Zone",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 0,
+            "SensorNumber": 38,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 95
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "15-PCH",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 45,
+            "SensorNumber": 15,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 102,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 92
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "27-PCI 3",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 0,
+            "SensorNumber": 27,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 90
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "21-VR P2",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 35,
+            "SensorNumber": 21,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 112,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 110
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "25-PCI 1",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 0,
+            "SensorNumber": 25,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 90
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "10-Front HD Max",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 35,
+            "SensorNumber": 10,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 0,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "18-P/S 1 Zone",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 34,
+            "SensorNumber": 18,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 95
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "11-NVMe SSD Max",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 0,
+            "SensorNumber": 11,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": 0,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 70
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "03-CPU 2",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 37,
+            "SensorNumber": 3,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 0,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 0
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "24-BMC Zone",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 34,
+            "SensorNumber": 24,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 95
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "26-PCI 2",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 0,
+            "SensorNumber": 26,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 90
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "43-Outlet_Temp 2",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 33,
+            "SensorNumber": 43,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 95
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "35-PCI 3 Zone",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 30,
+            "SensorNumber": 35,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 95
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "29-PCI 5",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 0,
+            "SensorNumber": 29,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 90
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "42-Outlet_Temp 1",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 34,
+            "SensorNumber": 42,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 95
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "31-PCI 7",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 0,
+            "SensorNumber": 31,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 90
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "16-P/S 1",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 40,
+            "SensorNumber": 16,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 62,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 60
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "20-VR P1",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 36,
+            "SensorNumber": 20,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 112,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 110
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "08-P2 DIMM Ch1-3",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 32,
+            "SensorNumber": 8,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 95,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 89
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "02-CPU 1",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 34,
+            "SensorNumber": 2,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 0,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 0
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "28-PCI 4",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 0,
+            "SensorNumber": 28,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 90
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "39-PCI 7 Zone",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 0,
+            "SensorNumber": 39,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 95
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "09-P2 DIMM Ch4-6",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 34,
+            "SensorNumber": 9,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 95,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 89
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "33-PCI 1 Zone",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 31,
+            "SensorNumber": 33,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 95
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "06-P1 DIMM Ch1-3",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 30,
+            "SensorNumber": 6,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 95,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 89
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "30-PCI 6",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 0,
+            "SensorNumber": 30,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 90
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "22-HD Controller",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 47,
+            "SensorNumber": 22,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 99,
+            "UpperThresholdFatal": 102,
+            "UpperThresholdNonCritical": 90
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "41-LOM Card",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 35,
+            "SensorNumber": 41,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 90
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "14-M.2 Zone",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 0,
+            "SensorNumber": 14,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 95
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "04-CPU 1 DTS",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": -59,
+            "SensorNumber": 4,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 0,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": -1
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "23-Expander Card",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 0,
+            "SensorNumber": 23,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": 120,
+            "UpperThresholdFatal": 125,
+            "UpperThresholdNonCritical": 100
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "13-Rear HD Zone",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 0,
+            "SensorNumber": 13,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 95
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "37-PCI 5 Zone",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 0,
+            "SensorNumber": 37,
+            "Status": {
+                "Health": "OK",
+                "State": "Disabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 95
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "07-P1 DIMM Ch4-6",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 31,
+            "SensorNumber": 7,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 95,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 89
+        },
+        {
+            "LowerThresholdCritical": 0,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 0,
+            "Name": "34-PCI 2 Zone",
+            "PhysicalContext": "Room",
+            "ReadingCelsius": 31,
+            "SensorNumber": 34,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 100,
+            "UpperThresholdFatal": 0,
+            "UpperThresholdNonCritical": 95
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+{ "@odata.context": "\/redfish\/v1\/$metadata#DriveCollection.DriveCollection", "@odata.id": "\/redfish\/v1\/Chassis\/Self\/Drives", "@odata.type": "#DriveCollection.DriveCollection", "Members@odata.count": 0, "Members": [ ] }

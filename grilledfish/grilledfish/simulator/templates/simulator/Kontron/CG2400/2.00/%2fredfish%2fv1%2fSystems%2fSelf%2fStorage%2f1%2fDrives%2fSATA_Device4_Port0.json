@@ -1,0 +1,35 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Drive.Drive",
+    "@odata.etag": "\"1579113260\"",
+    "@odata.id": "/redfish/v1/Systems/Self/Storage/1/Drives/SATA_Device4_Port0",
+    "@odata.type": "#Drive.v1_6_0.Drive",
+    "BlockSizeBytes": 512,
+    "CapableSpeedGbs": 6,
+    "CapacityBytes": 1000204886016,
+    "FailurePredicted": false,
+    "HotspareType": "Chassis",
+    "Id": "SATA_Device4_Port0",
+    "IndicatorLED": "Blinking",
+    "Links": {
+        "Chassis": {
+            "@odata.id": "/redfish/v1/Chassis/Self"
+        },
+        "Endpoints@odata.count": 0,
+        "Volumes@odata.count": 0
+    },
+    "Manufacturer": "N/A",
+    "MediaType": "HDD",
+    "Model": "ST1000NX0313",
+    "Name": "SATA_Device4_Port0",
+    "NegotiatedSpeedGbs": 6,
+    "PredictedMediaLifeLeftPercent": 255,
+    "Protocol": "SATA",
+    "Revision": "Supports ATA8-ACS",
+    "RotationSpeedRPM": 7200,
+    "SerialNumber": "W470XH33",
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.storage }}",
+        "State": "Enabled"
+    },
+    "StatusIndicator": "OK"
+}

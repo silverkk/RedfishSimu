@@ -1,0 +1,53 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Drive.Drive",
+    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Storage/Drives/Disk.Bay.1-Enclosure.Internal.0-1-RAID.Integrated.1-1",
+    "@odata.type": "#Drive.v1_2_0.Drive",
+    "Actions": {
+        "#Drive.SecureErase": {
+            "target": "/redfish/v1/Systems/System.Embedded.1/Storage/Drives/Disk.Bay.1-Enclosure.Internal.0-1-RAID.Integrated.1-1/Actions/Drive.SecureErase"
+        }
+    },
+    "BlockSizeBytes": 512,
+    "CapableSpeedGbs": 6,
+    "CapacityBytes": 299439751168,
+    "Description": "Physical Disk 0:1:1",
+    "EncryptionAbility": "None",
+    "EncryptionStatus": "Unencrypted",
+    "FailurePredicted": false,
+    "HotspareType": "None",
+    "Id": "Disk.Bay.1-Enclosure.Internal.0-1-RAID.Integrated.1-1",
+    "Identifiers": [
+        {
+            "DurableName": "5000C5007E738DA9",
+            "DurableNameFormat": "NAA"
+        }
+    ],
+    "Links": {
+        "Chassis": {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure.Internal.0-1:RAID.Integrated.1-1"
+        },
+        "Volumes": [
+            {
+                "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Storage/Volumes/Disk.Virtual.0.RAID.Integrated.1-1"
+            }
+        ],
+        "Volumes@odata.count": 1
+    },
+    "Location": [],
+    "Manufacturer": "SEAGATE",
+    "MediaType": "HDD",
+    "Model": "ST9300653SS",
+    "Name": "Physical Disk 0:1:1",
+    "NegotiatedSpeedGbs": 6,
+    "PartNumber": "CN0H8DVC726224AU011FA04",
+    "PredictedMediaLifeLeftPercent": null,
+    "Protocol": "SAS",
+    "Revision": "YS0C",
+    "RotationSpeedRPM": 15000,
+    "SerialNumber": "6XN7R8BN",
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.storage }}",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    }
+}

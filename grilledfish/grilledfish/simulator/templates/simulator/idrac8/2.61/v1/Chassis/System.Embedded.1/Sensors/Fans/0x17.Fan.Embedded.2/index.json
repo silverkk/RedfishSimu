@@ -1,0 +1,31 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Thermal.Thermal",
+    "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Sensors/Fans/0x17.Fan.Embedded.2",
+    "@odata.type": "#Thermal.v1_0_2.Fan",
+    "FanName": "System Board Fan2",
+    "LowerThresholdCritical": 360,
+    "LowerThresholdFatal": 360,
+    "LowerThresholdNonCritical": 600,
+    "MaxReadingRange": 197,
+    "MemberId": "0x17.Fan.Embedded.2",
+    "MinReadingRange": 139,
+    "Name": "System Board Fan2",
+    "PhysicalContext": "SystemBoard",
+    "Reading": 3480,
+    "ReadingUnits": "RPM",
+    "Redundancy": [],
+    "Redundancy@odata.count": 0,
+    "RelatedItem": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+        }
+    ],
+    "RelatedItem@odata.count": 1,
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.Fan }}",
+        "State": "Enabled"
+    },
+    "UpperThresholdCritical": null,
+    "UpperThresholdFatal": null,
+    "UpperThresholdNonCritical": null
+}

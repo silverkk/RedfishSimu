@@ -1,0 +1,1 @@
+{"Type":"HpServerSettings.1.0.0","links":{"FirmwareDriverBaselineSettings":{"href":"/rest/v1/systems/1/hpserversettings/firmwaredriverbaselinesettings"},"TaskSettings":{"href":"/rest/v1/systems/1/hpserversettings/tasksettings"},"self":{"href":"/rest/v1/systems/1/hpserversettings"}}}

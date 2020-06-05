@@ -1,0 +1,23 @@
+{
+    "Id": "HDD7",
+    "Name": "HDD 6 Status",
+    "@odata.context": "/redfish/v1/$metadata#Drive.Drive",
+    "@odata.id": "/redfish/v1/Systems/BQWT82100140/Storage/1/Drives/HDD7",
+    "@odata.type": "#Drive.v1_3_0.Drive",
+    "IndicatorLED": "Off",
+    "Manufacturer": null,
+    "Model": null,
+    "SerialNumber": null,
+    "Revision": null,
+    "Protocol": null,
+    "MediaType": "HDD",
+    "PredictedMediaLifeLeftPercent": null,
+    "Location": [
+        {
+            "Info": "HSBP 1 Slot 7"
+        }
+    ],
+    "Status": {
+        "State": "Absent"
+    }
+}

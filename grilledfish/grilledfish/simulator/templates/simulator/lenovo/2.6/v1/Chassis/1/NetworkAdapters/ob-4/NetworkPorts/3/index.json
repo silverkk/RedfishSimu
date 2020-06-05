@@ -1,0 +1,29 @@
+{
+    "AssociatedNetworkAddresses": [
+        "0894EF3C7E60"
+    ],
+    "NetDevFuncMaxBWAlloc": [
+        {
+            "MaxBWAllocPercent": null,
+            "NetworkDeviceFunction": {
+                "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/ob-4/NetworkDeviceFunctions/3.1"
+            }
+        }
+    ],
+    "Id": "3",
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK",
+        "HealthRollup": "OK"
+    },
+    "@odata.etag": "\"cc553c1666b2deefeef3a9cfbbd72376\"",
+    "Name": "Phyical Port 3",
+    "@odata.context": "/redfish/v1/$metadata#NetworkPort.NetworkPort",
+    "PhysicalPortNumber": "3",
+    "@odata.type": "#NetworkPort.v1_2_0.NetworkPort",
+    "@odata.id": "/redfish/v1/Chassis/1/NetworkAdapters/ob-4/NetworkPorts/3",
+    "LinkStatus": "Down",
+    "ActiveLinkTechnology": "Ethernet",
+    "PortMaximumMTU": 12000,
+    "Description": "A Network Port represents a discrete physical port capable of connecting to a network."
+}
