@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#JobCollection.JobCollection","@odata.id":"/redfish/v1/JobService/Jobs","@odata.type":"#JobCollection.JobCollection","Description":"A Collection of Job resource instances","Members":[{"@odata.id":"/redfish/v1/JobService/Jobs/JID_796270442652"}],"Members@odata.count":1,"Name":"JobCollection"}
