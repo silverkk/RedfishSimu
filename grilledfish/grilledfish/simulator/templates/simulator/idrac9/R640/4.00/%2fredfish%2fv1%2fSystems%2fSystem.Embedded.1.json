@@ -334,7 +334,7 @@
         "@odata.id": "/redfish/v1/Systems/System.Embedded.1/SimpleStorage"
     },
     "Status": {
-        "Health": "Critical",
+        "Health": "{{ machineInfo.healthInfo.system }}",
         "HealthRollup": "Critical",
         "State": "Enabled"
     },

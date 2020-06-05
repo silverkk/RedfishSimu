@@ -56,7 +56,7 @@
         }
     },
     "Status": {
-        "Health": null,
+        "Health": "{{ machineInfo.healthInfo.raid }}",
         "HealthRollup": null,
         "State": "Enabled"
     },

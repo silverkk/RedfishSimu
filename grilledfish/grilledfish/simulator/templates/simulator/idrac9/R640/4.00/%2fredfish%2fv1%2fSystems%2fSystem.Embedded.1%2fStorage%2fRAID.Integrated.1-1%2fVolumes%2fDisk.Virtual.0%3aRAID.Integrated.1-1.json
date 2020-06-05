@@ -95,7 +95,7 @@
     "Operations": [],
     "OptimumIOSizeBytes": 262144,
     "Status": {
-        "Health": "OK",
+        "Health": "{{ machineInfo.healthInfo.Volume }}",
         "HealthRollup": "OK",
         "State": "Enabled"
     },

@@ -1,1 +1,72 @@
-{"@odata.context":"/redfish/v1/$metadata#Memory.Memory","@odata.type":"#Memory.v1_6_0.Memory","@odata.id":"/redfish/v1/Systems/System.Embedded.1/Memory/DIMM.Socket.A1","AllowedSpeedsMHz":[2400],"AllowedSpeedsMHz@odata.count":1,"Assembly":{"@odata.id":"/redfish/v1/Chassis/System.Embedded.1/Assembly"},"BaseModuleType":null,"BusWidthBits":72,"CacheSizeMiB":0,"CapacityMiB":8192,"DataWidthBits":64,"Description":"DIMM A1","DeviceLocator":"DIMM A1","ErrorCorrection":"MultiBitECC","FirmwareRevision":"","Id":"DIMM.Socket.A1","Links":{"Chassis":{"@odata.id":"/redfish/v1/Chassis/System.Embedded.1"}},"LogicalSizeMiB":0,"Manufacturer":"Hynix Semiconductor","MaxTDPMilliWatts":[],"MaxTDPMilliWatts@odata.count":0,"MemoryDeviceType":"DDR4","MemoryMedia":[],"MemoryMedia@odata.count":0,"MemorySubsystemControllerManufacturerID":null,"MemorySubsystemControllerProductID":null,"MemoryType":null,"Metrics":{"@odata.id":"/redfish/v1/Systems/System.Embedded.1/Memory/DIMM.Socket.A1/MemoryMetrics"},"ModuleManufacturerID":null,"ModuleProductID":null,"Name":"DIMM A1","NonVolatileSizeMiB":0,"Oem":{"Dell":{"DellMemory":{"BankLabel":"A","LastSystemInventoryTime":"2020-05-06T02:36:11+00:00","LastUpdateTime":"2019-09-30T17:14:23+00:00","ManufactureDate":"Mon Jul 03 07:00:00 2017 UTC","MemoryTechnology":"InformationNotAvailable","Model":"DDR4 DIMM","RemainingRatedWriteEndurancePercent":null,"SystemEraseCapability":"NotSupported","@odata.context":"/redfish/v1/$metadata#DellMemory.DellMemory","@odata.type":"#DellMemory.v1_1_0.DellMemory","@odata.id":"/redfish/v1/Dell/Systems/System.Embedded.1/Memory/DellMemory/DIMM.Socket.A1"}}},"OperatingMemoryModes":[],"OperatingMemoryModes@odata.count":0,"OperatingSpeedMhz":2400,"PartNumber":"HMA81GR7AFR8N-VK","RankCount":1,"SerialNumber":"71CDFC6A","Status":{"Health":"OK","State":"Enabled"},"VolatileSizeMiB":0}
+{
+    "@odata.context": "/redfish/v1/$metadata#Memory.Memory",
+    "@odata.type": "#Memory.v1_6_0.Memory",
+    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Memory/DIMM.Socket.A1",
+    "AllowedSpeedsMHz": [
+        2400
+    ],
+    "AllowedSpeedsMHz@odata.count": 1,
+    "Assembly": {
+        "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Assembly"
+    },
+    "BaseModuleType": null,
+    "BusWidthBits": 72,
+    "CacheSizeMiB": 0,
+    "CapacityMiB": 8192,
+    "DataWidthBits": 64,
+    "Description": "DIMM A1",
+    "DeviceLocator": "DIMM A1",
+    "ErrorCorrection": "MultiBitECC",
+    "FirmwareRevision": "",
+    "Id": "DIMM.Socket.A1",
+    "Links": {
+        "Chassis": {
+            "@odata.id": "/redfish/v1/Chassis/System.Embedded.1"
+        }
+    },
+    "LogicalSizeMiB": 0,
+    "Manufacturer": "Hynix Semiconductor",
+    "MaxTDPMilliWatts": [],
+    "MaxTDPMilliWatts@odata.count": 0,
+    "MemoryDeviceType": "DDR4",
+    "MemoryMedia": [],
+    "MemoryMedia@odata.count": 0,
+    "MemorySubsystemControllerManufacturerID": null,
+    "MemorySubsystemControllerProductID": null,
+    "MemoryType": null,
+    "Metrics": {
+        "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Memory/DIMM.Socket.A1/MemoryMetrics"
+    },
+    "ModuleManufacturerID": null,
+    "ModuleProductID": null,
+    "Name": "DIMM A1",
+    "NonVolatileSizeMiB": 0,
+    "Oem": {
+        "Dell": {
+            "DellMemory": {
+                "BankLabel": "A",
+                "LastSystemInventoryTime": "2020-05-06T02:36:11+00:00",
+                "LastUpdateTime": "2019-09-30T17:14:23+00:00",
+                "ManufactureDate": "Mon Jul 03 07:00:00 2017 UTC",
+                "MemoryTechnology": "InformationNotAvailable",
+                "Model": "DDR4 DIMM",
+                "RemainingRatedWriteEndurancePercent": null,
+                "SystemEraseCapability": "NotSupported",
+                "@odata.context": "/redfish/v1/$metadata#DellMemory.DellMemory",
+                "@odata.type": "#DellMemory.v1_1_0.DellMemory",
+                "@odata.id": "/redfish/v1/Dell/Systems/System.Embedded.1/Memory/DellMemory/DIMM.Socket.A1"
+            }
+        }
+    },
+    "OperatingMemoryModes": [],
+    "OperatingMemoryModes@odata.count": 0,
+    "OperatingSpeedMhz": 2400,
+    "PartNumber": "HMA81GR7AFR8N-VK",
+    "RankCount": 1,
+    "SerialNumber": "71CDFC6A",
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.memory }}",
+        "State": "Enabled"
+    },
+    "VolatileSizeMiB": 0
+}
