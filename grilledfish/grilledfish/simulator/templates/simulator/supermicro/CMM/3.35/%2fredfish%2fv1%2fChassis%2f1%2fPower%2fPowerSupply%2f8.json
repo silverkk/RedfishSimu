@@ -1,1 +1,22 @@
-{"@odata.context":"/redfish/v1/$metadata#PowerSupply.PowerSupply","@odata.type":"#PowerSupply.PowerSupply","@odata.id":"/redfish/v1/Chassis/1/Power/PowerSupply8","Id":"8","Name":"Power Supply B4","Location":"Power Supply B4","State":"Present","ModelName":"PWS-DF006-2F","PowerStatus":"On","Temperature":"34.C","FanSpeed":"7557RPM","InputVoltage":"0V","MaxWatt":"0W","InputCurrent":"0.000000A","DCOutputCurrent":"0A","CurPwrUsage":"nan%","FWVersion":"1.0","FRUVersion":"1","POUT":"0W","PIN":"0W"}
+{
+    "@odata.context": "/redfish/v1/$metadata#PowerSupply.PowerSupply",
+    "@odata.type": "#PowerSupply.PowerSupply",
+    "@odata.id": "/redfish/v1/Chassis/1/Power/PowerSupply8",
+    "Id": "8",
+    "Name": "Power Supply B4",
+    "Location": "Power Supply B4",
+    "State": "Present",
+    "ModelName": "PWS-DF006-2F",
+    "PowerStatus": "On",
+    "Temperature": "34.C",
+    "FanSpeed": "7557RPM",
+    "InputVoltage": "0V",
+    "MaxWatt": "0W",
+    "InputCurrent": "0.000000A",
+    "DCOutputCurrent": "0A",
+    "CurPwrUsage": "nan%",
+    "FWVersion": "1.0",
+    "FRUVersion": "1",
+    "POUT": "0W",
+    "PIN": "0W"
+}

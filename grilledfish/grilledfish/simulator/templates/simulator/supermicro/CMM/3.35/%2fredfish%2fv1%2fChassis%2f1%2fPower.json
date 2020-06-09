@@ -1,1 +1,168 @@
-{"@odata.context":"/redfish/v1/$metadata#Power.Power","@odata.type":"#Power.Power","@odata.id":"/redfish/v1/Chassis/1/Power","Id":"Power","Name":"Power","Voltages":[{"@odata.id":"/redfish/v1/Chassis/1/Power#/Voltages/0","Name":"12V","MemberID":"0","SensorNumber":52,"Status":{"State":"Enabled","Health":"OK"},"ReadingVolts":12.029999999999999,"UpperThresholdNonCritical":12.800000000000001,"UpperThresholdCritical":13.18,"UpperThresholdFatal":13.31,"LowerThresholdNonCritical":11.07,"LowerThresholdCritical":10.69,"LowerThresholdFatal":10.24,"MinReadingRange":0,"MaxReadingRange":16.32,"PhysicalContext":"VoltageRegulator","RelatedItem":[{"@odata.id":"/redfish/v1/Systems/1"},{"@odata.id":"/redfish/v1/Chassis/1"}]},{"@odata.id":"/redfish/v1/Chassis/1/Power#/Voltages/1","Name":"5V","MemberID":"1","SensorNumber":49,"Status":{"State":"Enabled","Health":"OK"},"ReadingVolts":4.9900000000000002,"UpperThresholdNonCritical":5.3700000000000001,"UpperThresholdCritical":5.5099999999999998,"UpperThresholdFatal":5.5899999999999999,"LowerThresholdNonCritical":4.7199999999999998,"LowerThresholdCritical":4.4800000000000004,"LowerThresholdFatal":4.2400000000000002,"MinReadingRange":0,"MaxReadingRange":6.8899999999999997,"PhysicalContext":"VoltageRegulator","RelatedItem":[{"@odata.id":"/redfish/v1/Systems/1"},{"@odata.id":"/redfish/v1/Chassis/1"}]},{"@odata.id":"/redfish/v1/Chassis/1/Power#/Voltages/2","Name":"3.3V","MemberID":"2","SensorNumber":50,"Status":{"State":"Enabled","Health":"OK"},"ReadingVolts":3.2200000000000002,"UpperThresholdNonCritical":3.54,"UpperThresholdCritical":3.6499999999999999,"UpperThresholdFatal":3.6800000000000002,"LowerThresholdNonCritical":2.9700000000000002,"LowerThresholdCritical":2.8300000000000001,"LowerThresholdFatal":2.7999999999999998,"MinReadingRange":0.059999999999999998,"MaxReadingRange":4.3899999999999997,"PhysicalContext":"VoltageRegulator","RelatedItem":[{"@odata.id":"/redfish/v1/Systems/1"},{"@odata.id":"/redfish/v1/Chassis/1"}]}],"PowerSupplies":[{"@odata.id":"/redfish/v1/Chassis/1/Power/PowerSupply/1","Name":"Power Supply A1","Location":"Power Supply A1","State":"Present"},{"@odata.id":"/redfish/v1/Chassis/1/Power/PowerSupply/2","Name":"Power Supply A2","Location":"Power Supply A2","State":"Present"},{"@odata.id":"/redfish/v1/Chassis/1/Power/PowerSupply/3","Name":"Power Supply A3","Location":"Power Supply A3","State":"Present"},{"@odata.id":"/redfish/v1/Chassis/1/Power/PowerSupply/4","Name":"Power Supply A4","Location":"Power Supply A4","State":"Present"},{"@odata.id":"/redfish/v1/Chassis/1/Power/PowerSupply/5","Name":"Power Supply B1","Location":"Power Supply B1","State":"Present"},{"@odata.id":"/redfish/v1/Chassis/1/Power/PowerSupply/6","Name":"Power Supply B2","Location":"Power Supply B2","State":"Present"},{"@odata.id":"/redfish/v1/Chassis/1/Power/PowerSupply/7","Name":"Power Supply B3","Location":"Power Supply B3","State":"Present"},{"@odata.id":"/redfish/v1/Chassis/1/Power/PowerSupply/8","Name":"Power Supply B4","Location":"Power Supply B4","State":"Present"}],"PowerConsumption":[{"TotalPower":"6600W","BladePowerReserve":"3190W","PeripheralPowerReserve":"260W","AvailablePower":"3150W","PowerConsumption":"2265W","CurrentMaximumTemperature":"81.C/177.80.F on Blade A8"}],"PowerSupplyRedundancyPolicy":[{"RedundancyOption":"Redundancy N+1"}],"PowerSupplyFanSpeedControlOption":[{"FanControlOption":"Auto Control"}],"BBPControlOption":[{"BBPControl":"Enable"}]}
+{
+    "@odata.context": "/redfish/v1/$metadata#Power.Power",
+    "@odata.type": "#Power.Power",
+    "@odata.id": "/redfish/v1/Chassis/1/Power",
+    "Id": "Power",
+    "Name": "Power",
+    "Voltages": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Power#/Voltages/0",
+            "Name": "12V",
+            "MemberID": "0",
+            "SensorNumber": 52,
+            "Status": {
+                "State": "Enabled",
+                "Health": "{{ machineInfo.healthInfo.Voltage }}"
+            },
+            "ReadingVolts": 12.029999999999999,
+            "UpperThresholdNonCritical": 12.800000000000001,
+            "UpperThresholdCritical": 13.18,
+            "UpperThresholdFatal": 13.31,
+            "LowerThresholdNonCritical": 11.07,
+            "LowerThresholdCritical": 10.69,
+            "LowerThresholdFatal": 10.24,
+            "MinReadingRange": 0,
+            "MaxReadingRange": 16.32,
+            "PhysicalContext": "VoltageRegulator",
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/1"
+                },
+                {
+                    "@odata.id": "/redfish/v1/Chassis/1"
+                }
+            ]
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Power#/Voltages/1",
+            "Name": "5V",
+            "MemberID": "1",
+            "SensorNumber": 49,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK"
+            },
+            "ReadingVolts": 4.9900000000000002,
+            "UpperThresholdNonCritical": 5.3700000000000001,
+            "UpperThresholdCritical": 5.5099999999999998,
+            "UpperThresholdFatal": 5.5899999999999999,
+            "LowerThresholdNonCritical": 4.7199999999999998,
+            "LowerThresholdCritical": 4.4800000000000004,
+            "LowerThresholdFatal": 4.2400000000000002,
+            "MinReadingRange": 0,
+            "MaxReadingRange": 6.8899999999999997,
+            "PhysicalContext": "VoltageRegulator",
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/1"
+                },
+                {
+                    "@odata.id": "/redfish/v1/Chassis/1"
+                }
+            ]
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Power#/Voltages/2",
+            "Name": "3.3V",
+            "MemberID": "2",
+            "SensorNumber": 50,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK"
+            },
+            "ReadingVolts": 3.2200000000000002,
+            "UpperThresholdNonCritical": 3.54,
+            "UpperThresholdCritical": 3.6499999999999999,
+            "UpperThresholdFatal": 3.6800000000000002,
+            "LowerThresholdNonCritical": 2.9700000000000002,
+            "LowerThresholdCritical": 2.8300000000000001,
+            "LowerThresholdFatal": 2.7999999999999998,
+            "MinReadingRange": 0.059999999999999998,
+            "MaxReadingRange": 4.3899999999999997,
+            "PhysicalContext": "VoltageRegulator",
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/1"
+                },
+                {
+                    "@odata.id": "/redfish/v1/Chassis/1"
+                }
+            ]
+        }
+    ],
+    "PowerSupplies": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Power/PowerSupply/1",
+            "Name": "Power Supply A1",
+            "Location": "Power Supply A1",
+            "State": "Present"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Power/PowerSupply/2",
+            "Name": "Power Supply A2",
+            "Location": "Power Supply A2",
+            "State": "Present"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Power/PowerSupply/3",
+            "Name": "Power Supply A3",
+            "Location": "Power Supply A3",
+            "State": "Present"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Power/PowerSupply/4",
+            "Name": "Power Supply A4",
+            "Location": "Power Supply A4",
+            "State": "Present"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Power/PowerSupply/5",
+            "Name": "Power Supply B1",
+            "Location": "Power Supply B1",
+            "State": "Present"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Power/PowerSupply/6",
+            "Name": "Power Supply B2",
+            "Location": "Power Supply B2",
+            "State": "Present"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Power/PowerSupply/7",
+            "Name": "Power Supply B3",
+            "Location": "Power Supply B3",
+            "State": "Present"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Power/PowerSupply/8",
+            "Name": "Power Supply B4",
+            "Location": "Power Supply B4",
+            "State": "Present"
+        }
+    ],
+    "PowerConsumption": [
+        {
+            "TotalPower": "6600W",
+            "BladePowerReserve": "3190W",
+            "PeripheralPowerReserve": "260W",
+            "AvailablePower": "3150W",
+            "PowerConsumption": "2265W",
+            "CurrentMaximumTemperature": "81.C/177.80.F on Blade A8"
+        }
+    ],
+    "PowerSupplyRedundancyPolicy": [
+        {
+            "RedundancyOption": "Redundancy N+1"
+        }
+    ],
+    "PowerSupplyFanSpeedControlOption": [
+        {
+            "FanControlOption": "Auto Control"
+        }
+    ],
+    "BBPControlOption": [
+        {
+            "BBPControl": "Enable"
+        }
+    ]
+}

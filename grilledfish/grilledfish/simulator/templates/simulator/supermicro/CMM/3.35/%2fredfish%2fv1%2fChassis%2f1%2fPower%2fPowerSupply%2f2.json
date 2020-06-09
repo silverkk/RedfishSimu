@@ -1,1 +1,22 @@
-{"@odata.context":"/redfish/v1/$metadata#PowerSupply.PowerSupply","@odata.type":"#PowerSupply.PowerSupply","@odata.id":"/redfish/v1/Chassis/1/Power/PowerSupply2","Id":"2","Name":"Power Supply A2","Location":"Power Supply A2","State":"Present","ModelName":"PWS-2K21A-BR","PowerStatus":"On","Temperature":"35.C","FanSpeed":"9274RPM","InputVoltage":"242V","MaxWatt":"2200W","InputCurrent":"3.062500A","DCOutputCurrent":"54A","CurPwrUsage":"29.454546%","FWVersion":"1.0","FRUVersion":"1","POUT":"661W","PIN":"748W"}
+{
+    "@odata.context": "/redfish/v1/$metadata#PowerSupply.PowerSupply",
+    "@odata.type": "#PowerSupply.PowerSupply",
+    "@odata.id": "/redfish/v1/Chassis/1/Power/PowerSupply2",
+    "Id": "2",
+    "Name": "Power Supply A2",
+    "Location": "Power Supply A2",
+    "State": "Present",
+    "ModelName": "PWS-2K21A-BR",
+    "PowerStatus": "On",
+    "Temperature": "35.C",
+    "FanSpeed": "9274RPM",
+    "InputVoltage": "242V",
+    "MaxWatt": "2200W",
+    "InputCurrent": "3.062500A",
+    "DCOutputCurrent": "54A",
+    "CurPwrUsage": "29.454546%",
+    "FWVersion": "1.0",
+    "FRUVersion": "1",
+    "POUT": "661W",
+    "PIN": "748W"
+}
