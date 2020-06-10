@@ -24,7 +24,8 @@ def redfish_v1(request):
     now = datetime.now()
     context = {
         'machineInfo': machineInfo,
-        'currentTime': now.strftime('%Y-%m-%dT%H:%M:%S+08:00')
+        'currentTime': now.strftime('%Y-%m-%dT%H:%M:%S+08:00'),
+        'sel': utils.calc_sel_list(machineInfo, request)
     }
     responseContent = template.render(context, request)
     paddingContent = "This is the the padding text that simulator added to the reponse, simulate some supermicro server's strange behavior"
@@ -42,7 +43,8 @@ def web_request(request):
     now = datetime.now()
     context = {
         'machineInfo': machineInfo,
-        'currentTime': now.strftime('%Y-%m-%dT%H:%M:%S+08:00')
+        'currentTime': now.strftime('%Y-%m-%dT%H:%M:%S+08:00'),
+        'sel': utils.calc_sel_list(machineInfo, request)
     }
     responseContent = template.render(context, request)
     paddingContent = "This is the the padding text that simulator added to the reponse, simulate some supermicro server's strange behavior"

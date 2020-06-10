@@ -3,6 +3,7 @@ import json
 import urllib.parse
 from django.template import loader
 from simulator.simumodel.model import model, global_model
+from django.template import loader, TemplateDoesNotExist
 
 def get_request_ip(request):
     host = request.get_host()
@@ -105,7 +106,10 @@ def get_template(request):
         return template
     except IsADirectoryError:
         template_path = os.path.join(template_path, 'index.json')
-    
+    except TemplateDoesNotExist:
+        path_without_param = request.path
+        template_path = calc_correct_template_path(machineInfo, path_without_param, request.method.lower())
+
     template = loader.get_template(template_path)
     return template
 
@@ -116,4 +120,32 @@ def update_machine_health(request):
     global_model.updateHealthInfo(host_ip, request_json)
     #if ''
 
+def calc_sel_list(machine, request):
+    sel_logList = None
+    sel_nextSkip = None
+    if(machine.sel):
+        if(machine.sel.paging):
+            skip = request.GET.get(machine.sel.skiptoken)
+            if(skip):
+                skip = int(skip)
+                sel_logList = machine.sel.logList[skip:skip+machine.sel.logItemPerPage]
+                if(skip+machine.sel.logItemPerPage >= len(machine.sel.logList)):
+                    sel_nextSkip = None
+                else:
+                    sel_nextSkip = skip+machine.sel.logItemPerPage
+            else:
+                sel_logList = machine.sel.logList[0:machine.sel.logItemPerPage]
+                if(machine.sel.logItemPerPage >= len(machine.sel.logList)):
+                    sel_nextSkip = None
+                else:
+                    sel_nextSkip = machine.sel.logItemPerPage                
+        else:
+            sel_logList = machine.sel.logList
     
+    return {
+        'logList':sel_logList,
+        'nextSkip':sel_nextSkip
+    }
+
+    
+

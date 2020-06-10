@@ -1,0 +1,34 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#LogEntryCollection.LogEntryCollection",
+    "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/LogServices/Sel/Entries",
+    "@odata.type": "#LogEntryCollection.LogEntryCollection",
+    "Description": "System Event Logs for this manager",
+    "Members": [        
+        {% for selItem in sel.logList %}            
+            {
+                "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/LogServices/Sel/Entries/1024",
+                "@odata.type": "#LogEntry.v1_4_0.LogEntry",
+                "Created": "{{ selItem.datetime }}",
+                "Description": " Log Entry 1024",
+                "EntryCode": "Assert",
+                "EntryType": "SEL",
+                "Id": "{{ selItem.id }}",
+                "Links": {},
+                "Message": "{{ selItem.message }}",
+                "MessageArgs": [],
+                "MessageArgs@odata.count": 0,
+                "MessageId": "12bdb",
+                "Name": " Log Entry 1024",
+                "SensorNumber": 26,
+                "SensorType": null,
+                "Severity": "OK"
+            }{% if not forloop.last %},{% endif %}
+        {% endfor %}                
+    ],
+    "Members@odata.count": {{ machineInfo.sel.logItemCount }},
+    {% if sel.nextSkip %}
+    "Members@odata.nextLink": "/redfish/v1/Managers/iDRAC.Embedded.1/LogServices/Sel/Entries?$skip={{sel.nextSkip}}",
+    {% else %}
+    {% endif %}
+    "Name": "Log Entry Collection"
+}

@@ -194,6 +194,11 @@ class model:
             else:
                 sel.maxLogItemCount = 100
 
+            if 'logItemPerPage' in selConfig:
+                sel.logItemPerPage = selConfig['logItemPerPage']
+            else:
+                sel.logItemPerPage = 50
+
             if 'skiptoken' in selConfig:
                 sel.skiptoken = selConfig['skiptoken']
             else:

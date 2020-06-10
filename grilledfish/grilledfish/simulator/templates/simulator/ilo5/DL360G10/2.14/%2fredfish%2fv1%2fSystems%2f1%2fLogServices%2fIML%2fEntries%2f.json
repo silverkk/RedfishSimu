@@ -6,7 +6,7 @@
     "Description": "Integrated Management Logs view",
     "Name": "Integrated Management Logs",
     "Members": [
-        {% for selItem in machineInfo.sel.logList %}
+        {% for selItem in sel.logList %}
             {
                 "@odata.context": "/redfish/v1/$metadata#LogEntry.LogEntry",
                 "@odata.id": "/redfish/v1/Systems/1/LogServices/IML/Entries/1/",
