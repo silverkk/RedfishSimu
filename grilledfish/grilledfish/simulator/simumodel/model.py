@@ -204,6 +204,11 @@ class model:
             else:
                 sel.skiptoken = None
 
+            if 'skipType' in selConfig:
+                sel.skipType = selConfig['skipType']
+            else:
+                sel.skipType = "Items"            
+
             if 'datetimeFormat' in selConfig:
                 sel.datetimeFormat = selConfig['datetimeFormat']
             else:
