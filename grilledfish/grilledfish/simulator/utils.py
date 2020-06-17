@@ -128,11 +128,20 @@ def calc_sel_list(machine, request):
             skip = request.GET.get(machine.sel.skiptoken)
             if(skip):
                 skip = int(skip)
-                sel_logList = machine.sel.logList[skip:skip+machine.sel.logItemPerPage]
-                if(skip+machine.sel.logItemPerPage >= len(machine.sel.logList)):
+                if(machine.sel.skipType == "Items"):
+                    start_id = skip
+                    end_id = skip+machine.sel.logItemPerPage
+                    next_skip = skip+machine.sel.logItemPerPage
+                else:
+                    start_id = skip*machine.sel.logItemPerPage
+                    end_id = (skip+1)*machine.sel.logItemPerPage
+                    next_skip = skip+1
+
+                sel_logList = machine.sel.logList[start_id:end_id]
+                if(end_id >= len(machine.sel.logList)):
                     sel_nextSkip = None
                 else:
-                    sel_nextSkip = skip+machine.sel.logItemPerPage
+                    sel_nextSkip = next_skip
             else:
                 sel_logList = machine.sel.logList[0:machine.sel.logItemPerPage]
                 if(machine.sel.logItemPerPage >= len(machine.sel.logList)):
