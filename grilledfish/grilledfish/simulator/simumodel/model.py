@@ -181,13 +181,14 @@ class model:
         machine.sel.nextLogId += 1
 
     def appendDefualtSelLogItem(self, machine, machineConfig):
-        sel = types.SimpleNamespace()
+        sel = None
         if 'sel' in machineConfig:
+            sel = types.SimpleNamespace()
             selConfig = machineConfig['sel']
             if 'paging' in selConfig:
                 sel.paging = selConfig['paging']
             else:
-                sel.paging = true
+                sel.paging = True
 
             if 'maxLogItemCount' in selConfig:
                 sel.maxLogItemCount = selConfig['maxLogItemCount']

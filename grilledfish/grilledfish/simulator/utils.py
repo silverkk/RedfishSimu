@@ -124,7 +124,7 @@ def calc_sel_list(machine, request):
     sel_logList = None
     sel_nextSkip = None
     if(machine.sel):
-        if(machine.sel.paging):
+        if(getattr(machine.sel, "paging", None)):
             skip = request.GET.get(machine.sel.skiptoken)
             if(skip):
                 skip = int(skip)
