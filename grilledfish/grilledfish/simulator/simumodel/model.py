@@ -1,4 +1,5 @@
 import ipaddress
+import socket, struct
 import types
 import threading, queue
 from datetime import datetime
@@ -24,6 +25,7 @@ class model:
                      for a, b
                      in zip(*[iter('{:012x}'.format(ip))]*2)])
             machine.ip = ip
+            machine.ipStr = socket.inet_ntoa(struct.pack('!L', ip))
             machine.mac = mac
             #machine.vendor = machineConfig['vendor']
             machine.vendor = MachineType[machineConfig['vendor']]

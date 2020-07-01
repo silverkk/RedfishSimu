@@ -11,6 +11,7 @@ from django.template import loader, TemplateDoesNotExist
 import simulator.utils as utils
 import simulator.PowerActionUtil as PowerActionUtil
 
+
 @csrf_exempt
 def index(request):
     template = loader.get_template('simulator/index.html')
@@ -22,6 +23,7 @@ def index(request):
 @csrf_exempt
 def redfish_v1(request):
     machineInfo = utils.get_machine_info(request)
+    print("request for IP:" + machineInfo.ipStr)
     if request.method == 'GET':
         return handle_redfish_get(machineInfo, request)
     elif request.method == 'POST':        
