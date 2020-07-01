@@ -93,7 +93,7 @@
         "@odata.id": "/redfish/v1/Systems/System.Embedded.1/NetworkInterfaces"
     },
     "PartNumber": "0H21J3A04",
-    "PowerState": "Off",
+    "PowerState": "{{ machineInfo.power.PowerState }}",
     "ProcessorSummary": {
         "Count": 2,
         "Model": "Intel(R) Xeon(R) CPU E5-2609 v3 @ 1.90GHz",

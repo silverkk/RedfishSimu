@@ -29,6 +29,15 @@
                 "maxLogItemCount": 300,
                 "skiptoken": "skiptoken",
                 "datetimeFormat": "%Y-%m-%dT%H:%M:%S+08:00"
+            },
+            "power": {
+                "action": {
+                    "url":"/redfish/v1/Systems/System.Embedded.1/Actions/ComputerSystem.Reset",
+                    "PowerOn": "On",
+                    "SoftPowerOff": "GracefulShutdown",
+                    "HardPowerOff": "ForceOff"
+                },
+                "PowerState":"On"
             }
         },
         {

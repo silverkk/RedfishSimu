@@ -1,1 +1,56 @@
-{"@odata.context":"/redfish/v1/$metadata#EthernetInterface.EthernetInterface","@odata.type":"#EthernetInterface.v1_0_0.EthernetInterface","@odata.id":"/redfish/v1/Managers/1/EthernetInterfaces/1","Id":"1","Name":"EthernetInterface","Description":"Management Network Interface","Status":{"State":"Enabled","Health":"OK"},"InterfaceEnabled":true,"MACAddress":"AC:1F:6B:C1:67:FF","SpeedMbps":100,"AutoNeg":true,"FullDuplex":true,"MTUSize":1500,"HostName":"","VLAN":{"VLANEnable":false,"VLANId":0},"IPv4Addresses":[{"Address":"10.239.151.29","SubnetMask":"255.255.255.0","AddressOrigin":"DHCP","Gateway":"10.239.151.243"}],"IPv6AddressPolicyTable":[{"Prefix":"::1/128","Precedence":50,"Label":0}],"IPv6Addresses":[{"Address":"fe80::ae1f:6bff:fec1:67ff","PrefixLength":64,"AddressOrigin":"SLAAC","AddressState":"Preferred"}],"IPv6StaticAddresses":[{"Address":"fe80::ae1f:6bff:fec1:67ff","PrefixLength":64}],"IPv6DefaultGateway":"fe80::ae1f:6bff:fec1:67ff","NameServers":["172.17.6.9"]}
+{
+    "@odata.context": "/redfish/v1/$metadata#EthernetInterface.EthernetInterface",
+    "@odata.type": "#EthernetInterface.v1_0_0.EthernetInterface",
+    "@odata.id": "/redfish/v1/Managers/1/EthernetInterfaces/1",
+    "Id": "1",
+    "Name": "EthernetInterface",
+    "Description": "Management Network Interface",
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK"
+    },
+    "InterfaceEnabled": true,
+    "MACAddress": "{{ machineInfo.mac }}",
+    "SpeedMbps": 100,
+    "AutoNeg": true,
+    "FullDuplex": true,
+    "MTUSize": 1500,
+    "HostName": "",
+    "VLAN": {
+        "VLANEnable": false,
+        "VLANId": 0
+    },
+    "IPv4Addresses": [
+        {
+            "Address": "10.239.151.29",
+            "SubnetMask": "255.255.255.0",
+            "AddressOrigin": "DHCP",
+            "Gateway": "10.239.151.243"
+        }
+    ],
+    "IPv6AddressPolicyTable": [
+        {
+            "Prefix": "::1/128",
+            "Precedence": 50,
+            "Label": 0
+        }
+    ],
+    "IPv6Addresses": [
+        {
+            "Address": "fe80::ae1f:6bff:fec1:67ff",
+            "PrefixLength": 64,
+            "AddressOrigin": "SLAAC",
+            "AddressState": "Preferred"
+        }
+    ],
+    "IPv6StaticAddresses": [
+        {
+            "Address": "fe80::ae1f:6bff:fec1:67ff",
+            "PrefixLength": 64
+        }
+    ],
+    "IPv6DefaultGateway": "fe80::ae1f:6bff:fec1:67ff",
+    "NameServers": [
+        "172.17.6.9"
+    ]
+}

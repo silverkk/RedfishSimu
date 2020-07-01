@@ -1,1 +1,88 @@
-{ "@odata.type": "#ComputerSystem.v1_1_0.ComputerSystem", "Id": "System1", "Name": "NF5280M5", "AssetTag": "NULL", "Manufacturer": "Inspur", "Model": "NF5280M5", "SerialNumber": "818490928", "PartNumber": "0", "UUID": "eabf926c-bc9a-03de-b211-d21d60a3b219", "HostName": "N-PC-NF5280-107", "Status": { "State": "Enabled", "Health": "OK", "CPU": "OK", "Memory": "OK", "Hard Disk": "ABSENT", "Fan": "OK", "Fan redundancy": "OK", "PSU": "OK", "PSU redundancy": "OK", "Voltage": "OK", "Temperature": "OK", "ME": "OK" }, "IndicatorLED": "Off", "PowerState": "On", "BiosVersion": "4.1.12 (2019\/11\/27 18:43:21)", "ProcessorSummary": { "Count": 2, "Model": "Intel(R) Xeon(R) Gold 5118 CPU @ 2.30GHz", "Status": { "State": "Enabled", "Health": "OK" } }, "MemorySummary": { "TotalSystemMemoryGiB": 256, "Status": { "State": "Enabled", "Health": "OK" } }, "Bios": { "@odata.id": "\/redfish\/v1\/Systems\/System1\/Bios" }, "Processors": { "@odata.id": "\/redfish\/v1\/Systems\/System1\/Processors" }, "Memory": { "@odata.id": "\/redfish\/v1\/Systems\/System1\/Memory" }, "EthernetInterfaces": { "@odata.id": "\/redfish\/v1\/Systems\/System1\/EthernetInterfaces" }, "LogServices": { "@odata.id": "\/redfish\/v1\/Systems\/System1\/LogServices" }, "Links": { "Chassis": [ { "@odata.id": "\/redfish\/v1\/Chassis\/Chassis1" } ], "ManagedBy": [ { "@odata.id": "\/redfish\/v1\/Managers\/BMC" } ] }, "Actions": { "#ComputerSystem.Reset": { "target": "\/redfish\/v1\/Systems\/System1\/Actions\/ComputerSystem.Reset", "ResetType@Redfish.AllowableValues": [ "On", "ForceOff", "GracefulShutdown", "GracefulRestart", "ForceRestart", "Nmi", "ForceOn", "PushPowerButton" ] }, "Oem": { } }, "@odata.id": "\/redfish\/v1\/Systems\/System1" }
+{
+    "@odata.type": "#ComputerSystem.v1_1_0.ComputerSystem",
+    "Id": "System1",
+    "Name": "NF5280M5",
+    "AssetTag": "NULL",
+    "Manufacturer": "Inspur",
+    "Model": "NF5280M5",
+    "SerialNumber": "818490928",
+    "PartNumber": "0",
+    "UUID": "eabf926c-bc9a-03de-b211-d21d60a3b219",
+    "HostName": "N-PC-NF5280-107",
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK",
+        "CPU": "OK",
+        "Memory": "OK",
+        "Hard Disk": "ABSENT",
+        "Fan": "OK",
+        "Fan redundancy": "OK",
+        "PSU": "OK",
+        "PSU redundancy": "OK",
+        "Voltage": "OK",
+        "Temperature": "OK",
+        "ME": "OK"
+    },
+    "IndicatorLED": "Off",
+    "PowerState": "On",
+    "BiosVersion": "4.1.12 (2019\/11\/27 18:43:21)",
+    "ProcessorSummary": {
+        "Count": 2,
+        "Model": "Intel(R) Xeon(R) Gold 5118 CPU @ 2.30GHz",
+        "Status": {
+            "State": "Enabled",
+            "Health": "OK"
+        }
+    },
+    "MemorySummary": {
+        "TotalSystemMemoryGiB": 256,
+        "Status": {
+            "State": "Enabled",
+            "Health": "OK"
+        }
+    },
+    "Bios": {
+        "@odata.id": "\/redfish\/v1\/Systems\/System1\/Bios"
+    },
+    "Processors": {
+        "@odata.id": "\/redfish\/v1\/Systems\/System1\/Processors"
+    },
+    "Memory": {
+        "@odata.id": "\/redfish\/v1\/Systems\/System1\/Memory"
+    },
+    "EthernetInterfaces": {
+        "@odata.id": "\/redfish\/v1\/Systems\/System1\/EthernetInterfaces"
+    },
+    "LogServices": {
+        "@odata.id": "\/redfish\/v1\/Systems\/System1\/LogServices"
+    },
+    "Links": {
+        "Chassis": [
+            {
+                "@odata.id": "\/redfish\/v1\/Chassis\/Chassis1"
+            }
+        ],
+        "ManagedBy": [
+            {
+                "@odata.id": "\/redfish\/v1\/Managers\/BMC"
+            }
+        ]
+    },
+    "Actions": {
+        "#ComputerSystem.Reset": {
+            "target": "\/redfish\/v1\/Systems\/System1\/Actions\/ComputerSystem.Reset",
+            "ResetType@Redfish.AllowableValues": [
+                "On",
+                "ForceOff",
+                "GracefulShutdown",
+                "GracefulRestart",
+                "ForceRestart",
+                "Nmi",
+                "ForceOn",
+                "PushPowerButton"
+            ]
+        },
+        "Oem": {}
+    },
+    "@odata.id": "\/redfish\/v1\/Systems\/System1"
+}

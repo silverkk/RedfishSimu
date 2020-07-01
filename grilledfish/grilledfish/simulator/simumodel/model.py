@@ -34,6 +34,7 @@ class model:
             machine.invalidRespLength = machineConfig['invalidRespLength'] if 'invalidRespLength' in machineConfig else False
             self.appendHealthInfo(machine, machineConfig)
             self.appendDefualtSelLogItem(machine, machineConfig)
+            self.appendPowerInfo(machine, machineConfig)
             self.machines[ip] = machine
 
     def transHealthInfo(self, machine, healthNamespace, healthDict, appendDefault, genSelLog=False):
@@ -227,6 +228,26 @@ class model:
             sel.logItemCount = len(sel.logList)
         machine.sel = sel    
 
+    def appendPowerInfo(self, machine, machineConfig):
+        power = None
+        if 'power' in machineConfig:
+            power = types.SimpleNamespace()
+            powerConfig = machineConfig['power']
+            if 'PowerState' in powerConfig:
+                power.PowerState = powerConfig['PowerState']
+            else:
+                power.PowerState = 'On'
+
+            action = types.SimpleNamespace()
+            actionConfig = machineConfig['power']['action']
+            action.url = actionConfig['url']
+            action.PowerOn = actionConfig['PowerOn']
+            action.SoftPowerOff = actionConfig['SoftPowerOff']
+            action.HardPowerOff = actionConfig['HardPowerOff']
+
+            power.action = action
+
+        machine.power = power
 
     def getMachineInfo(self, ipStr):
         ip = int(ipaddress.IPv4Address(ipStr))

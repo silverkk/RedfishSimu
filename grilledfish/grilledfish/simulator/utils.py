@@ -133,8 +133,8 @@ def calc_sel_list(machine, request):
                     end_id = skip+machine.sel.logItemPerPage
                     next_skip = skip+machine.sel.logItemPerPage
                 else:
-                    start_id = skip*machine.sel.logItemPerPage
-                    end_id = (skip+1)*machine.sel.logItemPerPage
+                    start_id = (skip-1)*machine.sel.logItemPerPage
+                    end_id = skip*machine.sel.logItemPerPage
                     next_skip = skip+1
 
                 sel_logList = machine.sel.logList[start_id:end_id]

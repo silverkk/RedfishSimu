@@ -6,8 +6,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
 from django.views.decorators.csrf import csrf_exempt
+from django.template import loader, TemplateDoesNotExist
 
 import simulator.utils as utils
+import simulator.PowerActionUtil as PowerActionUtil
 
 @csrf_exempt
 def index(request):
@@ -20,6 +22,12 @@ def index(request):
 @csrf_exempt
 def redfish_v1(request):
     machineInfo = utils.get_machine_info(request)
+    if request.method == 'GET':
+        return handle_redfish_get(machineInfo, request)
+    elif request.method == 'POST':        
+        return handle_redfish_post(machineInfo, request)
+
+def handle_redfish_get(machineInfo, request):
     template = utils.get_template(request)
     now = datetime.now()
     context = {
@@ -35,6 +43,24 @@ def redfish_v1(request):
     if(machineInfo.invalidRespLength):
         response['Content-Length'] = len(response.content)-len(paddingContent)
     return response
+
+def handle_redfish_post(machineInfo, request):
+    # for sel, we prepared a template even for post request, 
+    # so we first try to load the template first, if not hit
+    # then we switch to the normal post handler, mainly for power action
+    try:
+        return handle_redfish_get(machineInfo, request)
+    except TemplateDoesNotExist:
+        responseContent = PowerActionUtil.handle_power_action_post(machineInfo, request)
+        if responseContent:
+            response = HttpResponse(responseContent, content_type='application/json')
+        else:
+            response = HttpResponse(status=204)
+
+        if(machineInfo.invalidRespLength):
+            response['Content-Length'] = len(response.content)+50
+        return response
+
 
 @csrf_exempt
 def web_request(request):
