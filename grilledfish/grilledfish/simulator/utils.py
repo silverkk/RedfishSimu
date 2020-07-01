@@ -147,7 +147,10 @@ def calc_sel_list(machine, request):
                 if(machine.sel.logItemPerPage >= len(machine.sel.logList)):
                     sel_nextSkip = None
                 else:
-                    sel_nextSkip = machine.sel.logItemPerPage                
+                    if(machine.sel.skipType == "Items"):
+                        sel_nextSkip = machine.sel.logItemPerPage                        
+                    else:
+                        sel_nextSkip = 2
         else:
             sel_logList = machine.sel.logList
     
