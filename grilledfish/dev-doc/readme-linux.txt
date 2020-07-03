@@ -45,7 +45,8 @@ you better check docker first
 			
 Debug using stunnel:
 DCM SDK only allow https, so during development, we have to wrapper the https into our django server.
-	1. Install stunnel: apt-get install stunnel
+	1. Install stunnel: apt-get install stunnel, and using the following cmd to generate the cert:
+		openssl req -new -x509 -days 365 -nodes -out stunnel.pem -keyout stunnel.pem
 	2. Navigate to our simulator folder, and start stunnel by: sudo  ./launch_stunnel.sh
 	3. Start django in vscode.
 	4. Pls ref:

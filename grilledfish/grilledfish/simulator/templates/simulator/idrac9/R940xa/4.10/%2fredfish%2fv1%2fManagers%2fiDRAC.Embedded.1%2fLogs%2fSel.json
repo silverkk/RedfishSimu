@@ -23,11 +23,11 @@
                 "SensorType": null,
                 "Severity": "OK"
             }{% if not forloop.last %},{% endif %}
-        {% endfor %}                
+        {% endfor %}
     ],
     "Members@odata.count": {{ machineInfo.sel.logItemCount }},
     {% if sel.nextSkip %}
-    "Members@odata.nextLink": "/redfish/v1/Managers/iDRAC.Embedded.1/LogServices/Sel/Entries?$skip={{sel.nextSkip}}",
+    "Members@odata.nextLink": "/redfish/v1/Managers/iDRAC.Embedded.1/Logs/Sel?$skip={{sel.nextSkip}}",
     {% else %}
     {% endif %}
     "Name": "Log Entry Collection"

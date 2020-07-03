@@ -25,9 +25,10 @@
                 "Volume": "Warning"
             },
             "sel": {
-                "paging": false,
+                "paging": true,
                 "maxLogItemCount": 300,
-                "skiptoken": "skiptoken",
+                "logItemPerPage": 50,
+                "skiptoken": "$skip",
                 "datetimeFormat": "%Y-%m-%dT%H:%M:%S+08:00"
             },
             "power": {

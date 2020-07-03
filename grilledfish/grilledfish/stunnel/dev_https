@@ -1,9 +1,11 @@
 pid=
 debug = 7
 cert = stunnel/stunnel.pem
-sslVersion = all
-;options = -NO_SSLv3
-;sslVersion = SSLv3
+options = NO_SSLv2
+options = NO_SSLv3
+options = NO_TLSv1
+options = NO_TLSv1.1
+sslVersion = TLSv1.2
 foreground = yes
 output = stunnel.log
 
