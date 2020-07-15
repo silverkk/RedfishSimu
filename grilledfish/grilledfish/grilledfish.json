@@ -2,7 +2,7 @@
     "ipNumber": 29,
     "startIP": "192.168.1.1",
     "perf": {
-        "granularity":1
+        "granularity":10
     },
     "machines" : [
         {

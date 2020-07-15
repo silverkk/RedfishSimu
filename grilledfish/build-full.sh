@@ -3,16 +3,17 @@ ABSOLUTE_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/$(basename "${BASH_
 dir_name=$(dirname $ABSOLUTE_PATH)
 #echo "The scripth installer running at $dir_name"
 
-docker_context_path="${dir_name}/../.."
+docker_context_path="${dir_name}/.."
 echo "docker context path is: $docker_context_path"
 
 cd ${docker_context_path}
 
-grilledfish_path="Redfish_Emulators/grilledfish"
+grilledfish_path="grilledfish"
 docker_file_path="${grilledfish_path}/UnifiedEnv.Docerfile"
+#ipmi_simulator_path="Simulator/installer"
 ipmi_simulator_path="Simulator/installer"
 
-
+echo "ipmi_simulator_path is: $ipmi_simulator_path"
 if [ -d ${ipmi_simulator_path} ]; then 
 	echo "ipmi simulator located."
 else
@@ -22,6 +23,7 @@ fi
 ipmi_simu_conf="${ipmi_simulator_path}/share/conf/simulatorcfg.xml"
 ipmi_simu_conf_gen="${ipmi_simulator_path}/share/conf/simulatorcfg_g.xml"
 
+echo "grilledfish_path is: $grilledfish_path"
 if [ -d ${grilledfish_path} ]; then 
 	echo "grilledfish simulator located."
 else

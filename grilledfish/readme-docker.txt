@@ -14,3 +14,7 @@ combined mode:
         build-full.sh
     3. start the simulator:
         docker run -it --network host grilledfish
+
+To monitor the performance of nginx:
+    we create a tool that could analyse the ngnix access.log file, to calc the performance:
+        python tools/calc_resp_time.py path-to-nginx-access.log

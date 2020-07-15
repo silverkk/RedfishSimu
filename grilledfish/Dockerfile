@@ -37,9 +37,12 @@ RUN apt install -y vim
 RUN apt-get install iputils-ping -y
 
 RUN cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bak
+RUN cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
 
 CMD mkdir /grilledfish
+COPY ./tools/ /grilledfish/tools/
 COPY ./grilledfish/ /grilledfish/grilledfish/
+COPY ./docker/nginx/nginx.conf /etc/nginx/nginx.conf
 COPY ./docker/nginx/default /etc/nginx/sites-available/default
 COPY ./docker/nginx/nginx-selfsigned.key /etc/ssl/private/nginx-selfsigned.key
 COPY ./docker/nginx/nginx-selfsigned.crt /etc/ssl/certs/nginx-selfsigned.crt
