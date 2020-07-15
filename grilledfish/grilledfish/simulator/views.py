@@ -116,9 +116,9 @@ def redfish_health_control(request):
 @csrf_exempt
 def redfish_perf_summary(request):
     performanceSummary = utils.getPerformanceSummary()
-    responseContent = "totalResTime: {0}, totalRequestCount: {1}, averageResTime:{2}, \ntrend:{3}"
+    responseContent = "totalResTime: {0}, totalRequestCount: {1}, averageResTime:{2}, maxResTime:{3} \ntrend:{4}"
     trend = json.dumps([ob.__dict__ for ob in performanceSummary.trend])
-    responseContent = responseContent.format(performanceSummary.totalResTime, performanceSummary.totalRequestCount, performanceSummary.averageResTime, trend)    
+    responseContent = responseContent.format(performanceSummary.totalResTime, performanceSummary.totalRequestCount, performanceSummary.averageResTime, performanceSummary.maxResTime, trend)    
     #responseContent = json.dumps(performanceSummary)
     response = HttpResponse(responseContent, content_type='application/json')
     return response

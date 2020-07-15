@@ -264,6 +264,7 @@ class model:
         self.performanceSummary.totalResTime = 0
         self.performanceSummary.totalRequestCount = 0
         self.performanceSummary.averageResTime = 0
+        self.performanceSummary.maxResTime = 0
         self.performanceSummary.trend = []
         self.requestCount4Iterator = 0
         self.requestSeconds4Iterator = 0
@@ -276,7 +277,9 @@ class model:
 
         self.performanceSummary.totalResTime = self.performanceSummary.totalResTime + respTime
         self.performanceSummary.totalRequestCount = self.performanceSummary.totalRequestCount + 1
-
+        if self.performanceSummary.maxResTime < respTime:
+            self.performanceSummary.maxResTime = respTime
+            
         if self.requestCount4Iterator >= self.perfGranularity:
             performaceItem = types.SimpleNamespace()
             performaceItem.startTime = self.startTime4Iterator
