@@ -4,18 +4,19 @@ import types
 import threading, queue
 from datetime import datetime
 from simulator.apps import MachineType, RedfishMachineConfig, MachineComponent
+import sys
+import time
 
 class model:
     def __init__(self):
         rfConfig = RedfishMachineConfig()
         self.buildMachine(rfConfig.getMachines())
-        
+        self.buildPerfConfig(rfConfig.getPerfConfig())
 
     def buildMachine(self, machineConfigList):
         self.machines = {}
         for configItem in machineConfigList:
             self.buildOneMachine(configItem)
-    
     def buildOneMachine(self, machineConfig):
         startIp = int(ipaddress.IPv4Address(machineConfig['startIp']))
         endIp = int(ipaddress.IPv4Address(machineConfig['endIp'])) + 1        
@@ -228,6 +229,7 @@ class model:
                 sel.logList.append(item)
             sel.nextLogId = sel.maxLogItemCount
             sel.logItemCount = len(sel.logList)
+            
         machine.sel = sel    
 
     def appendPowerInfo(self, machine, machineConfig):
@@ -254,7 +256,45 @@ class model:
     def getMachineInfo(self, ipStr):
         ip = int(ipaddress.IPv4Address(ipStr))
         return self.machines[ip]
-        
+
+    def buildPerfConfig(self, perfConfig):
+        #trace the performance
+        self.perfGranularity = perfConfig['granularity']
+        self.performanceSummary = types.SimpleNamespace()
+        self.performanceSummary.totalResTime = 0
+        self.performanceSummary.totalRequestCount = 0
+        self.performanceSummary.averageResTime = 0
+        self.performanceSummary.trend = []
+        self.requestCount4Iterator = 0
+        self.requestSeconds4Iterator = 0
+        self.startTime4Iterator = time.time()
+
+    def appendRequestPerformance(self, startTime, endTime):
+        respTime = endTime - startTime
+        self.requestSeconds4Iterator = self.requestSeconds4Iterator + respTime
+        self.requestCount4Iterator = self.requestCount4Iterator+1
+
+        self.performanceSummary.totalResTime = self.performanceSummary.totalResTime + respTime
+        self.performanceSummary.totalRequestCount = self.performanceSummary.totalRequestCount + 1
+
+        if self.requestCount4Iterator >= self.perfGranularity:
+            performaceItem = types.SimpleNamespace()
+            performaceItem.startTime = self.startTime4Iterator
+            performaceItem.endTime = time.time()
+            performaceItem.averageResTime = self.requestSeconds4Iterator/self.requestCount4Iterator
+            self.performanceSummary.averageResTime = self.performanceSummary.totalResTime/self.performanceSummary.totalRequestCount
+            if len(self.performanceSummary.trend) > 100:
+                self.performanceSummary.trend.pop(0)
+                
+            self.performanceSummary.trend.append(performaceItem)
+            self.requestSeconds4Iterator = 0
+            self.requestCount4Iterator = 0
+            self.startTime4Iterator = performaceItem.endTime
+
+
+    def getPerformanceSummary(self):
+        return self.performanceSummary
+
 # global variable
 global_model = model()
 

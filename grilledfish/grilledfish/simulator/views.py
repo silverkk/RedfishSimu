@@ -10,7 +10,8 @@ from django.template import loader, TemplateDoesNotExist
 
 import simulator.utils as utils
 import simulator.PowerActionUtil as PowerActionUtil
-
+import time
+import json
 
 @csrf_exempt
 def index(request):
@@ -30,6 +31,7 @@ def redfish_v1(request):
         return handle_redfish_post(machineInfo, request)
 
 def handle_redfish_get(machineInfo, request):
+    startTime = time.time()
     template = utils.get_template(request)
     now = datetime.now()
     context = {
@@ -44,14 +46,21 @@ def handle_redfish_get(machineInfo, request):
     response = HttpResponse(responseContent, content_type='application/json')
     if(machineInfo.invalidRespLength):
         response['Content-Length'] = len(response.content)-len(paddingContent)
+    
+    endTime = time.time()
+    utils.appendRequestPerformance(startTime, endTime)
     return response
 
 def handle_redfish_post(machineInfo, request):
+    startTime = time.time()
     # for sel, we prepared a template even for post request, 
     # so we first try to load the template first, if not hit
     # then we switch to the normal post handler, mainly for power action
     try:
-        return handle_redfish_get(machineInfo, request)
+        response = handle_redfish_get(machineInfo, request)
+        endTime = time.time()
+        utils.appendRequestPerformance(startTime, endTime)
+        return response
     except TemplateDoesNotExist:
         responseContent = PowerActionUtil.handle_power_action_post(machineInfo, request)
         if responseContent:
@@ -61,11 +70,15 @@ def handle_redfish_post(machineInfo, request):
 
         if(machineInfo.invalidRespLength):
             response['Content-Length'] = len(response.content)+50
+        
+        endTime = time.time()
+        utils.appendRequestPerformance(startTime, endTime)
         return response
 
 
 @csrf_exempt
 def web_request(request):
+    startTime = time.time()
     machineInfo = utils.get_machine_info(request)
     template = utils.get_template(request)
     now = datetime.now()
@@ -82,6 +95,9 @@ def web_request(request):
     response = HttpResponse(responseContent, content_type='application/json')
     if(machineInfo.invalidRespLength):
         response['Content-Length'] = len(response.content)-len(paddingContent)
+    
+    endTime = time.time()
+    utils.appendRequestPerformance(startTime, endTime)
     return response
 
 # the request is like:
@@ -97,5 +113,12 @@ def redfish_health_control(request):
         utils.update_machine_health(request)
         return HttpResponse('{OK}', content_type='application/json')
     
-
-    
+@csrf_exempt
+def redfish_perf_summary(request):
+    performanceSummary = utils.getPerformanceSummary()
+    responseContent = "totalResTime: {0}, totalRequestCount: {1}, averageResTime:{2}, \ntrend:{3}"
+    trend = json.dumps([ob.__dict__ for ob in performanceSummary.trend])
+    responseContent = responseContent.format(performanceSummary.totalResTime, performanceSummary.totalRequestCount, performanceSummary.averageResTime, trend)    
+    #responseContent = json.dumps(performanceSummary)
+    response = HttpResponse(responseContent, content_type='application/json')
+    return response

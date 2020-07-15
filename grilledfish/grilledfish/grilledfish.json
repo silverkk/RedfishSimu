@@ -1,6 +1,9 @@
 {
     "ipNumber": 29,
     "startIP": "192.168.1.1",
+    "perf": {
+        "granularity":1
+    },
     "machines" : [
         {
             "startIp" : "192.168.1.1",
@@ -26,7 +29,7 @@
             },
             "sel": {
                 "paging": true,
-                "maxLogItemCount": 300,
+                "maxLogItemCount": 1000,
                 "logItemPerPage": 50,
                 "skiptoken": "$skip",
                 "datetimeFormat": "%Y-%m-%dT%H:%M:%S+08:00"

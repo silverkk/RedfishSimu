@@ -159,5 +159,8 @@ def calc_sel_list(machine, request):
         'nextSkip':sel_nextSkip
     }
 
-    
+def appendRequestPerformance(startTime, endTime):
+    global_model.appendRequestPerformance(startTime, endTime)
 
+def getPerformanceSummary():
+    return global_model.getPerformanceSummary()

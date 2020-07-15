@@ -33,3 +33,7 @@ class RedfishMachineConfig:
         with open("grilledfish.json") as json_file:
             data = json.load(json_file)
             return data['machines']
+    def getPerfConfig(self):
+        with open("grilledfish.json") as json_file:
+            data = json.load(json_file)
+            return data['perf']
