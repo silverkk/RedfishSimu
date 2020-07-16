@@ -1,38 +1,72 @@
 import sys
-import shlex
+import json
+import mysql.connector
 
-if len(sys.argv) < 1:
-    print("you missed the nginx access log file")
+if len(sys.argv) < 7:
+    print("params: nginx-log-file mysql-host mysql-username mysql-password database table-name")
+    exit()
 filepath = sys.argv[1]
+dbhost = sys.argv[2]
+dbuser = sys.argv[3]
+dbpassword = sys.argv[4]
+database=sys.argv[5]
+dbtable = sys.argv[6]
 
-# the log file is like:
-#"15/Jul/2020:06:12:54 +0000" client=192.168.1.1 method=GET request="GET /favicon.ico HTTP/1.1" request_length=501 status=500 bytes_sent=83881 body_bytes_sent=
-#83638 referer=https://192.168.1.1/redfish/control/perf user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116
-# Safari/537.36" upstream_addr=unix:/grilledfish/grilledfish/grilledfish.sock upstream_status=500 request_time=0.146 upstream_response_time=0.148 upstream_conn
-#ect_time=0.000 upstream_header_time=0.148
+mydb = mysql.connector.connect(
+  host=dbhost,
+  user=dbuser,
+  password=dbpassword,
+  database=database
+)
 
+mycursor = mydb.cursor()
+
+sql = """
+INSERT INTO {} (time, client, host, method, uri, path, request_length, 
+status, bytes_sent, upstream_status, request_time, upstream_response_time, 
+upstream_connect_time, upstream_header_time) 
+VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""".format(dbtable)
+
+
+
+# each line of the log file is a json string, refer to the sample-nginx-access.log
 total_request_time = 0.0
-total_request_count = 0
 max_request_time = 0.0
-#request_time is the total process time for a request
+total_request_count = 0
 with open(filepath) as fp:
    line = fp.readline()
    while line:
-        #print("Line {}: {}".format(cnt, line.strip()))
-        result = shlex.split(line)
-        if len(result) > 15:
-            request_time_str = result[12]
-            #print(request_time_str)
-            #print(*result, sep = "\n")
-            #print("------------------\n") 
-            request_time = float(request_time_str.split('=')[1])
-            total_request_time = total_request_time + request_time
-            total_request_count = total_request_count + 1
-            if max_request_time < request_time:
-                max_request_time = request_time
+        #print("Line {}".format(line.strip()))
+        access_item = json.loads(line)
+
+        total_request_time = total_request_time + access_item['request_time']
+        total_request_count = total_request_count + 1
+        if max_request_time < access_item['request_time']:
+            max_request_time = access_item['request_time']
+
+        val = (
+          access_item['time'], 
+          access_item['client'], 
+          access_item['host'], 
+          access_item['method'], 
+          access_item['uri'], 
+          access_item['path'], 
+          access_item['request_length'], 
+          access_item['status'],
+          access_item['bytes_sent'], 
+          access_item['upstream_status'], 
+          access_item['request_time'], 
+          access_item['upstream_response_time'],
+          access_item['upstream_connect_time'],
+          access_item['upstream_header_time']
+        )
+        mycursor.execute(sql, val)
+
         line = fp.readline()
 
+mydb.commit()
+print("{} records writes into mysql".format(total_request_count))
 
 total_average_response_time = total_request_time/total_request_count
-responseContent = "totalResTime: {0}, totalRequestCount: {1}, averageResTime:{2}, maxResTime:{3}\n"
+responseContent = "ngnix performance summary: totalResTime: {0}, totalRequestCount: {1}, averageResTime:{2}, maxResTime:{3}\n"
 print(responseContent.format(total_request_time, total_request_count, total_average_response_time, max_request_time))

@@ -1,0 +1,17 @@
+CREATE TABLE `nginx_log`.`access_log` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `time` DATETIME NULL,
+  `client` VARCHAR(45) NULL,
+  `host` VARCHAR(45) NULL,
+  `method` VARCHAR(45) NULL,
+  `uri` VARCHAR(255) NULL,
+  `path` VARCHAR(512) NULL,
+  `request_length` INT NULL,
+  `status` VARCHAR(45) NULL,
+  `bytes_sent` INT NULL,
+  `upstream_status` VARCHAR(45) NULL,
+  `request_time` FLOAT NULL,
+  `upstream_response_time` FLOAT NULL,
+  `upstream_connect_time` FLOAT NULL,
+  `upstream_header_time` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));

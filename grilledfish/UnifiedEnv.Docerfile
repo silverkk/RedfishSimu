@@ -41,6 +41,8 @@ RUN apt-get install openjdk-8-jre-headless -y
 RUN apt-get install iputils-ping -y
 RUN apt-get install bash-completion -y
 
+RUN pip3 install mysql-connector-python
+
 ARG grilledfish_path
 ARG ipmi_simu_path
 RUN echo "grilledfish_path: $grilledfish_path, ipmi_simu_path: $ipmi_simu_path"

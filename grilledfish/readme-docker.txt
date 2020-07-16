@@ -18,3 +18,7 @@ combined mode:
 To monitor the performance of nginx:
     we create a tool that could analyse the ngnix access.log file, to calc the performance:
         python tools/calc_resp_time.py path-to-nginx-access.log
+    or directly in the host machine:
+        docker exec -it a26fa7375764 python3 /grilledfish/tools/calc_resp_time.py /var/log/nginx/access.log
+    translate the nginx access log into mysql database:
+        docker exec -it c62fef768517 python3 /grilledfish/tools/calc_resp_time.py /var/log/nginx/access.log 127.0.0.1 root user@123 nginx_log access_log
