@@ -24,7 +24,7 @@ def index(request):
 @csrf_exempt
 def redfish_v1(request):
     machineInfo = utils.get_machine_info(request)
-    print("request for IP:" + machineInfo.ipStr)
+    #print("request for IP:" + machineInfo.ipStr)
     if request.method == 'GET':
         return handle_redfish_get(machineInfo, request)
     elif request.method == 'POST':        
@@ -32,17 +32,30 @@ def redfish_v1(request):
 
 def handle_redfish_get(machineInfo, request):
     startTime = time.time()
-    template = utils.get_template(request)
-    now = datetime.now()
-    context = {
-        'machineInfo': machineInfo,
-        'currentTime': now.strftime('%Y-%m-%dT%H:%M:%S+08:00'),
-        'sel': utils.calc_sel_list(machineInfo, request)
-    }
-    responseContent = template.render(context, request)
-    paddingContent = "This is the the padding text that simulator added to the reponse, simulate some supermicro server's strange behavior"
-    if(machineInfo.invalidRespLength):
-        responseContent = responseContent + paddingContent
+    full_path = request.get_full_path()
+    if machineInfo.cacheEnabled:
+        responseContent = machineInfo.pageCache.get(full_path)
+    
+    if responseContent is None:
+        if machineInfo.cacheEnabled:
+            template = machineInfo.templateCache.get(full_path)
+        if template is None:
+            template = utils.get_template(request)
+            machineInfo.templateCache[full_path] = template
+
+        now = datetime.now()
+        context = {
+            'machineInfo': machineInfo,
+            'currentTime': now.strftime('%Y-%m-%dT%H:%M:%S+08:00'),
+            'sel': utils.calc_sel_list(machineInfo, request)
+        }
+        responseContent = template.render(context, request)
+        paddingContent = "This is the the padding text that simulator added to the reponse, simulate some supermicro server's strange behavior"
+        if(machineInfo.invalidRespLength):
+            responseContent = responseContent + paddingContent
+        
+        machineInfo.pageCache[full_path] = responseContent
+
     response = HttpResponse(responseContent, content_type='application/json')
     if(machineInfo.invalidRespLength):
         response['Content-Length'] = len(response.content)-len(paddingContent)

@@ -36,31 +36,35 @@ total_request_count = 0
 with open(filepath) as fp:
    line = fp.readline()
    while line:
-        #print("Line {}".format(line.strip()))
-        access_item = json.loads(line)
+        #print("number: {}, Line: {}".format(total_request_count, line.strip()))
+        if total_request_count%1000 == 0:
+          print("number: {}, Line: {}".format(total_request_count, line.strip())) 
+        try:
+          access_item = json.loads(line)
+          total_request_time = total_request_time + access_item['request_time']
+          total_request_count = total_request_count + 1
+          if max_request_time < access_item['request_time']:
+              max_request_time = access_item['request_time']
 
-        total_request_time = total_request_time + access_item['request_time']
-        total_request_count = total_request_count + 1
-        if max_request_time < access_item['request_time']:
-            max_request_time = access_item['request_time']
-
-        val = (
-          access_item['time'], 
-          access_item['client'], 
-          access_item['host'], 
-          access_item['method'], 
-          access_item['uri'], 
-          access_item['path'], 
-          access_item['request_length'], 
-          access_item['status'],
-          access_item['bytes_sent'], 
-          access_item['upstream_status'], 
-          access_item['request_time'], 
-          access_item['upstream_response_time'],
-          access_item['upstream_connect_time'],
-          access_item['upstream_header_time']
-        )
-        mycursor.execute(sql, val)
+          val = (
+            access_item['time'], 
+            access_item['client'], 
+            access_item['host'], 
+            access_item['method'], 
+            access_item['uri'], 
+            access_item['path'], 
+            access_item['request_length'], 
+            access_item['status'],
+            access_item['bytes_sent'], 
+            access_item['upstream_status'], 
+            access_item['request_time'], 
+            access_item['upstream_response_time'],
+            access_item['upstream_connect_time'],
+            access_item['upstream_header_time']
+          )
+          mycursor.execute(sql, val)
+        except json.JSONDecodeError:
+          print("number: {}, Line: {}".format(total_request_count, line.strip()))       
 
         line = fp.readline()
 

@@ -2,7 +2,9 @@
     "ipNumber": 29,
     "startIP": "192.168.1.1",
     "perf": {
-        "granularity":10
+        "enablePerfStatistic": false,
+        "granularity":10000,
+        "enableCache":true
     },
     "machines" : [
         {
