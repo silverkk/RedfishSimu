@@ -116,6 +116,9 @@ server {
         location / {
                 include         uwsgi_params;
                 uwsgi_pass      unix:/grilledfish/grilledfish/grilledfish.sock;
+                #expires max;
+                #log_not_found off;
+                #access_log off;
         }
 }
 
