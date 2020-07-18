@@ -1,15 +1,15 @@
 #This is a sample Image 
 FROM ubuntu:18.04 as base
 
-ENV http_proxy "http://child-prc.intel.com:913"
-ENV https_proxy "http://child-prc.intel.com:913"
+ENV http_proxy "http://10.239.4.101:913"
+ENV https_proxy "http://10.239.4.101:913"
 
 SHELL ["/bin/bash", "-c"]
 
 RUN apt-get update -y
 #RUN apt-get upgrade -y
 #RUN apt-get dist-upgrade -y 
-
+RUN apt install -y apt-utils
 RUN apt-get install -y apt-transport-https
 
 RUN apt-get install -y unzip
@@ -17,6 +17,7 @@ RUN apt-get install -y unzip
 RUN apt install -y build-essential 
 RUN apt install -y libssl-dev 
 RUN apt install -y libffi-dev 
+RUN apt install -y libpcre3 libpcre3-dev
 
 RUN mkdir environments 
 RUN cd environments
