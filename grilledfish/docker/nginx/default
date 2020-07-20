@@ -110,15 +110,16 @@ server {
 #	ssl_ciphers ALL:!ADH:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv3:+EXP;
 #	ssl_prefer_server_ciphers on;
 #
-#	location / {
-#		try_files $uri $uri/ /index.html;
-#	}
-        location / {
-                include         uwsgi_params;
-                uwsgi_pass      unix:/grilledfish/grilledfish/grilledfish.sock;
-                #expires max;
-                #log_not_found off;
-                #access_log off;
-        }
+	location / {
+		try_files $uri $uri/ /index.html;
+	}
+	
+	location /redfish {
+			include         uwsgi_params;
+			uwsgi_pass      unix:/grilledfish/grilledfish/grilledfish.sock;
+			#expires max;
+			#log_not_found off;
+			#access_log off;
+	}
 }
 
