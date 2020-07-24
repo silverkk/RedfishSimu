@@ -11,9 +11,9 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "args": [
-                "/home/allen/work/DCM/DCMUtility/Main/Redfish_Emulators/grilledfish/grilledfish/grilledfish.json",
-                "/home/allen/work/DCM/DCMUtility/Main/Simulator/installer/share/conf/simulatorcfg.xml",
-                "/home/allen/work/DCM/DCMUtility/Main/Simulator/installer/share/conf/simulatorcfg--.xml"
+                "/home/huxiaomi/work/DCM/DCMUtility/Main/Redfish_Emulators/grilledfish/grilledfish/grilledfish.json",
+                "/home/huxiaomi/work/DCM/DCMUtility/Main/Simulator/installer/share/conf/simulatorcfg.xml",
+                "/home/huxiaomi/work/DCM/DCMUtility/Main/Simulator/installer/share/conf/simulatorcfg--.xml"
             ]
         },
         {

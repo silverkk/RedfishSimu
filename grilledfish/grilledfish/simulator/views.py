@@ -33,15 +33,18 @@ def redfish_v1(request):
 def handle_redfish_get(machineInfo, request):
     startTime = time.time()
     full_path = request.get_full_path()
+    responseContent = None
     if machineInfo.cacheEnabled:
         responseContent = machineInfo.pageCache.get(full_path)
     
     if responseContent is None:
+        template = None
         if machineInfo.cacheEnabled:
             template = machineInfo.templateCache.get(full_path)
         if template is None:
             template = utils.get_template(request)
-            machineInfo.templateCache[full_path] = template
+            if machineInfo.cacheEnabled:
+                machineInfo.templateCache[full_path] = template
 
         now = datetime.now()
         context = {
@@ -54,7 +57,8 @@ def handle_redfish_get(machineInfo, request):
         if(machineInfo.invalidRespLength):
             responseContent = responseContent + paddingContent
         
-        machineInfo.pageCache[full_path] = responseContent
+        if machineInfo.cacheEnabled:
+            machineInfo.pageCache[full_path] = responseContent
 
     response = HttpResponse(responseContent, content_type='application/json')
     if(machineInfo.invalidRespLength):
