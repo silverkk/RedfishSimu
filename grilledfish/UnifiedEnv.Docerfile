@@ -44,6 +44,13 @@ RUN apt-get install bash-completion -y
 
 RUN pip3 install mysql-connector-python
 
+# install openresty http://openresty.org/en/linux-packages.html
+RUN apt-get -y install wget gnupg ca-certificates
+RUN wget -O - https://openresty.org/package/pubkey.gpg | apt-key add -
+RUN echo "deb http://openresty.org/package/ubuntu bionic main" |  tee /etc/apt/sources.list.d/openresty.list
+RUN apt-get update
+RUN apt-get -y install openresty
+
 ARG grilledfish_path
 ARG ipmi_simu_path
 RUN echo "grilledfish_path: $grilledfish_path, ipmi_simu_path: $ipmi_simu_path"
@@ -52,11 +59,20 @@ RUN cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bak
 RUN cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
 
 CMD mkdir /grilledfish
+#copy the config files for nginx
 COPY $grilledfish_path/docker/nginx/nginx.conf /etc/nginx/nginx.conf
 COPY $grilledfish_path/docker/nginx/default /etc/nginx/sites-available/default
 COPY $grilledfish_path/docker/nginx/nginx-selfsigned.key /etc/ssl/private/nginx-selfsigned.key
 COPY $grilledfish_path/docker/nginx/nginx-selfsigned.crt /etc/ssl/certs/nginx-selfsigned.crt
 COPY $grilledfish_path/docker/nginx/self-signed.conf /etc/nginx/snippets/self-signed.conf
+
+# copy the config files for openresty
+CMD mkdir /usr/local/openresty/nginx/conf/snippets
+RUN cp /usr/local/openresty/nginx/conf/nginx.conf /usr/local/openresty/nginx/conf/nginx.conf.bak
+COPY $grilledfish_path/docker/openresty/nginx.conf /usr/local/openresty/nginx/conf/nginx.conf
+COPY $grilledfish_path/docker/nginx/self-signed.conf /usr/local/openresty/nginx/conf/snippets/self-signed.conf
+
+
 COPY $grilledfish_path/docker/bash-completion.conf /grilledfish/docker/bash-completion.conf
 COPY $grilledfish_path/start_script.sh /grilledfish/start_script.sh
 

@@ -1,5 +1,6 @@
 {
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
-    "python.linting.flake8Enabled": false
+    "python.linting.flake8Enabled": false,
+    "python.pythonPath": "/home/huxiaomi/anaconda3/envs/tf_gpu/bin/python"
 }

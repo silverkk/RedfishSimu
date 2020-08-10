@@ -2,8 +2,9 @@
 #/bin/bash
 echo "starting......"
 cd /grilledfish/grilledfish
-nginx
-echo "nginx started"
+#nginx
+service openresty start
+echo "nginx*(openresty) started"
 
 if [ -d /ipmi_simulator ]; then 
     uwsgi --ini uwsgi.ini --daemonize /var/log/grilledfish_uwsgi.log

@@ -1,0 +1,5 @@
+To support response delay, we switch from nginx to openresty.
+
+How to config the response delay?
+    update docker/openresty/nginx.conf, find line "echo_sleep 20;", specify the delay in seconds.
+    you way also need to update the uwsgi.ini, increate "listen = 6000".
