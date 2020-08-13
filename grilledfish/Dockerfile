@@ -36,10 +36,18 @@ RUN apt-get install -y nginx
 RUN apt install -y vim
 RUN apt-get install iputils-ping -y
 
+# install openresty http://openresty.org/en/linux-packages.html
+RUN apt-get -y install wget gnupg ca-certificates
+RUN wget -O - https://openresty.org/package/pubkey.gpg | apt-key add -
+RUN echo "deb http://openresty.org/package/ubuntu bionic main" |  tee /etc/apt/sources.list.d/openresty.list
+RUN apt-get update
+RUN apt-get -y install openresty
+
 RUN cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bak
 RUN cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
 
 CMD mkdir /grilledfish
+#copy the config files for nginx
 COPY ./tools/ /grilledfish/tools/
 COPY ./grilledfish/ /grilledfish/grilledfish/
 COPY ./docker/nginx/nginx.conf /etc/nginx/nginx.conf
@@ -49,6 +57,11 @@ COPY ./docker/nginx/nginx-selfsigned.crt /etc/ssl/certs/nginx-selfsigned.crt
 COPY ./docker/nginx/self-signed.conf /etc/nginx/snippets/self-signed.conf
 COPY ./start_script.sh /grilledfish/start_script.sh
 
+# copy the config files for openresty
+CMD mkdir /usr/local/openresty/nginx/conf/snippets
+RUN cp /usr/local/openresty/nginx/conf/nginx.conf /usr/local/openresty/nginx/conf/nginx.conf.bak
+COPY $grilledfish_path/docker/openresty/nginx.conf /usr/local/openresty/nginx/conf/nginx.conf
+COPY $grilledfish_path/docker/nginx/self-signed.conf /usr/local/openresty/nginx/conf/snippets/self-signed.conf
 
 EXPOSE 80
 EXPOSE 443
