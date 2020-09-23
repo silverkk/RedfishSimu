@@ -1,1 +1,154 @@
-{"@odata.context":"/redfish/v1/$metadata#EthernetInterface.EthernetInterface","@odata.etag":"W/\"D9F1F6F7\"","@odata.id":"/redfish/v1/Managers/1/EthernetInterfaces/1/","@odata.type":"#EthernetInterface.v1_4_0.EthernetInterface","Id":"1","AutoNeg":true,"Description":"Configuration of this Manager Network Interface","FQDN":"ILO6CU85057YK.","FullDuplex":true,"HostName":"ILO6CU85057YK","IPv4Addresses":[{"Address":"10.28.64.100","AddressOrigin":"Static","Gateway":"10.28.64.1","SubnetMask":"255.255.252.0"}],"IPv6AddressPolicyTable":[{"Label":null,"Precedence":35,"Prefix":"::ffff:0:0/96"}],"IPv6Addresses":[{"Address":"FE80::5680:28FF:FE51:E364","AddressOrigin":"SLAAC","AddressState":"Preferred","PrefixLength":64}],"IPv6DefaultGateway":"::","IPv6StaticAddresses":[{"Address":"::","PrefixLength":null},{"Address":"::","PrefixLength":null},{"Address":"::","PrefixLength":null},{"Address":"::","PrefixLength":null}],"MACAddress":"54:80:28:51:E3:64","MaxIPv6StaticAddresses":4,"Name":"Manager Dedicated Network Interface","Oem":{"Hpe":{"@odata.context":"/redfish/v1/$metadata#HpeiLOEthernetNetworkInterface.HpeiLOEthernetNetworkInterface","@odata.type":"#HpeiLOEthernetNetworkInterface.v2_0_1.HpeiLOEthernetNetworkInterface","ConfigurationSettings":"Current","DHCPv4":{"ClientIdType":"Default","Enabled":false,"UseDNSServers":false,"UseDomainName":false,"UseGateway":false,"UseNTPServers":false,"UseStaticRoutes":false,"UseWINSServers":false},"DHCPv6":{"StatefulModeEnabled":true,"StatelessModeEnabled":true,"UseDNSServers":true,"UseDomainName":true,"UseNTPServers":false,"UseRapidCommit":false},"DomainName":"","HostName":"ILO6CU85057YK","IPv4":{"DDNSRegistration":true,"DNSServers":["0.0.0.0","0.0.0.0","0.0.0.0"],"StaticRoutes":[{"Destination":"0.0.0.0","Gateway":"0.0.0.0","SubnetMask":"0.0.0.0"},{"Destination":"0.0.0.0","Gateway":"0.0.0.0","SubnetMask":"0.0.0.0"},{"Destination":"0.0.0.0","Gateway":"0.0.0.0","SubnetMask":"0.0.0.0"}],"WINSRegistration":true,"WINSServers":["0.0.0.0","0.0.0.0"]},"IPv6":{"DDNSRegistration":true,"DNSServers":["::","::","::"],"SLAACEnabled":true,"StaticDefaultGateway":"::","StaticRoutes":[{"Destination":"::","Gateway":"::","PrefixLength":null,"Status":"Unknown"},{"Destination":"::","Gateway":"::","PrefixLength":null,"Status":"Unknown"},{"Destination":"::","Gateway":"::","PrefixLength":null,"Status":"Unknown"}]},"InterfaceType":"Dedicated","NICEnabled":true,"NICSupportsIPv6":true,"PingGatewayOnStartup":true}},"PermanentMACAddress":"54:80:28:51:E3:64","SpeedMbps":100,"Status":{"Health":"OK","State":"Enabled"}}
+{
+    "@odata.context": "/redfish/v1/$metadata#EthernetInterface.EthernetInterface",
+    "@odata.etag": "W/\"D9F1F6F7\"",
+    "@odata.id": "/redfish/v1/Managers/1/EthernetInterfaces/1/",
+    "@odata.type": "#EthernetInterface.v1_4_0.EthernetInterface",
+    "Id": "1",
+    "AutoNeg": true,
+    "Description": "Configuration of this Manager Network Interface",
+    "FQDN": "ILO6CU85057YK.",
+    "FullDuplex": true,
+    "HostName": "ILO6CU85057YK",
+    "IPv4Addresses": [
+        {
+            "Address": "10.28.64.100",
+            "AddressOrigin": "Static",
+            "Gateway": "10.28.64.1",
+            "SubnetMask": "255.255.252.0"
+        }
+    ],
+    "IPv6AddressPolicyTable": [
+        {
+            "Label": null,
+            "Precedence": 35,
+            "Prefix": "::ffff:0:0/96"
+        }
+    ],
+    "IPv6Addresses": [
+        {
+            "Address": "FE80::5680:28FF:FE51:E364",
+            "AddressOrigin": "SLAAC",
+            "AddressState": "Preferred",
+            "PrefixLength": 64
+        }
+    ],
+    "IPv6DefaultGateway": "::",
+    "IPv6StaticAddresses": [
+        {
+            "Address": "::",
+            "PrefixLength": null
+        },
+        {
+            "Address": "::",
+            "PrefixLength": null
+        },
+        {
+            "Address": "::",
+            "PrefixLength": null
+        },
+        {
+            "Address": "::",
+            "PrefixLength": null
+        }
+    ],
+    "MACAddress": "54:80:28:51:E3:64",
+    "MaxIPv6StaticAddresses": 4,
+    "Name": "Manager Dedicated Network Interface",
+    "Oem": {
+        "Hpe": {
+            "@odata.context": "/redfish/v1/$metadata#HpeiLOEthernetNetworkInterface.HpeiLOEthernetNetworkInterface",
+            "@odata.type": "#HpeiLOEthernetNetworkInterface.v2_0_1.HpeiLOEthernetNetworkInterface",
+            "ConfigurationSettings": "Current",
+            "DHCPv4": {
+                "ClientIdType": "Default",
+                "Enabled": false,
+                "UseDNSServers": false,
+                "UseDomainName": false,
+                "UseGateway": false,
+                "UseNTPServers": false,
+                "UseStaticRoutes": false,
+                "UseWINSServers": false
+            },
+            "DHCPv6": {
+                "StatefulModeEnabled": true,
+                "StatelessModeEnabled": true,
+                "UseDNSServers": true,
+                "UseDomainName": true,
+                "UseNTPServers": false,
+                "UseRapidCommit": false
+            },
+            "DomainName": "",
+            "HostName": "ILO6CU85057YK",
+            "IPv4": {
+                "DDNSRegistration": true,
+                "DNSServers": [
+                    "0.0.0.0",
+                    "0.0.0.0",
+                    "0.0.0.0"
+                ],
+                "StaticRoutes": [
+                    {
+                        "Destination": "0.0.0.0",
+                        "Gateway": "0.0.0.0",
+                        "SubnetMask": "0.0.0.0"
+                    },
+                    {
+                        "Destination": "0.0.0.0",
+                        "Gateway": "0.0.0.0",
+                        "SubnetMask": "0.0.0.0"
+                    },
+                    {
+                        "Destination": "0.0.0.0",
+                        "Gateway": "0.0.0.0",
+                        "SubnetMask": "0.0.0.0"
+                    }
+                ],
+                "WINSRegistration": true,
+                "WINSServers": [
+                    "0.0.0.0",
+                    "0.0.0.0"
+                ]
+            },
+            "IPv6": {
+                "DDNSRegistration": true,
+                "DNSServers": [
+                    "::",
+                    "::",
+                    "::"
+                ],
+                "SLAACEnabled": true,
+                "StaticDefaultGateway": "::",
+                "StaticRoutes": [
+                    {
+                        "Destination": "::",
+                        "Gateway": "::",
+                        "PrefixLength": null,
+                        "Status": "Unknown"
+                    },
+                    {
+                        "Destination": "::",
+                        "Gateway": "::",
+                        "PrefixLength": null,
+                        "Status": "Unknown"
+                    },
+                    {
+                        "Destination": "::",
+                        "Gateway": "::",
+                        "PrefixLength": null,
+                        "Status": "Unknown"
+                    }
+                ]
+            },
+            "InterfaceType": "Dedicated",
+            "NICEnabled": true,
+            "NICSupportsIPv6": true,
+            "PingGatewayOnStartup": true
+        }
+    },
+    "PermanentMACAddress": "54:80:28:51:E3:64",
+    "SpeedMbps": 100,
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.MgtPort }}",
+        "State": "Enabled"
+    }
+}

@@ -1,1 +1,19 @@
-{"@odata.context":"/redfish/v1/$metadata#EthernetInterface.EthernetInterface","@odata.etag":"W/\"A26B4C6A\"","@odata.id":"/redfish/v1/Systems/1/EthernetInterfaces/3/","@odata.type":"#EthernetInterface.v1_4_0.EthernetInterface","Id":"3","FullDuplex":true,"IPv4Addresses":[],"IPv6Addresses":[],"LinkStatus":"LinkUp","MACAddress":"54:80:28:51:e3:66","Name":"","SpeedMbps":null,"Status":{"Health":"OK","State":"Enabled"},"UefiDevicePath":"PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)"}
+{
+    "@odata.context": "/redfish/v1/$metadata#EthernetInterface.EthernetInterface",
+    "@odata.etag": "W/\"A26B4C6A\"",
+    "@odata.id": "/redfish/v1/Systems/1/EthernetInterfaces/3/",
+    "@odata.type": "#EthernetInterface.v1_4_0.EthernetInterface",
+    "Id": "3",
+    "FullDuplex": true,
+    "IPv4Addresses": [],
+    "IPv6Addresses": [],
+    "LinkStatus": "LinkUp",
+    "MACAddress": "54:80:28:51:e3:66",
+    "Name": "",
+    "SpeedMbps": null,
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.NIC }}",
+        "State": "Enabled"
+    },
+    "UefiDevicePath": "PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)"
+}

@@ -1,1 +1,30 @@
-{"@odata.context":"/redfish/v1/$metadata#HpeSmartStorageLogicalDrive.HpeSmartStorageLogicalDrive","@odata.etag":"W/\"89640726\"","@odata.id":"/redfish/v1/Systems/1/SmartStorage/ArrayControllers/0/LogicalDrives/1/","@odata.type":"#HpeSmartStorageLogicalDrive.v2_1_0.HpeSmartStorageLogicalDrive","Id":"1","AccelerationMethod":"ControllerCache","CapacityMiB":915660,"Description":"HPE Smart Storage Logical Drive View","InterfaceType":"SAS","LegacyBootPriority":"None","Links":{"DataDrives":{"@odata.id":"/redfish/v1/Systems/1/SmartStorage/ArrayControllers/0/LogicalDrives/1/DataDrives/"}},"LogicalDriveEncryption":false,"LogicalDriveName":"000C94DEPEYHC0DRHBN1MG BFC8","LogicalDriveNumber":1,"LogicalDriveType":"Data","MediaType":"SSD","Name":"HpeSmartStorageLogicalDrive","Raid":"10","Status":{"Health":"OK","State":"Enabled"},"StripeSizeBytes":262144,"VolumeUniqueIdentifier":"600508B1001C1CC0C6978E2751451BDF"}
+{
+    "@odata.context": "/redfish/v1/$metadata#HpeSmartStorageLogicalDrive.HpeSmartStorageLogicalDrive",
+    "@odata.etag": "W/\"89640726\"",
+    "@odata.id": "/redfish/v1/Systems/1/SmartStorage/ArrayControllers/0/LogicalDrives/1/",
+    "@odata.type": "#HpeSmartStorageLogicalDrive.v2_1_0.HpeSmartStorageLogicalDrive",
+    "Id": "1",
+    "AccelerationMethod": "ControllerCache",
+    "CapacityMiB": 915660,
+    "Description": "HPE Smart Storage Logical Drive View",
+    "InterfaceType": "SAS",
+    "LegacyBootPriority": "None",
+    "Links": {
+        "DataDrives": {
+            "@odata.id": "/redfish/v1/Systems/1/SmartStorage/ArrayControllers/0/LogicalDrives/1/DataDrives/"
+        }
+    },
+    "LogicalDriveEncryption": false,
+    "LogicalDriveName": "000C94DEPEYHC0DRHBN1MG BFC8",
+    "LogicalDriveNumber": 1,
+    "LogicalDriveType": "Data",
+    "MediaType": "SSD",
+    "Name": "HpeSmartStorageLogicalDrive",
+    "Raid": "10",
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.Volume }}",
+        "State": "Enabled"
+    },
+    "StripeSizeBytes": 262144,
+    "VolumeUniqueIdentifier": "600508B1001C1CC0C6978E2751451BDF"
+}

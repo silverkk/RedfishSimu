@@ -2,7 +2,7 @@
     "ipNumber": 29,
     "startIP": "192.168.1.1",
     "perf": {
-        "enablePerfStatistic": false,
+        "enablePerfStatistic": true,
         "granularity":10000,
         "enableCache":true
     },
@@ -144,7 +144,11 @@
                 "Processor": "Warning",
                 "raid": "Warning",
                 "Temperature": "Warning",
-                "Fan": "Warning"
+                "Fan": "Warning",
+                "Battery": "Warning",
+                "MgtPort": "Warning",
+                "Firmware": "Warning",
+                "Volume": "Warning"
             },
             "sel": {
                 "paging": false,
