@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#Session.Session","@odata.id":"/redfish/v1/Sessions/320","@odata.type":"#Session.v1_0_2.Session","Description":"User Session","Id":"320","Name":"User Session","Password":null,"UserName":"dcmscan"}
