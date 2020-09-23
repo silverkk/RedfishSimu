@@ -1,0 +1,1 @@
+{ "@odata.type": "#ManagerAccount.v1_0_2.ManagerAccount", "Id": "4", "Name": "User Account", "Description": "User Account", "Enabled": true, "Password": null, "UserName": "dcmscan", "RoleId": "Administrator", "@odata.context": "\/redfish\/v1\/$metadata#ManagerAccount.ManagerAccount", "@odata.id": "\/redfish\/v1\/AccountService\/Accounts\/4" }
