@@ -1,1 +1,12 @@
-{"@odata.context":"/redfish/v1/$metadata#MemoryCollection.MemoryCollection","@odata.id":"/redfish/v1/Systems/BQWT82100140/Memory","@odata.type":"#MemoryCollection.MemoryCollection","Name":"MemoryCollection","Members@odata.count":1,"Members":[{"@odata.id":"/redfish/v1/Systems/BQWT82100140/Memory/Memory1"}]}
+{
+    "@odata.context": "/redfish/v1/$metadata#MemoryCollection.MemoryCollection",
+    "@odata.id": "/redfish/v1/Systems/BQWT82100140/Memory",
+    "@odata.type": "#MemoryCollection.MemoryCollection",
+    "Name": "MemoryCollection",
+    "Members@odata.count": 1,
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/BQWT82100140/Memory/Memory1"
+        }
+    ]
+}

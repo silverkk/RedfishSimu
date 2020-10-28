@@ -1,1 +1,47 @@
-{"@odata.context":"/redfish/v1/$metadata#Memory.Memory","@odata.id":"/redfish/v1/Systems/BQWT82100140/Memory/Memory1","@odata.type":"#Memory.v1_7_1.Memory","Id":"Memory1","Name":"Memory 1","Description":"System Memory","MemoryType":"DRAM","MemoryDeviceType":"DDR4","BaseModuleType":"RDIMM","CapacityMiB":16384,"DataWidthBits":64,"BusWidthBits":72,"Manufacturer":"Hynix","SerialNumber":"90392B7C","PartNumber":"HMA42GR7MFR4N-TF    ","AllowedSpeedsMHz":[2133],"MemoryMedia":["DRAM"],"RankCount":2,"DeviceLocator":"CPU1_DIMM_D1","MemoryLocation":{"Channel":3,"MemoryController":1,"Slot":1,"Socket":6},"ErrorCorrection":"MultiBitECC","OperatingSpeedMhz":2133,"Metrics":{"@odata.id":"/redfish/v1/Systems/BQWT82100140/Memory/Memory1/MemoryMetrics"},"Oem":{"Intel_RackScale":{"@odata.type":"#Intel.Oem.Memory","VoltageVolt":1.2}},"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"}}
+{
+    "@odata.context": "/redfish/v1/$metadata#Memory.Memory",
+    "@odata.id": "/redfish/v1/Systems/BQWT82100140/Memory/Memory1",
+    "@odata.type": "#Memory.v1_7_1.Memory",
+    "Id": "Memory1",
+    "Name": "Memory 1",
+    "Description": "System Memory",
+    "MemoryType": "DRAM",
+    "MemoryDeviceType": "DDR4",
+    "BaseModuleType": "RDIMM",
+    "CapacityMiB": 16384,
+    "DataWidthBits": 64,
+    "BusWidthBits": 72,
+    "Manufacturer": "Hynix",
+    "SerialNumber": "90392B7C",
+    "PartNumber": "HMA42GR7MFR4N-TF    ",
+    "AllowedSpeedsMHz": [
+        2133
+    ],
+    "MemoryMedia": [
+        "DRAM"
+    ],
+    "RankCount": 2,
+    "DeviceLocator": "CPU1_DIMM_D1",
+    "MemoryLocation": {
+        "Channel": 3,
+        "MemoryController": 1,
+        "Slot": 1,
+        "Socket": 6
+    },
+    "ErrorCorrection": "MultiBitECC",
+    "OperatingSpeedMhz": 2133,
+    "Metrics": {
+        "@odata.id": "/redfish/v1/Systems/BQWT82100140/Memory/Memory1/MemoryMetrics"
+    },
+    "Oem": {
+        "Intel_RackScale": {
+            "@odata.type": "#Intel.Oem.Memory",
+            "VoltageVolt": 1.2
+        }
+    },
+    "Status": {
+        "State": "Enabled",
+        "Health": "{{ machineInfo.healthInfo.memory }}",
+        "HealthRollup": "OK"
+    }
+}

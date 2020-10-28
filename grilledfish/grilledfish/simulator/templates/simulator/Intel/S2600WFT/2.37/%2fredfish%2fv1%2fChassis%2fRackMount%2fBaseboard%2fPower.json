@@ -1,1 +1,163 @@
-{"@odata.context":"/redfish/v1/$metadata#Power.Power","@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Power","@odata.type":"#Power.v1_5_3.Power","Id":"Power","Name":"Power","PowerControl":[{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Power#/PowerControl/0","MemberId":"0","Name":"Server Power Control","PowerConsumedWatts":184,"PowerMetrics":{"IntervalInMin":11566,"MinConsumedWatts":0,"MaxConsumedWatts":344,"AverageConsumedWatts":70},"PowerLimit":{"LimitInWatts":null,"LimitException":null,"CorrectionInMs":null},"RelatedItem":[{"@odata.id":"/redfish/v1/Systems/BQWT82100140"},{"@odata.id":"/redfish/v1/Chassis/RackMount"}]}],"Voltages":[{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Power#/Voltages/0","MemberId":"0","Name":"BB +12.0V","SensorNumber":208,"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"ReadingVolts":12.211999893188477,"UpperThresholdNonCritical":13.256999969482422,"UpperThresholdCritical":13.642000198364258,"LowerThresholdNonCritical":11.001999855041504,"LowerThresholdCritical":10.671999931335449,"MinReadingRange":-0.21799999475479126,"MaxReadingRange":13.807000160217285,"PhysicalContext":"SystemBoard","RelatedItem":[{"@odata.id":"/redfish/v1/Systems/BQWT82100140"},{"@odata.id":"/redfish/v1/Chassis/RackMount"}]},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Power#/Voltages/1","MemberId":"1","Name":"BB +3.3V Vbat","SensorNumber":222,"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"ReadingVolts":2.9054999351501465,"LowerThresholdNonCritical":2.4505000114440918,"LowerThresholdCritical":2.125499963760376,"MinReadingRange":0.0065000001341104507,"MaxReadingRange":3.3215000629425049,"PhysicalContext":"SystemBoard","RelatedItem":[{"@odata.id":"/redfish/v1/Systems/BQWT82100140"},{"@odata.id":"/redfish/v1/Chassis/RackMount"}]}],"PowerSupplies":[{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Power#/PowerSupplies/0","MemberId":"0","Name":"PS2 Input Power","Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"Model":"DPS-750XB A","Manufacturer":"DELTA","FirmwareVersion":"02  ","SerialNumber":"E98791D1306029643","PartNumber":"E98791-007","RelatedItem":[{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Power"}],"Redundancy":[{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Power#/Redundancy/0"}]},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Power#/PowerSupplies/1","MemberId":"1","Name":"PS2 Input Power","Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"Model":"PSSF132202A","Manufacturer":"SOLUM CO., LTD.                  ","FirmwareVersion":"01A","SerialNumber":"CNS1322A4AJ350271","PartNumber":"H79286-008","RelatedItem":[{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Power"}],"Redundancy":[{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Power#/Redundancy/0"}]}],"Redundancy":[{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Power#/Redundancy/0","MemberId":"0","Name":"Baseboard Power Supply","RedundancySet":[{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Power#/PowerSupplies/0"},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Power#/PowerSupplies/1"}],"Mode":"N+m","Status":{"State":"Disabled","Health":"OK","HealthRollup":"OK"},"MinNumNeeded":1,"MaxNumSupported":2}]}
+{
+    "@odata.context": "/redfish/v1/$metadata#Power.Power",
+    "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Power",
+    "@odata.type": "#Power.v1_5_3.Power",
+    "Id": "Power",
+    "Name": "Power",
+    "PowerControl": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Power#/PowerControl/0",
+            "MemberId": "0",
+            "Name": "Server Power Control",
+            "PowerConsumedWatts": 184,
+            "PowerMetrics": {
+                "IntervalInMin": 11566,
+                "MinConsumedWatts": 0,
+                "MaxConsumedWatts": 344,
+                "AverageConsumedWatts": 70
+            },
+            "PowerLimit": {
+                "LimitInWatts": null,
+                "LimitException": null,
+                "CorrectionInMs": null
+            },
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/BQWT82100140"
+                },
+                {
+                    "@odata.id": "/redfish/v1/Chassis/RackMount"
+                }
+            ]
+        }
+    ],
+    "Voltages": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Power#/Voltages/0",
+            "MemberId": "0",
+            "Name": "BB +12.0V",
+            "SensorNumber": 208,
+            "Status": {
+                "State": "Enabled",
+                "Health": "{{ machineInfo.healthInfo.Voltage }}",
+                "HealthRollup": "OK"
+            },
+            "ReadingVolts": 12.211999893188477,
+            "UpperThresholdNonCritical": 13.256999969482422,
+            "UpperThresholdCritical": 13.642000198364258,
+            "LowerThresholdNonCritical": 11.001999855041504,
+            "LowerThresholdCritical": 10.671999931335449,
+            "MinReadingRange": -0.21799999475479126,
+            "MaxReadingRange": 13.807000160217285,
+            "PhysicalContext": "SystemBoard",
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/BQWT82100140"
+                },
+                {
+                    "@odata.id": "/redfish/v1/Chassis/RackMount"
+                }
+            ]
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Power#/Voltages/1",
+            "MemberId": "1",
+            "Name": "BB +3.3V Vbat",
+            "SensorNumber": 222,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingVolts": 2.9054999351501465,
+            "LowerThresholdNonCritical": 2.4505000114440918,
+            "LowerThresholdCritical": 2.125499963760376,
+            "MinReadingRange": 0.0065000001341104507,
+            "MaxReadingRange": 3.3215000629425049,
+            "PhysicalContext": "SystemBoard",
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Systems/BQWT82100140"
+                },
+                {
+                    "@odata.id": "/redfish/v1/Chassis/RackMount"
+                }
+            ]
+        }
+    ],
+    "PowerSupplies": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Power#/PowerSupplies/0",
+            "MemberId": "0",
+            "Name": "PS2 Input Power",
+            "Status": {
+                "State": "Enabled",
+                "Health": "{{ machineInfo.healthInfo.Power }}",
+                "HealthRollup": "OK"
+            },
+            "Model": "DPS-750XB A",
+            "Manufacturer": "DELTA",
+            "FirmwareVersion": "02  ",
+            "SerialNumber": "E98791D1306029643",
+            "PartNumber": "E98791-007",
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Power"
+                }
+            ],
+            "Redundancy": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Power#/Redundancy/0"
+                }
+            ]
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Power#/PowerSupplies/1",
+            "MemberId": "1",
+            "Name": "PS2 Input Power",
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "Model": "PSSF132202A",
+            "Manufacturer": "SOLUM CO., LTD.                  ",
+            "FirmwareVersion": "01A",
+            "SerialNumber": "CNS1322A4AJ350271",
+            "PartNumber": "H79286-008",
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Power"
+                }
+            ],
+            "Redundancy": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Power#/Redundancy/0"
+                }
+            ]
+        }
+    ],
+    "Redundancy": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Power#/Redundancy/0",
+            "MemberId": "0",
+            "Name": "Baseboard Power Supply",
+            "RedundancySet": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Power#/PowerSupplies/0"
+                },
+                {
+                    "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Power#/PowerSupplies/1"
+                }
+            ],
+            "Mode": "N+m",
+            "Status": {
+                "State": "Disabled",
+                "Health": "{{ machineInfo.healthInfo.Power }}",
+                "HealthRollup": "OK"
+            },
+            "MinNumNeeded": 1,
+            "MaxNumSupported": 2
+        }
+    ]
+}

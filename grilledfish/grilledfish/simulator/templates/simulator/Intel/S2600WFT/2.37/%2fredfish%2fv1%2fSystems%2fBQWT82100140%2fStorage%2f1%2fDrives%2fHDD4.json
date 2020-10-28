@@ -1,1 +1,26 @@
-{"Id":"HDD4","Name":"HDD 3 Status","@odata.context":"/redfish/v1/$metadata#Drive.Drive","@odata.id":"/redfish/v1/Systems/BQWT82100140/Storage/1/Drives/HDD4","@odata.type":"#Drive.v1_6_0.Drive","IndicatorLED":"Off","Manufacturer":null,"Model":null,"SerialNumber":null,"Revision":null,"Protocol":null,"MediaType":"HDD","PredictedMediaLifeLeftPercent":null,"PhysicalLocation":{"Placement":{"AdditionalInfo":"HSBP 1 Slot 4"}},"StatusIndicator":"OK","Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"}}
+{
+    "Id": "HDD4",
+    "Name": "HDD 3 Status",
+    "@odata.context": "/redfish/v1/$metadata#Drive.Drive",
+    "@odata.id": "/redfish/v1/Systems/BQWT82100140/Storage/1/Drives/HDD4",
+    "@odata.type": "#Drive.v1_6_0.Drive",
+    "IndicatorLED": "Off",
+    "Manufacturer": null,
+    "Model": null,
+    "SerialNumber": null,
+    "Revision": null,
+    "Protocol": null,
+    "MediaType": "HDD",
+    "PredictedMediaLifeLeftPercent": null,
+    "PhysicalLocation": {
+        "Placement": {
+            "AdditionalInfo": "HSBP 1 Slot 4"
+        }
+    },
+    "StatusIndicator": "OK",
+    "Status": {
+        "State": "Enabled",
+        "Health": "{{ machineInfo.healthInfo.storage }}",
+        "HealthRollup": "OK"
+    }
+}

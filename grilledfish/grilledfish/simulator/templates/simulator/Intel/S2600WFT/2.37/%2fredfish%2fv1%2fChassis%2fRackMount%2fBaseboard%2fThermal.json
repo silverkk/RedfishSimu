@@ -1,1 +1,541 @@
-{"@odata.context":"/redfish/v1/$metadata#Thermal.Thermal","@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal","@odata.type":"#Thermal.v1_5_2.Thermal","Id":"Thermal","Name":"Thermal","Temperatures":[{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/0","MemberId":"0","Name":"BB Lft Rear Temp","SensorNumber":20,"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":31,"UpperThresholdNonCritical":110,"UpperThresholdCritical":115,"LowerThresholdNonCritical":5,"LowerThresholdCritical":0},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/1","MemberId":"1","Name":"Riser 3 Temp","SensorNumber":23,"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":27,"UpperThresholdNonCritical":75,"UpperThresholdCritical":80,"LowerThresholdNonCritical":5,"LowerThresholdCritical":0},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/2","MemberId":"2","Name":"BB P1 VR Temp","SensorNumber":32,"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":42,"UpperThresholdNonCritical":110,"UpperThresholdCritical":115,"LowerThresholdNonCritical":5,"LowerThresholdCritical":0},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/3","MemberId":"3","Name":"Front Panel Temp","SensorNumber":33,"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":24,"UpperThresholdNonCritical":50,"UpperThresholdCritical":55,"UpperThresholdFatal":60,"LowerThresholdNonCritical":5,"LowerThresholdCritical":0},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/4","MemberId":"4","Name":"SSB Temp","SensorNumber":34,"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":46,"UpperThresholdNonCritical":98,"UpperThresholdCritical":103,"LowerThresholdNonCritical":5,"LowerThresholdCritical":0},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/5","MemberId":"5","Name":"BB P2 VR Temp","SensorNumber":35,"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":34,"UpperThresholdNonCritical":110,"UpperThresholdCritical":115,"LowerThresholdNonCritical":5,"LowerThresholdCritical":0},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/6","MemberId":"6","Name":"BB BMC Temp","SensorNumber":36,"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":36,"UpperThresholdNonCritical":110,"UpperThresholdCritical":115,"LowerThresholdNonCritical":5,"LowerThresholdCritical":0},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/7","MemberId":"7","Name":"BB Rt Rear Temp","SensorNumber":37,"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":32,"UpperThresholdNonCritical":110,"UpperThresholdCritical":115,"LowerThresholdNonCritical":5,"LowerThresholdCritical":0},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/8","MemberId":"8","Name":"Riser 1 Temp","SensorNumber":39,"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":26,"UpperThresholdNonCritical":75,"UpperThresholdCritical":80,"LowerThresholdNonCritical":5,"LowerThresholdCritical":0},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/9","MemberId":"9","Name":"HSBP 1 Temp","SensorNumber":41,"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":27,"UpperThresholdNonCritical":100,"UpperThresholdCritical":105,"LowerThresholdNonCritical":5,"LowerThresholdCritical":0},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/10","MemberId":"10","Name":"Riser 2 Temp","SensorNumber":44,"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":25,"UpperThresholdNonCritical":75,"UpperThresholdCritical":80,"LowerThresholdNonCritical":5,"LowerThresholdCritical":0},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/11","MemberId":"11","Name":"Exit Air Temp","SensorNumber":46,"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":39,"UpperThresholdNonCritical":80,"UpperThresholdCritical":85,"LowerThresholdNonCritical":5,"LowerThresholdCritical":0},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/12","MemberId":"12","Name":"LAN NIC Temp","SensorNumber":47,"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":44,"UpperThresholdNonCritical":115,"UpperThresholdCritical":120,"LowerThresholdNonCritical":5,"LowerThresholdCritical":0},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/13","MemberId":"13","Name":"PS2 Temperature","SensorNumber":93,"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":36,"UpperThresholdNonCritical":62,"UpperThresholdCritical":65},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/14","MemberId":"14","Name":"P1 DTS Therm Mgn","SensorNumber":131,"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":-20,"UpperThresholdNonCritical":10,"UpperThresholdCritical":15},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/15","MemberId":"15","Name":"P2 DTS Therm Mgn","SensorNumber":132,"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":-26,"UpperThresholdNonCritical":10,"UpperThresholdCritical":15},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/16","MemberId":"16","Name":"P1 Temperature","SensorNumber":133,"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":66},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/17","MemberId":"17","Name":"P2 Temperature","SensorNumber":134,"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":60},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/18","MemberId":"18","Name":"NVMe 1 Therm Mgn","SensorNumber":145,"Status":{"State":"Disabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":0,"UpperThresholdCritical":0,"MinReadingRangeTemp":-126},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/19","MemberId":"19","Name":"DIMM Thrm Mrgn 1","SensorNumber":176,"Status":{"State":"Disabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":0,"UpperThresholdNonCritical":5,"UpperThresholdCritical":10},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/20","MemberId":"20","Name":"DIMM Thrm Mrgn 2","SensorNumber":177,"Status":{"State":"Disabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":0,"UpperThresholdNonCritical":5,"UpperThresholdCritical":10},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/21","MemberId":"21","Name":"DIMM Thrm Mrgn 3","SensorNumber":178,"Status":{"State":"Disabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":0,"UpperThresholdNonCritical":5,"UpperThresholdCritical":10},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/22","MemberId":"22","Name":"DIMM Thrm Mrgn 4","SensorNumber":179,"Status":{"State":"Disabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":0,"UpperThresholdNonCritical":5,"UpperThresholdCritical":10},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/23","MemberId":"23","Name":"Agg Therm Mgn 1","SensorNumber":200,"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":-15},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/24","MemberId":"24","Name":"Agg Therm Mgn 2","SensorNumber":201,"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"ReadingCelsius":-29}],"Fans":[{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/0","MemberId":"0","Name":"System Fan 1","Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"Reading":5247,"ReadingUnits":"RPM","LowerThresholdNonCritical":1961,"LowerThresholdCritical":1696,"MinReadingRange":0,"MaxReadingRange":13515,"Redundancy":[{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Redundancy/0"}]},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/1","MemberId":"1","Name":"System Fan 2","Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"Reading":5247,"ReadingUnits":"RPM","LowerThresholdNonCritical":1961,"LowerThresholdCritical":1696,"MinReadingRange":0,"MaxReadingRange":13515,"Redundancy":[{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Redundancy/0"}]},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/2","MemberId":"2","Name":"System Fan 3","Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"Reading":5247,"ReadingUnits":"RPM","LowerThresholdNonCritical":1961,"LowerThresholdCritical":1696,"MinReadingRange":0,"MaxReadingRange":13515,"Redundancy":[{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Redundancy/0"}]},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/3","MemberId":"3","Name":"System Fan 4","Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"Reading":5194,"ReadingUnits":"RPM","LowerThresholdNonCritical":1961,"LowerThresholdCritical":1696,"MinReadingRange":0,"MaxReadingRange":13515,"Redundancy":[{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Redundancy/0"}]},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/4","MemberId":"4","Name":"System Fan 5","Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"Reading":5194,"ReadingUnits":"RPM","LowerThresholdNonCritical":1961,"LowerThresholdCritical":1696,"MinReadingRange":0,"MaxReadingRange":13515,"Redundancy":[{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Redundancy/0"}]},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/5","MemberId":"5","Name":"System Fan 6","Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"Reading":5194,"ReadingUnits":"RPM","LowerThresholdNonCritical":1961,"LowerThresholdCritical":1696,"MinReadingRange":0,"MaxReadingRange":13515,"Redundancy":[{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Redundancy/0"}]}],"Redundancy":[{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Redundancy/0","MemberId":"0","Name":"BaseBoard System Fans","RedundancySet":[{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/0"},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/1"},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/2"},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/3"},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/4"},{"@odata.id":"/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/5"}],"Mode":"N+m","Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"MinNumNeeded":5,"MaxNumSupported":6}]}
+{
+    "@odata.context": "/redfish/v1/$metadata#Thermal.Thermal",
+    "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal",
+    "@odata.type": "#Thermal.v1_5_2.Thermal",
+    "Id": "Thermal",
+    "Name": "Thermal",
+    "Temperatures": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/0",
+            "MemberId": "0",
+            "Name": "BB Lft Rear Temp",
+            "SensorNumber": 20,
+            "Status": {
+                "State": "Enabled",
+                "Health": "{{ machineInfo.healthInfo.Temperature }}",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": 31,
+            "UpperThresholdNonCritical": 110,
+            "UpperThresholdCritical": 115,
+            "LowerThresholdNonCritical": 5,
+            "LowerThresholdCritical": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/1",
+            "MemberId": "1",
+            "Name": "Riser 3 Temp",
+            "SensorNumber": 23,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": 27,
+            "UpperThresholdNonCritical": 75,
+            "UpperThresholdCritical": 80,
+            "LowerThresholdNonCritical": 5,
+            "LowerThresholdCritical": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/2",
+            "MemberId": "2",
+            "Name": "BB P1 VR Temp",
+            "SensorNumber": 32,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": 42,
+            "UpperThresholdNonCritical": 110,
+            "UpperThresholdCritical": 115,
+            "LowerThresholdNonCritical": 5,
+            "LowerThresholdCritical": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/3",
+            "MemberId": "3",
+            "Name": "Front Panel Temp",
+            "SensorNumber": 33,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": 24,
+            "UpperThresholdNonCritical": 50,
+            "UpperThresholdCritical": 55,
+            "UpperThresholdFatal": 60,
+            "LowerThresholdNonCritical": 5,
+            "LowerThresholdCritical": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/4",
+            "MemberId": "4",
+            "Name": "SSB Temp",
+            "SensorNumber": 34,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": 46,
+            "UpperThresholdNonCritical": 98,
+            "UpperThresholdCritical": 103,
+            "LowerThresholdNonCritical": 5,
+            "LowerThresholdCritical": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/5",
+            "MemberId": "5",
+            "Name": "BB P2 VR Temp",
+            "SensorNumber": 35,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": 34,
+            "UpperThresholdNonCritical": 110,
+            "UpperThresholdCritical": 115,
+            "LowerThresholdNonCritical": 5,
+            "LowerThresholdCritical": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/6",
+            "MemberId": "6",
+            "Name": "BB BMC Temp",
+            "SensorNumber": 36,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": 36,
+            "UpperThresholdNonCritical": 110,
+            "UpperThresholdCritical": 115,
+            "LowerThresholdNonCritical": 5,
+            "LowerThresholdCritical": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/7",
+            "MemberId": "7",
+            "Name": "BB Rt Rear Temp",
+            "SensorNumber": 37,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": 32,
+            "UpperThresholdNonCritical": 110,
+            "UpperThresholdCritical": 115,
+            "LowerThresholdNonCritical": 5,
+            "LowerThresholdCritical": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/8",
+            "MemberId": "8",
+            "Name": "Riser 1 Temp",
+            "SensorNumber": 39,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": 26,
+            "UpperThresholdNonCritical": 75,
+            "UpperThresholdCritical": 80,
+            "LowerThresholdNonCritical": 5,
+            "LowerThresholdCritical": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/9",
+            "MemberId": "9",
+            "Name": "HSBP 1 Temp",
+            "SensorNumber": 41,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": 27,
+            "UpperThresholdNonCritical": 100,
+            "UpperThresholdCritical": 105,
+            "LowerThresholdNonCritical": 5,
+            "LowerThresholdCritical": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/10",
+            "MemberId": "10",
+            "Name": "Riser 2 Temp",
+            "SensorNumber": 44,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": 25,
+            "UpperThresholdNonCritical": 75,
+            "UpperThresholdCritical": 80,
+            "LowerThresholdNonCritical": 5,
+            "LowerThresholdCritical": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/11",
+            "MemberId": "11",
+            "Name": "Exit Air Temp",
+            "SensorNumber": 46,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": 39,
+            "UpperThresholdNonCritical": 80,
+            "UpperThresholdCritical": 85,
+            "LowerThresholdNonCritical": 5,
+            "LowerThresholdCritical": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/12",
+            "MemberId": "12",
+            "Name": "LAN NIC Temp",
+            "SensorNumber": 47,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": 44,
+            "UpperThresholdNonCritical": 115,
+            "UpperThresholdCritical": 120,
+            "LowerThresholdNonCritical": 5,
+            "LowerThresholdCritical": 0
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/13",
+            "MemberId": "13",
+            "Name": "PS2 Temperature",
+            "SensorNumber": 93,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": 36,
+            "UpperThresholdNonCritical": 62,
+            "UpperThresholdCritical": 65
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/14",
+            "MemberId": "14",
+            "Name": "P1 DTS Therm Mgn",
+            "SensorNumber": 131,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": -20,
+            "UpperThresholdNonCritical": 10,
+            "UpperThresholdCritical": 15
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/15",
+            "MemberId": "15",
+            "Name": "P2 DTS Therm Mgn",
+            "SensorNumber": 132,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": -26,
+            "UpperThresholdNonCritical": 10,
+            "UpperThresholdCritical": 15
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/16",
+            "MemberId": "16",
+            "Name": "P1 Temperature",
+            "SensorNumber": 133,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": 66
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/17",
+            "MemberId": "17",
+            "Name": "P2 Temperature",
+            "SensorNumber": 134,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": 60
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/18",
+            "MemberId": "18",
+            "Name": "NVMe 1 Therm Mgn",
+            "SensorNumber": 145,
+            "Status": {
+                "State": "Disabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": 0,
+            "UpperThresholdCritical": 0,
+            "MinReadingRangeTemp": -126
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/19",
+            "MemberId": "19",
+            "Name": "DIMM Thrm Mrgn 1",
+            "SensorNumber": 176,
+            "Status": {
+                "State": "Disabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": 0,
+            "UpperThresholdNonCritical": 5,
+            "UpperThresholdCritical": 10
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/20",
+            "MemberId": "20",
+            "Name": "DIMM Thrm Mrgn 2",
+            "SensorNumber": 177,
+            "Status": {
+                "State": "Disabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": 0,
+            "UpperThresholdNonCritical": 5,
+            "UpperThresholdCritical": 10
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/21",
+            "MemberId": "21",
+            "Name": "DIMM Thrm Mrgn 3",
+            "SensorNumber": 178,
+            "Status": {
+                "State": "Disabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": 0,
+            "UpperThresholdNonCritical": 5,
+            "UpperThresholdCritical": 10
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/22",
+            "MemberId": "22",
+            "Name": "DIMM Thrm Mrgn 4",
+            "SensorNumber": 179,
+            "Status": {
+                "State": "Disabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": 0,
+            "UpperThresholdNonCritical": 5,
+            "UpperThresholdCritical": 10
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/23",
+            "MemberId": "23",
+            "Name": "Agg Therm Mgn 1",
+            "SensorNumber": 200,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": -15
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Temperatures/24",
+            "MemberId": "24",
+            "Name": "Agg Therm Mgn 2",
+            "SensorNumber": 201,
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "ReadingCelsius": -29
+        }
+    ],
+    "Fans": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/0",
+            "MemberId": "0",
+            "Name": "System Fan 1",
+            "Status": {
+                "State": "Enabled",
+                "Health": "{{ machineInfo.healthInfo.Fan }}",
+                "HealthRollup": "OK"
+            },
+            "Reading": 5247,
+            "ReadingUnits": "RPM",
+            "LowerThresholdNonCritical": 1961,
+            "LowerThresholdCritical": 1696,
+            "MinReadingRange": 0,
+            "MaxReadingRange": 13515,
+            "Redundancy": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Redundancy/0"
+                }
+            ]
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/1",
+            "MemberId": "1",
+            "Name": "System Fan 2",
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "Reading": 5247,
+            "ReadingUnits": "RPM",
+            "LowerThresholdNonCritical": 1961,
+            "LowerThresholdCritical": 1696,
+            "MinReadingRange": 0,
+            "MaxReadingRange": 13515,
+            "Redundancy": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Redundancy/0"
+                }
+            ]
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/2",
+            "MemberId": "2",
+            "Name": "System Fan 3",
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "Reading": 5247,
+            "ReadingUnits": "RPM",
+            "LowerThresholdNonCritical": 1961,
+            "LowerThresholdCritical": 1696,
+            "MinReadingRange": 0,
+            "MaxReadingRange": 13515,
+            "Redundancy": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Redundancy/0"
+                }
+            ]
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/3",
+            "MemberId": "3",
+            "Name": "System Fan 4",
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "Reading": 5194,
+            "ReadingUnits": "RPM",
+            "LowerThresholdNonCritical": 1961,
+            "LowerThresholdCritical": 1696,
+            "MinReadingRange": 0,
+            "MaxReadingRange": 13515,
+            "Redundancy": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Redundancy/0"
+                }
+            ]
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/4",
+            "MemberId": "4",
+            "Name": "System Fan 5",
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "Reading": 5194,
+            "ReadingUnits": "RPM",
+            "LowerThresholdNonCritical": 1961,
+            "LowerThresholdCritical": 1696,
+            "MinReadingRange": 0,
+            "MaxReadingRange": 13515,
+            "Redundancy": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Redundancy/0"
+                }
+            ]
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/5",
+            "MemberId": "5",
+            "Name": "System Fan 6",
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "Reading": 5194,
+            "ReadingUnits": "RPM",
+            "LowerThresholdNonCritical": 1961,
+            "LowerThresholdCritical": 1696,
+            "MinReadingRange": 0,
+            "MaxReadingRange": 13515,
+            "Redundancy": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Redundancy/0"
+                }
+            ]
+        }
+    ],
+    "Redundancy": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Redundancy/0",
+            "MemberId": "0",
+            "Name": "BaseBoard System Fans",
+            "RedundancySet": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/0"
+                },
+                {
+                    "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/1"
+                },
+                {
+                    "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/2"
+                },
+                {
+                    "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/3"
+                },
+                {
+                    "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/4"
+                },
+                {
+                    "@odata.id": "/redfish/v1/Chassis/RackMount/Baseboard/Thermal#/Fans/5"
+                }
+            ],
+            "Mode": "N+m",
+            "Status": {
+                "State": "Enabled",
+                "Health": "OK",
+                "HealthRollup": "OK"
+            },
+            "MinNumNeeded": 5,
+            "MaxNumSupported": 6
+        }
+    ]
+}

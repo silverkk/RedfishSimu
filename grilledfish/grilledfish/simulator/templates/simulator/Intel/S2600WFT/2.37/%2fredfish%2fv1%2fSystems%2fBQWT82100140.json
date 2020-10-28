@@ -1,1 +1,143 @@
-{"@odata.context":"/redfish/v1/$metadata#ComputerSystem.ComputerSystem","@odata.id":"/redfish/v1/Systems/BQWT82100140","@odata.type":"#ComputerSystem.v1_7_0.ComputerSystem","Id":"BQWT82100140","SerialNumber":"BQWT82100140","Name":"S2600WFT","Model":"S2600WFT","Manufacturer":"Intel Corporation","PartNumber":"H97440-006","AssetTag":"....................","SKU":"R2208WFTZS","SystemType":"Physical","Description":"Computer system providing compute resources","UUID":"d1c32d80-082d-11e8-906e-00163566263e","Status":{"State":"Enabled","Health":"Warning","HealthRollup":"Warning"},"IndicatorLED":"Off","PowerState":"On","Boot":{"BootSourceOverrideEnabled":"Disabled","BootSourceOverrideTarget":"None","BootSourceOverrideMode":"Legacy","BootSourceOverrideTarget@Redfish.AllowableValues":["None","Pxe","Hdd","Cd","BiosSetup","UefiShell","Usb"]},"BiosVersion":"SE5C620.86B.02.01.0010.010620200716","ProcessorSummary":{"Count":2,"Model":"Central Processor","Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"}},"MemorySummary":{"TotalSystemMemoryGiB":16,"Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"}},"Bios":{"@odata.id":"/redfish/v1/Systems/BQWT82100140/Bios"},"Processors":{"@odata.id":"/redfish/v1/Systems/BQWT82100140/Processors"},"EthernetInterfaces":{"@odata.id":"/redfish/v1/Systems/BQWT82100140/EthernetInterfaces"},"LogServices":{"@odata.id":"/redfish/v1/Systems/BQWT82100140/LogServices"},"Memory":{"@odata.id":"/redfish/v1/Systems/BQWT82100140/Memory"},"Storage":{"@odata.id":"/redfish/v1/Systems/BQWT82100140/Storage"},"TrustedModules":[],"Links":{"Chassis":[{"@odata.id":"/redfish/v1/Chassis/RackMount"}],"ManagedBy":[{"@odata.id":"/redfish/v1/Managers/BMC"}]},"Oem":{"Intel_RackScale":{"@odata.type":"#Intel.Oem.ComputerSystem","ProcessorSockets":2,"MemorySockets":24,"UserModeEnabled":false,"TrustedExecutionTechnologyEnabled":false,"PciDevices":[{"VendorId":"0x8086","DeviceId":"0x37d2"}],"PCIeConnectionId":[],"Metrics":{"@odata.id":"/redfish/v1/Systems/BQWT82100140/Metrics"}}},"Actions":{"#ComputerSystem.Reset":{"target":"/redfish/v1/Systems/BQWT82100140/Actions/ComputerSystem.Reset","ResetType@Redfish.AllowableValues":["PushPowerButton","On","GracefulShutdown","ForceRestart","Nmi","ForceOn","ForceOff"]},"Oem":{"#Intel.Oem.ChangeTPMState":{"target":"/redfish/v1/Systems/BQWT82100140/Actions/Oem/Intel.Oem.ChangeTPMState","InterfaceType@Redfish.AllowableValues":["TPM1_2","TPM2_0"]},"#Intel.Oem.EraseOptaneDCPersistentMemory":{"target":"/redfish/v1/Systems/BQWT82100140/Actions/Oem/Intel.Oem.EraseOptaneDCPersistentMemory","ResetConfiguration@Redfish.AllowableValues":["TRUE","FALSE"],"EraseConfigurationKeys@Redfish.AllowableValues":["TRUE","FALSE"]},"#ComputerSystem.Oem.GenSystemDebugLog":{"target":"/redfish/v1/Systems/BQWT82100140/Actions/ComputerSystem.Oem.GenSystemDebugLog","Status":"Idle"}}}}
+{
+    "@odata.context": "/redfish/v1/$metadata#ComputerSystem.ComputerSystem",
+    "@odata.id": "/redfish/v1/Systems/BQWT82100140",
+    "@odata.type": "#ComputerSystem.v1_7_0.ComputerSystem",
+    "Id": "BQWT82100140",
+    "SerialNumber": "BQWT82100140",
+    "Name": "S2600WFT",
+    "Model": "S2600WFT",
+    "Manufacturer": "Intel Corporation",
+    "PartNumber": "H97440-006",
+    "AssetTag": "....................",
+    "SKU": "R2208WFTZS",
+    "SystemType": "Physical",
+    "Description": "Computer system providing compute resources",
+    "UUID": "d1c32d80-082d-11e8-906e-00163566263e",
+    "Status": {
+        "State": "Enabled",
+        "Health": "{{ machineInfo.healthInfo.system }}",
+        "HealthRollup": "Warning"
+    },
+    "IndicatorLED": "Off",
+    "PowerState": "On",
+    "Boot": {
+        "BootSourceOverrideEnabled": "Disabled",
+        "BootSourceOverrideTarget": "None",
+        "BootSourceOverrideMode": "Legacy",
+        "BootSourceOverrideTarget@Redfish.AllowableValues": [
+            "None",
+            "Pxe",
+            "Hdd",
+            "Cd",
+            "BiosSetup",
+            "UefiShell",
+            "Usb"
+        ]
+    },
+    "BiosVersion": "SE5C620.86B.02.01.0010.010620200716",
+    "ProcessorSummary": {
+        "Count": 2,
+        "Model": "Central Processor",
+        "Status": {
+            "State": "Enabled",
+            "Health": "OK",
+            "HealthRollup": "OK"
+        }
+    },
+    "MemorySummary": {
+        "TotalSystemMemoryGiB": 16,
+        "Status": {
+            "State": "Enabled",
+            "Health": "OK",
+            "HealthRollup": "OK"
+        }
+    },
+    "Bios": {
+        "@odata.id": "/redfish/v1/Systems/BQWT82100140/Bios"
+    },
+    "Processors": {
+        "@odata.id": "/redfish/v1/Systems/BQWT82100140/Processors"
+    },
+    "EthernetInterfaces": {
+        "@odata.id": "/redfish/v1/Systems/BQWT82100140/EthernetInterfaces"
+    },
+    "LogServices": {
+        "@odata.id": "/redfish/v1/Systems/BQWT82100140/LogServices"
+    },
+    "Memory": {
+        "@odata.id": "/redfish/v1/Systems/BQWT82100140/Memory"
+    },
+    "Storage": {
+        "@odata.id": "/redfish/v1/Systems/BQWT82100140/Storage"
+    },
+    "TrustedModules": [],
+    "Links": {
+        "Chassis": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/RackMount"
+            }
+        ],
+        "ManagedBy": [
+            {
+                "@odata.id": "/redfish/v1/Managers/BMC"
+            }
+        ]
+    },
+    "Oem": {
+        "Intel_RackScale": {
+            "@odata.type": "#Intel.Oem.ComputerSystem",
+            "ProcessorSockets": 2,
+            "MemorySockets": 24,
+            "UserModeEnabled": false,
+            "TrustedExecutionTechnologyEnabled": false,
+            "PciDevices": [
+                {
+                    "VendorId": "0x8086",
+                    "DeviceId": "0x37d2"
+                }
+            ],
+            "PCIeConnectionId": [],
+            "Metrics": {
+                "@odata.id": "/redfish/v1/Systems/BQWT82100140/Metrics"
+            }
+        }
+    },
+    "Actions": {
+        "#ComputerSystem.Reset": {
+            "target": "/redfish/v1/Systems/BQWT82100140/Actions/ComputerSystem.Reset",
+            "ResetType@Redfish.AllowableValues": [
+                "PushPowerButton",
+                "On",
+                "GracefulShutdown",
+                "ForceRestart",
+                "Nmi",
+                "ForceOn",
+                "ForceOff"
+            ]
+        },
+        "Oem": {
+            "#Intel.Oem.ChangeTPMState": {
+                "target": "/redfish/v1/Systems/BQWT82100140/Actions/Oem/Intel.Oem.ChangeTPMState",
+                "InterfaceType@Redfish.AllowableValues": [
+                    "TPM1_2",
+                    "TPM2_0"
+                ]
+            },
+            "#Intel.Oem.EraseOptaneDCPersistentMemory": {
+                "target": "/redfish/v1/Systems/BQWT82100140/Actions/Oem/Intel.Oem.EraseOptaneDCPersistentMemory",
+                "ResetConfiguration@Redfish.AllowableValues": [
+                    "TRUE",
+                    "FALSE"
+                ],
+                "EraseConfigurationKeys@Redfish.AllowableValues": [
+                    "TRUE",
+                    "FALSE"
+                ]
+            },
+            "#ComputerSystem.Oem.GenSystemDebugLog": {
+                "target": "/redfish/v1/Systems/BQWT82100140/Actions/ComputerSystem.Oem.GenSystemDebugLog",
+                "Status": "Idle"
+            }
+        }
+    }
+}

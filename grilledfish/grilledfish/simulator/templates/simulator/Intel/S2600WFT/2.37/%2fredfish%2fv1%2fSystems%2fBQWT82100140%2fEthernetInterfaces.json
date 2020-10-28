@@ -1,1 +1,16 @@
-{"@odata.context":"/redfish/v1/$metadata#EthernetInterfaceCollection.EthernetInterfaceCollection","@odata.type":"#EthernetInterfaceCollection.EthernetInterfaceCollection","@odata.id":"/redfish/v1/Systems/BQWT82100140/EthernetInterfaces","Name":"Computer System Ethernet Interface Collection","Description":"Collection of Ethernet Network Interfaces available on the Computer System","Members@odata.count":2,"Members":[{"@odata.id":"/redfish/v1/Systems/BQWT82100140/EthernetInterfaces/1"},{"@odata.id":"/redfish/v1/Systems/BQWT82100140/EthernetInterfaces/2"}]}
+{
+    "@odata.context": "/redfish/v1/$metadata#EthernetInterfaceCollection.EthernetInterfaceCollection",
+    "@odata.type": "#EthernetInterfaceCollection.EthernetInterfaceCollection",
+    "@odata.id": "/redfish/v1/Systems/BQWT82100140/EthernetInterfaces",
+    "Name": "Computer System Ethernet Interface Collection",
+    "Description": "Collection of Ethernet Network Interfaces available on the Computer System",
+    "Members@odata.count": 2,
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/BQWT82100140/EthernetInterfaces/1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/BQWT82100140/EthernetInterfaces/2"
+        }
+    ]
+}
