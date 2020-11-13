@@ -1,1 +1,33 @@
-{"@odata.context":"/redfish/v1/$metadata#Switch.Switch","@odata.type":"#Switch.Switch","@odata.id":"/redfish/v1/Chassis/1/Switch","Id":"Switch","Name":"Switch","Switches":[{"@odata.id":"/redfish/v1/Chassis/1/Switch/1","Name":"Switch A1","Location":"Switch A1","State":"Present"},{"@odata.id":"/redfish/v1/Chassis/1/Switch/2","Name":"Switch A2","Location":"Switch A2","State":"Absent"},{"@odata.id":"/redfish/v1/Chassis/1/Switch/3","Name":"Switch B1","Location":"Switch B1","State":"Absent"},{"@odata.id":"/redfish/v1/Chassis/1/Switch/4","Name":"Switch B2","Location":"Switch B2","State":"Absent"}]}
+{
+    "@odata.context": "/redfish/v1/$metadata#Switch.Switch",
+    "@odata.type": "#Switch.Switch",
+    "@odata.id": "/redfish/v1/Chassis/1/Switch",
+    "Id": "Switch",
+    "Name": "Switch",
+    "Switches": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Switch/1",
+            "Name": "Switch A1",
+            "Location": "Switch A1",
+            "State": "Present"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Switch/2",
+            "Name": "Switch A2",
+            "Location": "Switch A2",
+            "State": "Absent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Switch/3",
+            "Name": "Switch B1",
+            "Location": "Switch B1",
+            "State": "Absent"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/1/Switch/4",
+            "Name": "Switch B2",
+            "Location": "Switch B2",
+            "State": "Absent"
+        }
+    ]
+}
