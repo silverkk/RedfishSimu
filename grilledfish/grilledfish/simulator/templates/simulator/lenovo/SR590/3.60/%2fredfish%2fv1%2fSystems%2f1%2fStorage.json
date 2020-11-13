@@ -1,1 +1,9 @@
-{"Members":[],"@odata.type":"#StorageCollection.StorageCollection","@odata.id":"/redfish/v1/Systems/1/Storage","Name":"StorageCollection","@odata.etag":"\"a84d88edc19919846b8b8991e88596cb\"","Members@odata.count":0,"Description":"A collection of storage resource instances"}
+{
+    "Members": [],
+    "@odata.type": "#StorageCollection.StorageCollection",
+    "@odata.id": "/redfish/v1/Systems/1/Storage",
+    "Name": "StorageCollection",
+    "@odata.etag": "\"a84d88edc19919846b8b8991e88596cb\"",
+    "Members@odata.count": 0,
+    "Description": "A collection of storage resource instances"
+}

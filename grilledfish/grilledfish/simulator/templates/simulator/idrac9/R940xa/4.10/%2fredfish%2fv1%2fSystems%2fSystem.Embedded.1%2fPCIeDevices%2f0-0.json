@@ -9,7 +9,7 @@
     "AssetTag": null,
     "Description": "Sky Lake-E DMI3 Registers",
     "DeviceType": "SingleFunction",
-    "FirmwareVersion": "",
+    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.PcieDevice }}",
     "Id": "0-0",
     "Links": {
         "Chassis": [

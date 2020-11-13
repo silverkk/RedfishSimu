@@ -41,7 +41,7 @@
     "PowerSupplies": [
         {
             "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Power/PowerSupplies/PSU.Slot.1",
-            "FirmwareVersion": "00.24.6D",
+            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power }}",
             "LastPowerOutputWatts": null,
             "LineInputVoltage": 0,
             "LineInputVoltageType": "Unknown",

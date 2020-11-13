@@ -44,6 +44,17 @@
                     "HardPowerOff": "ForceOff"
                 },
                 "PowerState":"On"
+            },
+            "FirmwareVersion": {
+                "Backplane": "1.01",
+                "Battery": "1.01",
+                "Disk": "1.01",
+                "Manager": "1.01",
+                "NIC": "1.01",
+                "PcieDevice": "1.01",
+                "Power": "1.01",
+                "Storage" : "1.01",
+                "Switch" : "1.01"
             }
         },
         {

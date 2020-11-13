@@ -15,7 +15,7 @@ try:
    postgres_insert_query = """ INSERT INTO \"T_Event\" (\"severity\", \"entityName\", \"assetTag\", \"eventType\", \"description\",
    \"timestamp\", \"entityId\", \"notificationId\", \"customEventId\", \"currentValue\", \"condition\", \"threshold\") VALUES 
    (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
-   records_per_5_minutes = 45
+   records_per_5_minutes = 8493
 
    for x in range(records_per_5_minutes):
        now = datetime.now()

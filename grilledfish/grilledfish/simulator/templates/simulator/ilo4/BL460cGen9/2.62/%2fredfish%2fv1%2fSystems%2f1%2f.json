@@ -161,7 +161,7 @@
                 {
                     "Condition": "Failed",
                     "ErrorCode": 0,
-                    "FirmwareVersion": "1.1",
+                    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Battery }}",
                     "Index": 1,
                     "MaxCapWatts": 12,
                     "Model": "727261-B21",

@@ -18,7 +18,7 @@
         {
             "@odata.id": "/redfish/v1/Systems/1/Storages/RAIDStorage0#/StorageControllers/0",
             "AssetTag": "HBA-H460-M1",
-            "FirmwareVersion": "1.98.0",
+            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Storage }}",
             "Links": {
                 "@odata.count": 0
             },

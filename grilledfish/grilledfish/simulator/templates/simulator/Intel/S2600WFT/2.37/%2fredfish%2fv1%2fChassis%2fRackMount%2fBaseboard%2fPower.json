@@ -97,7 +97,7 @@
             },
             "Model": "DPS-750XB A",
             "Manufacturer": "DELTA",
-            "FirmwareVersion": "02  ",
+            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power }}",
             "SerialNumber": "E98791D1306029643",
             "PartNumber": "E98791-007",
             "RelatedItem": [

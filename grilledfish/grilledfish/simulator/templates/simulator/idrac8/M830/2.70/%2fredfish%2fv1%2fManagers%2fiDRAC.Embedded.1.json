@@ -151,7 +151,7 @@
     "EthernetInterfaces": {
         "@odata.id": "/redfish/v1/Managers/iDRAC.Embedded.1/EthernetInterfaces"
     },
-    "FirmwareVersion": "2.70.70.70",
+    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Manager }}",
     "GraphicalConsole": {
         "ConnectTypesSupported": [
             "KVMIP"

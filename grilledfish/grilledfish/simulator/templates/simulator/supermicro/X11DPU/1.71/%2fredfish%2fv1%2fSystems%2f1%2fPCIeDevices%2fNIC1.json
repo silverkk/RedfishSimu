@@ -1,1 +1,43 @@
-{"@odata.context":"/redfish/v1/$metadata#PCIeDevice.PCIeDevice","@odata.type":"#PCIeDevice.v1_0_0.PCIeDevice","@odata.id":"/redfish/v1/Systems/1/PCIeDevices/NIC1","Id":"1","Name":"","Description":"NIC device (riser:AOC-2UR68-i4G)","AssetTag":"","Manufacturer":"Supermicro","Model":"AOC-2UR68-i4G","SKU":"","SerialNumber":"OA197S028802","PartNumber":"AOC-2UR68-i4G","DeviceType":"NIC","FirmwareVersion":"","Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"Links":{"Chassis":[{"@odata.id":"/redfish/v1/Chassis/1/"}],"PCIeFunctions":[{"@odata.id":"/redfish/v1/Systems/1/PCIeDevices/NIC1/Functions/1"},{"@odata.id":"/redfish/v1/Systems/1/PCIeDevices/NIC1/Functions/2"},{"@odata.id":"/redfish/v1/Systems/1/PCIeDevices/NIC1/Functions/3"},{"@odata.id":"/redfish/v1/Systems/1/PCIeDevices/NIC1/Functions/4"}]},"Oem":{}}
+{
+    "@odata.context": "/redfish/v1/$metadata#PCIeDevice.PCIeDevice",
+    "@odata.type": "#PCIeDevice.v1_0_0.PCIeDevice",
+    "@odata.id": "/redfish/v1/Systems/1/PCIeDevices/NIC1",
+    "Id": "1",
+    "Name": "",
+    "Description": "NIC device (riser:AOC-2UR68-i4G)",
+    "AssetTag": "",
+    "Manufacturer": "Supermicro",
+    "Model": "AOC-2UR68-i4G",
+    "SKU": "",
+    "SerialNumber": "OA197S028802",
+    "PartNumber": "AOC-2UR68-i4G",
+    "DeviceType": "NIC",
+    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.PcieDevice }}",
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK",
+        "HealthRollup": "OK"
+    },
+    "Links": {
+        "Chassis": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/1/"
+            }
+        ],
+        "PCIeFunctions": [
+            {
+                "@odata.id": "/redfish/v1/Systems/1/PCIeDevices/NIC1/Functions/1"
+            },
+            {
+                "@odata.id": "/redfish/v1/Systems/1/PCIeDevices/NIC1/Functions/2"
+            },
+            {
+                "@odata.id": "/redfish/v1/Systems/1/PCIeDevices/NIC1/Functions/3"
+            },
+            {
+                "@odata.id": "/redfish/v1/Systems/1/PCIeDevices/NIC1/Functions/4"
+            }
+        ]
+    },
+    "Oem": {}
+}

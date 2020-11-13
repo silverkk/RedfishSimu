@@ -44,7 +44,7 @@
             "Assembly": {
                 "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Assembly"
             },
-            "FirmwareVersion": "00.1D.7D",
+            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power }}",
             "InputRanges": [
                 {
                     "InputType": "AC",

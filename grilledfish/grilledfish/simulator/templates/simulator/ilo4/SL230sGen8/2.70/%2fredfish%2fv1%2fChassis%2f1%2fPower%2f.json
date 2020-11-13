@@ -1,1 +1,145 @@
-{"@odata.context":"/redfish/v1/$metadata#Chassis/Members/1/Power$entity","@odata.id":"/redfish/v1/Chassis/1/Power/","@odata.type":"#Power.1.0.1.Power","Id":"Power","Name":"PowerMetrics","Oem":{"Hp":{"@odata.type":"#HpPowerMetricsExt.1.2.0.HpPowerMetricsExt","SNMPPowerThresholdAlert":{"DurationInMin":0,"ThresholdWatts":0,"Trigger":"Disabled"},"Type":"HpPowerMetricsExt.1.2.0","links":{"FastPowerMeter":{"href":"/redfish/v1/Chassis/1/Power/FastPowerMeter/"},"FederatedGroupCapping":{"href":"/redfish/v1/Chassis/1/Power/FederatedGroupCapping/"},"PowerMeter":{"href":"/redfish/v1/Chassis/1/Power/PowerMeter/"}}}},"PowerCapacityWatts":2400,"PowerConsumedWatts":40,"PowerControl":[{"PowerCapacityWatts":2400,"PowerConsumedWatts":40,"PowerMetrics":{"AverageConsumedWatts":39,"IntervalInMin":20,"MaxConsumedWatts":146,"MinConsumedWatts":38}}],"PowerMetrics":{"AverageConsumedWatts":39,"IntervalInMin":20,"MaxConsumedWatts":146,"MinConsumedWatts":38},"PowerSupplies":[{"FirmwareVersion":"5.03","LastPowerOutputWatts":20,"LineInputVoltage":0,"LineInputVoltageType":"Unknown","Model":"656364-B21                      ","Name":"HpServerPowerSupply","Oem":{"Hp":{"@odata.type":"#HpServerPowerSupply.1.0.0.HpServerPowerSupply","AveragePowerOutputWatts":20,"BayNumber":1,"HotplugCapable":true,"MaxPowerOutputWatts":73,"Mismatched":false,"PowerSupplyStatus":{"State":"Ok"},"Type":"HpServerPowerSupply.1.0.0","iPDUCapable":false}},"PowerCapacityWatts":1200,"PowerSupplyType":"AC","SerialNumber":"5BXRC0D4D2T08F  ","SparePartNumber":"","Status":{"Health":"OK","State":"Enabled"}},{"FirmwareVersion":"5.03","LastPowerOutputWatts":20,"LineInputVoltage":0,"LineInputVoltageType":"Unknown","Model":"656364-B21                      ","Name":"HpServerPowerSupply","Oem":{"Hp":{"@odata.type":"#HpServerPowerSupply.1.0.0.HpServerPowerSupply","AveragePowerOutputWatts":20,"BayNumber":2,"HotplugCapable":true,"MaxPowerOutputWatts":73,"Mismatched":false,"PowerSupplyStatus":{"State":"Ok"},"Type":"HpServerPowerSupply.1.0.0","iPDUCapable":false}},"PowerCapacityWatts":1200,"PowerSupplyType":"AC","SerialNumber":"5BXRC0D4D2T08C  ","SparePartNumber":"","Status":{"Health":"OK","State":"Enabled"}},{"Oem":{"Hp":{"@odata.type":"#HpServerPowerSupply.1.0.0.HpServerPowerSupply","BayNumber":3,"Type":"HpServerPowerSupply.1.0.0"}},"Status":{"Health":"Warning","State":"Absent"}},{"Oem":{"Hp":{"@odata.type":"#HpServerPowerSupply.1.0.0.HpServerPowerSupply","BayNumber":4,"Type":"HpServerPowerSupply.1.0.0"}},"Status":{"Health":"Warning","State":"Absent"}}],"Type":"PowerMetrics.0.11.0","links":{"self":{"href":"/redfish/v1/Chassis/1/Power/"}}}
+{
+    "@odata.context": "/redfish/v1/$metadata#Chassis/Members/1/Power$entity",
+    "@odata.id": "/redfish/v1/Chassis/1/Power/",
+    "@odata.type": "#Power.1.0.1.Power",
+    "Id": "Power",
+    "Name": "PowerMetrics",
+    "Oem": {
+        "Hp": {
+            "@odata.type": "#HpPowerMetricsExt.1.2.0.HpPowerMetricsExt",
+            "SNMPPowerThresholdAlert": {
+                "DurationInMin": 0,
+                "ThresholdWatts": 0,
+                "Trigger": "Disabled"
+            },
+            "Type": "HpPowerMetricsExt.1.2.0",
+            "links": {
+                "FastPowerMeter": {
+                    "href": "/redfish/v1/Chassis/1/Power/FastPowerMeter/"
+                },
+                "FederatedGroupCapping": {
+                    "href": "/redfish/v1/Chassis/1/Power/FederatedGroupCapping/"
+                },
+                "PowerMeter": {
+                    "href": "/redfish/v1/Chassis/1/Power/PowerMeter/"
+                }
+            }
+        }
+    },
+    "PowerCapacityWatts": 2400,
+    "PowerConsumedWatts": 40,
+    "PowerControl": [
+        {
+            "PowerCapacityWatts": 2400,
+            "PowerConsumedWatts": 40,
+            "PowerMetrics": {
+                "AverageConsumedWatts": 39,
+                "IntervalInMin": 20,
+                "MaxConsumedWatts": 146,
+                "MinConsumedWatts": 38
+            }
+        }
+    ],
+    "PowerMetrics": {
+        "AverageConsumedWatts": 39,
+        "IntervalInMin": 20,
+        "MaxConsumedWatts": 146,
+        "MinConsumedWatts": 38
+    },
+    "PowerSupplies": [
+        {
+            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power }}",
+            "LastPowerOutputWatts": 20,
+            "LineInputVoltage": 0,
+            "LineInputVoltageType": "Unknown",
+            "Model": "656364-B21                      ",
+            "Name": "HpServerPowerSupply",
+            "Oem": {
+                "Hp": {
+                    "@odata.type": "#HpServerPowerSupply.1.0.0.HpServerPowerSupply",
+                    "AveragePowerOutputWatts": 20,
+                    "BayNumber": 1,
+                    "HotplugCapable": true,
+                    "MaxPowerOutputWatts": 73,
+                    "Mismatched": false,
+                    "PowerSupplyStatus": {
+                        "State": "Ok"
+                    },
+                    "Type": "HpServerPowerSupply.1.0.0",
+                    "iPDUCapable": false
+                }
+            },
+            "PowerCapacityWatts": 1200,
+            "PowerSupplyType": "AC",
+            "SerialNumber": "5BXRC0D4D2T08F  ",
+            "SparePartNumber": "",
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            }
+        },
+        {
+            "FirmwareVersion": "5.03",
+            "LastPowerOutputWatts": 20,
+            "LineInputVoltage": 0,
+            "LineInputVoltageType": "Unknown",
+            "Model": "656364-B21                      ",
+            "Name": "HpServerPowerSupply",
+            "Oem": {
+                "Hp": {
+                    "@odata.type": "#HpServerPowerSupply.1.0.0.HpServerPowerSupply",
+                    "AveragePowerOutputWatts": 20,
+                    "BayNumber": 2,
+                    "HotplugCapable": true,
+                    "MaxPowerOutputWatts": 73,
+                    "Mismatched": false,
+                    "PowerSupplyStatus": {
+                        "State": "Ok"
+                    },
+                    "Type": "HpServerPowerSupply.1.0.0",
+                    "iPDUCapable": false
+                }
+            },
+            "PowerCapacityWatts": 1200,
+            "PowerSupplyType": "AC",
+            "SerialNumber": "5BXRC0D4D2T08C  ",
+            "SparePartNumber": "",
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            }
+        },
+        {
+            "Oem": {
+                "Hp": {
+                    "@odata.type": "#HpServerPowerSupply.1.0.0.HpServerPowerSupply",
+                    "BayNumber": 3,
+                    "Type": "HpServerPowerSupply.1.0.0"
+                }
+            },
+            "Status": {
+                "Health": "Warning",
+                "State": "Absent"
+            }
+        },
+        {
+            "Oem": {
+                "Hp": {
+                    "@odata.type": "#HpServerPowerSupply.1.0.0.HpServerPowerSupply",
+                    "BayNumber": 4,
+                    "Type": "HpServerPowerSupply.1.0.0"
+                }
+            },
+            "Status": {
+                "Health": "Warning",
+                "State": "Absent"
+            }
+        }
+    ],
+    "Type": "PowerMetrics.0.11.0",
+    "links": {
+        "self": {
+            "href": "/redfish/v1/Chassis/1/Power/"
+        }
+    }
+}

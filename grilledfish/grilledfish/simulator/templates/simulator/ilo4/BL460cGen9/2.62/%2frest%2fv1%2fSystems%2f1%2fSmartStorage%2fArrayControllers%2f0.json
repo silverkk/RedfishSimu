@@ -1,1 +1,52 @@
-{"@odata.context":"/redfish/v1/$metadata#Systems/Members/1/SmartStorage/ArrayControllers/Members/$entity","@odata.id":"/redfish/v1/Systems/1/SmartStorage/ArrayControllers/0/","@odata.type":"#HpSmartStorageArrayController.1.1.0.HpSmartStorageArrayController","AdapterType":"SmartArray","BackupPowerSourceStatus":"Present","CacheMemorySizeMiB":1024,"CurrentOperatingMode":"RAID","Description":"HP Smart Storage Array Controller View","EncryptionCryptoOfficerPasswordSet":false,"EncryptionEnabled":false,"EncryptionFwLocked":false,"EncryptionHasLockedVolumesMissingBootPassword":false,"EncryptionMixedVolumesEnabled":false,"EncryptionStandaloneModeEnabled":false,"ExternalPortCount":0,"FirmwareVersion":{"Current":{"VersionString":"1.34"}},"HardwareRevision":"B","Id":"0","InternalPortCount":1,"Location":"Slot 0","LocationFormat":"PCISlot","Model":"Smart Array P244br Controller","Name":"HpSmartStorageArrayController","SerialNumber":"PDZVU0KLM7X15W","Status":{"Health":"Warning","State":"Enabled"},"Type":"HpSmartStorageArrayController.1.1.0","links":{"LogicalDrives":{"href":"/rest/v1/Systems/1/SmartStorage/ArrayControllers/0/LogicalDrives"},"PhysicalDrives":{"href":"/rest/v1/Systems/1/SmartStorage/ArrayControllers/0/DiskDrives"},"StorageEnclosures":{"href":"/rest/v1/Systems/1/SmartStorage/ArrayControllers/0/StorageEnclosures"},"UnconfiguredDrives":{"href":"/rest/v1/Systems/1/SmartStorage/ArrayControllers/0/UnconfiguredDrives"},"self":{"href":"/rest/v1/Systems/1/SmartStorage/ArrayControllers/0"}}}
+{
+    "@odata.context": "/redfish/v1/$metadata#Systems/Members/1/SmartStorage/ArrayControllers/Members/$entity",
+    "@odata.id": "/redfish/v1/Systems/1/SmartStorage/ArrayControllers/0/",
+    "@odata.type": "#HpSmartStorageArrayController.1.1.0.HpSmartStorageArrayController",
+    "AdapterType": "SmartArray",
+    "BackupPowerSourceStatus": "Present",
+    "CacheMemorySizeMiB": 1024,
+    "CurrentOperatingMode": "RAID",
+    "Description": "HP Smart Storage Array Controller View",
+    "EncryptionCryptoOfficerPasswordSet": false,
+    "EncryptionEnabled": false,
+    "EncryptionFwLocked": false,
+    "EncryptionHasLockedVolumesMissingBootPassword": false,
+    "EncryptionMixedVolumesEnabled": false,
+    "EncryptionStandaloneModeEnabled": false,
+    "ExternalPortCount": 0,
+    "FirmwareVersion": {
+        "Current": {
+            "VersionString": "{{ machineInfo.FirmwareVersion.Storage }}"
+        }
+    },
+    "HardwareRevision": "B",
+    "Id": "0",
+    "InternalPortCount": 1,
+    "Location": "Slot 0",
+    "LocationFormat": "PCISlot",
+    "Model": "Smart Array P244br Controller",
+    "Name": "HpSmartStorageArrayController",
+    "SerialNumber": "PDZVU0KLM7X15W",
+    "Status": {
+        "Health": "Warning",
+        "State": "Enabled"
+    },
+    "Type": "HpSmartStorageArrayController.1.1.0",
+    "links": {
+        "LogicalDrives": {
+            "href": "/rest/v1/Systems/1/SmartStorage/ArrayControllers/0/LogicalDrives"
+        },
+        "PhysicalDrives": {
+            "href": "/rest/v1/Systems/1/SmartStorage/ArrayControllers/0/DiskDrives"
+        },
+        "StorageEnclosures": {
+            "href": "/rest/v1/Systems/1/SmartStorage/ArrayControllers/0/StorageEnclosures"
+        },
+        "UnconfiguredDrives": {
+            "href": "/rest/v1/Systems/1/SmartStorage/ArrayControllers/0/UnconfiguredDrives"
+        },
+        "self": {
+            "href": "/rest/v1/Systems/1/SmartStorage/ArrayControllers/0"
+        }
+    }
+}

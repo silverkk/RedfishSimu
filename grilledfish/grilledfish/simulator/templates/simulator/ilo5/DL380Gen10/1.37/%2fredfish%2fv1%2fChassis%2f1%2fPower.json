@@ -51,7 +51,7 @@
     "PowerSupplies": [
         {
             "@odata.id": "/redfish/v1/Chassis/1/Power#/PowerSupplies/0",
-            "FirmwareVersion": "1.03",
+            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power }}",
             "LastPowerOutputWatts": 64,
             "LineInputVoltage": 224,
             "LineInputVoltageType": "ACHighLine",
