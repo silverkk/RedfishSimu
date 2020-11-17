@@ -18,7 +18,7 @@
     },
     "AssetTag": "",
     "Bios": {},
-    "BiosVersion": "U30 v1.46 (10/02/2018)",
+    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
     "Boot": {
         "BootSourceOverrideEnabled": "Disabled",
         "BootSourceOverrideMode": "UEFI",

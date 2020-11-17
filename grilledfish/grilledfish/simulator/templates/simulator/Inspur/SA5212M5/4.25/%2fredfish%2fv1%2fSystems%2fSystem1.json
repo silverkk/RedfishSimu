@@ -1,1 +1,88 @@
-{ "@odata.type": "#ComputerSystem.v1_1_0.ComputerSystem", "Id": "System1", "Name": "SA5212M5", "AssetTag": "818540730", "Manufacturer": "Inspur", "Model": "SA5212M5", "SerialNumber": "818540730", "PartNumber": "0", "UUID": "a9bf926c-529b-03de-b211-d21d808b401a", "HostName": "IEI6C92BFA99B52", "Status": { "State": "Enabled", "Health": "Critical", "CPU": "OK", "Memory": "OK", "Hard Disk": "OK", "Fan": "OK", "Fan redundancy": "OK", "PSU": "CRITICAL", "PSU redundancy": "CRITICAL", "Voltage": "OK", "Temperature": "OK", "ME": "OK" }, "IndicatorLED": "On", "PowerState": "On", "BiosVersion": "4.1.11 (2019\/09\/04 19:29:33)", "ProcessorSummary": { "Count": 2, "Model": "Intel(R) Xeon(R) Silver 4110 CPU @ 2.10GHz", "Status": { "State": "Enabled", "Health": "OK" } }, "MemorySummary": { "TotalSystemMemoryGiB": 64, "Status": { "State": "Enabled", "Health": "OK" } }, "Bios": { "@odata.id": "\/redfish\/v1\/Systems\/System1\/Bios" }, "Processors": { "@odata.id": "\/redfish\/v1\/Systems\/System1\/Processors" }, "Memory": { "@odata.id": "\/redfish\/v1\/Systems\/System1\/Memory" }, "EthernetInterfaces": { "@odata.id": "\/redfish\/v1\/Systems\/System1\/EthernetInterfaces" }, "LogServices": { "@odata.id": "\/redfish\/v1\/Systems\/System1\/LogServices" }, "Links": { "Chassis": [ { "@odata.id": "\/redfish\/v1\/Chassis\/Chassis1" } ], "ManagedBy": [ { "@odata.id": "\/redfish\/v1\/Managers\/BMC" } ] }, "Actions": { "#ComputerSystem.Reset": { "target": "\/redfish\/v1\/Systems\/System1\/Actions\/ComputerSystem.Reset", "ResetType@Redfish.AllowableValues": [ "On", "ForceOff", "GracefulShutdown", "GracefulRestart", "ForceRestart", "Nmi", "ForceOn", "PushPowerButton" ] }, "Oem": { } }, "@odata.id": "\/redfish\/v1\/Systems\/System1" }
+{
+    "@odata.type": "#ComputerSystem.v1_1_0.ComputerSystem",
+    "Id": "System1",
+    "Name": "SA5212M5",
+    "AssetTag": "818540730",
+    "Manufacturer": "Inspur",
+    "Model": "SA5212M5",
+    "SerialNumber": "818540730",
+    "PartNumber": "0",
+    "UUID": "a9bf926c-529b-03de-b211-d21d808b401a",
+    "HostName": "IEI6C92BFA99B52",
+    "Status": {
+        "State": "Enabled",
+        "Health": "Critical",
+        "CPU": "OK",
+        "Memory": "OK",
+        "Hard Disk": "OK",
+        "Fan": "OK",
+        "Fan redundancy": "OK",
+        "PSU": "CRITICAL",
+        "PSU redundancy": "CRITICAL",
+        "Voltage": "OK",
+        "Temperature": "OK",
+        "ME": "OK"
+    },
+    "IndicatorLED": "On",
+    "PowerState": "On",
+    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
+    "ProcessorSummary": {
+        "Count": 2,
+        "Model": "Intel(R) Xeon(R) Silver 4110 CPU @ 2.10GHz",
+        "Status": {
+            "State": "Enabled",
+            "Health": "OK"
+        }
+    },
+    "MemorySummary": {
+        "TotalSystemMemoryGiB": 64,
+        "Status": {
+            "State": "Enabled",
+            "Health": "OK"
+        }
+    },
+    "Bios": {
+        "@odata.id": "\/redfish\/v1\/Systems\/System1\/Bios"
+    },
+    "Processors": {
+        "@odata.id": "\/redfish\/v1\/Systems\/System1\/Processors"
+    },
+    "Memory": {
+        "@odata.id": "\/redfish\/v1\/Systems\/System1\/Memory"
+    },
+    "EthernetInterfaces": {
+        "@odata.id": "\/redfish\/v1\/Systems\/System1\/EthernetInterfaces"
+    },
+    "LogServices": {
+        "@odata.id": "\/redfish\/v1\/Systems\/System1\/LogServices"
+    },
+    "Links": {
+        "Chassis": [
+            {
+                "@odata.id": "\/redfish\/v1\/Chassis\/Chassis1"
+            }
+        ],
+        "ManagedBy": [
+            {
+                "@odata.id": "\/redfish\/v1\/Managers\/BMC"
+            }
+        ]
+    },
+    "Actions": {
+        "#ComputerSystem.Reset": {
+            "target": "\/redfish\/v1\/Systems\/System1\/Actions\/ComputerSystem.Reset",
+            "ResetType@Redfish.AllowableValues": [
+                "On",
+                "ForceOff",
+                "GracefulShutdown",
+                "GracefulRestart",
+                "ForceRestart",
+                "Nmi",
+                "ForceOn",
+                "PushPowerButton"
+            ]
+        },
+        "Oem": {}
+    },
+    "@odata.id": "\/redfish\/v1\/Systems\/System1"
+}

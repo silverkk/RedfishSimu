@@ -12,7 +12,7 @@
     "SerialNumber": "9000149392",
     "PartNumber": " ",
     "SystemType": "Physical",
-    "BiosVersion": "2.2",
+    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
     "Manufacturer": "Thomas-Krenn.AG",
     "Model": "Super Server",
     "SKU": "To be filled by O.E.M.",

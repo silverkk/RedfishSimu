@@ -12,7 +12,7 @@
     "SerialNumber": "          ",
     "PartNumber": "",
     "SystemType": "Physical",
-    "BiosVersion": "3.1",
+    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
     "Manufacturer": "Supermicro",
     "Model": "X11DPi-N(T)",
     "SKU": "091715D9",

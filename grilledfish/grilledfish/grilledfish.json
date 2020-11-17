@@ -46,6 +46,7 @@
                 "PowerState":"On"
             },
             "FirmwareVersion": {
+                "bios": "1.01",
                 "Backplane": "1.01",
                 "Battery": "1.01",
                 "Disk": "1.01",
@@ -340,7 +341,7 @@
             "vendor" : "Intel",
             "ipmiNodeType": "NM_4_0",
             "ipmiSetting": "Setting_0",
-            "fwVersion" : "2.22",
+            "fwVersion" : "2.37",
             "model" : "S2600WFT",
             "flatMode": true,
             "health" : {

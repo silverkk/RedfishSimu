@@ -12,7 +12,7 @@
     "SerialNumber": "A263875X9809091",
     "PartNumber": "SYS-2029U-TR4",
     "SystemType": "Physical",
-    "BiosVersion": "3.3",
+    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
     "Manufacturer": "Supermicro",
     "Model": "SYS-2029U-TR4",
     "SKU": "To be filled by O.E.M.",

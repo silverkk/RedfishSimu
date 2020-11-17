@@ -37,7 +37,7 @@
             "VersionString": "I36 v1.21 (11/03/2014)"
         }
     },
-    "BiosVersion": "I36 v1.21 (11/03/2014)",
+    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
     "Boot": {
         "BootSourceOverrideEnabled": "Disabled",
         "BootSourceOverrideSupported": [

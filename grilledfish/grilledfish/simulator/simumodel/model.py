@@ -181,6 +181,10 @@ class model:
         self.transFirmwareVersionInfo(machine, firmwareVersionInfo, firmwareVersionInfoConfig)
         machine.FirmwareVersion = firmwareVersionInfo
     def transFirmwareVersionInfo(self, machine, firmwareVersionNamespace, firmwareVersionDict):
+        if 'bios' in firmwareVersionDict:
+            firmwareVersionNamespace.bios = firmwareVersionDict['bios']
+        else:
+            firmwareVersionNamespace.bios = 'bios Version'
         if 'Backplane' in firmwareVersionDict:
             firmwareVersionNamespace.Backplane = firmwareVersionDict['Backplane']
         else:

@@ -37,7 +37,7 @@
             "VersionString": "P71 02/25/2012"
         }
     },
-    "BiosVersion": "P71 02/25/2012",
+    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
     "Boot": {
         "BootSourceOverrideEnabled": "Disabled",
         "BootSourceOverrideSupported": [

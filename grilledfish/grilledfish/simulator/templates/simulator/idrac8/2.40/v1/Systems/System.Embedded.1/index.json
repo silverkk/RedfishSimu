@@ -15,7 +15,7 @@
         }
     },
     "AssetTag": "",
-    "BiosVersion": "2.2.5",
+    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
     "Boot": {
         "BootSourceOverrideEnabled": "Once",
         "BootSourceOverrideTarget": "None",

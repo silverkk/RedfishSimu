@@ -21,7 +21,7 @@
     "Bios": {
         "@odata.id": "/redfish/v1/Systems/Self/Bios"
     },
-    "BiosVersion": "Core: 5.14; KMB-IXS100: 1.10.094073C9",
+    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
     "Boot": {
         "BootOptions": {
             "@odata.id": "/redfish/v1/Systems/Self/BootOptions"
