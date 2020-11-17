@@ -36,6 +36,7 @@ class model:
             machine.genIpmiFruSetting = machineConfig['genIpmiFruSetting'] if 'genIpmiFruSetting' in machineConfig else False
             machine.invalidRespLength = machineConfig['invalidRespLength'] if 'invalidRespLength' in machineConfig else False
             self.appendHealthInfo(machine, machineConfig)
+            self.appendFirmwareVersionInfo(machine, machineConfig)            
             self.appendDefualtSelLogItem(machine, machineConfig)
             self.appendPowerInfo(machine, machineConfig)
             self.buildCacheInfra(machine, perfConfig)
@@ -170,6 +171,52 @@ class model:
     def updateHealthInfo(self, ipStr, jsonInfo):
         machineInfo = self.getMachineInfo(ipStr)
         self.transHealthInfo(machineInfo, machineInfo.healthInfo, jsonInfo, False, genSelLog=True)
+
+    def appendFirmwareVersionInfo(self, machine, machineConfig):
+        firmwareVersionInfo = types.SimpleNamespace()
+        if 'FirmwareVersion' in machineConfig:
+            firmwareVersionInfoConfig = machineConfig['FirmwareVersion']
+        else:
+            firmwareVersionInfoConfig = {}
+        self.transFirmwareVersionInfo(machine, firmwareVersionInfo, firmwareVersionInfoConfig)
+        machine.FirmwareVersion = firmwareVersionInfo
+    def transFirmwareVersionInfo(self, machine, firmwareVersionNamespace, firmwareVersionDict):
+        if 'Backplane' in firmwareVersionDict:
+            firmwareVersionNamespace.Backplane = firmwareVersionDict['Backplane']
+        else:
+            firmwareVersionNamespace.Backplane = 'Backplane Version'        
+        if 'Battery' in firmwareVersionDict:
+            firmwareVersionNamespace.Battery = firmwareVersionDict['Battery']
+        else:
+            firmwareVersionNamespace.Battery = 'Battery Version'
+        if 'Disk' in firmwareVersionDict:
+            firmwareVersionNamespace.Disk = firmwareVersionDict['Disk']
+        else:
+            firmwareVersionNamespace.Disk = 'Disk Version'
+        if 'Manager' in firmwareVersionDict:
+            firmwareVersionNamespace.Manager = firmwareVersionDict['Manager']
+        else:
+            firmwareVersionNamespace.Manager = 'Manager Version'
+        if 'NIC' in firmwareVersionDict:
+            firmwareVersionNamespace.NIC = firmwareVersionDict['NIC']
+        else:
+            firmwareVersionNamespace.NIC = 'NIC Version'
+        if 'PcieDevice' in firmwareVersionDict:
+            firmwareVersionNamespace.PcieDevice = firmwareVersionDict['PcieDevice']
+        else:
+            firmwareVersionNamespace.PcieDevice = 'PcieDevice Version'
+        if 'Power' in firmwareVersionDict:
+            firmwareVersionNamespace.Power = firmwareVersionDict['Power']
+        else:
+            firmwareVersionNamespace.Power = 'Power Version'
+        if 'Storage' in firmwareVersionDict:
+            firmwareVersionNamespace.Storage = firmwareVersionDict['Storage']
+        else:
+            firmwareVersionNamespace.Storage = 'Storage Version'
+        if 'Switch' in firmwareVersionDict:
+            firmwareVersionNamespace.Switch = firmwareVersionDict['Switch']
+        else:
+            firmwareVersionNamespace.Switch = 'Switch Version'
 
     def appendSelLogItemFromHealthInfo(self, machine, componentName, beforeStatus, afterStatus):
         item = types.SimpleNamespace()
