@@ -10,7 +10,7 @@
         "Health": "OK",
         "HealthRollup": "OK"
     },
-    "MACAddress": "{{ machineInfo.mac }}",
+    "MACAddress": "{{ machineInfo.macDash }}",
     "HostName": "BMCA4BF016F78E8",
     "NameServers": [
         "",

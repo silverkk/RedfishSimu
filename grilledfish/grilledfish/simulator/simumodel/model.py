@@ -25,9 +25,13 @@ class model:
             mac = ':'.join(['{}{}'.format(a, b)
                      for a, b
                      in zip(*[iter('{:012x}'.format(ip))]*2)])
+            macDash = '-'.join(['{}{}'.format(a, b)
+                     for a, b
+                     in zip(*[iter('{:012x}'.format(ip))]*2)])
             machine.ip = ip
             machine.ipStr = socket.inet_ntoa(struct.pack('!L', ip))
             machine.mac = mac
+            machine.macDash = macDash
             #machine.vendor = machineConfig['vendor']
             machine.vendor = MachineType[machineConfig['vendor']]
             machine.fwVersion = machineConfig['fwVersion']

@@ -1,1 +1,70 @@
-{"@odata.type":"#EthernetInterface.v1_5_0.EthernetInterface","@odata.context":"/redfish/v1/$metadata#EthernetInterface.EthernetInterface","@odata.id":"/redfish/v1/Managers/BMC/EthernetInterfaces/3","Id":"3","Name":"BMC Ethernet Interface","Description":"Network Interface on the Baseboard Management Controller","Status":{"State":"Enabled","Health":"OK","HealthRollup":"OK"},"MACAddress":"a4-bf-01-55-81-1d","HostName":"BMCA4BF0155811B","NameServers":["10.248.2.5","172.17.6.9"],"IPv4Addresses":[{"Address":"10.239.172.235","SubnetMask":"255.255.255.0","Gateway":"10.239.172.241","AddressOrigin":"Static"}],"IPv4StaticAddresses":[{"Address":"10.239.172.235","SubnetMask":"255.255.255.0","Gateway":"10.239.172.241"}],"DHCPv4":{"DHCPEnabled":false},"MTUSize":1500,"MaxIPv6StaticAddresses":1,"IPv6Addresses":[{"Address":"::","PrefixLength":64,"AddressOrigin":"Static"}],"IPv6StaticAddresses":[{"Address":"::","PrefixLength":64}],"IPv6DefaultGateway":"::","IPv6StaticDefaultGateways":[{"Address":"::","PrefixLength":64}],"DHCPv6":{"OperatingMode":"Disabled"},"LinkStatus":"LinkUp","InterfaceEnabled":true,"SpeedMbps":100,"FQDN":null,"VLAN":{"VLANEnable":false,"VLANId":0}}
+{
+    "@odata.type": "#EthernetInterface.v1_5_0.EthernetInterface",
+    "@odata.context": "/redfish/v1/$metadata#EthernetInterface.EthernetInterface",
+    "@odata.id": "/redfish/v1/Managers/BMC/EthernetInterfaces/3",
+    "Id": "3",
+    "Name": "BMC Ethernet Interface",
+    "Description": "Network Interface on the Baseboard Management Controller",
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK",
+        "HealthRollup": "OK"
+    },
+    "MACAddress": "{{ machineInfo.macDash }}",
+    "HostName": "BMCA4BF0155811B",
+    "NameServers": [
+        "10.248.2.5",
+        "172.17.6.9"
+    ],
+    "IPv4Addresses": [
+        {
+            "Address": "10.239.172.235",
+            "SubnetMask": "255.255.255.0",
+            "Gateway": "10.239.172.241",
+            "AddressOrigin": "Static"
+        }
+    ],
+    "IPv4StaticAddresses": [
+        {
+            "Address": "10.239.172.235",
+            "SubnetMask": "255.255.255.0",
+            "Gateway": "10.239.172.241"
+        }
+    ],
+    "DHCPv4": {
+        "DHCPEnabled": false
+    },
+    "MTUSize": 1500,
+    "MaxIPv6StaticAddresses": 1,
+    "IPv6Addresses": [
+        {
+            "Address": "::",
+            "PrefixLength": 64,
+            "AddressOrigin": "Static"
+        }
+    ],
+    "IPv6StaticAddresses": [
+        {
+            "Address": "::",
+            "PrefixLength": 64
+        }
+    ],
+    "IPv6DefaultGateway": "::",
+    "IPv6StaticDefaultGateways": [
+        {
+            "Address": "::",
+            "PrefixLength": 64
+        }
+    ],
+    "DHCPv6": {
+        "OperatingMode": "Disabled"
+    },
+    "LinkStatus": "LinkUp",
+    "InterfaceEnabled": true,
+    "SpeedMbps": 100,
+    "FQDN": null,
+    "VLAN": {
+        "VLANEnable": false,
+        "VLANId": 0
+    }
+}
