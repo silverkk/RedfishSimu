@@ -1,0 +1,1 @@
+{"@base":"https://10.130.59.102/api/types/dae/instances?per_page=2000","updated":"2020-11-19T08:00:31.982Z","links":[{"rel":"self","href":"&page=1"}],"entries":[{"@base":"https://10.130.59.102/api/instances/dae","updated":"2020-11-19T08:00:31.982Z","links":[{"rel":"self","href":"/dae_1_0"}],"content":{"id":"dae_1_0"}}]}

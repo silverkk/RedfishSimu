@@ -1,0 +1,1 @@
+{"@base":"https://10.130.59.102/api/types/dpe/instances?per_page=2000","updated":"2020-11-19T08:01:08.243Z","links":[{"rel":"self","href":"&page=1"}],"entries":[{"@base":"https://10.130.59.102/api/instances/dpe","updated":"2020-11-19T08:01:08.243Z","links":[{"rel":"self","href":"/dpe"}],"content":{"id":"dpe"}}]}

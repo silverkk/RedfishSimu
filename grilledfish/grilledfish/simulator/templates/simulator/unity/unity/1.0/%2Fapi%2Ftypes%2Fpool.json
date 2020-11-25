@@ -1,0 +1,1 @@
+{"@base":"https://10.130.59.102/api/types/pool/instances?per_page=2000","updated":"2020-11-19T07:58:47.580Z","links":[{"rel":"self","href":"&page=1"}],"entries":[{"@base":"https://10.130.59.102/api/instances/pool","updated":"2020-11-19T07:58:47.580Z","links":[{"rel":"self","href":"/pool_1"}],"content":{"id":"pool_1"}}]}
