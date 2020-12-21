@@ -10,6 +10,7 @@ from django.template import loader, TemplateDoesNotExist
 
 import simulator.utils as utils
 import simulator.PowerActionUtil as PowerActionUtil
+import simulator.FirmwareUpgradeUtil as FirmwareUpgradeUtil
 import time
 import json
 
@@ -31,6 +32,24 @@ def redfish_v1(request):
         return handle_redfish_post(machineInfo, request)
 
 def handle_redfish_get(machineInfo, request):
+    try:
+        response = handle_redfish_get_normal(machineInfo, request)
+        return response
+    except TemplateDoesNotExist:
+        startTime = time.time()
+        responseContent = FirmwareUpgradeUtil.handle_upgrade_action(machineInfo, request)
+        if responseContent:
+            response = HttpResponse(responseContent, content_type='application/json')
+        else:
+            response = HttpResponse(status=204)            
+        if(machineInfo.invalidRespLength):
+            response['Content-Length'] = len(response.content)+50
+        
+        endTime = time.time()
+        utils.appendRequestPerformance(startTime, endTime)
+        return response
+
+def handle_redfish_get_normal(machineInfo, request):
     startTime = time.time()
     full_path = request.get_full_path()
     responseContent = None
@@ -80,11 +99,14 @@ def handle_redfish_post(machineInfo, request):
         return response
     except TemplateDoesNotExist:
         responseContent = PowerActionUtil.handle_power_action_post(machineInfo, request)
+        if not responseContent:
+            responseContent = FirmwareUpgradeUtil.handle_upgrade_action(machineInfo, request)
+
         if responseContent:
             response = HttpResponse(responseContent, content_type='application/json')
         else:
             response = HttpResponse(status=204)
-
+            
         if(machineInfo.invalidRespLength):
             response['Content-Length'] = len(response.content)+50
         

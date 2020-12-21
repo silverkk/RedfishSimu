@@ -1,0 +1,20 @@
+{
+    "Accepted": {
+        "@Message.ExtendedInfo": [
+            {
+                "Message": "Please also check Task Resource /redfish/v1/TaskService/Tasks/1 to see more information.",
+                "MessageArgs": [
+                    "/redfish/v1/TaskService/Tasks/{{machineInfo.firmwareUpgrade.currentTaskId}}"
+                ],
+                "MessageId": "SMC.1.0.OemSimpleupdateAcceptedMessage",
+                "RelatedProperties": [
+                    "SimpleUpdateAccepted"
+                ],
+                "Resolution": "No resolution was required.",
+                "Severity": "Ok"
+            }
+        ],
+        "Message": "Successfully Accepted Request. Please see the location header and ExtendedInfo for more information.",
+        "code": "Base.v1_4_0.Accepted"
+    }
+}

@@ -7,8 +7,9 @@ from django.template import loader, TemplateDoesNotExist
 
 def handle_power_action_post(machineInfo, request):
     full_path = request.get_full_path()
-    if full_path == machineInfo.power.action.url:
+    if machineInfo.power and full_path == machineInfo.power.action.url:
         trans_power_action(machineInfo, request)
+        #machineInfo.pageCache[full_path] = None
         return "{\"result\":\"good\"}"
 
     return None

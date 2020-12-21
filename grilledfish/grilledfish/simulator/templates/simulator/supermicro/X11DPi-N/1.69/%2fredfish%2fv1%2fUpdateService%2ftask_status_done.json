@@ -1,0 +1,26 @@
+{
+    "@odata.id": "/redfish/v1/TaskService/Tasks/{{machineInfo.firmwareUpgrade.currentTaskId}}",
+    "@odata.type": "#Task.v1_4_3.Task",
+    "HidePayload": "true",
+    "Id": "1",
+    "Messages": [
+        {
+            "Message": "",
+            "MessageArgs": [
+                ""
+            ],
+            "MessageId": "",
+            "RelatedProperties": [
+                ""
+            ],
+            "Severity": ""
+        }
+    ],
+    "Name": "Simple Update",
+    "Oem": {},
+    "PercentComplete": 0,
+    "StartTime": "2020-12-18T15:43:31+00:00",
+    "TaskMonitor": "/redfish/v1/TaskMonitor/fa37JncCHryDsbz",
+    "TaskState": "{{machineInfo.firmwareUpgrade.action.taskState}}",
+    "TaskStatus": "OK"
+}

@@ -264,6 +264,17 @@
                 "raid": "Warning",
                 "Fan": "Warning",
                 "Voltage": "Warning"
+            },
+            "firmwareUpgrade": {
+                "action": {
+                    "submit_upgrade_url":"/redfish/v1/UpdateService/Actions/UpdateService.SimpleUpdate",
+                    "submit_upgrade_response":"/redfish/v1/UpdateService/submit_upgrade_response",
+                    "task_status_url":"/redfish/v1/TaskService/Tasks/",
+                    "task_running_response":"/redfish/v1/UpdateService/task_status_running",
+                    "task_done_response":"/redfish/v1/UpdateService/task_status_done",
+                    "taskState": "Completed",
+                    "secondsUpgradeTakes":30
+                }                
             }
         },
         {

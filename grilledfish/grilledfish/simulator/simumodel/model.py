@@ -44,6 +44,7 @@ class model:
             self.appendDefualtSelLogItem(machine, machineConfig)
             self.appendPowerInfo(machine, machineConfig)
             self.buildCacheInfra(machine, perfConfig)
+            self.appendFirmwareUpgradeInfo(machine, machineConfig)
             self.machines[ip] = machine
 
     def transHealthInfo(self, machine, healthNamespace, healthDict, appendDefault, genSelLog=False):
@@ -307,7 +308,26 @@ class model:
 
             power.action = action
 
-        machine.power = power    
+        machine.power = power
+
+    def appendFirmwareUpgradeInfo(self, machine, machineConfig):
+        firmwareUpgrade = None
+        if 'firmwareUpgrade' in machineConfig:
+            firmwareUpgrade = types.SimpleNamespace()
+
+            action = types.SimpleNamespace()
+            actionConfig = machineConfig['firmwareUpgrade']['action']
+            action.submit_upgrade_url = actionConfig['submit_upgrade_url']
+            action.submit_upgrade_response = actionConfig['submit_upgrade_response']
+            action.task_status_url = actionConfig['task_status_url']
+            action.task_running_response = actionConfig['task_running_response']
+            action.task_done_response = actionConfig['task_done_response']
+            action.taskState = actionConfig['taskState']
+            action.secondsUpgradeTakes = actionConfig['secondsUpgradeTakes']
+
+            firmwareUpgrade.action = action
+
+        machine.firmwareUpgrade = firmwareUpgrade
 
     def getMachineInfo(self, ipStr):
         ip = int(ipaddress.IPv4Address(ipStr))

@@ -12,7 +12,10 @@ def get_request_ip(request):
 
 def get_machine_info(request):
     host_ip = get_request_ip(request)
-    machineInfo = global_model.getMachineInfo(host_ip)
+    return get_machine_info_by_ip(host_ip)
+
+def get_machine_info_by_ip(ip):
+    machineInfo = global_model.getMachineInfo(ip)
     return machineInfo
 
 def get_template_path(machineInfo, path, method, safeCharactor=''):
@@ -98,17 +101,24 @@ def calc_correct_template_path(machineInfo, path, httpMethod):
     return template_path
 
 def get_template(request):
-    machineInfo = get_machine_info(request)
+    ip = get_request_ip(request)
     full_path = request.get_full_path()
-    template_path = calc_correct_template_path(machineInfo, full_path, request.method.lower())
+    path_without_param = request.path
+    method = request.method.lower()
+    #machineInfo = get_machine_info(request)
+    return get_template_by_ip(ip, full_path, path_without_param, method)
+
+def get_template_by_ip(ip, full_path, path_without_param, method):
+    machineInfo = global_model.getMachineInfo(ip)    
+    template_path = calc_correct_template_path(machineInfo, full_path, method)
     try:
         template = loader.get_template(template_path)
         return template
     except IsADirectoryError:
         template_path = os.path.join(template_path, 'index.json')
     except TemplateDoesNotExist:
-        path_without_param = request.path
-        template_path = calc_correct_template_path(machineInfo, path_without_param, request.method.lower())
+        
+        template_path = calc_correct_template_path(machineInfo, path_without_param, method)
 
     template = loader.get_template(template_path)
     return template
