@@ -274,7 +274,7 @@
                     "task_done_response":"/redfish/v1/UpdateService/task_status_done",
                     "taskState": "Completed",
                     "secondsUpgradeTakes":30
-                }                
+                }
             }
         },
         {

@@ -327,6 +327,8 @@ class model:
 
             firmwareUpgrade.action = action
 
+            firmwareUpgrade.summary = types.SimpleNamespace()
+
         machine.firmwareUpgrade = firmwareUpgrade
 
     def getMachineInfo(self, ipStr):

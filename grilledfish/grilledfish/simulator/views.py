@@ -161,3 +161,15 @@ def redfish_perf_summary(request):
     #responseContent = json.dumps(performanceSummary)
     response = HttpResponse(responseContent, content_type='application/json')
     return response
+
+@csrf_exempt
+def redfish_firmware_upgrade_tasks(request):
+    ipStr = utils.get_request_ip(request)
+    summary = utils.getFimwareUpgradeTasksSummary(ipStr)
+    if hasattr(summary, 'currentTaskId'):
+        responseContent = "currentId: {0}, startTime: {1}, status: {2}"
+        responseContent = responseContent.format(summary.currentTaskId, summary.lastTaskStartTime, summary.status)
+    else:
+        responseContent = "NO TASKS"
+    response = HttpResponse(responseContent, content_type='application/json')
+    return response

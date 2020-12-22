@@ -1,5 +1,5 @@
 {
-    "@odata.id": "/redfish/v1/TaskService/Tasks/{{machineInfo.firmwareUpgrade.currentTaskId}}",
+    "@odata.id": "/redfish/v1/TaskService/Tasks/{{machineInfo.firmwareUpgrade.summary.currentTaskId}}",
     "@odata.type": "#Task.v1_4_3.Task",
     "HidePayload": "true",
     "Id": "1",

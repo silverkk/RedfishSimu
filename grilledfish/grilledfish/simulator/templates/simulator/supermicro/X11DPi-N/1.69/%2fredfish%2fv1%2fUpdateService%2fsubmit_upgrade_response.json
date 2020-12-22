@@ -2,9 +2,9 @@
     "Accepted": {
         "@Message.ExtendedInfo": [
             {
-                "Message": "Please also check Task Resource /redfish/v1/TaskService/Tasks/1 to see more information.",
+                "Message": "Please also check Task Resource /redfish/v1/TaskService/Tasks/{{machineInfo.firmwareUpgrade.summary.currentTaskId}} to see more information.",
                 "MessageArgs": [
-                    "/redfish/v1/TaskService/Tasks/{{machineInfo.firmwareUpgrade.currentTaskId}}"
+                    "/redfish/v1/TaskService/Tasks/{{machineInfo.firmwareUpgrade.summary.currentTaskId}}"
                 ],
                 "MessageId": "SMC.1.0.OemSimpleupdateAcceptedMessage",
                 "RelatedProperties": [

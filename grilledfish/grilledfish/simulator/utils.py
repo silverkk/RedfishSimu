@@ -174,3 +174,7 @@ def appendRequestPerformance(startTime, endTime):
 
 def getPerformanceSummary():
     return global_model.getPerformanceSummary()
+
+def getFimwareUpgradeTasksSummary(ipStr):
+    machineInfo = global_model.getMachineInfo(ipStr)
+    return machineInfo.firmwareUpgrade.summary

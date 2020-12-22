@@ -11,11 +11,13 @@ def handle_upgrade_action(machineInfo, request):
     full_path = request.get_full_path()
     if machineInfo.firmwareUpgrade:
         if full_path == machineInfo.firmwareUpgrade.action.submit_upgrade_url:
-            machineInfo.firmwareUpgrade.lastTaskStartTime = datetime.now()
-            if hasattr(machineInfo.firmwareUpgrade, 'currentTaskId'):
-                machineInfo.firmwareUpgrade.currentTaskId = machineInfo.firmwareUpgrade.currentTaskId + 1
+            machineInfo.firmwareUpgrade.summary.lastTaskStartTime = datetime.now()
+            if hasattr(machineInfo.firmwareUpgrade.summary, 'currentTaskId'):
+                machineInfo.firmwareUpgrade.summary.currentTaskId = machineInfo.firmwareUpgrade.summary.currentTaskId + 1
             else:
-                machineInfo.firmwareUpgrade.currentTaskId = 1
+                machineInfo.firmwareUpgrade.summary.currentTaskId = 1
+            
+            machineInfo.firmwareUpgrade.summary.status = 'running'
             return load_upgrade_response(machineInfo, request)
         elif full_path.startswith(machineInfo.firmwareUpgrade.action.task_status_url):
             return load_task_status_response(machineInfo, request)
@@ -38,9 +40,10 @@ def load_upgrade_response(machineInfo, request):
 def load_task_status_response(machineInfo, request):
     ip = utils.get_request_ip(request)
     now = datetime.now()
-    timeSpan = now - machineInfo.firmwareUpgrade.lastTaskStartTime
+    timeSpan = now - machineInfo.firmwareUpgrade.summary.lastTaskStartTime
     if timeSpan.total_seconds() > machineInfo.firmwareUpgrade.action.secondsUpgradeTakes:
         full_path = machineInfo.firmwareUpgrade.action.task_done_response
+        machineInfo.firmwareUpgrade.summary.status = 'done'
     else:
         full_path = machineInfo.firmwareUpgrade.action.task_running_response
     path_without_param = full_path
