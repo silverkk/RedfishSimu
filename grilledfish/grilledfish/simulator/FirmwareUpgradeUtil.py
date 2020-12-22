@@ -44,6 +44,7 @@ def load_task_status_response(machineInfo, request):
     if timeSpan.total_seconds() > machineInfo.firmwareUpgrade.action.secondsUpgradeTakes:
         full_path = machineInfo.firmwareUpgrade.action.task_done_response
         machineInfo.firmwareUpgrade.summary.status = 'done'
+        increase_firmware_version(machineInfo.FirmwareVersion, machineInfo)
     else:
         full_path = machineInfo.firmwareUpgrade.action.task_running_response
     path_without_param = full_path
@@ -56,4 +57,23 @@ def load_task_status_response(machineInfo, request):
     }
     responseContent = template.render(context, request)
     return responseContent
-    
+
+def increase_firmware_version(versionInfo, machineInfo):
+    if hasattr(versionInfo, 'bios'):
+        versionInfo.bios = increate_one_version(versionInfo.bios, machineInfo)
+    if hasattr(versionInfo, 'Manager'):
+        versionInfo.Manager = increate_one_version(versionInfo.Manager, machineInfo)
+
+def increate_one_version(versionItem, machineInfo):
+    lastVersion = str(machineInfo.firmwareUpgrade.summary.currentTaskId-1)
+    x = versionItem.rfind(".")
+    if x >= 0:
+        lastpart = versionItem[x+1:]
+        lastpartInt = int(lastpart)
+        return versionItem[0:x] + "." + str(lastpartInt+1)
+    else:
+        return versionItem[0:len(versionItem)-len(lastVersion)] + str(machineInfo.firmwareUpgrade.summary.currentTaskId)
+    #if versionItem.endswith(lastVersion):
+    #     return versionItem[0:len(versionItem)-len(lastVersion)] + str(machineInfo.firmwareUpgrade.summary.currentTaskId)
+    # else:
+    #    return versionItem + str(machineInfo.firmwareUpgrade.summary.currentTaskId)
