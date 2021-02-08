@@ -65,7 +65,7 @@
             "RelatedItem@odata.count": 1,
             "SensorNumber": 57,
             "Status": {
-                "Health": "OK",
+                "Health": "{{ machineInfo.healthInfo.Fan2 }}",
                 "State": "Enabled"
             },
             "UpperThresholdCritical": null,

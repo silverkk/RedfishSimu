@@ -62,6 +62,11 @@ class model:
         elif appendDefault:
             healthNamespace.storage = 'OK'
 
+        if 'storage2' in healthDict:
+            healthNamespace.storage2 = healthDict['storage2']
+        elif appendDefault:
+            healthNamespace.storage2 = 'OK'
+
         if 'memory' in healthDict:
             if genSelLog:
                self.appendSelLogItemFromHealthInfo(machine, 'memory', healthNamespace.memory, healthDict['memory'] )
@@ -69,13 +74,23 @@ class model:
         elif appendDefault:
             healthNamespace.memory = 'OK'
 
+        if 'memory2' in healthDict:
+            healthNamespace.memory2 = healthDict['memory2']
+        elif appendDefault:
+            healthNamespace.memory2 = 'OK'
+
         if 'NIC' in healthDict:
             if genSelLog:
                self.appendSelLogItemFromHealthInfo(machine, 'NIC', healthNamespace.NIC, healthDict['NIC'] )
             healthNamespace.NIC = healthDict['NIC']
         elif appendDefault:
             healthNamespace.NIC = 'OK'
-            
+
+        if 'NIC2' in healthDict:
+            healthNamespace.NIC2 = healthDict['NIC2']
+        elif appendDefault:
+            healthNamespace.NIC2 = 'OK'
+
         if 'Power' in healthDict:
             if genSelLog:
                self.appendSelLogItemFromHealthInfo(machine, 'Power', healthNamespace.Power, healthDict['Power'] )
@@ -83,12 +98,22 @@ class model:
         elif appendDefault:
             healthNamespace.Power = 'OK'
 
+        if 'Power2' in healthDict:
+            healthNamespace.Power2 = healthDict['Power2']
+        elif appendDefault:
+            healthNamespace.Power2 = 'OK'
+
         if 'Processor' in healthDict:
             if genSelLog:
                self.appendSelLogItemFromHealthInfo(machine, 'Processor', healthNamespace.Processor, healthDict['Processor'] )
             healthNamespace.Processor = healthDict['Processor']
         elif appendDefault:
             healthNamespace.Processor = 'OK'
+
+        if 'Processor2' in healthDict:
+            healthNamespace.Processor2 = healthDict['Processor2']
+        elif appendDefault:
+            healthNamespace.Processor2 = 'OK'
 
         if 'raid' in healthDict:
             if genSelLog:
@@ -117,7 +142,12 @@ class model:
             healthNamespace.Fan = healthDict['Fan']
         elif appendDefault:
             healthNamespace.Fan = 'OK'
-        
+
+        if 'Fan2' in healthDict:
+            healthNamespace.Fan2 = healthDict['Fan2']
+        elif appendDefault:
+            healthNamespace.Fan2 = 'OK'
+
         if 'Temperature' in healthDict:
             if genSelLog:
                self.appendSelLogItemFromHealthInfo(machine, 'Temperature', healthNamespace.Temperature, healthDict['Temperature'] )
@@ -166,6 +196,11 @@ class model:
             healthNamespace.PcieDevice = healthDict['PcieDevice']
         elif appendDefault:
             healthNamespace.PcieDevice = 'OK'
+
+        if 'PcieDevice2' in healthDict:
+            healthNamespace.PcieDevice2 = healthDict['PcieDevice2']
+        elif appendDefault:
+            healthNamespace.PcieDevice2 = 'OK'
 
     def appendHealthInfo(self, machine, machineConfig):
         healthInfo = types.SimpleNamespace()

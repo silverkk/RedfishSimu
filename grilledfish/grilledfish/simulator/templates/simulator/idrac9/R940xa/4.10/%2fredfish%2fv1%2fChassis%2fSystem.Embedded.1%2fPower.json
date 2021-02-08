@@ -157,7 +157,7 @@
                 }
             ],
             "Status": {
-                "Health": "OK",
+                "Health": "{{ machineInfo.healthInfo.Power2 }}",
                 "State": "Enabled"
             },
             "Oem": {

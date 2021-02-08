@@ -1,1 +1,99 @@
-{"@odata.context":"/redfish/v1/$metadata#Drive.Drive","@odata.id":"/redfish/v1/Systems/System.Embedded.1/Storage/RAID.Integrated.1-1/Drives/Disk.Bay.1:Enclosure.Internal.0-1:RAID.Integrated.1-1","@odata.type":"#Drive.v1_5_0.Drive","Actions":{"#Drive.SecureErase":{"@Redfish.OperationApplyTimeSupport":{"@odata.type":"#Settings.v1_2_1.OperationApplyTimeSupport","SupportedValues":["Immediate","OnReset"]},"target":"/redfish/v1/Systems/System.Embedded.1/Storage/RAID.Integrated.1-1/Drives/Disk.Bay.1:Enclosure.Internal.0-1:RAID.Integrated.1-1/Actions/Drive.SecureErase"}},"Assembly":{"@odata.id":"/redfish/v1/Chassis/System.Embedded.1/Assembly"},"BlockSizeBytes":512,"CapableSpeedGbs":12,"CapacityBytes":799535005696,"Description":"Solid State Disk 0:1:1","EncryptionAbility":"None","EncryptionStatus":"Unencrypted","FailurePredicted":false,"HotspareType":"None","Id":"Disk.Bay.1:Enclosure.Internal.0-1:RAID.Integrated.1-1","Identifiers":[{"DurableName":"5002538b49714872","DurableNameFormat":"NAA"}],"Links":{"Chassis":{"@odata.id":"/redfish/v1/Chassis/Enclosure.Internal.0-1:RAID.Integrated.1-1"},"Volumes":[{"@odata.id":"/redfish/v1/Systems/System.Embedded.1/Storage/RAID.Integrated.1-1/Volumes/Disk.Virtual.0:RAID.Integrated.1-1"}],"Volumes@odata.count":1},"Location":[],"Manufacturer":"SAMSUNG","MediaType":"SSD","Model":"MZILT800HAHQ0D3","Name":"Solid State Disk 0:1:1","NegotiatedSpeedGbs":12,"Oem":{"Dell":{"DellPhysicalDisk":{"@odata.context":"/redfish/v1/$metadata#DellPhysicalDisk.DellPhysicalDisk","@odata.id":"/redfish/v1/Dell/Systems/System.Embedded.1/Storage/Drives/DellPhysicalDisk/Disk.Bay.1:Enclosure.Internal.0-1:RAID.Integrated.1-1","@odata.type":"#DellPhysicalDisk.v1_1_0.DellPhysicalDisk","Connector":0,"DriveFormFactor":"2.5Inch","ForeignKeyIdentifier":null,"FreeSizeInBytes":0,"LastSystemInventoryTime":"2020-05-06T06:10:14+00:00","LastUpdateTime":"2020-05-06T06:10:14+00:00","ManufacturingDay":1,"ManufacturingWeek":27,"ManufacturingYear":2019,"OperationName":"None","OperationPercentCompletePercent":0,"PPID":"CN0D9NCKSSX009730113A00","PredictiveFailureState":"SmartAlertAbsent","RAIDType":"Unknown","RaidStatus":"Online","SASAddress":"5002538B49714872","Slot":1,"SystemEraseCapability":"CryptographicErasePD","T10PICapability":"NotSupported","UsedSizeInBytes":799535005696}}},"Operations":[],"PartNumber":"CN0D9NCKSSX009730113A00","PhysicalLocation":{"PartLocation":{"LocationOrdinalValue":1,"LocationType":"Slot"}},"PredictedMediaLifeLeftPercent":100,"Protocol":"SAS","Revision":"DWF8","RotationSpeedRPM":1,"SerialNumber":"S40ANX0M703705","Status":{"Health":"OK","HealthRollup":"OK","State":"Enabled"}}
+{
+    "@odata.context": "/redfish/v1/$metadata#Drive.Drive",
+    "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Storage/RAID.Integrated.1-1/Drives/Disk.Bay.1:Enclosure.Internal.0-1:RAID.Integrated.1-1",
+    "@odata.type": "#Drive.v1_5_0.Drive",
+    "Actions": {
+        "#Drive.SecureErase": {
+            "@Redfish.OperationApplyTimeSupport": {
+                "@odata.type": "#Settings.v1_2_1.OperationApplyTimeSupport",
+                "SupportedValues": [
+                    "Immediate",
+                    "OnReset"
+                ]
+            },
+            "target": "/redfish/v1/Systems/System.Embedded.1/Storage/RAID.Integrated.1-1/Drives/Disk.Bay.1:Enclosure.Internal.0-1:RAID.Integrated.1-1/Actions/Drive.SecureErase"
+        }
+    },
+    "Assembly": {
+        "@odata.id": "/redfish/v1/Chassis/System.Embedded.1/Assembly"
+    },
+    "BlockSizeBytes": 512,
+    "CapableSpeedGbs": 12,
+    "CapacityBytes": 799535005696,
+    "Description": "Solid State Disk 0:1:1",
+    "EncryptionAbility": "None",
+    "EncryptionStatus": "Unencrypted",
+    "FailurePredicted": false,
+    "HotspareType": "None",
+    "Id": "Disk.Bay.1:Enclosure.Internal.0-1:RAID.Integrated.1-1",
+    "Identifiers": [
+        {
+            "DurableName": "5002538b49714872",
+            "DurableNameFormat": "NAA"
+        }
+    ],
+    "Links": {
+        "Chassis": {
+            "@odata.id": "/redfish/v1/Chassis/Enclosure.Internal.0-1:RAID.Integrated.1-1"
+        },
+        "Volumes": [
+            {
+                "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Storage/RAID.Integrated.1-1/Volumes/Disk.Virtual.0:RAID.Integrated.1-1"
+            }
+        ],
+        "Volumes@odata.count": 1
+    },
+    "Location": [],
+    "Manufacturer": "SAMSUNG",
+    "MediaType": "SSD",
+    "Model": "MZILT800HAHQ0D3",
+    "Name": "Solid State Disk 0:1:1",
+    "NegotiatedSpeedGbs": 12,
+    "Oem": {
+        "Dell": {
+            "DellPhysicalDisk": {
+                "@odata.context": "/redfish/v1/$metadata#DellPhysicalDisk.DellPhysicalDisk",
+                "@odata.id": "/redfish/v1/Dell/Systems/System.Embedded.1/Storage/Drives/DellPhysicalDisk/Disk.Bay.1:Enclosure.Internal.0-1:RAID.Integrated.1-1",
+                "@odata.type": "#DellPhysicalDisk.v1_1_0.DellPhysicalDisk",
+                "Connector": 0,
+                "DriveFormFactor": "2.5Inch",
+                "ForeignKeyIdentifier": null,
+                "FreeSizeInBytes": 0,
+                "LastSystemInventoryTime": "2020-05-06T06:10:14+00:00",
+                "LastUpdateTime": "2020-05-06T06:10:14+00:00",
+                "ManufacturingDay": 1,
+                "ManufacturingWeek": 27,
+                "ManufacturingYear": 2019,
+                "OperationName": "None",
+                "OperationPercentCompletePercent": 0,
+                "PPID": "CN0D9NCKSSX009730113A00",
+                "PredictiveFailureState": "SmartAlertAbsent",
+                "RAIDType": "Unknown",
+                "RaidStatus": "Online",
+                "SASAddress": "5002538B49714872",
+                "Slot": 1,
+                "SystemEraseCapability": "CryptographicErasePD",
+                "T10PICapability": "NotSupported",
+                "UsedSizeInBytes": 799535005696
+            }
+        }
+    },
+    "Operations": [],
+    "PartNumber": "CN0D9NCKSSX009730113A00",
+    "PhysicalLocation": {
+        "PartLocation": {
+            "LocationOrdinalValue": 1,
+            "LocationType": "Slot"
+        }
+    },
+    "PredictedMediaLifeLeftPercent": 100,
+    "Protocol": "SAS",
+    "Revision": "DWF8",
+    "RotationSpeedRPM": 1,
+    "SerialNumber": "S40ANX0M703705",
+    "Status": {
+        "Health": "{{ machineInfo.healthInfo.storage2 }}",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    }
+}

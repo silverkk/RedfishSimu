@@ -4,7 +4,7 @@
     "perf": {
         "enablePerfStatistic": true,
         "granularity":10000,
-        "enableCache":true
+        "enableCache":false
     },
     "machines" : [
         {
@@ -94,11 +94,15 @@
                 "system" : "Warning",
                 "storage" : "Warning",
                 "memory": "Warning",
+                "memory2": "Warning",
                 "NIC": "Warning",
                 "Power": "Warning",
+                "Power2": "Warning",
                 "Processor": "Warning",
+                "Processor2": "Warning",
                 "raid": "Warning",
                 "Fan": "Warning",
+                "Fan2": "Warning",
                 "Voltage": "Warning"
             },
             "sel": {
@@ -273,7 +277,7 @@
                     "task_running_response":"/redfish/v1/UpdateService/task_status_running",
                     "task_done_response":"/redfish/v1/UpdateService/task_status_done",
                     "taskState": "Completed",
-                    "secondsUpgradeTakes":30
+                    "secondsUpgradeTakes":5
                 }
             }
         },
