@@ -353,7 +353,12 @@ class model:
             action = types.SimpleNamespace()
             actionConfig = machineConfig['firmwareUpgrade']['action']
             action.submit_upgrade_url = actionConfig['submit_upgrade_url']
+            if 'submit_upgrade_response_code' in actionConfig:
+                action.submit_upgrade_response_code = actionConfig['submit_upgrade_response_code']            
+            if 'submit_upgrade_response_type' in actionConfig:
+                action.submit_upgrade_response_type = actionConfig['submit_upgrade_response_type']               
             action.submit_upgrade_response = actionConfig['submit_upgrade_response']
+
             action.task_status_url = actionConfig['task_status_url']
             action.task_running_response = actionConfig['task_running_response']
             action.task_done_response = actionConfig['task_done_response']

@@ -1,0 +1,39 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Task.Task",
+    "@odata.id": "/redfish/v1/TaskService/Tasks/{{machineInfo.firmwareUpgrade.summary.currentTaskId}}",
+    "@odata.type": "#Task.v1_1_1.Task",
+    "Description": "Server Configuration and other Tasks running on iDRAC are listed here",
+    "EndTime": "1969-12-31T18:00:00-06:00",
+    "Id": "{{machineInfo.firmwareUpgrade.summary.currentTaskId}}",
+    "Messages": [
+        {
+            "Message": "New job.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "JCP033"
+        }
+    ],
+    "Messages@odata.count": 1,
+    "Name": "Firmware Update: Generic",
+    "Oem": {
+        "Dell": {
+            "@odata.type": "#DellJob.v1_0_1.DellJob",
+            "CompletionTime": null,
+            "Description": "Job Instance",
+            "EndTime": null,
+            "Id": "{{machineInfo.firmwareUpgrade.summary.currentTaskId}}",
+            "JobState": "New",
+            "JobType": "FirmwareUpdate",
+            "Message": "New job.",
+            "MessageArgs": [],
+            "MessageId": "JCP033",
+            "Name": "Firmware Update: Generic",
+            "PercentComplete": 0,
+            "StartTime": "TIME_NOW",
+            "TargetSettingsURI": null
+        }
+    },
+    "StartTime": "",
+    "TaskState": "New",
+    "TaskStatus": "OK"
+}

@@ -1,0 +1,39 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Task.Task",
+    "@odata.id": "/redfish/v1/TaskService/Tasks/{{machineInfo.firmwareUpgrade.summary.currentTaskId}}",
+    "@odata.type": "#Task.v1_1_1.Task",
+    "Description": "Server Configuration and other Tasks running on iDRAC are listed here",
+    "EndTime": "1969-12-31T18:00:00-06:00",
+    "Id": "{{machineInfo.firmwareUpgrade.summary.currentTaskId}}",
+    "Messages": [
+        {
+            "Message": "Task successfully scheduled.",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "JCP001"
+        }
+    ],
+    "Messages@odata.count": 1,
+    "Name": "Firmware Update: BIOS",
+    "Oem": {
+        "Dell": {
+            "@odata.type": "#DellJob.v1_0_1.DellJob",
+            "CompletionTime": null,
+            "Description": "Job Instance",
+            "EndTime": "TIME_NA",
+            "Id": "JID_184155333136",
+            "JobState": "Scheduled",
+            "JobType": "FirmwareUpdate",
+            "Message": "Task successfully scheduled.",
+            "MessageArgs": [],
+            "MessageId": "JCP001",
+            "Name": "Firmware Update: BIOS",
+            "PercentComplete": 0,
+            "StartTime": "TIME_NOW",
+            "TargetSettingsURI": null
+        }
+    },
+    "StartTime": "",
+    "TaskState": "{{machineInfo.firmwareUpgrade.action.taskState}}",
+    "TaskStatus": "OK"
+}

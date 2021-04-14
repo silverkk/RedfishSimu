@@ -39,7 +39,10 @@ def handle_redfish_get(machineInfo, request):
         startTime = time.time()
         responseContent = FirmwareUpgradeUtil.handle_upgrade_action(machineInfo, request)
         if responseContent:
-            response = HttpResponse(responseContent, content_type='application/json')
+            if isinstance(responseContent, HttpResponse):
+                response = responseContent
+            else:
+                response = HttpResponse(responseContent, content_type='application/json')
         else:
             response = HttpResponse(status=204)            
         if(machineInfo.invalidRespLength):

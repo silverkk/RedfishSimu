@@ -6,6 +6,8 @@ from simulator.simumodel.model import model, global_model
 from django.template import loader, TemplateDoesNotExist
 import simulator.utils as utils
 from datetime import datetime
+from django.http import HttpResponse
+from django.http import HttpResponseRedirect
 
 def handle_upgrade_action(machineInfo, request):
     full_path = request.get_full_path()
@@ -23,7 +25,13 @@ def handle_upgrade_action(machineInfo, request):
             return load_task_status_response(machineInfo, request)
     return None
 
-def load_upgrade_response(machineInfo, request):
+def load_upgrade_response(machineInfo, request):    
+    if machineInfo.firmwareUpgrade.action.submit_upgrade_response_type:
+        return load_upgrade_response_on_type(machineInfo, request)
+    elif machineInfo.firmwareUpgrade.action.submit_upgrade_response:
+        return load_upgrade_response_from_template(machineInfo, request)
+
+def load_upgrade_response_from_template(machineInfo, request):
     ip = utils.get_request_ip(request)
     full_path = machineInfo.firmwareUpgrade.action.submit_upgrade_response
     path_without_param = machineInfo.firmwareUpgrade.action.submit_upgrade_response
@@ -36,7 +44,18 @@ def load_upgrade_response(machineInfo, request):
     }
     responseContent = template.render(context, request)
     return responseContent
-    
+
+def load_upgrade_response_on_type(machineInfo, request):
+    response_type = machineInfo.firmwareUpgrade.action.submit_upgrade_response_type
+    if response_type == 'Location':
+        response_str = load_upgrade_response_from_template(machineInfo, request)
+        http_code = machineInfo.firmwareUpgrade.action.submit_upgrade_response_code
+        response = HttpResponse(status=http_code, content_type='application/json')
+        response['Location'] = response_str+ "" # convert django.utils.safestring to python string
+    else:
+        response = None
+    return response
+
 def load_task_status_response(machineInfo, request):
     ip = utils.get_request_ip(request)
     now = datetime.now()
