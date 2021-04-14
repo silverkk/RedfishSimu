@@ -1,0 +1,20 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Job.Job",
+    "@odata.id": "/redfish/v1/JobService/Jobs/{{machineInfo.firmwareUpgrade.summary.currentTaskId}}",
+    "@odata.type": "#Job.v1_0_0.Job",
+    "Description": "Represent a job in Redfish",
+    "Id": "{{machineInfo.firmwareUpgrade.summary.currentTaskId}}",
+    "JobState": "New",
+    "JobStatus": "OK",
+    "Messages": [
+        {
+            "Message": "New",
+            "MessageArgs": [],
+            "MessageArgs@odata.count": 0,
+            "MessageId": "JCP000"
+        }
+    ],
+    "Messages@odata.count": 1,
+    "Name": "Firmware Update: Generic",
+    "PercentComplete": 0
+}
