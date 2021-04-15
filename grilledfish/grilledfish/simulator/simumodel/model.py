@@ -356,8 +356,11 @@ class model:
             if 'submit_upgrade_response_code' in actionConfig:
                 action.submit_upgrade_response_code = actionConfig['submit_upgrade_response_code']            
             if 'submit_upgrade_response_type' in actionConfig:
-                action.submit_upgrade_response_type = actionConfig['submit_upgrade_response_type']               
-            action.submit_upgrade_response = actionConfig['submit_upgrade_response']
+                action.submit_upgrade_response_type = actionConfig['submit_upgrade_response_type']
+            if 'submit_upgrade_response_location' in actionConfig:
+                action.submit_upgrade_response_location = actionConfig['submit_upgrade_response_location']
+            if 'submit_upgrade_response' in actionConfig:
+                action.submit_upgrade_response = actionConfig['submit_upgrade_response']
 
             action.task_status_url = actionConfig['task_status_url']
             action.task_running_response = actionConfig['task_running_response']

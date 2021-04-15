@@ -1,0 +1,1 @@
+https://192.168.1.5/redfish/v1/TaskService/TaskMonitors/{{machineInfo.firmwareUpgrade.summary.currentTaskId}}

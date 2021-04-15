@@ -1,0 +1,24 @@
+{
+    "@odata.context": "/redfish/v1/$metadata#Task.Task",
+    "@odata.etag": "W/\"89870DD6\"",
+    "@odata.id": "/redfish/v1/TaskService/Tasks/{{machineInfo.firmwareUpgrade.summary.currentTaskId}}",
+    "@odata.type": "#Task.v1_3_0.Task",
+    "Description": "iLO Task",
+    "EndTime": "2021-04-15T05:33:51Z",
+    "Id": "{{machineInfo.firmwareUpgrade.summary.currentTaskId}}",
+    "Messages": [
+        {
+            "MessageId": "Base.1.4.Success"
+        }
+    ],
+    "Name": "Task {{machineInfo.firmwareUpgrade.summary.currentTaskId}}",
+    "Payload": {
+        "HttpOperation": "POST",
+        "JsonBody": "{\"ImageURI\":\"HTTPS://10.239.172.64/firmware/Hpe/ilo5_233.bin\"}",
+        "TargetUri": "/redfish/v1/UpdateService/Actions/UpdateService.SimpleUpdate"
+    },
+    "StartTime": "2021-04-15T05:33:26Z",
+    "TaskMonitor": "/redfish/v1/TaskService/TaskMonitors/{{machineInfo.firmwareUpgrade.summary.currentTaskId}}",
+    "TaskState": "Completed",
+    "TaskStatus": "OK"
+}

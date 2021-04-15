@@ -29,12 +29,14 @@ def load_upgrade_response(machineInfo, request):
     if machineInfo.firmwareUpgrade.action.submit_upgrade_response_type:
         return load_upgrade_response_on_type(machineInfo, request)
     elif machineInfo.firmwareUpgrade.action.submit_upgrade_response:
-        return load_upgrade_response_from_template(machineInfo, request)
+        return load_upgrade_response_from_template(machineInfo, request, None, None)
 
-def load_upgrade_response_from_template(machineInfo, request):
+def load_upgrade_response_from_template(machineInfo, request, full_path, path_without_param):
     ip = utils.get_request_ip(request)
-    full_path = machineInfo.firmwareUpgrade.action.submit_upgrade_response
-    path_without_param = machineInfo.firmwareUpgrade.action.submit_upgrade_response
+    if full_path is None:
+        full_path = machineInfo.firmwareUpgrade.action.submit_upgrade_response
+    if path_without_param is None:
+        path_without_param = machineInfo.firmwareUpgrade.action.submit_upgrade_response
     method = 'get'
     template = utils.get_template_by_ip(ip, full_path, path_without_param, method)
     now = datetime.now()
@@ -48,10 +50,14 @@ def load_upgrade_response_from_template(machineInfo, request):
 def load_upgrade_response_on_type(machineInfo, request):
     response_type = machineInfo.firmwareUpgrade.action.submit_upgrade_response_type
     if response_type == 'Location':
-        response_str = load_upgrade_response_from_template(machineInfo, request)
-        http_code = machineInfo.firmwareUpgrade.action.submit_upgrade_response_code
-        response = HttpResponse(status=http_code, content_type='application/json')
-        response['Location'] = response_str+ "" # convert django.utils.safestring to python string
+        response_location = load_upgrade_response_from_template(machineInfo, request, machineInfo.firmwareUpgrade.action.submit_upgrade_response_location, machineInfo.firmwareUpgrade.action.submit_upgrade_response_location)
+        if hasattr(machineInfo.firmwareUpgrade.action, 'submit_upgrade_response'):            
+            response_body = load_upgrade_response_from_template(machineInfo, request, machineInfo.firmwareUpgrade.action.submit_upgrade_response, machineInfo.firmwareUpgrade.action.submit_upgrade_response)
+        else:
+            response_body = ''
+        http_code = machineInfo.firmwareUpgrade.action.submit_upgrade_response_code        
+        response = HttpResponse(response_body, status=http_code, content_type='application/json')
+        response['Location'] = response_location+ "" # convert django.utils.safestring to python string
     else:
         response = None
     return response

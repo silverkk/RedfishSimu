@@ -1,1 +1,0 @@
-/redfish/v1/TaskService/Tasks/{{machineInfo.firmwareUpgrade.summary.currentTaskId}}

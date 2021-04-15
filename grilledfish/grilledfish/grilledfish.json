@@ -50,7 +50,7 @@
                     "submit_upgrade_url":"/redfish/v1/UpdateService/Actions/UpdateService.SimpleUpdate",                    
                     "submit_upgrade_response_code":"202",
                     "submit_upgrade_response_type":"Location",
-                    "submit_upgrade_response":"/redfish/v1/UpdateService/submit_upgrade_response",
+                    "submit_upgrade_response_location":"/redfish/v1/UpdateService/submit_upgrade_response_location",
                     "task_status_url":"/redfish/v1/TaskService/Tasks/",
                     "task_running_response":"/redfish/v1/UpdateService/task_status_running",
                     "task_done_response":"/redfish/v1/UpdateService/task_status_done",
@@ -130,7 +130,7 @@
                     "submit_upgrade_url":"/redfish/v1/UpdateService/Actions/UpdateService.SimpleUpdate",                    
                     "submit_upgrade_response_code":"202",
                     "submit_upgrade_response_type":"Location",
-                    "submit_upgrade_response":"/redfish/v1/UpdateService/submit_upgrade_response",
+                    "submit_upgrade_response_location":"/redfish/v1/UpdateService/submit_upgrade_response_location",
                     "task_status_url":"/redfish/v1/JobService/Jobs/",
                     "task_running_response":"/redfish/v1/UpdateService/task_status_running",
                     "task_done_response":"/redfish/v1/UpdateService/task_status_done",
@@ -197,6 +197,20 @@
                 "maxLogItemCount": 10,
                 "skiptoken": "skiptoken",
                 "datetimeFormat": "%Y-%m-%dT%H:%M:%S+08:00"
+            },
+            "firmwareUpgrade": {
+                "action": {
+                    "submit_upgrade_url":"/redfish/v1/UpdateService/Actions/UpdateService.SimpleUpdate",                    
+                    "submit_upgrade_response_code":"202",
+                    "submit_upgrade_response_type":"Location",
+                    "submit_upgrade_response_location":"/redfish/v1/UpdateService/submit_upgrade_response_location",
+                    "submit_upgrade_response":"/redfish/v1/UpdateService/submit_upgrade_response",
+                    "task_status_url":"/redfish/v1/TaskService/Tasks/",
+                    "task_running_response":"/redfish/v1/UpdateService/task_status_running",
+                    "task_done_response":"/redfish/v1/UpdateService/task_status_done",
+                    "taskState": "Pending",
+                    "secondsUpgradeTakes":5
+                }
             }
         },
         {
