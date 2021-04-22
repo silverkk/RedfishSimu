@@ -8,7 +8,7 @@
     "ManagerType": "BMC",
     "UUID": "00000000-0000-0000-0000-AC1F6B4C593F",
     "Model": "ASPEED",
-    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Manager }}",
+    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Manager|default:"1.69" }}",
     "DateTime": "2019-10-07T11:49:04+00:00",
     "DateTimeLocalOffset": "+00:00",
     "Status": {

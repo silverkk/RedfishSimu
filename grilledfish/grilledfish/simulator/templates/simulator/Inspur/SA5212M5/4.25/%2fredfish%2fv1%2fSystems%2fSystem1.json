@@ -25,7 +25,7 @@
     },
     "IndicatorLED": "On",
     "PowerState": "On",
-    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
+    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios|default:"4.1.11 (2019\/09\/04 19:29:33)" }}",
     "ProcessorSummary": {
         "Count": 2,
         "Model": "Intel(R) Xeon(R) Silver 4110 CPU @ 2.10GHz",

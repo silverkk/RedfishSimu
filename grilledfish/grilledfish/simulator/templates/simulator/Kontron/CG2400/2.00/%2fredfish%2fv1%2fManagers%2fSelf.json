@@ -46,7 +46,7 @@
     "EthernetInterfaces": {
         "@odata.id": "/redfish/v1/Managers/Self/EthernetInterfaces"
     },
-    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Manager }}",
+    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Manager|default:"2.00.-428589047" }}",
     "GraphicalConsole": {
         "ConnectTypesSupported": ["KVMIP"],
         "MaxConcurrentSessions": 4,

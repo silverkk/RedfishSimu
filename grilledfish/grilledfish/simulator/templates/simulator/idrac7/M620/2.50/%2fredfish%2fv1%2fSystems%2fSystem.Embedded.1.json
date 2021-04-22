@@ -18,7 +18,7 @@
     "Bios": {
         "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Bios"
     },
-    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
+    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios|default:"2.5.4" }}",
     "Boot": {
         "BootSourceOverrideEnabled": "Once",
         "BootSourceOverrideTarget": "None",

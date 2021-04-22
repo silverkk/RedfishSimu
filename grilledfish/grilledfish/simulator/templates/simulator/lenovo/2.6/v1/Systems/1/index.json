@@ -134,7 +134,7 @@
         }
     ],
     "SystemType": "Physical",
-    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
+    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios|default:"TEE135G" }}",
     "HostName": "XCC-7X03-1234567890",
     "MemorySummary": {
         "Status": {

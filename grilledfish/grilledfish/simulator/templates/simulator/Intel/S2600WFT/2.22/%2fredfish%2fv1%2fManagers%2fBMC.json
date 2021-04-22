@@ -30,7 +30,7 @@
             "IPMI"
         ]
     },
-    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Manager }}",
+    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Manager|default:"2.22.59c3b83a" }}",
     "PowerState": "On",
     "NetworkProtocol": {
         "@odata.id": "/redfish/v1/Managers/BMC/NetworkProtocol"

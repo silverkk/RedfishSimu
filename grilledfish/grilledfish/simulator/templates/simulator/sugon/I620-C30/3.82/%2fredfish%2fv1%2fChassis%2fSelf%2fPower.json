@@ -53,7 +53,7 @@
             "LineInputVoltage": "",
             "PowerCapacityWatts": "",
             "Model": "",
-            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power }}",
+            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power|default:"" }}",
             "SerialNumber": "",
             "Manufacturer": "",
             "PowerInputWatts": "",

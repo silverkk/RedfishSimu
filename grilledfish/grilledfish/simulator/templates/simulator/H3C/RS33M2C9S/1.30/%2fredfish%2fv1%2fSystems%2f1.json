@@ -18,7 +18,7 @@
     "Bios": {
         "@odata.id": "/redfish/v1/Systems/1/Bios"
     },
-    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
+    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios|default:"2.00.32P03 V100R001B02D032SP03" }}",
     "Boot": {
         "BootSourceOverrideEnabled": "Once",
         "BootSourceOverrideEnabled@Redfish.AllowableValues": [

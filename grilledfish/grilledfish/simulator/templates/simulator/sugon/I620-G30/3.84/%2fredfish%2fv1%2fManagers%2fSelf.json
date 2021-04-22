@@ -25,7 +25,7 @@
     "DateTime": "2020-05-11T16:27:39+08:00",
     "DateTimeLocalOffset": "+08:00",
     "ManagerType": "BMC",
-    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Manager }}",
+    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Manager|default:"3.84" }}",
     "Model": "02026c6b00",
     "PowerState": "On",
     "Status": {

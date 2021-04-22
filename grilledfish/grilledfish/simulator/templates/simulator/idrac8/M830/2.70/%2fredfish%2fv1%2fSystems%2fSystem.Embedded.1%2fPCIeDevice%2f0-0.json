@@ -9,7 +9,7 @@
     "AssetTag": null,
     "Description": "Xeon E7 v3/Xeon E5 v3/Core i7 DMI2",
     "DeviceType": "SingleFunction",
-    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.PcieDevice }}",
+    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.PcieDevice|default:"" }}",
     "Id": "0-0",
     "Links": {
         "Chassis": [

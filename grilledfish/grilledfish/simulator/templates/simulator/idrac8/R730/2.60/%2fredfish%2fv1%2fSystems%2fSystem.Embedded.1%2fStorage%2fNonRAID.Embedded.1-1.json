@@ -23,7 +23,7 @@
     "StorageControllers": [
         {
             "@odata.id": "/redfish/v1/Systems/System.Embedded.1/StorageControllers/NonRAID.Embedded.1-1",
-            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Storage }}",
+            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Storage|default:"" }}",
             "Identifiers": [
                 {
                     "DurableName": null,

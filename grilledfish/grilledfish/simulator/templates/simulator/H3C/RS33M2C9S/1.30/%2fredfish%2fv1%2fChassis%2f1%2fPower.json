@@ -31,7 +31,7 @@
     "PowerSupplies": [
         {
             "@odata.id": "/redfish/v1/Chassis/1/Power#/PowerSupplies/1",
-            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power }}",
+            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power|default:"0.27;0.13" }}",
             "LineInputVoltage": 221,
             "LineInputVoltageType": "ACMidLine",
             "Manufacturer": "DELTA",

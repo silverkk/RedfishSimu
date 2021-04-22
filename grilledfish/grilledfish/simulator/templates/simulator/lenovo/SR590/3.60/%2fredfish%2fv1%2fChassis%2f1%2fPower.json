@@ -278,7 +278,7 @@
                 }
             },
             "PowerCapacityWatts": 550,
-            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power }}",
+            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power|default:"1.20" }}",
             "EfficiencyPercent": 90,
             "Status": {
                 "State": "Enabled",

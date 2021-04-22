@@ -54,7 +54,7 @@
     },
     "PowerSupplies": [
         {
-            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power }}",
+            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power|default:"1.00" }}",
             "LastPowerOutputWatts": 0,
             "LineInputVoltage": 0,
             "LineInputVoltageType": "Unknown",

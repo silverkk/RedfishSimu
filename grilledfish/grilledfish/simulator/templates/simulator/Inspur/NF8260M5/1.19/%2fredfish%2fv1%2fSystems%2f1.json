@@ -25,7 +25,7 @@
     },
     "IndicatorLED": "Off",
     "PowerState": "On",
-    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
+    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios|default:"4.1.11 (2019\/09\/16 21:22:29)" }}",
     "ProcessorSummary": {
         "Count": 4,
         "Model": "Intel(R) Xeon(R) Gold 5118 CPU @ 2.30GHz",

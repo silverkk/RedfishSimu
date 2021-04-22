@@ -19,7 +19,7 @@
     "Bios": {
         "@odata.id": "/redfish/v1/Systems/System.Embedded.1/Bios"
     },
-    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
+    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios|default:"2.7.1" }}",
     "Boot": {
         "BootOptions": {
             "@odata.id": "/redfish/v1/Systems/System.Embedded.1/BootOptions"

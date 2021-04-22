@@ -29,7 +29,7 @@
     "PowerSupplies": [
         {
             "@odata.id": "/redfish/v1/Chassis/1/Power#/PowerSupplies/1",
-            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power }}",
+            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power|default:"N/A" }}",
             "LineInputVoltageType": "ACMidLine",
             "Manufacturer": "N/A",
             "Model": "DPS-850AB-11 A",

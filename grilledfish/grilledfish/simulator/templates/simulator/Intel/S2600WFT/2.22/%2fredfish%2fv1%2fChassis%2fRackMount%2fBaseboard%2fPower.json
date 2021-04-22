@@ -93,7 +93,7 @@
             "LineInputVoltage": 112,
             "Model": "PSSF132202A",
             "Manufacturer": "SOLUM CO., LTD.                  ",
-            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power }}",
+            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power|default:"00A" }}",
             "SerialNumber": "CNS1322A4JH7R0803",
             "PartNumber": "H79286-007",
             "RelatedItem": [

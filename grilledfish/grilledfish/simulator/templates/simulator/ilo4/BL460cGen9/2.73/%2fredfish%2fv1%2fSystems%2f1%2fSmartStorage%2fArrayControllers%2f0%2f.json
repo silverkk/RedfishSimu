@@ -16,7 +16,7 @@
     "ExternalPortCount": 0,
     "FirmwareVersion": {
         "Current": {
-            "VersionString": "{{ machineInfo.FirmwareVersion.Storage }}"
+            "VersionString": "{{ machineInfo.FirmwareVersion.Storage|default:"1.34" }}"
         }
     },
     "HardwareRevision": "B",

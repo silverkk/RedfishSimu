@@ -39,7 +39,7 @@
             "BiosSetup"
         ]
     },
-    "BIOSVersion": "{{ machineInfo.FirmwareVersion.bios }}",
+    "BIOSVersion": "{{ machineInfo.FirmwareVersion.bios|default:"0JGST222" }}",
     "ProcessorSummary": {
         "Count": 2,
         "Model": "Central Processor",

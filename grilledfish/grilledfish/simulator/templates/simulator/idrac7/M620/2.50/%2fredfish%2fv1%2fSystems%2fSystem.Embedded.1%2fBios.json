@@ -96,7 +96,7 @@
         "SysMemVolt": "1.5V",
         "SysMfrContactInfo": "www.dell.com",
         "SysProfile": "PerfPerWattOptimizedDapc",
-        "SystemBiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
+        "SystemBiosVersion": "{{ machineInfo.FirmwareVersion.bios|default:"2.5.4" }}",
         "SystemCpldVersion": "106",
         "SystemManufacturer": "Dell Inc.",
         "SystemModelName": "PowerEdge M620",

@@ -9,7 +9,7 @@
                 "NetworkDeviceFunctionCount": 1,
                 "NetworkPortCount": 1
             },
-            "FirmwarePackageVersion": "{{ machineInfo.FirmwareVersion.NIC }}",
+            "FirmwarePackageVersion": "{{ machineInfo.FirmwareVersion.NIC|default:"1.2177.0" }}",
             "Links": {
                 "NetworkDeviceFunctions": [
                     {

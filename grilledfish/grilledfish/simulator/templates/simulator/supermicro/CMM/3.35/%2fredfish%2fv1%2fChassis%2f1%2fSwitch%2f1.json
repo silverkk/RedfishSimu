@@ -12,7 +12,7 @@
     "Temperature": "47 42",
     "UID": "Off",
     "Error": "Normal",
-    "FW Version": "{{ machineInfo.FirmwareVersion.Switch }}",
+    "FW Version": "{{ machineInfo.FirmwareVersion.Switch|default:"2.0.3-46_IN001" }}",
     "Power Consumption": "71W",
     "DateTimeMode": "Local",
     "DateTime": "06-03-2020 09:45:59",

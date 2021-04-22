@@ -34,7 +34,7 @@
             "Usb"
         ]
     },
-    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
+    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios|default:"SE5C620.86B.02.01.0010.010620200716" }}",
     "ProcessorSummary": {
         "Count": 2,
         "Model": "Central Processor",

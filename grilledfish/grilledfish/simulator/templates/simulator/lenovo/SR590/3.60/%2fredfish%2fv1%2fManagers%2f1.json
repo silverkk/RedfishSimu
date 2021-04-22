@@ -24,7 +24,7 @@
     "LogServices": {
         "@odata.id": "/redfish/v1/Systems/1/LogServices"
     },
-    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Manager }}",
+    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Manager|default:"CDI345F 3.60 2019-11-13" }}",
     "VirtualMedia": {
         "@odata.id": "/redfish/v1/Managers/1/VirtualMedia"
     },

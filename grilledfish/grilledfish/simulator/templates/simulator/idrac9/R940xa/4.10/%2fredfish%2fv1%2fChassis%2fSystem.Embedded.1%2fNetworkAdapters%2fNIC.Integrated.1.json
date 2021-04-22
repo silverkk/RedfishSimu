@@ -32,7 +32,7 @@
                     }
                 }
             },
-            "FirmwarePackageVersion": "{{ machineInfo.FirmwareVersion.NIC }}",
+            "FirmwarePackageVersion": "{{ machineInfo.FirmwareVersion.NIC|default:"7.10.0" }}",
             "Links": {
                 "NetworkDeviceFunctions": [
                     {
