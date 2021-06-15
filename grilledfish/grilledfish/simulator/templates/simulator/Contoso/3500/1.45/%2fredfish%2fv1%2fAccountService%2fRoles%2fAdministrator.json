@@ -1,0 +1,19 @@
+{
+    "@odata.id": "/redfish/v1/AccountService/Roles/Administrator",
+    "@odata.type": "#Role.v1_2_4.Role",
+    "AssignedPrivileges": [
+        "Login",
+        "ConfigureManager",
+        "ConfigureUsers",
+        "ConfigureSelf",
+        "ConfigureComponents"
+    ],
+    "Description": "Admin User Role",
+    "Id": "Administrator",
+    "IsPredefined": true,
+    "Name": "User Role",
+    "OemPrivileges": [
+        "OemClearLog",
+        "OemPowerControl"
+    ]
+}

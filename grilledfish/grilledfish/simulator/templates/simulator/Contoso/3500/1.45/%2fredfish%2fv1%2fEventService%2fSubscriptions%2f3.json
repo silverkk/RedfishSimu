@@ -1,0 +1,13 @@
+{
+    "@odata.id": "/redfish/v1/EventService/Subscriptions/3",
+    "@odata.type": "#EventDestination.v1_7_0.EventDestination",
+    "Context": "EmailUser3",
+    "Destination": "mailto:spam@contoso.com",
+    "Id": "3",
+    "Name": "EventSubscription for SMTP",
+    "Protocol": "SMTP",
+    "ResourceTypes": [
+        "Certificates",
+        "Systems"
+    ]
+}

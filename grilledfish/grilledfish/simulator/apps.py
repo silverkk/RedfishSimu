@@ -23,6 +23,7 @@ class MachineType(enum.Enum):
     sugon = 14
     nettrix = 15
     unity = 16
+    Contoso = 17
 
 class MachineComponent(enum.Enum):
     system = 'system'

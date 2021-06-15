@@ -1,0 +1,15 @@
+{
+    "@Redfish.SupportedCertificates": [
+        "PEM"
+    ],
+    "@odata.id": "/redfish/v1/Managers/BMC/NetworkProtocol/HTTPS/Certificates",
+    "@odata.type": "#CertificateCollection.CertificateCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/NetworkProtocol/HTTPS/Certificates/1"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Certificate Collection",
+    "Oem": {}
+}

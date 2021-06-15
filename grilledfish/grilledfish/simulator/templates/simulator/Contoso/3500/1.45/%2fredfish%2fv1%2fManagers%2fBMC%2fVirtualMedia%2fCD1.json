@@ -1,0 +1,15 @@
+{
+    "@odata.id": "/redfish/v1/Managers/BMC/VirtualMedia/CD1",
+    "@odata.type": "#VirtualMedia.v1_3_2.VirtualMedia",
+    "ConnectedVia": "Applet",
+    "Id": "CD1",
+    "Image": "redfish.dmtf.org/freeImages/freeOS.1.1.iso",
+    "ImageName": "mymedia-read-only",
+    "Inserted": true,
+    "MediaTypes": [
+        "CD",
+        "DVD"
+    ],
+    "Name": "Virtual CD",
+    "WriteProtected": false
+}

@@ -1,0 +1,19 @@
+{
+    "@odata.id": "/redfish/v1/Registries/Base.1.5.0",
+    "@odata.type": "#MessageRegistryFile.v1_1_3.MessageRegistryFile",
+    "Description": "Base Message Registry File locations",
+    "Id": "Base.1.5.0",
+    "Languages": [
+        "en"
+    ],
+    "Location": [
+        {
+            "Language": "en",
+            "PublicationUri": "http://redfish.dmtf.org/registries/Base.1.5.0.json",
+            "Uri": "/redfish/v1/Registries/Base.1.5.0.json"
+        }
+    ],
+    "Name": "Base Message Registry File",
+    "Oem": {},
+    "Registry": "Base.1.5.0"
+}

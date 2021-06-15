@@ -783,6 +783,29 @@
                 "Fan": "Warning",
                 "Voltage": "Warning"
             }
+        },
+        {
+            "startIp" : "192.168.1.31",
+            "endIp" : "192.168.1.31",
+            "vendor":"Contoso",
+            "ipmiNodeType": "NM_4_0",
+            "ipmiSetting": "Setting_Contoso",
+            "fwVersion" : "1.45",
+            "model" : "3500",
+            "flatMode": true,
+            "health" : {
+                "system" : "Warning",
+                "storage" : "Warning",
+                "memory": "Warning",
+                "NIC": "Warning",
+                "Power": "Warning",
+                "Processor": "Warning",
+                "raid": "Warning",
+                "Voltage": "Warning",
+                "Fan": "Warning",
+                "Temperature": "Warning",
+                "Volume": "Warning"
+              }
         }
     ]
 }

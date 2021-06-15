@@ -1,0 +1,23 @@
+{
+    "@odata.id": "/redfish/v1/TaskService/Tasks/545",
+    "@odata.type": "#Task.v1_4_3.Task",
+    "EndTime": "2012-03-07T14:45+06:00",
+    "Id": "545",
+    "Messages": [
+        {
+            "Message": "The property SKU is a read only property and cannot be assigned a value",
+            "MessageArgs": [
+                "SKU"
+            ],
+            "MessageId": "Base.1.0.PropertyNotWriteable",
+            "RelatedProperties": [
+                "SKU"
+            ],
+            "Severity": "Warning"
+        }
+    ],
+    "Name": "Task 545",
+    "StartTime": "2012-03-07T14:44+06:00",
+    "TaskState": "Completed",
+    "TaskStatus": "OK"
+}

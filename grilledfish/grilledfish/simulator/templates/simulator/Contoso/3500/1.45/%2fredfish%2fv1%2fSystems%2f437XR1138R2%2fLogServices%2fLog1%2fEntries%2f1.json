@@ -1,0 +1,21 @@
+{
+    "@odata.id": "/redfish/v1/Systems/437XR1138R2/LogServices/Log1/Entries/1",
+    "@odata.type": "#LogEntry.v1_5_1.LogEntry",
+    "Created": "2012-03-07T14:44:00Z",
+    "EntryCode": "Upper Critical - going high",
+    "EntryType": "SEL",
+    "Id": "1",
+    "Links": {
+        "Oem": {},
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/Chassis/1U/Thermal"
+        }
+    },
+    "Message": "Temperature threshold exceeded",
+    "MessageId": "0x592A28",
+    "Name": "Log Entry 1",
+    "Oem": {},
+    "SensorNumber": 1,
+    "SensorType": "Temperature",
+    "Severity": "Critical"
+}

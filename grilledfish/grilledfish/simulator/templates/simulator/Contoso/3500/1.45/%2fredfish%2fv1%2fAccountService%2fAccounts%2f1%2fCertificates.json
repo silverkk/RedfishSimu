@@ -1,0 +1,11 @@
+{
+    "@Redfish.SupportedCertificates": [
+        "PEM"
+    ],
+    "@odata.id": "/redfish/v1/AccountService/Accounts/1/Certificates",
+    "@odata.type": "#CertificateCollection.CertificateCollection",
+    "Members": [],
+    "Members@odata.count": 0,
+    "Name": "Certificate Collection",
+    "Oem": {}
+}

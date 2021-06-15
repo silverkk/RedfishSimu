@@ -1,0 +1,38 @@
+{
+    "@odata.id": "/redfish/v1/UpdateService",
+    "@odata.type": "#UpdateService.v1_8_0.UpdateService",
+    "Actions": {
+        "#UpdateService.SimpleUpdate": {
+            "@Redfish.ActionInfo": "/redfish/v1/UpdateService/SimpleUpdateActionInfo",
+            "target": "/redfish/v1/UpdateService/Actions/SimpleUpdate"
+        },
+        "Oem": {}
+    },
+    "FirmwareInventory": {
+        "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory"
+    },
+    "HttpPushUri": "/FWUpdate",
+    "HttpPushUriOptions": {
+        "HttpPushUriApplyTime": {
+            "ApplyTime": "Immediate",
+            "ApplyTime@Redfish.AllowableValues": [
+                "Immediate",
+                "OnReset",
+                "AtMaintenanceWindowStart",
+                "InMaintenanceWindowOnReset"
+            ],
+            "MaintenanceWindowDurationInSeconds": 600,
+            "MaintenanceWindowStartTime": "2018-12-01T03:00:00+06:00"
+        }
+    },
+    "HttpPushUriOptionsBusy": false,
+    "Id": "UpdateService",
+    "Name": "Update service",
+    "Oem": {},
+    "ServiceEnabled": true,
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    }
+}

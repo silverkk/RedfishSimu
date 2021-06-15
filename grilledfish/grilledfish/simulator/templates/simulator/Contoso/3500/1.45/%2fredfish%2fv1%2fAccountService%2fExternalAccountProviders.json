@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/AccountService/ExternalAccountProviders",
+    "@odata.type": "#ExternalAccountProviderCollection.ExternalAccountProviderCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/AccountService/ExternalAccountProviders/ExternalRedfishService"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "External Account Provider Collection"
+}

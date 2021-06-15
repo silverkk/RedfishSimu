@@ -1,0 +1,13 @@
+{
+    "@odata.id": "/redfish/v1/Systems/437XR1138R2/LogServices",
+    "@odata.type": "#LogServiceCollection.LogServiceCollection",
+    "Description": "Collection of Logs for this System",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/437XR1138R2/LogServices/Log1"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Log Service Collection",
+    "Oem": {}
+}

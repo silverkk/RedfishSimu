@@ -1,0 +1,9 @@
+{
+    "@odata.id": "/redfish/v1/SessionService/Sessions/1234567890ABCDEF",
+    "@odata.type": "#Session.v1_2_1.Session",
+    "Description": "Manager User Session",
+    "Id": "1234567890ABCDEF",
+    "Name": "User Session",
+    "Oem": {},
+    "UserName": "Administrator"
+}

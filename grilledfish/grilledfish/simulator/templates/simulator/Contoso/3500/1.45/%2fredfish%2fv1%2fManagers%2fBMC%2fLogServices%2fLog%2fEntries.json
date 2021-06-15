@@ -1,0 +1,31 @@
+{
+    "@odata.id": "/redfish/v1/Managers/BMC/LogServices/Log/Entries",
+    "@odata.type": "#LogEntryCollection.LogEntryCollection",
+    "Description": "Collection of Logs for this System",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Managers/BMC/LogServices/Log/Entries/1",
+            "@odata.type": "#LogEntry.v1_5_1.LogEntry",
+            "Created": "2012-03-07T14:44:00Z",
+            "EntryType": "Event",
+            "Id": "1",
+            "Links": {
+                "Oem": {},
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/1U/Thermal"
+                }
+            },
+            "Message": "System May be Melting",
+            "MessageArgs": [
+                "88"
+            ],
+            "MessageId": "Event.1.0.TempWayTooHot",
+            "Name": "Log Entry 1",
+            "Oem": {},
+            "SensorNumber": 1,
+            "Severity": "Critical"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Log Service Collection"
+}

@@ -1,0 +1,15 @@
+{
+    "@odata.id": "/redfish/v1/Managers/BMC/VirtualMedia/Floppy1",
+    "@odata.type": "#VirtualMedia.v1_3_2.VirtualMedia",
+    "ConnectedVia": "URI",
+    "Id": "Floppy1",
+    "Image": "https://www.dmtf.org/freeImages/Sardine.img",
+    "ImageName": "Sardine2.1.43.35.6a",
+    "Inserted": true,
+    "MediaTypes": [
+        "Floppy",
+        "USBStick"
+    ],
+    "Name": "Virtual Removable Media",
+    "WriteProtected": false
+}
