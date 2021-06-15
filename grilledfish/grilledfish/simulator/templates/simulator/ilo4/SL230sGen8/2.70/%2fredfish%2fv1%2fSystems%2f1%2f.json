@@ -37,7 +37,7 @@
             "VersionString": "P75 05/24/2019"
         }
     },
-    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
+    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios|default:"P75 05/24/2019" }}",
     "Boot": {
         "BootSourceOverrideEnabled": "Disabled",
         "BootSourceOverrideSupported": [

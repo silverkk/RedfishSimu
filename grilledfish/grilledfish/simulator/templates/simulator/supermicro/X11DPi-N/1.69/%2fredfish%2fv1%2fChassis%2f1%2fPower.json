@@ -427,7 +427,7 @@
                 }
             ],
             "Model": "PWS-741P-1R",
-            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power }}",
+            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power|default:"1.1" }}",
             "SerialNumber": "P741PCD06XN4943",
             "RelatedItem": [
                 {

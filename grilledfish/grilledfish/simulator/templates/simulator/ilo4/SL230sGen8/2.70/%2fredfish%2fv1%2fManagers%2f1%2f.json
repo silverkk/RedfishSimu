@@ -30,7 +30,7 @@
             "VersionString": "iLO 4 v2.70"
         }
     },
-    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Manager }}",
+    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Manager|default:"iLO 4 v2.70" }}",
     "GraphicalConsole": {
         "ConnectTypesSupported": [
             "KVMIP"

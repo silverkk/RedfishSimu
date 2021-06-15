@@ -9,7 +9,7 @@
     "Oem": {
         "Public": {
             "CapableSpeedGbs": "1",
-            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.NIC }}",
+            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.NIC|default:"1.1767.0" }}",
             "NIC_id": "1",
             "NegotiatedSpeedGTs": "2.5",
             "PortInfo": [

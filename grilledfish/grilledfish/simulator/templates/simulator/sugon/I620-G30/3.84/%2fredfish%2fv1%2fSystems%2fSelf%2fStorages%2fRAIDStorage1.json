@@ -15,7 +15,7 @@
             },
             "SerialNumber": "SK81970027",
             "SpeedGbps": 0,
-            "FirmwarePackageVersion": "{{ machineInfo.FirmwareVersion.Storage }}",
+            "FirmwarePackageVersion": "{{ machineInfo.FirmwareVersion.Storage|default:"24.21.0-0025" }}",
             "SupportedDeviceProtocols": [
                 "SAS"
             ],

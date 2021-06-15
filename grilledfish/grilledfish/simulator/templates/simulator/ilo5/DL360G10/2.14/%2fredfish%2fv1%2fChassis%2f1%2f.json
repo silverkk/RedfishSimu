@@ -74,7 +74,7 @@
             "SmartStorageBattery": [
                 {
                     "ChargeLevelPercent": 96,
-                    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Battery }}",
+                    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Battery|default:"2.1" }}",
                     "Index": 1,
                     "MaximumCapWatts": 96,
                     "Model": "727258-B21",

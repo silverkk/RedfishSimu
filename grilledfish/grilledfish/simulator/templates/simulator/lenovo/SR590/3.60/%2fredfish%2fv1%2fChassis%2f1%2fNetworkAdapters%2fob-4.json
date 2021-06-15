@@ -48,7 +48,7 @@
                     }
                 ]
             },
-            "FirmwarePackageVersion": "{{ machineInfo.FirmwareVersion.NIC }}",
+            "FirmwarePackageVersion": "{{ machineInfo.FirmwareVersion.NIC|default:"1.1638.0" }}",
             "ControllerCapabilities": {
                 "NetworkDeviceFunctionCount": 2,
                 "NetworkPortCount": 2

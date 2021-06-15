@@ -188,7 +188,7 @@
         "SysMfrContactInfo": "www.dell.com",
         "SysPassword": "",
         "SysProfile": "PerfOptimized",
-        "SystemBiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
+        "SystemBiosVersion": "{{ machineInfo.FirmwareVersion.bios|default:"1.3.6" }}",
         "SystemCpldVersion": "1.0.1",
         "SystemManufacturer": "Dell Inc.",
         "SystemMeVersion": "3.0.7.164",

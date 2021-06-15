@@ -18,7 +18,7 @@
             "Manufacturer": "AVAGO",
             "Model": "3108",
             "SerialNumber": "FW-AGXJ2JEAARBWA",
-            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Storage }}",
+            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Storage|default:"4.680.00-8290" }}",
             "Status": {
                 "State": "Enabled",
                 "Health": "OK"

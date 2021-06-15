@@ -37,7 +37,7 @@
             "VersionString": "I36 v1.21 (11/03/2014)"
         }
     },
-    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
+    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios|default:"I36 v1.21 (11/03/2014)" }}",
     "Boot": {
         "BootSourceOverrideEnabled": "Disabled",
         "BootSourceOverrideSupported": [
@@ -161,7 +161,7 @@
                 {
                     "Condition": "Failed",
                     "ErrorCode": 0,
-                    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Battery }}",
+                    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Battery|default:"1.1" }}",
                     "Index": 1,
                     "MaxCapWatts": 12,
                     "Model": "727261-B21",

@@ -294,7 +294,7 @@
             "LineInputVoltageType": null,
             "Manufacturer": null,
             "Model": null,
-            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power }}"
+            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power|default:"3.30" }}"
         }
     ]
 }

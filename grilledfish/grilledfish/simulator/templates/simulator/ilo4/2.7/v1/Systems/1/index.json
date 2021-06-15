@@ -37,7 +37,7 @@
             "VersionString": "P89 v1.20 (08/26/2014)"
         }
     },
-    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
+    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios|default:"P89 v1.20 (08/26/2014)" }}",
     "Boot": {
         "BootSourceOverrideEnabled": "Disabled",
         "BootSourceOverrideSupported": [

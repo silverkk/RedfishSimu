@@ -53,7 +53,7 @@
             "LineInputVoltage": "218.50",
             "PowerCapacityWatts": "550 Watts",
             "Model": "CRPS550N",
-            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power }}",
+            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power|default:"V04.09" }}",
             "SerialNumber": "3300018530034059",
             "Manufacturer": "ACBEL"
         },

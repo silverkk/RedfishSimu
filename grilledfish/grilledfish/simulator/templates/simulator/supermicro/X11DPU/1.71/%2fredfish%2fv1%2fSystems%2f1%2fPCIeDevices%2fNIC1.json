@@ -12,7 +12,7 @@
     "SerialNumber": "OA197S028802",
     "PartNumber": "AOC-2UR68-i4G",
     "DeviceType": "NIC",
-    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.PcieDevice }}",
+    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.PcieDevice|default:"" }}",
     "Status": {
         "State": "Enabled",
         "Health": "OK",

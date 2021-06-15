@@ -12,7 +12,7 @@
     "SerialNumber": "9000121847",
     "PartNumber": " ",
     "SystemType": "Physical",
-    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
+    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios|default:"3.0" }}",
     "Manufacturer": "Supermicro",
     "Model": "X10SLH-F/X10SLM+-F",
     "SKU": "To be filled by O.E.M.",

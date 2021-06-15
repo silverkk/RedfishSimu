@@ -33,7 +33,7 @@
         ]
     },
     "TrustedModules": null,
-    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
+    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios|default:"3.66" }}",
     "ProcessorSummary": {
         "Count": 1,
         "Model": "Central Processor",

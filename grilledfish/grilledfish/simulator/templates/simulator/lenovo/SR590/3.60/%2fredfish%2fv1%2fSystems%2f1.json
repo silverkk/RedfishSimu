@@ -155,7 +155,7 @@
         }
     ],
     "SystemType": "Physical",
-    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
+    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios|default:"TEE152L" }}",
     "HostName": "XCC-7X98-1234567890",
     "MemorySummary": {
         "Status": {

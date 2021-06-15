@@ -31,7 +31,7 @@
     "EthernetInterfaces": {
         "@odata.id": "/redfish/v1/Managers/1/EthernetInterfaces"
     },
-    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Manager }}",
+    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Manager|default:"1.11.33P02 HDM V100R001B02D033SP02" }}",
     "GraphicalConsole": {
         "ConnectTypesSupported": [
             "KVMIP"

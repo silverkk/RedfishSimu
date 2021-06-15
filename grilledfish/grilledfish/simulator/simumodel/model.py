@@ -223,44 +223,24 @@ class model:
     def transFirmwareVersionInfo(self, machine, firmwareVersionNamespace, firmwareVersionDict):
         if 'bios' in firmwareVersionDict:
             firmwareVersionNamespace.bios = firmwareVersionDict['bios']
-        else:
-            firmwareVersionNamespace.bios = 'bios Version'
         if 'Backplane' in firmwareVersionDict:
             firmwareVersionNamespace.Backplane = firmwareVersionDict['Backplane']
-        else:
-            firmwareVersionNamespace.Backplane = 'Backplane Version'        
         if 'Battery' in firmwareVersionDict:
             firmwareVersionNamespace.Battery = firmwareVersionDict['Battery']
-        else:
-            firmwareVersionNamespace.Battery = 'Battery Version'
         if 'Disk' in firmwareVersionDict:
             firmwareVersionNamespace.Disk = firmwareVersionDict['Disk']
-        else:
-            firmwareVersionNamespace.Disk = 'Disk Version'
         if 'Manager' in firmwareVersionDict:
             firmwareVersionNamespace.Manager = firmwareVersionDict['Manager']
-        else:
-            firmwareVersionNamespace.Manager = 'Manager Version'
         if 'NIC' in firmwareVersionDict:
             firmwareVersionNamespace.NIC = firmwareVersionDict['NIC']
-        else:
-            firmwareVersionNamespace.NIC = 'NIC Version'
         if 'PcieDevice' in firmwareVersionDict:
             firmwareVersionNamespace.PcieDevice = firmwareVersionDict['PcieDevice']
-        else:
-            firmwareVersionNamespace.PcieDevice = 'PcieDevice Version'
         if 'Power' in firmwareVersionDict:
             firmwareVersionNamespace.Power = firmwareVersionDict['Power']
-        else:
-            firmwareVersionNamespace.Power = 'Power Version'
         if 'Storage' in firmwareVersionDict:
             firmwareVersionNamespace.Storage = firmwareVersionDict['Storage']
-        else:
-            firmwareVersionNamespace.Storage = 'Storage Version'
         if 'Switch' in firmwareVersionDict:
             firmwareVersionNamespace.Switch = firmwareVersionDict['Switch']
-        else:
-            firmwareVersionNamespace.Switch = 'Switch Version'
 
     def appendSelLogItemFromHealthInfo(self, machine, componentName, beforeStatus, afterStatus):
         item = types.SimpleNamespace()

@@ -15,7 +15,7 @@
         }
     },
     "AssetTag": "",
-    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios }}",
+    "BiosVersion": "{{ machineInfo.FirmwareVersion.bios|default:"1.3.6" }}",
     "Boot": {
         "BootSourceOverrideEnabled": "Once",
         "BootSourceOverrideTarget": "None",

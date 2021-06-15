@@ -27,7 +27,7 @@
     "StorageControllers": [
         {
             "SerialNumber": "SP637P0347",
-            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Storage }}",
+            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Storage|default:"50.0.1-0368" }}",
             "@odata.id": "\/redfish\/v1\/Systems\/1\/Storage\/RAID_Slot1#\/StorageControllers\/0",
             "Status": {
                 "State": "Enabled",

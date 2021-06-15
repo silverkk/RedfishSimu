@@ -477,7 +477,7 @@
                 }
             ],
             "Model": "PWS-1K02A-1R",
-            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power }}",
+            "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Power|default:"" }}",
             "SerialNumber": "P1K0ACJ22AN2247",
             "RelatedItem": [
                 {

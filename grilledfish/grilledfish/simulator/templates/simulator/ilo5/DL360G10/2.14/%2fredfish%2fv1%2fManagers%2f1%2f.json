@@ -26,7 +26,7 @@
     "EthernetInterfaces": {
         "@odata.id": "/redfish/v1/Managers/1/EthernetInterfaces/"
     },
-    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Manager }}",
+    "FirmwareVersion": "{{ machineInfo.FirmwareVersion.Manager|default:"iLO 5 v2.14" }}",
     "GraphicalConsole": {
         "ConnectTypesSupported": [
             "KVMIP"

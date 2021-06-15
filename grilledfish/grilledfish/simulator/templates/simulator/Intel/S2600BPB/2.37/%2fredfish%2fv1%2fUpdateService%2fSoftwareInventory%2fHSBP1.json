@@ -5,5 +5,5 @@
     "Id": "HSBP1",
     "Name": "Software Inventory",
     "Description": "Software Version and Inventory Information",
-    "Version": "{{ machineInfo.FirmwareVersion.Backplane }}"
+    "Version": "{{ machineInfo.FirmwareVersion.Backplane|default:"01.21" }}"
 }

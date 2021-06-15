@@ -33,7 +33,7 @@
                 "NetworkDeviceFunctionCount": 2,
                 "NetworkPortCount": 2
             },
-            "FirmwarePackageVersion": "{{ machineInfo.FirmwareVersion.NIC }}",
+            "FirmwarePackageVersion": "{{ machineInfo.FirmwareVersion.NIC|default:"1.1489.0" }}",
             "Links": {
                 "NetworkPorts": [
                     {

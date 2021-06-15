@@ -7,7 +7,7 @@
     "FcPorts": [],
     "Firmware": {
         "Current": {
-            "VersionString": "{{ machineInfo.FirmwareVersion.NIC }}"
+            "VersionString": "{{ machineInfo.FirmwareVersion.NIC|default:"20.6.61" }}"
         }
     },
     "Name": "HPE Ethernet 1Gb 4-port 331i Adapter - NIC",
