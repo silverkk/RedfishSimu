@@ -1,23 +1,23 @@
 {
-    "ipNumber": 29,
-    "startIP": "192.168.1.1",
+    "ipNumber": 1,
+    "startIP": "10.239.43.6",
     "perf": {
-        "enablePerfStatistic": true,
+        "enablePerfStatistic": false,
         "granularity":10000,
         "enableCache":false
     },
     "machines" : [
         {
-            "startIp" : "192.168.1.1",
-            "endIp" : "192.168.1.1",
+            "startIp" : "10.239.43.6",
+            "endIp" : "10.239.43.6",
             "ipmiNodeType": "IDRAC_13G_MONOLITHIC",
             "ipmiSetting": "Setting_0",
 			"vendor": "idrac8",            
-			"fwVersion": "2.60",
-			"model": "R730",
+			"fwVersion": "1.0",
+			"model": "XPUM",
             "flatMode": true,
             "health" : {
-                "system" : "Warning",
+                "system" : "OK",
                 "storage" : "Warning",
                 "memory": "Warning",
                 "NIC": "Warning",
