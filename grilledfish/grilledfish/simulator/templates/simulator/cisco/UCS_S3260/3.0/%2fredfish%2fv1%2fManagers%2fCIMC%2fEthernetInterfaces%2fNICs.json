@@ -1,0 +1,39 @@
+{
+  "Name":"Manager Ethernet Interface",
+  "NameServers":["0.0.0.0","0.0.0.0"],
+  "FQDN":"UCS-C3260-FCH20177003-1",
+  "Id":"NICs",
+  "IPv6StaticAddresses":{
+    "Address":"::",
+    "PrefixLength":"64"
+  },
+  "AutoNeg":true,
+  "IPv4Addresses":{
+    "Address":"10.30.16.138",
+    "SubnetMask":"255.255.255.0",
+    "Gateway":"10.30.16.17"
+  },
+  "@odata.type":"#EthernetInterface.1.0.0",
+  "MaxIPv6StaticAddresses":1,
+  "IPv4AddressOrigin":"Static",
+  "VLAN":{
+    "VLANEnable":false,
+    "VLANId":1
+  },
+  "InterfaceEnabled":true,
+  "@odata.context":"/redfish/v1/$metadata#Managers/Members/$entity/EthernetInterfaces/Members/$entity",
+  "@odata.id":"/redfish/v1/Managers/CIMC/EthernetInterfaces/NICs",
+  "SpeedMbps":"1024",
+  "HostName":"UCS-C3260-FCH20177003-1",
+  "Description":"Manager Network Interface",
+  "MACAddress":"00:62:EC:16:10:46",
+  "IPv6DefaultGateway":"::",
+  "IPv6Addresses":{
+    "Address":"::",
+    "AddressOrigin":"Static",
+    "PrefixLength":"64"
+  },
+  "MTUSize":1500,
+  "FullDuplex":true,
+  "PermanentMACAddress":"00:62:EC:16:10:46"
+}

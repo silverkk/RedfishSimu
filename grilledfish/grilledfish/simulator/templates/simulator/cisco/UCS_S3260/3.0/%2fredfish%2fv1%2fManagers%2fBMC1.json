@@ -1,0 +1,91 @@
+{
+  "Name":"Baseboard Management Controller",
+  "id":"BMC1",
+  "FirmwareVersion":"3.0(4p)",
+  "EthernetInterfaces":{
+    "@odata.id":"/redfish/v1/Managers/BMC1/EthernetInterfaces"
+  },
+  "@odata.type":"#Manager.1.0.0.Manager",
+  "Links":{
+    "ManagerForChassis":["/redfish/v1/Chassis/Server1"],
+    "ManagerForServers":["/redfish/v1/Systems/FCH20167MYU"]
+  },
+  "@odata.id":"/redfish/v1/Managers/BMC1",
+  "VirtualMedia":{
+    "@odata.id":"/redfish/v1/Managers/BMC1/VirtualMedia"
+  },
+  "Status":{
+    "State":"Enabled",
+    "Health":"OK"
+  },
+  "ManagerNetworkProtocol":{
+    "@odata.id":"/redfish/v1/Managers/BMC1/ManagerNetworkProtocol"
+  },
+  "SerialInterfaces":{
+    "@odata.id":"/redfish/v1/Managers/BMC1/SerialInterfaces"
+  },
+  "CommandShell":{
+    "ServiceEnabled":true,
+    "ConnectTypesSupported":["IPMI"]
+  },
+  "@odata.context":"/redfish/v1/$metadata#Managers/Members/$entity",
+  "ServiceEntryPointUUID":"69392ED9-0D67-493E-9235-9EFCBFDE02C2",
+  "Description":"",
+  "Model":"UCSC-C3X60-SVRNB",
+  "LogServices":{
+    "@odata.id":"/redfish/v1/Managers/BMC1/LogServices"
+  },
+  "UUID":"69392ED9-0D67-493E-9235-9EFCBFDE02C2",
+  "GraphicalConsole":{
+    "MaxConcurrentSessions":4,
+    "ConnectTypesSupported":["KVMIP"],
+    "ServiceEnabled":true
+  },
+  "ManagerType":"BMC",
+  "Actions":{
+    "#Oem.BiosFwUpdate":{
+      "RemotePassword@Redfish.AllowableValues":["Remote Server Password"],
+      "RemotePath@Redfish.AllowableValues":["Valid Remote Share Path"],
+      "RemoteUsername@Redfish.AllowableValues":["Remote Server Username"],
+      "target":"/redfish/v1/Managers/BMC1/Actions/Oem.BiosFwUpdate",
+      "RemoteHostname@Redfish.AllowableValues":["Valid Hostname/IP Address"],
+      "Protocol@Redfish.AllowableValues":["TFTP","SCP","SFTP","FTP","HTTP"]
+    },
+    "#Manager.Reset":{
+      "ResetType@Redfish.AllowableValues":["ForceRestart"],
+      "target":"/redfish/v1/Managers/BMC1/Actions/Manager.Reset"
+    },
+    "#Oem.FwUpdate":{
+      "RemotePassword@Redfish.AllowableValues":["Remote Server Password"],
+      "RemotePath@Redfish.AllowableValues":["Valid Remote Share Path"],
+      "RemoteUsername@Redfish.AllowableValues":["Remote Server Username"],
+      "target":"/redfish/v1/Managers/BMC1/Actions/Oem.FwUpdate",
+      "RemoteHostname@Redfish.AllowableValues":["Valid Hostname/IP Address"],
+      "Protocol@Redfish.AllowableValues":["TFTP","SCP","SFTP","FTP","HTTP"]
+    },
+    "#Oem.ExportConfig":{
+      "RemotePassword@Redfish.AllowableValues":["Remote Server Password"],
+      "RemotePath@Redfish.AllowableValues":["Valid Remote Share Path"],
+      "RemoteUsername@Redfish.AllowableValues":["Remote Server Username"],
+      "target":"/redfish/v1/Managers/BMC1/Actions/Oem.ExportConfig",
+      "RemoteHostname@Redfish.AllowableValues":["Valid Hostname/IP Address"],
+      "Protocol@Redfish.AllowableValues":["TFTP","SCP","SFTP","FTP","HTTP"]
+    },
+    "#Oem.ImportConfig":{
+      "RemotePassword@Redfish.AllowableValues":["Remote Server Password"],
+      "RemotePath@Redfish.AllowableValues":["Valid Remote Share Path"],
+      "RemoteUsername@Redfish.AllowableValues":["Remote Server Username"],
+      "target":"/redfish/v1/Managers/BMC1/Actions/Oem.ImportConfig",
+      "RemoteHostname@Redfish.AllowableValues":["Valid Hostname/IP Address"],
+      "Protocol@Redfish.AllowableValues":["TFTP","SCP","SFTP","FTP","HTTP"]
+    },
+    "#Oem.TechSupportExport":{
+      "RemotePassword@Redfish.AllowableValues":["Remote Server Password"],
+      "RemotePath@Redfish.AllowableValues":["Valid Remote Share Path"],
+      "RemoteUsername@Redfish.AllowableValues":["Remote Server Username"],
+      "target":"/redfish/v1/Managers/BMC1/Actions/Oem.TechSupportExport",
+      "RemoteHostname@Redfish.AllowableValues":["Valid Hostname/IP Address"],
+      "Protocol@Redfish.AllowableValues":["TFTP","SCP","SFTP","FTP","HTTP"]
+    }
+  }
+}

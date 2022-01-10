@@ -1,0 +1,12 @@
+{
+  "Name":"Log Entry 95",
+  "Id":"95",
+  "Message":"LED_PSU_STATUS: Platform sensor, AMBER was asserted",
+  "EntryType":"SEL",
+  "Description":"Log Entry 95",
+  "@odata.type":"#LogEntry.1.0.0",
+  "Created":"2019-12-19 01:59:07 ",
+  "@odata.context":"/redfish/v1/$metadata#Managers/Members/$entity/LogServices/Members/$entity/Entries/Members/$entity",
+  "@odata.id":"/redfish/v1/Managers/CIMC/LogServices/SEL/Entries/95",
+  "Severity":"Informational"
+}

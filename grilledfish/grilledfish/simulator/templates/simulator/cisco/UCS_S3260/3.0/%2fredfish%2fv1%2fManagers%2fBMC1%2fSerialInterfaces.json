@@ -1,0 +1,11 @@
+{
+  "Name":"Serial Interface Collection",
+  "Description":"Collection of Serial Interfaces for this System",
+  "@odata.type":"#SerialInterface.1.0.0.SerialInterfaceCollection",
+  "Members@odata.count":1,
+  "Members":[{
+      "@odata.id":"/redfish/v1/Managers/BMC1/SerialInterfaces/TTY0"
+    }],
+  "@odata.id":"/redfish/v1/Managers/BMC1/SerialInterfaces",
+  "@odata.context":"/redfish/v1/$metadata#Managers/Members/$entity/SerialInterfaces"
+}

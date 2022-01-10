@@ -1,0 +1,13 @@
+{
+  "Name":"Log Entry 1321",
+  "Id":"1321",
+  "Message":"MAIN_POWER_PRS: Presence sensor, Device Inserted / Device Present was asserted",
+  "EntryType":"SEL",
+  "Description":"Log Entry 1321",
+  "@odata.type":"#LogEntry.1.0.0",
+  "EntryCode":"Device Inserted / Device Present",
+  "Created":"2021-11-11 01:04:44 ",
+  "@odata.context":"/redfish/v1/$metadata#Systems/Members/$entity/LogServices/Members/$entity/Entries/Members/$entity",
+  "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1321",
+  "Severity":"Normal"
+}

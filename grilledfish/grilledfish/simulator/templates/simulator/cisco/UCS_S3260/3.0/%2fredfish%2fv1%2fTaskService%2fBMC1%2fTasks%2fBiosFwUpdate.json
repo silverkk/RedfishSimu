@@ -1,0 +1,14 @@
+{
+  "Name":"Task BiosFwUpdate",
+  "TaskState":"Completed",
+  "Id":"BiosFwUpdate",
+  "TaskStatus":"OK",
+  "@odata.context":"/redfish/v1/$metadata#TaskService/Members/$entity/Tasks/Members/$entity",
+  "Description":"BIOS firmware version",
+  "@odata.type":"#Task.1.0.0",
+  "@odata.id":"/redfish/v1/TaskService/BMC1/Tasks/BiosFwUpdate",
+  "Oem":{
+    "UpdateStatus":"None, OK\n",
+    "FWVersion":"C3X60M3.3.0.4e.0.1106191007"
+  }
+}

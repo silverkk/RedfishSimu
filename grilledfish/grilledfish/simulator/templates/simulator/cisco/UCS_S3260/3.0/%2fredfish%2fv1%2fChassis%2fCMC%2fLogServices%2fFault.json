@@ -1,0 +1,21 @@
+{
+  "Name":"Fault Log Service",
+  "DateTimeLocalOffset":"+0300 (Local)",
+  "Id":"Fault",
+  "OverWritePolicy":"NeverOverWrites",
+  "ServiceEnabled":true,
+  "@odata.context":"/redfish/v1/$metadata#Chassis/Members/$entity/LogServices/Members/$entity",
+  "Description":"Fault Log Service",
+  "DateTime":"Mon Nov 15 04:03:40 2021\n",
+  "Entries":{
+    "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/Fault/Entries"
+  },
+  "MaxNumberOfRecords":"1024",
+  "Actions":{
+    "#LogService.ClearLog":{
+      "target":"/redfish/v1/Chassis/CMC/LogServices/Fault/Actions/LogService.ClearLog"
+    }
+  },
+  "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/Fault",
+  "@odata.type":"#LogService.1.0.0"
+}

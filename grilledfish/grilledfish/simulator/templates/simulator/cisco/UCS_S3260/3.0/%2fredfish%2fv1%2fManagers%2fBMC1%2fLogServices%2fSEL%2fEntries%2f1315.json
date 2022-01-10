@@ -1,0 +1,12 @@
+{
+  "Name":"Log Entry 1315",
+  "Id":"1315",
+  "Message":"System Software event: System Event sensor, Timestamp Clock Synch (first of pair) was asserted",
+  "EntryType":"SEL",
+  "Description":"Log Entry 1315",
+  "@odata.type":"#LogEntry.1.0.0",
+  "Created":"2021-11-11 00:41:37 ",
+  "@odata.context":"/redfish/v1/$metadata#Managers/Members/$entity/LogServices/Members/$entity/Entries/Members/$entity",
+  "@odata.id":"/redfish/v1/Managers/BMC1/LogServices/SEL/Entries/1315",
+  "Severity":"Normal"
+}

@@ -1,0 +1,12 @@
+{
+  "Name":"Log Entry 1343",
+  "Id":"1343",
+  "Message":"DDR3_P2_E1_ECC: Memory sensor, 4 new correctable ECC errors",
+  "EntryType":"SEL",
+  "Description":"Log Entry 1343",
+  "@odata.type":"#LogEntry.1.0.0",
+  "Created":"2021-11-12 02:51:41 ",
+  "@odata.context":"/redfish/v1/$metadata#Chassis/Members/$entity/LogServices/Members/$entity/Entries/Members/$entity",
+  "@odata.id":"/redfish/v1/Chassis/Server1/LogServices/SEL/Entries/1343",
+  "Severity":"Informational"
+}

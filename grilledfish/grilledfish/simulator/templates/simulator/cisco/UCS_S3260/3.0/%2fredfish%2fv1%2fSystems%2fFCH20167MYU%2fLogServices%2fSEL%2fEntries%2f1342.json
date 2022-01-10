@@ -1,0 +1,13 @@
+{
+  "Name":"Log Entry 1342",
+  "Id":"1342",
+  "Message":"BIOS_POST_CMPLT: Presence sensor, Device Inserted / Device Present was asserted",
+  "EntryType":"SEL",
+  "Description":"Log Entry 1342",
+  "@odata.type":"#LogEntry.1.0.0",
+  "EntryCode":"Device Inserted / Device Present",
+  "Created":"2021-11-11 02:48:41 ",
+  "@odata.context":"/redfish/v1/$metadata#Systems/Members/$entity/LogServices/Members/$entity/Entries/Members/$entity",
+  "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1342",
+  "Severity":"Normal"
+}

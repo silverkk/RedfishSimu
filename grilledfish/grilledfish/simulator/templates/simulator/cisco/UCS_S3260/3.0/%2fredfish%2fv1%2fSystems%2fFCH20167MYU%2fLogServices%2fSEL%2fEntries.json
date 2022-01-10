@@ -1,0 +1,483 @@
+{
+  "@odata.count":"1350",
+  "Members":[{
+      "Name":"Log Entry 1350",
+      "Description":"Log Entry 1350",
+      "Message":"DDR3_P2_E1_ECC: Memory sensor, 1 new correctable ECC errors",
+      "Id":"1350",
+      "Created":"2021-11-15 00:35:02 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1350",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 1349",
+      "Description":"Log Entry 1349",
+      "Message":"DDR3_P2_E1_ECC: Memory sensor, 1 new correctable ECC errors",
+      "Id":"1349",
+      "Created":"2021-11-15 00:31:19 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1349",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 1348",
+      "Description":"Log Entry 1348",
+      "Message":"DDR3_P2_E1_ECC: Memory sensor, 3 new correctable ECC errors",
+      "Id":"1348",
+      "Created":"2021-11-13 09:20:15 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1348",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 1347",
+      "Description":"Log Entry 1347",
+      "Message":"DDR3_P2_E1_ECC: Memory sensor, 1 new correctable ECC errors",
+      "Id":"1347",
+      "Created":"2021-11-13 07:09:42 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1347",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 1346",
+      "Description":"Log Entry 1346",
+      "Message":"DDR3_P2_E1_ECC: Memory sensor, 4 new correctable ECC errors",
+      "Id":"1346",
+      "Created":"2021-11-13 04:59:02 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1346",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 1345",
+      "Description":"Log Entry 1345",
+      "Message":"DDR3_P2_E1_ECC: Memory sensor, 3 new correctable ECC errors",
+      "Id":"1345",
+      "Created":"2021-11-13 02:48:32 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1345",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 1344",
+      "Description":"Log Entry 1344",
+      "Message":"DDR3_P2_E1_ECC: Memory sensor, 1 new correctable ECC errors",
+      "Id":"1344",
+      "Created":"2021-11-12 05:02:21 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1344",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 1343",
+      "Description":"Log Entry 1343",
+      "Message":"DDR3_P2_E1_ECC: Memory sensor, 4 new correctable ECC errors",
+      "Id":"1343",
+      "Created":"2021-11-12 02:51:41 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1343",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 1342",
+      "Id":"1342",
+      "Message":"BIOS_POST_CMPLT: Presence sensor, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1342",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 02:48:41 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1342",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1341",
+      "Description":"Log Entry 1341",
+      "Message":"System Software event: System Event sensor, OEM System Boot Event was asserted",
+      "Id":"1341",
+      "Created":"2021-11-11 02:48:38 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1341",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1340",
+      "Description":"Log Entry 1340",
+      "Message":"System Software event: System Event sensor, Timestamp Clock Synch (first of pair) was asserted",
+      "Id":"1340",
+      "Created":"2021-11-11 02:47:02 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1340",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1339",
+      "Id":"1339",
+      "Message":"MAIN_POWER_PRS: Presence sensor, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1339",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 02:46:20 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1339",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1338",
+      "Id":"1338",
+      "Message":"MAIN_POWER_PRS: Presence sensor, Device Removed / Device Absent was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1338",
+      "EntryCode":"Device Removed / Device Absent",
+      "Created":"2021-11-11 02:46:14 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1338",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1337",
+      "Description":"Log Entry 1337",
+      "Message":"System Software event: System Event sensor, Timestamp Clock Synch (first of pair) was asserted",
+      "Id":"1337",
+      "Created":"2021-11-11 02:46:12 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1337",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1336",
+      "Id":"1336",
+      "Message":"MAIN_POWER_PRS: Presence sensor, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1336",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 02:45:01 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1336",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1335",
+      "Description":"Log Entry 1335",
+      "Message":"LED_TEMP_STATUS: Platform sensor, GREEN was asserted",
+      "Id":"1335",
+      "Created":"2021-11-11 10:09:01 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1335",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 1334",
+      "Description":"Log Entry 1334",
+      "Message":"LED_TEMP_STATUS: Platform sensor, ON event was asserted",
+      "Id":"1334",
+      "Created":"2021-11-11 10:09:01 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1334",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 1333",
+      "Description":"Log Entry 1333",
+      "Message":"FRU_MB LED_HLTH_STATUS: Platform sensor for FRU_MB, GREEN was asserted",
+      "Id":"1333",
+      "Created":"2021-11-11 10:09:01 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1333",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 1332",
+      "Description":"Log Entry 1332",
+      "Message":"FRU_MB LED_HLTH_STATUS: Platform sensor for FRU_MB, ON event was asserted",
+      "Id":"1332",
+      "Created":"2021-11-11 10:09:01 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1332",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 1331",
+      "Id":"1331",
+      "Message":"P1_PRESENT: Presence sensor, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1331",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 10:09:01 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1331",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1330",
+      "Id":"1330",
+      "Message":"MEZZ_PRS: Presence sensor, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1330",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 10:09:01 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1330",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1329",
+      "Id":"1329",
+      "Message":"SSD1_PRS: Drive Slot sensor, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1329",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 10:09:01 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1329",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1328",
+      "Id":"1328",
+      "Message":"FRU_RAM POWER_ON_FAIL: Platform sensor for FRU_RAM, Predictive Failure deasserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1328",
+      "EntryCode":"Predictive Failure deasserted",
+      "Created":"2021-11-11 10:09:00 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1328",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1327",
+      "Id":"1327",
+      "Message":"P2_PRESENT: Presence sensor, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1327",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 10:09:00 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1327",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1326",
+      "Id":"1326",
+      "Message":"SSD2_PRS: Drive Slot sensor, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1326",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 10:09:00 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1326",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1325",
+      "Id":"1325",
+      "Message":"MAIN_POWER_PRS: Presence sensor, Device Removed / Device Absent was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1325",
+      "EntryCode":"Device Removed / Device Absent",
+      "Created":"2021-11-11 02:39:06 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1325",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1324",
+      "Id":"1324",
+      "Message":"BIOS_POST_CMPLT: Presence sensor, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1324",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 01:07:19 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1324",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1323",
+      "Description":"Log Entry 1323",
+      "Message":"System Software event: System Event sensor, OEM System Boot Event was asserted",
+      "Id":"1323",
+      "Created":"2021-11-11 01:07:17 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1323",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1322",
+      "Description":"Log Entry 1322",
+      "Message":"System Software event: System Event sensor, Timestamp Clock Synch (first of pair) was asserted",
+      "Id":"1322",
+      "Created":"2021-11-11 01:05:15 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1322",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1321",
+      "Id":"1321",
+      "Message":"MAIN_POWER_PRS: Presence sensor, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1321",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 01:04:44 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1321",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1320",
+      "Id":"1320",
+      "Message":"MAIN_POWER_PRS: Presence sensor, Device Removed / Device Absent was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1320",
+      "EntryCode":"Device Removed / Device Absent",
+      "Created":"2021-11-11 01:04:17 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1320",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1319",
+      "Description":"Log Entry 1319",
+      "Message":"System Software event: System Event sensor, Timestamp Clock Synch (first of pair) was asserted",
+      "Id":"1319",
+      "Created":"2021-11-11 01:01:35 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1319",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1318",
+      "Id":"1318",
+      "Message":"BIOS_POST_CMPLT: Presence sensor, Device Removed / Device Absent was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1318",
+      "EntryCode":"Device Removed / Device Absent",
+      "Created":"2021-11-11 01:01:10 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1318",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1317",
+      "Id":"1317",
+      "Message":"BIOS_POST_CMPLT: Presence sensor, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1317",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 00:44:00 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1317",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1316",
+      "Description":"Log Entry 1316",
+      "Message":"System Software event: System Event sensor, OEM System Boot Event was asserted",
+      "Id":"1316",
+      "Created":"2021-11-11 00:43:58 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1316",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1315",
+      "Description":"Log Entry 1315",
+      "Message":"System Software event: System Event sensor, Timestamp Clock Synch (first of pair) was asserted",
+      "Id":"1315",
+      "Created":"2021-11-11 00:41:37 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1315",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1314",
+      "Id":"1314",
+      "Message":"BIOS_POST_CMPLT: Presence sensor, Device Removed / Device Absent was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1314",
+      "EntryCode":"Device Removed / Device Absent",
+      "Created":"2021-11-11 00:41:06 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1314",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1313",
+      "Id":"1313",
+      "Message":"MAIN_POWER_PRS: Presence sensor, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1313",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 00:41:06 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1313",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1312",
+      "Id":"1312",
+      "Message":"MAIN_POWER_PRS: Presence sensor, Device Removed / Device Absent was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1312",
+      "EntryCode":"Device Removed / Device Absent",
+      "Created":"2021-11-11 00:40:39 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1312",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1311",
+      "Id":"1311",
+      "Message":"BIOS_POST_CMPLT: Presence sensor, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1311",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 00:40:20 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1311",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1310",
+      "Description":"Log Entry 1310",
+      "Message":"System Software event: System Event sensor, OEM System Boot Event was asserted",
+      "Id":"1310",
+      "Created":"2021-11-11 00:40:17 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1310",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1309",
+      "Description":"Log Entry 1309",
+      "Message":"System Software event: System Event sensor, Timestamp Clock Synch (first of pair) was asserted",
+      "Id":"1309",
+      "Created":"2021-11-11 00:37:52 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1309",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1308",
+      "Id":"1308",
+      "Message":"BIOS_POST_CMPLT: Presence sensor, Device Removed / Device Absent was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1308",
+      "EntryCode":"Device Removed / Device Absent",
+      "Created":"2021-11-11 00:37:27 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1308",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1307",
+      "Id":"1307",
+      "Message":"BIOS_POST_CMPLT: Presence sensor, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1307",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 00:37:11 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1307",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1306",
+      "Description":"Log Entry 1306",
+      "Message":"System Software event: System Event sensor, OEM System Boot Event was asserted",
+      "Id":"1306",
+      "Created":"2021-11-11 00:37:09 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1306",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1305",
+      "Description":"Log Entry 1305",
+      "Message":"System Software event: System Event sensor, Timestamp Clock Synch (first of pair) was asserted",
+      "Id":"1305",
+      "Created":"2021-11-11 00:35:21 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1305",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1304",
+      "Id":"1304",
+      "Message":"BIOS_POST_CMPLT: Presence sensor, Device Removed / Device Absent was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1304",
+      "EntryCode":"Device Removed / Device Absent",
+      "Created":"2021-11-11 00:34:51 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1304",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1303",
+      "Id":"1303",
+      "Message":"MAIN_POWER_PRS: Presence sensor, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1303",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 00:34:51 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1303",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1302",
+      "Id":"1302",
+      "Message":"MAIN_POWER_PRS: Presence sensor, Device Removed / Device Absent was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 1302",
+      "EntryCode":"Device Removed / Device Absent",
+      "Created":"2021-11-11 00:34:24 ",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1302",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 1301",
+      "Description":"Log Entry 1301",
+      "Message":"DDR3_P2_E1_ECC: Memory sensor, 5 new correctable ECC errors",
+      "Id":"1301",
+      "Created":"2021-11-10 05:21:49 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1301",
+      "Severity":"Informational"
+    }],
+  "Members@odata.count":50,
+  "@odata.type":"#LogEntry.1.0.0.LogEntryCollection",
+  "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries",
+  "@odata.context":"/redfish/v1/$metadata#Systems/Members/$entity/LogServices/Members/$entity/Entries"
+}

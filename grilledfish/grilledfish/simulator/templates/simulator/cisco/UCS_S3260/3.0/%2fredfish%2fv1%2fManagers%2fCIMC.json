@@ -1,0 +1,91 @@
+{
+  "Name":"Cisco Integrated Management Controller",
+  "id":"CIMC",
+  "FirmwareVersion":"3.0(4p)",
+  "SerialConsole":{
+    "MaxConcurrentSessions":4,
+    "ConnectTypesSupported":["SSH","Telnet","IPMI","XML API"],
+    "ServiceEnabled":true
+  },
+  "EthernetInterfaces":{
+    "@odata.id":"/redfish/v1/Managers/CIMC/EthernetInterfaces"
+  },
+  "@odata.type":"#Manager.1.0.0.Manager",
+  "Links":{
+    "ManagerForChassis":["/redfish/v1/Chassis/CMC"],
+    "ManagerForServers":["/redfish/v1/Systems/FOX2016G1LY"]
+  },
+  "@odata.id":"/redfish/v1/Managers/CIMC",
+  "VirtualMedia":{
+    "@odata.id":"/redfish/v1/Managers/CIMC/VirtualMedia"
+  },
+  "DateTimeLocalOffset":"UTC+0300 (Local)",
+  "ManagerNetworkProtocol":{
+    "@odata.id":"/redfish/v1/Managers/CIMC/ManagerNetworkProtocol"
+  },
+  "SerialInterfaces":{
+    "@odata.id":"/redfish/v1/Managers/CIMC/SerialInterfaces"
+  },
+  "CommandShell":{
+    "MaxConcurrentSessions":4,
+    "ConnectTypesSupported":["SSH","Telnet","IPMI","XML API"],
+    "ServiceEnabled":true
+  },
+  "@odata.context":"/redfish/v1/$metadata#Managers/Members/$entity",
+  "LogServices":{
+    "@odata.id":"/redfish/v1/Managers/CIMC/LogServices"
+  },
+  "Description":"",
+  "DateTime":"Mon Nov 15 04:08:59 2021",
+  "GraphicalConsole":{
+    "MaxConcurrentSessions":4,
+    "ConnectTypesSupported":["WebUI"],
+    "ServiceEnabled":true
+  },
+  "Status":{
+    "State":"Enabled",
+    "Health":"OK"
+  },
+  "Model":"UCSS-S3260-BASE",
+  "ManagerType":"CIMC",
+  "Actions":{
+    "#Manager.Reset":{
+      "ResetType@Redfish.AllowableValues":["ForceRestart"],
+      "target":"/redfish/v1/Managers/CIMC/Actions/Manager.Reset"
+    },
+    "#Oem.FwUpdate":{
+      "RemotePassword@Redfish.AllowableValues":["Remote Server Password"],
+      "RemotePath@Redfish.AllowableValues":["Valid Remote Share Path"],
+      "RemoteUsername@Redfish.AllowableValues":["Remote Server Username"],
+      "target":"/redfish/v1/Managers/CIMC/Actions/Oem.FwUpdate",
+      "RemoteHostname@Redfish.AllowableValues":["Valid Hostname/IP Address"],
+      "Protocol@Redfish.AllowableValues":["TFTP","SCP","SFTP","FTP","HTTP"]
+    },
+    "#Oem.ImportConfig":{
+      "Passphrase@Redfish.AllowableValues":["Passphrase"],
+      "RemotePassword@Redfish.AllowableValues":["Remote Server Password"],
+      "RemotePath@Redfish.AllowableValues":["Valid Remote Share Path"],
+      "RemoteUsername@Redfish.AllowableValues":["Remote Server Username"],
+      "target":"/redfish/v1/Managers/CIMC/Actions/Oem.ImportConfig",
+      "RemoteHostname@Redfish.AllowableValues":["Valid Hostname/IP Address"],
+      "Protocol@Redfish.AllowableValues":["TFTP","SCP","SFTP","FTP","HTTP"]
+    },
+    "#Oem.ExportConfig":{
+      "Passphrase@Redfish.AllowableValues":["Passphrase"],
+      "RemotePassword@Redfish.AllowableValues":["Remote Server Password"],
+      "RemotePath@Redfish.AllowableValues":["Valid Remote Share Path"],
+      "RemoteUsername@Redfish.AllowableValues":["Remote Server Username"],
+      "target":"/redfish/v1/Managers/CIMC/Actions/Oem.ExportConfig",
+      "RemoteHostname@Redfish.AllowableValues":["Valid Hostname/IP Address"],
+      "Protocol@Redfish.AllowableValues":["TFTP","SCP","SFTP","FTP","HTTP"]
+    },
+    "#Oem.TechSupportExport":{
+      "RemotePassword@Redfish.AllowableValues":["Remote Server Password"],
+      "RemotePath@Redfish.AllowableValues":["Valid Remote Share Path"],
+      "RemoteUsername@Redfish.AllowableValues":["Remote Server Username"],
+      "target":"/redfish/v1/Managers/CIMC/Actions/Oem.TechSupportExport",
+      "RemoteHostname@Redfish.AllowableValues":["Valid Hostname/IP Address"],
+      "Protocol@Redfish.AllowableValues":["TFTP","SCP","SFTP","FTP","HTTP"]
+    }
+  }
+}

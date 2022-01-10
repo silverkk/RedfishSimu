@@ -1,0 +1,12 @@
+{
+  "Name":"Log Entry 101",
+  "Id":"101",
+  "Message":"PS4_FRU PSU4_STATUS: Power Supply sensor for PS4_FRU, Power Supply input lost (AC/DC) was deasserted",
+  "EntryType":"SEL",
+  "Description":"Log Entry 101",
+  "@odata.type":"#LogEntry.1.0.0",
+  "Created":"2019-12-19 01:59:48 ",
+  "@odata.context":"/redfish/v1/$metadata#Managers/Members/$entity/LogServices/Members/$entity/Entries/Members/$entity",
+  "@odata.id":"/redfish/v1/Managers/CIMC/LogServices/SEL/Entries/101",
+  "Severity":"Normal"
+}

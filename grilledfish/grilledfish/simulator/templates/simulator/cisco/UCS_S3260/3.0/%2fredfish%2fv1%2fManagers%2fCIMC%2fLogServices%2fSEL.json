@@ -1,0 +1,21 @@
+{
+  "Name":"SEL Log Service",
+  "DateTimeLocalOffset":"+0300 (Local)",
+  "Id":"SEL",
+  "OverWritePolicy":"NeverOverWrites",
+  "ServiceEnabled":true,
+  "@odata.context":"/redfish/v1/$metadata#Managers/Members/$entity/LogServices/Members/$entity",
+  "Description":"SEL Log Service",
+  "DateTime":"Mon Nov 15 04:09:25 2021\n",
+  "Entries":{
+    "@odata.id":"/redfish/v1/Managers/CIMC/LogServices/SEL/Entries"
+  },
+  "MaxNumberOfRecords":"3008",
+  "Actions":{
+    "#LogService.ClearLog":{
+      "target":"/redfish/v1/Managers/CIMC/LogServices/SEL/Actions/LogService.ClearLog"
+    }
+  },
+  "@odata.id":"/redfish/v1/Managers/CIMC/LogServices/SEL",
+  "@odata.type":"#LogService.1.0.0"
+}

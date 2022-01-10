@@ -1,0 +1,13 @@
+{
+  "Name":"Log Entry 104",
+  "Id":"104",
+  "Message":"PS_RDNDNT_MODE: PS Redundancy sensor, Fully Redundant was asserted",
+  "EntryType":"SEL",
+  "Description":"Log Entry 104",
+  "@odata.type":"#LogEntry.1.0.0",
+  "EntryCode":"Fully Redundant",
+  "Created":"2019-12-19 02:00:16 ",
+  "@odata.context":"/redfish/v1/$metadata#Chassis/Members/$entity/LogServices/Members/$entity/Entries/Members/$entity",
+  "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/104",
+  "Severity":"Normal"
+}

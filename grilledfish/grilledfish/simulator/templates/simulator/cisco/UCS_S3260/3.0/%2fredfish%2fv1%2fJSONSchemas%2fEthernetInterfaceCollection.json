@@ -1,0 +1,15 @@
+{
+  "Name":"EthernetInterface Collection Schema File",
+  "Id":"EthernetInterfaceCollection",
+  "@odata.context":"/redfish/v1/$metadata#JSONSchemas/Members/$entity",
+  "Languages":["en"],
+  "Description":"EthernetInterface Collection Schema File Location",
+  "@odata.type":"#JSONSchemas.1.0.0.JsonSchemaFileCollection",
+  "Schema":"EthernetInterfaceCollection",
+  "@odata.id":"/redfish/v1/JSONSchemas/EthernetInterfaceCollection",
+  "Location":[{
+      "PublicationUri":"http://redfish.dmtf.org/schemas/v1/EthernetInterfaceCollection.json",
+      "Language":"en",
+      "Uri":"/redfish/v1/EthernetInterfaceCollection.json"
+    }]
+}

@@ -1,0 +1,13 @@
+{
+  "Name":"Log Entry 1328",
+  "Id":"1328",
+  "Message":"FRU_RAM POWER_ON_FAIL: Platform sensor for FRU_RAM, Predictive Failure deasserted",
+  "EntryType":"SEL",
+  "Description":"Log Entry 1328",
+  "@odata.type":"#LogEntry.1.0.0",
+  "EntryCode":"Predictive Failure deasserted",
+  "Created":"2021-11-11 10:09:00 ",
+  "@odata.context":"/redfish/v1/$metadata#Systems/Members/$entity/LogServices/Members/$entity/Entries/Members/$entity",
+  "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1328",
+  "Severity":"Normal"
+}

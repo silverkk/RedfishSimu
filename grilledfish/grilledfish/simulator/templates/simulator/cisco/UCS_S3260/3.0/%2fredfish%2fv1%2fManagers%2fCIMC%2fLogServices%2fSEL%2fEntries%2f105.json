@@ -1,0 +1,12 @@
+{
+  "Name":"Log Entry 105",
+  "Id":"105",
+  "Message":"CHS_FP_LED_ID: Platform sensor, FAST BLINK event was asserted",
+  "EntryType":"SEL",
+  "Description":"Log Entry 105",
+  "@odata.type":"#LogEntry.1.0.0",
+  "Created":"2020-02-12 03:43:16 ",
+  "@odata.context":"/redfish/v1/$metadata#Managers/Members/$entity/LogServices/Members/$entity/Entries/Members/$entity",
+  "@odata.id":"/redfish/v1/Managers/CIMC/LogServices/SEL/Entries/105",
+  "Severity":"Informational"
+}

@@ -1,0 +1,21 @@
+{
+  "Name":"CIMC Log Service",
+  "DateTimeLocalOffset":"+0300 (Local)",
+  "Id":"CIMC",
+  "OverWritePolicy":"NeverOverWrites",
+  "ServiceEnabled":true,
+  "@odata.context":"/redfish/v1/$metadata#Chassis/Members/$entity/LogServices/Members/$entity",
+  "Description":"CIMC Log Service",
+  "DateTime":"Mon Nov 15 04:03:13 2021\n",
+  "Entries":{
+    "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/CIMC/Entries"
+  },
+  "MaxNumberOfRecords":10000,
+  "Actions":{
+    "#LogService.ClearLog":{
+      "target":"/redfish/v1/Chassis/CMC/LogServices/CIMC/Actions/LogService.ClearLog"
+    }
+  },
+  "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/CIMC",
+  "@odata.type":"#LogService.1.0.0"
+}

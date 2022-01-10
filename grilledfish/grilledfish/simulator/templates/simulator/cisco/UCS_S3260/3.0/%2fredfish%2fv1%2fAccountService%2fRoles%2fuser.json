@@ -1,0 +1,11 @@
+{
+  "Name":"User Role",
+  "OEMPrivileges":["OemClearLog","OemPowerControl","OemAccessVirtualMedia"],
+  "Id":"user",
+  "IsPredefined":false,
+  "AssignedPrivileges":["Login"],
+  "@odata.context":"/redfish/v1/$metadata#AccountService/Roles/Members/$entity",
+  "Description":"User Role",
+  "@odata.type":"#Role.1.0.0",
+  "@odata.id":"/redfish/v1/AccountService/Roles/user"
+}

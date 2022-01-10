@@ -1,0 +1,15 @@
+{
+  "Name":"Event Schema File",
+  "Id":"Event",
+  "@odata.context":"/redfish/v1/$metadata#JSONSchemas/Members/$entity",
+  "Languages":["en"],
+  "Description":"Event Schema File Location",
+  "@odata.type":"#JSONSchemas.1.0.0.JsonSchemaFileCollection",
+  "Schema":"Event",
+  "@odata.id":"/redfish/v1/JSONSchemas/Event",
+  "Location":[{
+      "PublicationUri":"http://redfish.dmtf.org/schemas/v1/Event.json",
+      "Language":"en",
+      "Uri":"/redfish/v1/Event.json"
+    }]
+}

@@ -1,0 +1,12 @@
+{
+  "Name":"Log Entry 118",
+  "Id":"118",
+  "Message":"PS2_FRU PSU2_STATUS: Power Supply sensor for PS2_FRU, Presence detected was asserted",
+  "EntryType":"SEL",
+  "Description":"Log Entry 118",
+  "@odata.type":"#LogEntry.1.0.0",
+  "Created":"2021-11-11 02:41:36 ",
+  "@odata.context":"/redfish/v1/$metadata#Chassis/Members/$entity/LogServices/Members/$entity/Entries/Members/$entity",
+  "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/118",
+  "Severity":"Normal"
+}

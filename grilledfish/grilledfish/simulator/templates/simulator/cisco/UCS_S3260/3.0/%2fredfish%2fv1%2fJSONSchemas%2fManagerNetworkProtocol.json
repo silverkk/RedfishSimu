@@ -1,0 +1,15 @@
+{
+  "Name":"ManagerNetworkProtocol Schema File",
+  "Id":"ManagerNetworkProtocol",
+  "@odata.context":"/redfish/v1/$metadata#JSONSchemas/Members/$entity",
+  "Languages":["en"],
+  "Description":"ManagerNetworkProtocol Schema File Location",
+  "@odata.type":"#JSONSchemas.1.0.0.JsonSchemaFileCollection",
+  "Schema":"ManagerNetworkProtocol",
+  "@odata.id":"/redfish/v1/JSONSchemas/ManagerNetworkProtocol",
+  "Location":[{
+      "PublicationUri":"http://redfish.dmtf.org/schemas/v1/ManagerNetworkProtocol.json",
+      "Language":"en",
+      "Uri":"/redfish/v1/ManagerNetworkProtocol.json"
+    }]
+}

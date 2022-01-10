@@ -1,0 +1,17 @@
+{
+  "Name":"Task TechSupportExport",
+  "TaskState":"New",
+  "Id":"TechSupportExport",
+  "TaskStatus":"OK",
+  "@odata.context":"/redfish/v1/$metadata#TaskService/Members/$entity/Tasks/Members/$entity",
+  "Description":"Technical Support Export",
+  "@odata.type":"#Task.1.0.0",
+  "@odata.id":"/redfish/v1/TaskService/BMC1/Tasks/TechSupportExport",
+  "Oem":{
+    "Protocol":"NA",
+    "RemotePath":"NA",
+    "ExportStatus":"NA",
+    "RemoteUsername":"NA",
+    "RemoteHostName":"NA"
+  }
+}
