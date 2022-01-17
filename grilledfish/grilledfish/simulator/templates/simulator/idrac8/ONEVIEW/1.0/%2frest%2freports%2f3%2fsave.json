@@ -1,0 +1,6 @@
+Status,Name,Server Name,Bay Number,Model,Profile State,Profile Name,Firmware Baseline Name,Firmware Schedule,Firmware Install State
+Warning,"CZJ9260730, bay 1",qgptesxihv01,1,Synergy 480 Gen10,Profile applied,QGPTESXIHV01_Bay1,"HPE Synergy Service Pack, SY-2021.05.03",,Activated
+Warning,"CZJ9260730, bay 2",qgptesxihv02,2,Synergy 480 Gen10,Profile applied,QGPTESXIHV02_Bay2,"HPE Synergy Service Pack, SY-2021.05.03",,Activated
+Warning,"CZJ9260730, bay 3",qgptesxihv03,3,Synergy 480 Gen10,Profile applied,QGPTESXIHV03_Bay3,"HPE Synergy Service Pack, SY-2021.05.03",,Activated
+Warning,"CZJ9260730, bay 4",qgptesxihv04,4,Synergy 480 Gen10,Profile applied,QGPTESXIHV04_Bay4,"HPE Synergy Service Pack, SY-2021.05.03",,Activated
+Warning,"CZJ9260730, bay 5",qgptesxihv05,5,Synergy 480 Gen10,Profile applied,QGPTESXIHV05_Bay5,"HPE Synergy Service Pack, SY-2021.05.03",,Activated

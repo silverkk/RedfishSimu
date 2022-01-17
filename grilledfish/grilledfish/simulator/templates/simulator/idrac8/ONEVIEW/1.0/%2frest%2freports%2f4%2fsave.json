@@ -1,0 +1,26 @@
+Status,Name,Server Name,Bay Number,Model,Processor Type,Memory (MB),Serial Number,Mezzanine Slot Number,Mezzanine Card Model,ROM Firmware Version,iLO Firmware Version,iLO Model,Part Number,Profile Name
+Warning,"CZJ9260730, bay 1",qgptesxihv01,1,Synergy 480 Gen10,Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90GHz,2097152,CZJ926002S,"1 
+2 
+3","HPE Smart Array P416ie-m SR G10 
+empty 
+Synergy 3820C 10/20Gb CNA",I42 v2.42 (01/23/2021),2.44 Apr 30 2021,iLO5,871940-B21,QGPTESXIHV01_Bay1
+Warning,"CZJ9260730, bay 2",qgptesxihv02,2,Synergy 480 Gen10,Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90GHz,2097152,CZJ9260721,"1 
+2 
+3","HPE Smart Array P416ie-m SR G10 
+empty 
+Synergy 3820C 10/20Gb CNA",I42 v2.42 (01/23/2021),2.44 Apr 30 2021,iLO5,871940-B21,QGPTESXIHV02_Bay2
+Warning,"CZJ9260730, bay 3",qgptesxihv03,3,Synergy 480 Gen10,Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90GHz,2097152,CZJ9260722,"1 
+2 
+3","HPE Smart Array P416ie-m SR G10 
+empty 
+Synergy 3820C 10/20Gb CNA",I42 v2.42 (01/23/2021),2.44 Apr 30 2021,iLO5,871940-B21,QGPTESXIHV03_Bay3
+Warning,"CZJ9260730, bay 4",qgptesxihv04,4,Synergy 480 Gen10,Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90GHz,2097152,CZJ9260720,"1 
+2 
+3","HPE Smart Array P416ie-m SR G10 
+empty 
+Synergy 3820C 10/20Gb CNA",I42 v2.42 (01/23/2021),2.44 Apr 30 2021,iLO5,871940-B21,QGPTESXIHV04_Bay4
+Warning,"CZJ9260730, bay 5",qgptesxihv05,5,Synergy 480 Gen10,Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90GHz,2097152,CZJ926071Z,"1 
+2 
+3","HPE Smart Array P416ie-m SR G10 
+empty 
+Synergy 4820C 10/20/25Gb CNA",I42 v2.42 (01/23/2021),2.44 Apr 30 2021,iLO5,871940-B21,QGPTESXIHV05_Bay5

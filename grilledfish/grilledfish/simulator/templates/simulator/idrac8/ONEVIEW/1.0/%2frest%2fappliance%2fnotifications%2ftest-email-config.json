@@ -1,0 +1,1 @@
+{"type":"TestEmail","uri":"/rest/appliance/notifications/test-email-config","eTag":null,"created":null,"modified":null,"senderEmailAddress":null,"password":null,"userProvidedSmtpServer":null,"preferredSmtpServer":null,"smtpPort":25}

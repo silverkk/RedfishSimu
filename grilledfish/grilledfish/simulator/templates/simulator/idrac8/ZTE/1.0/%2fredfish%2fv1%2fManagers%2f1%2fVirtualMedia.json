@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#VirtualMediaCollection.VirtualMediaCollection","@odata.etag":"W/\"1640362820\"","@odata.id":"/redfish/v1/Managers/1/VirtualMedia","@odata.type":"#VirtualMediaCollection.VirtualMediaCollection","Description":"Virtual Media Services Settings","Members":[],"Members@odata.count":0,"Name":"Virtual Media Services"}

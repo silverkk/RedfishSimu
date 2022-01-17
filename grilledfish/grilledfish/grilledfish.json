@@ -14,7 +14,7 @@
             "ipmiSetting": "Setting_0",
 			"vendor": "idrac8",            
 			"fwVersion": "1.0",
-			"model": "XPUM",
+			"model": "ONEVIEW",
             "flatMode": true,
             "health" : {
                 "system" : "OK",

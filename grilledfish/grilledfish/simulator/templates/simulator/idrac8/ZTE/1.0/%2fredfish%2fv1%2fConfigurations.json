@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#Configurations/$entity","@odata.etag":"W/\"1640362747\"","@odata.id":"/redfish/v1/Configurations","@odata.type":"#Configurations.v1_0_0.Configurations","Syslog":{"Enabled":false}}

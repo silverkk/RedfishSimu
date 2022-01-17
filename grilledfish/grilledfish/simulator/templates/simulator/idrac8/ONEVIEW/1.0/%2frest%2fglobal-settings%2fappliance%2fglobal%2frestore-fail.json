@@ -1,0 +1,1 @@
+{"type":"SettingV2","uri":"/rest/global-settings/appliance/global/restore-fail","category":"global-settings","eTag":null,"created":"2019-10-14T07:08:16.541Z","modified":"2021-09-21T14:15:53.962Z","name":"restore-fail","value":"false","group":"global","settingCategory":"appliance","description":null,"state":null,"status":null}

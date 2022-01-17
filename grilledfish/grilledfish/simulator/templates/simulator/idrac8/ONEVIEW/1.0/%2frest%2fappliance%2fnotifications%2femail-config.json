@@ -1,0 +1,1 @@
+{"type":"EmailNotificationV4","uri":"/rest/appliance/notifications/email-config","eTag":null,"created":null,"modified":null,"senderEmailAddress":null,"password":null,"smtpServer":null,"smtpPort":25,"alertEmailDisabled":true,"alertEmailFilters":[],"smtpProtocol":""}

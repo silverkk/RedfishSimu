@@ -1,0 +1,16 @@
+Name,Host Name,BMC IP Addresses,IP Address Types
+"CZJ9260730, bay 1",ILO-qgptesxihv01.qatargas.com.qa,"fe80:0:0:0:af1:eaff:fe71:a130 
+172.27.39.133","LinkLocal_Required 
+Static"
+"CZJ9260730, bay 2",ILO-qgptesxihv02.qatargas.com.qa,"fe80:0:0:0:af1:eaff:fe6a:3fde 
+172.27.39.134","LinkLocal_Required 
+Static"
+"CZJ9260730, bay 3",ILO-qgptesxihv03.qatargas.com.qa,"fe80:0:0:0:af1:eaff:fe6a:2f00 
+172.27.39.135","LinkLocal_Required 
+Static"
+"CZJ9260730, bay 4",ILO-qgptesxihv04.qatargas.com.qa,"fe80:0:0:0:af1:eaff:fe6a:3fd6 
+172.27.39.136","LinkLocal_Required 
+Static"
+"CZJ9260730, bay 5",ILO-qgptesxihv05.qatargas.com.qa,"fe80:0:0:0:af1:eaff:fe6b:5dce 
+172.27.39.139","LinkLocal_Required 
+Static"

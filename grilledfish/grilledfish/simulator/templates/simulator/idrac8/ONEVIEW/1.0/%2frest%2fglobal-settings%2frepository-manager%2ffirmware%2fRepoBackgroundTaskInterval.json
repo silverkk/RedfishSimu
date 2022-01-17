@@ -1,0 +1,1 @@
+{"type":"SettingV2","uri":"/rest/global-settings/repository-manager/firmware/RepoBackgroundTaskInterval","category":"global-settings","eTag":null,"created":"2021-04-25T08:15:28.772Z","modified":"2021-04-25T08:15:28.772Z","name":"RepoBackgroundTaskInterval","value":"300","group":"firmware","settingCategory":"repository-manager","description":null,"state":null,"status":null}

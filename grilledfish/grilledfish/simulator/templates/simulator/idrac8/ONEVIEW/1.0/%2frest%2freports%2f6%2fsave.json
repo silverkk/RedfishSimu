@@ -1,0 +1,6 @@
+Status,Name,Model,Rack Name,Serial Number,Part Number,Firmware Baseline,Em bay number,Em ip address,Managed Hostname,Managed Role,Managed Firmware Version
+OK,CZJ9260730,Synergy 12000 Frame,,CZJ9260730,797740-B21,"HPE Synergy Service Pack, SY-2021.05.03","1 
+2","fe80::8230:e0ff:fe33:d8b0 
+fe80::8230:e0ff:fe37:bb30",,"Standby 
+Active","3.03.00 
+3.03.00"

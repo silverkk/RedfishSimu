@@ -1,0 +1,1 @@
+{"type":"SettingV2","uri":"/rest/global-settings/appliance/global/events-TrapStormInterval","category":"global-settings","eTag":null,"created":"2019-10-14T07:09:33.525Z","modified":"2019-10-14T07:09:33.525Z","name":"events-TrapStormInterval","value":"60000","group":"global","settingCategory":"appliance","description":null,"state":null,"status":null}

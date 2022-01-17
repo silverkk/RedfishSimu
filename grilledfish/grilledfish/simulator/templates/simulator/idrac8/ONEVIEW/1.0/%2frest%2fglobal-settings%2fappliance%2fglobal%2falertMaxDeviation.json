@@ -1,0 +1,1 @@
+{"type":"SettingV2","uri":"/rest/global-settings/appliance/global/alertMaxDeviation","category":"global-settings","eTag":null,"created":"2019-10-14T07:06:03.921Z","modified":"2019-10-14T07:06:03.921Z","name":"alertMaxDeviation","value":"5000","group":"global","settingCategory":"appliance","description":null,"state":null,"status":null}

@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#StorageCollection.StorageCollection","@odata.etag":"W/\"1640362972\"","@odata.id":"/redfish/v1/Systems/1/Storages","@odata.type":"#StorageCollection.StorageCollection","Members":[{"@odata.id":"/redfish/v1/Systems/1/Storages/RAIDStorage0003"}],"Members@odata.count":1,"Name":"Storage Collection"}

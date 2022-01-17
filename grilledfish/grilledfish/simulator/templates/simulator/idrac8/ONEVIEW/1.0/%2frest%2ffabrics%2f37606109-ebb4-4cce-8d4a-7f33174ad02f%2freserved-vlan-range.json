@@ -1,0 +1,1 @@
+{"type":"vlan-pool","uri":"/rest/fabrics/37606109-ebb4-4cce-8d4a-7f33174ad02f/reserved-vlan-range","category":"reserved-vlan-range","eTag":null,"created":"2019-10-14T07:11:27.842Z","modified":"2019-10-14T07:11:27.865Z","start":3967,"length":128}

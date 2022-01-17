@@ -1,0 +1,1 @@
+{"type":"SettingV2","uri":"/rest/global-settings/appliance/global/ServerFwPollInterval","category":"global-settings","eTag":null,"created":"2020-06-21T10:48:10.893Z","modified":"2020-06-21T10:48:10.893Z","name":"ServerFwPollInterval","value":"24","group":"global","settingCategory":"appliance","description":null,"state":null,"status":null}

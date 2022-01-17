@@ -1,0 +1,1 @@
+{"type":"object","id":"urn:jsonschema:com:hp:ci:mgmt:crm:model:Domain","properties":{"uri":{"type":"string"},"category":{"type":"string"},"eTag":{"type":"string"},"created":{"type":"string"},"modified":{"type":"string"},"canonicalName":{"type":"string"},"description":{"type":"string"},"state":{"type":"string"},"status":{"type":"string"},"name":{"type":"string"}}}

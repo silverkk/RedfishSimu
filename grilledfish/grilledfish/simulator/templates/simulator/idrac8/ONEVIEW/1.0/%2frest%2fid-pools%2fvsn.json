@@ -1,0 +1,1 @@
+{"type":"Pool","uri":"/rest/id-pools/vsn","category":"id-pool-VSN","eTag":"2f303c89-9603-4a7b-8bb6-5d7f086f3d56","created":"2019-10-14 07:07:37.563","modified":"2019-10-14 07:07:37.563","name":"VSN","poolType":"VSN","totalCount":46656,"freeCount":46656,"allocatedCount":0,"prefix":null,"rangeUris":["/rest/id-pools/vsn/ranges/207ff7b5-c690-4dca-8db8-f7e623aeba45"],"enabled":false}

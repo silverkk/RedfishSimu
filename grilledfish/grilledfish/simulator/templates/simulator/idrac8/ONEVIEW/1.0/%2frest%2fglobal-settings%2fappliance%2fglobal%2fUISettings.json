@@ -1,0 +1,1 @@
+{"type":"SettingV2","uri":"/rest/global-settings/appliance/global/UISettings","category":"global-settings","eTag":null,"created":"2021-04-25T10:19:43.772Z","modified":"2021-04-25T10:19:43.772Z","name":"UISettings","value":"{\"settings\":{\"restrict_read_access\":false}}","group":"global","settingCategory":"appliance","description":null,"state":null,"status":null}

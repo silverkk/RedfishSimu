@@ -1,0 +1,3 @@
+Status,Name,Model,State,Serial Number,Part Number,Spare Part,IPv4 Mode,IPv4 address,IPv6 Mode,IPv6 address,Firmware Version
+OK,"CZJ9260730, interconnect 3",Virtual Connect SE 40Gb F8 Module for Synergy,Configured,2TV920003Z,794502-B23,813174-001,static,172.27.39.137,link-local,fe80::af1:eaff:fec2:6445,1.7.1.1001
+OK,"CZJ9260730, interconnect 6",Virtual Connect SE 40Gb F8 Module for Synergy,Configured,2TV920002R,794502-B23,813174-001,static,172.27.39.138,link-local,fe80::af1:eaff:fec2:4ebf,1.7.1.1001
