@@ -1,0 +1,1 @@
+{"Members":[],"@odata.type":"#VolumeCollection.VolumeCollection","@odata.id":"/redfish/v1/Systems/1/Storage/RAID_Slot4/Volumes","Members@odata.count":0,"@odata.etag":"\"1fddf3dbf7f0259fddc\"","Name":"VolumeCollection","Description":"A collection of volume resource instances."}

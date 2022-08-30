@@ -1,0 +1,1 @@
+{"Members":[{"@odata.id":"/redfish/v1/Chassis/1/NetworkAdapters/ob-1"}],"@odata.type":"#NetworkAdapterCollection.NetworkAdapterCollection","@odata.id":"/redfish/v1/Chassis/1/NetworkAdapters","Name":"NetworkAdapterCollection","@odata.etag":"\"2ba5fea6b53627e5871\"","Members@odata.count":1,"Description":"A collection of NetworkAdapter resource instances."}

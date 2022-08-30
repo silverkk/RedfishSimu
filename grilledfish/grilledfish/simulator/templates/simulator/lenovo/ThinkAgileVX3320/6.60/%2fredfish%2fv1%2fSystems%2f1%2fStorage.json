@@ -1,0 +1,1 @@
+{"Members":[{"@odata.id":"/redfish/v1/Systems/1/Storage/RAID_Slot4"},{"@odata.id":"/redfish/v1/Systems/1/Storage/M.2_Slot5"}],"@odata.type":"#StorageCollection.StorageCollection","@odata.id":"/redfish/v1/Systems/1/Storage","Name":"StorageCollection","@odata.etag":"\"29060eeb70df27e62f1\"","Members@odata.count":2,"Description":"A collection of storage resource instances"}

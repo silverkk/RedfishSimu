@@ -1,0 +1,1 @@
+{"Members":[],"@odata.type":"#LenovoRemoteControlSessionCollection.LenovoRemoteControlSessionCollection","@odata.id":"/redfish/v1/Managers/1/Oem/Lenovo/RemoteControl/Sessions","Members@odata.count":0,"@odata.etag":"\"2ad5b630524228a4128\"","Name":"Sessions","Description":"A collection of RemoteControlSession resource instances."}

@@ -1,0 +1,1 @@
+{"Members":[{"@odata.id":"/redfish/v1/Systems/1/NetworkInterfaces/1"}],"@odata.type":"#NetworkInterfaceCollection.NetworkInterfaceCollection","@odata.id":"/redfish/v1/Systems/1/NetworkInterfaces","Members@odata.count":1,"@odata.etag":"\"2c3ac2d05cde27265a7\"","Name":"NetworkInterfaceCollection","Description":"A collection of NetworkInterface resource instances."}

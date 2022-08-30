@@ -1,0 +1,1 @@
+{"Members":[],"@odata.type":"#StoragePoolCollection.StoragePoolCollection","@odata.id":"/redfish/v1/Systems/1/Storage/RAID_Slot4/StoragePools","Members@odata.count":0,"@odata.etag":"\"225ffeff0a3e296198f\"","Name":"StoragePoolCollection","Description":"A collection of StoragePool resource instances."}
