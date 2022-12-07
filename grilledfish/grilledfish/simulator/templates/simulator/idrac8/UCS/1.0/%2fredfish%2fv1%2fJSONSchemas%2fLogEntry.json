@@ -1,0 +1,15 @@
+{
+  "Name":"LogEntry Schema File",
+  "Id":"LogEntry",
+  "@odata.context":"/redfish/v1/$metadata#JSONSchemas/Members/$entity",
+  "Languages":["en"],
+  "Description":"LogEntry Schema File Location",
+  "@odata.type":"#JSONSchemas.1.0.0.JsonSchemaFileCollection",
+  "Schema":"LogEntry",
+  "@odata.id":"/redfish/v1/JSONSchemas/LogEntry",
+  "Location":[{
+      "PublicationUri":"http://redfish.dmtf.org/schemas/v1/LogEntry.json",
+      "Language":"en",
+      "Uri":"/redfish/v1/LogEntry.json"
+    }]
+}

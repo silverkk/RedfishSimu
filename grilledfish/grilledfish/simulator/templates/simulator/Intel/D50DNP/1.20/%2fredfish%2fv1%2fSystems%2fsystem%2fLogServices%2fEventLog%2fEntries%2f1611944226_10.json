@@ -1,0 +1,16 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#LogService.LogService",
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/EventLog/Entries/1611944226_10",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-01-29T18:17:06+00:00",
+  "EntryType": "Event",
+  "EventId": "1611944226_10",
+  "Id": "1611944226_10",
+  "Message": "Invalid username or password attempted on RMCPP.",
+  "MessageArgs": [
+    "RMCPP"
+  ],
+  "MessageId": "OpenBMC.0.1.InvalidLoginAttempted",
+  "Name": "System Event Log Entry",
+  "Severity": "Warning"
+}

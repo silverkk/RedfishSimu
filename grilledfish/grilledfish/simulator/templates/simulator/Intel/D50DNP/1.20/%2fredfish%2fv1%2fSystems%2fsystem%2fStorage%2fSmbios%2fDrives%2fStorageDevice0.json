@@ -1,0 +1,25 @@
+{
+  "@odata.id": "/redfish/v1/Systems/system/Storage/Smbios/Drives/StorageDevice0",
+  "@odata.type": "#Drive.v1_7_0.Drive",
+  "CapacityBytes": 1919850381312,
+  "Id": "StorageDevice0",
+  "MediaType": "SSD",
+  "Model": "SAMSUNG MZQL21T9HCJR-00A07 ",
+  "Name": "PCIe S0 B22 D0 F0",
+  "Oem": {
+    "OpenBmc": {
+      "@odata.type": "#OemDrive.v1_0_0.Drive",
+      "ConnectorType": "PCIe",
+      "DeviceId": 43018,
+      "Index": 255,
+      "PciClass": 1,
+      "SubDeviceId": 43027,
+      "SubVendorId": 5197,
+      "VendorId": 5197
+    }
+  },
+  "Protocol": "NVMe",
+  "Revision": "GDC5302Q",
+  "RotationSpeedRPM": 0,
+  "SerialNumber": "S64GNE0R613900 "
+}

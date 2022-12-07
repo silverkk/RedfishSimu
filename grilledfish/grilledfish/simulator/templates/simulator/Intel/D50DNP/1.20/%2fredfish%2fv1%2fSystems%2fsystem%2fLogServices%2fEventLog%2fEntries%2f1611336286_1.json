@@ -1,0 +1,14 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#LogService.LogService",
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/EventLog/Entries/1611336286_1",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-01-22T17:24:46+00:00",
+  "EntryType": "Event",
+  "EventId": "1611336286_1",
+  "Id": "1611336286_1",
+  "Message": "Fan redundancy regained.",
+  "MessageArgs": [],
+  "MessageId": "OpenBMC.0.1.FanRedundancyRegained",
+  "Name": "System Event Log Entry",
+  "Severity": "OK"
+}

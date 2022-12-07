@@ -1,0 +1,62 @@
+{
+  "Name":"UCS S3260",
+  "Id":"FCH20167MYU",
+  "IndicatorLED":"Off",
+  "SystemType":"Physical",
+  "SerialNumber":"FCH20167MYU",
+  "@odata.type":"#Cisco_ComputerSystem",
+  "Links":{
+    "ManagedBy":["/redfish/v1/Managers/BMC1"],
+    "PoweredBy":["/redfish/v1/Chassis/CMC/Power"],
+    "Chassis":["/redfish/v1/Chassis/CMC"],
+    "CooledBy":["/redfish/v1/Chassis/CMC/Thermal"]
+  },
+  "@odata.id":"/redfish/v1/Systems/FCH20167MYU",
+  "LogServices":{
+    "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices"
+  },
+  "Processors":{
+    "@odata.id":"/redfish/v1/Systems/FCH20167MYU/Processors"
+  },
+  "Status":{
+    "State":"Enabled",
+    "Health":"Ok"
+  },
+  "MemorySummary":{
+    "TotalSystemMemoryGiB":256,
+    "State":{
+      "Health":"OK",
+      "HealthRollup":"OK"
+    }
+  },
+  "PowerState":"On",
+  "SimpleStorage":{
+    "@odata.id":"/redfish/v1/Systems/FCH20167MYU/SimpleStorage"
+  },
+  "BiosVersion":"C3X60M3.3.0.4e.0.1106191007",
+  "EthernetInterfaces":{
+    "@odata.id":"/redfish/v1/Systems/FCH20167MYU/EthernetInterfaces"
+  },
+  "@odata.context":"/redfish/v1/$metadata#Systems/Members/$entity",
+  "HostName":"C3X60M3-FCH20167MYU",
+  "Description":"",
+  "Model":"UCS S3260",
+  "Actions":{
+    "#ComputerSystem.Reset":{
+      "ResetType@Redfish.AllowableValues":["On","ForceOff","GracefulShutdown","ForceRestart","Nmi"],
+      "target":"/redfish/v1/Systems/FCH20167MYU/Actions/ComputerSystem.Reset"
+    }
+  },
+  "UUID":"69392ED9-0D67-493E-9235-9EFCBFDE02C2",
+  "Manufacturer":"Cisco Systems",
+  "ProcessorSummary":{
+    "Count":2,
+    "Model":"Intel(R) Xeon(R) CPU E5-2660 v2 @ 2.20GHz"
+  },
+  "Boot":{
+    "BootSourceOverrideEnabled@Redfish.AllowableValues":["Once","Continuous","Disabled"],
+    "BootSourceOverrideTarget@Redfish.AllowableValues":["None","Pxe","Floppy","Cd","Hdd","BiosSetup","Diags"],
+    "BootSourceOverrideTarget":"None",
+    "BootSourceOverrideEnabled":"Disabled"
+  }
+}

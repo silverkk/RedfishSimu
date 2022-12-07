@@ -1,0 +1,16 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#LogService.LogService",
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/EventLog/Entries/1611336301_1",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-01-22T17:25:01+00:00",
+  "EntryType": "Event",
+  "EventId": "1611336301_1",
+  "Id": "1611336301_1",
+  "Message": "Power supply PSU2 predicted failure recovered.",
+  "MessageArgs": [
+    "PSU2"
+  ],
+  "MessageId": "OpenBMC.0.1.PowerSupplyPredictedFailureRecovered",
+  "Name": "System Event Log Entry",
+  "Severity": "OK"
+}

@@ -1,0 +1,11 @@
+{
+  "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1613733389354177",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-02-19T11:16:29+00:00",
+  "EntryType": "Oem",
+  "Id": "1613733389354177",
+  "Message": "fwupdate-psu: invalid i2c address",
+  "Name": "BMC Journal Entry",
+  "OemRecordFormat": "BMC Journal Entry",
+  "Severity": "OK"
+}

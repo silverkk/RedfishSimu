@@ -1,0 +1,16 @@
+{
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/PostCodes/Entries/B1-19",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-02-19T20:25:18+00:00",
+  "EntryType": "Event",
+  "Id": "B1-19",
+  "Message": "Boot Count: 1; Time Stamp Offset: 1.3916 seconds; POST Code: 0xa3: Setup minimum path between SBSP and other sockets",
+  "MessageArgs": [
+    "1",
+    "1.3916",
+    "0xa3: Setup minimum path between SBSP and other sockets"
+  ],
+  "MessageId": "OpenBMC.0.2.BIOSPOSTCode",
+  "Name": "POST Code Log Entry",
+  "Severity": "OK"
+}

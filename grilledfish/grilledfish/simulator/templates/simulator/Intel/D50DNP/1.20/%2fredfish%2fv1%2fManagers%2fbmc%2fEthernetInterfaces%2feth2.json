@@ -1,0 +1,49 @@
+{
+  "@odata.id": "/redfish/v1/Managers/bmc/EthernetInterfaces/eth2",
+  "@odata.type": "#EthernetInterface.v1_6_4.EthernetInterface",
+  "DHCPv4": {
+    "DHCPEnabled": false,
+    "UseDNSServers": true,
+    "UseDomainName": true,
+    "UseNTPServers": true
+  },
+  "DHCPv6": {
+    "OperatingMode": "Disabled",
+    "UseDNSServers": true,
+    "UseDomainName": true,
+    "UseNTPServers": true
+  },
+  "Description": "Management Network Interface",
+  "EthernetInterfaceType": "Physical",
+  "FQDN": "bmc-macd6f9bf900e4b",
+  "HostName": "bmc-macd6f9bf900e4b",
+  "IPv4Addresses": [],
+  "IPv4StaticAddresses": [],
+  "IPv6AddressPolicyTable": [],
+  "IPv6Addresses": [],
+  "IPv6DefaultGateway": "0:0:0:0:0:0:0:0",
+  "IPv6StaticAddresses": [],
+  "Id": "eth2",
+  "InterfaceEnabled": false,
+  "LinkStatus": "LinkDown",
+  "MACAddress": "c2:b8:05:23:5e:39",
+  "Name": "Manager Ethernet Interface",
+  "NameServers": [],
+  "Oem": {
+    "Intel": {
+      "@odata.type": "#OemEthernetInterface.v1_0_0.Intel",
+      "ChannelNumber": 4,
+      "NicDescription": "Host Interface"
+    }
+  },
+  "SpeedMbps": 0,
+  "StaticNameServers": [],
+  "Status": {
+    "Health": "OK",
+    "HealthRollup": "OK",
+    "State": "Disabled"
+  },
+  "VLANs": {
+    "@odata.id": "/redfish/v1/Managers/bmc/EthernetInterfaces/eth2/VLANs"
+  }
+}

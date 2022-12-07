@@ -1,0 +1,72 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/Memory_Power/SensorHistory",
+  "@odata.type": "#SensorHistory.v1_0_0.SensorHistory",
+  "Id": "Memory_Power Sensor History",
+  "Interval": 60,
+  "Name": "Sensor History",
+  "SensorName": "Memory_Power",
+  "SensorReadings": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/Memory_Power/SensorHistory#/SensorReadings/0",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765460,
+      "Value": 17.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/Memory_Power/SensorHistory#/SensorReadings/1",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765520,
+      "Value": 17.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/Memory_Power/SensorHistory#/SensorReadings/2",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765581,
+      "Value": 17.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/Memory_Power/SensorHistory#/SensorReadings/3",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765641,
+      "Value": 17.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/Memory_Power/SensorHistory#/SensorReadings/4",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765701,
+      "Value": 17.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/Memory_Power/SensorHistory#/SensorReadings/5",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765761,
+      "Value": 17.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/Memory_Power/SensorHistory#/SensorReadings/6",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765821,
+      "Value": 17.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/Memory_Power/SensorHistory#/SensorReadings/7",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765881,
+      "Value": 17.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/Memory_Power/SensorHistory#/SensorReadings/8",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765941,
+      "Value": 17.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/Memory_Power/SensorHistory#/SensorReadings/9",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613766001,
+      "Value": 17.0
+    }
+  ],
+  "SensorReadingsCount": 10,
+  "TimeFrame": 10
+}

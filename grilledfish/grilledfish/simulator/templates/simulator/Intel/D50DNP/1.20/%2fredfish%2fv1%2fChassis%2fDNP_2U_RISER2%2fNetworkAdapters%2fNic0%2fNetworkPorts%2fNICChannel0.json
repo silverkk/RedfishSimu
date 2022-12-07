@@ -1,0 +1,28 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/DNP_2U_RISER2/NetworkAdapters/Nic0/NetworkPorts/NICChannel0",
+  "@odata.type": "#NetworkPort.v1_2_5.NetworkPort",
+  "AssociatedNetworkAddresses": [
+    "a4:bf:01:90:57:03"
+  ],
+  "CurrentLinkSpeedMbps": 8000,
+  "FlowControlConfiguration": "None",
+  "Id": "NICChannel0",
+  "Name": "Network Port View",
+  "Oem": {
+    "OpenBmc": {
+      "@odata.type": "#OemNetworkPort.v1_0_0.NetworkPort",
+      "DeviceId": "15ffh",
+      "MediaState": 1,
+      "PCIClassCode": 2,
+      "PortIndex": 1,
+      "SlotNumber": 0
+    }
+  },
+  "PhysicalPortNumber": "NICChannel0",
+  "Status": {
+    "Health": "OK",
+    "HealthRollup": "OK",
+    "State": "Enabled"
+  },
+  "VendorId": "8086h"
+}

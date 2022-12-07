@@ -1,0 +1,15 @@
+{
+  "Name":"SerialInterface Collection Schema File",
+  "Id":"SerialInterfaceCollection",
+  "@odata.context":"/redfish/v1/$metadata#JSONSchemas/Members/$entity",
+  "Languages":["en"],
+  "Description":"SerialInterface Collection Schema File Location",
+  "@odata.type":"#JSONSchemas.1.0.0.JsonSchemaFileCollection",
+  "Schema":"SerialInterfaceCollection",
+  "@odata.id":"/redfish/v1/JSONSchemas/SerialInterfaceCollection",
+  "Location":[{
+      "PublicationUri":"http://redfish.dmtf.org/schemas/v1/SerialInterfaceCollection.json",
+      "Language":"en",
+      "Uri":"/redfish/v1/SerialInterfaceCollection.json"
+    }]
+}

@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#GbtGPUManagerCollection.GbtGPUManagerCollection","@odata.etag":"W/\"1643125018\"","@odata.id":"/redfish/v1/GpuManager/NVAPI/NVSwitch","@odata.type":"#GbtGPUManagerCollection.v1_0_0.GbtGPUManagerCollection","Description":"Collect of NVSwitch","Id":"NVSwitch","Members":[],"Members@odata.count":0,"Name":"NVSwitch"}

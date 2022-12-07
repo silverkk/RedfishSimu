@@ -1,0 +1,16 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#LogService.LogService",
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/EventLog/Entries/1611336280",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-01-22T17:24:40+00:00",
+  "EntryType": "Event",
+  "EventId": "1611336280",
+  "Id": "1611336280",
+  "Message": "Fan 5 removed.",
+  "MessageArgs": [
+    "Fan 5"
+  ],
+  "MessageId": "OpenBMC.0.1.FanRemoved",
+  "Name": "System Event Log Entry",
+  "Severity": "OK"
+}

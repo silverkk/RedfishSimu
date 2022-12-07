@@ -1,0 +1,16 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#LogService.LogService",
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/EventLog/Entries/1610904656",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-01-17T17:30:56+00:00",
+  "EntryType": "Event",
+  "EventId": "1610904656",
+  "Id": "1610904656",
+  "Message": "The system interface is in the Provisioning state.",
+  "MessageArgs": [
+    "KCS Policy"
+  ],
+  "MessageId": "OpenBMC.0.1.SystemInterfaceUnprovisioned",
+  "Name": "System Event Log Entry",
+  "Severity": "OK"
+}

@@ -1,0 +1,51 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#Processor.Processor",
+  "@odata.id": "/redfish/v1/Systems/system/Processors/cpu1",
+  "@odata.type": "#Processor.v1_11_0.Processor",
+  "Id": "cpu1",
+  "InstructionSet": "x86-64",
+  "Location": {
+    "PartLocation": {
+      "ServiceLabel": "CPU1"
+    }
+  },
+  "Manufacturer": "Intel(R) Corporation",
+  "MaxSpeedMHz": 4000,
+  "Metrics": {
+    "@odata.id": "/redfish/v1/Systems/system/Processors/cpu1/ProcessorMetrics"
+  },
+  "Name": "Processor",
+  "Oem": {
+    "AssetTag": {
+      "@odata.type": "#OemProcessor.AssetTag",
+      "Value": "UNKNOWN"
+    },
+    "ProcessorUpgrade": {
+      "@odata.type": "#OemProcessor.ProcessorUpgrade",
+      "Value": "LGA4677"
+    },
+    "Voltage": {
+      "@odata.type": "#OemProcessor.Voltage",
+      "Value": "1.6V"
+    }
+  },
+  "OperatingSpeedMHz": 1200,
+  "ProcessorArchitecture": "x86",
+  "ProcessorId": {
+    "EffectiveFamily": "Intel Xeon processor",
+    "EffectiveModel": "0x0000",
+    "IdentificationRegisters": "0xBFEBFBFF000806F1",
+    "MicrocodeInfo": "0x00000000",
+    "Step": "0x0000"
+  },
+  "ProcessorType": "CPU",
+  "Socket": "CPU1",
+  "Status": {
+    "Health": "OK",
+    "HealthRollup": "OK",
+    "State": "Enabled"
+  },
+  "TotalCores": 48,
+  "TotalThreads": 96,
+  "Version": "Genuine Intel(R) CPU 0000%@"
+}

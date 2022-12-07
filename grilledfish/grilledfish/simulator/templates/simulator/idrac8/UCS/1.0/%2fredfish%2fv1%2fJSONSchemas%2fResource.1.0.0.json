@@ -1,0 +1,15 @@
+{
+  "Name":"Resource.1.0.0 Schema File",
+  "Id":"Resource.1.0.0",
+  "@odata.context":"/redfish/v1/$metadata#JSONSchemas/Members/$entity",
+  "Languages":["en"],
+  "Description":"Resource.1.0.0 Schema File Location",
+  "@odata.type":"#JSONSchemas.1.0.0.JsonSchemaFileCollection",
+  "Schema":"Resource.1.0.0",
+  "@odata.id":"/redfish/v1/JSONSchemas/Resource.1.0.0",
+  "Location":[{
+      "PublicationUri":"http://redfish.dmtf.org/schemas/v1/Resource.1.0.0.json",
+      "Language":"en",
+      "Uri":"/redfish/v1/Resource.1.0.0.json"
+    }]
+}

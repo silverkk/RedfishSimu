@@ -1,0 +1,484 @@
+{
+  "@odata.count":"144",
+  "Members":[{
+      "Name":"Log Entry 144",
+      "Id":"144",
+      "Message":"PS3_FRU PSU3_AC_OK: Power Supply sensor for PS3_FRU, State Asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 144",
+      "EntryCode":"State Asserted",
+      "Created":"2021-11-11 02:41:50 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/144",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 143",
+      "Id":"143",
+      "Message":"PS3_FRU PSU3_DC_OK: Power Supply sensor for PS3_FRU, State Asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 143",
+      "EntryCode":"State Asserted",
+      "Created":"2021-11-11 02:41:50 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/143",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 142",
+      "Id":"142",
+      "Message":"PS_RDNDNT_MODE: Platform sensor, Fully Redundant was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 142",
+      "EntryCode":"Fully Redundant",
+      "Created":"2021-11-11 02:41:49 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/142",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 141",
+      "Id":"141",
+      "Message":"PS1_FRU PSU1_AC_OK: Power Supply sensor for PS1_FRU, State Asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 141",
+      "EntryCode":"State Asserted",
+      "Created":"2021-11-11 02:41:48 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/141",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 140",
+      "Id":"140",
+      "Message":"PS1_FRU PSU1_DC_OK: Power Supply sensor for PS1_FRU, State Asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 140",
+      "EntryCode":"State Asserted",
+      "Created":"2021-11-11 02:41:48 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/140",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 139",
+      "Id":"139",
+      "Message":"PS4_FRU PSU4_AC_OK: Power Supply sensor for PS4_FRU, State Asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 139",
+      "EntryCode":"State Asserted",
+      "Created":"2021-11-11 02:41:46 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/139",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 138",
+      "Id":"138",
+      "Message":"PS2_FRU PSU2_AC_OK: Power Supply sensor for PS2_FRU, State Asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 138",
+      "EntryCode":"State Asserted",
+      "Created":"2021-11-11 02:41:46 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/138",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 137",
+      "Id":"137",
+      "Message":"PS4_FRU PSU4_DC_OK: Power Supply sensor for PS4_FRU, State Asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 137",
+      "EntryCode":"State Asserted",
+      "Created":"2021-11-11 02:41:46 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/137",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 136",
+      "Id":"136",
+      "Message":"PS2_FRU PSU2_DC_OK: Power Supply sensor for PS2_FRU, State Asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 136",
+      "EntryCode":"State Asserted",
+      "Created":"2021-11-11 02:41:46 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/136",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 135",
+      "Description":"Log Entry 135",
+      "Message":"LED_FAN_STATUS: Platform sensor, GREEN was asserted",
+      "Id":"135",
+      "Created":"2021-11-11 02:41:41 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/135",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 134",
+      "Description":"Log Entry 134",
+      "Message":"LED_FAN_STATUS: Platform sensor, ON event was asserted",
+      "Id":"134",
+      "Created":"2021-11-11 02:41:41 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/134",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 133",
+      "Description":"Log Entry 133",
+      "Message":"LED_PSU_STATUS: Platform sensor, GREEN was asserted",
+      "Id":"133",
+      "Created":"2021-11-11 02:41:41 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/133",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 132",
+      "Description":"Log Entry 132",
+      "Message":"LED_PSU_STATUS: Platform sensor, ON event was asserted",
+      "Id":"132",
+      "Created":"2021-11-11 02:41:41 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/132",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 131",
+      "Id":"131",
+      "Message":"FAN56_PRES: Presence sensor, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 131",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 02:41:41 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/131",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 130",
+      "Id":"130",
+      "Message":"FAN12_PRES: Presence sensor, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 130",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 02:41:41 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/130",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 129",
+      "Description":"Log Entry 129",
+      "Message":"PS3_FRU PSU3_STATUS: Power Supply sensor for PS3_FRU, Presence detected was asserted",
+      "Id":"129",
+      "Created":"2021-11-11 02:41:41 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/129",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 128",
+      "Description":"Log Entry 128",
+      "Message":"PS1_FRU PSU1_STATUS: Power Supply sensor for PS1_FRU, Presence detected was asserted",
+      "Id":"128",
+      "Created":"2021-11-11 02:41:41 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/128",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 127",
+      "Id":"127",
+      "Message":"PS4_FRU PSU4_PRES: Presence sensor for PS4_FRU, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 127",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 02:41:41 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/127",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 126",
+      "Id":"126",
+      "Message":"PS2_FRU PSU2_PRES: Presence sensor for PS2_FRU, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 126",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 02:41:41 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/126",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 125",
+      "Description":"Log Entry 125",
+      "Message":"LED_TEMP_STATUS: Platform sensor, GREEN was asserted",
+      "Id":"125",
+      "Created":"2021-11-11 02:41:36 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/125",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 124",
+      "Description":"Log Entry 124",
+      "Message":"LED_TEMP_STATUS: Platform sensor, ON event was asserted",
+      "Id":"124",
+      "Created":"2021-11-11 02:41:36 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/124",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 123",
+      "Description":"Log Entry 123",
+      "Message":"LED_HLTH_STATUS: Platform sensor, GREEN was asserted",
+      "Id":"123",
+      "Created":"2021-11-11 02:41:36 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/123",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 122",
+      "Description":"Log Entry 122",
+      "Message":"LED_HLTH_STATUS: Platform sensor, ON event was asserted",
+      "Id":"122",
+      "Created":"2021-11-11 02:41:36 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/122",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 121",
+      "Id":"121",
+      "Message":"FAN78_PRES: Presence sensor, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 121",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 02:41:36 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/121",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 120",
+      "Id":"120",
+      "Message":"FAN34_PRES: Presence sensor, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 120",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 02:41:36 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/120",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 119",
+      "Description":"Log Entry 119",
+      "Message":"PS4_FRU PSU4_STATUS: Power Supply sensor for PS4_FRU, Presence detected was asserted",
+      "Id":"119",
+      "Created":"2021-11-11 02:41:36 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/119",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 118",
+      "Description":"Log Entry 118",
+      "Message":"PS2_FRU PSU2_STATUS: Power Supply sensor for PS2_FRU, Presence detected was asserted",
+      "Id":"118",
+      "Created":"2021-11-11 02:41:36 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/118",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 117",
+      "Id":"117",
+      "Message":"B1_PRES: Presence sensor, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 117",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 02:41:36 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/117",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 116",
+      "Id":"116",
+      "Message":"PS3_FRU PSU3_PRES: Presence sensor for PS3_FRU, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 116",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 02:41:36 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/116",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 115",
+      "Id":"115",
+      "Message":"PS1_FRU PSU1_PRES: Presence sensor for PS1_FRU, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 115",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2021-11-11 02:41:36 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/115",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 114",
+      "Description":"Log Entry 114",
+      "Message":"CHS_FP_LED_ID: Platform sensor, OFF event was asserted",
+      "Id":"114",
+      "Created":"2020-12-23 01:19:14 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/114",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 113",
+      "Id":"113",
+      "Message":"B1_PRES: Presence sensor, Device Inserted / Device Present was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 113",
+      "EntryCode":"Device Inserted / Device Present",
+      "Created":"2020-05-13 01:22:06 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/113",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 112",
+      "Id":"112",
+      "Message":"B1_PRES: Presence sensor, Device Removed / Device Absent was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 112",
+      "EntryCode":"Device Removed / Device Absent",
+      "Created":"2020-05-13 01:12:29 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/112",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 111",
+      "Description":"Log Entry 111",
+      "Message":"LED_HLTH_STATUS: Platform sensor, GREEN was asserted",
+      "Id":"111",
+      "Created":"2020-05-13 01:07:16 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/111",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 110",
+      "Description":"Log Entry 110",
+      "Message":"LED_HLTH_STATUS: Platform sensor, ON event was asserted",
+      "Id":"110",
+      "Created":"2020-05-13 01:07:16 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/110",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 109",
+      "Description":"Log Entry 109",
+      "Message":"LED_HLTH_STATUS: Platform sensor, AMBER was asserted",
+      "Id":"109",
+      "Created":"2020-05-06 00:43:34 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/109",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 108",
+      "Description":"Log Entry 108",
+      "Message":"LED_HLTH_STATUS: Platform sensor, FAST BLINK event was asserted",
+      "Id":"108",
+      "Created":"2020-05-06 00:43:34 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/108",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 107",
+      "Description":"Log Entry 107",
+      "Message":"CHS_FP_LED_ID: Platform sensor, FAST BLINK event was asserted",
+      "Id":"107",
+      "Created":"2020-02-12 04:10:35 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/107",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 106",
+      "Description":"Log Entry 106",
+      "Message":"CHS_FP_LED_ID: Platform sensor, OFF event was asserted",
+      "Id":"106",
+      "Created":"2020-02-12 03:45:42 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/106",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 105",
+      "Description":"Log Entry 105",
+      "Message":"CHS_FP_LED_ID: Platform sensor, FAST BLINK event was asserted",
+      "Id":"105",
+      "Created":"2020-02-12 03:43:16 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/105",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 104",
+      "Id":"104",
+      "Message":"PS_RDNDNT_MODE: PS Redundancy sensor, Fully Redundant was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 104",
+      "EntryCode":"Fully Redundant",
+      "Created":"2019-12-19 02:00:16 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/104",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 103",
+      "Description":"Log Entry 103",
+      "Message":"LED_PSU_STATUS: Platform sensor, GREEN was asserted",
+      "Id":"103",
+      "Created":"2019-12-19 01:59:48 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/103",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 102",
+      "Description":"Log Entry 102",
+      "Message":"LED_HLTH_STATUS: Platform sensor, GREEN was asserted",
+      "Id":"102",
+      "Created":"2019-12-19 01:59:48 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/102",
+      "Severity":"Informational"
+    },{
+      "Name":"Log Entry 101",
+      "Description":"Log Entry 101",
+      "Message":"PS4_FRU PSU4_STATUS: Power Supply sensor for PS4_FRU, Power Supply input lost (AC/DC) was deasserted",
+      "Id":"101",
+      "Created":"2019-12-19 01:59:48 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/101",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 100",
+      "Id":"100",
+      "Message":"PS4_FRU PSU4_AC_OK: Power Supply sensor for PS4_FRU, State Asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 100",
+      "EntryCode":"State Asserted",
+      "Created":"2019-12-19 01:59:48 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/100",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 99",
+      "Id":"99",
+      "Message":"PS4_FRU PSU4_DC_OK: Power Supply sensor for PS4_FRU, State Asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 99",
+      "EntryCode":"State Asserted",
+      "Created":"2019-12-19 01:59:48 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/99",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 98",
+      "Id":"98",
+      "Message":"PS3_FRU PSU3_DC_OK: Power Supply sensor for PS3_FRU, State Asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 98",
+      "EntryCode":"State Asserted",
+      "Created":"2019-12-19 01:59:48 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/98",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 97",
+      "Id":"97",
+      "Message":"PS3_FRU PSU3_DC_OK: Power Supply sensor for PS3_FRU, State Deasserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 97",
+      "EntryCode":"State Deasserted",
+      "Created":"2019-12-19 01:59:42 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/97",
+      "Severity":"Normal"
+    },{
+      "Name":"Log Entry 96",
+      "Id":"96",
+      "Message":"PS_RDNDNT_MODE: PS Redundancy sensor, Redundancy Degraded was asserted",
+      "EntryType":"SEL",
+      "Description":"Log Entry 96",
+      "EntryCode":"Redundancy Degraded",
+      "Created":"2019-12-19 01:59:20 ",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/96",
+      "Severity":"Warning"
+    },{
+      "Name":"Log Entry 95",
+      "Description":"Log Entry 95",
+      "Message":"LED_PSU_STATUS: Platform sensor, AMBER was asserted",
+      "Id":"95",
+      "Created":"2019-12-19 01:59:07 ",
+      "EntryType":"SEL",
+      "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries/95",
+      "Severity":"Informational"
+    }],
+  "Members@odata.count":50,
+  "@odata.type":"#LogEntry.1.0.0.LogEntryCollection",
+  "@odata.id":"/redfish/v1/Chassis/CMC/LogServices/SEL/Entries",
+  "@odata.context":"/redfish/v1/$metadata#Chassis/Members/$entity/LogServices/Members/$entity/Entries"
+}

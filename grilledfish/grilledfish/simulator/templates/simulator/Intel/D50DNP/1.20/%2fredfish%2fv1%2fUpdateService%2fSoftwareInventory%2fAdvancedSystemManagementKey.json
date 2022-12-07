@@ -1,0 +1,26 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#SoftwareInventory.SoftwareInventory",
+  "@odata.id": "/redfish/v1/UpdateService/SoftwareInventory/AdvancedSystemManagementKey",
+  "@odata.type": "#SoftwareInventory.v1_1_0.SoftwareInventory",
+  "Actions": {
+    "Oem": {
+      "#Intel.Oem.AdvancedSystemManagementKey": {
+        "target": "/redfish/v1/UpdateService/SoftwareInventory/AdvancedSystemManagementKey/Actions/Oem/Intel.Oem.AdvancedSystemManagementKey"
+      },
+      "#Intel.Oem.Remove": {
+        "target": "/redfish/v1/UpdateService/SoftwareInventory/AdvancedSystemManagementKey/Actions/Oem/Intel.Oem.Remove"
+      }
+    }
+  },
+  "Description": "Upload your key to activate advanced system management features",
+  "Id": "AdvancedSystemManagementKey",
+  "Name": "Software Inventory",
+  "Oem": {
+    "SoftwareInventory": {
+      "@odata.type": "#OemLicenseService.v1_0_0.SoftwareInventory",
+      "LastUpdateTime": "",
+      "LicenseStatus": "NOT ACTIVATED",
+      "UpdateState": "Idle"
+    }
+  }
+}

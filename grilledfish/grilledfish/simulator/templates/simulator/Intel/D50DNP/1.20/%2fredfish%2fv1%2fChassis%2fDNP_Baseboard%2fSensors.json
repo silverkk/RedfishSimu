@@ -1,0 +1,45 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors",
+  "@odata.type": "#SensorCollection.SensorCollection",
+  "Description": "Collection of Sensors for this Chassis",
+  "Members": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/PSU1_Out_Current"
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/PSU2_Out_Current"
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/CPU_Power"
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/HSC_Power"
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/Memory_Power"
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/PSU1_Input_Power"
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/PSU1_Out_Power"
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/PSU2_Input_Power"
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/PSU2_Out_Power"
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/Total_Power"
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/TCC_CPU0"
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/TCC_CPU1"
+    }
+  ],
+  "Members@odata.count": 12,
+  "Name": "Sensors"
+}

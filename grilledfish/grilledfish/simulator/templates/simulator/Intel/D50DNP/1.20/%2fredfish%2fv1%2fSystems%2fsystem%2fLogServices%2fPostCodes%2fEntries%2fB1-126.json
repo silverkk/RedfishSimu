@@ -1,0 +1,16 @@
+{
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/PostCodes/Entries/B1-126",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-02-19T20:25:21+00:00",
+  "EntryType": "Event",
+  "Id": "B1-126",
+  "Message": "Boot Count: 1; Time Stamp Offset: 5.1352 seconds; POST Code: 0xd2: Memory Margin Test",
+  "MessageArgs": [
+    "1",
+    "5.1352",
+    "0xd2: Memory Margin Test"
+  ],
+  "MessageId": "OpenBMC.0.2.BIOSPOSTCode",
+  "Name": "POST Code Log Entry",
+  "Severity": "OK"
+}

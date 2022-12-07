@@ -1,0 +1,20 @@
+{
+  "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/bmc_recovery",
+  "@odata.type": "#SoftwareInventory.v1_1_0.SoftwareInventory",
+  "Description": "BMC image",
+  "Id": "bmc_recovery",
+  "Name": "Software Inventory",
+  "RelatedItem": [
+    {
+      "@odata.id": "/redfish/v1/Managers/bmc"
+    }
+  ],
+  "RelatedItem@odata.count": 1,
+  "Status": {
+    "Health": "OK",
+    "HealthRollup": "OK",
+    "State": "StandbySpare"
+  },
+  "Updateable": true,
+  "Version": "egs-1.20-0-0000"
+}

@@ -1,0 +1,11 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/NetworkAdapters",
+  "@odata.type": "#NetworkAdapterCollection.NetworkAdapterCollection",
+  "Members": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/NetworkAdapters/Nic0"
+    }
+  ],
+  "Members@odata.count": 1,
+  "Name": "NetworkAdapter Collection"
+}

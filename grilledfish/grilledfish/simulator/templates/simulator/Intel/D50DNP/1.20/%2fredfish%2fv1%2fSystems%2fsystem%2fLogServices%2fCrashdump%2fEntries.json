@@ -1,0 +1,7 @@
+{
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/Crashdump/Entries",
+  "@odata.type": "#LogEntryCollection.LogEntryCollection",
+  "Description": "Collection of Crashdump Entries",
+  "Members": [],
+  "Name": "Open BMC Crashdump Entries"
+}

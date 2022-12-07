@@ -1,0 +1,22 @@
+{
+  "Name":"Manager Network Protocol",
+  "FQDN":"C3X60M3-FCH20167MYU",
+  "Id":"ManagerNetworkProtocol",
+  "IPMI":{
+    "ProtocolEnabled":true,
+    "Port":623
+  },
+  "KVMIP":{
+    "ProtocolEnabled":true,
+    "Port":2068
+  },
+  "HostName":"C3X60M3-FCH20167MYU",
+  "Description":"Manager Network Service",
+  "@odata.type":"#ManagerNetworkProtocol.1.0.0",
+  "@odata.context":"/redfish/v1/$metadata#Managers/Members/$entity/ManagerNetworkProtocol",
+  "@odata.id":"/redfish/v1/Managers/BMC1/ManagerNetworkProtocol",
+  "VirtualMedia":{
+    "ProtocolEnabled":true,
+    "Port":2068
+  }
+}

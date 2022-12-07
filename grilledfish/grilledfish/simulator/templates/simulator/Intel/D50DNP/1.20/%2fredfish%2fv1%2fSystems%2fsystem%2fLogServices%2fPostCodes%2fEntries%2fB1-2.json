@@ -1,0 +1,16 @@
+{
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/PostCodes/Entries/B1-2",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-02-19T20:25:16+00:00",
+  "EntryType": "Event",
+  "Id": "B1-2",
+  "Message": "Boot Count: 1; Time Stamp Offset: 0.0055 seconds; POST Code: 0x02: Microcode load begin",
+  "MessageArgs": [
+    "1",
+    "0.0055",
+    "0x02: Microcode load begin"
+  ],
+  "MessageId": "OpenBMC.0.2.BIOSPOSTCode",
+  "Name": "POST Code Log Entry",
+  "Severity": "OK"
+}

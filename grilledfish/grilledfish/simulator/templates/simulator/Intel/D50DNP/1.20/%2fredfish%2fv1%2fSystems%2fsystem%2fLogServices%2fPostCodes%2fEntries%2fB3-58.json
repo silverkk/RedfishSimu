@@ -1,0 +1,16 @@
+{
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/PostCodes/Entries/B3-58",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-02-19T20:25:11+00:00",
+  "EntryType": "Event",
+  "Id": "B3-58",
+  "Message": "Boot Count: 3; Time Stamp Offset: 2.0943 seconds; POST Code: 0x7e: DXE Removable Media Detected",
+  "MessageArgs": [
+    "3",
+    "2.0943",
+    "0x7e: DXE Removable Media Detected"
+  ],
+  "MessageId": "OpenBMC.0.2.BIOSPOSTCode",
+  "Name": "POST Code Log Entry",
+  "Severity": "OK"
+}

@@ -1,0 +1,10 @@
+{
+  "@odata.id": "/redfish/v1/SessionService/Sessions/ee5c00f_2",
+  "@odata.type": "#Session.v1_3_0.Session",
+  "ClientOriginIPAddress": "10.239.172.150",
+  "Description": "Manager User Session",
+  "Id": "ee5c00f_2",
+  "Name": "User Session",
+  "SessionType": "IPMI",
+  "UserName": "dcm"
+}

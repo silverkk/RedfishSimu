@@ -1,0 +1,39 @@
+{
+  "Name":"Manager Ethernet Interface",
+  "NameServers":["0.0.0.0","0.0.0.0"],
+  "FQDN":"C3X60M3-FCH20167MYU",
+  "Id":"NICs",
+  "IPv6StaticAddresses":{
+    "Address":"::",
+    "PrefixLength":"64"
+  },
+  "AutoNeg":false,
+  "IPv4Addresses":{
+    "Address":"10.30.16.149",
+    "SubnetMask":"255.255.255.0",
+    "Gateway":"10.30.16.17"
+  },
+  "@odata.type":"#EthernetInterface.1.0.0",
+  "MaxIPv6StaticAddresses":1,
+  "IPv4AddressOrigin":"Static",
+  "VLAN":{
+    "VLANEnable":false,
+    "VLANId":4044
+  },
+  "InterfaceEnabled":true,
+  "@odata.context":"/redfish/v1/$metadata#Managers/Members/$entity/EthernetInterfaces/Members/$entity",
+  "@odata.id":"/redfish/v1/Managers/BMC1/EthernetInterfaces/NICs",
+  "SpeedMbps":"NA",
+  "HostName":"C3X60M3-FCH20167MYU",
+  "Description":"Manager Network Interface",
+  "MACAddress":"E0:0E:DA:F2:B1:BC",
+  "IPv6DefaultGateway":"::",
+  "IPv6Addresses":{
+    "Address":"::",
+    "AddressOrigin":"Static",
+    "PrefixLength":"64"
+  },
+  "MTUSize":1500,
+  "FullDuplex":false,
+  "PermanentMACAddress":"E0:0E:DA:F2:B1:BC"
+}

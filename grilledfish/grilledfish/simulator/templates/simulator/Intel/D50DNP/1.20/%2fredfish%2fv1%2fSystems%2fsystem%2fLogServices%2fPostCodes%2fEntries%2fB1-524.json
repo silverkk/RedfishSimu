@@ -1,0 +1,16 @@
+{
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/PostCodes/Entries/B1-524",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-02-19T20:29:31+00:00",
+  "EntryType": "Event",
+  "Id": "B1-524",
+  "Message": "Boot Count: 1; Time Stamp Offset: 254.7601 seconds; POST Code: 0x92: DXE PCI bus begin",
+  "MessageArgs": [
+    "1",
+    "254.7601",
+    "0x92: DXE PCI bus begin"
+  ],
+  "MessageId": "OpenBMC.0.2.BIOSPOSTCode",
+  "Name": "POST Code Log Entry",
+  "Severity": "OK"
+}

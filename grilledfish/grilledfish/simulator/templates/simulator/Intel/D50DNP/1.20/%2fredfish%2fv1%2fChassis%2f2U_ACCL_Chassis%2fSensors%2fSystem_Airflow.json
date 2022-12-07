@@ -1,0 +1,27 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Sensors/System_Airflow",
+  "@odata.type": "#Sensor.v1_2_0.Sensor",
+  "Id": "System_Airflow",
+  "Name": "System Airflow",
+  "Oem": {
+    "OpenBmc": {
+      "@odata.type": "#OemSensor.v1_0_0.Sensor",
+      "DateTime": "2021-02-19T20:18:30+00:00"
+    }
+  },
+  "Reading": 132.705,
+  "ReadingRangeMax": 331.5,
+  "ReadingRangeMin": 0.0,
+  "ReadingType": "AirFlow",
+  "ReadingUnits": "cft_i/min",
+  "RelatedItem": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Sensors/System_Airflow/SensorHistory"
+    }
+  ],
+  "Status": {
+    "Health": "OK",
+    "HealthRollup": "OK",
+    "State": "Enabled"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1613732466580736",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-02-19T11:01:06+00:00",
+  "EntryType": "Oem",
+  "Id": "1613732466580736",
+  "Message": "rsyslogd: imjournal: journal files changed, reloading...  [v8.2106.0 try https://www.rsyslog.com/e/0 ]",
+  "Name": "BMC Journal Entry",
+  "OemRecordFormat": "BMC Journal Entry",
+  "Severity": "OK"
+}

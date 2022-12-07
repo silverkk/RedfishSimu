@@ -1,0 +1,19 @@
+{
+  "@odata.id": "/redfish/v1/Registries/NodeManager",
+  "@odata.type": "#MessageRegistryFile.v1_1_0.MessageRegistryFile",
+  "Description": "NodeManager Message Registry File Location",
+  "Id": "NodeManager",
+  "Languages": [
+    "en"
+  ],
+  "Languages@odata.count": 1,
+  "Location": [
+    {
+      "Language": "en",
+      "Uri": "/redfish/v1/Registries/NodeManager/NodeManager"
+    }
+  ],
+  "Location@odata.count": 1,
+  "Name": "NodeManager Message Registry File",
+  "Registry": "NodeManager.0.1.0"
+}

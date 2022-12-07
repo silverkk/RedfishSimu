@@ -1,0 +1,13 @@
+{
+  "Name":"Log Entry 136",
+  "Id":"136",
+  "Message":"PS2_FRU PSU2_DC_OK: Power Supply sensor for PS2_FRU, State Asserted",
+  "EntryType":"SEL",
+  "Description":"Log Entry 136",
+  "@odata.type":"#LogEntry.1.0.0",
+  "EntryCode":"State Asserted",
+  "Created":"2021-11-11 02:41:46 ",
+  "@odata.context":"/redfish/v1/$metadata#Managers/Members/$entity/LogServices/Members/$entity/Entries/Members/$entity",
+  "@odata.id":"/redfish/v1/Managers/CIMC/LogServices/SEL/Entries/136",
+  "Severity":"Normal"
+}

@@ -1,0 +1,72 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/DNP_ACCL_RISER_1/Thermal/ACCL_Riser_1_Temp/SensorHistory",
+  "@odata.type": "#SensorHistory.v1_0_0.SensorHistory",
+  "Id": "ACCL_Riser_1_Temp Sensor History",
+  "Interval": 60,
+  "Name": "Sensor History",
+  "SensorName": "ACCL_Riser_1_Temp",
+  "SensorReadings": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_ACCL_RISER_1/Thermal/ACCL_Riser_1_Temp/SensorHistory#/SensorReadings/0",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765400,
+      "Value": 24.062
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_ACCL_RISER_1/Thermal/ACCL_Riser_1_Temp/SensorHistory#/SensorReadings/1",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765460,
+      "Value": 24.062
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_ACCL_RISER_1/Thermal/ACCL_Riser_1_Temp/SensorHistory#/SensorReadings/2",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765520,
+      "Value": 24.125
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_ACCL_RISER_1/Thermal/ACCL_Riser_1_Temp/SensorHistory#/SensorReadings/3",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765581,
+      "Value": 24.125
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_ACCL_RISER_1/Thermal/ACCL_Riser_1_Temp/SensorHistory#/SensorReadings/4",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765641,
+      "Value": 24.125
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_ACCL_RISER_1/Thermal/ACCL_Riser_1_Temp/SensorHistory#/SensorReadings/5",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765701,
+      "Value": 24.125
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_ACCL_RISER_1/Thermal/ACCL_Riser_1_Temp/SensorHistory#/SensorReadings/6",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765761,
+      "Value": 24.062
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_ACCL_RISER_1/Thermal/ACCL_Riser_1_Temp/SensorHistory#/SensorReadings/7",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765821,
+      "Value": 24.062
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_ACCL_RISER_1/Thermal/ACCL_Riser_1_Temp/SensorHistory#/SensorReadings/8",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765881,
+      "Value": 24.062
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_ACCL_RISER_1/Thermal/ACCL_Riser_1_Temp/SensorHistory#/SensorReadings/9",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765941,
+      "Value": 24.125
+    }
+  ],
+  "SensorReadingsCount": 10,
+  "TimeFrame": 10
+}

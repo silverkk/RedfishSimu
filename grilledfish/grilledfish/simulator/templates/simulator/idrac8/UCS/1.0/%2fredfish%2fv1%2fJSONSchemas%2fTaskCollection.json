@@ -1,0 +1,15 @@
+{
+  "Name":"Task Collection Schema File",
+  "Id":"TaskCollection",
+  "@odata.context":"/redfish/v1/$metadata#JSONSchemas/Members/$entity",
+  "Languages":["en"],
+  "Description":"Task Collection Schema File Location",
+  "@odata.type":"#JSONSchemas.1.0.0.JsonSchemaFileCollection",
+  "Schema":"TaskCollection",
+  "@odata.id":"/redfish/v1/JSONSchemas/TaskCollection",
+  "Location":[{
+      "PublicationUri":"http://redfish.dmtf.org/schemas/v1/TaskCollection.json",
+      "Language":"en",
+      "Uri":"/redfish/v1/TaskCollection.json"
+    }]
+}

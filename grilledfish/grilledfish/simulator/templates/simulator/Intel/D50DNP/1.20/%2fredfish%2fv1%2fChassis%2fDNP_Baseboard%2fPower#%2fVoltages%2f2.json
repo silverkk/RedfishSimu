@@ -1,0 +1,702 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power",
+  "@odata.type": "#Power.v1_5_2.Power",
+  "Id": "Power",
+  "Name": "Power",
+  "PowerControl": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/PowerControl/0",
+      "@odata.type": "#Power.v1_0_0.PowerControl",
+      "MemberId": "0",
+      "Name": "Chassis Power Control",
+      "PowerAllocatedWatts": 32767,
+      "PowerCapacityWatts": 32767.0,
+      "PowerConsumedWatts": 417,
+      "PowerLimit": {
+        "CorrectionInMs": 600000,
+        "LimitException": "NoAction",
+        "LimitInWatts": 32767
+      },
+      "PowerMetrics": {
+        "AverageConsumedWatts": 454,
+        "IntervalInMin": 684751,
+        "MaxConsumedWatts": 9624,
+        "MinConsumedWatts": 380
+      }
+    }
+  ],
+  "PowerSupplies": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/PowerSupplies/0",
+      "FirmwareVersion": "01A",
+      "Manufacturer": "SOLUM CO., LTD.                  ",
+      "MemberId": "Solum_2100W_PSU1",
+      "Model": "PSSF212201A",
+      "Name": "Solum 2100W PSU1",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:19:33+00:00"
+        }
+      },
+      "PartNumber": "K31215-006",
+      "PowerInputWatts": 246.0,
+      "PowerOutputWatts": 226.5,
+      "Redundancy": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/Redundancy/0"
+        }
+      ],
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power/PSU1_Input_Power/SensorHistory"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power/PSU1_Out_Power/SensorHistory"
+        }
+      ],
+      "SerialNumber": "CNS2121A4BM5N0048",
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/PowerSupplies/1",
+      "FirmwareVersion": "01A",
+      "Manufacturer": "SOLUM CO., LTD.                  ",
+      "MemberId": "Solum_2100W_PSU2",
+      "Model": "PSSF212201A",
+      "Name": "Solum 2100W PSU2",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:19:33+00:00"
+        }
+      },
+      "PartNumber": "K31215-006",
+      "PowerInputWatts": 252.0,
+      "PowerOutputWatts": 232.5,
+      "Redundancy": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/Redundancy/0"
+        }
+      ],
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power/PSU2_Out_Power/SensorHistory"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power/PSU2_Input_Power/SensorHistory"
+        }
+      ],
+      "SerialNumber": "CNS2121A4BM5N0049",
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    }
+  ],
+  "Redundancy": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/Redundancy/0",
+      "@odata.type": "#Redundancy.v1_3_2.Redundancy",
+      "MaxNumSupported": 4,
+      "MemberId": "0",
+      "MinNumNeeded": 2,
+      "Mode": "N+m",
+      "Name": "Power Unit Redundancy",
+      "RedundancySet": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/PowerSupplies/0"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/PowerSupplies/1"
+        }
+      ],
+      "Status": {
+        "Health": "Critical",
+        "HealthRollup": "Critical",
+        "State": "Disabled"
+      }
+    }
+  ],
+  "Voltages": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/Voltages/0",
+      "@odata.type": "#Power.v1_0_0.Voltage",
+      "LowerThresholdCritical": 10.633,
+      "LowerThresholdNonCritical": 10.962,
+      "MaxReadingRange": 15.903308522393404,
+      "MemberId": "P12V_PSU",
+      "MinReadingRange": 0.0,
+      "Name": "P12V PSU",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:19:33+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingVolts": 11.9529,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power/P12V_PSU/SensorHistory"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis"
+        },
+        {
+          "@odata.id": "/redfish/v1/Systems/system"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 13.475,
+      "UpperThresholdNonCritical": 13.083
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/Voltages/1",
+      "@odata.type": "#Power.v1_0_0.Voltage",
+      "LowerThresholdCritical": 10.633,
+      "LowerThresholdNonCritical": 10.962,
+      "MaxReadingRange": 15.903308522393404,
+      "MemberId": "P12V_STBY",
+      "MinReadingRange": 0.0,
+      "Name": "P12V STBY",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:19:33+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingVolts": 12.1438,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power/P12V_STBY/SensorHistory"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis"
+        },
+        {
+          "@odata.id": "/redfish/v1/Systems/system"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 13.475,
+      "UpperThresholdNonCritical": 13.083
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/Voltages/2",
+      "@odata.type": "#Power.v1_0_0.Voltage",
+      "LowerThresholdCritical": 2.95,
+      "LowerThresholdNonCritical": 3.041,
+      "MaxReadingRange": 4.375218862440008,
+      "MemberId": "P3V3",
+      "MinReadingRange": 0.0,
+      "Name": "P3V3",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:19:33+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingVolts": 3.3182,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power/P3V3/SensorHistory"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis"
+        },
+        {
+          "@odata.id": "/redfish/v1/Systems/system"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 3.676,
+      "UpperThresholdNonCritical": 3.569
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/Voltages/3",
+      "@odata.type": "#Power.v1_0_0.Voltage",
+      "LowerThresholdCritical": 4.451,
+      "LowerThresholdNonCritical": 4.589,
+      "MaxReadingRange": 6.650704968821729,
+      "MemberId": "P5V",
+      "MinReadingRange": 0.0,
+      "Name": "P5V",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:19:33+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingVolts": 4.98,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power/P5V/SensorHistory"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis"
+        },
+        {
+          "@odata.id": "/redfish/v1/Systems/system"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 5.591,
+      "UpperThresholdNonCritical": 5.428
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/Voltages/4",
+      "@odata.type": "#Power.v1_0_0.Voltage",
+      "LowerThresholdCritical": 0.98,
+      "LowerThresholdNonCritical": 1.011,
+      "MaxReadingRange": 2.5,
+      "MemberId": "PVCCD_HV_CPU0",
+      "MinReadingRange": 0.0,
+      "Name": "PVCCD HV CPU0",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:19:33+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingVolts": 1.142,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power/PVCCD_HV_CPU0/SensorHistory"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis"
+        },
+        {
+          "@odata.id": "/redfish/v1/Systems/system"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 1.251,
+      "UpperThresholdNonCritical": 1.214
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/Voltages/5",
+      "@odata.type": "#Power.v1_0_0.Voltage",
+      "LowerThresholdCritical": 0.98,
+      "LowerThresholdNonCritical": 1.011,
+      "MaxReadingRange": 2.5,
+      "MemberId": "PVCCD_HV_CPU1",
+      "MinReadingRange": 0.0,
+      "Name": "PVCCD HV CPU1",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:19:33+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingVolts": 1.147,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power/PVCCD_HV_CPU1/SensorHistory"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis"
+        },
+        {
+          "@odata.id": "/redfish/v1/Systems/system"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 1.251,
+      "UpperThresholdNonCritical": 1.214
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/Voltages/6",
+      "@odata.type": "#Power.v1_0_0.Voltage",
+      "LowerThresholdCritical": 1.657,
+      "LowerThresholdNonCritical": 1.708,
+      "MaxReadingRange": 2.5,
+      "MemberId": "PVCCFA_EHV_CPU0",
+      "MinReadingRange": 0.0,
+      "Name": "PVCCFA EHV CPU0",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:19:33+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingVolts": 1.804,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power/PVCCFA_EHV_CPU0/SensorHistory"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis"
+        },
+        {
+          "@odata.id": "/redfish/v1/Systems/system"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 1.969,
+      "UpperThresholdNonCritical": 1.912
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/Voltages/7",
+      "@odata.type": "#Power.v1_0_0.Voltage",
+      "LowerThresholdCritical": 1.657,
+      "LowerThresholdNonCritical": 1.708,
+      "MaxReadingRange": 2.5,
+      "MemberId": "PVCCFA_EHV_CPU1",
+      "MinReadingRange": 0.0,
+      "Name": "PVCCFA EHV CPU1",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:19:33+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingVolts": 1.806,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power/PVCCFA_EHV_CPU1/SensorHistory"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis"
+        },
+        {
+          "@odata.id": "/redfish/v1/Systems/system"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 1.969,
+      "UpperThresholdNonCritical": 1.912
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/Voltages/8",
+      "@odata.type": "#Power.v1_0_0.Voltage",
+      "LowerThresholdCritical": 1.572,
+      "LowerThresholdNonCritical": 1.62,
+      "MaxReadingRange": 2.5,
+      "MemberId": "PVCCFA_EHV_FCPU0",
+      "MinReadingRange": 0.0,
+      "Name": "PVCCFA EHV FCPU0",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:19:33+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingVolts": 1.791,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power/PVCCFA_EHV_FCPU0/SensorHistory"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis"
+        },
+        {
+          "@odata.id": "/redfish/v1/Systems/system"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 1.988,
+      "UpperThresholdNonCritical": 1.93
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/Voltages/9",
+      "@odata.type": "#Power.v1_0_0.Voltage",
+      "LowerThresholdCritical": 1.572,
+      "LowerThresholdNonCritical": 1.62,
+      "MaxReadingRange": 2.5,
+      "MemberId": "PVCCFA_EHV_FCPU1",
+      "MinReadingRange": 0.0,
+      "Name": "PVCCFA EHV FCPU1",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:19:33+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingVolts": 1.782,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power/PVCCFA_EHV_FCPU1/SensorHistory"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis"
+        },
+        {
+          "@odata.id": "/redfish/v1/Systems/system"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 1.988,
+      "UpperThresholdNonCritical": 1.93
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/Voltages/10",
+      "@odata.type": "#Power.v1_0_0.Voltage",
+      "LowerThresholdCritical": 1.493,
+      "LowerThresholdNonCritical": 1.54,
+      "MaxReadingRange": 2.5,
+      "MemberId": "PVCCIN_CPU0",
+      "MinReadingRange": 0.0,
+      "Name": "PVCCIN CPU0",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:19:33+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingVolts": 1.816,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power/PVCCIN_CPU0/SensorHistory"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis"
+        },
+        {
+          "@odata.id": "/redfish/v1/Systems/system"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 2.021,
+      "UpperThresholdNonCritical": 1.963
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/Voltages/11",
+      "@odata.type": "#Power.v1_0_0.Voltage",
+      "LowerThresholdCritical": 1.493,
+      "LowerThresholdNonCritical": 1.54,
+      "MaxReadingRange": 2.5,
+      "MemberId": "PVCCIN_CPU1",
+      "MinReadingRange": 0.0,
+      "Name": "PVCCIN CPU1",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:19:33+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingVolts": 1.809,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power/PVCCIN_CPU1/SensorHistory"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis"
+        },
+        {
+          "@odata.id": "/redfish/v1/Systems/system"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 2.021,
+      "UpperThresholdNonCritical": 1.963
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/Voltages/12",
+      "@odata.type": "#Power.v1_0_0.Voltage",
+      "LowerThresholdCritical": 0.853,
+      "LowerThresholdNonCritical": 0.879,
+      "MaxReadingRange": 2.5,
+      "MemberId": "PVCCINFAON_CPU0",
+      "MinReadingRange": 0.0,
+      "Name": "PVCCINFAON CPU0",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:19:33+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingVolts": 1.066,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power/PVCCINFAON_CPU0/SensorHistory"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis"
+        },
+        {
+          "@odata.id": "/redfish/v1/Systems/system"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 1.137,
+      "UpperThresholdNonCritical": 1.104
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/Voltages/13",
+      "@odata.type": "#Power.v1_0_0.Voltage",
+      "LowerThresholdCritical": 0.853,
+      "LowerThresholdNonCritical": 0.879,
+      "MaxReadingRange": 2.5,
+      "MemberId": "PVCCINFAON_CPU1",
+      "MinReadingRange": 0.0,
+      "Name": "PVCCINFAON CPU1",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:19:33+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingVolts": 1.066,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power/PVCCINFAON_CPU1/SensorHistory"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis"
+        },
+        {
+          "@odata.id": "/redfish/v1/Systems/system"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 1.137,
+      "UpperThresholdNonCritical": 1.104
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/Voltages/14",
+      "@odata.type": "#Power.v1_0_0.Voltage",
+      "MaxReadingRange": 3.328008429708852,
+      "MemberId": "PVPP_HBM_CPU0",
+      "MinReadingRange": 0.0,
+      "Name": "PVPP HBM CPU0",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:19:33+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingVolts": 2.6225,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power/PVPP_HBM_CPU0/SensorHistory"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis"
+        },
+        {
+          "@odata.id": "/redfish/v1/Systems/system"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power#/Voltages/15",
+      "@odata.type": "#Power.v1_0_0.Voltage",
+      "MaxReadingRange": 4.592211805398929,
+      "MemberId": "PVPP_HBM_CPU1",
+      "MinReadingRange": 0.0,
+      "Name": "PVPP HBM CPU1",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:19:33+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingVolts": 3.604,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Power/PVPP_HBM_CPU1/SensorHistory"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis"
+        },
+        {
+          "@odata.id": "/redfish/v1/Systems/system"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    }
+  ]
+}

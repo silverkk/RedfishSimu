@@ -1,0 +1,17 @@
+{
+  "Name":"Manager Serial Interface 1",
+  "Parity":"None",
+  "PinOut":"Cisco",
+  "Id":"TTY0",
+  "@odata.type":"#SerialInterface.1.0.0",
+  "InterfaceEnabled":false,
+  "StopBits":"1",
+  "@odata.context":"/redfish/v1/$metadata#Managers/Members/$entity/SerialInterfaces/Members/$entity",
+  "SignalType":"Rs232",
+  "Description":"Management for Serial Interface",
+  "BitRate":"115200",
+  "FlowControl":"None",
+  "ConnectorType":"DB9 Female",
+  "@odata.id":"/redfish/v1/Managers/BMC1/SerialInterfaces/TTY0",
+  "DataBits":"8"
+}

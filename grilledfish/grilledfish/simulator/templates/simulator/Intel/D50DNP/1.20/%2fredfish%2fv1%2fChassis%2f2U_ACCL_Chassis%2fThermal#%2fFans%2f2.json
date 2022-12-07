@@ -1,0 +1,718 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal",
+  "@odata.type": "#Thermal.v1_4_0.Thermal",
+  "Fans": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/0",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "LowerThresholdCritical": 2500,
+      "MaxReadingRange": 31350,
+      "MemberId": "Fan_1a",
+      "MinReadingRange": 0,
+      "Name": "Fan 1a",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:18:36+00:00"
+        }
+      },
+      "Reading": 11475,
+      "ReadingUnits": "RPM",
+      "Redundancy": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Redundancy/0"
+        }
+      ],
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_1a/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/1",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "LowerThresholdCritical": 2500,
+      "MaxReadingRange": 31900,
+      "MemberId": "Fan_1b",
+      "MinReadingRange": 0,
+      "Name": "Fan 1b",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:18:36+00:00"
+        }
+      },
+      "Reading": 11610,
+      "ReadingUnits": "RPM",
+      "Redundancy": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Redundancy/0"
+        }
+      ],
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_1b/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/2",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "LowerThresholdCritical": 2500,
+      "MaxReadingRange": 31350,
+      "MemberId": "Fan_2a",
+      "MinReadingRange": 0,
+      "Name": "Fan 2a",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:18:36+00:00"
+        }
+      },
+      "Reading": 11490,
+      "ReadingUnits": "RPM",
+      "Redundancy": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Redundancy/0"
+        }
+      ],
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_2a/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/3",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "LowerThresholdCritical": 2500,
+      "MaxReadingRange": 31900,
+      "MemberId": "Fan_2b",
+      "MinReadingRange": 0,
+      "Name": "Fan 2b",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:18:36+00:00"
+        }
+      },
+      "Reading": 11685,
+      "ReadingUnits": "RPM",
+      "Redundancy": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Redundancy/0"
+        }
+      ],
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_2b/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/4",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "LowerThresholdCritical": 1400,
+      "MaxReadingRange": 21380,
+      "MemberId": "Fan_3a",
+      "MinReadingRange": 0,
+      "Name": "Fan 3a",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:18:36+00:00"
+        }
+      },
+      "Reading": 8805,
+      "ReadingUnits": "RPM",
+      "Redundancy": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Redundancy/0"
+        }
+      ],
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_3a/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/5",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "LowerThresholdCritical": 1400,
+      "MaxReadingRange": 21380,
+      "MemberId": "Fan_3b",
+      "MinReadingRange": 0,
+      "Name": "Fan 3b",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:18:36+00:00"
+        }
+      },
+      "Reading": 8070,
+      "ReadingUnits": "RPM",
+      "Redundancy": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Redundancy/0"
+        }
+      ],
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_3b/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/6",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "LowerThresholdCritical": 1400,
+      "MaxReadingRange": 21380,
+      "MemberId": "Fan_4a",
+      "MinReadingRange": 0,
+      "Name": "Fan 4a",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:18:36+00:00"
+        }
+      },
+      "Reading": 8835,
+      "ReadingUnits": "RPM",
+      "Redundancy": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Redundancy/0"
+        }
+      ],
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_4a/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/7",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "LowerThresholdCritical": 1400,
+      "MaxReadingRange": 21380,
+      "MemberId": "Fan_4b",
+      "MinReadingRange": 0,
+      "Name": "Fan 4b",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:18:36+00:00"
+        }
+      },
+      "Reading": 8085,
+      "ReadingUnits": "RPM",
+      "Redundancy": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Redundancy/0"
+        }
+      ],
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_4b/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/8",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "LowerThresholdCritical": 1400,
+      "MaxReadingRange": 21380,
+      "MemberId": "Fan_5a",
+      "MinReadingRange": 0,
+      "Name": "Fan 5a",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:18:36+00:00"
+        }
+      },
+      "Reading": 8805,
+      "ReadingUnits": "RPM",
+      "Redundancy": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Redundancy/0"
+        }
+      ],
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_5a/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/9",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "LowerThresholdCritical": 1400,
+      "MaxReadingRange": 21380,
+      "MemberId": "Fan_5b",
+      "MinReadingRange": 0,
+      "Name": "Fan 5b",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:18:36+00:00"
+        }
+      },
+      "Reading": 8070,
+      "ReadingUnits": "RPM",
+      "Redundancy": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Redundancy/0"
+        }
+      ],
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_5b/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/10",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "LowerThresholdCritical": 1400,
+      "MaxReadingRange": 21380,
+      "MemberId": "Fan_6a",
+      "MinReadingRange": 0,
+      "Name": "Fan 6a",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:18:36+00:00"
+        }
+      },
+      "Reading": 8835,
+      "ReadingUnits": "RPM",
+      "Redundancy": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Redundancy/0"
+        }
+      ],
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_6a/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/11",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "LowerThresholdCritical": 1400,
+      "MaxReadingRange": 21380,
+      "MemberId": "Fan_6b",
+      "MinReadingRange": 0,
+      "Name": "Fan 6b",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:18:36+00:00"
+        }
+      },
+      "Reading": 8130,
+      "ReadingUnits": "RPM",
+      "Redundancy": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Redundancy/0"
+        }
+      ],
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_6b/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/12",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "LowerThresholdCritical": 2500,
+      "MaxReadingRange": 31350,
+      "MemberId": "Fan_7a",
+      "MinReadingRange": 0,
+      "Name": "Fan 7a",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:18:36+00:00"
+        }
+      },
+      "Reading": 11490,
+      "ReadingUnits": "RPM",
+      "Redundancy": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Redundancy/0"
+        }
+      ],
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_7a/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/13",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "LowerThresholdCritical": 2500,
+      "MaxReadingRange": 31900,
+      "MemberId": "Fan_7b",
+      "MinReadingRange": 0,
+      "Name": "Fan 7b",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:18:36+00:00"
+        }
+      },
+      "Reading": 11685,
+      "ReadingUnits": "RPM",
+      "Redundancy": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Redundancy/0"
+        }
+      ],
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_7b/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/14",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "LowerThresholdCritical": 2500,
+      "MaxReadingRange": 31350,
+      "MemberId": "Fan_8a",
+      "MinReadingRange": 0,
+      "Name": "Fan 8a",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:18:36+00:00"
+        }
+      },
+      "Reading": 11505,
+      "ReadingUnits": "RPM",
+      "Redundancy": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Redundancy/0"
+        }
+      ],
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_8a/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/15",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "LowerThresholdCritical": 2500,
+      "MaxReadingRange": 31900,
+      "MemberId": "Fan_8b",
+      "MinReadingRange": 0,
+      "Name": "Fan 8b",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:18:36+00:00"
+        }
+      },
+      "Reading": 11655,
+      "ReadingUnits": "RPM",
+      "Redundancy": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Redundancy/0"
+        }
+      ],
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_8b/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/16",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "MaxReadingRange": 100,
+      "MemberId": "Pwm_1",
+      "MinReadingRange": 0,
+      "Name": "Pwm 1",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:18:36+00:00"
+        }
+      },
+      "Reading": 40,
+      "ReadingUnits": "Percent",
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Pwm_1/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/17",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "MaxReadingRange": 100,
+      "MemberId": "Pwm_2",
+      "MinReadingRange": 0,
+      "Name": "Pwm 2",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:18:36+00:00"
+        }
+      },
+      "Reading": 40,
+      "ReadingUnits": "Percent",
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Pwm_2/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/18",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "MaxReadingRange": 100,
+      "MemberId": "Pwm_3",
+      "MinReadingRange": 0,
+      "Name": "Pwm 3",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:18:36+00:00"
+        }
+      },
+      "Reading": 40,
+      "ReadingUnits": "Percent",
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Pwm_3/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/19",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "MaxReadingRange": 100,
+      "MemberId": "Pwm_4",
+      "MinReadingRange": 0,
+      "Name": "Pwm 4",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:18:36+00:00"
+        }
+      },
+      "Reading": 40,
+      "ReadingUnits": "Percent",
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Pwm_4/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    }
+  ],
+  "Id": "Thermal",
+  "Name": "Thermal",
+  "Redundancy": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Redundancy/0",
+      "@odata.type": "#Redundancy.v1_3_2.Redundancy",
+      "MaxNumSupported": 16,
+      "MemberId": "Tach",
+      "MinNumNeeded": 15,
+      "Mode": "N+m",
+      "Name": "Tach",
+      "RedundancySet": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/0"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/1"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/2"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/3"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/4"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/5"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/6"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/7"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/8"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/9"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/10"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/11"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/12"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/13"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/14"
+        },
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Fans/15"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    }
+  ],
+  "Temperatures": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal#/Temperatures/0",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "Exit_Air_Temp",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "Exit Air Temp",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:18:36+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingCelsius": 35.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Exit_Air_Temp/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    }
+  ]
+}

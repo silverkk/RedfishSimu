@@ -1,0 +1,18 @@
+{
+  "@odata.id": "/redfish/v1/Systems/system/NetworkInterfaces/Nic0",
+  "@odata.type": "#NetworkInterface.v1_2_1.NetworkInterface",
+  "Id": "Nic0",
+  "Links": {
+    "NetworkAdapter": {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/NetworkAdapters/Nic0"
+    }
+  },
+  "Name": "Network Device View",
+  "NetworkPorts": {
+    "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/NetworkAdapters/Nic0/NetworkPorts"
+  },
+  "Status": {
+    "Health": "OK",
+    "HealthRollup": "OK"
+  }
+}

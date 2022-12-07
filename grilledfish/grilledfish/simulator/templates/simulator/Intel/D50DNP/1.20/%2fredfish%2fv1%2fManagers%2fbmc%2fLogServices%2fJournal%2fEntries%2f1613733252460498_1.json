@@ -1,0 +1,11 @@
+{
+  "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1613733252460498_1",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-02-19T11:14:12+00:00",
+  "EntryType": "Oem",
+  "Id": "1613733252460498_1",
+  "Message": "raid-brcm:  sl_send_cmd :process_lib_command failed:cmd type 0 Cmd 0 Error 28801",
+  "Name": "BMC Journal Entry",
+  "OemRecordFormat": "BMC Journal Entry",
+  "Severity": "OK"
+}

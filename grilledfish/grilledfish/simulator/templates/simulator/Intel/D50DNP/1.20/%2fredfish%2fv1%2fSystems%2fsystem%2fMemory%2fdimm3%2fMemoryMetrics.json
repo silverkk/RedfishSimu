@@ -1,0 +1,14 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#MemoryMetrics.MemoryMetrics",
+  "@odata.id": "/redfish/v1/Systems/system/Memory/dimm3/MemoryMetrics",
+  "@odata.type": "#MemoryMetrics.v1_4_1.MemoryMetrics",
+  "Description": "System Memory Metrics",
+  "HealthData": {
+    "AlarmTrips": {
+      "Temperature": false
+    }
+  },
+  "Id": "MemoryMetrics",
+  "Name": "dimm3 Memory Metrics",
+  "OperatingSpeedMHz": 4000
+}

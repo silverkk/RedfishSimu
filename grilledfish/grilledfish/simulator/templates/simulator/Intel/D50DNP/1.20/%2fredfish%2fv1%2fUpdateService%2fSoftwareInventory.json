@@ -1,0 +1,10 @@
+{
+  "@odata.id": "/redfish/v1/UpdateService/SoftwareInventory",
+  "@odata.type": "#SoftwareInventoryCollection.SoftwareInventoryCollection",
+  "Members": [
+    {
+      "@odata.id": "/redfish/v1/UpdateService/SoftwareInventory/AdvancedSystemManagementKey"
+    }
+  ],
+  "Name": "Software Inventory Collection"
+}

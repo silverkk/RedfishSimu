@@ -1,0 +1,39 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/DNP_PDB/Thermal",
+  "@odata.type": "#Thermal.v1_4_0.Thermal",
+  "Fans": [],
+  "Id": "Thermal",
+  "Name": "Thermal",
+  "Temperatures": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_PDB/Thermal#/Temperatures/0",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "LowerThresholdCritical": 0.0,
+      "LowerThresholdNonCritical": 5.0,
+      "MaxReadingRangeTemp": 255.0,
+      "MemberId": "PDB_Temp",
+      "MinReadingRangeTemp": 0.0,
+      "Name": "PDB Temp",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:21:55+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingCelsius": 34.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_PDB/Thermal/PDB_Temp/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 115.0,
+      "UpperThresholdNonCritical": 110.0
+    }
+  ]
+}

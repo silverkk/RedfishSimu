@@ -1,0 +1,11 @@
+{
+  "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1613733068330321_1",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-02-19T11:11:08+00:00",
+  "EntryType": "Oem",
+  "Id": "1613733068330321_1",
+  "Message": "fwupdate-psu: failed to open file for SMBUS",
+  "Name": "BMC Journal Entry",
+  "OemRecordFormat": "BMC Journal Entry",
+  "Severity": "OK"
+}

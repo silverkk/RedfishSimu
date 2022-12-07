@@ -1,0 +1,18 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#LogService.LogService",
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/EventLog/Entries/1611444518_1",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-01-23T23:28:38+00:00",
+  "EntryType": "Event",
+  "EventId": "1611444518_1",
+  "Id": "1611444518_1",
+  "Message": "D50DNP Chassis with serial number ................................ was installed.",
+  "MessageArgs": [
+    "D50DNP",
+    "Chassis",
+    "................................"
+  ],
+  "MessageId": "OpenBMC.0.1.InventoryAdded",
+  "Name": "System Event Log Entry",
+  "Severity": "OK"
+}

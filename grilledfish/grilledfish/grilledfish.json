@@ -1,6 +1,6 @@
 {
     "ipNumber": 1,
-    "startIP": "10.239.43.6",
+    "startIP": "10.239.43.59",
     "perf": {
         "enablePerfStatistic": false,
         "granularity":10000,
@@ -8,13 +8,13 @@
     },
     "machines" : [
         {
-            "startIp" : "10.239.43.6",
-            "endIp" : "10.239.43.6",
+            "startIp" : "10.239.43.59",
+            "endIp" : "10.239.43.59",
             "ipmiNodeType": "IDRAC_13G_MONOLITHIC",
             "ipmiSetting": "Setting_0",
-			"vendor": "idrac8",            
-			"fwVersion": "1.0",
-			"model": "ONEVIEW",
+			"vendor": "idrac9",            
+			"fwVersion": "4.10",
+			"model": "R940xa",
             "flatMode": true,
             "health" : {
                 "system" : "OK",

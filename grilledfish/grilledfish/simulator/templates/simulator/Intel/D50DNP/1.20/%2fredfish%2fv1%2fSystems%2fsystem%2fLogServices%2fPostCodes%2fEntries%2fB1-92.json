@@ -1,0 +1,16 @@
+{
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/PostCodes/Entries/B1-92",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-02-19T20:29:09+00:00",
+  "EntryType": "Event",
+  "Id": "B1-92",
+  "Message": "Boot Count: 1; Time Stamp Offset: 232.7709 seconds; POST Code: 0xb3: Program registers on the memory controller level",
+  "MessageArgs": [
+    "1",
+    "232.7709",
+    "0xb3: Program registers on the memory controller level"
+  ],
+  "MessageId": "OpenBMC.0.2.BIOSPOSTCode",
+  "Name": "POST Code Log Entry",
+  "Severity": "OK"
+}

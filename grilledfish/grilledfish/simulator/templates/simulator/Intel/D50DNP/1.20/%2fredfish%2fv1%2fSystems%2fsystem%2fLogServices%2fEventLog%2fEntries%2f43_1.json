@@ -1,0 +1,16 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#LogService.LogService",
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/EventLog/Entries/43_1",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "1970-01-01T00:00:43+00:00",
+  "EntryType": "Event",
+  "EventId": "43_1",
+  "Id": "43_1",
+  "Message": "Power supply PSU2 inserted.",
+  "MessageArgs": [
+    "PSU2"
+  ],
+  "MessageId": "OpenBMC.0.1.PowerSupplyInserted",
+  "Name": "System Event Log Entry",
+  "Severity": "OK"
+}

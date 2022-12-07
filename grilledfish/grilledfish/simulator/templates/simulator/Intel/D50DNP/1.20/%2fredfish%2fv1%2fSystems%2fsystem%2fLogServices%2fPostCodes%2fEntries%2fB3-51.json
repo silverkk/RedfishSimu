@@ -1,0 +1,16 @@
+{
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/PostCodes/Entries/B3-51",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-02-19T20:25:11+00:00",
+  "EntryType": "Event",
+  "Id": "B3-51",
+  "Message": "Boot Count: 3; Time Stamp Offset: 2.0675 seconds; POST Code: 0xb4: Evaluate RAS modes and save rank information",
+  "MessageArgs": [
+    "3",
+    "2.0675",
+    "0xb4: Evaluate RAS modes and save rank information"
+  ],
+  "MessageId": "OpenBMC.0.2.BIOSPOSTCode",
+  "Name": "POST Code Log Entry",
+  "Severity": "OK"
+}

@@ -1,0 +1,13 @@
+{
+  "Name":"Processors Collection",
+  "Description":"Collection of Processors for this System",
+  "@odata.type":"#Cisco_ComputerProcessorCollection",
+  "Members@odata.count":2,
+  "Members":[{
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/Processors/CPU1"
+    },{
+      "@odata.id":"/redfish/v1/Systems/FCH20167MYU/Processors/CPU2"
+    }],
+  "@odata.id":"/redfish/v1/Systems/FCH20167MYU/Processors",
+  "@odata.context":"/redfish/v1/$metadata#Systems/Members/$entity/Processors"
+}

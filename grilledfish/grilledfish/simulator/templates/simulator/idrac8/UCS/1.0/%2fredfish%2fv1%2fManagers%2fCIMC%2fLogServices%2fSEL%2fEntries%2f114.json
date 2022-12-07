@@ -1,0 +1,12 @@
+{
+  "Name":"Log Entry 114",
+  "Id":"114",
+  "Message":"CHS_FP_LED_ID: Platform sensor, OFF event was asserted",
+  "EntryType":"SEL",
+  "Description":"Log Entry 114",
+  "@odata.type":"#LogEntry.1.0.0",
+  "Created":"2020-12-23 01:19:14 ",
+  "@odata.context":"/redfish/v1/$metadata#Managers/Members/$entity/LogServices/Members/$entity/Entries/Members/$entity",
+  "@odata.id":"/redfish/v1/Managers/CIMC/LogServices/SEL/Entries/114",
+  "Severity":"Informational"
+}

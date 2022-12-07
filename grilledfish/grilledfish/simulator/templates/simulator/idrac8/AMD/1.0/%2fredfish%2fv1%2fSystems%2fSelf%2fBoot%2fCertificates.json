@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#CertificateCollection.CertificateCollection","@odata.etag":"W/\"1643125018\"","@odata.id":"/redfish/v1/Systems/Self/Boot/Certificates","@odata.type":"#CertificateCollection.CertificateCollection","Description":"Collection of Certificates for Boot","Members":[],"Members@odata.count":0,"Name":"Boot Certificates"}

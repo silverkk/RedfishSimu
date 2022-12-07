@@ -1,0 +1,14 @@
+{
+  "@odata.id": "/redfish/v1/Systems/system/PCIeDevices/S0B1D0",
+  "@odata.type": "#PCIeDevice.v1_4_0.PCIeDevice",
+  "DeviceType": "SingleFunction",
+  "Id": "S0B1D0",
+  "Manufacturer": "ASPEED Technology Inc.",
+  "Name": "PCIe Device",
+  "PCIeFunctions": {
+    "@odata.id": "/redfish/v1/Systems/system/PCIeDevices/S0B1D0/PCIeFunctions"
+  },
+  "PCIeInterface": {
+    "PCIeType": "Gen2"
+  }
+}

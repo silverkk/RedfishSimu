@@ -1,0 +1,14 @@
+{
+  "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/afm_recovery",
+  "@odata.type": "#SoftwareInventory.v1_1_0.SoftwareInventory",
+  "Description": "Other image",
+  "Id": "afm_recovery",
+  "Name": "Software Inventory",
+  "Status": {
+    "Health": "OK",
+    "HealthRollup": "OK",
+    "State": "StandbySpare"
+  },
+  "Updateable": true,
+  "Version": "0.0"
+}

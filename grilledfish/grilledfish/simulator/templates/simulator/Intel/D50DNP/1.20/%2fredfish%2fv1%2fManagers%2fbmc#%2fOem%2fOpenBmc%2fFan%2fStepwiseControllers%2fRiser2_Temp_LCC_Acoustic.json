@@ -1,0 +1,1546 @@
+{
+  "@odata.id": "/redfish/v1/Managers/bmc",
+  "@odata.type": "#Manager.v1_11_0.Manager",
+  "Actions": {
+    "#Manager.Reset": {
+      "@Redfish.ActionInfo": "/redfish/v1/Managers/bmc/ResetActionInfo",
+      "target": "/redfish/v1/Managers/bmc/Actions/Manager.Reset"
+    },
+    "#Manager.ResetToDefaults": {
+      "ResetType@Redfish.AllowableValues": [
+        "ResetAll",
+        "ResetToDefaultButKeepReservedSettings"
+      ],
+      "target": "/redfish/v1/Managers/bmc/Actions/Manager.ResetToDefaults"
+    }
+  },
+  "CommandShell": {
+    "ConnectTypesSupported": [
+      "SSH",
+      "IPMI"
+    ],
+    "MaxConcurrentSessions": 4
+  },
+  "DateTime": "2021-02-19T20:22:29+00:00",
+  "DateTimeLocalOffset": "+00:00",
+  "Description": "Baseboard Management Controller",
+  "EthernetInterfaces": {
+    "@odata.id": "/redfish/v1/Managers/bmc/EthernetInterfaces"
+  },
+  "FirmwareVersion": "egs-1.20-0-g9a2854-3cc10000",
+  "GraphicalConsole": {
+    "ConnectTypesSupported": [
+      "KVMIP"
+    ],
+    "MaxConcurrentSessions": 4,
+    "ServiceEnabled": true
+  },
+  "Id": "bmc",
+  "LastResetTime": "2021-01-23T23:27:00+00:00",
+  "Links": {
+    "ActiveSoftwareImage": {
+      "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/bmc_active"
+    },
+    "ManagerForChassis": [
+      {
+        "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard"
+      }
+    ],
+    "ManagerForChassis@odata.count": 1,
+    "ManagerForServers": [
+      {
+        "@odata.id": "/redfish/v1/Systems/system"
+      }
+    ],
+    "ManagerForServers@odata.count": 1,
+    "ManagerInChassis": {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard"
+    },
+    "SoftwareImages": [
+      {
+        "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/bmc_active"
+      },
+      {
+        "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/bmc_recovery"
+      }
+    ],
+    "SoftwareImages@odata.count": 2
+  },
+  "LogServices": {
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices"
+  },
+  "ManagerType": "BMC",
+  "Model": "OpenBmc",
+  "Name": "OpenBmc Manager",
+  "NetworkProtocol": {
+    "@odata.id": "/redfish/v1/Managers/bmc/NetworkProtocol"
+  },
+  "Oem": {
+    "Customization": {
+      "@odata.id": "/redfish/v1/Managers/bmc#/Oem/Customization",
+      "@odata.type": "#OemManager.Customization"
+    },
+    "Manufacturing": {
+      "@odata.type": "#OemManager.Manufacturing"
+    },
+    "OpenBmc": {
+      "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc",
+      "@odata.type": "#OemManager.OpenBmc",
+      "Certificates": {
+        "@odata.id": "/redfish/v1/Managers/bmc/Truststore/Certificates"
+      },
+      "Fan": {
+        "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan",
+        "@odata.type": "#OemManager.Fan",
+        "FanControllers": {
+          "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanControllers",
+          "@odata.type": "#OemManager.FanControllers",
+          "Fan_1": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanControllers/Fan_1",
+            "@odata.type": "#OemManager.FanController",
+            "FFGainCoefficient": 1.0,
+            "FFOffCoefficient": 0.0,
+            "ICoefficient": 0.0,
+            "ILimitMax": 0.0,
+            "ILimitMin": 0.0,
+            "Inputs": [
+              "Fan 1a",
+              "Fan 1b"
+            ],
+            "NegativeHysteresis": 0.0,
+            "OutLimitMax": 100.0,
+            "OutLimitMin": 20.0,
+            "Outputs": [
+              "Pwm 1"
+            ],
+            "PCoefficient": 0.0,
+            "PositiveHysteresis": 0.0,
+            "SlewNeg": 0.0,
+            "SlewPos": 0.0,
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              }
+            ]
+          },
+          "Fan_2": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanControllers/Fan_2",
+            "@odata.type": "#OemManager.FanController",
+            "FFGainCoefficient": 1.0,
+            "FFOffCoefficient": 0.0,
+            "ICoefficient": 0.0,
+            "ILimitMax": 0.0,
+            "ILimitMin": 0.0,
+            "Inputs": [
+              "Fan 2a",
+              "Fan 2b"
+            ],
+            "NegativeHysteresis": 0.0,
+            "OutLimitMax": 100.0,
+            "OutLimitMin": 20.0,
+            "Outputs": [
+              "Pwm 1"
+            ],
+            "PCoefficient": 0.0,
+            "PositiveHysteresis": 0.0,
+            "SlewNeg": 0.0,
+            "SlewPos": 0.0,
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              }
+            ]
+          },
+          "Fan_3": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanControllers/Fan_3",
+            "@odata.type": "#OemManager.FanController",
+            "FFGainCoefficient": 1.0,
+            "FFOffCoefficient": 0.0,
+            "ICoefficient": 0.0,
+            "ILimitMax": 0.0,
+            "ILimitMin": 0.0,
+            "Inputs": [
+              "Fan 3a",
+              "Fan 3b"
+            ],
+            "NegativeHysteresis": 0.0,
+            "OutLimitMax": 100.0,
+            "OutLimitMin": 20.0,
+            "Outputs": [
+              "Pwm 2"
+            ],
+            "PCoefficient": 0.0,
+            "PositiveHysteresis": 0.0,
+            "SlewNeg": 0.0,
+            "SlewPos": 0.0,
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              }
+            ]
+          },
+          "Fan_4": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanControllers/Fan_4",
+            "@odata.type": "#OemManager.FanController",
+            "FFGainCoefficient": 1.0,
+            "FFOffCoefficient": 0.0,
+            "ICoefficient": 0.0,
+            "ILimitMax": 0.0,
+            "ILimitMin": 0.0,
+            "Inputs": [
+              "Fan 4a",
+              "Fan 4b"
+            ],
+            "NegativeHysteresis": 0.0,
+            "OutLimitMax": 100.0,
+            "OutLimitMin": 20.0,
+            "Outputs": [
+              "Pwm 2"
+            ],
+            "PCoefficient": 0.0,
+            "PositiveHysteresis": 0.0,
+            "SlewNeg": 0.0,
+            "SlewPos": 0.0,
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              }
+            ]
+          },
+          "Fan_5": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanControllers/Fan_5",
+            "@odata.type": "#OemManager.FanController",
+            "FFGainCoefficient": 1.0,
+            "FFOffCoefficient": 0.0,
+            "ICoefficient": 0.0,
+            "ILimitMax": 0.0,
+            "ILimitMin": 0.0,
+            "Inputs": [
+              "Fan 5a",
+              "Fan 5b"
+            ],
+            "NegativeHysteresis": 0.0,
+            "OutLimitMax": 100.0,
+            "OutLimitMin": 20.0,
+            "Outputs": [
+              "Pwm 3"
+            ],
+            "PCoefficient": 0.0,
+            "PositiveHysteresis": 0.0,
+            "SlewNeg": 0.0,
+            "SlewPos": 0.0,
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              }
+            ]
+          },
+          "Fan_6": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanControllers/Fan_6",
+            "@odata.type": "#OemManager.FanController",
+            "FFGainCoefficient": 1.0,
+            "FFOffCoefficient": 0.0,
+            "ICoefficient": 0.0,
+            "ILimitMax": 0.0,
+            "ILimitMin": 0.0,
+            "Inputs": [
+              "Fan 6a",
+              "Fan 6b"
+            ],
+            "NegativeHysteresis": 0.0,
+            "OutLimitMax": 100.0,
+            "OutLimitMin": 20.0,
+            "Outputs": [
+              "Pwm 3"
+            ],
+            "PCoefficient": 0.0,
+            "PositiveHysteresis": 0.0,
+            "SlewNeg": 0.0,
+            "SlewPos": 0.0,
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              }
+            ]
+          },
+          "Fan_7": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanControllers/Fan_7",
+            "@odata.type": "#OemManager.FanController",
+            "FFGainCoefficient": 1.0,
+            "FFOffCoefficient": 0.0,
+            "ICoefficient": 0.0,
+            "ILimitMax": 0.0,
+            "ILimitMin": 0.0,
+            "Inputs": [
+              "Fan 7a",
+              "Fan 7b"
+            ],
+            "NegativeHysteresis": 0.0,
+            "OutLimitMax": 100.0,
+            "OutLimitMin": 20.0,
+            "Outputs": [
+              "Pwm 4"
+            ],
+            "PCoefficient": 0.0,
+            "PositiveHysteresis": 0.0,
+            "SlewNeg": 0.0,
+            "SlewPos": 0.0,
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "Fan_8": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanControllers/Fan_8",
+            "@odata.type": "#OemManager.FanController",
+            "FFGainCoefficient": 1.0,
+            "FFOffCoefficient": 0.0,
+            "ICoefficient": 0.0,
+            "ILimitMax": 0.0,
+            "ILimitMin": 0.0,
+            "Inputs": [
+              "Fan 8a",
+              "Fan 8b"
+            ],
+            "NegativeHysteresis": 0.0,
+            "OutLimitMax": 100.0,
+            "OutLimitMin": 20.0,
+            "Outputs": [
+              "Pwm 4"
+            ],
+            "PCoefficient": 0.0,
+            "PositiveHysteresis": 0.0,
+            "SlewNeg": 0.0,
+            "SlewPos": 0.0,
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          }
+        },
+        "FanZones": {
+          "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones",
+          "@odata.type": "#OemManager.FanZones",
+          "Zone1": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1",
+            "@odata.type": "#OemManager.FanZone",
+            "Chassis": {
+              "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis"
+            },
+            "DCoffOutput": 20.0,
+            "FailSafePercent": 100.0,
+            "MinThermalOutput": 20.0,
+            "QuietPercent": 50.0
+          },
+          "Zone2": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2",
+            "@odata.type": "#OemManager.FanZone",
+            "Chassis": {
+              "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis"
+            },
+            "DCoffOutput": 20.0,
+            "FailSafePercent": 100.0,
+            "MinThermalOutput": 20.0,
+            "QuietPercent": 50.0
+          },
+          "Zone3": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3",
+            "@odata.type": "#OemManager.FanZone",
+            "Chassis": {
+              "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis"
+            },
+            "DCoffOutput": 20.0,
+            "FailSafePercent": 100.0,
+            "MinThermalOutput": 20.0,
+            "QuietPercent": 50.0
+          },
+          "Zone4": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4",
+            "@odata.type": "#OemManager.FanZone",
+            "Chassis": {
+              "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis"
+            },
+            "DCoffOutput": 20.0,
+            "FailSafePercent": 100.0,
+            "MinThermalOutput": 20.0,
+            "QuietPercent": 50.0
+          }
+        },
+        "PidControllers": {
+          "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/PidControllers",
+          "@odata.type": "#OemManager.PidControllers",
+          "CPU0_MEM_VR_Temp": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/PidControllers/CPU0_MEM_VR_Temp",
+            "@odata.type": "#OemManager.PidController",
+            "FFGainCoefficient": 0.0,
+            "FFOffCoefficient": 0.0,
+            "ICoefficient": -0.01,
+            "ILimitMax": 100.0,
+            "ILimitMin": 15.0,
+            "Inputs": [
+              "CPU0 MEM VR Temp"
+            ],
+            "NegativeHysteresis": 5.0,
+            "OutLimitMax": 100.0,
+            "OutLimitMin": 15.0,
+            "PCoefficient": -10.0,
+            "PositiveHysteresis": 0.0,
+            "SetPoint": 95.0,
+            "SlewNeg": 0.0,
+            "SlewPos": 0.0,
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "CPU0_VR_Temp": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/PidControllers/CPU0_VR_Temp",
+            "@odata.type": "#OemManager.PidController",
+            "FFGainCoefficient": 0.0,
+            "FFOffCoefficient": 0.0,
+            "ICoefficient": -0.01,
+            "ILimitMax": 100.0,
+            "ILimitMin": 15.0,
+            "Inputs": [
+              "CPU0 VR Temp"
+            ],
+            "NegativeHysteresis": 5.0,
+            "OutLimitMax": 100.0,
+            "OutLimitMin": 15.0,
+            "PCoefficient": -5.0,
+            "PositiveHysteresis": 0.0,
+            "SetPoint": 95.0,
+            "SlewNeg": 0.0,
+            "SlewPos": 0.0,
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "CPU1_MEM_VR_Temp": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/PidControllers/CPU1_MEM_VR_Temp",
+            "@odata.type": "#OemManager.PidController",
+            "FFGainCoefficient": 0.0,
+            "FFOffCoefficient": 0.0,
+            "ICoefficient": -0.01,
+            "ILimitMax": 100.0,
+            "ILimitMin": 15.0,
+            "Inputs": [
+              "CPU1 MEM VR Temp"
+            ],
+            "NegativeHysteresis": 5.0,
+            "OutLimitMax": 100.0,
+            "OutLimitMin": 15.0,
+            "PCoefficient": -10.0,
+            "PositiveHysteresis": 0.0,
+            "SetPoint": 95.0,
+            "SlewNeg": 0.0,
+            "SlewPos": 0.0,
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "CPU1_VR_Temp": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/PidControllers/CPU1_VR_Temp",
+            "@odata.type": "#OemManager.PidController",
+            "FFGainCoefficient": 0.0,
+            "FFOffCoefficient": 0.0,
+            "ICoefficient": -0.01,
+            "ILimitMax": 100.0,
+            "ILimitMin": 15.0,
+            "Inputs": [
+              "CPU1 VR Temp"
+            ],
+            "NegativeHysteresis": 5.0,
+            "OutLimitMax": 100.0,
+            "OutLimitMin": 15.0,
+            "PCoefficient": -5.0,
+            "PositiveHysteresis": 0.0,
+            "SetPoint": 95.0,
+            "SlewNeg": 0.0,
+            "SlewPos": 0.0,
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "DTS_CPU0": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/PidControllers/DTS_CPU0",
+            "@odata.type": "#OemManager.PidController",
+            "FFGainCoefficient": 0.0,
+            "FFOffCoefficient": 0.0,
+            "ICoefficient": -0.001,
+            "ILimitMax": 100.0,
+            "ILimitMin": 15.0,
+            "Inputs": [
+              "DTS CPU0"
+            ],
+            "NegativeHysteresis": 5.0,
+            "OutLimitMax": 100.0,
+            "OutLimitMin": 15.0,
+            "PCoefficient": -2.0,
+            "PositiveHysteresis": 0.0,
+            "SetPoint": -6.0,
+            "SlewNeg": 0.0,
+            "SlewPos": 0.0,
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "DTS_CPU1": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/PidControllers/DTS_CPU1",
+            "@odata.type": "#OemManager.PidController",
+            "FFGainCoefficient": 0.0,
+            "FFOffCoefficient": 0.0,
+            "ICoefficient": -0.001,
+            "ILimitMax": 100.0,
+            "ILimitMin": 15.0,
+            "Inputs": [
+              "DTS CPU1"
+            ],
+            "NegativeHysteresis": 5.0,
+            "OutLimitMax": 100.0,
+            "OutLimitMin": 15.0,
+            "PCoefficient": -2.0,
+            "PositiveHysteresis": 0.0,
+            "SetPoint": -6.0,
+            "SlewNeg": 0.0,
+            "SlewPos": 0.0,
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "M2_Riser1_Temp": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/PidControllers/M2_Riser1_Temp",
+            "@odata.type": "#OemManager.PidController",
+            "FFGainCoefficient": 0.0,
+            "FFOffCoefficient": 0.0,
+            "ICoefficient": -0.01,
+            "ILimitMax": 100.0,
+            "ILimitMin": 15.0,
+            "Inputs": [
+              "M2 Riser1 Temp"
+            ],
+            "NegativeHysteresis": 5.0,
+            "OutLimitMax": 100.0,
+            "OutLimitMin": 15.0,
+            "PCoefficient": -3.0,
+            "PositiveHysteresis": 0.0,
+            "SetPoint": 65.0,
+            "SlewNeg": 0.0,
+            "SlewPos": 0.0,
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "M2_Riser2_Temp": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/PidControllers/M2_Riser2_Temp",
+            "@odata.type": "#OemManager.PidController",
+            "FFGainCoefficient": 0.0,
+            "FFOffCoefficient": 0.0,
+            "ICoefficient": -0.01,
+            "ILimitMax": 100.0,
+            "ILimitMin": 15.0,
+            "Inputs": [
+              "M2 Riser2 Temp"
+            ],
+            "NegativeHysteresis": 5.0,
+            "OutLimitMax": 100.0,
+            "OutLimitMin": 15.0,
+            "PCoefficient": -3.0,
+            "PositiveHysteresis": 0.0,
+            "SetPoint": 65.0,
+            "SlewNeg": 0.0,
+            "SlewPos": 0.0,
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "P0_DIMM_ABCD_Mgn": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/PidControllers/P0_DIMM_ABCD_Mgn",
+            "@odata.type": "#OemManager.PidController",
+            "FFGainCoefficient": 0.0,
+            "FFOffCoefficient": 0.0,
+            "ICoefficient": -0.01,
+            "ILimitMax": 100.0,
+            "ILimitMin": 15.0,
+            "Inputs": [
+              "P0 DIMM ABCD Mgn"
+            ],
+            "NegativeHysteresis": 5.0,
+            "OutLimitMax": 100.0,
+            "OutLimitMin": 15.0,
+            "PCoefficient": -10.0,
+            "PositiveHysteresis": 0.0,
+            "SetPoint": -13.0,
+            "SlewNeg": 0.0,
+            "SlewPos": 0.0,
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "P0_DIMM_EFGH_Mgn": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/PidControllers/P0_DIMM_EFGH_Mgn",
+            "@odata.type": "#OemManager.PidController",
+            "FFGainCoefficient": 0.0,
+            "FFOffCoefficient": 0.0,
+            "ICoefficient": -0.01,
+            "ILimitMax": 100.0,
+            "ILimitMin": 15.0,
+            "Inputs": [
+              "P0 DIMM EFGH Mgn"
+            ],
+            "NegativeHysteresis": 5.0,
+            "OutLimitMax": 100.0,
+            "OutLimitMin": 15.0,
+            "PCoefficient": -10.0,
+            "PositiveHysteresis": 0.0,
+            "SetPoint": -13.0,
+            "SlewNeg": 0.0,
+            "SlewPos": 0.0,
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "P1_DIMM_ABCD_Mgn": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/PidControllers/P1_DIMM_ABCD_Mgn",
+            "@odata.type": "#OemManager.PidController",
+            "FFGainCoefficient": 0.0,
+            "FFOffCoefficient": 0.0,
+            "ICoefficient": -0.01,
+            "ILimitMax": 100.0,
+            "ILimitMin": 15.0,
+            "Inputs": [
+              "P1 DIMM ABCD Mgn"
+            ],
+            "NegativeHysteresis": 5.0,
+            "OutLimitMax": 100.0,
+            "OutLimitMin": 15.0,
+            "PCoefficient": -10.0,
+            "PositiveHysteresis": 0.0,
+            "SetPoint": -13.0,
+            "SlewNeg": 0.0,
+            "SlewPos": 0.0,
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "P1_DIMM_EFGH_Mgn": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/PidControllers/P1_DIMM_EFGH_Mgn",
+            "@odata.type": "#OemManager.PidController",
+            "FFGainCoefficient": 0.0,
+            "FFOffCoefficient": 0.0,
+            "ICoefficient": -0.01,
+            "ILimitMax": 100.0,
+            "ILimitMin": 15.0,
+            "Inputs": [
+              "P1 DIMM EFGH Mgn"
+            ],
+            "NegativeHysteresis": 5.0,
+            "OutLimitMax": 100.0,
+            "OutLimitMin": 15.0,
+            "PCoefficient": -10.0,
+            "PositiveHysteresis": 0.0,
+            "SetPoint": -13.0,
+            "SlewNeg": 0.0,
+            "SlewPos": 0.0,
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "PCH_Temp": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/PidControllers/PCH_Temp",
+            "@odata.type": "#OemManager.PidController",
+            "FFGainCoefficient": 0.0,
+            "FFOffCoefficient": 0.0,
+            "ICoefficient": -0.01,
+            "ILimitMax": 100.0,
+            "ILimitMin": 15.0,
+            "Inputs": [
+              "PCH Temp"
+            ],
+            "NegativeHysteresis": 5.0,
+            "OutLimitMax": 100.0,
+            "OutLimitMin": 15.0,
+            "PCoefficient": -20.0,
+            "PositiveHysteresis": 0.0,
+            "SetPoint": 70.0,
+            "SlewNeg": 0.0,
+            "SlewPos": 0.0,
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "Riser1_U2_Temp": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/PidControllers/Riser1_U2_Temp",
+            "@odata.type": "#OemManager.PidController",
+            "FFGainCoefficient": 0.0,
+            "FFOffCoefficient": 0.0,
+            "ICoefficient": -0.01,
+            "ILimitMax": 100.0,
+            "ILimitMin": 15.0,
+            "Inputs": [
+              "Riser1 U2 Temp"
+            ],
+            "NegativeHysteresis": 5.0,
+            "OutLimitMax": 100.0,
+            "OutLimitMin": 15.0,
+            "PCoefficient": -3.0,
+            "PositiveHysteresis": 0.0,
+            "SetPoint": 60.0,
+            "SlewNeg": 0.0,
+            "SlewPos": 0.0,
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "Riser2_U2_Temp": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/PidControllers/Riser2_U2_Temp",
+            "@odata.type": "#OemManager.PidController",
+            "FFGainCoefficient": 0.0,
+            "FFOffCoefficient": 0.0,
+            "ICoefficient": -0.01,
+            "ILimitMax": 100.0,
+            "ILimitMin": 15.0,
+            "Inputs": [
+              "Riser2 U2 Temp"
+            ],
+            "NegativeHysteresis": 5.0,
+            "OutLimitMax": 100.0,
+            "OutLimitMin": 15.0,
+            "PCoefficient": -3.0,
+            "PositiveHysteresis": 0.0,
+            "SetPoint": 60.0,
+            "SlewNeg": 0.0,
+            "SlewPos": 0.0,
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          }
+        },
+        "Profile": "Acoustic",
+        "Profile@Redfish.AllowableValues": [
+          "Acoustic",
+          "Performance"
+        ],
+        "StepwiseControllers": {
+          "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/StepwiseControllers",
+          "@odata.type": "#OemManager.StepwiseControllers",
+          "ACCL_Riser_1_Temp_LCC_Acoustic": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/StepwiseControllers/ACCL_Riser_1_Temp_LCC_Acoustic",
+            "@odata.type": "#OemManager.StepwiseController",
+            "Direction": "Floor",
+            "Inputs": [
+              "ACCL Riser 1 Temp"
+            ],
+            "NegativeHysteresis": 5.0,
+            "PositiveHysteresis": 0.0,
+            "Steps": [
+              {
+                "Output": 40.0,
+                "Target": 40.0
+              },
+              {
+                "Output": 45.0,
+                "Target": 45.0
+              },
+              {
+                "Output": 50.0,
+                "Target": 50.0
+              },
+              {
+                "Output": 55.0,
+                "Target": 55.0
+              },
+              {
+                "Output": 60.0,
+                "Target": 60.0
+              },
+              {
+                "Output": 65.0,
+                "Target": 65.0
+              }
+            ],
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "ACCL_Riser_2_Temp_LCC_Acoustic": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/StepwiseControllers/ACCL_Riser_2_Temp_LCC_Acoustic",
+            "@odata.type": "#OemManager.StepwiseController",
+            "Direction": "Floor",
+            "Inputs": [
+              "ACCL Riser 2 Temp"
+            ],
+            "NegativeHysteresis": 5.0,
+            "PositiveHysteresis": 0.0,
+            "Steps": [
+              {
+                "Output": 40.0,
+                "Target": 40.0
+              },
+              {
+                "Output": 45.0,
+                "Target": 45.0
+              },
+              {
+                "Output": 50.0,
+                "Target": 50.0
+              },
+              {
+                "Output": 55.0,
+                "Target": 55.0
+              },
+              {
+                "Output": 60.0,
+                "Target": 60.0
+              },
+              {
+                "Output": 65.0,
+                "Target": 65.0
+              }
+            ],
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "Inlet_BRD_Temp_LCC_Acoustic": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/StepwiseControllers/Inlet_BRD_Temp_LCC_Acoustic",
+            "@odata.type": "#OemManager.StepwiseController",
+            "Direction": "Floor",
+            "Inputs": [
+              "Inlet BRD Temp"
+            ],
+            "NegativeHysteresis": 5.0,
+            "PositiveHysteresis": 0.0,
+            "Steps": [
+              {
+                "Output": 20.0,
+                "Target": 15.0
+              },
+              {
+                "Output": 25.0,
+                "Target": 20.0
+              },
+              {
+                "Output": 30.0,
+                "Target": 25.0
+              },
+              {
+                "Output": 35.0,
+                "Target": 30.0
+              },
+              {
+                "Output": 40.0,
+                "Target": 35.0
+              },
+              {
+                "Output": 45.0,
+                "Target": 40.0
+              }
+            ],
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "Inlet_BRD_Temp_UCC_Acoustic": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/StepwiseControllers/Inlet_BRD_Temp_UCC_Acoustic",
+            "@odata.type": "#OemManager.StepwiseController",
+            "Direction": "Ceiling",
+            "Inputs": [
+              "Inlet BRD Temp"
+            ],
+            "NegativeHysteresis": 5.0,
+            "PositiveHysteresis": 0.0,
+            "Steps": [
+              {
+                "Output": 100.0,
+                "Target": 15.0
+              },
+              {
+                "Output": 100.0,
+                "Target": 20.0
+              },
+              {
+                "Output": 100.0,
+                "Target": 25.0
+              },
+              {
+                "Output": 100.0,
+                "Target": 30.0
+              },
+              {
+                "Output": 100.0,
+                "Target": 35.0
+              },
+              {
+                "Output": 100.0,
+                "Target": 40.0
+              }
+            ],
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "LAN_Zone_Temp_LCC_Acoustic": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/StepwiseControllers/LAN_Zone_Temp_LCC_Acoustic",
+            "@odata.type": "#OemManager.StepwiseController",
+            "Direction": "Floor",
+            "Inputs": [
+              "LAN Zone Temp"
+            ],
+            "NegativeHysteresis": 5.0,
+            "PositiveHysteresis": 0.0,
+            "Steps": [
+              {
+                "Output": 20.0,
+                "Target": 20.0
+              },
+              {
+                "Output": 25.0,
+                "Target": 25.0
+              },
+              {
+                "Output": 30.0,
+                "Target": 30.0
+              },
+              {
+                "Output": 35.0,
+                "Target": 35.0
+              },
+              {
+                "Output": 40.0,
+                "Target": 40.0
+              },
+              {
+                "Output": 45.0,
+                "Target": 45.0
+              }
+            ],
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "PSU1_Temperature_LCC_Acoustic": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/StepwiseControllers/PSU1_Temperature_LCC_Acoustic",
+            "@odata.type": "#OemManager.StepwiseController",
+            "Direction": "Floor",
+            "Inputs": [
+              "PSU1 Temperature"
+            ],
+            "NegativeHysteresis": 4.0,
+            "PositiveHysteresis": 0.0,
+            "Steps": [
+              {
+                "Output": 20.0,
+                "Target": 20.0
+              },
+              {
+                "Output": 25.0,
+                "Target": 36.0
+              },
+              {
+                "Output": 30.0,
+                "Target": 39.0
+              },
+              {
+                "Output": 43.0,
+                "Target": 44.0
+              },
+              {
+                "Output": 59.0,
+                "Target": 50.0
+              },
+              {
+                "Output": 79.0,
+                "Target": 54.0
+              },
+              {
+                "Output": 85.0,
+                "Target": 57.0
+              },
+              {
+                "Output": 100.0,
+                "Target": 60.0
+              }
+            ],
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "PSU2_Temperature_LCC_Acoustic": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/StepwiseControllers/PSU2_Temperature_LCC_Acoustic",
+            "@odata.type": "#OemManager.StepwiseController",
+            "Direction": "Floor",
+            "Inputs": [
+              "PSU2 Temperature"
+            ],
+            "NegativeHysteresis": 4.0,
+            "PositiveHysteresis": 0.0,
+            "Steps": [
+              {
+                "Output": 20.0,
+                "Target": 20.0
+              },
+              {
+                "Output": 25.0,
+                "Target": 36.0
+              },
+              {
+                "Output": 30.0,
+                "Target": 39.0
+              },
+              {
+                "Output": 43.0,
+                "Target": 44.0
+              },
+              {
+                "Output": 59.0,
+                "Target": 50.0
+              },
+              {
+                "Output": 79.0,
+                "Target": 54.0
+              },
+              {
+                "Output": 85.0,
+                "Target": 57.0
+              },
+              {
+                "Output": 100.0,
+                "Target": 60.0
+              }
+            ],
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "PSU3_Temperature_LCC_Acoustic": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/StepwiseControllers/PSU3_Temperature_LCC_Acoustic",
+            "@odata.type": "#OemManager.StepwiseController",
+            "Direction": "Floor",
+            "Inputs": [
+              "PSU3 Temperature"
+            ],
+            "NegativeHysteresis": 4.0,
+            "PositiveHysteresis": 0.0,
+            "Steps": [
+              {
+                "Output": 20.0,
+                "Target": 20.0
+              },
+              {
+                "Output": 25.0,
+                "Target": 36.0
+              },
+              {
+                "Output": 30.0,
+                "Target": 39.0
+              },
+              {
+                "Output": 43.0,
+                "Target": 44.0
+              },
+              {
+                "Output": 59.0,
+                "Target": 50.0
+              },
+              {
+                "Output": 79.0,
+                "Target": 54.0
+              },
+              {
+                "Output": 85.0,
+                "Target": 57.0
+              },
+              {
+                "Output": 100.0,
+                "Target": 60.0
+              }
+            ],
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "PSU4_Temperature_LCC_Acoustic": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/StepwiseControllers/PSU4_Temperature_LCC_Acoustic",
+            "@odata.type": "#OemManager.StepwiseController",
+            "Direction": "Floor",
+            "Inputs": [
+              "PSU4 Temperature"
+            ],
+            "NegativeHysteresis": 4.0,
+            "PositiveHysteresis": 0.0,
+            "Steps": [
+              {
+                "Output": 20.0,
+                "Target": 20.0
+              },
+              {
+                "Output": 25.0,
+                "Target": 36.0
+              },
+              {
+                "Output": 30.0,
+                "Target": 39.0
+              },
+              {
+                "Output": 43.0,
+                "Target": 44.0
+              },
+              {
+                "Output": 59.0,
+                "Target": 50.0
+              },
+              {
+                "Output": 79.0,
+                "Target": 54.0
+              },
+              {
+                "Output": 85.0,
+                "Target": 57.0
+              },
+              {
+                "Output": 100.0,
+                "Target": 60.0
+              }
+            ],
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "Read_BRD_Temp_LCC_Acoustic": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/StepwiseControllers/Read_BRD_Temp_LCC_Acoustic",
+            "@odata.type": "#OemManager.StepwiseController",
+            "Direction": "Floor",
+            "Inputs": [
+              "Read BRD Temp"
+            ],
+            "NegativeHysteresis": 1.0,
+            "PositiveHysteresis": 0.0,
+            "Steps": [
+              {
+                "Output": 20.0,
+                "Target": 30.0
+              },
+              {
+                "Output": 20.0,
+                "Target": 32.0
+              },
+              {
+                "Output": 20.0,
+                "Target": 46.0
+              },
+              {
+                "Output": 20.0,
+                "Target": 48.0
+              },
+              {
+                "Output": 20.0,
+                "Target": 50.0
+              },
+              {
+                "Output": 20.0,
+                "Target": 52.0
+              },
+              {
+                "Output": 20.0,
+                "Target": 54.0
+              },
+              {
+                "Output": 20.0,
+                "Target": 57.0
+              }
+            ],
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "Riser1_Temp_LCC_Acoustic": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/StepwiseControllers/Riser1_Temp_LCC_Acoustic",
+            "@odata.type": "#OemManager.StepwiseController",
+            "Direction": "Floor",
+            "Inputs": [
+              "Riser1 Temp"
+            ],
+            "NegativeHysteresis": 5.0,
+            "PositiveHysteresis": 0.0,
+            "Steps": [
+              {
+                "Output": 20.0,
+                "Target": 40.0
+              },
+              {
+                "Output": 25.0,
+                "Target": 45.0
+              },
+              {
+                "Output": 30.0,
+                "Target": 50.0
+              },
+              {
+                "Output": 35.0,
+                "Target": 55.0
+              },
+              {
+                "Output": 40.0,
+                "Target": 60.0
+              },
+              {
+                "Output": 45.0,
+                "Target": 65.0
+              }
+            ],
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          },
+          "Riser2_Temp_LCC_Acoustic": {
+            "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/StepwiseControllers/Riser2_Temp_LCC_Acoustic",
+            "@odata.type": "#OemManager.StepwiseController",
+            "Direction": "Floor",
+            "Inputs": [
+              "Riser2 Temp"
+            ],
+            "NegativeHysteresis": 5.0,
+            "PositiveHysteresis": 0.0,
+            "Steps": [
+              {
+                "Output": 20.0,
+                "Target": 40.0
+              },
+              {
+                "Output": 25.0,
+                "Target": 45.0
+              },
+              {
+                "Output": 30.0,
+                "Target": 50.0
+              },
+              {
+                "Output": 35.0,
+                "Target": 55.0
+              },
+              {
+                "Output": 40.0,
+                "Target": 60.0
+              },
+              {
+                "Output": 45.0,
+                "Target": 65.0
+              }
+            ],
+            "Zones": [
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone1"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone2"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone3"
+              },
+              {
+                "@odata.id": "/redfish/v1/Managers/bmc#/Oem/OpenBmc/Fan/FanZones/Zone4"
+              }
+            ]
+          }
+        }
+      },
+      "FirmwareBuildTime": "20220803194306"
+    }
+  },
+  "PowerState": "On",
+  "ServiceEntryPointUUID": "602ecb6b-5e84-5373-8713-b077693c61f0",
+  "Status": {
+    "Health": "OK",
+    "HealthRollup": "OK",
+    "State": "Enabled"
+  },
+  "UUID": "f50cd883-30ec-47e1-b2e9-d22c5388a8df"
+}

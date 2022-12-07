@@ -1,0 +1,72 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Aggr2_Temp/SensorHistory",
+  "@odata.type": "#SensorHistory.v1_0_0.SensorHistory",
+  "Id": "Aggr2_Temp Sensor History",
+  "Interval": 60,
+  "Name": "Sensor History",
+  "SensorName": "Aggr2_Temp",
+  "SensorReadings": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Aggr2_Temp/SensorHistory#/SensorReadings/0",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765460,
+      "Value": 29.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Aggr2_Temp/SensorHistory#/SensorReadings/1",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765520,
+      "Value": 28.937
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Aggr2_Temp/SensorHistory#/SensorReadings/2",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765581,
+      "Value": 29.125
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Aggr2_Temp/SensorHistory#/SensorReadings/3",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765641,
+      "Value": 28.937
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Aggr2_Temp/SensorHistory#/SensorReadings/4",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765701,
+      "Value": 29.062
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Aggr2_Temp/SensorHistory#/SensorReadings/5",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765761,
+      "Value": 28.937
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Aggr2_Temp/SensorHistory#/SensorReadings/6",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765821,
+      "Value": 28.812
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Aggr2_Temp/SensorHistory#/SensorReadings/7",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765881,
+      "Value": 28.937
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Aggr2_Temp/SensorHistory#/SensorReadings/8",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765941,
+      "Value": 28.937
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Aggr2_Temp/SensorHistory#/SensorReadings/9",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613766001,
+      "Value": 28.937
+    }
+  ],
+  "SensorReadingsCount": 10,
+  "TimeFrame": 10
+}

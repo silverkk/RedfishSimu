@@ -1,0 +1,20 @@
+{
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/LogCollector",
+  "@odata.type": "#LogService.v1_1_0.LogService",
+  "Actions": {
+    "Oem": {
+      "#LogCollector.Download": {
+        "target": "/redfish/v1/Systems/system/LogServices/LogCollector/Actions/Oem/LogCollector.Download"
+      },
+      "#LogCollector.OnDemand": {
+        "target": "/redfish/v1/Systems/system/LogServices/LogCollector/Actions/Oem/LogCollector.OnDemand"
+      }
+    }
+  },
+  "DateTime": "2021-02-19T20:28:00+00:00",
+  "DateTimeLocalOffset": "+00:00",
+  "Description": "Oem Log Collector Service",
+  "Id": "Oem Log Collector",
+  "Name": "Oem Log Collector Service",
+  "OverWritePolicy": "WrapsWhenFull"
+}

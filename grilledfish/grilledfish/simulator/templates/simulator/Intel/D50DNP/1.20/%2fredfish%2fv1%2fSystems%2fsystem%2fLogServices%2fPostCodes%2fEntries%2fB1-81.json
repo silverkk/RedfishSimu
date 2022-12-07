@@ -1,0 +1,16 @@
+{
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/PostCodes/Entries/B1-81",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-02-19T20:29:09+00:00",
+  "EntryType": "Event",
+  "Id": "B1-81",
+  "Message": "Boot Count: 1; Time Stamp Offset: 232.6911 seconds; POST Code: 0xb8: Initialize CLTT/OLTT",
+  "MessageArgs": [
+    "1",
+    "232.6911",
+    "0xb8: Initialize CLTT/OLTT"
+  ],
+  "MessageId": "OpenBMC.0.2.BIOSPOSTCode",
+  "Name": "POST Code Log Entry",
+  "Severity": "OK"
+}

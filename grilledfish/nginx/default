@@ -93,7 +93,7 @@ server {
 # HTTPS server
 #
 server {
-	listen 443;
+	listen 443 http2;
 	server_name server_domain_or_IP;
 
 	root /usr/share/nginx/html;

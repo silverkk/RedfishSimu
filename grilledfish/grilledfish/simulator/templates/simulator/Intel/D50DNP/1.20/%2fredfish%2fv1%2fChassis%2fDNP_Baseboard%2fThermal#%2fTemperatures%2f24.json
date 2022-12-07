@@ -1,0 +1,1148 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal",
+  "@odata.type": "#Thermal.v1_4_0.Thermal",
+  "Fans": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Fans/0",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "MaxReadingRange": 30000,
+      "MemberId": "PSU1_Fan_Speed_1",
+      "MinReadingRange": 0,
+      "Name": "PSU1 Fan Speed 1",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "Reading": 4544,
+      "ReadingUnits": "RPM",
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/PSU1_Fan_Speed_1/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Fans/1",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "MaxReadingRange": 30000,
+      "MemberId": "PSU1_Fan_Speed_2",
+      "MinReadingRange": 0,
+      "Name": "PSU1 Fan Speed 2",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "Reading": 6752,
+      "ReadingUnits": "RPM",
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/PSU1_Fan_Speed_2/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Fans/2",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "MaxReadingRange": 30000,
+      "MemberId": "PSU2_Fan_Speed_1",
+      "MinReadingRange": 0,
+      "Name": "PSU2 Fan Speed 1",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "Reading": 4608,
+      "ReadingUnits": "RPM",
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/PSU2_Fan_Speed_1/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Fans/3",
+      "@odata.type": "#Thermal.v1_3_0.Fan",
+      "MaxReadingRange": 30000,
+      "MemberId": "PSU2_Fan_Speed_2",
+      "MinReadingRange": 0,
+      "Name": "PSU2 Fan Speed 2",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "Reading": 6784,
+      "ReadingUnits": "RPM",
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/PSU2_Fan_Speed_2/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    }
+  ],
+  "Id": "Thermal",
+  "Name": "Thermal",
+  "Temperatures": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/0",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "Aggr1_Temp",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "Aggr1 Temp",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingCelsius": 47.687,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Aggr1_Temp/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/1",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "Aggr2_Temp",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "Aggr2 Temp",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingCelsius": 29.062,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Aggr2_Temp/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/2",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "LowerThresholdCritical": 0.0,
+      "LowerThresholdNonCritical": 5.0,
+      "MaxReadingRangeTemp": 255.0,
+      "MemberId": "CPU0_MEM_VR_Temp",
+      "MinReadingRangeTemp": 0.0,
+      "Name": "CPU0 MEM VR Temp",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": 42.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/CPU0_MEM_VR_Temp/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 115.0,
+      "UpperThresholdNonCritical": 110.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/3",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "LowerThresholdCritical": 0.0,
+      "LowerThresholdNonCritical": 5.0,
+      "MaxReadingRangeTemp": 255.0,
+      "MemberId": "CPU0_VR_Temp",
+      "MinReadingRangeTemp": 0.0,
+      "Name": "CPU0 VR Temp",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": 51.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/CPU0_VR_Temp/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 115.0,
+      "UpperThresholdNonCritical": 110.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/4",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "LowerThresholdCritical": 0.0,
+      "LowerThresholdNonCritical": 5.0,
+      "MaxReadingRangeTemp": 255.0,
+      "MemberId": "CPU1_MEM_VR_Temp",
+      "MinReadingRangeTemp": 0.0,
+      "Name": "CPU1 MEM VR Temp",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": 48.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/CPU1_MEM_VR_Temp/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 115.0,
+      "UpperThresholdNonCritical": 110.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/5",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "LowerThresholdCritical": 0.0,
+      "LowerThresholdNonCritical": 5.0,
+      "MaxReadingRangeTemp": 255.0,
+      "MemberId": "CPU1_VR_Temp",
+      "MinReadingRangeTemp": 0.0,
+      "Name": "CPU1 VR Temp",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": 73.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/CPU1_VR_Temp/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 115.0,
+      "UpperThresholdNonCritical": 110.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/6",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "DTS_CPU0",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "DTS CPU0",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": -40.546,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/DTS_CPU0/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdNonCritical": 0.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/7",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "DTS_CPU1",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "DTS CPU1",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": -21.625,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/DTS_CPU1/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdNonCritical": 0.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/8",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "Die_CPU0",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "Die CPU0",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": 49.454,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Die_CPU0/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/9",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "Die_CPU1",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "Die CPU1",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": 68.36,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Die_CPU1/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/10",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "HBM_DRAM_1_CPU0",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "HBM DRAM 1 CPU0",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": 31.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/HBM_DRAM_1_CPU0/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/11",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "HBM_DRAM_1_CPU1",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "HBM DRAM 1 CPU1",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": 46.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/HBM_DRAM_1_CPU1/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/12",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "HBM_DRAM_2_CPU0",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "HBM DRAM 2 CPU0",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": 28.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/HBM_DRAM_2_CPU0/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/13",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "HBM_DRAM_2_CPU1",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "HBM DRAM 2 CPU1",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": 52.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/HBM_DRAM_2_CPU1/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/14",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "HBM_DRAM_3_CPU0",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "HBM DRAM 3 CPU0",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": 31.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/HBM_DRAM_3_CPU0/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/15",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "HBM_DRAM_3_CPU1",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "HBM DRAM 3 CPU1",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": 49.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/HBM_DRAM_3_CPU1/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/16",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "HBM_DRAM_4_CPU0",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "HBM DRAM 4 CPU0",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": 27.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/HBM_DRAM_4_CPU0/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/17",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "HBM_DRAM_4_CPU1",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "HBM DRAM 4 CPU1",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": 51.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/HBM_DRAM_4_CPU1/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/18",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "HBM_Logic_1_CPU0",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "HBM Logic 1 CPU0",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": 32.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/HBM_Logic_1_CPU0/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/19",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "HBM_Logic_1_CPU1",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "HBM Logic 1 CPU1",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": 48.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/HBM_Logic_1_CPU1/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/20",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "HBM_Logic_2_CPU0",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "HBM Logic 2 CPU0",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": 28.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/HBM_Logic_2_CPU0/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/21",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "HBM_Logic_2_CPU1",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "HBM Logic 2 CPU1",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": 52.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/HBM_Logic_2_CPU1/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/22",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "HBM_Logic_3_CPU0",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "HBM Logic 3 CPU0",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": 31.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/HBM_Logic_3_CPU0/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/23",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "HBM_Logic_3_CPU1",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "HBM Logic 3 CPU1",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": 49.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/HBM_Logic_3_CPU1/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/24",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "HBM_Logic_4_CPU0",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "HBM Logic 4 CPU0",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": 27.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/HBM_Logic_4_CPU0/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/25",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "HBM_Logic_4_CPU1",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "HBM Logic 4 CPU1",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": 51.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/HBM_Logic_4_CPU1/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/26",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "LowerThresholdCritical": 0.0,
+      "LowerThresholdNonCritical": 5.0,
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "Inlet_BRD_Temp",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "Inlet BRD Temp",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "Intake",
+      "ReadingCelsius": 29.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Inlet_BRD_Temp/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 65.0,
+      "UpperThresholdNonCritical": 60.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/27",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "LowerThresholdCritical": 0.0,
+      "LowerThresholdNonCritical": 5.0,
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "LAN_Zone_Temp",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "LAN Zone Temp",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingCelsius": 29.437,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/LAN_Zone_Temp/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 65.0,
+      "UpperThresholdNonCritical": 60.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/28",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "Margin_CPU0",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "Margin CPU0",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": -32.562,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Margin_CPU0/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/29",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "Margin_CPU1",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "Margin CPU1",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "CPU",
+      "ReadingCelsius": -13.64,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Margin_CPU1/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      }
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/30",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "P0_DIMM_ABCD_Mgn",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "P0 DIMM ABCD Mgn",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingCelsius": -60.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/P0_DIMM_ABCD_Mgn/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 5.0,
+      "UpperThresholdNonCritical": 0.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/31",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "P0_DIMM_EFGH_Mgn",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "P0 DIMM EFGH Mgn",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingCelsius": -61.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/P0_DIMM_EFGH_Mgn/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 5.0,
+      "UpperThresholdNonCritical": 0.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/32",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "P1_DIMM_ABCD_Mgn",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "P1 DIMM ABCD Mgn",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingCelsius": -54.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/P1_DIMM_ABCD_Mgn/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 5.0,
+      "UpperThresholdNonCritical": 0.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/33",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "P1_DIMM_EFGH_Mgn",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "P1 DIMM EFGH Mgn",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingCelsius": -50.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/P1_DIMM_EFGH_Mgn/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 5.0,
+      "UpperThresholdNonCritical": 0.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/34",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "LowerThresholdCritical": 0.0,
+      "LowerThresholdNonCritical": 5.0,
+      "MaxReadingRangeTemp": 255.0,
+      "MemberId": "PCH_Temp",
+      "MinReadingRangeTemp": 0.0,
+      "Name": "PCH Temp",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingCelsius": 35.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/PCH_Temp/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 115.0,
+      "UpperThresholdNonCritical": 110.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/35",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "PSU1_Temperature",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "PSU1 Temperature",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingCelsius": 25.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/PSU1_Temperature/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 67.0,
+      "UpperThresholdNonCritical": 63.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/36",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "PSU2_Temperature",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "PSU2 Temperature",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingCelsius": 27.0,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/PSU2_Temperature/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 67.0,
+      "UpperThresholdNonCritical": 63.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal#/Temperatures/37",
+      "@odata.type": "#Thermal.v1_3_0.Temperature",
+      "LowerThresholdCritical": 0.0,
+      "LowerThresholdNonCritical": 5.0,
+      "MaxReadingRangeTemp": 127.0,
+      "MemberId": "Rear_BRD_Temp",
+      "MinReadingRangeTemp": -128.0,
+      "Name": "Rear BRD Temp",
+      "Oem": {
+        "OpenBmc": {
+          "@odata.type": "#OemSensor.v1_0_0.Sensor",
+          "DateTime": "2021-02-19T20:20:40+00:00"
+        }
+      },
+      "PhysicalContext": "SystemBoard",
+      "ReadingCelsius": 47.625,
+      "RelatedItem": [
+        {
+          "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Rear_BRD_Temp/SensorHistory"
+        }
+      ],
+      "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+      },
+      "UpperThresholdCritical": 75.0,
+      "UpperThresholdNonCritical": 70.0
+    }
+  ]
+}

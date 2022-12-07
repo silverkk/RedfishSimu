@@ -1,0 +1,60 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/DNP_PDB",
+  "@odata.type": "#Chassis.v1_14_0.Chassis",
+  "Actions": {
+    "#Chassis.Reset": {
+      "@Redfish.ActionInfo": "/redfish/v1/Chassis/DNP_PDB/ResetActionInfo",
+      "target": "/redfish/v1/Chassis/DNP_PDB/Actions/Chassis.Reset"
+    }
+  },
+  "ChassisType": "RackMount",
+  "Description": "System Chassis",
+  "Id": "DNP_PDB",
+  "Links": {
+    "ComputerSystems": [
+      {
+        "@odata.id": "/redfish/v1/Systems/system"
+      }
+    ],
+    "ManagedBy": [
+      {
+        "@odata.id": "/redfish/v1/Managers/bmc"
+      }
+    ],
+    "Storage": [
+      {
+        "@odata.id": "/redfish/v1/Systems/system/Storage/1"
+      }
+    ]
+  },
+  "Manufacturer": "Intel Corporation",
+  "Model": "FCXXPDBASSMBL2",
+  "Name": "DNP_PDB",
+  "NetworkAdapters": {
+    "@odata.id": "/redfish/v1/Chassis/DNP_PDB/NetworkAdapters"
+  },
+  "PCIeDevices": {
+    "@odata.id": "/redfish/v1/Systems/system/PCIeDevices"
+  },
+  "PartNumber": "M44246-100",
+  "PhysicalSecurity": {
+    "IntrusionSensor": "Normal",
+    "IntrusionSensorNumber": 1
+  },
+  "Power": {
+    "@odata.id": "/redfish/v1/Chassis/DNP_PDB/Power"
+  },
+  "PowerState": "On",
+  "Sensors": {
+    "@odata.id": "/redfish/v1/Chassis/DNP_PDB/Sensors"
+  },
+  "SerialNumber": "BQDP20401803",
+  "Status": {
+    "Health": "OK",
+    "HealthRollup": "OK",
+    "State": "Enabled"
+  },
+  "Thermal": {
+    "@odata.id": "/redfish/v1/Chassis/DNP_PDB/Thermal"
+  }
+}

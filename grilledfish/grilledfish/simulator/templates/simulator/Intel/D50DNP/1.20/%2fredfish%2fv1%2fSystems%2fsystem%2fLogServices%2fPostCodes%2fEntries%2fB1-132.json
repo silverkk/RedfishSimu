@@ -1,0 +1,16 @@
+{
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/PostCodes/Entries/B1-132",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-02-19T20:25:23+00:00",
+  "EntryType": "Event",
+  "Id": "B1-132",
+  "Message": "Boot Count: 1; Time Stamp Offset: 6.9020 seconds; POST Code: 0xb7: Train DDR5 ranks",
+  "MessageArgs": [
+    "1",
+    "6.9020",
+    "0xb7: Train DDR5 ranks"
+  ],
+  "MessageId": "OpenBMC.0.2.BIOSPOSTCode",
+  "Name": "POST Code Log Entry",
+  "Severity": "OK"
+}

@@ -1,0 +1,30 @@
+{
+  "@odata.id": "/redfish/v1/SessionService/Sessions/",
+  "@odata.type": "#SessionCollection.SessionCollection",
+  "Description": "Session Collection",
+  "Members": [
+    {
+      "@odata.id": "/redfish/v1/SessionService/Sessions/6GtWvFjV6p"
+    },
+    {
+      "@odata.id": "/redfish/v1/SessionService/Sessions/ae296da6_82"
+    },
+    {
+      "@odata.id": "/redfish/v1/SessionService/Sessions/bfe3b317_81"
+    },
+    {
+      "@odata.id": "/redfish/v1/SessionService/Sessions/19e11ef2_1"
+    },
+    {
+      "@odata.id": "/redfish/v1/SessionService/Sessions/21973816_3"
+    },
+    {
+      "@odata.id": "/redfish/v1/SessionService/Sessions/83303bd_4"
+    },
+    {
+      "@odata.id": "/redfish/v1/SessionService/Sessions/ee5c00f_2"
+    }
+  ],
+  "Members@odata.count": 7,
+  "Name": "Session Collection"
+}

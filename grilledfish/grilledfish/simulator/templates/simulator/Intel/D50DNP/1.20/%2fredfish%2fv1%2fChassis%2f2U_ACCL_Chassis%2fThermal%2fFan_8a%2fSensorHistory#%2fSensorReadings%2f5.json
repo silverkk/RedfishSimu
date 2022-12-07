@@ -1,0 +1,72 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_8a/SensorHistory",
+  "@odata.type": "#SensorHistory.v1_0_0.SensorHistory",
+  "Id": "Fan_8a Sensor History",
+  "Interval": 60,
+  "Name": "Sensor History",
+  "SensorName": "Fan_8a",
+  "SensorReadings": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_8a/SensorHistory#/SensorReadings/0",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765400,
+      "Value": 11505.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_8a/SensorHistory#/SensorReadings/1",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765460,
+      "Value": 11505.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_8a/SensorHistory#/SensorReadings/2",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765520,
+      "Value": 11490.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_8a/SensorHistory#/SensorReadings/3",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765581,
+      "Value": 11505.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_8a/SensorHistory#/SensorReadings/4",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765641,
+      "Value": 11490.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_8a/SensorHistory#/SensorReadings/5",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765701,
+      "Value": 11505.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_8a/SensorHistory#/SensorReadings/6",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765761,
+      "Value": 11505.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_8a/SensorHistory#/SensorReadings/7",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765821,
+      "Value": 11505.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_8a/SensorHistory#/SensorReadings/8",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765881,
+      "Value": 11505.0
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal/Fan_8a/SensorHistory#/SensorReadings/9",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765941,
+      "Value": 11505.0
+    }
+  ],
+  "SensorReadingsCount": 10,
+  "TimeFrame": 10
+}

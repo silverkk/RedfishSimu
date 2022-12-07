@@ -1,0 +1,60 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/DNP_ACCL_RISER_1",
+  "@odata.type": "#Chassis.v1_14_0.Chassis",
+  "Actions": {
+    "#Chassis.Reset": {
+      "@Redfish.ActionInfo": "/redfish/v1/Chassis/DNP_ACCL_RISER_1/ResetActionInfo",
+      "target": "/redfish/v1/Chassis/DNP_ACCL_RISER_1/Actions/Chassis.Reset"
+    }
+  },
+  "ChassisType": "RackMount",
+  "Description": "System Chassis",
+  "Id": "DNP_ACCL_RISER_1",
+  "Links": {
+    "ComputerSystems": [
+      {
+        "@odata.id": "/redfish/v1/Systems/system"
+      }
+    ],
+    "ManagedBy": [
+      {
+        "@odata.id": "/redfish/v1/Managers/bmc"
+      }
+    ],
+    "Storage": [
+      {
+        "@odata.id": "/redfish/v1/Systems/system/Storage/1"
+      }
+    ]
+  },
+  "Manufacturer": "Intel Corporation",
+  "Model": "DNPACCLRISER1",
+  "Name": "DNP_ACCL_RISER_1",
+  "NetworkAdapters": {
+    "@odata.id": "/redfish/v1/Chassis/DNP_ACCL_RISER_1/NetworkAdapters"
+  },
+  "PCIeDevices": {
+    "@odata.id": "/redfish/v1/Systems/system/PCIeDevices"
+  },
+  "PartNumber": "..........",
+  "PhysicalSecurity": {
+    "IntrusionSensor": "Normal",
+    "IntrusionSensorNumber": 1
+  },
+  "Power": {
+    "@odata.id": "/redfish/v1/Chassis/DNP_ACCL_RISER_1/Power"
+  },
+  "PowerState": "On",
+  "Sensors": {
+    "@odata.id": "/redfish/v1/Chassis/DNP_ACCL_RISER_1/Sensors"
+  },
+  "SerialNumber": "............",
+  "Status": {
+    "Health": "OK",
+    "HealthRollup": "OK",
+    "State": "Enabled"
+  },
+  "Thermal": {
+    "@odata.id": "/redfish/v1/Chassis/DNP_ACCL_RISER_1/Thermal"
+  }
+}

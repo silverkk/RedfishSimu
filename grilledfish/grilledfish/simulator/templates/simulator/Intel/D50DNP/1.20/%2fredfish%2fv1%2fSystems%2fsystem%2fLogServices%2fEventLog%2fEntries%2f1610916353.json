@@ -1,0 +1,14 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#LogService.LogService",
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/EventLog/Entries/1610916353",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-01-17T20:45:53+00:00",
+  "EntryType": "Event",
+  "EventId": "1610916353",
+  "Id": "1610916353",
+  "Message": "Host system DC power is on",
+  "MessageArgs": [],
+  "MessageId": "OpenBMC.0.1.DCPowerOn",
+  "Name": "System Event Log Entry",
+  "Severity": "OK"
+}

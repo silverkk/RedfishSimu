@@ -1,0 +1,44 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#Memory.Memory",
+  "@odata.id": "/redfish/v1/Systems/system/Memory/dimm15",
+  "@odata.type": "#Memory.v1_11_0.Memory",
+  "AllowedSpeedsMHz": [],
+  "BaseModuleType": "RDIMM",
+  "BusWidthBits": 0,
+  "CapacityMiB": 16384,
+  "DataWidthBits": 64,
+  "Description": "System Memory",
+  "ErrorCorrection": "NoECC",
+  "FirmwareRevision": "0",
+  "Id": "dimm15",
+  "Location": {
+    "PartLocation": {
+      "ServiceLabel": "CPU1_DIMM_H1"
+    }
+  },
+  "Manufacturer": "Hynix",
+  "MemoryDeviceType": "DDR5",
+  "MemoryMedia": [
+    "DRAM"
+  ],
+  "MemoryType": "DRAM",
+  "Metrics": {
+    "@odata.id": "/redfish/v1/Systems/system/Memory/dimm15/MemoryMetrics"
+  },
+  "Name": "DIMM Slot",
+  "Oem": {
+    "AssetTag": {
+      "@odata.type": "#OemProcessor.AssetTag",
+      "Value": "012149"
+    }
+  },
+  "OperatingSpeedMhz": 4000,
+  "PartNumber": "HMCG78MEBRA113N     ",
+  "RankCount": 1,
+  "SerialNumber": "54E8EFC2",
+  "Status": {
+    "Health": "OK",
+    "HealthRollup": "OK",
+    "State": "Enabled"
+  }
+}

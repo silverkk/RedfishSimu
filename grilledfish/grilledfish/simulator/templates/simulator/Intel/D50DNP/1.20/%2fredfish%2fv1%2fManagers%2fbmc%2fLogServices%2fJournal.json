@@ -1,0 +1,20 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#LogService.LogService",
+  "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal",
+  "@odata.type": "#LogService.v1_1_0.LogService",
+  "DateTime": "2021-02-19T20:22:31+00:00",
+  "DateTimeLocalOffset": "+00:00",
+  "Description": "BMC Journal Log Service",
+  "Entries": {
+    "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries"
+  },
+  "Id": "BMC Journal",
+  "LogEntryType": "Multiple",
+  "Name": "Open BMC Journal Log Service",
+  "OverWritePolicy": "WrapsWhenFull",
+  "Status": {
+    "Health": "OK",
+    "HealthRollup": "OK",
+    "State": "Enabled"
+  }
+}

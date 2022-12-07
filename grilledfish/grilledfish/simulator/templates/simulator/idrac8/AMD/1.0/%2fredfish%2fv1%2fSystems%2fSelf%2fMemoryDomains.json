@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#MemoryDomainCollection.MemoryDomainCollection","@odata.etag":"W/\"1643125018\"","@odata.id":"/redfish/v1/Systems/Self/MemoryDomains","@odata.type":"#MemoryDomainCollection.MemoryDomainCollection","Description":"Collection of MemoryDomains","Members":[],"Members@odata.count":0,"Name":"MemoryDomain Collection"}

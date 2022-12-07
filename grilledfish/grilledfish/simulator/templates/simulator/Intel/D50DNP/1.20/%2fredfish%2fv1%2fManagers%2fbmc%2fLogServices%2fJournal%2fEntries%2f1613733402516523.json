@@ -1,0 +1,11 @@
+{
+  "@odata.id": "/redfish/v1/Managers/bmc/LogServices/Journal/Entries/1613733402516523",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-02-19T11:16:42+00:00",
+  "EntryType": "Oem",
+  "Id": "1613733402516523",
+  "Message": "raid-brcm: eventfd_select_interrupter: Too many open files",
+  "Name": "BMC Journal Entry",
+  "OemRecordFormat": "BMC Journal Entry",
+  "Severity": "Warning"
+}

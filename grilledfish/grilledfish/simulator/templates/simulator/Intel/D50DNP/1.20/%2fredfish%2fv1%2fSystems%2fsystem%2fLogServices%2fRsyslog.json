@@ -1,0 +1,15 @@
+{
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/Rsyslog",
+  "@odata.type": "#LogService.v1_1_0.LogService",
+  "Description": "Oem remote Rsyslog Service",
+  "Id": "Oem remote Rsyslog",
+  "Name": "Oem remote Rsyslog Service",
+  "Oem": {
+    "Intel": {
+      "@odata.type": "#OemLogService.Intel",
+      "ServerIP": "local2"
+    }
+  },
+  "OverWritePolicy": "WrapsWhenFull",
+  "ServiceEnabled": false
+}

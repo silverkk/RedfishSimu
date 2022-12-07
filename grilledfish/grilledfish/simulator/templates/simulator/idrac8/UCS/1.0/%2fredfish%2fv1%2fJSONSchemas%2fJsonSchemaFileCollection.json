@@ -1,0 +1,15 @@
+{
+  "Name":"JsonSchemaFile Collection Schema File",
+  "Id":"JsonSchemaFileCollection",
+  "@odata.context":"/redfish/v1/$metadata#JSONSchemas/Members/$entity",
+  "Languages":["en"],
+  "Description":"JsonSchemaFile Collection Schema File Location",
+  "@odata.type":"#JSONSchemas.1.0.0.JsonSchemaFileCollection",
+  "Schema":"JsonSchemaFileCollection",
+  "@odata.id":"/redfish/v1/JSONSchemas/JsonSchemaFileCollection",
+  "Location":[{
+      "PublicationUri":"http://redfish.dmtf.org/schemas/v1/JsonSchemaFileCollection.json",
+      "Language":"en",
+      "Uri":"/redfish/v1/JsonSchemaFileCollection.json"
+    }]
+}

@@ -1,0 +1,72 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Sensors/System_Airflow/SensorHistory",
+  "@odata.type": "#SensorHistory.v1_0_0.SensorHistory",
+  "Id": "System_Airflow Sensor History",
+  "Interval": 60,
+  "Name": "Sensor History",
+  "SensorName": "System_Airflow",
+  "SensorReadings": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Sensors/System_Airflow/SensorHistory#/SensorReadings/0",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765340,
+      "Value": 132.744
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Sensors/System_Airflow/SensorHistory#/SensorReadings/1",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765400,
+      "Value": 132.739
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Sensors/System_Airflow/SensorHistory#/SensorReadings/2",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765460,
+      "Value": 132.724
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Sensors/System_Airflow/SensorHistory#/SensorReadings/3",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765520,
+      "Value": 132.671
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Sensors/System_Airflow/SensorHistory#/SensorReadings/4",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765581,
+      "Value": 132.71
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Sensors/System_Airflow/SensorHistory#/SensorReadings/5",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765641,
+      "Value": 132.739
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Sensors/System_Airflow/SensorHistory#/SensorReadings/6",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765701,
+      "Value": 132.744
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Sensors/System_Airflow/SensorHistory#/SensorReadings/7",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765761,
+      "Value": 132.701
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Sensors/System_Airflow/SensorHistory#/SensorReadings/8",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765821,
+      "Value": 132.724
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Sensors/System_Airflow/SensorHistory#/SensorReadings/9",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765881,
+      "Value": 132.778
+    }
+  ],
+  "SensorReadingsCount": 10,
+  "TimeFrame": 10
+}

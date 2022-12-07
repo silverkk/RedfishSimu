@@ -1,0 +1,17 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#LogService.LogService",
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/EventLog/Entries/1610916361",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-01-17T20:46:01+00:00",
+  "EntryType": "Event",
+  "EventId": "1610916361",
+  "Id": "1610916361",
+  "Message": "Interface eth1 link status becomes noLink.",
+  "MessageArgs": [
+    "eth1",
+    "noLink"
+  ],
+  "MessageId": "OpenBMC.0.1.LinkStatusChanged",
+  "Name": "System Event Log Entry",
+  "Severity": "OK"
+}

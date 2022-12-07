@@ -1,0 +1,18 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#LogService.LogService",
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/EventLog/Entries/1610923759",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-01-17T22:49:19+00:00",
+  "EntryType": "Event",
+  "EventId": "1610923759",
+  "Id": "1610923759",
+  "Message": "PCIe Correctable Replay Timer Timeout. Bus=23 Device=0 Function=0.",
+  "MessageArgs": [
+    "23",
+    "0",
+    "0"
+  ],
+  "MessageId": "OpenBMC.0.1.PCIeCorrectableReplayTimerTimeout",
+  "Name": "System Event Log Entry",
+  "Severity": "Warning"
+}

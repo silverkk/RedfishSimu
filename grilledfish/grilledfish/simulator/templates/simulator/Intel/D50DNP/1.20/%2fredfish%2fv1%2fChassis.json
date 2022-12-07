@@ -1,0 +1,26 @@
+{
+  "@odata.id": "/redfish/v1/Chassis",
+  "@odata.type": "#ChassisCollection.ChassisCollection",
+  "Members": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis"
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_2U_RISER2"
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_ACCL_RISER_1"
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_ACCL_RISER_2"
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard"
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_PDB"
+    }
+  ],
+  "Members@odata.count": 6,
+  "Name": "Chassis Collection"
+}

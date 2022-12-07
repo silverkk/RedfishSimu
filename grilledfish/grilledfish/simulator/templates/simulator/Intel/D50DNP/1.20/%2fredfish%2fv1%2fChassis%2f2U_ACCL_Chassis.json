@@ -1,0 +1,59 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis",
+  "@odata.type": "#Chassis.v1_14_0.Chassis",
+  "Actions": {
+    "#Chassis.Reset": {
+      "@Redfish.ActionInfo": "/redfish/v1/Chassis/2U_ACCL_Chassis/ResetActionInfo",
+      "target": "/redfish/v1/Chassis/2U_ACCL_Chassis/Actions/Chassis.Reset"
+    }
+  },
+  "AssetTag": "$BOARD_ASSET_TAG",
+  "ChassisType": "RackMount",
+  "Description": "System Chassis",
+  "Id": "2U_ACCL_Chassis",
+  "Links": {
+    "ComputerSystems": [
+      {
+        "@odata.id": "/redfish/v1/Systems/system"
+      }
+    ],
+    "ManagedBy": [
+      {
+        "@odata.id": "/redfish/v1/Managers/bmc"
+      }
+    ],
+    "Storage": [
+      {
+        "@odata.id": "/redfish/v1/Systems/system/Storage/1"
+      }
+    ]
+  },
+  "Manufacturer": "Intel Corporation",
+  "Model": "D50DNP",
+  "Name": "2U_ACCL_Chassis",
+  "NetworkAdapters": {
+    "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/NetworkAdapters"
+  },
+  "PCIeDevices": {
+    "@odata.id": "/redfish/v1/Systems/system/PCIeDevices"
+  },
+  "PartNumber": "................................",
+  "PhysicalSecurity": {
+    "IntrusionSensor": "Normal",
+    "IntrusionSensorNumber": 1
+  },
+  "Power": {
+    "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Power"
+  },
+  "PowerState": "On",
+  "Sensors": {
+    "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Sensors"
+  },
+  "SerialNumber": "................................",
+  "Status": {
+    "State": "Enabled"
+  },
+  "Thermal": {
+    "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/Thermal"
+  }
+}

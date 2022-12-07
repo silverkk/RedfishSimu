@@ -1,0 +1,27 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/TCC_CPU0",
+  "@odata.type": "#Sensor.v1_2_0.Sensor",
+  "Id": "TCC_CPU0",
+  "Name": "TCC CPU0",
+  "Oem": {
+    "OpenBmc": {
+      "@odata.type": "#OemSensor.v1_0_0.Sensor",
+      "DateTime": "2021-02-19T20:20:24+00:00"
+    }
+  },
+  "Reading": 0.0,
+  "ReadingRangeMax": 100.0,
+  "ReadingRangeMin": 0.0,
+  "ReadingType": "Percent",
+  "ReadingUnits": "%",
+  "RelatedItem": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/TCC_CPU0/SensorHistory"
+    }
+  ],
+  "Status": {
+    "Health": "OK",
+    "HealthRollup": "OK",
+    "State": "Enabled"
+  }
+}

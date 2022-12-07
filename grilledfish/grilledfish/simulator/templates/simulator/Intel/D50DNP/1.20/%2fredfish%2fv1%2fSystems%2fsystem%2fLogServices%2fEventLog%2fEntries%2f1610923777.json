@@ -1,0 +1,16 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#LogService.LogService",
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/EventLog/Entries/1610923777",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-01-17T22:49:37+00:00",
+  "EntryType": "Event",
+  "EventId": "1610923777",
+  "Id": "1610923777",
+  "Message": "Service phosphor-ipmi-host.service has exited unsuccessfully.",
+  "MessageArgs": [
+    "phosphor-ipmi-host.service"
+  ],
+  "MessageId": "OpenBMC.0.1.ServiceFailure",
+  "Name": "System Event Log Entry",
+  "Severity": "OK"
+}

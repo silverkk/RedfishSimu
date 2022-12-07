@@ -1,0 +1,11 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/NetworkAdapters",
+  "@odata.type": "#NetworkAdapterCollection.NetworkAdapterCollection",
+  "Members": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/2U_ACCL_Chassis/NetworkAdapters/Nic0"
+    }
+  ],
+  "Members@odata.count": 1,
+  "Name": "NetworkAdapter Collection"
+}

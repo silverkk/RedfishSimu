@@ -1,0 +1,16 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#LogService.LogService",
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/EventLog/Entries/1611441809",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-01-23T22:43:29+00:00",
+  "EntryType": "Event",
+  "EventId": "1611441809",
+  "Id": "1611441809",
+  "Message": "Intel ME has encountered firmware exception. Error code = 0x01",
+  "MessageArgs": [
+    "0x01"
+  ],
+  "MessageId": "OpenBMC.0.1.MEFirmwareException",
+  "Name": "System Event Log Entry",
+  "Severity": "Warning"
+}

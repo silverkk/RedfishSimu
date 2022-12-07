@@ -1,0 +1,72 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Die_CPU1/SensorHistory",
+  "@odata.type": "#SensorHistory.v1_0_0.SensorHistory",
+  "Id": "Die_CPU1 Sensor History",
+  "Interval": 60,
+  "Name": "Sensor History",
+  "SensorName": "Die_CPU1",
+  "SensorReadings": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Die_CPU1/SensorHistory#/SensorReadings/0",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765520,
+      "Value": 68.422
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Die_CPU1/SensorHistory#/SensorReadings/1",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765581,
+      "Value": 68.188
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Die_CPU1/SensorHistory#/SensorReadings/2",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765641,
+      "Value": 69.891
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Die_CPU1/SensorHistory#/SensorReadings/3",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765701,
+      "Value": 70.641
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Die_CPU1/SensorHistory#/SensorReadings/4",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765761,
+      "Value": 70.235
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Die_CPU1/SensorHistory#/SensorReadings/5",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765821,
+      "Value": 69.61
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Die_CPU1/SensorHistory#/SensorReadings/6",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765881,
+      "Value": 68.938
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Die_CPU1/SensorHistory#/SensorReadings/7",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613765941,
+      "Value": 68.719
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Die_CPU1/SensorHistory#/SensorReadings/8",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613766001,
+      "Value": 68.5
+    },
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Thermal/Die_CPU1/SensorHistory#/SensorReadings/9",
+      "@odata.type": "#SensorHistory.v1_0_0.Readings",
+      "Time": 1613766061,
+      "Value": 68.235
+    }
+  ],
+  "SensorReadingsCount": 10,
+  "TimeFrame": 10
+}

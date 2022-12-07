@@ -1,0 +1,188 @@
+{
+  "@odata.id": "/redfish/v1/Systems/system",
+  "@odata.type": "#ComputerSystem.v1_16_0.ComputerSystem",
+  "Actions": {
+    "#ComputerSystem.Reset": {
+      "@Redfish.ActionInfo": "/redfish/v1/Systems/system/ResetActionInfo",
+      "target": "/redfish/v1/Systems/system/Actions/ComputerSystem.Reset"
+    }
+  },
+  "AssetTag": "................................",
+  "Bios": {
+    "@odata.id": "/redfish/v1/Systems/system/Bios"
+  },
+  "BiosVersion": "SE5C7411.86B.8424.D06.2208110231",
+  "Boot": {
+    "AutomaticRetryAttempts": 3,
+    "AutomaticRetryConfig": "Disabled",
+    "AutomaticRetryConfig@Redfish.AllowableValues": [
+      "Disabled",
+      "RetryAttempts"
+    ],
+    "BootOrder": [
+      "CentOS Linux",
+      "UEFI IPv4: Intel Network 00 at Baseboard",
+      "UEFI IPv6: Intel Network 00 at Baseboard",
+      "UEFI HTTPv4: Intel Network 00 at Baseboard",
+      "UEFI HTTPv6: Intel Network 00 at Baseboard",
+      "UEFI Internal Shell",
+      "UEFI SAMSUNG MZQL21T9HCJR-00A07 S64GNE0R613900 1"
+    ],
+    "BootSourceOverrideEnabled": "Disabled",
+    "BootSourceOverrideMode": "Legacy",
+    "BootSourceOverrideMode@Redfish.AllowableValues": [
+      "Legacy",
+      "UEFI"
+    ],
+    "BootSourceOverrideTarget": "None",
+    "BootSourceOverrideTarget@Redfish.AllowableValues": [
+      "None",
+      "Pxe",
+      "Hdd",
+      "Cd",
+      "Diags",
+      "BiosSetup",
+      "Usb",
+      "UefiShell"
+    ],
+    "TrustedModuleRequiredToBoot": "Disabled"
+  },
+  "Description": "Computer System",
+  "GraphicalConsole": {
+    "ConnectTypesSupported": [
+      "KVMIP"
+    ],
+    "MaxConcurrentSessions": 4,
+    "ServiceEnabled": true
+  },
+  "HostWatchdogTimer": {
+    "FunctionEnabled": false,
+    "Status": {
+      "State": "Enabled"
+    },
+    "TimeoutAction": "ResetSystem"
+  },
+  "Id": "system",
+  "IndicatorLED": "Off",
+  "LastResetTime": "1970-01-01T00:00:44+00:00",
+  "Links": {
+    "Chassis": [
+      {
+        "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard"
+      }
+    ],
+    "ManagedBy": [
+      {
+        "@odata.id": "/redfish/v1/Managers/bmc"
+      }
+    ]
+  },
+  "LocationIndicatorActive": false,
+  "LogServices": {
+    "@odata.id": "/redfish/v1/Systems/system/LogServices"
+  },
+  "Manufacturer": "Intel Corporation",
+  "Memory": {
+    "@odata.id": "/redfish/v1/Systems/system/Memory"
+  },
+  "MemorySummary": {
+    "Status": {
+      "Health": "OK",
+      "HealthRollup": "OK",
+      "State": "Enabled"
+    },
+    "TotalSystemMemoryGiB": 256
+  },
+  "Model": "D50DNP",
+  "Name": "system",
+  "NetworkInterfaces": {
+    "@odata.id": "/redfish/v1/Systems/system/NetworkInterfaces"
+  },
+  "Oem": {
+    "OpenBmc": {
+      "@odata.type": "#OemComputerSystem.OpenBmc",
+      "FirmwareProvisioning": {
+        "@odata.type": "#OemComputerSystem.FirmwareProvisioning",
+        "ProvisioningStatus": "ProvisionedButNotLocked"
+      },
+      "KcsPolicyControlMode": {
+        "@odata.type": "#OemComputerSystem.KcsPolicyControlMode",
+        "Value": "Provisioning"
+      },
+      "KcsPolicyControlMode@Redfish.AllowableValues": [
+        "Provisioning",
+        "ProvisionedHostAllowlist",
+        "ProvisionedHostDisabled"
+      ],
+      "PhysicalLED": {
+        "@odata.type": "#OemComputerSystem.PhysicalLED",
+        "AmberLED": "Off",
+        "GreenLED": "On",
+        "SusackLED": "On"
+      }
+    },
+    "VoltageRegulators": {
+      "@odata.id": "/redfish/v1/Systems/system/Oem/VoltageRegulators",
+      "@odata.type": "#OemComputerSystem.VoltageRegulators"
+    }
+  },
+  "PCIeDevices": [
+    {
+      "@odata.id": "/redfish/v1/Systems/system/PCIeDevices/S0B1D0"
+    },
+    {
+      "@odata.id": "/redfish/v1/Systems/system/PCIeDevices/S0B22D0"
+    },
+    {
+      "@odata.id": "/redfish/v1/Systems/system/PCIeDevices/S0B23D0"
+    },
+    {
+      "@odata.id": "/redfish/v1/Systems/system/PCIeDevices/S0B2D0"
+    }
+  ],
+  "PCIeDevices@odata.count": 4,
+  "PartNumber": "................................",
+  "PowerRestorePolicy": "AlwaysOff",
+  "PowerState": "On",
+  "ProcessorSummary": {
+    "CoreCount": 0,
+    "Count": 2,
+    "Model": "Intel Xeon processor",
+    "Status": {
+      "Health": "OK",
+      "HealthRollup": "OK",
+      "State": "Enabled"
+    }
+  },
+  "Processors": {
+    "@odata.id": "/redfish/v1/Systems/system/Processors"
+  },
+  "SerialConsole": {
+    "IPMI": {
+      "ServiceEnabled": true
+    },
+    "MaxConcurrentSessions": 15,
+    "SSH": {
+      "HotKeySequenceDisplay": "Press ~. to exit console",
+      "Port": 2200,
+      "ServiceEnabled": true
+    }
+  },
+  "SerialNumber": "................................",
+  "Status": {
+    "Health": "OK",
+    "HealthRollup": "OK",
+    "State": "Enabled"
+  },
+  "Storage": {
+    "@odata.id": "/redfish/v1/Systems/system/Storage"
+  },
+  "SystemType": "Physical",
+  "UUID": "ffffffff-ffff-ffff-ffff-ffffffffffff",
+  "VirtualMedia": {
+    "@odata.id": "/redfish/v1/Managers/bmc/VirtualMedia"
+  },
+  "VirtualMediaConfig": {
+    "ServiceEnabled": true
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#ProcessorMetrics.ProcessorMetrics",
+  "@odata.id": "/redfish/v1/Systems/system/Processors/cpu1/ProcessorMetrics",
+  "@odata.type": "#ProcessorMetrics.v1_4_0.ProcessorMetrics",
+  "Description": "System Processor Metrics",
+  "Id": "ProcessorMetrics",
+  "Name": "cpu1 Processor Metrics",
+  "TemperatureCelsius": 52,
+  "ThrottlingCelsius": 38
+}

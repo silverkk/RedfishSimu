@@ -1,0 +1,14 @@
+{
+  "@odata.id": "/redfish/v1/UpdateService/FirmwareInventory/me",
+  "@odata.type": "#SoftwareInventory.v1_1_0.SoftwareInventory",
+  "Description": "ME image",
+  "Id": "me",
+  "Name": "Software Inventory",
+  "Status": {
+    "Health": "OK",
+    "HealthRollup": "OK",
+    "State": "Enabled"
+  },
+  "Updateable": false,
+  "Version": "06.00.03.172.0"
+}

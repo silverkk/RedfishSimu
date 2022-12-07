@@ -1,0 +1,17 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#LogService.LogService",
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/EventLog/Entries/1610917639",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-01-17T21:07:19+00:00",
+  "EntryType": "Event",
+  "EventId": "1610917639",
+  "Id": "1610917639",
+  "Message": "BMC time has been set via Host. Date Time is set to 2021-01-17 21:07:19 from 1970-01-01 00:05:38.",
+  "MessageArgs": [
+    "2021-01-17 21:07:19",
+    "1970-01-01 00:05:38"
+  ],
+  "MessageId": "OpenBMC.0.1.BMCTimeUpdatedViaHost",
+  "Name": "System Event Log Entry",
+  "Severity": "OK"
+}

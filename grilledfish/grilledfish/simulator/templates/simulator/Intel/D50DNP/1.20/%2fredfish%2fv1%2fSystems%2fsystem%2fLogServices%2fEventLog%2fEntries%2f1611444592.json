@@ -1,0 +1,16 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#LogService.LogService",
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/EventLog/Entries/1611444592",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-01-23T23:29:52+00:00",
+  "EntryType": "Event",
+  "EventId": "1611444592",
+  "Id": "1611444592",
+  "Message": "Service bmcweb.service has exited unsuccessfully.",
+  "MessageArgs": [
+    "bmcweb.service"
+  ],
+  "MessageId": "OpenBMC.0.1.ServiceFailure",
+  "Name": "System Event Log Entry",
+  "Severity": "OK"
+}

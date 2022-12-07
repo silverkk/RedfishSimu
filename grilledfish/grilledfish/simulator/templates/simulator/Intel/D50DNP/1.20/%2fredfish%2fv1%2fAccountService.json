@@ -1,0 +1,97 @@
+{
+  "@odata.id": "/redfish/v1/AccountService",
+  "@odata.type": "#AccountService.v1_5_0.AccountService",
+  "AccountLockoutDuration": 300,
+  "AccountLockoutThreshold": 10,
+  "Accounts": {
+    "@odata.id": "/redfish/v1/AccountService/Accounts"
+  },
+  "Actions": {
+    "Oem": {
+      "#AccountService.GetCurrentUserRole": {
+        "target": "/redfish/v1/AccountService/Actions/Oem/AccountService.GetCurrentUserRole"
+      }
+    }
+  },
+  "ActiveDirectory": {
+    "Authentication": {
+      "AuthenticationType": "UsernameAndPassword",
+      "Password": null,
+      "Username": ""
+    },
+    "LDAPService": {
+      "Oem": {
+        "OpenBMC": {
+          "@odata.type": "#OemAccountService.v1_0_0.AccountService",
+          "LDAPBindTime": "",
+          "LDAPServerPort": ""
+        }
+      },
+      "SearchSettings": {
+        "BaseDistinguishedNames": [
+          ""
+        ],
+        "GroupsAttribute": "",
+        "UsernameAttribute": ""
+      }
+    },
+    "RemoteRoleMapping": [],
+    "ServiceAddresses": [
+      ""
+    ],
+    "ServiceEnabled": false
+  },
+  "Description": "Account Service",
+  "Id": "AccountService",
+  "LDAP": {
+    "Authentication": {
+      "AuthenticationType": "UsernameAndPassword",
+      "Password": null,
+      "Username": ""
+    },
+    "Certificates": {
+      "@odata.id": "/redfish/v1/AccountService/LDAP/Certificates"
+    },
+    "LDAPService": {
+      "SearchSettings": {
+        "BaseDistinguishedNames": [
+          ""
+        ],
+        "GroupsAttribute": "",
+        "UsernameAttribute": ""
+      }
+    },
+    "RemoteRoleMapping": [],
+    "ServiceAddresses": [
+      ""
+    ],
+    "ServiceEnabled": false
+  },
+  "MaxPasswordLength": 20,
+  "MinPasswordLength": 8,
+  "Name": "Account Service",
+  "Oem": {
+    "OpenBMC": {
+      "@odata.id": "/redfish/v1/AccountService#/Oem/OpenBMC",
+      "@odata.type": "#OemAccountService.v1_0_0.AccountService",
+      "AuthMethods": {
+        "BasicAuth": true,
+        "Cookie": true,
+        "SessionToken": true,
+        "TLS": true,
+        "XToken": true
+      },
+      "PasswordPolicyComplexity": "Low",
+      "RememberOldPasswordTimes": 0
+    }
+  },
+  "Roles": {
+    "@odata.id": "/redfish/v1/AccountService/Roles"
+  },
+  "ServiceEnabled": true,
+  "Status": {
+    "Health": "OK",
+    "HealthRollup": "OK",
+    "State": "Enabled"
+  }
+}

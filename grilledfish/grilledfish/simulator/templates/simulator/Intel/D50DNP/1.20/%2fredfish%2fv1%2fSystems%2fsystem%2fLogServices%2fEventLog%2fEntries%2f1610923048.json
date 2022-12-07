@@ -1,0 +1,18 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#LogService.LogService",
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/EventLog/Entries/1610923048",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-01-17T22:37:28+00:00",
+  "EntryType": "Event",
+  "EventId": "1610923048",
+  "Id": "1610923048",
+  "Message": "DNPACCLRISER1 Board with serial number ............ was removed.",
+  "MessageArgs": [
+    "DNPACCLRISER1",
+    "Board",
+    "............"
+  ],
+  "MessageId": "OpenBMC.0.1.InventoryRemoved",
+  "Name": "System Event Log Entry",
+  "Severity": "OK"
+}

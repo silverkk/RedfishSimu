@@ -1,0 +1,12 @@
+{
+  "Name":"Log Entry 1306",
+  "Id":"1306",
+  "Message":"System Software event: System Event sensor, OEM System Boot Event was asserted",
+  "EntryType":"SEL",
+  "Description":"Log Entry 1306",
+  "@odata.type":"#LogEntry.1.0.0",
+  "Created":"2021-11-11 00:37:09 ",
+  "@odata.context":"/redfish/v1/$metadata#Systems/Members/$entity/LogServices/Members/$entity/Entries/Members/$entity",
+  "@odata.id":"/redfish/v1/Systems/FCH20167MYU/LogServices/SEL/Entries/1306",
+  "Severity":"Normal"
+}

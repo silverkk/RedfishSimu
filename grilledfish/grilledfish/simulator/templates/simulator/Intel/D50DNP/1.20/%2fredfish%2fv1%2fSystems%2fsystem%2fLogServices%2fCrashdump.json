@@ -1,0 +1,33 @@
+{
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/Crashdump",
+  "@odata.type": "#LogService.v1_2_0.LogService",
+  "Actions": {
+    "#LogService.ClearLog": {
+      "target": "/redfish/v1/Systems/system/LogServices/Crashdump/Actions/LogService.ClearLog"
+    },
+    "#LogService.CollectDiagnosticData": {
+      "target": "/redfish/v1/Systems/system/LogServices/Crashdump/Actions/LogService.CollectDiagnosticData"
+    },
+    "Oem": {
+      "#Crashdump.OnDemand": {
+        "target": "/redfish/v1/Systems/system/LogServices/Crashdump/Actions/Oem/Crashdump.OnDemand"
+      },
+      "#Crashdump.SendRawPeci": {
+        "target": "/redfish/v1/Systems/system/LogServices/Crashdump/Actions/Oem/Crashdump.SendRawPeci"
+      },
+      "#Crashdump.Telemetry": {
+        "target": "/redfish/v1/Systems/system/LogServices/Crashdump/Actions/Oem/Crashdump.Telemetry"
+      }
+    }
+  },
+  "DateTime": "2021-02-19T20:24:49+00:00",
+  "DateTimeLocalOffset": "+00:00",
+  "Description": "Oem Crashdump Service",
+  "Entries": {
+    "@odata.id": "/redfish/v1/Systems/system/LogServices/Crashdump/Entries"
+  },
+  "Id": "Oem Crashdump",
+  "MaxNumberOfRecords": 3,
+  "Name": "Open BMC Oem Crashdump Service",
+  "OverWritePolicy": "WrapsWhenFull"
+}

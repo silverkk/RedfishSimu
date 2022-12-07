@@ -1,0 +1,12 @@
+{
+  "Name":"Log Entry 119",
+  "Id":"119",
+  "Message":"PS4_FRU PSU4_STATUS: Power Supply sensor for PS4_FRU, Presence detected was asserted",
+  "EntryType":"SEL",
+  "Description":"Log Entry 119",
+  "@odata.type":"#LogEntry.1.0.0",
+  "Created":"2021-11-11 02:41:36 ",
+  "@odata.context":"/redfish/v1/$metadata#Managers/Members/$entity/LogServices/Members/$entity/Entries/Members/$entity",
+  "@odata.id":"/redfish/v1/Managers/CIMC/LogServices/SEL/Entries/119",
+  "Severity":"Normal"
+}

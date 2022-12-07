@@ -1,0 +1,1 @@
+{"@odata.context":"/redfish/v1/$metadata#GbtGPUManagerCollection.GbtGPUManagerCollection","@odata.etag":"W/\"1643125018\"","@odata.id":"/redfish/v1/GpuManager/NVAPI/FPGA","@odata.type":"#GbtGPUManagerCollection.v1_0_0.GbtGPUManagerCollection","Description":"Collect of FPGA","Id":"FPGA","Members":[],"Members@odata.count":0,"Name":"FPGA"}

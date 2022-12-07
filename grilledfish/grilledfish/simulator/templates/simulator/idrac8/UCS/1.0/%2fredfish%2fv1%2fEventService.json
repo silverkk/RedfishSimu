@@ -1,0 +1,28 @@
+{
+  "Name":"Event Service",
+  "Status":{
+    "State":"Disabled",
+    "Health":"OK"
+  },
+  "Id":"EventService",
+  "ServiceEnabled":false,
+  "@odata.context":"/redfish/v1/$metadata#EventService",
+  "Subscriptions":{
+    "@odata.id":"/redfish/v1/EventService/Subscriptions"
+  },
+  "Description":"Event Service represents the properties for the service",
+  "@odata.type":"#EventService.1.0.0",
+  "Actions":{
+    "#EventService.SubmitTestEvent":{
+      "Context@Redfish.AllowableValues":["Context string"],
+      "Protocol@Redfish.AllowableValues":["Redfish"],
+      "EventType@Redfish.AllowableValues":["Alert"],
+      "Destination@Redfish.AllowableValues":["Valid Remote HTTP server path"],
+      "target":"/redfish/v1/EventService/Actions/EventService.SubmitTestEvent"
+    }
+  },
+  "DeliveryRetryAttempts":3,
+  "DeliveryRetryIntervalInSeconds":30,
+  "@odata.id":"/redfish/v1/EventService",
+  "EventTypesForSubscription":["Alert"]
+}

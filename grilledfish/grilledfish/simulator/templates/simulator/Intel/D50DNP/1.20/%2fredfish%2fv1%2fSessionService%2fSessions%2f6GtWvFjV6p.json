@@ -1,0 +1,20 @@
+{
+  "@odata.id": "/redfish/v1/SessionService/Sessions/6GtWvFjV6p",
+  "@odata.type": "#Session.v1_3_0.Session",
+  "ClientOriginIPAddress": "10.239.43.25",
+  "Description": "Manager User Session",
+  "Id": "6GtWvFjV6p",
+  "Name": "User Session",
+  "Oem": {
+    "Intel_WebSession": {
+      "@odata.type": "#IntelWebSession.v1_0_0.WebSession",
+      "KvmActive": false,
+      "VmActive": [
+        false,
+        false
+      ]
+    }
+  },
+  "SessionType": "WebUI",
+  "UserName": "dcm"
+}

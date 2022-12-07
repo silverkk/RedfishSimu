@@ -1,0 +1,27 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/Memory_Power",
+  "@odata.type": "#Sensor.v1_2_0.Sensor",
+  "Id": "Memory_Power",
+  "Name": "Memory Power",
+  "Oem": {
+    "OpenBmc": {
+      "@odata.type": "#OemSensor.v1_0_0.Sensor",
+      "DateTime": "2021-02-19T20:20:12+00:00"
+    }
+  },
+  "Reading": 17.0,
+  "ReadingRangeMax": 255.0,
+  "ReadingRangeMin": 0.0,
+  "ReadingType": "Power",
+  "ReadingUnits": "W",
+  "RelatedItem": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/Memory_Power/SensorHistory"
+    }
+  ],
+  "Status": {
+    "Health": "OK",
+    "HealthRollup": "OK",
+    "State": "Enabled"
+  }
+}

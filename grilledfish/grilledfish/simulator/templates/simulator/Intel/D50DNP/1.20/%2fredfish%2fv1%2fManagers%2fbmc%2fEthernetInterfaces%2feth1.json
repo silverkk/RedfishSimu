@@ -1,0 +1,67 @@
+{
+  "@odata.id": "/redfish/v1/Managers/bmc/EthernetInterfaces/eth1",
+  "@odata.type": "#EthernetInterface.v1_6_4.EthernetInterface",
+  "DHCPv4": {
+    "DHCPEnabled": true,
+    "UseDNSServers": true,
+    "UseDomainName": true,
+    "UseNTPServers": true
+  },
+  "DHCPv6": {
+    "OperatingMode": "Disabled",
+    "UseDNSServers": true,
+    "UseDomainName": true,
+    "UseNTPServers": true
+  },
+  "Description": "Management Network Interface",
+  "EthernetInterfaceType": "Physical",
+  "FQDN": "bmc-macd6f9bf900e4b",
+  "HostName": "bmc-macd6f9bf900e4b",
+  "IPv4Addresses": [
+    {
+      "Address": "10.239.43.143",
+      "AddressOrigin": "DHCP",
+      "Gateway": "10.239.43.241",
+      "SubnetMask": "255.255.255.0"
+    }
+  ],
+  "IPv4StaticAddresses": [],
+  "IPv6AddressPolicyTable": [],
+  "IPv6Addresses": [
+    {
+      "Address": "fe80::98b8:ff:fe66:ac13",
+      "AddressOrigin": "LinkLocal",
+      "AddressState": null,
+      "PrefixLength": 64
+    }
+  ],
+  "IPv6DefaultGateway": "0:0:0:0:0:0:0:0",
+  "IPv6StaticAddresses": [],
+  "Id": "eth1",
+  "InterfaceEnabled": true,
+  "LinkStatus": "LinkUp",
+  "MACAddress": "9a:b8:00:66:ac:13",
+  "Name": "Manager Ethernet Interface",
+  "NameServers": [
+    "10.248.2.5",
+    "10.239.27.228",
+    "172.17.6.9"
+  ],
+  "Oem": {
+    "Intel": {
+      "@odata.type": "#OemEthernetInterface.v1_0_0.Intel",
+      "ChannelNumber": 1,
+      "NicDescription": "Shared"
+    }
+  },
+  "SpeedMbps": 100,
+  "StaticNameServers": [],
+  "Status": {
+    "Health": "OK",
+    "HealthRollup": "OK",
+    "State": "Enabled"
+  },
+  "VLANs": {
+    "@odata.id": "/redfish/v1/Managers/bmc/EthernetInterfaces/eth1/VLANs"
+  }
+}

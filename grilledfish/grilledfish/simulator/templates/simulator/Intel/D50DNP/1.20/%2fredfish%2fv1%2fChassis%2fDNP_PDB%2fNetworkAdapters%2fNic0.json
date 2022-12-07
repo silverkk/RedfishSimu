@@ -1,0 +1,26 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/DNP_PDB/NetworkAdapters/Nic0",
+  "@odata.type": "#NetworkAdapter.v1_4_0.NetworkAdapter",
+  "Controllers": [
+    {
+      "FirmwarePackageVersion": "1.2992.0",
+      "Links": {
+        "NetworkPorts": [
+          {
+            "@odata.id": "/redfish/v1/Chassis/DNP_PDB/NetworkAdapters/Nic0/NetworkPorts/NICChannel0"
+          }
+        ],
+        "NetworkPorts@odata.count": 1
+      }
+    }
+  ],
+  "Id": "Nic0",
+  "Name": "Network Adapter View",
+  "NetworkPorts": {
+    "@odata.id": "/redfish/v1/Chassis/DNP_PDB/NetworkAdapters/Nic0/NetworkPorts"
+  },
+  "Status": {
+    "Health": "OK",
+    "HealthRollup": "OK"
+  }
+}

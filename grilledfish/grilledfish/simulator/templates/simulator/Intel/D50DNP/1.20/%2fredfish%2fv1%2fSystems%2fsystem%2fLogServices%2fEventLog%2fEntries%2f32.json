@@ -1,0 +1,18 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#LogService.LogService",
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/EventLog/Entries/32",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "1970-01-01T00:00:32+00:00",
+  "EntryType": "Event",
+  "EventId": "32",
+  "Id": "32",
+  "Message": "PSSF212201A PowerSupply with serial number CNS2121A4BM5N0049 was installed.",
+  "MessageArgs": [
+    "PSSF212201A",
+    "PowerSupply",
+    "CNS2121A4BM5N0049"
+  ],
+  "MessageId": "OpenBMC.0.1.InventoryAdded",
+  "Name": "System Event Log Entry",
+  "Severity": "OK"
+}

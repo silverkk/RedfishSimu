@@ -1,0 +1,16 @@
+{
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/PostCodes/Entries/B1-231",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-02-19T20:25:26+00:00",
+  "EntryType": "Event",
+  "Id": "B1-231",
+  "Message": "Boot Count: 1; Time Stamp Offset: 9.5550 seconds; POST Code: 0xbf: MRC is done",
+  "MessageArgs": [
+    "1",
+    "9.5550",
+    "0xbf: MRC is done"
+  ],
+  "MessageId": "OpenBMC.0.2.BIOSPOSTCode",
+  "Name": "POST Code Log Entry",
+  "Severity": "OK"
+}

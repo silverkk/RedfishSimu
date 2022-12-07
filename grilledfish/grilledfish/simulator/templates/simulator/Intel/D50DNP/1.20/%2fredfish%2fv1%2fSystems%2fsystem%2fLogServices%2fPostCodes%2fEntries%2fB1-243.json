@@ -1,0 +1,16 @@
+{
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/PostCodes/Entries/B1-243",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-02-19T20:25:34+00:00",
+  "EntryType": "Event",
+  "Id": "B1-243",
+  "Message": "Boot Count: 1; Time Stamp Offset: 17.3694 seconds; POST Code: 0x91: DXE BDS connect drivers",
+  "MessageArgs": [
+    "1",
+    "17.3694",
+    "0x91: DXE BDS connect drivers"
+  ],
+  "MessageId": "OpenBMC.0.2.BIOSPOSTCode",
+  "Name": "POST Code Log Entry",
+  "Severity": "OK"
+}

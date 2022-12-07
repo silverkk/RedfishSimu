@@ -1,0 +1,17 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#LogService.LogService",
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/EventLog/Entries/31_1",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "1970-01-01T00:00:31+00:00",
+  "EntryType": "Event",
+  "EventId": "31_1",
+  "Id": "31_1",
+  "Message": "Interface eth1 link status becomes linkUp.",
+  "MessageArgs": [
+    "eth1",
+    "linkUp"
+  ],
+  "MessageId": "OpenBMC.0.1.LinkStatusChanged",
+  "Name": "System Event Log Entry",
+  "Severity": "OK"
+}

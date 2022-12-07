@@ -1,0 +1,14 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#LogService.LogService",
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/EventLog/Entries/1611336264",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-01-22T17:24:24+00:00",
+  "EntryType": "Event",
+  "EventId": "1611336264",
+  "Id": "1611336264",
+  "Message": "NM SmaRT&CLST sensor. State Asserted(throttling enforced)",
+  "MessageArgs": [],
+  "MessageId": "OpenBMC.0.1.AssertionEventStateAsserted",
+  "Name": "System Event Log Entry",
+  "Severity": "OK"
+}

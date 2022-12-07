@@ -1,0 +1,18 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#LogService.LogService",
+  "@odata.id": "/redfish/v1/Systems/system/LogServices/EventLog/Entries/1611667479",
+  "@odata.type": "#LogEntry.v1_8_0.LogEntry",
+  "Created": "2021-01-26T13:24:39+00:00",
+  "EntryType": "Event",
+  "EventId": "1611667479",
+  "Id": "1611667479",
+  "Message": "DNP2UMRISER Board with serial number BQDP20700665 was removed.",
+  "MessageArgs": [
+    "DNP2UMRISER",
+    "Board",
+    "BQDP20700665"
+  ],
+  "MessageId": "OpenBMC.0.1.InventoryRemoved",
+  "Name": "System Event Log Entry",
+  "Severity": "OK"
+}

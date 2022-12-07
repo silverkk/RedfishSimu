@@ -1,0 +1,27 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/PSU1_Out_Power",
+  "@odata.type": "#Sensor.v1_2_0.Sensor",
+  "Id": "PSU1_Out_Power",
+  "Name": "PSU1 Out Power",
+  "Oem": {
+    "OpenBmc": {
+      "@odata.type": "#OemSensor.v1_0_0.Sensor",
+      "DateTime": "2021-02-19T20:20:17+00:00"
+    }
+  },
+  "Reading": 226.5,
+  "ReadingRangeMax": 3000.0,
+  "ReadingRangeMin": 0.0,
+  "ReadingType": "Power",
+  "ReadingUnits": "W",
+  "RelatedItem": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/PSU1_Out_Power/SensorHistory"
+    }
+  ],
+  "Status": {
+    "Health": "OK",
+    "HealthRollup": "OK",
+    "State": "Enabled"
+  }
+}

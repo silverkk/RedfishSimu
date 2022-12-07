@@ -1,0 +1,35 @@
+{
+  "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/PSU1_Out_Current",
+  "@odata.type": "#Sensor.v1_2_0.Sensor",
+  "Id": "PSU1_Out_Current",
+  "Name": "PSU1 Out Current",
+  "Oem": {
+    "OpenBmc": {
+      "@odata.type": "#OemSensor.v1_0_0.Sensor",
+      "DateTime": "2021-02-19T20:20:15+00:00"
+    }
+  },
+  "Reading": 18.687,
+  "ReadingRangeMax": 255.0,
+  "ReadingRangeMin": 0.0,
+  "ReadingType": "Current",
+  "ReadingUnits": "A",
+  "RelatedItem": [
+    {
+      "@odata.id": "/redfish/v1/Chassis/DNP_Baseboard/Sensors/PSU1_Out_Current/SensorHistory"
+    }
+  ],
+  "Status": {
+    "Health": "OK",
+    "HealthRollup": "OK",
+    "State": "Enabled"
+  },
+  "Thresholds": {
+    "UpperCaution": {
+      "Reading": 100.0
+    },
+    "UpperCritical": {
+      "Reading": 117.0
+    }
+  }
+}

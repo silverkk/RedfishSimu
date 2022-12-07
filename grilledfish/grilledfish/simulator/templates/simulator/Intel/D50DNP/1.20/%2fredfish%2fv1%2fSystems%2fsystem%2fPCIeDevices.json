@@ -1,0 +1,21 @@
+{
+  "@odata.id": "/redfish/v1/Systems/system/PCIeDevices",
+  "@odata.type": "#PCIeDeviceCollection.PCIeDeviceCollection",
+  "Description": "Collection of PCIe Devices",
+  "Members": [
+    {
+      "@odata.id": "/redfish/v1/Systems/system/PCIeDevices/S0B1D0"
+    },
+    {
+      "@odata.id": "/redfish/v1/Systems/system/PCIeDevices/S0B22D0"
+    },
+    {
+      "@odata.id": "/redfish/v1/Systems/system/PCIeDevices/S0B23D0"
+    },
+    {
+      "@odata.id": "/redfish/v1/Systems/system/PCIeDevices/S0B2D0"
+    }
+  ],
+  "Members@odata.count": 4,
+  "Name": "PCIe Device Collection"
+}
