@@ -6,6 +6,7 @@ from datetime import datetime
 from simulator.apps import MachineType, RedfishMachineConfig, MachineComponent
 import sys
 import time
+from ipaddress import ip_address, IPv4Address, IPv6Address
 
 class model:
     def __init__(self):
@@ -18,8 +19,13 @@ class model:
         for configItem in machineConfigList:
             self.buildOneMachine(configItem, perfConfig)
     def buildOneMachine(self, machineConfig, perfConfig):
-        startIp = int(ipaddress.IPv4Address(machineConfig['startIp']))
-        endIp = int(ipaddress.IPv4Address(machineConfig['endIp'])) + 1        
+        if type(ip_address(machineConfig['startIp'])) is IPv4Address:
+            startIp = int(ipaddress.IPv4Address(machineConfig['startIp']))
+            endIp = int(ipaddress.IPv4Address(machineConfig['endIp'])) + 1
+        else:
+            startIp = int(ipaddress.IPv6Address(machineConfig['startIp']))
+            endIp = int(ipaddress.IPv6Address(machineConfig['endIp'])) + 1
+
         for ip in range(startIp, endIp):
             machine = types.SimpleNamespace()
             mac = ':'.join(['{}{}'.format(a, b)
@@ -28,8 +34,8 @@ class model:
             macDash = '-'.join(['{}{}'.format(a, b)
                      for a, b
                      in zip(*[iter('{:012x}'.format(ip))]*2)])
-            machine.ip = ip
-            machine.ipStr = socket.inet_ntoa(struct.pack('!L', ip))
+            machine.ip = str(ip_address(ip))
+            machine.ipStr = str(ip_address(ip))#socket.inet_ntoa(struct.pack('!L', ip))
             machine.mac = mac
             machine.macDash = macDash
             #machine.vendor = machineConfig['vendor']
@@ -45,7 +51,7 @@ class model:
             self.appendPowerInfo(machine, machineConfig)
             self.buildCacheInfra(machine, perfConfig)
             self.appendFirmwareUpgradeInfo(machine, machineConfig)
-            self.machines[ip] = machine
+            self.machines[str(ip_address(ip))] = machine
 
     def transHealthInfo(self, machine, healthNamespace, healthDict, appendDefault, genSelLog=False):
         if 'system' in healthDict:
@@ -355,8 +361,7 @@ class model:
         machine.firmwareUpgrade = firmwareUpgrade
 
     def getMachineInfo(self, ipStr):
-        ip = int(ipaddress.IPv4Address(ipStr))
-        return self.machines[ip]
+        return self.machines[str(ip_address(ipStr))]
 
     def buildPerfConfig(self, perfConfig):
         #trace the performance

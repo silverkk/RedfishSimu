@@ -7,7 +7,10 @@ from django.template import loader, TemplateDoesNotExist
 
 def get_request_ip(request):
     host = request.get_host()
-    host_ip = host.split(':')[0]
+    if host.startswith("["):
+        host_ip = host[host.index('[')+1:host.index(']')]
+    else:
+        host_ip = host.split(':')[0]
     return host_ip
 
 def get_machine_info(request):
